@@ -1,0 +1,32 @@
+{
+  "id": "jr-central--tokaido-shinkansen",
+  "operatorId": "jr-central",
+  "name": "東海道新幹線",
+  "formalName": "東海道新幹線",
+  "kana": "とうかいどうしんかんせん",
+  "color": "#0072BC",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版Wikipediaで確認。ふりがなはローマ字表記から起こした。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせて確認。",
+  "source": [
+    "https://en.wikipedia.org/wiki/T%C5%8Dkaid%C5%8D_Shinkansen"
+  ],
+  "stations": [
+    {
+      "stationId": "tokyo"
+    },
+    {
+      "stationId": "shinagawa"
+    },
+    {
+      "stationId": "shin-yokohama"
+    },
+    {
+      "stationId": "odawara"
+    },
+    {
+      "stationId": "atami"
+    }
+  ]
+}

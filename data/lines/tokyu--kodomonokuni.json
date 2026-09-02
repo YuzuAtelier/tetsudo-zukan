@@ -1,0 +1,32 @@
+{
+  "id": "tokyu--kodomonokuni",
+  "operatorId": "tokyu",
+  "name": "こどもの国線",
+  "formalName": "こどもの国線",
+  "kana": "こどものくにせん",
+  "symbol": "KD",
+  "color": "#0068B7",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（東横線は日本語版とも照合）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　線路は横浜高速鉄道が保有し、運行は東急が受託している。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Kodomonokuni_Line",
+    "https://www.tokyu.co.jp/railway/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "nagatsuta",
+      "numbering": "KD01"
+    },
+    {
+      "stationId": "onda",
+      "numbering": "KD02"
+    },
+    {
+      "stationId": "kodomonokuni",
+      "numbering": "KD03"
+    }
+  ]
+}

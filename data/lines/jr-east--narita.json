@@ -1,0 +1,67 @@
+{
+  "id": "jr-east--narita",
+  "operatorId": "jr-east",
+  "name": "成田線",
+  "formalName": "成田線（佐倉〜松岸）",
+  "kana": "なりたせん",
+  "color": "#339966",
+  "colorName": "緑",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版・日本語版Wikipediaの2系統で照合。ふりがなは英語版のローマ字から起こした（日本語版のふりがなには誤りが多数あった）。駅名を路線図PDFの抽出結果と照合。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　正式区間の佐倉〜松岸で作った。千葉〜佐倉は総武本線に含めてある。ふりがなを英語版ローマ字で修正（久住→くずみ、下総神崎→しもうさこうざき）。座標検査の香取→水郷(64pt)は実際に駅間が長い区間。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Narita_Line",
+    "https://ja.wikipedia.org/wiki/成田線",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "sakura"
+    },
+    {
+      "stationId": "shisui"
+    },
+    {
+      "stationId": "narita"
+    },
+    {
+      "stationId": "kuzumi"
+    },
+    {
+      "stationId": "namegawa"
+    },
+    {
+      "stationId": "shimosa-kozaki"
+    },
+    {
+      "stationId": "oto"
+    },
+    {
+      "stationId": "sawara"
+    },
+    {
+      "stationId": "katori"
+    },
+    {
+      "stationId": "suigo"
+    },
+    {
+      "stationId": "omigawa"
+    },
+    {
+      "stationId": "sasagawa"
+    },
+    {
+      "stationId": "shimosa-tachibana"
+    },
+    {
+      "stationId": "shimosa-toyosato"
+    },
+    {
+      "stationId": "shiishiba"
+    },
+    {
+      "stationId": "matsugishi"
+    }
+  ]
+}

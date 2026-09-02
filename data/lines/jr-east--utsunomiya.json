@@ -1,0 +1,129 @@
+{
+  "id": "jr-east--utsunomiya",
+  "operatorId": "jr-east",
+  "name": "宇都宮線",
+  "formalName": "東北本線（宇都宮線）",
+  "kana": "うつのみやせん",
+  "symbol": "JU",
+  "color": "#F68B1E",
+  "colorName": "オレンジ",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版・日本語版Wikipediaの2系統で照合。食い違いは個別の駅記事で決着させた。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　駅番号は東京(JU01)〜大宮(JU07)のみ。大宮以北は土呂駅の記事で番号が無いことを確認した。座標検査で赤羽→浦和・新白岡→久喜が指摘されたが、路線図が都心を大きく郊外を圧縮して描くための誤検知。座標列は東京から黒磯まで単調に北上しており順序の乱れは無い。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Utsunomiya_Line",
+    "https://ja.wikipedia.org/wiki/宇都宮線",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "tokyo",
+      "numbering": "JU01"
+    },
+    {
+      "stationId": "ueno",
+      "numbering": "JU02"
+    },
+    {
+      "stationId": "oku",
+      "numbering": "JU03"
+    },
+    {
+      "stationId": "akabane",
+      "numbering": "JU04"
+    },
+    {
+      "stationId": "urawa",
+      "numbering": "JU05"
+    },
+    {
+      "stationId": "saitama-shintoshin",
+      "numbering": "JU06"
+    },
+    {
+      "stationId": "omiya",
+      "numbering": "JU07"
+    },
+    {
+      "stationId": "toro"
+    },
+    {
+      "stationId": "higashi-omiya"
+    },
+    {
+      "stationId": "hasuda"
+    },
+    {
+      "stationId": "shiraoka"
+    },
+    {
+      "stationId": "shin-shiraoka"
+    },
+    {
+      "stationId": "kuki"
+    },
+    {
+      "stationId": "higashi-washinomiya"
+    },
+    {
+      "stationId": "kurihashi"
+    },
+    {
+      "stationId": "koga"
+    },
+    {
+      "stationId": "nogi"
+    },
+    {
+      "stationId": "mamada"
+    },
+    {
+      "stationId": "oyama"
+    },
+    {
+      "stationId": "koganei"
+    },
+    {
+      "stationId": "jichiidai"
+    },
+    {
+      "stationId": "ishibashi"
+    },
+    {
+      "stationId": "suzumenomiya"
+    },
+    {
+      "stationId": "utsunomiya"
+    },
+    {
+      "stationId": "okamoto"
+    },
+    {
+      "stationId": "hoshakuji"
+    },
+    {
+      "stationId": "ujiie"
+    },
+    {
+      "stationId": "kamasusaka"
+    },
+    {
+      "stationId": "kataoka"
+    },
+    {
+      "stationId": "yaita"
+    },
+    {
+      "stationId": "nozaki"
+    },
+    {
+      "stationId": "nishi-nasuno"
+    },
+    {
+      "stationId": "nasushiobara"
+    },
+    {
+      "stationId": "kuroiso"
+    }
+  ]
+}

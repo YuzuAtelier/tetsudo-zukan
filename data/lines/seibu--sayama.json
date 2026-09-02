@@ -1,0 +1,32 @@
+{
+  "id": "seibu--sayama",
+  "operatorId": "seibu",
+  "name": "西武狭山線",
+  "formalName": "狭山線",
+  "kana": "せいぶさやません",
+  "symbol": "SI",
+  "color": "#EF7A00",
+  "colorName": "オレンジ",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、西武鉄道公式サイトの駅ナンバリング表記と突き合わせた。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。「ケ／ヶ」は事業者の正式表記（小さいヶ）に従った。　分岐駅の西所沢(SI18)を池袋線と共有している。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Seibu_Sayama_Line",
+    "https://www.seiburailway.jp/railway/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "nishi-tokorozawa",
+      "numbering": "SI18"
+    },
+    {
+      "stationId": "shimo-yamaguchi",
+      "numbering": "SI40"
+    },
+    {
+      "stationId": "seibukyujo-mae",
+      "numbering": "SI41"
+    }
+  ]
+}

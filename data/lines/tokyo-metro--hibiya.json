@@ -1,0 +1,108 @@
+{
+  "id": "tokyo-metro--hibiya",
+  "operatorId": "tokyo-metro",
+  "name": "日比谷線",
+  "formalName": "東京メトロ日比谷線",
+  "kana": "ひびやせん",
+  "symbol": "H",
+  "color": "#B5B5AD",
+  "colorName": "シルバー",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を事業者公式サイトとWikipediaの2系統で照合し一致を確認。駅名を路線図PDFの抽出結果と照合。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、破綻が無いことを確認。",
+  "source": [
+    "https://www.tokyometro.jp/station/line_hibiya/index.html",
+    "https://www.tokyometro.jp/lang_en/station/line_hibiya/index.html",
+    "https://www.marorika.com/entry/tokyo-metro-line-color-code"
+  ],
+  "stations": [
+    {
+      "stationId": "naka-meguro",
+      "numbering": "H01"
+    },
+    {
+      "stationId": "ebisu",
+      "numbering": "H02"
+    },
+    {
+      "stationId": "hiro-o",
+      "numbering": "H03"
+    },
+    {
+      "stationId": "roppongi",
+      "numbering": "H04"
+    },
+    {
+      "stationId": "kamiyacho",
+      "numbering": "H05"
+    },
+    {
+      "stationId": "toranomon-hills",
+      "numbering": "H06"
+    },
+    {
+      "stationId": "kasumigaseki",
+      "numbering": "H07"
+    },
+    {
+      "stationId": "hibiya",
+      "numbering": "H08"
+    },
+    {
+      "stationId": "ginza",
+      "numbering": "H09"
+    },
+    {
+      "stationId": "higashi-ginza",
+      "numbering": "H10"
+    },
+    {
+      "stationId": "tsukiji",
+      "numbering": "H11"
+    },
+    {
+      "stationId": "hatchobori",
+      "numbering": "H12"
+    },
+    {
+      "stationId": "kayabacho",
+      "numbering": "H13"
+    },
+    {
+      "stationId": "ningyocho",
+      "numbering": "H14"
+    },
+    {
+      "stationId": "kodemmacho",
+      "numbering": "H15"
+    },
+    {
+      "stationId": "akihabara",
+      "numbering": "H16"
+    },
+    {
+      "stationId": "naka-okachimachi",
+      "numbering": "H17"
+    },
+    {
+      "stationId": "ueno",
+      "numbering": "H18"
+    },
+    {
+      "stationId": "iriya-tokyo",
+      "numbering": "H19"
+    },
+    {
+      "stationId": "minowa",
+      "numbering": "H20"
+    },
+    {
+      "stationId": "minami-senju",
+      "numbering": "H21"
+    },
+    {
+      "stationId": "kita-senju",
+      "numbering": "H22"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "tokyu--setagaya",
+  "operatorId": "tokyu",
+  "name": "東急世田谷線",
+  "formalName": "世田谷線",
+  "kana": "とうきゅうせたがやせん",
+  "symbol": "SG",
+  "color": "#FCC70D",
+  "colorName": "黄",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（東横線は日本語版とも照合）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tokyu_Setagaya_Line",
+    "https://www.tokyu.co.jp/railway/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "sangen-jaya",
+      "numbering": "SG01"
+    },
+    {
+      "stationId": "nishi-taishido",
+      "numbering": "SG02"
+    },
+    {
+      "stationId": "wakabayashi",
+      "numbering": "SG03"
+    },
+    {
+      "stationId": "shoin-jinja-mae",
+      "numbering": "SG04"
+    },
+    {
+      "stationId": "setagaya",
+      "numbering": "SG05"
+    },
+    {
+      "stationId": "kamimachi",
+      "numbering": "SG06"
+    },
+    {
+      "stationId": "miyanosaka",
+      "numbering": "SG07"
+    },
+    {
+      "stationId": "yamashita",
+      "numbering": "SG08"
+    },
+    {
+      "stationId": "matsubara",
+      "numbering": "SG09"
+    },
+    {
+      "stationId": "shimo-takaido",
+      "numbering": "SG10"
+    }
+  ]
+}

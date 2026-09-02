@@ -1,0 +1,55 @@
+{
+  "id": "tobu--kinugawa",
+  "operatorId": "tobu",
+  "name": "鬼怒川線",
+  "formalName": "鬼怒川線",
+  "kana": "きぬがわせん",
+  "symbol": "TN",
+  "color": "#226FB5",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（伊勢崎線は日本語版とも一致）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tobu_Kinugawa_Line",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "shimo-imaichi",
+      "numbering": "TN23"
+    },
+    {
+      "stationId": "daiya-muko",
+      "numbering": "TN51"
+    },
+    {
+      "stationId": "okuwa",
+      "numbering": "TN52"
+    },
+    {
+      "stationId": "shin-takatoku",
+      "numbering": "TN53"
+    },
+    {
+      "stationId": "kosagoe",
+      "numbering": "TN54"
+    },
+    {
+      "stationId": "tobu-world-square",
+      "numbering": "TN55"
+    },
+    {
+      "stationId": "kinugawa-onsen",
+      "numbering": "TN56"
+    },
+    {
+      "stationId": "kinugawa-koen",
+      "numbering": "TN57"
+    },
+    {
+      "stationId": "shin-fujiwara",
+      "numbering": "TN58"
+    }
+  ]
+}

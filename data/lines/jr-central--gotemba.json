@@ -1,0 +1,74 @@
+{
+  "id": "jr-central--gotemba",
+  "operatorId": "jr-central",
+  "name": "御殿場線",
+  "formalName": "御殿場線",
+  "kana": "ごてんばせん",
+  "color": "#F68B1E",
+  "colorName": "オレンジ",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版Wikipediaで確認。ふりがなはローマ字表記から起こした。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせて確認。　路線図には国府津と『至沼津』の注記しか無く、途中駅は描かれていない。路線として成立させるため全区間（国府津〜沼津）を入れてある。**路線図との照合ができていない**。足柄（静岡県）は小田急小田原線の足柄（神奈川県）と同名の別駅なので ashigara-shizuoka とした。小田急に着手するときは ashigara-kanagawa を作ること。　2026-09-02: 同名の別駅と1駅に統合されていたため「足柄」を ashigara-shizuoka（御殿場線（静岡県駿東郡小山町））として分離した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Gotemba_Line"
+  ],
+  "stations": [
+    {
+      "stationId": "kozu"
+    },
+    {
+      "stationId": "shimo-soga"
+    },
+    {
+      "stationId": "kami-oi"
+    },
+    {
+      "stationId": "sagami-kaneko"
+    },
+    {
+      "stationId": "matsuda"
+    },
+    {
+      "stationId": "higashi-yamakita"
+    },
+    {
+      "stationId": "yamakita"
+    },
+    {
+      "stationId": "yaga"
+    },
+    {
+      "stationId": "suruga-oyama"
+    },
+    {
+      "stationId": "ashigara-shizuoka"
+    },
+    {
+      "stationId": "gotemba"
+    },
+    {
+      "stationId": "minami-gotemba"
+    },
+    {
+      "stationId": "fujioka"
+    },
+    {
+      "stationId": "iwanami"
+    },
+    {
+      "stationId": "susono"
+    },
+    {
+      "stationId": "nagaizumi-nameri"
+    },
+    {
+      "stationId": "shimo-togari"
+    },
+    {
+      "stationId": "ooka"
+    },
+    {
+      "stationId": "numazu"
+    }
+  ]
+}

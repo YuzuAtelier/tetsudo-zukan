@@ -1,0 +1,85 @@
+{
+  "id": "jr-east--sobu-main",
+  "operatorId": "jr-east",
+  "name": "総武本線",
+  "formalName": "総武本線（千葉〜銚子）",
+  "kana": "そうぶほんせん",
+  "color": "#FFC500",
+  "colorName": "黄",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版・日本語版Wikipediaの2系統で照合。ふりがなは英語版のローマ字から起こした（日本語版のふりがなには誤りが多数あった）。駅名を路線図PDFの抽出結果と照合。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　座標検査の松岸→銚子(68pt)は、銚子が路線図の東端に置かれているための正常な長区間。",
+  "source": [
+    "https://en.wikipedia.org/wiki/S%C5%8Dbu_Main_Line",
+    "https://ja.wikipedia.org/wiki/総武本線",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "chiba"
+    },
+    {
+      "stationId": "higashi-chiba"
+    },
+    {
+      "stationId": "tsuga"
+    },
+    {
+      "stationId": "yotsukaido"
+    },
+    {
+      "stationId": "monoi"
+    },
+    {
+      "stationId": "sakura"
+    },
+    {
+      "stationId": "minami-shisui"
+    },
+    {
+      "stationId": "enokido"
+    },
+    {
+      "stationId": "yachimata"
+    },
+    {
+      "stationId": "hyuga"
+    },
+    {
+      "stationId": "naruto"
+    },
+    {
+      "stationId": "matsuo"
+    },
+    {
+      "stationId": "yokoshiba"
+    },
+    {
+      "stationId": "iigura"
+    },
+    {
+      "stationId": "yokaichiba"
+    },
+    {
+      "stationId": "higata"
+    },
+    {
+      "stationId": "asahi"
+    },
+    {
+      "stationId": "iioka"
+    },
+    {
+      "stationId": "kurahashi"
+    },
+    {
+      "stationId": "saruda"
+    },
+    {
+      "stationId": "matsugishi"
+    },
+    {
+      "stationId": "choshi"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "jr-east--agatsuma",
+  "operatorId": "jr-east",
+  "name": "吾妻線",
+  "formalName": "吾妻線",
+  "kana": "あがつません",
+  "color": "#0F5474",
+  "colorName": "紺",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版・日本語版Wikipediaの2系統で照合。ふりがなはローマ字表記から起こした。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせて確認。　大前は路線図の外なので含めていない（万座・鹿沢口まで）。路線図は地方路線では主要駅しか描かないため、この路線には路線図に描かれていない駅がある。路線図が最後に描いている駅までを収録範囲とし、その手前は全駅を入れてある。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Agatsuma_Line",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "shibukawa"
+    },
+    {
+      "stationId": "kanashima"
+    },
+    {
+      "stationId": "ubashima"
+    },
+    {
+      "stationId": "onogami"
+    },
+    {
+      "stationId": "onogami-onsen"
+    },
+    {
+      "stationId": "ichishiro"
+    },
+    {
+      "stationId": "nakanojo"
+    },
+    {
+      "stationId": "gunma-haramachi"
+    },
+    {
+      "stationId": "gobara"
+    },
+    {
+      "stationId": "yagura"
+    },
+    {
+      "stationId": "iwashima"
+    },
+    {
+      "stationId": "kawarayu-onsen"
+    },
+    {
+      "stationId": "naganohara-kusatsuguchi"
+    },
+    {
+      "stationId": "gunma-otsu"
+    },
+    {
+      "stationId": "haneo"
+    },
+    {
+      "stationId": "fukurogura"
+    },
+    {
+      "stationId": "manza-kazawaguchi"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "jr-east--itsukaichi",
+  "operatorId": "jr-east",
+  "name": "五日市線",
+  "formalName": "五日市線",
+  "kana": "いつかいちせん",
+  "symbol": "JC",
+  "color": "#FFD400",
+  "colorName": "カナリア",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を複数の出典で照合。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　起点の拝島は青梅線と共有（JC55）。五日市線内はJC81〜JC86。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Itsukaichi_Line",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "haijima",
+      "numbering": "JC55"
+    },
+    {
+      "stationId": "kumagawa",
+      "numbering": "JC81"
+    },
+    {
+      "stationId": "higashi-akiru",
+      "numbering": "JC82"
+    },
+    {
+      "stationId": "akigawa",
+      "numbering": "JC83"
+    },
+    {
+      "stationId": "musashi-hikida",
+      "numbering": "JC84"
+    },
+    {
+      "stationId": "musashi-masuko",
+      "numbering": "JC85"
+    },
+    {
+      "stationId": "musashi-itsukaichi",
+      "numbering": "JC86"
+    }
+  ]
+}

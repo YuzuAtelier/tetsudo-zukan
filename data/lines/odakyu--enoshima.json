@@ -1,0 +1,88 @@
+{
+  "id": "odakyu--enoshima",
+  "operatorId": "odakyu",
+  "name": "小田急江ノ島線",
+  "formalName": "江ノ島線",
+  "kana": "おだきゅうえのしません",
+  "symbol": "OE",
+  "color": "#2288CC",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、小田急電鉄公式サイトと突き合わせた。ふりがなはローマ字表記から起こした。「ケ／ヶ」は事業者の正式表記（小さいヶ）に従った。　大和（神奈川県大和市）は水戸線の大和（茨城県）と同名の別駅なので yamato-kanagawa とした。相鉄本線の大和と同一駅。　2026-09-02: 同名の別駅と1駅に統合されていたため「大和」を yamato-kanagawa（小田急江ノ島線・相鉄本線（神奈川県大和市））として分離した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Odakyu_Enoshima_Line",
+    "https://www.odakyu.jp/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "sagami-ono",
+      "numbering": "OH28"
+    },
+    {
+      "stationId": "higashi-rinkan",
+      "numbering": "OE01"
+    },
+    {
+      "stationId": "chuo-rinkan",
+      "numbering": "OE02"
+    },
+    {
+      "stationId": "minami-rinkan",
+      "numbering": "OE03"
+    },
+    {
+      "stationId": "tsuruma",
+      "numbering": "OE04"
+    },
+    {
+      "stationId": "yamato-kanagawa",
+      "numbering": "OE05"
+    },
+    {
+      "stationId": "sakuragaoka",
+      "numbering": "OE06"
+    },
+    {
+      "stationId": "koza-shibuya",
+      "numbering": "OE07"
+    },
+    {
+      "stationId": "chogo",
+      "numbering": "OE08"
+    },
+    {
+      "stationId": "shonandai",
+      "numbering": "OE09"
+    },
+    {
+      "stationId": "mutsuai-nichidaimae",
+      "numbering": "OE10"
+    },
+    {
+      "stationId": "zengyo",
+      "numbering": "OE11"
+    },
+    {
+      "stationId": "fujisawa-hommachi",
+      "numbering": "OE12"
+    },
+    {
+      "stationId": "fujisawa",
+      "numbering": "OE13"
+    },
+    {
+      "stationId": "hon-kugenuma",
+      "numbering": "OE14"
+    },
+    {
+      "stationId": "kugenuma-kaigan",
+      "numbering": "OE15"
+    },
+    {
+      "stationId": "katase-enoshima",
+      "numbering": "OE16"
+    }
+  ]
+}

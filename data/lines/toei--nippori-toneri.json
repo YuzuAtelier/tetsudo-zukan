@@ -1,0 +1,70 @@
+{
+  "id": "toei--nippori-toneri",
+  "operatorId": "toei",
+  "name": "日暮里・舎人ライナー",
+  "formalName": "日暮里・舎人ライナー",
+  "kana": "にっぽりとねりらいなー",
+  "symbol": "NT",
+  "color": "#77C371",
+  "colorName": "黄緑",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版Wikipedia（湘南モノレールは日本語版）で確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Nippori%E2%80%93Toneri_Liner"
+  ],
+  "stations": [
+    {
+      "stationId": "nippori",
+      "numbering": "NT01"
+    },
+    {
+      "stationId": "nishi-nippori",
+      "numbering": "NT02"
+    },
+    {
+      "stationId": "akado-shogakko-mae",
+      "numbering": "NT03"
+    },
+    {
+      "stationId": "kumanomae",
+      "numbering": "NT04"
+    },
+    {
+      "stationId": "adachi-odai",
+      "numbering": "NT05"
+    },
+    {
+      "stationId": "ogi-ohashi",
+      "numbering": "NT06"
+    },
+    {
+      "stationId": "koya",
+      "numbering": "NT07"
+    },
+    {
+      "stationId": "kohoku-nippori",
+      "numbering": "NT08"
+    },
+    {
+      "stationId": "nishiaraidaishi-nishi",
+      "numbering": "NT09"
+    },
+    {
+      "stationId": "yazaike",
+      "numbering": "NT10"
+    },
+    {
+      "stationId": "toneri-koen",
+      "numbering": "NT11"
+    },
+    {
+      "stationId": "toneri",
+      "numbering": "NT12"
+    },
+    {
+      "stationId": "minumadai-shinsuikoen",
+      "numbering": "NT13"
+    }
+  ]
+}

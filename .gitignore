@@ -1,0 +1,21 @@
+# 参照資料は Git 管理に含めない
+# 鉄道会社が作成した路線図・第三者が作成した図版のため、
+# 公開リポジトリに置かない。手元での参照専用。
+refs/*.pdf
+refs/*.png
+refs/*.jpg
+refs/*.jpeg
+refs/*.txt
+# 路線図PDFから抽出した駅ラベルの座標。元の図の「変換」にあたるため同じ扱いにする
+refs/*.json
+
+# 生成物
+node_modules/
+.DS_Store
+
+# 端末ごとのローカル設定（共有しない）
+.claude/settings.local.json
+
+# 個人の作業メモ。公開しても他人の役に立たないため含めない
+PROMPT.md
+docs/REQUIREMENTS.md

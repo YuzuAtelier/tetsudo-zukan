@@ -1,0 +1,105 @@
+{
+  "id": "tokyu--toyoko",
+  "operatorId": "tokyu",
+  "name": "東急東横線",
+  "formalName": "東横線",
+  "kana": "とうきゅうとうよこせん",
+  "symbol": "TY",
+  "color": "#DA0442",
+  "colorName": "赤",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（東横線は日本語版とも照合）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　英語版の駅一覧表がTY14で切れていたため、TY15以降は日本語版で補った。反町の読みは「そりまち」（ローマ字 Tammachi）。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/東急東横線",
+    "https://en.wikipedia.org/wiki/Tokyu_Toyoko_Line",
+    "https://www.tokyu.co.jp/railway/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "shibuya",
+      "numbering": "TY01"
+    },
+    {
+      "stationId": "daikan-yama",
+      "numbering": "TY02"
+    },
+    {
+      "stationId": "naka-meguro",
+      "numbering": "TY03"
+    },
+    {
+      "stationId": "yutenji",
+      "numbering": "TY04"
+    },
+    {
+      "stationId": "gakugei-daigaku",
+      "numbering": "TY05"
+    },
+    {
+      "stationId": "toritsu-daigaku",
+      "numbering": "TY06"
+    },
+    {
+      "stationId": "jiyugaoka",
+      "numbering": "TY07"
+    },
+    {
+      "stationId": "den-en-chofu",
+      "numbering": "TY08"
+    },
+    {
+      "stationId": "tamagawa-tokyu",
+      "numbering": "TY09"
+    },
+    {
+      "stationId": "shin-maruko",
+      "numbering": "TY10"
+    },
+    {
+      "stationId": "musashi-kosugi",
+      "numbering": "TY11"
+    },
+    {
+      "stationId": "motosumiyoshi",
+      "numbering": "TY12"
+    },
+    {
+      "stationId": "hiyoshi",
+      "numbering": "TY13"
+    },
+    {
+      "stationId": "tsunashima",
+      "numbering": "TY14"
+    },
+    {
+      "stationId": "okurayama",
+      "numbering": "TY15"
+    },
+    {
+      "stationId": "kikuna",
+      "numbering": "TY16"
+    },
+    {
+      "stationId": "myorenji",
+      "numbering": "TY17"
+    },
+    {
+      "stationId": "hakuraku",
+      "numbering": "TY18"
+    },
+    {
+      "stationId": "higashi-hakuraku",
+      "numbering": "TY19"
+    },
+    {
+      "stationId": "tammachi",
+      "numbering": "TY20"
+    },
+    {
+      "stationId": "yokohama",
+      "numbering": "TY21"
+    }
+  ]
+}

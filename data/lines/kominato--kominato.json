@@ -1,0 +1,71 @@
+{
+  "id": "kominato--kominato",
+  "operatorId": "kominato",
+  "name": "小湊鐵道線",
+  "formalName": "小湊鐵道線",
+  "kana": "こみなとてつどうせん",
+  "color": "#8FC31F",
+  "colorName": "緑",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版（一部日本語版）Wikipediaで確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　　この路線は路線図PDFの描画範囲の外（「至○○」の注記のみ）にあり、路線図との駅名照合ができていない。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/小湊鐵道線"
+  ],
+  "stations": [
+    {
+      "stationId": "goi"
+    },
+    {
+      "stationId": "kazusa-murakami"
+    },
+    {
+      "stationId": "amaariki"
+    },
+    {
+      "stationId": "kazusa-mitsumata"
+    },
+    {
+      "stationId": "kazusa-yamada"
+    },
+    {
+      "stationId": "kofudai"
+    },
+    {
+      "stationId": "umatate"
+    },
+    {
+      "stationId": "kazusa-ushiku"
+    },
+    {
+      "stationId": "kazusa-kawama"
+    },
+    {
+      "stationId": "kazusa-tsurumai"
+    },
+    {
+      "stationId": "kazusa-kubo"
+    },
+    {
+      "stationId": "takataki"
+    },
+    {
+      "stationId": "satomi"
+    },
+    {
+      "stationId": "itabu"
+    },
+    {
+      "stationId": "tsukisaki"
+    },
+    {
+      "stationId": "kazusa-okubo"
+    },
+    {
+      "stationId": "yoro-keikoku"
+    },
+    {
+      "stationId": "kazusa-nakano"
+    }
+  ]
+}

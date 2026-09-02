@@ -1,0 +1,96 @@
+{
+  "id": "jr-east--saikyo",
+  "operatorId": "jr-east",
+  "name": "埼京線",
+  "formalName": "埼京線（赤羽線・東北本線）",
+  "kana": "さいきょうせん",
+  "symbol": "JA",
+  "color": "#00AC9A",
+  "colorName": "緑",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版・日本語版Wikipediaの2系統で照合。食い違いは個別の駅記事で決着させた。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　日本語版Wikipediaの駅一覧は南浦和・さいたま新都心を混入し北赤羽・北戸田を落としていたため、英語版を採用した。駅番号がJA08（大崎）から始まるのは、直通するりんかい線の新木場を01とみなす通し番号のため。川越線（大宮〜川越）にJA番号は無いことを西大宮駅の記事で確認した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Saiky%C5%8D_Line",
+    "https://ja.wikipedia.org/wiki/埼京線",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "osaki",
+      "numbering": "JA08"
+    },
+    {
+      "stationId": "ebisu",
+      "numbering": "JA09"
+    },
+    {
+      "stationId": "shibuya",
+      "numbering": "JA10"
+    },
+    {
+      "stationId": "shinjuku",
+      "numbering": "JA11"
+    },
+    {
+      "stationId": "ikebukuro",
+      "numbering": "JA12"
+    },
+    {
+      "stationId": "itabashi",
+      "numbering": "JA13"
+    },
+    {
+      "stationId": "jujo",
+      "numbering": "JA14"
+    },
+    {
+      "stationId": "akabane",
+      "numbering": "JA15"
+    },
+    {
+      "stationId": "kita-akabane",
+      "numbering": "JA16"
+    },
+    {
+      "stationId": "ukima-funado",
+      "numbering": "JA17"
+    },
+    {
+      "stationId": "toda-koen",
+      "numbering": "JA18"
+    },
+    {
+      "stationId": "toda",
+      "numbering": "JA19"
+    },
+    {
+      "stationId": "kita-toda",
+      "numbering": "JA20"
+    },
+    {
+      "stationId": "musashi-urawa",
+      "numbering": "JA21"
+    },
+    {
+      "stationId": "naka-urawa",
+      "numbering": "JA22"
+    },
+    {
+      "stationId": "minami-yono",
+      "numbering": "JA23"
+    },
+    {
+      "stationId": "yonohommachi",
+      "numbering": "JA24"
+    },
+    {
+      "stationId": "kita-yono",
+      "numbering": "JA25"
+    },
+    {
+      "stationId": "omiya",
+      "numbering": "JA26"
+    }
+  ]
+}

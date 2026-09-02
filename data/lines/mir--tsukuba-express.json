@@ -1,0 +1,98 @@
+{
+  "id": "mir--tsukuba-express",
+  "operatorId": "mir",
+  "name": "つくばエクスプレス",
+  "formalName": "常磐新線",
+  "kana": "つくばえくすぷれす",
+  "symbol": "TX",
+  "color": "#00A6D9",
+  "colorName": "水色",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版Wikipedia（湘南モノレールは日本語版）で確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tsukuba_Express"
+  ],
+  "stations": [
+    {
+      "stationId": "akihabara",
+      "numbering": "TX01"
+    },
+    {
+      "stationId": "shin-okachimachi",
+      "numbering": "TX02"
+    },
+    {
+      "stationId": "asakusa",
+      "numbering": "TX03"
+    },
+    {
+      "stationId": "minami-senju",
+      "numbering": "TX04"
+    },
+    {
+      "stationId": "kita-senju",
+      "numbering": "TX05"
+    },
+    {
+      "stationId": "aoi",
+      "numbering": "TX06"
+    },
+    {
+      "stationId": "rokucho",
+      "numbering": "TX07"
+    },
+    {
+      "stationId": "yashio",
+      "numbering": "TX08"
+    },
+    {
+      "stationId": "misato-chuo",
+      "numbering": "TX09"
+    },
+    {
+      "stationId": "minami-nagareyama",
+      "numbering": "TX10"
+    },
+    {
+      "stationId": "nagareyama-centralpark",
+      "numbering": "TX11"
+    },
+    {
+      "stationId": "nagareyama-otakanomori",
+      "numbering": "TX12"
+    },
+    {
+      "stationId": "kashiwanoha-campus",
+      "numbering": "TX13"
+    },
+    {
+      "stationId": "kashiwa-tanaka",
+      "numbering": "TX14"
+    },
+    {
+      "stationId": "moriya",
+      "numbering": "TX15"
+    },
+    {
+      "stationId": "miraidaira",
+      "numbering": "TX16"
+    },
+    {
+      "stationId": "midorino",
+      "numbering": "TX17"
+    },
+    {
+      "stationId": "bampaku-kinenkoen",
+      "numbering": "TX18"
+    },
+    {
+      "stationId": "kenkyu-gakuen",
+      "numbering": "TX19"
+    },
+    {
+      "stationId": "tsukuba",
+      "numbering": "TX20"
+    }
+  ]
+}

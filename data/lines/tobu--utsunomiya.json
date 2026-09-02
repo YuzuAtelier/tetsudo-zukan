@@ -1,0 +1,63 @@
+{
+  "id": "tobu--utsunomiya",
+  "operatorId": "tobu",
+  "name": "東武宇都宮線",
+  "formalName": "宇都宮線",
+  "kana": "とうぶうつのみやせん",
+  "symbol": "TN",
+  "color": "#DDAF4A",
+  "colorName": "山吹",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（伊勢崎線は日本語版とも一致）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tobu_Utsunomiya_Line",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "shin-tochigi",
+      "numbering": "TN12"
+    },
+    {
+      "stationId": "yashu-hirakawa",
+      "numbering": "TN31"
+    },
+    {
+      "stationId": "yashu-otsuka",
+      "numbering": "TN32"
+    },
+    {
+      "stationId": "mibu",
+      "numbering": "TN33"
+    },
+    {
+      "stationId": "kuniya",
+      "numbering": "TN34"
+    },
+    {
+      "stationId": "omocha-no-machi",
+      "numbering": "TN35"
+    },
+    {
+      "stationId": "yasuzuka",
+      "numbering": "TN36"
+    },
+    {
+      "stationId": "nishi-kawada",
+      "numbering": "TN37"
+    },
+    {
+      "stationId": "esojima",
+      "numbering": "TN38"
+    },
+    {
+      "stationId": "minami-utsunomiya",
+      "numbering": "TN39"
+    },
+    {
+      "stationId": "tobu-utsunomiya",
+      "numbering": "TN40"
+    }
+  ]
+}

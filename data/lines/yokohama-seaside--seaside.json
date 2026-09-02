@@ -1,0 +1,74 @@
+{
+  "id": "yokohama-seaside--seaside",
+  "operatorId": "yokohama-seaside",
+  "name": "横浜シーサイドライン",
+  "formalName": "金沢シーサイドライン",
+  "kana": "よこはましーさいどらいん",
+  "symbol": "SL",
+  "color": "#00A99D",
+  "colorName": "青緑",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版Wikipedia（湘南モノレールは日本語版）で確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　英語版Wikipediaが「産業新興センター」としていたが、路線図PDFの表記「産業振興センター」が正しい。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Yokohama_Seaside_Line"
+  ],
+  "stations": [
+    {
+      "stationId": "shin-sugita",
+      "numbering": "SL01"
+    },
+    {
+      "stationId": "nambu-shijo",
+      "numbering": "SL02"
+    },
+    {
+      "stationId": "torihama",
+      "numbering": "SL03"
+    },
+    {
+      "stationId": "namiki-kita",
+      "numbering": "SL04"
+    },
+    {
+      "stationId": "namiki-chuo",
+      "numbering": "SL05"
+    },
+    {
+      "stationId": "sachiura",
+      "numbering": "SL06"
+    },
+    {
+      "stationId": "sangyo-shinko-center",
+      "numbering": "SL07"
+    },
+    {
+      "stationId": "fukuura",
+      "numbering": "SL08"
+    },
+    {
+      "stationId": "shidai-igakubu",
+      "numbering": "SL09"
+    },
+    {
+      "stationId": "hakkeijima",
+      "numbering": "SL10"
+    },
+    {
+      "stationId": "uminokoen-shibaguchi",
+      "numbering": "SL11"
+    },
+    {
+      "stationId": "uminokoen-minamiguchi",
+      "numbering": "SL12"
+    },
+    {
+      "stationId": "nojima-koen",
+      "numbering": "SL13"
+    },
+    {
+      "stationId": "kanazawa-hakkei",
+      "numbering": "SL14"
+    }
+  ]
+}

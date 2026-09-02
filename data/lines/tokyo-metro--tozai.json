@@ -1,0 +1,112 @@
+{
+  "id": "tokyo-metro--tozai",
+  "operatorId": "tokyo-metro",
+  "name": "東西線",
+  "formalName": "東京メトロ東西線",
+  "kana": "とうざいせん",
+  "symbol": "T",
+  "color": "#4499BB",
+  "colorName": "スカイ",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を事業者公式サイトとWikipediaの2系統で照合し一致を確認。駅名を路線図PDFの抽出結果と照合。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、破綻が無いことを確認。　行徳↔妙典が座標検査で指摘されたが、ラベルが路線の左右交互に置かれているための誤検知。公式のT20行徳/T21妙典で正しい。　2026-09-02: 同名の別駅と1駅に統合されていたため「中野」を nakano-tokyo（中央線・東西線（東京都中野区））として分離した。",
+  "source": [
+    "https://www.tokyometro.jp/station/line_tozai/index.html",
+    "https://www.tokyometro.jp/lang_en/station/line_tozai/index.html",
+    "https://www.marorika.com/entry/tokyo-metro-line-color-code"
+  ],
+  "stations": [
+    {
+      "stationId": "nakano-tokyo",
+      "numbering": "T01"
+    },
+    {
+      "stationId": "ochiai",
+      "numbering": "T02"
+    },
+    {
+      "stationId": "takadanobaba",
+      "numbering": "T03"
+    },
+    {
+      "stationId": "waseda",
+      "numbering": "T04"
+    },
+    {
+      "stationId": "kagurazaka",
+      "numbering": "T05"
+    },
+    {
+      "stationId": "iidabashi",
+      "numbering": "T06"
+    },
+    {
+      "stationId": "kudanshita",
+      "numbering": "T07"
+    },
+    {
+      "stationId": "takebashi",
+      "numbering": "T08"
+    },
+    {
+      "stationId": "otemachi",
+      "numbering": "T09"
+    },
+    {
+      "stationId": "nihombashi",
+      "numbering": "T10"
+    },
+    {
+      "stationId": "kayabacho",
+      "numbering": "T11"
+    },
+    {
+      "stationId": "monzen-nakacho",
+      "numbering": "T12"
+    },
+    {
+      "stationId": "kiba",
+      "numbering": "T13"
+    },
+    {
+      "stationId": "toyocho",
+      "numbering": "T14"
+    },
+    {
+      "stationId": "minami-sunamachi",
+      "numbering": "T15"
+    },
+    {
+      "stationId": "nishi-kasai",
+      "numbering": "T16"
+    },
+    {
+      "stationId": "kasai",
+      "numbering": "T17"
+    },
+    {
+      "stationId": "urayasu",
+      "numbering": "T18"
+    },
+    {
+      "stationId": "minami-gyotoku",
+      "numbering": "T19"
+    },
+    {
+      "stationId": "gyotoku",
+      "numbering": "T20"
+    },
+    {
+      "stationId": "myoden",
+      "numbering": "T21"
+    },
+    {
+      "stationId": "baraki-nakayama",
+      "numbering": "T22"
+    },
+    {
+      "stationId": "nishi-funabashi",
+      "numbering": "T23"
+    }
+  ]
+}

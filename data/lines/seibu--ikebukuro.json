@@ -1,0 +1,144 @@
+{
+  "id": "seibu--ikebukuro",
+  "operatorId": "seibu",
+  "name": "西武池袋線",
+  "formalName": "池袋線",
+  "kana": "せいぶいけぶくろせん",
+  "symbol": "SI",
+  "color": "#EF7A00",
+  "colorName": "オレンジ",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、西武鉄道公式サイトの駅ナンバリング表記と突き合わせた。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。「ケ／ヶ」は事業者の正式表記（小さいヶ）に従った。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Seibu_Ikebukuro_Line",
+    "https://www.seiburailway.jp/railway/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "ikebukuro",
+      "numbering": "SI01"
+    },
+    {
+      "stationId": "shiinamachi",
+      "numbering": "SI02"
+    },
+    {
+      "stationId": "higashi-nagasaki",
+      "numbering": "SI03"
+    },
+    {
+      "stationId": "ekoda",
+      "numbering": "SI04"
+    },
+    {
+      "stationId": "sakuradai",
+      "numbering": "SI05"
+    },
+    {
+      "stationId": "nerima",
+      "numbering": "SI06"
+    },
+    {
+      "stationId": "nakamurabashi",
+      "numbering": "SI07"
+    },
+    {
+      "stationId": "fujimidai",
+      "numbering": "SI08"
+    },
+    {
+      "stationId": "nerima-takanodai",
+      "numbering": "SI09"
+    },
+    {
+      "stationId": "shakujii-koen",
+      "numbering": "SI10"
+    },
+    {
+      "stationId": "oizumi-gakuen",
+      "numbering": "SI11"
+    },
+    {
+      "stationId": "hoya",
+      "numbering": "SI12"
+    },
+    {
+      "stationId": "hibarigaoka",
+      "numbering": "SI13"
+    },
+    {
+      "stationId": "higashi-kurume",
+      "numbering": "SI14"
+    },
+    {
+      "stationId": "kiyose",
+      "numbering": "SI15"
+    },
+    {
+      "stationId": "akitsu",
+      "numbering": "SI16"
+    },
+    {
+      "stationId": "tokorozawa",
+      "numbering": "SI17"
+    },
+    {
+      "stationId": "nishi-tokorozawa",
+      "numbering": "SI18"
+    },
+    {
+      "stationId": "kotesashi",
+      "numbering": "SI19"
+    },
+    {
+      "stationId": "sayamagaoka",
+      "numbering": "SI20"
+    },
+    {
+      "stationId": "musashi-fujisawa",
+      "numbering": "SI21"
+    },
+    {
+      "stationId": "inariyama-koen",
+      "numbering": "SI22"
+    },
+    {
+      "stationId": "irumashi",
+      "numbering": "SI23"
+    },
+    {
+      "stationId": "bushi",
+      "numbering": "SI24"
+    },
+    {
+      "stationId": "motokaji",
+      "numbering": "SI25"
+    },
+    {
+      "stationId": "hanno",
+      "numbering": "SI26"
+    },
+    {
+      "stationId": "higashi-hanno",
+      "numbering": "SI27"
+    },
+    {
+      "stationId": "koma",
+      "numbering": "SI28"
+    },
+    {
+      "stationId": "musashi-yokote",
+      "numbering": "SI29"
+    },
+    {
+      "stationId": "higashi-agano",
+      "numbering": "SI30"
+    },
+    {
+      "stationId": "agano",
+      "numbering": "SI31"
+    }
+  ]
+}

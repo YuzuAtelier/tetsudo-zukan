@@ -1,0 +1,60 @@
+{
+  "id": "keisei--chiba",
+  "operatorId": "keisei",
+  "name": "京成千葉線",
+  "formalName": "千葉線",
+  "kana": "けいせいちばせん",
+  "symbol": "KS",
+  "color": "#15388B",
+  "colorName": "紺",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を日本語版・英語版Wikipediaの2系統で照合。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。「ケ／ヶ」は事業者の正式表記に従った。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Keisei_Chiba_Line",
+    "https://www.keisei.co.jp/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "keisei-tsudanuma",
+      "numbering": "KS26"
+    },
+    {
+      "stationId": "keisei-makuharihongo",
+      "numbering": "KS52"
+    },
+    {
+      "stationId": "keisei-makuhari",
+      "numbering": "KS53"
+    },
+    {
+      "stationId": "kemigawa",
+      "numbering": "KS54"
+    },
+    {
+      "stationId": "keisei-inage",
+      "numbering": "KS55"
+    },
+    {
+      "stationId": "midoridai",
+      "numbering": "KS56"
+    },
+    {
+      "stationId": "nishi-nobuto",
+      "numbering": "KS57"
+    },
+    {
+      "stationId": "shin-chiba",
+      "numbering": "KS58"
+    },
+    {
+      "stationId": "keisei-chiba",
+      "numbering": "KS59"
+    },
+    {
+      "stationId": "chiba-chuo",
+      "numbering": "KS60"
+    }
+  ]
+}

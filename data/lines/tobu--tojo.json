@@ -1,0 +1,175 @@
+{
+  "id": "tobu--tojo",
+  "operatorId": "tobu",
+  "name": "東上線",
+  "formalName": "東上本線",
+  "kana": "とうじょうせん",
+  "symbol": "TJ",
+  "color": "#000099",
+  "colorName": "紺",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（伊勢崎線は日本語版とも一致）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　霞ヶ関・鶴ヶ島は路線図上でラベルが見つからなかった（要確認）。霞ヶ関（埼玉県川越市・小さいヶ）は東京メトロの霞ケ関（大きいケ）とは別表記の別駅。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tobu_Tojo_Line",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "ikebukuro",
+      "numbering": "TJ01"
+    },
+    {
+      "stationId": "kita-ikebukuro",
+      "numbering": "TJ02"
+    },
+    {
+      "stationId": "shimo-itabashi",
+      "numbering": "TJ03"
+    },
+    {
+      "stationId": "oyama-tobu",
+      "numbering": "TJ04"
+    },
+    {
+      "stationId": "naka-itabashi",
+      "numbering": "TJ05"
+    },
+    {
+      "stationId": "tokiwadai",
+      "numbering": "TJ06"
+    },
+    {
+      "stationId": "kami-itabashi",
+      "numbering": "TJ07"
+    },
+    {
+      "stationId": "tobu-nerima",
+      "numbering": "TJ08"
+    },
+    {
+      "stationId": "shimo-akatsuka",
+      "numbering": "TJ09"
+    },
+    {
+      "stationId": "narimasu-tobu",
+      "numbering": "TJ10"
+    },
+    {
+      "stationId": "wakoshi",
+      "numbering": "TJ11"
+    },
+    {
+      "stationId": "asaka",
+      "numbering": "TJ12"
+    },
+    {
+      "stationId": "asakadai",
+      "numbering": "TJ13"
+    },
+    {
+      "stationId": "shiki",
+      "numbering": "TJ14"
+    },
+    {
+      "stationId": "yanasegawa",
+      "numbering": "TJ15"
+    },
+    {
+      "stationId": "mizuhodai",
+      "numbering": "TJ16"
+    },
+    {
+      "stationId": "tsuruse",
+      "numbering": "TJ17"
+    },
+    {
+      "stationId": "fujimino",
+      "numbering": "TJ18"
+    },
+    {
+      "stationId": "kami-fukuoka",
+      "numbering": "TJ19"
+    },
+    {
+      "stationId": "shingashi",
+      "numbering": "TJ20"
+    },
+    {
+      "stationId": "kawagoe",
+      "numbering": "TJ21"
+    },
+    {
+      "stationId": "kawagoeshi",
+      "numbering": "TJ22"
+    },
+    {
+      "stationId": "kasumigaseki-tojo",
+      "numbering": "TJ23"
+    },
+    {
+      "stationId": "tsurugashima",
+      "numbering": "TJ24"
+    },
+    {
+      "stationId": "wakaba",
+      "numbering": "TJ25"
+    },
+    {
+      "stationId": "sakado",
+      "numbering": "TJ26"
+    },
+    {
+      "stationId": "kita-sakado",
+      "numbering": "TJ27"
+    },
+    {
+      "stationId": "takasaka",
+      "numbering": "TJ28"
+    },
+    {
+      "stationId": "higashi-matsuyama",
+      "numbering": "TJ29"
+    },
+    {
+      "stationId": "shinrin-koen",
+      "numbering": "TJ30"
+    },
+    {
+      "stationId": "tsukinowa",
+      "numbering": "TJ31"
+    },
+    {
+      "stationId": "musashi-ranzan",
+      "numbering": "TJ32"
+    },
+    {
+      "stationId": "ogawamachi-saitama",
+      "numbering": "TJ33"
+    },
+    {
+      "stationId": "tobu-takezawa",
+      "numbering": "TJ34"
+    },
+    {
+      "stationId": "minami-yorii",
+      "numbering": "TJ35"
+    },
+    {
+      "stationId": "obusuma",
+      "numbering": "TJ36"
+    },
+    {
+      "stationId": "hachigata",
+      "numbering": "TJ37"
+    },
+    {
+      "stationId": "tamayodo",
+      "numbering": "TJ38"
+    },
+    {
+      "stationId": "yorii",
+      "numbering": "TJ39"
+    }
+  ]
+}

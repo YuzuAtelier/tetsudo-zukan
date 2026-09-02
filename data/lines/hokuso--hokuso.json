@@ -1,0 +1,79 @@
+{
+  "id": "hokuso--hokuso",
+  "operatorId": "hokuso",
+  "name": "北総線",
+  "formalName": "北総線",
+  "kana": "ほくそうせん",
+  "symbol": "HS",
+  "color": "#0068B7",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認。英語版は起点の京成高砂を HS10 と誤記していた（HS10は白井）ため HS01 に直し、以降の番号を1つずつ繰り下げて整合させた。ふりがなはローマ字表記から起こした。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Hokus%C5%8D_Line",
+    "https://www.hokuso-railway.co.jp/"
+  ],
+  "stations": [
+    {
+      "stationId": "keisei-takasago",
+      "numbering": "HS01"
+    },
+    {
+      "stationId": "shin-shibamata",
+      "numbering": "HS02"
+    },
+    {
+      "stationId": "yagiri",
+      "numbering": "HS03"
+    },
+    {
+      "stationId": "kita-kokubun",
+      "numbering": "HS04"
+    },
+    {
+      "stationId": "akiyama",
+      "numbering": "HS05"
+    },
+    {
+      "stationId": "higashi-matsudo",
+      "numbering": "HS06"
+    },
+    {
+      "stationId": "matsuhidai",
+      "numbering": "HS07"
+    },
+    {
+      "stationId": "omachi",
+      "numbering": "HS08"
+    },
+    {
+      "stationId": "shin-kamagaya",
+      "numbering": "HS09"
+    },
+    {
+      "stationId": "nishi-shiroi",
+      "numbering": "HS10"
+    },
+    {
+      "stationId": "shiroi",
+      "numbering": "HS11"
+    },
+    {
+      "stationId": "komuro",
+      "numbering": "HS12"
+    },
+    {
+      "stationId": "chiba-newtown-chuo",
+      "numbering": "HS13"
+    },
+    {
+      "stationId": "inzai-makinohara",
+      "numbering": "HS14"
+    },
+    {
+      "stationId": "imba-nihon-idai",
+      "numbering": "HS15"
+    }
+  ]
+}

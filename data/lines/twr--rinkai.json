@@ -1,0 +1,50 @@
+{
+  "id": "twr--rinkai",
+  "operatorId": "twr",
+  "name": "りんかい線",
+  "formalName": "東京臨海高速鉄道りんかい線",
+  "kana": "りんかいせん",
+  "symbol": "R",
+  "color": "#0072BC",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版Wikipedia（湘南モノレールは日本語版）で確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Rinkai_Line"
+  ],
+  "stations": [
+    {
+      "stationId": "shin-kiba",
+      "numbering": "R01"
+    },
+    {
+      "stationId": "shinonome",
+      "numbering": "R02"
+    },
+    {
+      "stationId": "kokusai-tenjijo",
+      "numbering": "R03"
+    },
+    {
+      "stationId": "tokyo-teleport",
+      "numbering": "R04"
+    },
+    {
+      "stationId": "tennozu-isle",
+      "numbering": "R05"
+    },
+    {
+      "stationId": "shinagawa-seaside",
+      "numbering": "R06"
+    },
+    {
+      "stationId": "oimachi",
+      "numbering": "R07"
+    },
+    {
+      "stationId": "osaki",
+      "numbering": "R08"
+    }
+  ]
+}

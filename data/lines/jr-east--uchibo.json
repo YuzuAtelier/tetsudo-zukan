@@ -1,0 +1,109 @@
+{
+  "id": "jr-east--uchibo",
+  "operatorId": "jr-east",
+  "name": "内房線",
+  "formalName": "内房線",
+  "kana": "うちぼうせん",
+  "color": "#00B2E5",
+  "colorName": "水色",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版・日本語版Wikipediaの2系統で照合。ふりがなは英語版のローマ字から起こした（日本語版のふりがなには誤りが多数あった）。駅名を路線図PDFの抽出結果と照合。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　日本語版の駅一覧は君津が丸ごと欠落していたため英語版を採用した。ふりがなも英語版ローマ字で修正（八幡宿→やわたじゅく、南三原→みなみはら）。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Uchib%C5%8D_Line",
+    "https://ja.wikipedia.org/wiki/内房線",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "soga"
+    },
+    {
+      "stationId": "hamano"
+    },
+    {
+      "stationId": "yawatajuku"
+    },
+    {
+      "stationId": "goi"
+    },
+    {
+      "stationId": "anegasaki"
+    },
+    {
+      "stationId": "nagaura"
+    },
+    {
+      "stationId": "sodegaura"
+    },
+    {
+      "stationId": "iwane"
+    },
+    {
+      "stationId": "kisarazu"
+    },
+    {
+      "stationId": "kimitsu"
+    },
+    {
+      "stationId": "aohori"
+    },
+    {
+      "stationId": "onuki"
+    },
+    {
+      "stationId": "sanukimachi"
+    },
+    {
+      "stationId": "kazusa-minato"
+    },
+    {
+      "stationId": "takeoka"
+    },
+    {
+      "stationId": "hamakanaya"
+    },
+    {
+      "stationId": "hota"
+    },
+    {
+      "stationId": "awa-katsuyama"
+    },
+    {
+      "stationId": "iwai"
+    },
+    {
+      "stationId": "tomiura"
+    },
+    {
+      "stationId": "nako-funakata"
+    },
+    {
+      "stationId": "tateyama"
+    },
+    {
+      "stationId": "kokonoe"
+    },
+    {
+      "stationId": "chikura"
+    },
+    {
+      "stationId": "chitose"
+    },
+    {
+      "stationId": "minamihara"
+    },
+    {
+      "stationId": "wadaura"
+    },
+    {
+      "stationId": "emi"
+    },
+    {
+      "stationId": "futomi"
+    },
+    {
+      "stationId": "awa-kamogawa"
+    }
+  ]
+}

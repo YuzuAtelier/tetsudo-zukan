@@ -1,0 +1,105 @@
+{
+  "id": "jr-east--oito",
+  "operatorId": "jr-east",
+  "name": "大糸線",
+  "formalName": "大糸線",
+  "kana": "おおいとせん",
+  "color": "#9370DB",
+  "colorName": "紫",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版・日本語版Wikipediaの2系統で照合。ふりがなはローマ字表記から起こした。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせて確認。　白馬より先（信濃森上・白馬大池・千国・南小谷）は路線図の外なので含めていない。有明（長野県安曇野市）はゆりかもめの有明（東京都江東区）と同名の別駅なので、ariake-nagano / ariake-tokyo に分けた。路線図は地方路線では主要駅しか描かないため、この路線には路線図に描かれていない駅がある。路線図が最後に描いている駅までを収録範囲とし、その手前は全駅を入れてある。　2026-09-02: 同名の別駅と1駅に統合されていたため「有明」を ariake-nagano（大糸線（長野県安曇野市））として分離した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/%C5%8Cito_Line",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "matsumoto"
+    },
+    {
+      "stationId": "kita-matsumoto"
+    },
+    {
+      "stationId": "shimauchi"
+    },
+    {
+      "stationId": "shimatakamatsu"
+    },
+    {
+      "stationId": "azusabashi"
+    },
+    {
+      "stationId": "hitoichiba"
+    },
+    {
+      "stationId": "nakagaya"
+    },
+    {
+      "stationId": "minami-toyoshina"
+    },
+    {
+      "stationId": "toyoshina"
+    },
+    {
+      "stationId": "hakuyacho"
+    },
+    {
+      "stationId": "hotaka"
+    },
+    {
+      "stationId": "ariake-nagano"
+    },
+    {
+      "stationId": "azumi-oiwake"
+    },
+    {
+      "stationId": "hosono"
+    },
+    {
+      "stationId": "kita-hosono"
+    },
+    {
+      "stationId": "shinano-matsukawa"
+    },
+    {
+      "stationId": "azumi-kutsukake"
+    },
+    {
+      "stationId": "shinano-tokiwa"
+    },
+    {
+      "stationId": "minami-omachi"
+    },
+    {
+      "stationId": "shinano-omachi"
+    },
+    {
+      "stationId": "kita-omachi"
+    },
+    {
+      "stationId": "shinano-kizaki"
+    },
+    {
+      "stationId": "inao"
+    },
+    {
+      "stationId": "uminokuchi"
+    },
+    {
+      "stationId": "yanaba"
+    },
+    {
+      "stationId": "minami-kamishiro"
+    },
+    {
+      "stationId": "kamishiro"
+    },
+    {
+      "stationId": "iimori"
+    },
+    {
+      "stationId": "hakuba"
+    }
+  ]
+}

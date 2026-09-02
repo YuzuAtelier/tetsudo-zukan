@@ -1,0 +1,51 @@
+{
+  "id": "tobu--kiryu",
+  "operatorId": "tobu",
+  "name": "桐生線",
+  "formalName": "桐生線",
+  "kana": "きりゅうせん",
+  "symbol": "TI",
+  "color": "#2B8ACD",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（伊勢崎線は日本語版とも一致）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tobu_Kiryu_Line",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "ota-tobu",
+      "numbering": "TI18"
+    },
+    {
+      "stationId": "sammaibashi",
+      "numbering": "TI51"
+    },
+    {
+      "stationId": "jiroembashi",
+      "numbering": "TI52"
+    },
+    {
+      "stationId": "yabuzuka",
+      "numbering": "TI53"
+    },
+    {
+      "stationId": "azami",
+      "numbering": "TI54"
+    },
+    {
+      "stationId": "shin-kiryu",
+      "numbering": "TI55"
+    },
+    {
+      "stationId": "aioi",
+      "numbering": "TI56"
+    },
+    {
+      "stationId": "akagi",
+      "numbering": "TI57"
+    }
+  ]
+}

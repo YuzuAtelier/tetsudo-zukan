@@ -1,0 +1,88 @@
+{
+  "id": "keio--inokashira",
+  "operatorId": "keio",
+  "name": "京王井の頭線",
+  "formalName": "井の頭線",
+  "kana": "けいおういのかしらせん",
+  "symbol": "IN",
+  "color": "#000088",
+  "colorName": "紺",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、京王電鉄公式サイトと突き合わせた。ふりがなはローマ字表記から起こした。「ケ／ヶ」は事業者の正式表記（小さいヶ）に従った。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Keio_Inokashira_Line",
+    "https://www.keio.co.jp/train/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "shibuya",
+      "numbering": "IN01"
+    },
+    {
+      "stationId": "shinsen",
+      "numbering": "IN02"
+    },
+    {
+      "stationId": "komaba-todaimae",
+      "numbering": "IN03"
+    },
+    {
+      "stationId": "ikenoue",
+      "numbering": "IN04"
+    },
+    {
+      "stationId": "shimo-kitazawa",
+      "numbering": "IN05"
+    },
+    {
+      "stationId": "shindaita",
+      "numbering": "IN06"
+    },
+    {
+      "stationId": "higashi-matsubara",
+      "numbering": "IN07"
+    },
+    {
+      "stationId": "meidaimae",
+      "numbering": "IN08"
+    },
+    {
+      "stationId": "eifukucho",
+      "numbering": "IN09"
+    },
+    {
+      "stationId": "nishi-eifuku",
+      "numbering": "IN10"
+    },
+    {
+      "stationId": "hamadayama",
+      "numbering": "IN11"
+    },
+    {
+      "stationId": "takaido",
+      "numbering": "IN12"
+    },
+    {
+      "stationId": "fujimigaoka",
+      "numbering": "IN13"
+    },
+    {
+      "stationId": "kugayama",
+      "numbering": "IN14"
+    },
+    {
+      "stationId": "mitakadai",
+      "numbering": "IN15"
+    },
+    {
+      "stationId": "inokashira-koen",
+      "numbering": "IN16"
+    },
+    {
+      "stationId": "kichijoji",
+      "numbering": "IN17"
+    }
+  ]
+}

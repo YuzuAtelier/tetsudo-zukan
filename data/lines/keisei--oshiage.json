@@ -1,0 +1,44 @@
+{
+  "id": "keisei--oshiage",
+  "operatorId": "keisei",
+  "name": "京成押上線",
+  "formalName": "押上線",
+  "kana": "けいせいおしあげせん",
+  "symbol": "KS",
+  "color": "#15388B",
+  "colorName": "紺",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を日本語版・英語版Wikipediaの2系統で照合。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。「ケ／ヶ」は事業者の正式表記に従った。　終点の青砥(KS09)を本線と共有している。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Keisei_Oshiage_Line",
+    "https://www.keisei.co.jp/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "oshiage",
+      "numbering": "KS45"
+    },
+    {
+      "stationId": "keisei-hikifune",
+      "numbering": "KS46"
+    },
+    {
+      "stationId": "yahiro",
+      "numbering": "KS47"
+    },
+    {
+      "stationId": "yotsugi",
+      "numbering": "KS48"
+    },
+    {
+      "stationId": "keisei-tateishi",
+      "numbering": "KS49"
+    },
+    {
+      "stationId": "aoto",
+      "numbering": "KS09"
+    }
+  ]
+}

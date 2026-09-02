@@ -1,0 +1,94 @@
+{
+  "id": "tama-monorail--tama",
+  "operatorId": "tama-monorail",
+  "name": "多摩都市モノレール線",
+  "formalName": "多摩都市モノレール線",
+  "kana": "たまとしものれーるせん",
+  "symbol": "TT",
+  "color": "#00A650",
+  "colorName": "緑",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版Wikipedia（湘南モノレールは日本語版）で確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tama_Toshi_Monorail_Line"
+  ],
+  "stations": [
+    {
+      "stationId": "tama-center-monorail",
+      "numbering": "TT01"
+    },
+    {
+      "stationId": "matsugaya",
+      "numbering": "TT02"
+    },
+    {
+      "stationId": "otsuka-teikyodaigaku",
+      "numbering": "TT03"
+    },
+    {
+      "stationId": "chuodaigaku-meiseidaigaku",
+      "numbering": "TT04"
+    },
+    {
+      "stationId": "tama-dobutsukoen",
+      "numbering": "TT05"
+    },
+    {
+      "stationId": "hodokubo",
+      "numbering": "TT06"
+    },
+    {
+      "stationId": "takahatafudo",
+      "numbering": "TT07"
+    },
+    {
+      "stationId": "manganji",
+      "numbering": "TT08"
+    },
+    {
+      "stationId": "koshu-kaido",
+      "numbering": "TT09"
+    },
+    {
+      "stationId": "shibasaki-taiikukan",
+      "numbering": "TT10"
+    },
+    {
+      "stationId": "tachikawa-minami",
+      "numbering": "TT11"
+    },
+    {
+      "stationId": "tachikawa-kita",
+      "numbering": "TT12"
+    },
+    {
+      "stationId": "takamatsu",
+      "numbering": "TT13"
+    },
+    {
+      "stationId": "tachihi",
+      "numbering": "TT14"
+    },
+    {
+      "stationId": "izumi-taiikukan",
+      "numbering": "TT15"
+    },
+    {
+      "stationId": "sunagawa-nanaban",
+      "numbering": "TT16"
+    },
+    {
+      "stationId": "tamagawa-josui",
+      "numbering": "TT17"
+    },
+    {
+      "stationId": "sakura-kaido",
+      "numbering": "TT18"
+    },
+    {
+      "stationId": "kamikitadai",
+      "numbering": "TT19"
+    }
+  ]
+}

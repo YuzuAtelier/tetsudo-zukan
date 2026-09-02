@@ -1,0 +1,53 @@
+{
+  "id": "izuhakone--daiyuzan",
+  "operatorId": "izuhakone",
+  "name": "伊豆箱根鉄道大雄山線",
+  "formalName": "大雄山線",
+  "kana": "いずはこねてつどうだいゆうざんせん",
+  "color": "#E85298",
+  "colorName": "ピンク",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版（一部日本語版）Wikipediaで確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　　この路線は路線図PDFの描画範囲の外（「至○○」の注記のみ）にあり、路線図との駅名照合ができていない。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Izuhakone_Railway_Daiy%C5%ABzan_Line"
+  ],
+  "stations": [
+    {
+      "stationId": "odawara"
+    },
+    {
+      "stationId": "midoricho"
+    },
+    {
+      "stationId": "isaida"
+    },
+    {
+      "stationId": "gohyaku-rakan"
+    },
+    {
+      "stationId": "anabe"
+    },
+    {
+      "stationId": "iidaoka"
+    },
+    {
+      "stationId": "sagami-numata"
+    },
+    {
+      "stationId": "iwahara"
+    },
+    {
+      "stationId": "tsukahara"
+    },
+    {
+      "stationId": "wadagahara"
+    },
+    {
+      "stationId": "fujifilm-mae"
+    },
+    {
+      "stationId": "daiyuzan"
+    }
+  ]
+}

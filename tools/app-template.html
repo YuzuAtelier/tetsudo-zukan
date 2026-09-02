@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>首都圏てつどうずかん</title>
+<meta name="description" content="首都圏の鉄道173路線・2159駅を、漢字とふりがなで調べられる図鑑。">
+<!-- ホーム画面に置いてアプリのように使うための設定 -->
+<link rel="manifest" href="./manifest.webmanifest">
+<meta name="theme-color" content="#ffc93c">
+<link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="てつどうずかん">
+<style>
+  :root{
+    --bg:#eef1f7; --card:#ffffff; --ink:#1b1f2a; --muted:#6b7280;
+    --line:#dfe3ec; --accent:#2f6df6; --radius:16px;
+    --shadow:0 1px 2px rgba(20,25,40,.06), 0 6px 18px rgba(20,25,40,.06);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic UI","Meiryo",system-ui,sans-serif;
+    line-height:1.5; -webkit-text-size-adjust:100%;
+    /* 指で押したときの青いちらつきを消し、自前の反応色だけを見せる */
+    -webkit-tap-highlight-color:transparent;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 14px 64px}
+
+  /* ---- ヘッダー ---- */
+  header{
+    position:sticky; top:0; z-index:20; background:rgba(238,241,247,.94);
+    backdrop-filter:blur(8px); border-bottom:1px solid var(--line);
+  }
+  .hd{max-width:760px;margin:0 auto;padding:10px 14px 12px}
+  .hd-top{display:flex;align-items:center;gap:8px;min-height:40px}
+  .brand{font-size:19px;font-weight:800;letter-spacing:.02em;min-width:0}
+  .brand small{display:block;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.08em}
+  /* 路線・駅を見ているときは、いま何を見ているかを題名に出す。
+     ボタンが2つ並ぶので、題名は小さくして1行に収める */
+  .hd-top.nav .brand{font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .hd-top.nav .brand small{display:none}
+  .navbtn{
+    appearance:none;border:1px solid var(--line);background:var(--card);color:var(--ink);
+    font:inherit;font-size:14px;font-weight:700;padding:9px 13px;border-radius:999px;cursor:pointer;
+    display:none;align-items:center;gap:4px;white-space:nowrap;flex:none;min-height:40px;
+  }
+  .navbtn:hover{background:#f3f5fa}
+  .navbtn:active{background:#e2e8f8}
+  .navbtn.on{display:inline-flex}
+
+  /* ---- 事業者タブ（横スクロール） ---- */
+  .tabs{
+    display:none;gap:8px;overflow-x:auto;overflow-y:hidden;
+    max-width:760px;margin:0 auto;padding:0 14px 10px;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none;
+  }
+  .tabs::-webkit-scrollbar{display:none}
+  .tabs.on{display:flex}
+  .tab{
+    flex:none;appearance:none;border:1px solid var(--line);background:var(--card);color:var(--ink);
+    font:inherit;font-size:14px;font-weight:700;padding:8px 15px;border-radius:999px;
+    cursor:pointer;white-space:nowrap;min-height:44px;   /* 指で押しやすい大きさ */
+  }
+  .tab:active{background:#e2e8f8}
+  .tab.on{background:var(--accent);border-color:var(--accent);color:#fff}
+  .search{position:relative;margin-top:10px}
+  .search input{
+    width:100%;font:inherit;font-size:16px;padding:12px 40px 12px 40px;
+    border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);
+    box-shadow:var(--shadow);
+  }
+  .search input:focus{outline:2px solid var(--accent);outline-offset:1px}
+  .search .ico{position:absolute;left:14px;top:50%;transform:translateY(-50%);opacity:.45}
+  .search .clr{
+    position:absolute;right:8px;top:50%;transform:translateY(-50%);
+    border:0;background:#e6e9f2;color:#555;border-radius:50%;width:26px;height:26px;
+    font:inherit;font-size:15px;line-height:1;cursor:pointer;display:none;
+  }
+  .search .clr.on{display:block}
+
+  /* ---- 共通パーツ ---- */
+  /* 事業者の見出し。分類でしぼると1画面に収まらないことがあるので、
+     スクロール中もどの事業者を見ているか分かるよう上部に貼りつける。
+     .opsec で1事業者ずつ囲ってあるので、見出しが積み重なることはない */
+  .opsec{margin-top:14px}
+  h2.sec{
+    position:sticky; top:calc(var(--hh, 177px) - 1px); z-index:5;
+    font-size:13px;font-weight:800;color:var(--muted);letter-spacing:.12em;
+    margin:0;padding:8px 0;background:var(--bg);
+  }
+  .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+  .row{
+    display:flex;align-items:center;gap:12px;width:100%;text-align:left;
+    padding:14px;border:0;border-top:1px solid var(--line);background:none;
+    font:inherit;color:inherit;cursor:pointer;min-height:66px;
+  }
+  .row:first-child{border-top:0}
+  .row:hover{background:#f5f7fc}
+  .row:active{background:#e2e8f8}
+  .row .chev{margin-left:auto;color:#c3c8d4;font-size:20px;flex:none}
+
+  /* 駅名: ひらがなを上、漢字を下に置く */
+  .nm{min-width:0}
+  .nm .kana{font-size:12px;color:var(--muted);letter-spacing:.04em;line-height:1.25}
+  .nm .kanji{font-size:19.5px;font-weight:700;letter-spacing:.01em;line-height:1.3}
+  .nm .sub{font-size:12px;color:var(--muted);font-weight:600}
+  .nm.sm .kanji{font-size:17px}
+
+  /* 路線記号バッジ（自前描画・公式ロゴは使わない） */
+  .badge{
+    flex:none;width:44px;height:44px;border-radius:50%;background:#fff;
+    border:3.5px solid var(--c);display:flex;flex-direction:column;
+    align-items:center;justify-content:center;color:var(--c);line-height:1;
+  }
+  .badge .s{font-size:11px;font-weight:800;letter-spacing:.02em}
+  .badge .n{font-size:15px;font-weight:800;margin-top:1px;font-variant-numeric:tabular-nums}
+  .badge.only .s{font-size:19px}
+  .badge.sm{width:36px;height:36px;border-width:3px}
+  .badge.sm .s{font-size:9px} .badge.sm .n{font-size:12.5px}
+  .badge.sm.only .s{font-size:16px}
+  /* 駅ナンバリングが無い路線は、記号のかわりに路線カラーの丸を出す */
+  .badge.dot{background:var(--c);border-color:#fff;box-shadow:0 0 0 3.5px var(--c)}
+  .badge.dot.sm{box-shadow:0 0 0 3px var(--c)}
+  .mini.dot{background:var(--c2);border-color:#fff;box-shadow:0 0 0 2.5px var(--c2)}
+
+  .pill{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#fff;background:var(--c)}
+
+  /* ---- 路線ヘッダー ---- */
+  .lhead{display:flex;align-items:center;gap:14px;padding:16px;background:var(--card);
+         border-radius:var(--radius);box-shadow:var(--shadow);border-left:8px solid var(--c)}
+  .lhead .t{min-width:0}
+  .lhead .t .kana{font-size:12px;color:var(--muted)}
+  .lhead .t .nm2{font-size:23px;font-weight:800;line-height:1.25}
+  .lhead .t .meta{font-size:12px;color:var(--muted);margin-top:3px}
+  .swatch{width:13px;height:13px;border-radius:4px;background:var(--c);display:inline-block;
+          vertical-align:-2px;margin-right:5px}
+
+  /* ---- 駅リスト（縦のレール） ---- */
+  .rail{position:relative;background:var(--card);border-radius:var(--radius);
+        box-shadow:var(--shadow);padding:6px 0;margin-top:12px}
+  .stop{display:flex;align-items:center;gap:13px;width:100%;text-align:left;
+        padding:11px 14px;border:0;background:none;font:inherit;color:inherit;cursor:pointer;position:relative;
+        min-height:64px}
+  .stop:hover{background:#f5f7fc}
+  .stop:active{background:#e2e8f8}
+  /* 駅詳細から路線にもどってきたとき、その駅を一瞬光らせて居場所を知らせる */
+  @keyframes findme{
+    0%,60%{background:#fff3bf}
+    100%{background:transparent}
+  }
+  .stop.focus{animation:findme 2.4s ease-out}
+  .stop.focus .nm .kanji{color:#8a6d00}
+  .track{position:relative;flex:none;width:44px;display:flex;justify-content:center}
+  /* 駅と駅をつなぐ線 */
+  .stop::before{content:"";position:absolute;left:calc(14px + 22px - 3px);top:0;bottom:0;
+                width:6px;background:var(--c)}
+  .stop:first-child::before{top:50%}
+  .stop:last-child::before{bottom:50%}
+  .stop .track > *{position:relative;z-index:1}
+  .xfer{margin-left:auto;display:flex;flex-wrap:wrap;gap:4px;justify-content:flex-end;max-width:44%}
+  .xfer .mini{width:22px;height:22px;border-radius:50%;border:2.5px solid var(--c2);background:#fff;
+              color:var(--c2);font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center}
+
+  /* ---- 駅詳細 ---- */
+  .shead{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 16px}
+  .shead .kana{font-size:14px;color:var(--muted);letter-spacing:.06em}
+  .shead .kanji{font-size:31px;font-weight:800;line-height:1.2}
+  .shead .sub{font-size:14px;color:var(--muted);font-weight:700;margin-top:2px}
+  .shead .cnt{font-size:13px;color:var(--muted);margin-top:8px}
+  .lncard{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);
+          margin-top:11px;padding:13px 14px;border-left:8px solid var(--c)}
+  .lncard .hd2{display:flex;align-items:center;gap:11px}
+  .lncard .hd2 .t{font-size:17px;font-weight:800}
+  .lncard .hd2 .t small{display:block;font-size:11px;font-weight:600;color:var(--muted)}
+  .lncard .go{margin-left:auto;border:1px solid var(--line);background:#fff;color:var(--ink);
+              font:inherit;font-size:12px;font-weight:700;padding:6px 11px;border-radius:999px;cursor:pointer}
+  .lncard .go:hover{background:#f3f5fa}
+  .nbrs{display:flex;gap:8px;margin-top:11px;font-size:12.5px}
+  .nbr{flex:1;min-width:0;background:#f5f7fc;border-radius:11px;padding:10px;
+       border:0;font:inherit;text-align:left;cursor:pointer;color:inherit;min-height:52px}
+  .nbr:hover{background:#eaeefa}
+  .nbr:active{background:#dde4f7}
+  .nbr .lbl{font-size:10.5px;color:var(--muted);font-weight:700;letter-spacing:.06em}
+  .nbr .v{font-weight:700;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .nbr.end{color:var(--muted);cursor:default;background:#f7f8fb}
+  .nbr.end:hover{background:#f7f8fb}
+
+  .empty{text-align:center;color:var(--muted);padding:40px 16px;font-size:14px}
+  .note{font-size:11.5px;color:var(--muted);margin-top:26px;line-height:1.7;text-align:center}
+  .warn{background:#fff8e6;border:1px solid #f2dfa8;color:#7a5c00;border-radius:12px;
+        padding:9px 12px;font-size:12px;margin-top:12px}
+  @media (max-width:430px){
+    /* スマホでは英字の副題を出さない。子どもには読めず、画面が狭くなるだけなので */
+    .brand small{display:none}
+    .brand{font-size:18px}
+    .xfer{max-width:38%}
+  }
+  @media (max-height:500px){
+    /* スマホを横に倒したとき。ヘッダーを詰めて一覧を見る場所を確保する */
+    .brand small{display:none}
+    .brand{font-size:17px}
+    .hd{padding:6px 14px 7px}
+    .search{margin-top:7px}
+    .search input{padding:9px 40px}
+    .tabs{padding-bottom:7px}
+    .tab{min-height:38px;padding:6px 14px}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hd">
+    <div class="hd-top" id="hdtop">
+      <button class="navbtn" id="back" type="button">‹ もどる</button>
+      <button class="navbtn" id="top" type="button">トップ</button>
+      <div class="brand" id="brand">首都圏てつどうずかん<small>SHUTOKEN TETSUDO ZUKAN</small></div>
+    </div>
+    <div class="search">
+      <span class="ico">🔍</span>
+      <input id="q" type="search" inputmode="search" autocomplete="off"
+             placeholder="えきや ろせんを さがす">
+      <button class="clr" id="clr" type="button" aria-label="消す">×</button>
+    </div>
+  </div>
+  <div class="tabs" id="tabs"></div>
+</header>
+
+<div class="wrap" id="view"></div>
+
+<script id="data" type="application/json">__RAILWAY_DATA__</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById("data").textContent);
+var LINES = DATA.lines, STATIONS = {}, OPS = {};
+DATA.stations.forEach(function(s){ STATIONS[s.id] = s; });
+DATA.operators.forEach(function(o){ OPS[o.id] = o; });
+
+// 駅 -> その駅を通る路線
+var BY_STATION = {};
+LINES.forEach(function(L){
+  L.stations.forEach(function(e, i){
+    (BY_STATION[e.stationId] || (BY_STATION[e.stationId] = [])).push({line:L, idx:i, numbering:e.numbering});
+  });
+});
+
+// ---- ちいさな道具 ----
+function el(tag, cls, txt){
+  var n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (txt != null) n.textContent = txt;
+  return n;
+}
+function kataToHira(s){
+  return s.replace(/[ァ-ヶ]/g, function(c){
+    return String.fromCharCode(c.charCodeAt(0) - 0x60);
+  });
+}
+function norm(s){
+  var t = String(s || "");
+  // 半角カタカナ・全角英数を先に寄せてから、カタカナをひらがなに直す
+  try { t = t.normalize("NFKC"); } catch (e) {}
+  return kataToHira(t.toLowerCase()).replace(/[\s　\-‐－・]/g, "");
+}
+function fullName(st){ return st.name + (st.subName ? "〈" + st.subName + "〉" : ""); }
+function fullKana(st){ return st.kana + (st.subKana ? "〈" + st.subKana + "〉" : ""); }
+
+// 駅名ブロック（ひらがなを上、漢字を下）
+function nameBlock(st, small){
+  var b = el("div", "nm" + (small ? " sm" : ""));
+  b.appendChild(el("div", "kana", st.kana));
+  var k = el("div", "kanji", st.name);
+  b.appendChild(k);
+  if (st.subName){
+    b.appendChild(el("div", "sub", "〈" + st.subName + "〉 " + st.subKana));
+  }
+  return b;
+}
+// 路線記号バッジ
+// 駅ナンバリングが無い路線（総武本線など）は記号を持たないので、路線カラーの丸を出す
+function badge(line, numbering, small){
+  var m = /^([A-Za-z]+)(\d+)$/.exec(numbering || "");
+  if (!m && !line.symbol){
+    var d = el("div", "badge dot" + (small ? " sm" : ""));
+    d.style.setProperty("--c", line.color);
+    d.title = line.name;
+    return d;
+  }
+  var b = el("div", "badge" + (small ? " sm" : "") + (m ? "" : " only"));
+  b.style.setProperty("--c", line.color);
+  b.appendChild(el("div", "s", m ? m[1] : line.symbol));
+  if (m) b.appendChild(el("div", "n", m[2]));
+  return b;
+}
+// 乗りかえ表示用の小さい丸。記号が無い路線は色だけの丸にする
+function mini(line){
+  var m = el("div", "mini" + (line.symbol ? "" : " dot"), line.symbol || "");
+  m.style.setProperty("--c2", line.color);
+  m.title = line.name;
+  return m;
+}
+// 「JY02 神田」のような表示。駅番号が無ければ駅名だけ
+function stopLabel(entry, st){ return (entry.numbering ? entry.numbering + " " : "") + st.name; }
+function chev(){ return el("div", "chev", "›"); }
+
+// ---- 画面 ----
+var view  = document.getElementById("view");
+var back  = document.getElementById("back");
+var topBtn= document.getElementById("top");
+var hdtop = document.getElementById("hdtop");
+var brand = document.getElementById("brand");
+var tabs  = document.getElementById("tabs");
+var qbox  = document.getElementById("q");
+var clr   = document.getElementById("clr");
+var stack = [];
+
+// スマホの「戻る」（Androidの戻るボタン／iOSのスワイプ）でも1画面ずつもどれるように、
+// 画面を進むたびに履歴を1つ積む。file:// で開くと使えない環境もあるので必ず try で囲む
+function pushHistory(){
+  try { history.pushState({ d: stack.length }, ""); } catch (e) {}
+}
+function resetHistory(){
+  try { history.replaceState({ d: 1 }, ""); } catch (e) {}
+}
+window.addEventListener("popstate", function(e){
+  var d = (e.state && e.state.d) || 1;
+  while (stack.length > d) stack.pop();
+  var s = stack[stack.length - 1];
+  render(s); updateNav(s); window.scrollTo(0, s.y || 0);
+});
+
+// 画面を離れるときスクロール位置を覚えておき、もどったら同じ場所を出す
+function go(state, push){
+  var isPush = (push !== false);
+  if (isPush){
+    if (stack.length) stack[stack.length - 1].y = window.scrollY;
+    stack.push(state);
+    pushHistory();
+  }
+  render(state);
+  updateNav(state);
+  // 駅からその路線を開いたときは、その駅まで送って光らせる
+  var spot = (isPush && state.v === "line" && state.focus)
+    ? view.querySelector(".stop.focus") : null;
+  if (spot){
+    var head = document.querySelector("header").getBoundingClientRect().height;
+    window.scrollTo(0, Math.max(0, window.scrollY + spot.getBoundingClientRect().top - head - 12));
+  } else {
+    window.scrollTo(0, state.y || 0);
+  }
+}
+back.onclick = function(){
+  if (stack.length <= 1) return;
+  // 履歴が使えるなら history.back() に任せる（popstate 側で画面をもどす）。
+  // 使えない環境では自前でもどす
+  var before = stack.length;
+  try { history.back(); } catch (e) {}
+  setTimeout(function(){
+    if (stack.length === before){ stack.pop(); go(stack[stack.length - 1], false); }
+  }, 60);
+};
+topBtn.onclick = function(){
+  qbox.value = ""; clr.classList.remove("on");
+  var op = null;                       // 選んでいた事業者タブは保ったままにする
+  for (var i = stack.length - 1; i >= 0; i--){ if (stack[i].v === "home"){ op = stack[i].op; break; } }
+  stack = [{ v:"home", op:op }];
+  resetHistory();
+  go(stack[0], false);
+};
+
+// 見出しとボタンの出しわけ。いま何を見ているかを題名に出す
+function updateNav(s){
+  var isHome = (s.v === "home");
+  back.classList.toggle("on", stack.length > 1);
+  topBtn.classList.toggle("on", !isHome);
+  hdtop.classList.toggle("nav", !isHome);
+  tabs.classList.toggle("on", isHome);
+  if (isHome){
+    brand.innerHTML = "首都圏てつどうずかん<small>SHUTOKEN TETSUDO ZUKAN</small>";
+  } else if (s.v === "line"){
+    var L = lineById(s.id);
+    brand.textContent = L ? L.name : "ろせん";
+  } else if (s.v === "station"){
+    var st = STATIONS[s.id];
+    brand.textContent = st ? st.name + " えき" : "えき";
+  } else {
+    brand.textContent = "けんさく";
+  }
+  syncHeaderHeight();   // タブの出し入れで高さが変わるので貼りつけ位置を取り直す
+}
+
+function lineById(id){
+  for (var i = 0; i < LINES.length; i++) if (LINES[i].id === id) return LINES[i];
+  return null;
+}
+
+function render(s){
+  view.innerHTML = "";
+  if (s.v === "home")    return viewHome(s.op);
+  if (s.v === "line")    return viewLine(s.id, s.focus);
+  if (s.v === "station") return viewStation(s.id);
+  if (s.v === "search")  return viewSearch(s.q);
+}
+
+// ---- 大分類タブ ----
+// JR／地下鉄／私鉄／モノレール・新交通／その他 の5つ。事業者ではなく種類でまとめる
+function buildTabs(){
+  var list = [{ id:null, label:"ぜんぶ" }].concat(DATA.categories);
+  list.forEach(function(t){
+    var b = el("button", "tab", t.label); b.type = "button";
+    b.dataset.cat = t.id == null ? "" : t.id;
+    b.onclick = function(){ selectCat(t.id); };
+    tabs.appendChild(b);
+  });
+}
+function selectCat(catId){
+  var s = stack[stack.length - 1];
+  if (s.v !== "home"){ go({ v:"home", op:catId }); return; }
+  s.op = catId; s.y = 0;               // タブの切りかえで履歴は増やさない
+  render(s); markTabs(catId);
+  window.scrollTo(0, 0);
+}
+function markTabs(catId){
+  var want = catId == null ? "" : catId;
+  Array.prototype.forEach.call(tabs.children, function(b){
+    var on = (b.dataset.cat === want);
+    b.classList.toggle("on", on);
+    if (on && b.scrollIntoView) b.scrollIntoView({ block:"nearest", inline:"center" });
+  });
+}
+// 見出しを画面上部に貼りつけるため、ヘッダーの高さを CSS に伝える
+function syncHeaderHeight(){
+  var h = document.querySelector("header").getBoundingClientRect().height;
+  document.documentElement.style.setProperty("--hh", Math.round(h) + "px");
+}
+window.addEventListener("resize", syncHeaderHeight);
+window.addEventListener("orientationchange", function(){ setTimeout(syncHeaderHeight, 200); });
+
+// ① 路線いちらん（catId を渡すとその分類だけにしぼる）
+function viewHome(catId){
+  markTabs(catId);
+  var order = DATA.operators.map(function(o){ return o.id; });
+  var shown = 0, shownSt = 0;
+  order.forEach(function(opId){
+    var ls = LINES.filter(function(L){
+      return L.operatorId === opId && (!catId || L.category === catId);
+    });
+    if (!ls.length) return;
+    shown += ls.length;
+    ls.forEach(function(L){ shownSt += L.stations.length; });
+    // 事業者ごとに囲っておく。こうしないと貼りついた見出しが次々と積み重なってしまう
+    var sec = el("section", "opsec");
+    sec.appendChild(el("h2", "sec", OPS[opId].shortName));
+    var c = el("div", "card");
+    ls.forEach(function(L){
+      var r = el("button", "row"); r.type = "button";
+      r.appendChild(badge(L, null));
+      var nm = el("div", "nm");
+      nm.appendChild(el("div", "kana", L.kana));
+      nm.appendChild(el("div", "kanji", L.name));
+      nm.appendChild(el("div", "sub", L.stations.length + "えき"));
+      r.appendChild(nm);
+      r.appendChild(chev());
+      r.onclick = function(){ go({v:"line", id:L.id}); };
+      c.appendChild(r);
+    });
+    sec.appendChild(c);
+    view.appendChild(sec);
+  });
+  var n = el("div", "note");
+  var cat = catId && DATA.categories.filter(function(c){ return c.id === catId; })[0];
+  n.innerHTML = cat
+    ? cat.label + "：" + shown + "ろせん / " + shownSt + "えき"
+    : DATA.lines.length + "ろせん / " + DATA.stations.length + "えき<br>"
+      + "データは <code>data/</code> の JSON から作っています。";
+  view.appendChild(n);
+  if (LINES.some(function(L){ return !L.verified; })){
+    var w = el("div", "warn",
+      "⚠ このデータはまだ人の確認が済んでいません（verified: false）。駅の順番はかならず路線図で確かめてください。");
+    view.appendChild(w);
+  }
+}
+
+// ② 路線 → 駅（起点から順）。focus に駅idを渡すとその駅を目立たせる
+function viewLine(id, focus){
+  var L = lineById(id);
+  if (!L) return;
+  var h = el("div", "lhead"); h.style.setProperty("--c", L.color);
+  h.appendChild(badge(L, null));
+  var t = el("div", "t");
+  t.appendChild(el("div", "kana", L.kana));
+  t.appendChild(el("div", "nm2", L.name));
+  var meta = el("div", "meta");
+  meta.innerHTML = '<span class="swatch"></span>' + L.colorName + "（" + L.color + "） ・ "
+    + OPS[L.operatorId].shortName + " ・ " + L.stations.length + "えき";
+  t.appendChild(meta);
+  h.appendChild(t);
+  view.appendChild(h);
+
+  var rail = el("div", "rail");
+  L.stations.forEach(function(e, i){
+    var st = STATIONS[e.stationId];
+    var b = el("button", "stop" + (focus && st.id === focus ? " focus" : "")); b.type = "button";
+    b.style.setProperty("--c", L.color);
+    var tr = el("div", "track");
+    tr.appendChild(badge(L, e.numbering, true));
+    b.appendChild(tr);
+    b.appendChild(nameBlock(st));
+    // 乗りかえできる路線
+    var others = (BY_STATION[st.id] || []).filter(function(x){ return x.line.id !== L.id; });
+    if (others.length){
+      var x = el("div", "xfer");
+      others.forEach(function(o){ x.appendChild(mini(o.line)); });
+      b.appendChild(x);
+    }
+    b.onclick = function(){ go({v:"station", id:st.id}); };
+    rail.appendChild(b);
+  });
+  view.appendChild(rail);
+
+  if (!L.verified){
+    view.appendChild(el("div", "warn",
+      "⚠ この路線はまだ人の確認が済んでいません。駅の順番を路線図で確かめてください。"));
+  }
+  var n = el("div", "note");
+  var hasNum = L.stations.some(function(s){ return !!s.numbering; });
+  n.textContent = "正式名称：" + L.formalName + (hasNum ? " ／ 起点は駅番号の01がわ" : "");
+  view.appendChild(n);
+}
+
+// ③ 駅 → つながる全路線
+function viewStation(id){
+  var st = STATIONS[id];
+  if (!st) return;
+  var entries = BY_STATION[id] || [];
+  var h = el("div", "shead");
+  h.appendChild(el("div", "kana", st.kana));
+  h.appendChild(el("div", "kanji", st.name));
+  if (st.subName) h.appendChild(el("div", "sub", "〈" + st.subName + "〉 " + st.subKana));
+  h.appendChild(el("div", "cnt", entries.length + "ろせんが とまります"));
+  view.appendChild(h);
+
+  entries.forEach(function(e){
+    var L = e.line;
+    var c = el("div", "lncard"); c.style.setProperty("--c", L.color);
+    var hd = el("div", "hd2");
+    hd.appendChild(badge(L, e.numbering, true));
+    var t = el("div", "t"); t.textContent = L.name;
+    t.appendChild(el("small", null, OPS[L.operatorId].shortName + " ・ " + L.colorName));
+    hd.appendChild(t);
+    var go2 = el("button", "go", "ろせんを見る"); go2.type = "button";
+    go2.onclick = function(){ go({v:"line", id:L.id, focus:st.id}); };
+    hd.appendChild(go2);
+    c.appendChild(hd);
+
+    var nb = el("div", "nbrs");
+    [[-1, "まえの えき"], [1, "つぎの えき"]].forEach(function(p){
+      var j = e.idx + p[0], next = L.stations[j];
+      if (!next){
+        var d = el("div", "nbr end");
+        d.appendChild(el("div", "lbl", p[1]));
+        d.appendChild(el("div", "v", "— しゅうてん —"));
+        nb.appendChild(d);
+        return;
+      }
+      var ns = STATIONS[next.stationId];
+      var bt = el("button", "nbr"); bt.type = "button";
+      bt.appendChild(el("div", "lbl", p[1]));
+      bt.appendChild(el("div", "v", stopLabel(next, ns)));
+      bt.onclick = function(){ go({v:"station", id:ns.id}); };
+      nb.appendChild(bt);
+    });
+    c.appendChild(nb);
+    view.appendChild(c);
+  });
+}
+
+// 検索
+function viewSearch(q){
+  var k = norm(q);
+  var ls = LINES.filter(function(L){
+    return norm(L.name).indexOf(k) >= 0 || norm(L.kana).indexOf(k) >= 0
+        || norm(L.symbol) === k || norm(L.formalName).indexOf(k) >= 0;
+  });
+  var sts = DATA.stations.filter(function(s){
+    if (norm(fullName(s)).indexOf(k) >= 0 || norm(fullKana(s)).indexOf(k) >= 0) return true;
+    return (BY_STATION[s.id] || []).some(function(e){ return norm(e.numbering).indexOf(k) >= 0; });
+  });
+
+  if (!ls.length && !sts.length){
+    view.appendChild(el("div", "empty", "「" + q + "」は みつかりませんでした"));
+    return;
+  }
+  if (ls.length){
+    var s1 = el("section", "opsec");
+    s1.appendChild(el("h2", "sec", "ろせん " + ls.length + "けん"));
+    var c1 = el("div", "card");
+    ls.forEach(function(L){
+      var r = el("button", "row"); r.type = "button";
+      r.appendChild(badge(L, null, true));
+      var nm = el("div", "nm sm");
+      nm.appendChild(el("div", "kana", L.kana));
+      nm.appendChild(el("div", "kanji", L.name));
+      r.appendChild(nm); r.appendChild(chev());
+      r.onclick = function(){ go({v:"line", id:L.id}); };
+      c1.appendChild(r);
+    });
+    s1.appendChild(c1);
+    view.appendChild(s1);
+  }
+  if (sts.length){
+    var s2 = el("section", "opsec");
+    s2.appendChild(el("h2", "sec", "えき " + sts.length + "けん"));
+    var c2 = el("div", "card");
+    sts.forEach(function(s){
+      var r = el("button", "row"); r.type = "button";
+      var wrapb = el("div", "xfer"); wrapb.style.maxWidth = "none";
+      (BY_STATION[s.id] || []).forEach(function(e){ wrapb.appendChild(mini(e.line)); });
+      r.appendChild(nameBlock(s, true));
+      wrapb.style.marginLeft = "auto";
+      r.appendChild(wrapb);
+      r.appendChild(chev());
+      r.onclick = function(){ go({v:"station", id:s.id}); };
+      c2.appendChild(r);
+    });
+    s2.appendChild(c2);
+    view.appendChild(s2);
+  }
+}
+
+// 検索ボックス
+var timer = null;
+function homeOp(){                     // 選んでいた事業者タブを覚えておく
+  for (var i = stack.length - 1; i >= 0; i--) if (stack[i].v === "home") return stack[i].op;
+  return null;
+}
+qbox.addEventListener("input", function(){
+  clr.classList.toggle("on", !!qbox.value);
+  clearTimeout(timer);
+  timer = setTimeout(function(){
+    var q = qbox.value.trim(), op = homeOp();
+    // 文字を打つたびに履歴が増えないよう、検索に入る最初の1回だけ履歴を積む
+    var already = stack.length > 1 && stack[stack.length - 1].v === "search";
+    if (!q){ stack = [{ v:"home", op:op }]; resetHistory(); go(stack[0], false); return; }
+    stack = [{ v:"home", op:op }, { v:"search", q:q }];
+    render(stack[1]); updateNav(stack[1]); window.scrollTo(0, 0);
+    if (!already) pushHistory();
+  }, 120);
+});
+clr.onclick = function(){
+  var op = homeOp();
+  qbox.value = ""; clr.classList.remove("on");
+  stack = [{ v:"home", op:op }]; resetHistory(); go(stack[0], false);
+  qbox.focus();
+};
+
+buildTabs();
+stack = [{ v:"home", op:null }];
+resetHistory();
+go(stack[0], false);
+syncHeaderHeight();
+
+// オフラインでも開けるようにする。file:// で直接開いたときは使えないので黙って見送る
+if ("serviceWorker" in navigator && location.protocol.indexOf("http") === 0){
+  window.addEventListener("load", function(){
+    navigator.serviceWorker.register("./sw.js").catch(function(){});
+  });
+}
+})();
+</script>
+</body>
+</html>

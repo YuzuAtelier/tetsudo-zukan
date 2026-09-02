@@ -1,0 +1,56 @@
+{
+  "id": "saitama-shintoshi--ina",
+  "operatorId": "saitama-shintoshi",
+  "name": "埼玉新都市交通伊奈線（ニューシャトル）",
+  "formalName": "伊奈線",
+  "kana": "さいたましんとしんこうつういなせん",
+  "color": "#F39800",
+  "colorName": "橙",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版（一部日本語版）Wikipediaで確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Saitama_New_Urban_Transit"
+  ],
+  "stations": [
+    {
+      "stationId": "omiya"
+    },
+    {
+      "stationId": "tetsudo-hakubutsukan"
+    },
+    {
+      "stationId": "kamomiya"
+    },
+    {
+      "stationId": "higashi-miyahara"
+    },
+    {
+      "stationId": "komba"
+    },
+    {
+      "stationId": "yoshinohara-shuttle"
+    },
+    {
+      "stationId": "haraichi"
+    },
+    {
+      "stationId": "shonan-shuttle"
+    },
+    {
+      "stationId": "maruyama"
+    },
+    {
+      "stationId": "shiku"
+    },
+    {
+      "stationId": "ina-chuo"
+    },
+    {
+      "stationId": "hanuki"
+    },
+    {
+      "stationId": "uchijuku"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "jr-east--suigun",
+  "operatorId": "jr-east",
+  "name": "水郡線",
+  "formalName": "水郡線",
+  "kana": "すいぐんせん",
+  "color": "#368C44",
+  "colorName": "緑",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版・日本語版Wikipediaの2系統で照合。ふりがなはローマ字表記から起こした。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせて確認。　路線図の範囲に合わせ、水戸〜常陸大子で作った。常陸大子以北（安積永盛・郡山方面）は路線図の外なので含めていない。路線図は地方路線では主要駅しか描かないため、この路線には路線図に描かれていない駅がある。路線図の地理的な範囲内は全駅を収録する方針。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Suigun_Line",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "mito"
+    },
+    {
+      "stationId": "hitachi-aoyagi"
+    },
+    {
+      "stationId": "hitachi-tsuda"
+    },
+    {
+      "stationId": "godai"
+    },
+    {
+      "stationId": "shimo-sugaya"
+    },
+    {
+      "stationId": "naka-sugaya"
+    },
+    {
+      "stationId": "kami-sugaya"
+    },
+    {
+      "stationId": "hitachi-konosu"
+    },
+    {
+      "stationId": "urizura"
+    },
+    {
+      "stationId": "shizu"
+    },
+    {
+      "stationId": "hitachi-omiya"
+    },
+    {
+      "stationId": "tamagawamura"
+    },
+    {
+      "stationId": "nogamihara"
+    },
+    {
+      "stationId": "yamagatajuku"
+    },
+    {
+      "stationId": "naka-funyu"
+    },
+    {
+      "stationId": "shimo-ogawa"
+    },
+    {
+      "stationId": "saigane"
+    },
+    {
+      "stationId": "kami-ogawa"
+    },
+    {
+      "stationId": "fukuroda"
+    },
+    {
+      "stationId": "hitachi-daigo"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "id": "tobu--skytree",
+  "operatorId": "tobu",
+  "name": "東武スカイツリーライン",
+  "formalName": "伊勢崎線（浅草〜東武動物公園）",
+  "kana": "とうぶすかいつりーらいん",
+  "symbol": "TS",
+  "color": "#0F6CC3",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（伊勢崎線は日本語版とも一致）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　鐘ヶ淵は路線図上でラベルが見つからなかった（要確認）。座標検査で北千住↔小菅の順序が指摘されたが、TS09北千住→TS10小菅→TS11五反野は公式・Wikipediaとも一致しており、駅間が近接しているためのラベル誤検知と判断した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tobu_Skytree_Line",
+    "https://ja.wikipedia.org/wiki/東武伊勢崎線",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "asakusa",
+      "numbering": "TS01"
+    },
+    {
+      "stationId": "tokyo-sukaitsurii",
+      "numbering": "TS02"
+    },
+    {
+      "stationId": "oshiage",
+      "numbering": "TS03"
+    },
+    {
+      "stationId": "hikifune",
+      "numbering": "TS04"
+    },
+    {
+      "stationId": "higashi-mukojima",
+      "numbering": "TS05"
+    },
+    {
+      "stationId": "kanegafuchi",
+      "numbering": "TS06"
+    },
+    {
+      "stationId": "horikiri",
+      "numbering": "TS07"
+    },
+    {
+      "stationId": "ushida",
+      "numbering": "TS08"
+    },
+    {
+      "stationId": "kita-senju",
+      "numbering": "TS09"
+    },
+    {
+      "stationId": "kosuge",
+      "numbering": "TS10"
+    },
+    {
+      "stationId": "gotanno",
+      "numbering": "TS11"
+    },
+    {
+      "stationId": "umejima",
+      "numbering": "TS12"
+    },
+    {
+      "stationId": "nishiarai",
+      "numbering": "TS13"
+    },
+    {
+      "stationId": "takenotsuka",
+      "numbering": "TS14"
+    },
+    {
+      "stationId": "yatsuka",
+      "numbering": "TS15"
+    },
+    {
+      "stationId": "soka",
+      "numbering": "TS16"
+    },
+    {
+      "stationId": "dokkyodaigakumae",
+      "numbering": "TS17"
+    },
+    {
+      "stationId": "shinden-tobu",
+      "numbering": "TS18"
+    },
+    {
+      "stationId": "gamo",
+      "numbering": "TS19"
+    },
+    {
+      "stationId": "shin-koshigaya",
+      "numbering": "TS20"
+    },
+    {
+      "stationId": "koshigaya",
+      "numbering": "TS21"
+    },
+    {
+      "stationId": "kita-koshigaya",
+      "numbering": "TS22"
+    },
+    {
+      "stationId": "obukuro",
+      "numbering": "TS23"
+    },
+    {
+      "stationId": "sengendai",
+      "numbering": "TS24"
+    },
+    {
+      "stationId": "takesato",
+      "numbering": "TS25"
+    },
+    {
+      "stationId": "ichinowari",
+      "numbering": "TS26"
+    },
+    {
+      "stationId": "kasukabe",
+      "numbering": "TS27"
+    },
+    {
+      "stationId": "kita-kasukabe",
+      "numbering": "TS28"
+    },
+    {
+      "stationId": "himemiya",
+      "numbering": "TS29"
+    },
+    {
+      "stationId": "tobu-dobutsu-koen",
+      "numbering": "TS30"
+    }
+  ]
+}

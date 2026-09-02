@@ -1,0 +1,115 @@
+{
+  "id": "jr-east--chuo-rapid",
+  "operatorId": "jr-east",
+  "name": "中央線快速",
+  "formalName": "中央本線（中央線快速）",
+  "kana": "ちゅうおうせんかいそく",
+  "symbol": "JC",
+  "color": "#F15A22",
+  "colorName": "オレンジ",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版・日本語版Wikipediaの2系統で照合し一致を確認。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、指摘0件。　高円寺(JC07)・阿佐ケ谷(JC08)・西荻窪(JC10)は快速の土休日停車駅。駅番号は付与されているので含めた。　2026-09-02: 同名の別駅と1駅に統合されていたため「中野」を nakano-tokyo（中央線・東西線（東京都中野区））として分離した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Ch%C5%AB%C5%8D_Line_(Rapid)",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "tokyo",
+      "numbering": "JC01"
+    },
+    {
+      "stationId": "kanda",
+      "numbering": "JC02"
+    },
+    {
+      "stationId": "ochanomizu",
+      "numbering": "JC03"
+    },
+    {
+      "stationId": "yotsuya",
+      "numbering": "JC04"
+    },
+    {
+      "stationId": "shinjuku",
+      "numbering": "JC05"
+    },
+    {
+      "stationId": "nakano-tokyo",
+      "numbering": "JC06"
+    },
+    {
+      "stationId": "koenji",
+      "numbering": "JC07"
+    },
+    {
+      "stationId": "asagaya",
+      "numbering": "JC08"
+    },
+    {
+      "stationId": "ogikubo",
+      "numbering": "JC09"
+    },
+    {
+      "stationId": "nishi-ogikubo",
+      "numbering": "JC10"
+    },
+    {
+      "stationId": "kichijoji",
+      "numbering": "JC11"
+    },
+    {
+      "stationId": "mitaka",
+      "numbering": "JC12"
+    },
+    {
+      "stationId": "musashi-sakai",
+      "numbering": "JC13"
+    },
+    {
+      "stationId": "higashi-koganei",
+      "numbering": "JC14"
+    },
+    {
+      "stationId": "musashi-koganei",
+      "numbering": "JC15"
+    },
+    {
+      "stationId": "kokubunji",
+      "numbering": "JC16"
+    },
+    {
+      "stationId": "nishi-kokubunji",
+      "numbering": "JC17"
+    },
+    {
+      "stationId": "kunitachi",
+      "numbering": "JC18"
+    },
+    {
+      "stationId": "tachikawa",
+      "numbering": "JC19"
+    },
+    {
+      "stationId": "hino",
+      "numbering": "JC20"
+    },
+    {
+      "stationId": "toyoda",
+      "numbering": "JC21"
+    },
+    {
+      "stationId": "hachioji",
+      "numbering": "JC22"
+    },
+    {
+      "stationId": "nishi-hachioji",
+      "numbering": "JC23"
+    },
+    {
+      "stationId": "takao",
+      "numbering": "JC24"
+    }
+  ]
+}

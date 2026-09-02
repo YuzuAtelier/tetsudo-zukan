@@ -1,0 +1,24 @@
+{
+  "id": "operatorid--linename",
+  "operatorId": "operatorid",
+  "name": "○○線",
+  "formalName": "○○電鉄○○線",
+  "kana": "まるまるせん",
+  "symbol": "X",
+  "color": "#000000",
+  "colorName": "",
+  "verified": false,
+  "source": [
+    "根拠にしたURLをここに書く"
+  ],
+  "stations": [
+    {
+      "stationId": "kiten",
+      "numbering": "X01"
+    },
+    {
+      "stationId": "shuten",
+      "numbering": "X02"
+    }
+  ]
+}

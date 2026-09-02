@@ -1,0 +1,26 @@
+{
+  "id": "jr-east--tsurumi-okawa",
+  "operatorId": "jr-east",
+  "name": "鶴見線大川支線",
+  "formalName": "鶴見線（安善〜大川）",
+  "kana": "つるみせんおおかわしせん",
+  "symbol": "JI",
+  "color": "#FFD400",
+  "colorName": "カナリア",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を複数の出典で照合。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　分岐駅の安善(JI06)を本線と共有。路線カラーは本線と同じく暫定値。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tsurumi_Line"
+  ],
+  "stations": [
+    {
+      "stationId": "anzen",
+      "numbering": "JI06"
+    },
+    {
+      "stationId": "okawa",
+      "numbering": "JI61"
+    }
+  ]
+}

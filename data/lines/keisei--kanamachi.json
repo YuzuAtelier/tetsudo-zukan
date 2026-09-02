@@ -1,0 +1,32 @@
+{
+  "id": "keisei--kanamachi",
+  "operatorId": "keisei",
+  "name": "京成金町線",
+  "formalName": "金町線",
+  "kana": "けいせいかなまちせん",
+  "symbol": "KS",
+  "color": "#15388B",
+  "colorName": "紺",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を日本語版・英語版Wikipediaの2系統で照合。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。「ケ／ヶ」は事業者の正式表記に従った。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Keisei_Kanamachi_Line",
+    "https://www.keisei.co.jp/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "keisei-takasago",
+      "numbering": "KS10"
+    },
+    {
+      "stationId": "shibamata",
+      "numbering": "KS50"
+    },
+    {
+      "stationId": "keisei-kanamachi",
+      "numbering": "KS51"
+    }
+  ]
+}

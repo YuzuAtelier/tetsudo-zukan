@@ -1,0 +1,27 @@
+{
+  "id": "tobu--daishi",
+  "operatorId": "tobu",
+  "name": "大師線",
+  "formalName": "大師線",
+  "kana": "だいしせん",
+  "symbol": "TS",
+  "color": "#777195",
+  "colorName": "藤",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（伊勢崎線は日本語版とも一致）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tobu_Daishi_Line",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "nishiarai",
+      "numbering": "TS13"
+    },
+    {
+      "stationId": "daishimae",
+      "numbering": "TS51"
+    }
+  ]
+}

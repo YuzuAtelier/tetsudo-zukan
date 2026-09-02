@@ -1,0 +1,26 @@
+{
+  "id": "shibayama--shibayama",
+  "operatorId": "shibayama",
+  "name": "芝山鉄道線",
+  "formalName": "芝山鉄道線",
+  "kana": "しばやまてつどうせん",
+  "symbol": "SR",
+  "color": "#00A0E9",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "日本一短い鉄道路線。起点の東成田(KS44)は京成東成田線と共有しているため、駅番号の記号が路線記号と違う警告が出る。駅順は英語版Wikipediaで確認。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Shibayama_Railway_Line"
+  ],
+  "stations": [
+    {
+      "stationId": "higashi-narita",
+      "numbering": "KS44"
+    },
+    {
+      "stationId": "shibayama-chiyoda",
+      "numbering": "SR01"
+    }
+  ]
+}

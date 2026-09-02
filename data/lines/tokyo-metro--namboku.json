@@ -1,0 +1,96 @@
+{
+  "id": "tokyo-metro--namboku",
+  "operatorId": "tokyo-metro",
+  "name": "南北線",
+  "formalName": "東京メトロ南北線",
+  "kana": "なんぼくせん",
+  "symbol": "N",
+  "color": "#4DA99B",
+  "colorName": "エメラルド",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を事業者公式サイトとWikipediaの2系統で照合し一致を確認。駅名を路線図PDFの抽出結果と照合。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、破綻が無いことを確認。",
+  "source": [
+    "https://www.tokyometro.jp/station/line_namboku/index.html",
+    "https://www.tokyometro.jp/lang_en/station/line_namboku/index.html",
+    "https://www.marorika.com/entry/tokyo-metro-line-color-code"
+  ],
+  "stations": [
+    {
+      "stationId": "meguro",
+      "numbering": "N01"
+    },
+    {
+      "stationId": "shirokanedai",
+      "numbering": "N02"
+    },
+    {
+      "stationId": "shirokane-takanawa",
+      "numbering": "N03"
+    },
+    {
+      "stationId": "azabu-juban",
+      "numbering": "N04"
+    },
+    {
+      "stationId": "roppongi-itchome",
+      "numbering": "N05"
+    },
+    {
+      "stationId": "tameike-sanno",
+      "numbering": "N06"
+    },
+    {
+      "stationId": "nagatacho",
+      "numbering": "N07"
+    },
+    {
+      "stationId": "yotsuya",
+      "numbering": "N08"
+    },
+    {
+      "stationId": "ichigaya",
+      "numbering": "N09"
+    },
+    {
+      "stationId": "iidabashi",
+      "numbering": "N10"
+    },
+    {
+      "stationId": "korakuen",
+      "numbering": "N11"
+    },
+    {
+      "stationId": "todaimae",
+      "numbering": "N12"
+    },
+    {
+      "stationId": "hon-komagome",
+      "numbering": "N13"
+    },
+    {
+      "stationId": "komagome",
+      "numbering": "N14"
+    },
+    {
+      "stationId": "nishigahara",
+      "numbering": "N15"
+    },
+    {
+      "stationId": "oji",
+      "numbering": "N16"
+    },
+    {
+      "stationId": "oji-kamiya",
+      "numbering": "N17"
+    },
+    {
+      "stationId": "shimo",
+      "numbering": "N18"
+    },
+    {
+      "stationId": "akabane-iwabuchi",
+      "numbering": "N19"
+    }
+  ]
+}

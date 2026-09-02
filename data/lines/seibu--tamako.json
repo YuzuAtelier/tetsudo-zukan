@@ -1,0 +1,48 @@
+{
+  "id": "seibu--tamako",
+  "operatorId": "seibu",
+  "name": "西武多摩湖線",
+  "formalName": "多摩湖線",
+  "kana": "せいぶたまこせん",
+  "symbol": "ST",
+  "color": "#F7AF0E",
+  "colorName": "黄",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、西武鉄道公式サイトの駅ナンバリング表記と突き合わせた。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。「ケ／ヶ」は事業者の正式表記（小さいヶ）に従った。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Seibu_Tamako_Line",
+    "https://www.seiburailway.jp/railway/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "kokubunji",
+      "numbering": "ST01"
+    },
+    {
+      "stationId": "hitotsubashi-gakuen",
+      "numbering": "ST02"
+    },
+    {
+      "stationId": "omekaido",
+      "numbering": "ST03"
+    },
+    {
+      "stationId": "hagiyama",
+      "numbering": "ST04"
+    },
+    {
+      "stationId": "yasaka",
+      "numbering": "ST05"
+    },
+    {
+      "stationId": "musashi-yamato",
+      "numbering": "ST06"
+    },
+    {
+      "stationId": "tamako",
+      "numbering": "ST07"
+    }
+  ]
+}

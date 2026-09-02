@@ -1,0 +1,172 @@
+{
+  "id": "toei--oedo",
+  "operatorId": "toei",
+  "name": "都営大江戸線",
+  "formalName": "東京都地下鉄12号線 大江戸線",
+  "kana": "とえいおおえどせん",
+  "symbol": "E",
+  "color": "#B6275D",
+  "colorName": "マゼンタ",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を事業者公式サイトとWikipediaの2系統で照合し一致を確認。駅名を路線図PDFの抽出結果と照合。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、破綻が無いことを確認。　環状部を閉じる 都庁前(E28)〜新宿西口(E01) の接続は一本道配列では表現できていない。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/東京都交通局大江戸線",
+    "https://en.wikipedia.org/wiki/Toei_%C5%8Cedo_Line",
+    "https://www.marorika.com/entry/tokyo-metro-line-color-code"
+  ],
+  "stations": [
+    {
+      "stationId": "shinjuku-nishiguchi",
+      "numbering": "E01"
+    },
+    {
+      "stationId": "higashi-shinjuku",
+      "numbering": "E02"
+    },
+    {
+      "stationId": "wakamatsu-kawada",
+      "numbering": "E03"
+    },
+    {
+      "stationId": "ushigome-yanagicho",
+      "numbering": "E04"
+    },
+    {
+      "stationId": "ushigome-kagurazaka",
+      "numbering": "E05"
+    },
+    {
+      "stationId": "iidabashi",
+      "numbering": "E06"
+    },
+    {
+      "stationId": "kasuga",
+      "numbering": "E07"
+    },
+    {
+      "stationId": "hongo-sanchome",
+      "numbering": "E08"
+    },
+    {
+      "stationId": "ueno-okachimachi",
+      "numbering": "E09"
+    },
+    {
+      "stationId": "shin-okachimachi",
+      "numbering": "E10"
+    },
+    {
+      "stationId": "kuramae",
+      "numbering": "E11"
+    },
+    {
+      "stationId": "ryogoku",
+      "numbering": "E12"
+    },
+    {
+      "stationId": "morishita",
+      "numbering": "E13"
+    },
+    {
+      "stationId": "kiyosumi-shirakawa",
+      "numbering": "E14"
+    },
+    {
+      "stationId": "monzen-nakacho",
+      "numbering": "E15"
+    },
+    {
+      "stationId": "tsukishima",
+      "numbering": "E16"
+    },
+    {
+      "stationId": "kachidoki",
+      "numbering": "E17"
+    },
+    {
+      "stationId": "tsukijishijo",
+      "numbering": "E18"
+    },
+    {
+      "stationId": "shiodome",
+      "numbering": "E19"
+    },
+    {
+      "stationId": "daimon",
+      "numbering": "E20"
+    },
+    {
+      "stationId": "akabanebashi",
+      "numbering": "E21"
+    },
+    {
+      "stationId": "azabu-juban",
+      "numbering": "E22"
+    },
+    {
+      "stationId": "roppongi",
+      "numbering": "E23"
+    },
+    {
+      "stationId": "aoyama-itchome",
+      "numbering": "E24"
+    },
+    {
+      "stationId": "kokuritsu-kyogijo",
+      "numbering": "E25"
+    },
+    {
+      "stationId": "yoyogi",
+      "numbering": "E26"
+    },
+    {
+      "stationId": "shinjuku",
+      "numbering": "E27"
+    },
+    {
+      "stationId": "tochomae",
+      "numbering": "E28"
+    },
+    {
+      "stationId": "nishi-shinjuku-gochome",
+      "numbering": "E29"
+    },
+    {
+      "stationId": "nakano-sakaue",
+      "numbering": "E30"
+    },
+    {
+      "stationId": "higashi-nakano",
+      "numbering": "E31"
+    },
+    {
+      "stationId": "nakai",
+      "numbering": "E32"
+    },
+    {
+      "stationId": "ochiai-minami-nagasaki",
+      "numbering": "E33"
+    },
+    {
+      "stationId": "shin-egota",
+      "numbering": "E34"
+    },
+    {
+      "stationId": "nerima",
+      "numbering": "E35"
+    },
+    {
+      "stationId": "toshimaen",
+      "numbering": "E36"
+    },
+    {
+      "stationId": "nerima-kasugacho",
+      "numbering": "E37"
+    },
+    {
+      "stationId": "hikarigaoka",
+      "numbering": "E38"
+    }
+  ]
+}

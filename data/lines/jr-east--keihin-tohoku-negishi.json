@@ -1,0 +1,209 @@
+{
+  "id": "jr-east--keihin-tohoku-negishi",
+  "operatorId": "jr-east",
+  "name": "京浜東北線・根岸線",
+  "formalName": "東北本線・東海道本線・根岸線（京浜東北線・根岸線）",
+  "kana": "けいひんとうほくせん・ねぎしせん",
+  "symbol": "JK",
+  "color": "#00BAE8",
+  "colorName": "スカイブルー",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版・日本語版Wikipediaの2系統で照合し一致を確認。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、指摘0件。　駅番号 JK01〜JK47 が根岸線（大船〜横浜）と京浜東北線（横浜〜大宮）で連番のため、1ファイルにまとめてある。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Keihin%E2%80%93T%C5%8Dhoku_Line",
+    "https://en.wikipedia.org/wiki/Negishi_Line",
+    "https://ja.wikipedia.org/wiki/根岸線",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "ofuna",
+      "numbering": "JK01"
+    },
+    {
+      "stationId": "hongodai",
+      "numbering": "JK02"
+    },
+    {
+      "stationId": "konandai",
+      "numbering": "JK03"
+    },
+    {
+      "stationId": "yokodai",
+      "numbering": "JK04"
+    },
+    {
+      "stationId": "shin-sugita",
+      "numbering": "JK05"
+    },
+    {
+      "stationId": "isogo",
+      "numbering": "JK06"
+    },
+    {
+      "stationId": "negishi",
+      "numbering": "JK07"
+    },
+    {
+      "stationId": "yamate",
+      "numbering": "JK08"
+    },
+    {
+      "stationId": "ishikawacho",
+      "numbering": "JK09"
+    },
+    {
+      "stationId": "kannai",
+      "numbering": "JK10"
+    },
+    {
+      "stationId": "sakuragicho",
+      "numbering": "JK11"
+    },
+    {
+      "stationId": "yokohama",
+      "numbering": "JK12"
+    },
+    {
+      "stationId": "higashi-kanagawa",
+      "numbering": "JK13"
+    },
+    {
+      "stationId": "shin-koyasu",
+      "numbering": "JK14"
+    },
+    {
+      "stationId": "tsurumi",
+      "numbering": "JK15"
+    },
+    {
+      "stationId": "kawasaki",
+      "numbering": "JK16"
+    },
+    {
+      "stationId": "kamata",
+      "numbering": "JK17"
+    },
+    {
+      "stationId": "omori",
+      "numbering": "JK18"
+    },
+    {
+      "stationId": "oimachi",
+      "numbering": "JK19"
+    },
+    {
+      "stationId": "shinagawa",
+      "numbering": "JK20"
+    },
+    {
+      "stationId": "takanawa-gateway",
+      "numbering": "JK21"
+    },
+    {
+      "stationId": "tamachi",
+      "numbering": "JK22"
+    },
+    {
+      "stationId": "hamamatsucho",
+      "numbering": "JK23"
+    },
+    {
+      "stationId": "shimbashi",
+      "numbering": "JK24"
+    },
+    {
+      "stationId": "yurakucho",
+      "numbering": "JK25"
+    },
+    {
+      "stationId": "tokyo",
+      "numbering": "JK26"
+    },
+    {
+      "stationId": "kanda",
+      "numbering": "JK27"
+    },
+    {
+      "stationId": "akihabara",
+      "numbering": "JK28"
+    },
+    {
+      "stationId": "okachimachi",
+      "numbering": "JK29"
+    },
+    {
+      "stationId": "ueno",
+      "numbering": "JK30"
+    },
+    {
+      "stationId": "uguisudani",
+      "numbering": "JK31"
+    },
+    {
+      "stationId": "nippori",
+      "numbering": "JK32"
+    },
+    {
+      "stationId": "nishi-nippori",
+      "numbering": "JK33"
+    },
+    {
+      "stationId": "tabata",
+      "numbering": "JK34"
+    },
+    {
+      "stationId": "kami-nakazato",
+      "numbering": "JK35"
+    },
+    {
+      "stationId": "oji",
+      "numbering": "JK36"
+    },
+    {
+      "stationId": "higashi-jujo",
+      "numbering": "JK37"
+    },
+    {
+      "stationId": "akabane",
+      "numbering": "JK38"
+    },
+    {
+      "stationId": "kawaguchi",
+      "numbering": "JK39"
+    },
+    {
+      "stationId": "nishi-kawaguchi",
+      "numbering": "JK40"
+    },
+    {
+      "stationId": "warabi",
+      "numbering": "JK41"
+    },
+    {
+      "stationId": "minami-urawa",
+      "numbering": "JK42"
+    },
+    {
+      "stationId": "urawa",
+      "numbering": "JK43"
+    },
+    {
+      "stationId": "kita-urawa",
+      "numbering": "JK44"
+    },
+    {
+      "stationId": "yono",
+      "numbering": "JK45"
+    },
+    {
+      "stationId": "saitama-shintoshin",
+      "numbering": "JK46"
+    },
+    {
+      "stationId": "omiya",
+      "numbering": "JK47"
+    }
+  ]
+}

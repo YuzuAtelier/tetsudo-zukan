@@ -1,0 +1,92 @@
+{
+  "id": "sotetsu--main",
+  "operatorId": "sotetsu",
+  "name": "相鉄本線",
+  "formalName": "本線",
+  "kana": "そうてつほんせん",
+  "symbol": "SO",
+  "color": "#000080",
+  "colorName": "紺",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、相模鉄道公式サイトと突き合わせた。ふりがなはローマ字表記から起こした。　大和(SO14)は小田急江ノ島線の大和と同一駅。　2026-09-02: 同名の別駅と1駅に統合されていたため「大和」を yamato-kanagawa（小田急江ノ島線・相鉄本線（神奈川県大和市））として分離した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Sotetsu_Main_Line",
+    "https://www.sotetsu.co.jp/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "yokohama",
+      "numbering": "SO01"
+    },
+    {
+      "stationId": "hiranumabashi",
+      "numbering": "SO02"
+    },
+    {
+      "stationId": "nishi-yokohama",
+      "numbering": "SO03"
+    },
+    {
+      "stationId": "tennocho",
+      "numbering": "SO04"
+    },
+    {
+      "stationId": "hoshikawa",
+      "numbering": "SO05"
+    },
+    {
+      "stationId": "wadamachi",
+      "numbering": "SO06"
+    },
+    {
+      "stationId": "kamihoshikawa",
+      "numbering": "SO07"
+    },
+    {
+      "stationId": "nishiya",
+      "numbering": "SO08"
+    },
+    {
+      "stationId": "tsurugamine",
+      "numbering": "SO09"
+    },
+    {
+      "stationId": "futamatagawa",
+      "numbering": "SO10"
+    },
+    {
+      "stationId": "kibogaoka",
+      "numbering": "SO11"
+    },
+    {
+      "stationId": "mitsukyo",
+      "numbering": "SO12"
+    },
+    {
+      "stationId": "seya",
+      "numbering": "SO13"
+    },
+    {
+      "stationId": "yamato-kanagawa",
+      "numbering": "SO14"
+    },
+    {
+      "stationId": "sagami-otsuka",
+      "numbering": "SO15"
+    },
+    {
+      "stationId": "sagamino",
+      "numbering": "SO16"
+    },
+    {
+      "stationId": "kashiwadai",
+      "numbering": "SO17"
+    },
+    {
+      "stationId": "ebina",
+      "numbering": "SO18"
+    }
+  ]
+}

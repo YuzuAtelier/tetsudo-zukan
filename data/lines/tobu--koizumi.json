@@ -1,0 +1,47 @@
+{
+  "id": "tobu--koizumi",
+  "operatorId": "tobu",
+  "name": "小泉線",
+  "formalName": "小泉線（館林〜西小泉）",
+  "kana": "こいずみせん",
+  "symbol": "TI",
+  "color": "#E0C445",
+  "colorName": "黄",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（伊勢崎線は日本語版とも一致）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tobu_Koizumi_Line",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "tatebayashi",
+      "numbering": "TI10"
+    },
+    {
+      "stationId": "narushima",
+      "numbering": "TI41"
+    },
+    {
+      "stationId": "hon-nakano",
+      "numbering": "TI42"
+    },
+    {
+      "stationId": "shinozuka",
+      "numbering": "TI43"
+    },
+    {
+      "stationId": "higashi-koizumi",
+      "numbering": "TI44"
+    },
+    {
+      "stationId": "koizumimachi",
+      "numbering": "TI45"
+    },
+    {
+      "stationId": "nishi-koizumi",
+      "numbering": "TI46"
+    }
+  ]
+}

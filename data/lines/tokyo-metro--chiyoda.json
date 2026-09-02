@@ -1,0 +1,100 @@
+{
+  "id": "tokyo-metro--chiyoda",
+  "operatorId": "tokyo-metro",
+  "name": "千代田線",
+  "formalName": "東京メトロ千代田線",
+  "kana": "ちよだせん",
+  "symbol": "C",
+  "color": "#54B889",
+  "colorName": "グリーン",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を事業者公式サイトとWikipediaの2系統で照合し一致を確認。駅名を路線図PDFの抽出結果と照合。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、破綻が無いことを確認。　2026-09-02: 同名の別駅と1駅に統合されていたため「赤坂」を akasaka-tokyo（千代田線（東京都港区））として分離した。",
+  "source": [
+    "https://www.tokyometro.jp/station/line_chiyoda/index.html",
+    "https://www.tokyometro.jp/lang_en/station/line_chiyoda/index.html",
+    "https://www.marorika.com/entry/tokyo-metro-line-color-code"
+  ],
+  "stations": [
+    {
+      "stationId": "yoyogi-uehara",
+      "numbering": "C01"
+    },
+    {
+      "stationId": "yoyogi-koen",
+      "numbering": "C02"
+    },
+    {
+      "stationId": "meiji-jingumae",
+      "numbering": "C03"
+    },
+    {
+      "stationId": "omote-sando",
+      "numbering": "C04"
+    },
+    {
+      "stationId": "nogizaka",
+      "numbering": "C05"
+    },
+    {
+      "stationId": "akasaka-tokyo",
+      "numbering": "C06"
+    },
+    {
+      "stationId": "kokkai-gijidomae",
+      "numbering": "C07"
+    },
+    {
+      "stationId": "kasumigaseki",
+      "numbering": "C08"
+    },
+    {
+      "stationId": "hibiya",
+      "numbering": "C09"
+    },
+    {
+      "stationId": "nijubashimae",
+      "numbering": "C10"
+    },
+    {
+      "stationId": "otemachi",
+      "numbering": "C11"
+    },
+    {
+      "stationId": "shin-ochanomizu",
+      "numbering": "C12"
+    },
+    {
+      "stationId": "yushima",
+      "numbering": "C13"
+    },
+    {
+      "stationId": "nezu",
+      "numbering": "C14"
+    },
+    {
+      "stationId": "sendagi",
+      "numbering": "C15"
+    },
+    {
+      "stationId": "nishi-nippori",
+      "numbering": "C16"
+    },
+    {
+      "stationId": "machiya",
+      "numbering": "C17"
+    },
+    {
+      "stationId": "kita-senju",
+      "numbering": "C18"
+    },
+    {
+      "stationId": "ayase",
+      "numbering": "C19"
+    },
+    {
+      "stationId": "kita-ayase",
+      "numbering": "C20"
+    }
+  ]
+}

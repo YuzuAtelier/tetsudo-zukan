@@ -1,0 +1,42 @@
+{
+  "id": "chiba-monorail--line1",
+  "operatorId": "chiba-monorail",
+  "name": "千葉都市モノレール1号線",
+  "formalName": "1号線",
+  "kana": "ちばとしものれーるいちごうせん",
+  "symbol": "CM",
+  "color": "#F39800",
+  "colorName": "橙",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版Wikipedia（湘南モノレールは日本語版）で確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　2026-09-02: 同名の別駅と1駅に統合されていたため「栄町」を sakaecho-chiba（千葉都市モノレール1号線（千葉市中央区））として分離した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Chiba_Urban_Monorail"
+  ],
+  "stations": [
+    {
+      "stationId": "chibaminato",
+      "numbering": "CM01"
+    },
+    {
+      "stationId": "shiyakushomae",
+      "numbering": "CM02"
+    },
+    {
+      "stationId": "chiba",
+      "numbering": "CM03"
+    },
+    {
+      "stationId": "sakaecho-chiba",
+      "numbering": "CM04"
+    },
+    {
+      "stationId": "yoshikawa-koen",
+      "numbering": "CM05"
+    },
+    {
+      "stationId": "kencho-mae",
+      "numbering": "CM06"
+    }
+  ]
+}

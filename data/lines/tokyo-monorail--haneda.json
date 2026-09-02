@@ -1,0 +1,62 @@
+{
+  "id": "tokyo-monorail--haneda",
+  "operatorId": "tokyo-monorail",
+  "name": "東京モノレール羽田空港線",
+  "formalName": "東京モノレール羽田空港線",
+  "kana": "とうきょうものれーるはねだくうこうせん",
+  "symbol": "MO",
+  "color": "#1D2088",
+  "colorName": "紺",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版Wikipedia（湘南モノレールは日本語版）で確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tokyo_Monorail"
+  ],
+  "stations": [
+    {
+      "stationId": "monorail-hamamatsucho",
+      "numbering": "MO01"
+    },
+    {
+      "stationId": "tennozu-isle",
+      "numbering": "MO02"
+    },
+    {
+      "stationId": "oi-keibajo-mae",
+      "numbering": "MO03"
+    },
+    {
+      "stationId": "ryutsu-center",
+      "numbering": "MO04"
+    },
+    {
+      "stationId": "showajima",
+      "numbering": "MO05"
+    },
+    {
+      "stationId": "seibijo",
+      "numbering": "MO06"
+    },
+    {
+      "stationId": "tenkubashi",
+      "numbering": "MO07"
+    },
+    {
+      "stationId": "haneda-airport-terminal-3",
+      "numbering": "MO08"
+    },
+    {
+      "stationId": "shin-seibijo",
+      "numbering": "MO09"
+    },
+    {
+      "stationId": "haneda-airport-terminal-1",
+      "numbering": "MO10"
+    },
+    {
+      "stationId": "haneda-airport-terminal-2",
+      "numbering": "MO11"
+    }
+  ]
+}

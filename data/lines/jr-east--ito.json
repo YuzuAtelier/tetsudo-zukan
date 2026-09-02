@@ -1,0 +1,43 @@
+{
+  "id": "jr-east--ito",
+  "operatorId": "jr-east",
+  "name": "伊東線",
+  "formalName": "伊東線",
+  "kana": "いとうせん",
+  "symbol": "JT",
+  "color": "#F68B1E",
+  "colorName": "オレンジ",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を複数の出典で照合。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　駅番号は東海道線から連番で続く（熱海JT21〜伊東JT26）。",
+  "source": [
+    "https://en.wikipedia.org/wiki/It%C5%8D_Line",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "atami",
+      "numbering": "JT21"
+    },
+    {
+      "stationId": "kinomiya",
+      "numbering": "JT22"
+    },
+    {
+      "stationId": "izu-taga",
+      "numbering": "JT23"
+    },
+    {
+      "stationId": "ajiro",
+      "numbering": "JT24"
+    },
+    {
+      "stationId": "usami",
+      "numbering": "JT25"
+    },
+    {
+      "stationId": "ito",
+      "numbering": "JT26"
+    }
+  ]
+}

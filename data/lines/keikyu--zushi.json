@@ -1,0 +1,36 @@
+{
+  "id": "keikyu--zushi",
+  "operatorId": "keikyu",
+  "name": "京急逗子線",
+  "formalName": "逗子線",
+  "kana": "けいきゅうずしせん",
+  "symbol": "KK",
+  "color": "#00A3E4",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、京急電鉄公式サイトと突き合わせた。ふりがなはローマ字表記から起こした。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Keiky%C5%AB_Zushi_Line",
+    "https://www.keikyu.co.jp/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "kanazawa-hakkei",
+      "numbering": "KK50"
+    },
+    {
+      "stationId": "mutsuura",
+      "numbering": "KK51"
+    },
+    {
+      "stationId": "jimmuji",
+      "numbering": "KK52"
+    },
+    {
+      "stationId": "zushi-hayama",
+      "numbering": "KK53"
+    }
+  ]
+}

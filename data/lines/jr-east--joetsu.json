@@ -1,0 +1,60 @@
+{
+  "id": "jr-east--joetsu",
+  "operatorId": "jr-east",
+  "name": "上越線",
+  "formalName": "上越線",
+  "kana": "じょうえつせん",
+  "color": "#00B3E6",
+  "colorName": "水色",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版・日本語版Wikipediaの2系統で照合。ふりがなはローマ字表記から起こした。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせて確認。　2026-09-02: 同名の別駅と1駅に統合されていたため「井野」を ino-gunma（上越線（群馬県高崎市））として分離した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/J%C5%8Detsu_Line",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "takasaki"
+    },
+    {
+      "stationId": "takasaki-tonyamachi"
+    },
+    {
+      "stationId": "ino-gunma"
+    },
+    {
+      "stationId": "shin-maebashi"
+    },
+    {
+      "stationId": "gunma-soja"
+    },
+    {
+      "stationId": "yagihara"
+    },
+    {
+      "stationId": "shibukawa"
+    },
+    {
+      "stationId": "shikishima"
+    },
+    {
+      "stationId": "tsukuda"
+    },
+    {
+      "stationId": "iwamoto"
+    },
+    {
+      "stationId": "numata"
+    },
+    {
+      "stationId": "gokan"
+    },
+    {
+      "stationId": "kamimoku"
+    },
+    {
+      "stationId": "minakami"
+    }
+  ]
+}

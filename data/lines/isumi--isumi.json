@@ -1,0 +1,59 @@
+{
+  "id": "isumi--isumi",
+  "operatorId": "isumi",
+  "name": "いすみ鉄道いすみ線",
+  "formalName": "いすみ線",
+  "kana": "いすみてつどういすみせん",
+  "color": "#F39800",
+  "colorName": "橙",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版（一部日本語版）Wikipediaで確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　　この路線は路線図PDFの描画範囲の外（「至○○」の注記のみ）にあり、路線図との駅名照合ができていない。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/いすみ鉄道いすみ線"
+  ],
+  "stations": [
+    {
+      "stationId": "ohara"
+    },
+    {
+      "stationId": "nishi-ohara"
+    },
+    {
+      "stationId": "kazusa-higashi"
+    },
+    {
+      "stationId": "nittano"
+    },
+    {
+      "stationId": "kuniyoshi"
+    },
+    {
+      "stationId": "kazusa-nakagawa"
+    },
+    {
+      "stationId": "shiromigaoka"
+    },
+    {
+      "stationId": "otaki"
+    },
+    {
+      "stationId": "koyamatsu"
+    },
+    {
+      "stationId": "higashi-somoto"
+    },
+    {
+      "stationId": "kugahara-isumi"
+    },
+    {
+      "stationId": "somoto"
+    },
+    {
+      "stationId": "nishihata"
+    },
+    {
+      "stationId": "kazusa-nakano"
+    }
+  ]
+}

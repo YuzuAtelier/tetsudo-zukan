@@ -1,0 +1,140 @@
+{
+  "id": "jr-east--yamanote",
+  "operatorId": "jr-east",
+  "name": "山手線",
+  "formalName": "山手線",
+  "kana": "やまのてせん",
+  "symbol": "JY",
+  "color": "#89C85D",
+  "colorName": "ウグイス",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版・日本語版Wikipediaの2系統で照合し一致を確認。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、指摘0件。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Yamanote_Line",
+    "https://ja.wikipedia.org/wiki/山手線",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "tokyo",
+      "numbering": "JY01"
+    },
+    {
+      "stationId": "kanda",
+      "numbering": "JY02"
+    },
+    {
+      "stationId": "akihabara",
+      "numbering": "JY03"
+    },
+    {
+      "stationId": "okachimachi",
+      "numbering": "JY04"
+    },
+    {
+      "stationId": "ueno",
+      "numbering": "JY05"
+    },
+    {
+      "stationId": "uguisudani",
+      "numbering": "JY06"
+    },
+    {
+      "stationId": "nippori",
+      "numbering": "JY07"
+    },
+    {
+      "stationId": "nishi-nippori",
+      "numbering": "JY08"
+    },
+    {
+      "stationId": "tabata",
+      "numbering": "JY09"
+    },
+    {
+      "stationId": "komagome",
+      "numbering": "JY10"
+    },
+    {
+      "stationId": "sugamo",
+      "numbering": "JY11"
+    },
+    {
+      "stationId": "otsuka",
+      "numbering": "JY12"
+    },
+    {
+      "stationId": "ikebukuro",
+      "numbering": "JY13"
+    },
+    {
+      "stationId": "mejiro",
+      "numbering": "JY14"
+    },
+    {
+      "stationId": "takadanobaba",
+      "numbering": "JY15"
+    },
+    {
+      "stationId": "shin-okubo",
+      "numbering": "JY16"
+    },
+    {
+      "stationId": "shinjuku",
+      "numbering": "JY17"
+    },
+    {
+      "stationId": "yoyogi",
+      "numbering": "JY18"
+    },
+    {
+      "stationId": "harajuku",
+      "numbering": "JY19"
+    },
+    {
+      "stationId": "shibuya",
+      "numbering": "JY20"
+    },
+    {
+      "stationId": "ebisu",
+      "numbering": "JY21"
+    },
+    {
+      "stationId": "meguro",
+      "numbering": "JY22"
+    },
+    {
+      "stationId": "gotanda",
+      "numbering": "JY23"
+    },
+    {
+      "stationId": "osaki",
+      "numbering": "JY24"
+    },
+    {
+      "stationId": "shinagawa",
+      "numbering": "JY25"
+    },
+    {
+      "stationId": "takanawa-gateway",
+      "numbering": "JY26"
+    },
+    {
+      "stationId": "tamachi",
+      "numbering": "JY27"
+    },
+    {
+      "stationId": "hamamatsucho",
+      "numbering": "JY28"
+    },
+    {
+      "stationId": "shimbashi",
+      "numbering": "JY29"
+    },
+    {
+      "stationId": "yurakucho",
+      "numbering": "JY30"
+    }
+  ]
+}

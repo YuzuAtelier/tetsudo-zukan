@@ -1,0 +1,72 @@
+{
+  "id": "fujikyu--fujikyu",
+  "operatorId": "fujikyu",
+  "name": "富士急行線",
+  "formalName": "大月線・河口湖線",
+  "kana": "ふじきゅうこうせん",
+  "color": "#00A0DE",
+  "colorName": "水色",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版（一部日本語版）Wikipediaで確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　十日市場（山梨県都留市）は横浜線の十日市場（横浜市）と同名の別駅なので tokaichiba-yamanashi とした。　この路線は路線図PDFの描画範囲の外（「至○○」の注記のみ）にあり、路線図との駅名照合ができていない。　2026-09-02: 同名の別駅と1駅に統合されていたため「赤坂」を akasaka-yamanashi（富士急行線（山梨県大月市））として分離した。　2026-09-02: 運営会社は2022年4月1日の吸収分割で富士急行から富士山麓電気鉄道に承継された。「富士急行線」は大月線（大月〜富士山）と河口湖線（富士山〜河口湖）を一体で案内する通称。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/富士山麓電気鉄道",
+    "https://en.wikipedia.org/wiki/Fuji_Ky%C5%ABk%C5%8D_Line"
+  ],
+  "stations": [
+    {
+      "stationId": "otsuki"
+    },
+    {
+      "stationId": "kami-otsuki"
+    },
+    {
+      "stationId": "tanokura"
+    },
+    {
+      "stationId": "kasei"
+    },
+    {
+      "stationId": "akasaka-yamanashi"
+    },
+    {
+      "stationId": "tsurushi"
+    },
+    {
+      "stationId": "yamuramachi"
+    },
+    {
+      "stationId": "tsuru-bunka-daigaku-mae"
+    },
+    {
+      "stationId": "tokaichiba-yamanashi"
+    },
+    {
+      "stationId": "higashi-katsura"
+    },
+    {
+      "stationId": "mitsutoge"
+    },
+    {
+      "stationId": "kotobuki-fujikyu"
+    },
+    {
+      "stationId": "yoshiike-onsen-mae"
+    },
+    {
+      "stationId": "shimo-yoshida"
+    },
+    {
+      "stationId": "gekkoji"
+    },
+    {
+      "stationId": "fujisan"
+    },
+    {
+      "stationId": "fujikyu-highland"
+    },
+    {
+      "stationId": "kawaguchiko"
+    }
+  ]
+}

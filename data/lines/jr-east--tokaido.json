@@ -1,0 +1,103 @@
+{
+  "id": "jr-east--tokaido",
+  "operatorId": "jr-east",
+  "name": "東海道線",
+  "formalName": "東海道本線（東海道線）",
+  "kana": "とうかいどうせん",
+  "symbol": "JT",
+  "color": "#F68B1E",
+  "colorName": "オレンジ",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を複数の出典で照合。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　座標検査の横浜→戸塚(143pt)は、東海道線が保土ケ谷・東戸塚（横須賀線の駅）を通過し約12kmを直行するための正常な長区間。英語版WikipediaはJT03の漢字を「新宿」と誤記していたため品川に直した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/T%C5%8Dkaid%C5%8D_Main_Line",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "tokyo",
+      "numbering": "JT01"
+    },
+    {
+      "stationId": "shimbashi",
+      "numbering": "JT02"
+    },
+    {
+      "stationId": "shinagawa",
+      "numbering": "JT03"
+    },
+    {
+      "stationId": "kawasaki",
+      "numbering": "JT04"
+    },
+    {
+      "stationId": "yokohama",
+      "numbering": "JT05"
+    },
+    {
+      "stationId": "totsuka",
+      "numbering": "JT06"
+    },
+    {
+      "stationId": "ofuna",
+      "numbering": "JT07"
+    },
+    {
+      "stationId": "fujisawa",
+      "numbering": "JT08"
+    },
+    {
+      "stationId": "tsujido",
+      "numbering": "JT09"
+    },
+    {
+      "stationId": "chigasaki",
+      "numbering": "JT10"
+    },
+    {
+      "stationId": "hiratsuka",
+      "numbering": "JT11"
+    },
+    {
+      "stationId": "oiso",
+      "numbering": "JT12"
+    },
+    {
+      "stationId": "ninomiya",
+      "numbering": "JT13"
+    },
+    {
+      "stationId": "kozu",
+      "numbering": "JT14"
+    },
+    {
+      "stationId": "kamonomiya",
+      "numbering": "JT15"
+    },
+    {
+      "stationId": "odawara",
+      "numbering": "JT16"
+    },
+    {
+      "stationId": "hayakawa",
+      "numbering": "JT17"
+    },
+    {
+      "stationId": "nebukawa",
+      "numbering": "JT18"
+    },
+    {
+      "stationId": "manazuru",
+      "numbering": "JT19"
+    },
+    {
+      "stationId": "yugawara",
+      "numbering": "JT20"
+    },
+    {
+      "stationId": "atami",
+      "numbering": "JT21"
+    }
+  ]
+}

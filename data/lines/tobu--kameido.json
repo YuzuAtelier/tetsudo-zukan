@@ -1,0 +1,39 @@
+{
+  "id": "tobu--kameido",
+  "operatorId": "tobu",
+  "name": "亀戸線",
+  "formalName": "亀戸線",
+  "kana": "かめいどせん",
+  "symbol": "TS",
+  "color": "#C7A367",
+  "colorName": "金茶",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（伊勢崎線は日本語版とも一致）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tobu_Kameido_Line",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "hikifune",
+      "numbering": "TS04"
+    },
+    {
+      "stationId": "omurai",
+      "numbering": "TS41"
+    },
+    {
+      "stationId": "higashi-azuma",
+      "numbering": "TS42"
+    },
+    {
+      "stationId": "kameido-suijin",
+      "numbering": "TS43"
+    },
+    {
+      "stationId": "kameido",
+      "numbering": "TS44"
+    }
+  ]
+}

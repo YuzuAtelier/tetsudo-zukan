@@ -1,0 +1,76 @@
+{
+  "id": "tokyo-metro--hanzomon",
+  "operatorId": "tokyo-metro",
+  "name": "半蔵門線",
+  "formalName": "東京メトロ半蔵門線",
+  "kana": "はんぞうもんせん",
+  "symbol": "Z",
+  "color": "#8B76D0",
+  "colorName": "パープル",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を事業者公式サイトとWikipediaの2系統で照合し一致を確認。駅名を路線図PDFの抽出結果と照合。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、破綻が無いことを確認。",
+  "source": [
+    "https://www.tokyometro.jp/station/line_hanzomon/index.html",
+    "https://www.tokyometro.jp/lang_en/station/line_hanzomon/index.html",
+    "https://www.marorika.com/entry/tokyo-metro-line-color-code"
+  ],
+  "stations": [
+    {
+      "stationId": "shibuya",
+      "numbering": "Z01"
+    },
+    {
+      "stationId": "omote-sando",
+      "numbering": "Z02"
+    },
+    {
+      "stationId": "aoyama-itchome",
+      "numbering": "Z03"
+    },
+    {
+      "stationId": "nagatacho",
+      "numbering": "Z04"
+    },
+    {
+      "stationId": "hanzomon",
+      "numbering": "Z05"
+    },
+    {
+      "stationId": "kudanshita",
+      "numbering": "Z06"
+    },
+    {
+      "stationId": "jimbocho",
+      "numbering": "Z07"
+    },
+    {
+      "stationId": "otemachi",
+      "numbering": "Z08"
+    },
+    {
+      "stationId": "mitsukoshimae",
+      "numbering": "Z09"
+    },
+    {
+      "stationId": "suitengumae",
+      "numbering": "Z10"
+    },
+    {
+      "stationId": "kiyosumi-shirakawa",
+      "numbering": "Z11"
+    },
+    {
+      "stationId": "sumiyoshi",
+      "numbering": "Z12"
+    },
+    {
+      "stationId": "kinshicho",
+      "numbering": "Z13"
+    },
+    {
+      "stationId": "oshiage",
+      "numbering": "Z14"
+    }
+  ]
+}

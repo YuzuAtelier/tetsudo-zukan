@@ -1,0 +1,57 @@
+このリポジトリは、中身によって2つのライセンスを使い分けています。
+This repository uses two licenses depending on the content.
+
+────────────────────────────────────────────────────────────
+1. ソースコード（tools/ ・ app/ ・ .github/）— MIT License
+────────────────────────────────────────────────────────────
+
+MIT License
+
+Copyright (c) 2026 YuzuAtelier
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+────────────────────────────────────────────────────────────
+2. データ（data/）— CC BY 4.0
+────────────────────────────────────────────────────────────
+
+data/ 配下のJSON（路線・駅・事業者のデータ）は
+クリエイティブ・コモンズ 表示 4.0 国際 (CC BY 4.0) で提供します。
+https://creativecommons.org/licenses/by/4.0/deed.ja
+
+利用するときは、出典として本リポジトリを示してください。
+
+The JSON data under data/ is licensed under
+Creative Commons Attribution 4.0 International (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+
+────────────────────────────────────────────────────────────
+3. このライセンスが及ばないもの
+────────────────────────────────────────────────────────────
+
+・refs/ の資料（鉄道会社が作成した路線図・凡例など）
+  参照専用のため、リポジトリには含めていません。
+  これらの著作権は各作成者に帰属します。
+
+・駅名・路線名・路線カラーなどの名称そのもの
+  各鉄道事業者に帰属する場合があります。
+  本データは事実の記録であり、事業者の権利を主張するものではありません。
+
+・鉄道会社のロゴ
+  一切使用していません。路線記号はすべてCSS/SVGで自前描画しています。

@@ -1,0 +1,31 @@
+{
+  "id": "tobu--koizumi-ota",
+  "operatorId": "tobu",
+  "name": "小泉線太田支線",
+  "formalName": "小泉線（東小泉〜太田）",
+  "kana": "こいずみせんおおたしせん",
+  "symbol": "TI",
+  "color": "#E0C445",
+  "colorName": "黄",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（伊勢崎線は日本語版とも一致）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　分岐駅の東小泉(TI44)・太田(TI18)を本線・桐生線とそれぞれ共有しているため、駅番号が単調でない（TI44→TI47→TI18）のは仕様どおり。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tobu_Koizumi_Line",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "higashi-koizumi",
+      "numbering": "TI44"
+    },
+    {
+      "stationId": "ryumai",
+      "numbering": "TI47"
+    },
+    {
+      "stationId": "ota-tobu",
+      "numbering": "TI18"
+    }
+  ]
+}

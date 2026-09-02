@@ -1,0 +1,123 @@
+{
+  "id": "tobu--nikko",
+  "operatorId": "tobu",
+  "name": "東武日光線",
+  "formalName": "日光線",
+  "kana": "にっこうせん",
+  "symbol": "TN",
+  "color": "#FFA600",
+  "colorName": "橙",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（伊勢崎線は日本語版とも一致）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tobu_Nikko_Line",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "tobu-dobutsu-koen",
+      "numbering": "TS30"
+    },
+    {
+      "stationId": "sugito-takanodai",
+      "numbering": "TN01"
+    },
+    {
+      "stationId": "satte",
+      "numbering": "TN02"
+    },
+    {
+      "stationId": "minami-kurihashi",
+      "numbering": "TN03"
+    },
+    {
+      "stationId": "kurihashi",
+      "numbering": "TN04"
+    },
+    {
+      "stationId": "shin-koga",
+      "numbering": "TN05"
+    },
+    {
+      "stationId": "yagyu",
+      "numbering": "TN06"
+    },
+    {
+      "stationId": "itakura-toyodai-mae",
+      "numbering": "TN07"
+    },
+    {
+      "stationId": "fujioka-tochigi",
+      "numbering": "TN08"
+    },
+    {
+      "stationId": "shizuwa",
+      "numbering": "TN09"
+    },
+    {
+      "stationId": "shin-ohirashita",
+      "numbering": "TN10"
+    },
+    {
+      "stationId": "tochigi",
+      "numbering": "TN11"
+    },
+    {
+      "stationId": "shin-tochigi",
+      "numbering": "TN12"
+    },
+    {
+      "stationId": "kassemba",
+      "numbering": "TN13"
+    },
+    {
+      "stationId": "ienaka",
+      "numbering": "TN14"
+    },
+    {
+      "stationId": "tobu-kanasaki",
+      "numbering": "TN15"
+    },
+    {
+      "stationId": "niregi",
+      "numbering": "TN16"
+    },
+    {
+      "stationId": "momiyama",
+      "numbering": "TN17"
+    },
+    {
+      "stationId": "shin-kanuma",
+      "numbering": "TN18"
+    },
+    {
+      "stationId": "kita-kanuma",
+      "numbering": "TN19"
+    },
+    {
+      "stationId": "itaga",
+      "numbering": "TN20"
+    },
+    {
+      "stationId": "shimo-goshiro",
+      "numbering": "TN21"
+    },
+    {
+      "stationId": "myojin",
+      "numbering": "TN22"
+    },
+    {
+      "stationId": "shimo-imaichi",
+      "numbering": "TN23"
+    },
+    {
+      "stationId": "kami-imaichi",
+      "numbering": "TN24"
+    },
+    {
+      "stationId": "tobu-nikko",
+      "numbering": "TN25"
+    }
+  ]
+}

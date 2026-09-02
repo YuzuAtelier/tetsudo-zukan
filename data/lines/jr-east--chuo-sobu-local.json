@@ -1,0 +1,175 @@
+{
+  "id": "jr-east--chuo-sobu-local",
+  "operatorId": "jr-east",
+  "name": "中央・総武線各駅停車",
+  "formalName": "中央本線・総武本線（中央・総武線各駅停車）",
+  "kana": "ちゅうおう・そうぶせんかくえきていしゃ",
+  "symbol": "JB",
+  "color": "#FFD400",
+  "colorName": "カナリア",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版・日本語版Wikipediaの2系統で照合し一致を確認。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、指摘0件。　中野〜三鷹の7駅は中央線快速(JC)と共有。両路線のファイルに入れてあるので乗換駅として繋がる。　座標検査の西千葉→千葉の指摘は、千葉がハブ駅で余白を広く取って描かれているための誤検知。　2026-09-02: 同名の別駅と1駅に統合されていたため「中野」を nakano-tokyo（中央線・東西線（東京都中野区））として分離した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Ch%C5%AB%C5%8D%E2%80%93S%C5%8Dbu_Line",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "mitaka",
+      "numbering": "JB01"
+    },
+    {
+      "stationId": "kichijoji",
+      "numbering": "JB02"
+    },
+    {
+      "stationId": "nishi-ogikubo",
+      "numbering": "JB03"
+    },
+    {
+      "stationId": "ogikubo",
+      "numbering": "JB04"
+    },
+    {
+      "stationId": "asagaya",
+      "numbering": "JB05"
+    },
+    {
+      "stationId": "koenji",
+      "numbering": "JB06"
+    },
+    {
+      "stationId": "nakano-tokyo",
+      "numbering": "JB07"
+    },
+    {
+      "stationId": "higashi-nakano",
+      "numbering": "JB08"
+    },
+    {
+      "stationId": "okubo",
+      "numbering": "JB09"
+    },
+    {
+      "stationId": "shinjuku",
+      "numbering": "JB10"
+    },
+    {
+      "stationId": "yoyogi",
+      "numbering": "JB11"
+    },
+    {
+      "stationId": "sendagaya",
+      "numbering": "JB12"
+    },
+    {
+      "stationId": "shinanomachi",
+      "numbering": "JB13"
+    },
+    {
+      "stationId": "yotsuya",
+      "numbering": "JB14"
+    },
+    {
+      "stationId": "ichigaya",
+      "numbering": "JB15"
+    },
+    {
+      "stationId": "iidabashi",
+      "numbering": "JB16"
+    },
+    {
+      "stationId": "suidobashi",
+      "numbering": "JB17"
+    },
+    {
+      "stationId": "ochanomizu",
+      "numbering": "JB18"
+    },
+    {
+      "stationId": "akihabara",
+      "numbering": "JB19"
+    },
+    {
+      "stationId": "asakusabashi",
+      "numbering": "JB20"
+    },
+    {
+      "stationId": "ryogoku",
+      "numbering": "JB21"
+    },
+    {
+      "stationId": "kinshicho",
+      "numbering": "JB22"
+    },
+    {
+      "stationId": "kameido",
+      "numbering": "JB23"
+    },
+    {
+      "stationId": "hirai",
+      "numbering": "JB24"
+    },
+    {
+      "stationId": "shin-koiwa",
+      "numbering": "JB25"
+    },
+    {
+      "stationId": "koiwa",
+      "numbering": "JB26"
+    },
+    {
+      "stationId": "ichikawa",
+      "numbering": "JB27"
+    },
+    {
+      "stationId": "motoyawata",
+      "numbering": "JB28"
+    },
+    {
+      "stationId": "shimosa-nakayama",
+      "numbering": "JB29"
+    },
+    {
+      "stationId": "nishi-funabashi",
+      "numbering": "JB30"
+    },
+    {
+      "stationId": "funabashi",
+      "numbering": "JB31"
+    },
+    {
+      "stationId": "higashi-funabashi",
+      "numbering": "JB32"
+    },
+    {
+      "stationId": "tsudanuma",
+      "numbering": "JB33"
+    },
+    {
+      "stationId": "makuharihongo",
+      "numbering": "JB34"
+    },
+    {
+      "stationId": "makuhari",
+      "numbering": "JB35"
+    },
+    {
+      "stationId": "shin-kemigawa",
+      "numbering": "JB36"
+    },
+    {
+      "stationId": "inage",
+      "numbering": "JB37"
+    },
+    {
+      "stationId": "nishi-chiba",
+      "numbering": "JB38"
+    },
+    {
+      "stationId": "chiba",
+      "numbering": "JB39"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "keisei--chihara",
+  "operatorId": "keisei",
+  "name": "京成千原線",
+  "formalName": "千原線",
+  "kana": "けいせいちはらせん",
+  "symbol": "KS",
+  "color": "#15388B",
+  "colorName": "紺",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を日本語版・英語版Wikipediaの2系統で照合。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。「ケ／ヶ」は事業者の正式表記に従った。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Keisei_Chihara_Line",
+    "https://www.keisei.co.jp/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "chiba-chuo",
+      "numbering": "KS60"
+    },
+    {
+      "stationId": "chibadera",
+      "numbering": "KS61"
+    },
+    {
+      "stationId": "omoridai",
+      "numbering": "KS62"
+    },
+    {
+      "stationId": "gakuemmae-keisei",
+      "numbering": "KS63"
+    },
+    {
+      "stationId": "oyumino",
+      "numbering": "KS64"
+    },
+    {
+      "stationId": "chiharadai",
+      "numbering": "KS65"
+    }
+  ]
+}

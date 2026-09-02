@@ -1,0 +1,48 @@
+{
+  "id": "keio--takao",
+  "operatorId": "keio",
+  "name": "京王高尾線",
+  "formalName": "高尾線",
+  "kana": "けいおうたかおせん",
+  "symbol": "KO",
+  "color": "#DD0076",
+  "colorName": "ピンク",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、京王電鉄公式サイトと突き合わせた。ふりがなはローマ字表記から起こした。「ケ／ヶ」は事業者の正式表記（小さいヶ）に従った。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Keio_Takao_Line",
+    "https://www.keio.co.jp/train/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "kitano",
+      "numbering": "KO33"
+    },
+    {
+      "stationId": "keio-katakura",
+      "numbering": "KO48"
+    },
+    {
+      "stationId": "yamada",
+      "numbering": "KO49"
+    },
+    {
+      "stationId": "mejirodai",
+      "numbering": "KO50"
+    },
+    {
+      "stationId": "hazama",
+      "numbering": "KO51"
+    },
+    {
+      "stationId": "takao",
+      "numbering": "KO52"
+    },
+    {
+      "stationId": "takaosanguchi",
+      "numbering": "KO53"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "tokyu--ikegami",
+  "operatorId": "tokyu",
+  "name": "東急池上線",
+  "formalName": "池上線",
+  "kana": "とうきゅういけがみせん",
+  "symbol": "IK",
+  "color": "#EE86A7",
+  "colorName": "ピンク",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（東横線は日本語版とも照合）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tokyu_Ikegami_Line",
+    "https://www.tokyu.co.jp/railway/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "gotanda",
+      "numbering": "IK01"
+    },
+    {
+      "stationId": "osakihirokoji",
+      "numbering": "IK02"
+    },
+    {
+      "stationId": "togoshi-ginza",
+      "numbering": "IK03"
+    },
+    {
+      "stationId": "ebara-nakanobu",
+      "numbering": "IK04"
+    },
+    {
+      "stationId": "hatanodai",
+      "numbering": "IK05"
+    },
+    {
+      "stationId": "nagahara",
+      "numbering": "IK06"
+    },
+    {
+      "stationId": "senzoku-ike",
+      "numbering": "IK07"
+    },
+    {
+      "stationId": "ishikawa-dai",
+      "numbering": "IK08"
+    },
+    {
+      "stationId": "yukigaya-otsuka",
+      "numbering": "IK09"
+    },
+    {
+      "stationId": "ontakesan",
+      "numbering": "IK10"
+    },
+    {
+      "stationId": "kugahara",
+      "numbering": "IK11"
+    },
+    {
+      "stationId": "chidoricho",
+      "numbering": "IK12"
+    },
+    {
+      "stationId": "ikegami",
+      "numbering": "IK13"
+    },
+    {
+      "stationId": "hasunuma",
+      "numbering": "IK14"
+    },
+    {
+      "stationId": "kamata",
+      "numbering": "IK15"
+    }
+  ]
+}

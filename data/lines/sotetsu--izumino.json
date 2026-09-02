@@ -1,0 +1,52 @@
+{
+  "id": "sotetsu--izumino",
+  "operatorId": "sotetsu",
+  "name": "相鉄いずみ野線",
+  "formalName": "いずみ野線",
+  "kana": "そうてついずみのせん",
+  "symbol": "SO",
+  "color": "#000080",
+  "colorName": "紺",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、相模鉄道公式サイトと突き合わせた。ふりがなはローマ字表記から起こした。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Sotetsu_Izumino_Line",
+    "https://www.sotetsu.co.jp/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "futamatagawa",
+      "numbering": "SO10"
+    },
+    {
+      "stationId": "minami-makigahara",
+      "numbering": "SO31"
+    },
+    {
+      "stationId": "ryokuentoshi",
+      "numbering": "SO32"
+    },
+    {
+      "stationId": "yayoidai",
+      "numbering": "SO33"
+    },
+    {
+      "stationId": "izumino",
+      "numbering": "SO34"
+    },
+    {
+      "stationId": "izumi-chuo",
+      "numbering": "SO35"
+    },
+    {
+      "stationId": "yumegaoka",
+      "numbering": "SO36"
+    },
+    {
+      "stationId": "shonandai",
+      "numbering": "SO37"
+    }
+  ]
+}

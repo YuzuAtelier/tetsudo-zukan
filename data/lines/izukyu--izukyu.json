@@ -1,0 +1,65 @@
+{
+  "id": "izukyu--izukyu",
+  "operatorId": "izukyu",
+  "name": "伊豆急行線",
+  "formalName": "伊豆急行線",
+  "kana": "いずきゅうこうせん",
+  "color": "#0089CF",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版（一部日本語版）Wikipediaで確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　　この路線は路線図PDFの描画範囲の外（「至○○」の注記のみ）にあり、路線図との駅名照合ができていない。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Izu_Ky%C5%ABk%C5%8D_Line"
+  ],
+  "stations": [
+    {
+      "stationId": "ito"
+    },
+    {
+      "stationId": "minami-ito"
+    },
+    {
+      "stationId": "kawana"
+    },
+    {
+      "stationId": "futo"
+    },
+    {
+      "stationId": "jogasaki-kaigan"
+    },
+    {
+      "stationId": "izu-kogen"
+    },
+    {
+      "stationId": "izu-okawa"
+    },
+    {
+      "stationId": "izu-hokkawa"
+    },
+    {
+      "stationId": "izu-atagawa"
+    },
+    {
+      "stationId": "katase-shirata"
+    },
+    {
+      "stationId": "izu-inatori"
+    },
+    {
+      "stationId": "imaihama-kaigan"
+    },
+    {
+      "stationId": "kawazu"
+    },
+    {
+      "stationId": "inazusa"
+    },
+    {
+      "stationId": "rendaiji"
+    },
+    {
+      "stationId": "izukyu-shimoda"
+    }
+  ]
+}

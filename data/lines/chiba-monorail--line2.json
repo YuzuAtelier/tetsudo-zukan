@@ -1,0 +1,74 @@
+{
+  "id": "chiba-monorail--line2",
+  "operatorId": "chiba-monorail",
+  "name": "千葉都市モノレール2号線",
+  "formalName": "2号線",
+  "kana": "ちばとしものれーるにごうせん",
+  "symbol": "CM",
+  "color": "#00A0E9",
+  "colorName": "水色",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版Wikipedia（湘南モノレールは日本語版）で確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　英語版Wikipediaの駅名に複数の誤りがあった。「三津ヶ辻台」「栂」「千代田台北」「千代田台」はいずれも路線図PDFに存在しない表記で、路線図と照合して みつわ台・（栂は実在しない駅と判断し削除）・千城台北・千城台 に修正した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Chiba_Urban_Monorail"
+  ],
+  "stations": [
+    {
+      "stationId": "chibaminato",
+      "numbering": "CM01"
+    },
+    {
+      "stationId": "shiyakushomae",
+      "numbering": "CM02"
+    },
+    {
+      "stationId": "chiba",
+      "numbering": "CM03"
+    },
+    {
+      "stationId": "chiba-koen",
+      "numbering": "CM07"
+    },
+    {
+      "stationId": "sakusabe",
+      "numbering": "CM08"
+    },
+    {
+      "stationId": "tendai",
+      "numbering": "CM09"
+    },
+    {
+      "stationId": "anagawa",
+      "numbering": "CM10"
+    },
+    {
+      "stationId": "sports-center",
+      "numbering": "CM11"
+    },
+    {
+      "stationId": "dobutsu-koen",
+      "numbering": "CM12"
+    },
+    {
+      "stationId": "mitsuwadai",
+      "numbering": "CM13"
+    },
+    {
+      "stationId": "sakuragi",
+      "numbering": "CM14"
+    },
+    {
+      "stationId": "oguradai",
+      "numbering": "CM15"
+    },
+    {
+      "stationId": "chishirodai-kita",
+      "numbering": "CM16"
+    },
+    {
+      "stationId": "chishirodai",
+      "numbering": "CM17"
+    }
+  ]
+}

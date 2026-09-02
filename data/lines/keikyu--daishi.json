@@ -1,0 +1,48 @@
+{
+  "id": "keikyu--daishi",
+  "operatorId": "keikyu",
+  "name": "京急大師線",
+  "formalName": "大師線",
+  "kana": "けいきゅうだいしせん",
+  "symbol": "KK",
+  "color": "#00A3E4",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、京急電鉄公式サイトと突き合わせた。ふりがなはローマ字表記から起こした。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Keiky%C5%AB_Daishi_Line",
+    "https://www.keikyu.co.jp/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "keikyu-kawasaki",
+      "numbering": "KK20"
+    },
+    {
+      "stationId": "minatocho",
+      "numbering": "KK21"
+    },
+    {
+      "stationId": "suzukicho",
+      "numbering": "KK22"
+    },
+    {
+      "stationId": "kawasaki-daishi",
+      "numbering": "KK23"
+    },
+    {
+      "stationId": "higashi-monzen",
+      "numbering": "KK24"
+    },
+    {
+      "stationId": "daishibashi",
+      "numbering": "KK25"
+    },
+    {
+      "stationId": "kojimashinden",
+      "numbering": "KK26"
+    }
+  ]
+}

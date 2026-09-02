@@ -1,0 +1,43 @@
+{
+  "id": "yokohama-minatomirai--minatomirai",
+  "operatorId": "yokohama-minatomirai",
+  "name": "みなとみらい線",
+  "formalName": "みなとみらい線",
+  "kana": "みなとみらいせん",
+  "symbol": "MM",
+  "color": "#003E8E",
+  "colorName": "紺",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認。東急東横線と直通運転しており、起点の横浜(MM01)は東横線のTY21と同一駅。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Minatomirai_Line",
+    "https://www.mm21railway.co.jp/"
+  ],
+  "stations": [
+    {
+      "stationId": "yokohama",
+      "numbering": "MM01"
+    },
+    {
+      "stationId": "shin-takashima",
+      "numbering": "MM02"
+    },
+    {
+      "stationId": "minatomirai",
+      "numbering": "MM03"
+    },
+    {
+      "stationId": "bashamichi",
+      "numbering": "MM04"
+    },
+    {
+      "stationId": "nihon-odori",
+      "numbering": "MM05"
+    },
+    {
+      "stationId": "motomachi-chukagai",
+      "numbering": "MM06"
+    }
+  ]
+}

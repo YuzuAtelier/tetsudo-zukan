@@ -1,0 +1,10805 @@
+{
+  "stations": [
+    {
+      "id": "shibuya",
+      "name": "渋谷",
+      "kana": "しぶや"
+    },
+    {
+      "id": "omote-sando",
+      "name": "表参道",
+      "kana": "おもてさんどう"
+    },
+    {
+      "id": "gaiemmae",
+      "name": "外苑前",
+      "kana": "がいえんまえ"
+    },
+    {
+      "id": "aoyama-itchome",
+      "name": "青山一丁目",
+      "kana": "あおやまいっちょうめ"
+    },
+    {
+      "id": "akasaka-mitsuke",
+      "name": "赤坂見附",
+      "kana": "あかさかみつけ"
+    },
+    {
+      "id": "tameike-sanno",
+      "name": "溜池山王",
+      "kana": "ためいけさんのう"
+    },
+    {
+      "id": "toranomon",
+      "name": "虎ノ門",
+      "kana": "とらのもん"
+    },
+    {
+      "id": "shimbashi",
+      "name": "新橋",
+      "kana": "しんばし"
+    },
+    {
+      "id": "ginza",
+      "name": "銀座",
+      "kana": "ぎんざ"
+    },
+    {
+      "id": "kyobashi",
+      "name": "京橋",
+      "kana": "きょうばし"
+    },
+    {
+      "id": "nihombashi",
+      "name": "日本橋",
+      "kana": "にほんばし"
+    },
+    {
+      "id": "mitsukoshimae",
+      "name": "三越前",
+      "kana": "みつこしまえ"
+    },
+    {
+      "id": "kanda",
+      "name": "神田",
+      "kana": "かんだ"
+    },
+    {
+      "id": "suehirocho",
+      "name": "末広町",
+      "kana": "すえひろちょう"
+    },
+    {
+      "id": "ueno-hirokoji",
+      "name": "上野広小路",
+      "kana": "うえのひろこうじ"
+    },
+    {
+      "id": "ueno",
+      "name": "上野",
+      "kana": "うえの"
+    },
+    {
+      "id": "inaricho",
+      "name": "稲荷町",
+      "kana": "いなりちょう"
+    },
+    {
+      "id": "tawaramachi",
+      "name": "田原町",
+      "kana": "たわらまち"
+    },
+    {
+      "id": "asakusa",
+      "name": "浅草",
+      "kana": "あさくさ"
+    },
+    {
+      "id": "ogikubo",
+      "name": "荻窪",
+      "kana": "おぎくぼ"
+    },
+    {
+      "id": "minami-asagaya",
+      "name": "南阿佐ケ谷",
+      "kana": "みなみあさがや"
+    },
+    {
+      "id": "shin-koenji",
+      "name": "新高円寺",
+      "kana": "しんこうえんじ"
+    },
+    {
+      "id": "higashi-koenji",
+      "name": "東高円寺",
+      "kana": "ひがしこうえんじ"
+    },
+    {
+      "id": "shin-nakano",
+      "name": "新中野",
+      "kana": "しんなかの"
+    },
+    {
+      "id": "nakano-sakaue",
+      "name": "中野坂上",
+      "kana": "なかのさかうえ"
+    },
+    {
+      "id": "nishi-shinjuku",
+      "name": "西新宿",
+      "kana": "にししんじゅく"
+    },
+    {
+      "id": "shinjuku",
+      "name": "新宿",
+      "kana": "しんじゅく"
+    },
+    {
+      "id": "shinjuku-sanchome",
+      "name": "新宿三丁目",
+      "kana": "しんじゅくさんちょうめ"
+    },
+    {
+      "id": "shinjuku-gyoemmae",
+      "name": "新宿御苑前",
+      "kana": "しんじゅくぎょえんまえ"
+    },
+    {
+      "id": "yotsuya-sanchome",
+      "name": "四谷三丁目",
+      "kana": "よつやさんちょうめ"
+    },
+    {
+      "id": "yotsuya",
+      "name": "四ツ谷",
+      "kana": "よつや"
+    },
+    {
+      "id": "kokkai-gijidomae",
+      "name": "国会議事堂前",
+      "kana": "こっかいぎじどうまえ"
+    },
+    {
+      "id": "kasumigaseki",
+      "name": "霞ケ関",
+      "kana": "かすみがせき"
+    },
+    {
+      "id": "tokyo",
+      "name": "東京",
+      "kana": "とうきょう"
+    },
+    {
+      "id": "otemachi",
+      "name": "大手町",
+      "kana": "おおてまち"
+    },
+    {
+      "id": "awajicho",
+      "name": "淡路町",
+      "kana": "あわじちょう"
+    },
+    {
+      "id": "ochanomizu",
+      "name": "御茶ノ水",
+      "kana": "おちゃのみず"
+    },
+    {
+      "id": "hongo-sanchome",
+      "name": "本郷三丁目",
+      "kana": "ほんごうさんちょうめ"
+    },
+    {
+      "id": "korakuen",
+      "name": "後楽園",
+      "kana": "こうらくえん"
+    },
+    {
+      "id": "myogadani",
+      "name": "茗荷谷",
+      "kana": "みょうがだに"
+    },
+    {
+      "id": "shin-otsuka",
+      "name": "新大塚",
+      "kana": "しんおおつか"
+    },
+    {
+      "id": "ikebukuro",
+      "name": "池袋",
+      "kana": "いけぶくろ"
+    },
+    {
+      "id": "honancho",
+      "name": "方南町",
+      "kana": "ほうなんちょう"
+    },
+    {
+      "id": "nakano-fujimicho",
+      "name": "中野富士見町",
+      "kana": "なかのふじみちょう"
+    },
+    {
+      "id": "nakano-shimbashi",
+      "name": "中野新橋",
+      "kana": "なかのしんばし"
+    },
+    {
+      "id": "naka-meguro",
+      "name": "中目黒",
+      "kana": "なかめぐろ"
+    },
+    {
+      "id": "ebisu",
+      "name": "恵比寿",
+      "kana": "えびす"
+    },
+    {
+      "id": "hiro-o",
+      "name": "広尾",
+      "kana": "ひろお"
+    },
+    {
+      "id": "roppongi",
+      "name": "六本木",
+      "kana": "ろっぽんぎ"
+    },
+    {
+      "id": "kamiyacho",
+      "name": "神谷町",
+      "kana": "かみやちょう"
+    },
+    {
+      "id": "toranomon-hills",
+      "name": "虎ノ門ヒルズ",
+      "kana": "とらのもんひるず"
+    },
+    {
+      "id": "hibiya",
+      "name": "日比谷",
+      "kana": "ひびや"
+    },
+    {
+      "id": "higashi-ginza",
+      "name": "東銀座",
+      "kana": "ひがしぎんざ"
+    },
+    {
+      "id": "tsukiji",
+      "name": "築地",
+      "kana": "つきじ"
+    },
+    {
+      "id": "hatchobori",
+      "name": "八丁堀",
+      "kana": "はっちょうぼり"
+    },
+    {
+      "id": "kayabacho",
+      "name": "茅場町",
+      "kana": "かやばちょう"
+    },
+    {
+      "id": "ningyocho",
+      "name": "人形町",
+      "kana": "にんぎょうちょう"
+    },
+    {
+      "id": "kodemmacho",
+      "name": "小伝馬町",
+      "kana": "こでんまちょう"
+    },
+    {
+      "id": "akihabara",
+      "name": "秋葉原",
+      "kana": "あきはばら"
+    },
+    {
+      "id": "naka-okachimachi",
+      "name": "仲御徒町",
+      "kana": "なかおかちまち"
+    },
+    {
+      "id": "iriya-tokyo",
+      "name": "入谷",
+      "kana": "いりや"
+    },
+    {
+      "id": "minowa",
+      "name": "三ノ輪",
+      "kana": "みのわ"
+    },
+    {
+      "id": "minami-senju",
+      "name": "南千住",
+      "kana": "みなみせんじゅ"
+    },
+    {
+      "id": "kita-senju",
+      "name": "北千住",
+      "kana": "きたせんじゅ"
+    },
+    {
+      "id": "nakano-tokyo",
+      "name": "中野",
+      "kana": "なかの"
+    },
+    {
+      "id": "ochiai",
+      "name": "落合",
+      "kana": "おちあい"
+    },
+    {
+      "id": "takadanobaba",
+      "name": "高田馬場",
+      "kana": "たかだのばば"
+    },
+    {
+      "id": "waseda",
+      "name": "早稲田",
+      "kana": "わせだ"
+    },
+    {
+      "id": "kagurazaka",
+      "name": "神楽坂",
+      "kana": "かぐらざか"
+    },
+    {
+      "id": "iidabashi",
+      "name": "飯田橋",
+      "kana": "いいだばし"
+    },
+    {
+      "id": "kudanshita",
+      "name": "九段下",
+      "kana": "くだんした"
+    },
+    {
+      "id": "takebashi",
+      "name": "竹橋",
+      "kana": "たけばし"
+    },
+    {
+      "id": "monzen-nakacho",
+      "name": "門前仲町",
+      "kana": "もんぜんなかちょう"
+    },
+    {
+      "id": "kiba",
+      "name": "木場",
+      "kana": "きば"
+    },
+    {
+      "id": "toyocho",
+      "name": "東陽町",
+      "kana": "とうようちょう"
+    },
+    {
+      "id": "minami-sunamachi",
+      "name": "南砂町",
+      "kana": "みなみすなまち"
+    },
+    {
+      "id": "nishi-kasai",
+      "name": "西葛西",
+      "kana": "にしかさい"
+    },
+    {
+      "id": "kasai",
+      "name": "葛西",
+      "kana": "かさい"
+    },
+    {
+      "id": "urayasu",
+      "name": "浦安",
+      "kana": "うらやす"
+    },
+    {
+      "id": "minami-gyotoku",
+      "name": "南行徳",
+      "kana": "みなみぎょうとく"
+    },
+    {
+      "id": "gyotoku",
+      "name": "行徳",
+      "kana": "ぎょうとく"
+    },
+    {
+      "id": "myoden",
+      "name": "妙典",
+      "kana": "みょうでん"
+    },
+    {
+      "id": "baraki-nakayama",
+      "name": "原木中山",
+      "kana": "ばらきなかやま"
+    },
+    {
+      "id": "nishi-funabashi",
+      "name": "西船橋",
+      "kana": "にしふなばし"
+    },
+    {
+      "id": "yoyogi-uehara",
+      "name": "代々木上原",
+      "kana": "よよぎうえはら"
+    },
+    {
+      "id": "yoyogi-koen",
+      "name": "代々木公園",
+      "kana": "よよぎこうえん"
+    },
+    {
+      "id": "meiji-jingumae",
+      "name": "明治神宮前",
+      "kana": "めいじじんぐうまえ",
+      "subName": "原宿",
+      "subKana": "はらじゅく"
+    },
+    {
+      "id": "nogizaka",
+      "name": "乃木坂",
+      "kana": "のぎざか"
+    },
+    {
+      "id": "akasaka-tokyo",
+      "name": "赤坂",
+      "kana": "あかさか"
+    },
+    {
+      "id": "nijubashimae",
+      "name": "二重橋前",
+      "kana": "にじゅうばしまえ",
+      "subName": "丸の内",
+      "subKana": "まるのうち"
+    },
+    {
+      "id": "shin-ochanomizu",
+      "name": "新御茶ノ水",
+      "kana": "しんおちゃのみず"
+    },
+    {
+      "id": "yushima",
+      "name": "湯島",
+      "kana": "ゆしま"
+    },
+    {
+      "id": "nezu",
+      "name": "根津",
+      "kana": "ねづ"
+    },
+    {
+      "id": "sendagi",
+      "name": "千駄木",
+      "kana": "せんだぎ"
+    },
+    {
+      "id": "nishi-nippori",
+      "name": "西日暮里",
+      "kana": "にしにっぽり"
+    },
+    {
+      "id": "machiya",
+      "name": "町屋",
+      "kana": "まちや"
+    },
+    {
+      "id": "ayase",
+      "name": "綾瀬",
+      "kana": "あやせ"
+    },
+    {
+      "id": "kita-ayase",
+      "name": "北綾瀬",
+      "kana": "きたあやせ"
+    },
+    {
+      "id": "wakoshi",
+      "name": "和光市",
+      "kana": "わこうし"
+    },
+    {
+      "id": "chikatetsu-narimasu",
+      "name": "地下鉄成増",
+      "kana": "ちかてつなります"
+    },
+    {
+      "id": "chikatetsu-akatsuka",
+      "name": "地下鉄赤塚",
+      "kana": "ちかてつあかつか"
+    },
+    {
+      "id": "heiwadai-tokyo",
+      "name": "平和台",
+      "kana": "へいわだい"
+    },
+    {
+      "id": "hikawadai",
+      "name": "氷川台",
+      "kana": "ひかわだい"
+    },
+    {
+      "id": "kotake-mukaihara",
+      "name": "小竹向原",
+      "kana": "こたけむかいはら"
+    },
+    {
+      "id": "senkawa",
+      "name": "千川",
+      "kana": "せんかわ"
+    },
+    {
+      "id": "kanamecho",
+      "name": "要町",
+      "kana": "かなめちょう"
+    },
+    {
+      "id": "higashi-ikebukuro",
+      "name": "東池袋",
+      "kana": "ひがしいけぶくろ"
+    },
+    {
+      "id": "gokokuji",
+      "name": "護国寺",
+      "kana": "ごこくじ"
+    },
+    {
+      "id": "edogawabashi",
+      "name": "江戸川橋",
+      "kana": "えどがわばし"
+    },
+    {
+      "id": "ichigaya",
+      "name": "市ケ谷",
+      "kana": "いちがや"
+    },
+    {
+      "id": "kojimachi",
+      "name": "麹町",
+      "kana": "こうじまち"
+    },
+    {
+      "id": "nagatacho",
+      "name": "永田町",
+      "kana": "ながたちょう"
+    },
+    {
+      "id": "sakuradamon",
+      "name": "桜田門",
+      "kana": "さくらだもん"
+    },
+    {
+      "id": "yurakucho",
+      "name": "有楽町",
+      "kana": "ゆうらくちょう"
+    },
+    {
+      "id": "ginza-itchome",
+      "name": "銀座一丁目",
+      "kana": "ぎんざいっちょうめ"
+    },
+    {
+      "id": "shintomicho",
+      "name": "新富町",
+      "kana": "しんとみちょう"
+    },
+    {
+      "id": "tsukishima",
+      "name": "月島",
+      "kana": "つきしま"
+    },
+    {
+      "id": "toyosu",
+      "name": "豊洲",
+      "kana": "とよす"
+    },
+    {
+      "id": "tatsumi",
+      "name": "辰巳",
+      "kana": "たつみ"
+    },
+    {
+      "id": "shin-kiba",
+      "name": "新木場",
+      "kana": "しんきば"
+    },
+    {
+      "id": "hanzomon",
+      "name": "半蔵門",
+      "kana": "はんぞうもん"
+    },
+    {
+      "id": "jimbocho",
+      "name": "神保町",
+      "kana": "じんぼうちょう"
+    },
+    {
+      "id": "suitengumae",
+      "name": "水天宮前",
+      "kana": "すいてんぐうまえ"
+    },
+    {
+      "id": "kiyosumi-shirakawa",
+      "name": "清澄白河",
+      "kana": "きよすみしらかわ"
+    },
+    {
+      "id": "sumiyoshi",
+      "name": "住吉",
+      "kana": "すみよし"
+    },
+    {
+      "id": "kinshicho",
+      "name": "錦糸町",
+      "kana": "きんしちょう"
+    },
+    {
+      "id": "oshiage",
+      "name": "押上",
+      "kana": "おしあげ",
+      "subName": "スカイツリー前",
+      "subKana": "すかいつりーまえ"
+    },
+    {
+      "id": "meguro",
+      "name": "目黒",
+      "kana": "めぐろ"
+    },
+    {
+      "id": "shirokanedai",
+      "name": "白金台",
+      "kana": "しろかねだい"
+    },
+    {
+      "id": "shirokane-takanawa",
+      "name": "白金高輪",
+      "kana": "しろかねたかなわ"
+    },
+    {
+      "id": "azabu-juban",
+      "name": "麻布十番",
+      "kana": "あざぶじゅうばん"
+    },
+    {
+      "id": "roppongi-itchome",
+      "name": "六本木一丁目",
+      "kana": "ろっぽんぎいっちょうめ"
+    },
+    {
+      "id": "todaimae",
+      "name": "東大前",
+      "kana": "とうだいまえ"
+    },
+    {
+      "id": "hon-komagome",
+      "name": "本駒込",
+      "kana": "ほんこまごめ"
+    },
+    {
+      "id": "komagome",
+      "name": "駒込",
+      "kana": "こまごめ"
+    },
+    {
+      "id": "nishigahara",
+      "name": "西ケ原",
+      "kana": "にしがはら"
+    },
+    {
+      "id": "oji",
+      "name": "王子",
+      "kana": "おうじ"
+    },
+    {
+      "id": "oji-kamiya",
+      "name": "王子神谷",
+      "kana": "おうじかみや"
+    },
+    {
+      "id": "shimo",
+      "name": "志茂",
+      "kana": "しも"
+    },
+    {
+      "id": "akabane-iwabuchi",
+      "name": "赤羽岩淵",
+      "kana": "あかばねいわぶち"
+    },
+    {
+      "id": "zoshigaya",
+      "name": "雑司が谷",
+      "kana": "ぞうしがや"
+    },
+    {
+      "id": "nishi-waseda",
+      "name": "西早稲田",
+      "kana": "にしわせだ"
+    },
+    {
+      "id": "higashi-shinjuku",
+      "name": "東新宿",
+      "kana": "ひがししんじゅく"
+    },
+    {
+      "id": "kita-sando",
+      "name": "北参道",
+      "kana": "きたさんどう"
+    },
+    {
+      "id": "nishi-magome",
+      "name": "西馬込",
+      "kana": "にしまごめ"
+    },
+    {
+      "id": "magome",
+      "name": "馬込",
+      "kana": "まごめ"
+    },
+    {
+      "id": "nakanobu",
+      "name": "中延",
+      "kana": "なかのぶ"
+    },
+    {
+      "id": "togoshi",
+      "name": "戸越",
+      "kana": "とごし"
+    },
+    {
+      "id": "gotanda",
+      "name": "五反田",
+      "kana": "ごたんだ"
+    },
+    {
+      "id": "takanawadai",
+      "name": "高輪台",
+      "kana": "たかなわだい"
+    },
+    {
+      "id": "sengakuji",
+      "name": "泉岳寺",
+      "kana": "せんがくじ"
+    },
+    {
+      "id": "mita",
+      "name": "三田",
+      "kana": "みた"
+    },
+    {
+      "id": "daimon",
+      "name": "大門",
+      "kana": "だいもん"
+    },
+    {
+      "id": "takaracho",
+      "name": "宝町",
+      "kana": "たからちょう"
+    },
+    {
+      "id": "higashi-nihombashi",
+      "name": "東日本橋",
+      "kana": "ひがしにほんばし"
+    },
+    {
+      "id": "asakusabashi",
+      "name": "浅草橋",
+      "kana": "あさくさばし"
+    },
+    {
+      "id": "kuramae",
+      "name": "蔵前",
+      "kana": "くらまえ"
+    },
+    {
+      "id": "honjo-azumabashi",
+      "name": "本所吾妻橋",
+      "kana": "ほんじょあづまばし"
+    },
+    {
+      "id": "shibakoen",
+      "name": "芝公園",
+      "kana": "しばこうえん"
+    },
+    {
+      "id": "onarimon",
+      "name": "御成門",
+      "kana": "おなりもん"
+    },
+    {
+      "id": "uchisaiwaicho",
+      "name": "内幸町",
+      "kana": "うちさいわいちょう"
+    },
+    {
+      "id": "suidobashi",
+      "name": "水道橋",
+      "kana": "すいどうばし"
+    },
+    {
+      "id": "kasuga",
+      "name": "春日",
+      "kana": "かすが"
+    },
+    {
+      "id": "hakusan",
+      "name": "白山",
+      "kana": "はくさん"
+    },
+    {
+      "id": "sengoku",
+      "name": "千石",
+      "kana": "せんごく"
+    },
+    {
+      "id": "sugamo",
+      "name": "巣鴨",
+      "kana": "すがも"
+    },
+    {
+      "id": "nishi-sugamo",
+      "name": "西巣鴨",
+      "kana": "にしすがも"
+    },
+    {
+      "id": "shin-itabashi",
+      "name": "新板橋",
+      "kana": "しんいたばし"
+    },
+    {
+      "id": "itabashikuyakushomae",
+      "name": "板橋区役所前",
+      "kana": "いたばしくやくしょまえ"
+    },
+    {
+      "id": "itabashi-honcho",
+      "name": "板橋本町",
+      "kana": "いたばしほんちょう"
+    },
+    {
+      "id": "motohasunuma",
+      "name": "本蓮沼",
+      "kana": "もとはすぬま"
+    },
+    {
+      "id": "shimura-sakaue",
+      "name": "志村坂上",
+      "kana": "しむらさかうえ"
+    },
+    {
+      "id": "shimura-sanchome",
+      "name": "志村三丁目",
+      "kana": "しむらさんちょうめ"
+    },
+    {
+      "id": "hasune",
+      "name": "蓮根",
+      "kana": "はすね"
+    },
+    {
+      "id": "nishidai",
+      "name": "西台",
+      "kana": "にしだい"
+    },
+    {
+      "id": "takashimadaira",
+      "name": "高島平",
+      "kana": "たかしまだいら"
+    },
+    {
+      "id": "shin-takashimadaira",
+      "name": "新高島平",
+      "kana": "しんたかしまだいら"
+    },
+    {
+      "id": "nishi-takashimadaira",
+      "name": "西高島平",
+      "kana": "にしたかしまだいら"
+    },
+    {
+      "id": "akebonobashi",
+      "name": "曙橋",
+      "kana": "あけぼのばし"
+    },
+    {
+      "id": "ogawamachi-tokyo",
+      "name": "小川町",
+      "kana": "おがわまち"
+    },
+    {
+      "id": "iwamotocho",
+      "name": "岩本町",
+      "kana": "いわもとちょう"
+    },
+    {
+      "id": "bakuro-yokoyama",
+      "name": "馬喰横山",
+      "kana": "ばくろよこやま"
+    },
+    {
+      "id": "hamacho",
+      "name": "浜町",
+      "kana": "はまちょう"
+    },
+    {
+      "id": "morishita",
+      "name": "森下",
+      "kana": "もりした"
+    },
+    {
+      "id": "kikukawa",
+      "name": "菊川",
+      "kana": "きくかわ"
+    },
+    {
+      "id": "nishi-ojima",
+      "name": "西大島",
+      "kana": "にしおおじま"
+    },
+    {
+      "id": "ojima",
+      "name": "大島",
+      "kana": "おおじま"
+    },
+    {
+      "id": "higashi-ojima",
+      "name": "東大島",
+      "kana": "ひがしおおじま"
+    },
+    {
+      "id": "funabori",
+      "name": "船堀",
+      "kana": "ふなぼり"
+    },
+    {
+      "id": "ichinoe",
+      "name": "一之江",
+      "kana": "いちのえ"
+    },
+    {
+      "id": "mizue",
+      "name": "瑞江",
+      "kana": "みずえ"
+    },
+    {
+      "id": "shinozaki",
+      "name": "篠崎",
+      "kana": "しのざき"
+    },
+    {
+      "id": "motoyawata",
+      "name": "本八幡",
+      "kana": "もとやわた"
+    },
+    {
+      "id": "shinjuku-nishiguchi",
+      "name": "新宿西口",
+      "kana": "しんじゅくにしぐち"
+    },
+    {
+      "id": "wakamatsu-kawada",
+      "name": "若松河田",
+      "kana": "わかまつかわだ"
+    },
+    {
+      "id": "ushigome-yanagicho",
+      "name": "牛込柳町",
+      "kana": "うしごめやなぎちょう"
+    },
+    {
+      "id": "ushigome-kagurazaka",
+      "name": "牛込神楽坂",
+      "kana": "うしごめかぐらざか"
+    },
+    {
+      "id": "ueno-okachimachi",
+      "name": "上野御徒町",
+      "kana": "うえのおかちまち"
+    },
+    {
+      "id": "shin-okachimachi",
+      "name": "新御徒町",
+      "kana": "しんおかちまち"
+    },
+    {
+      "id": "ryogoku",
+      "name": "両国",
+      "kana": "りょうごく"
+    },
+    {
+      "id": "kachidoki",
+      "name": "勝どき",
+      "kana": "かちどき"
+    },
+    {
+      "id": "tsukijishijo",
+      "name": "築地市場",
+      "kana": "つきじしじょう"
+    },
+    {
+      "id": "shiodome",
+      "name": "汐留",
+      "kana": "しおどめ"
+    },
+    {
+      "id": "akabanebashi",
+      "name": "赤羽橋",
+      "kana": "あかばねばし"
+    },
+    {
+      "id": "kokuritsu-kyogijo",
+      "name": "国立競技場",
+      "kana": "こくりつきょうぎじょう"
+    },
+    {
+      "id": "yoyogi",
+      "name": "代々木",
+      "kana": "よよぎ"
+    },
+    {
+      "id": "tochomae",
+      "name": "都庁前",
+      "kana": "とちょうまえ"
+    },
+    {
+      "id": "nishi-shinjuku-gochome",
+      "name": "西新宿五丁目",
+      "kana": "にししんじゅくごちょうめ"
+    },
+    {
+      "id": "higashi-nakano",
+      "name": "東中野",
+      "kana": "ひがしなかの"
+    },
+    {
+      "id": "nakai",
+      "name": "中井",
+      "kana": "なかい"
+    },
+    {
+      "id": "ochiai-minami-nagasaki",
+      "name": "落合南長崎",
+      "kana": "おちあいみなみながさき"
+    },
+    {
+      "id": "shin-egota",
+      "name": "新江古田",
+      "kana": "しんえごた"
+    },
+    {
+      "id": "nerima",
+      "name": "練馬",
+      "kana": "ねりま"
+    },
+    {
+      "id": "toshimaen",
+      "name": "豊島園",
+      "kana": "としまえん"
+    },
+    {
+      "id": "nerima-kasugacho",
+      "name": "練馬春日町",
+      "kana": "ねりまかすがちょう"
+    },
+    {
+      "id": "hikarigaoka",
+      "name": "光が丘",
+      "kana": "ひかりがおか"
+    },
+    {
+      "id": "okachimachi",
+      "name": "御徒町",
+      "kana": "おかちまち"
+    },
+    {
+      "id": "uguisudani",
+      "name": "鶯谷",
+      "kana": "うぐいすだに"
+    },
+    {
+      "id": "nippori",
+      "name": "日暮里",
+      "kana": "にっぽり"
+    },
+    {
+      "id": "tabata",
+      "name": "田端",
+      "kana": "たばた"
+    },
+    {
+      "id": "otsuka",
+      "name": "大塚",
+      "kana": "おおつか"
+    },
+    {
+      "id": "mejiro",
+      "name": "目白",
+      "kana": "めじろ"
+    },
+    {
+      "id": "shin-okubo",
+      "name": "新大久保",
+      "kana": "しんおおくぼ"
+    },
+    {
+      "id": "harajuku",
+      "name": "原宿",
+      "kana": "はらじゅく"
+    },
+    {
+      "id": "osaki",
+      "name": "大崎",
+      "kana": "おおさき"
+    },
+    {
+      "id": "shinagawa",
+      "name": "品川",
+      "kana": "しながわ"
+    },
+    {
+      "id": "takanawa-gateway",
+      "name": "高輪ゲートウェイ",
+      "kana": "たかなわげーとうぇい"
+    },
+    {
+      "id": "tamachi",
+      "name": "田町",
+      "kana": "たまち"
+    },
+    {
+      "id": "hamamatsucho",
+      "name": "浜松町",
+      "kana": "はままつちょう"
+    },
+    {
+      "id": "ofuna",
+      "name": "大船",
+      "kana": "おおふな"
+    },
+    {
+      "id": "hongodai",
+      "name": "本郷台",
+      "kana": "ほんごうだい"
+    },
+    {
+      "id": "konandai",
+      "name": "港南台",
+      "kana": "こうなんだい"
+    },
+    {
+      "id": "yokodai",
+      "name": "洋光台",
+      "kana": "ようこうだい"
+    },
+    {
+      "id": "shin-sugita",
+      "name": "新杉田",
+      "kana": "しんすぎた"
+    },
+    {
+      "id": "isogo",
+      "name": "磯子",
+      "kana": "いそご"
+    },
+    {
+      "id": "negishi",
+      "name": "根岸",
+      "kana": "ねぎし"
+    },
+    {
+      "id": "yamate",
+      "name": "山手",
+      "kana": "やまて"
+    },
+    {
+      "id": "ishikawacho",
+      "name": "石川町",
+      "kana": "いしかわちょう"
+    },
+    {
+      "id": "kannai",
+      "name": "関内",
+      "kana": "かんない"
+    },
+    {
+      "id": "sakuragicho",
+      "name": "桜木町",
+      "kana": "さくらぎちょう"
+    },
+    {
+      "id": "yokohama",
+      "name": "横浜",
+      "kana": "よこはま"
+    },
+    {
+      "id": "higashi-kanagawa",
+      "name": "東神奈川",
+      "kana": "ひがしかながわ"
+    },
+    {
+      "id": "shin-koyasu",
+      "name": "新子安",
+      "kana": "しんこやす"
+    },
+    {
+      "id": "tsurumi",
+      "name": "鶴見",
+      "kana": "つるみ"
+    },
+    {
+      "id": "kawasaki",
+      "name": "川崎",
+      "kana": "かわさき"
+    },
+    {
+      "id": "kamata",
+      "name": "蒲田",
+      "kana": "かまた"
+    },
+    {
+      "id": "omori",
+      "name": "大森",
+      "kana": "おおもり"
+    },
+    {
+      "id": "oimachi",
+      "name": "大井町",
+      "kana": "おおいまち"
+    },
+    {
+      "id": "kami-nakazato",
+      "name": "上中里",
+      "kana": "かみなかざと"
+    },
+    {
+      "id": "higashi-jujo",
+      "name": "東十条",
+      "kana": "ひがしじゅうじょう"
+    },
+    {
+      "id": "akabane",
+      "name": "赤羽",
+      "kana": "あかばね"
+    },
+    {
+      "id": "kawaguchi",
+      "name": "川口",
+      "kana": "かわぐち"
+    },
+    {
+      "id": "nishi-kawaguchi",
+      "name": "西川口",
+      "kana": "にしかわぐち"
+    },
+    {
+      "id": "warabi",
+      "name": "蕨",
+      "kana": "わらび"
+    },
+    {
+      "id": "minami-urawa",
+      "name": "南浦和",
+      "kana": "みなみうらわ"
+    },
+    {
+      "id": "urawa",
+      "name": "浦和",
+      "kana": "うらわ"
+    },
+    {
+      "id": "kita-urawa",
+      "name": "北浦和",
+      "kana": "きたうらわ"
+    },
+    {
+      "id": "yono",
+      "name": "与野",
+      "kana": "よの"
+    },
+    {
+      "id": "saitama-shintoshin",
+      "name": "さいたま新都心",
+      "kana": "さいたましんとしん"
+    },
+    {
+      "id": "omiya",
+      "name": "大宮",
+      "kana": "おおみや"
+    },
+    {
+      "id": "koenji",
+      "name": "高円寺",
+      "kana": "こうえんじ"
+    },
+    {
+      "id": "asagaya",
+      "name": "阿佐ケ谷",
+      "kana": "あさがや"
+    },
+    {
+      "id": "nishi-ogikubo",
+      "name": "西荻窪",
+      "kana": "にしおぎくぼ"
+    },
+    {
+      "id": "kichijoji",
+      "name": "吉祥寺",
+      "kana": "きちじょうじ"
+    },
+    {
+      "id": "mitaka",
+      "name": "三鷹",
+      "kana": "みたか"
+    },
+    {
+      "id": "musashi-sakai",
+      "name": "武蔵境",
+      "kana": "むさしさかい"
+    },
+    {
+      "id": "higashi-koganei",
+      "name": "東小金井",
+      "kana": "ひがしこがねい"
+    },
+    {
+      "id": "musashi-koganei",
+      "name": "武蔵小金井",
+      "kana": "むさしこがねい"
+    },
+    {
+      "id": "kokubunji",
+      "name": "国分寺",
+      "kana": "こくぶんじ"
+    },
+    {
+      "id": "nishi-kokubunji",
+      "name": "西国分寺",
+      "kana": "にしこくぶんじ"
+    },
+    {
+      "id": "kunitachi",
+      "name": "国立",
+      "kana": "くにたち"
+    },
+    {
+      "id": "tachikawa",
+      "name": "立川",
+      "kana": "たちかわ"
+    },
+    {
+      "id": "hino",
+      "name": "日野",
+      "kana": "ひの"
+    },
+    {
+      "id": "toyoda",
+      "name": "豊田",
+      "kana": "とよだ"
+    },
+    {
+      "id": "hachioji",
+      "name": "八王子",
+      "kana": "はちおうじ"
+    },
+    {
+      "id": "nishi-hachioji",
+      "name": "西八王子",
+      "kana": "にしはちおうじ"
+    },
+    {
+      "id": "takao",
+      "name": "高尾",
+      "kana": "たかお"
+    },
+    {
+      "id": "okubo",
+      "name": "大久保",
+      "kana": "おおくぼ"
+    },
+    {
+      "id": "sendagaya",
+      "name": "千駄ケ谷",
+      "kana": "せんだがや"
+    },
+    {
+      "id": "shinanomachi",
+      "name": "信濃町",
+      "kana": "しなのまち"
+    },
+    {
+      "id": "kameido",
+      "name": "亀戸",
+      "kana": "かめいど"
+    },
+    {
+      "id": "hirai",
+      "name": "平井",
+      "kana": "ひらい"
+    },
+    {
+      "id": "shin-koiwa",
+      "name": "新小岩",
+      "kana": "しんこいわ"
+    },
+    {
+      "id": "koiwa",
+      "name": "小岩",
+      "kana": "こいわ"
+    },
+    {
+      "id": "ichikawa",
+      "name": "市川",
+      "kana": "いちかわ"
+    },
+    {
+      "id": "shimosa-nakayama",
+      "name": "下総中山",
+      "kana": "しもうさなかやま"
+    },
+    {
+      "id": "funabashi",
+      "name": "船橋",
+      "kana": "ふなばし"
+    },
+    {
+      "id": "higashi-funabashi",
+      "name": "東船橋",
+      "kana": "ひがしふなばし"
+    },
+    {
+      "id": "tsudanuma",
+      "name": "津田沼",
+      "kana": "つだぬま"
+    },
+    {
+      "id": "makuharihongo",
+      "name": "幕張本郷",
+      "kana": "まくはりほんごう"
+    },
+    {
+      "id": "makuhari",
+      "name": "幕張",
+      "kana": "まくはり"
+    },
+    {
+      "id": "shin-kemigawa",
+      "name": "新検見川",
+      "kana": "しんけみがわ"
+    },
+    {
+      "id": "inage",
+      "name": "稲毛",
+      "kana": "いなげ"
+    },
+    {
+      "id": "nishi-chiba",
+      "name": "西千葉",
+      "kana": "にしちば"
+    },
+    {
+      "id": "chiba",
+      "name": "千葉",
+      "kana": "ちば"
+    },
+    {
+      "id": "itabashi",
+      "name": "板橋",
+      "kana": "いたばし"
+    },
+    {
+      "id": "jujo",
+      "name": "十条",
+      "kana": "じゅうじょう"
+    },
+    {
+      "id": "kita-akabane",
+      "name": "北赤羽",
+      "kana": "きたあかばね"
+    },
+    {
+      "id": "ukima-funado",
+      "name": "浮間舟渡",
+      "kana": "うきまふなど"
+    },
+    {
+      "id": "toda-koen",
+      "name": "戸田公園",
+      "kana": "とだこうえん"
+    },
+    {
+      "id": "toda",
+      "name": "戸田",
+      "kana": "とだ"
+    },
+    {
+      "id": "kita-toda",
+      "name": "北戸田",
+      "kana": "きたとだ"
+    },
+    {
+      "id": "musashi-urawa",
+      "name": "武蔵浦和",
+      "kana": "むさしうらわ"
+    },
+    {
+      "id": "naka-urawa",
+      "name": "中浦和",
+      "kana": "なかうらわ"
+    },
+    {
+      "id": "minami-yono",
+      "name": "南与野",
+      "kana": "みなみよの"
+    },
+    {
+      "id": "yonohommachi",
+      "name": "与野本町",
+      "kana": "よのほんまち"
+    },
+    {
+      "id": "kita-yono",
+      "name": "北与野",
+      "kana": "きたよの"
+    },
+    {
+      "id": "kurihama",
+      "name": "久里浜",
+      "kana": "くりはま"
+    },
+    {
+      "id": "kinugasa",
+      "name": "衣笠",
+      "kana": "きぬがさ"
+    },
+    {
+      "id": "yokosuka",
+      "name": "横須賀",
+      "kana": "よこすか"
+    },
+    {
+      "id": "taura",
+      "name": "田浦",
+      "kana": "たうら"
+    },
+    {
+      "id": "higashi-zushi",
+      "name": "東逗子",
+      "kana": "ひがしずし"
+    },
+    {
+      "id": "zushi",
+      "name": "逗子",
+      "kana": "ずし"
+    },
+    {
+      "id": "kamakura",
+      "name": "鎌倉",
+      "kana": "かまくら"
+    },
+    {
+      "id": "kita-kamakura",
+      "name": "北鎌倉",
+      "kana": "きたかまくら"
+    },
+    {
+      "id": "totsuka",
+      "name": "戸塚",
+      "kana": "とつか"
+    },
+    {
+      "id": "higashi-totsuka",
+      "name": "東戸塚",
+      "kana": "ひがしとつか"
+    },
+    {
+      "id": "hodogaya",
+      "name": "保土ケ谷",
+      "kana": "ほどがや"
+    },
+    {
+      "id": "shin-kawasaki",
+      "name": "新川崎",
+      "kana": "しんかわさき"
+    },
+    {
+      "id": "musashi-kosugi",
+      "name": "武蔵小杉",
+      "kana": "むさしこすぎ"
+    },
+    {
+      "id": "nishi-oi",
+      "name": "西大井",
+      "kana": "にしおおい"
+    },
+    {
+      "id": "shin-nihombashi",
+      "name": "新日本橋",
+      "kana": "しんにほんばし"
+    },
+    {
+      "id": "bakurocho",
+      "name": "馬喰町",
+      "kana": "ばくろちょう"
+    },
+    {
+      "id": "oku",
+      "name": "尾久",
+      "kana": "おく"
+    },
+    {
+      "id": "toro",
+      "name": "土呂",
+      "kana": "とろ"
+    },
+    {
+      "id": "higashi-omiya",
+      "name": "東大宮",
+      "kana": "ひがしおおみや"
+    },
+    {
+      "id": "hasuda",
+      "name": "蓮田",
+      "kana": "はすだ"
+    },
+    {
+      "id": "shiraoka",
+      "name": "白岡",
+      "kana": "しらおか"
+    },
+    {
+      "id": "shin-shiraoka",
+      "name": "新白岡",
+      "kana": "しんしらおか"
+    },
+    {
+      "id": "kuki",
+      "name": "久喜",
+      "kana": "くき"
+    },
+    {
+      "id": "higashi-washinomiya",
+      "name": "東鷲宮",
+      "kana": "ひがしわしのみや"
+    },
+    {
+      "id": "kurihashi",
+      "name": "栗橋",
+      "kana": "くりはし"
+    },
+    {
+      "id": "koga",
+      "name": "古河",
+      "kana": "こが"
+    },
+    {
+      "id": "nogi",
+      "name": "野木",
+      "kana": "のぎ"
+    },
+    {
+      "id": "mamada",
+      "name": "間々田",
+      "kana": "ままだ"
+    },
+    {
+      "id": "oyama",
+      "name": "小山",
+      "kana": "おやま"
+    },
+    {
+      "id": "koganei",
+      "name": "小金井",
+      "kana": "こがねい"
+    },
+    {
+      "id": "jichiidai",
+      "name": "自治医大",
+      "kana": "じちいだい"
+    },
+    {
+      "id": "ishibashi",
+      "name": "石橋",
+      "kana": "いしばし"
+    },
+    {
+      "id": "suzumenomiya",
+      "name": "雀宮",
+      "kana": "すずめのみや"
+    },
+    {
+      "id": "utsunomiya",
+      "name": "宇都宮",
+      "kana": "うつのみや"
+    },
+    {
+      "id": "okamoto",
+      "name": "岡本",
+      "kana": "おかもと"
+    },
+    {
+      "id": "hoshakuji",
+      "name": "宝積寺",
+      "kana": "ほうしゃくじ"
+    },
+    {
+      "id": "ujiie",
+      "name": "氏家",
+      "kana": "うじいえ"
+    },
+    {
+      "id": "kamasusaka",
+      "name": "蒲須坂",
+      "kana": "かますさか"
+    },
+    {
+      "id": "kataoka",
+      "name": "片岡",
+      "kana": "かたおか"
+    },
+    {
+      "id": "yaita",
+      "name": "矢板",
+      "kana": "やいた"
+    },
+    {
+      "id": "nozaki",
+      "name": "野崎",
+      "kana": "のざき"
+    },
+    {
+      "id": "nishi-nasuno",
+      "name": "西那須野",
+      "kana": "にしなすの"
+    },
+    {
+      "id": "nasushiobara",
+      "name": "那須塩原",
+      "kana": "なすしおばら"
+    },
+    {
+      "id": "kuroiso",
+      "name": "黒磯",
+      "kana": "くろいそ"
+    },
+    {
+      "id": "miyahara",
+      "name": "宮原",
+      "kana": "みやはら"
+    },
+    {
+      "id": "ageo",
+      "name": "上尾",
+      "kana": "あげお"
+    },
+    {
+      "id": "kita-ageo",
+      "name": "北上尾",
+      "kana": "きたあげお"
+    },
+    {
+      "id": "okegawa",
+      "name": "桶川",
+      "kana": "おけがわ"
+    },
+    {
+      "id": "kitamoto",
+      "name": "北本",
+      "kana": "きたもと"
+    },
+    {
+      "id": "konosu",
+      "name": "鴻巣",
+      "kana": "こうのす"
+    },
+    {
+      "id": "kita-konosu",
+      "name": "北鴻巣",
+      "kana": "きたこうのす"
+    },
+    {
+      "id": "fukiage",
+      "name": "吹上",
+      "kana": "ふきあげ"
+    },
+    {
+      "id": "gyoda",
+      "name": "行田",
+      "kana": "ぎょうだ"
+    },
+    {
+      "id": "kumagaya",
+      "name": "熊谷",
+      "kana": "くまがや"
+    },
+    {
+      "id": "kagohara",
+      "name": "籠原",
+      "kana": "かごはら"
+    },
+    {
+      "id": "fukaya",
+      "name": "深谷",
+      "kana": "ふかや"
+    },
+    {
+      "id": "okabe",
+      "name": "岡部",
+      "kana": "おかべ"
+    },
+    {
+      "id": "honjo",
+      "name": "本庄",
+      "kana": "ほんじょう"
+    },
+    {
+      "id": "jimbohara",
+      "name": "神保原",
+      "kana": "じんぼはら"
+    },
+    {
+      "id": "shinmachi",
+      "name": "新町",
+      "kana": "しんまち"
+    },
+    {
+      "id": "kuragano",
+      "name": "倉賀野",
+      "kana": "くらがの"
+    },
+    {
+      "id": "takasaki",
+      "name": "高崎",
+      "kana": "たかさき"
+    },
+    {
+      "id": "mikawashima",
+      "name": "三河島",
+      "kana": "みかわしま"
+    },
+    {
+      "id": "matsudo",
+      "name": "松戸",
+      "kana": "まつど"
+    },
+    {
+      "id": "kashiwa",
+      "name": "柏",
+      "kana": "かしわ"
+    },
+    {
+      "id": "abiko",
+      "name": "我孫子",
+      "kana": "あびこ"
+    },
+    {
+      "id": "tennodai",
+      "name": "天王台",
+      "kana": "てんのうだい"
+    },
+    {
+      "id": "toride",
+      "name": "取手",
+      "kana": "とりで"
+    },
+    {
+      "id": "kameari",
+      "name": "亀有",
+      "kana": "かめあり"
+    },
+    {
+      "id": "kanamachi",
+      "name": "金町",
+      "kana": "かなまち"
+    },
+    {
+      "id": "kita-matsudo",
+      "name": "北松戸",
+      "kana": "きたまつど"
+    },
+    {
+      "id": "mabashi",
+      "name": "馬橋",
+      "kana": "まばし"
+    },
+    {
+      "id": "shin-matsudo",
+      "name": "新松戸",
+      "kana": "しんまつど"
+    },
+    {
+      "id": "kita-kogane",
+      "name": "北小金",
+      "kana": "きたこがね"
+    },
+    {
+      "id": "minami-kashiwa",
+      "name": "南柏",
+      "kana": "みなみかしわ"
+    },
+    {
+      "id": "kita-kashiwa",
+      "name": "北柏",
+      "kana": "きたかしわ"
+    },
+    {
+      "id": "funabashihoten",
+      "name": "船橋法典",
+      "kana": "ふなばしほうてん"
+    },
+    {
+      "id": "ichikawaono",
+      "name": "市川大野",
+      "kana": "いちかわおおの"
+    },
+    {
+      "id": "higashi-matsudo",
+      "name": "東松戸",
+      "kana": "ひがしまつど"
+    },
+    {
+      "id": "shin-yahashira",
+      "name": "新八柱",
+      "kana": "しんやはしら"
+    },
+    {
+      "id": "minami-nagareyama",
+      "name": "南流山",
+      "kana": "みなみながれやま"
+    },
+    {
+      "id": "misato",
+      "name": "三郷",
+      "kana": "みさと"
+    },
+    {
+      "id": "shin-misato",
+      "name": "新三郷",
+      "kana": "しんみさと"
+    },
+    {
+      "id": "yoshikawaminami",
+      "name": "吉川美南",
+      "kana": "よしかわみなみ"
+    },
+    {
+      "id": "yoshikawa",
+      "name": "吉川",
+      "kana": "よしかわ"
+    },
+    {
+      "id": "koshigaya-laketown",
+      "name": "越谷レイクタウン",
+      "kana": "こしがやれいくたうん"
+    },
+    {
+      "id": "minami-koshigaya",
+      "name": "南越谷",
+      "kana": "みなみこしがや"
+    },
+    {
+      "id": "higashi-kawaguchi",
+      "name": "東川口",
+      "kana": "ひがしかわぐち"
+    },
+    {
+      "id": "higashi-urawa",
+      "name": "東浦和",
+      "kana": "ひがしうらわ"
+    },
+    {
+      "id": "nishi-urawa",
+      "name": "西浦和",
+      "kana": "にしうらわ"
+    },
+    {
+      "id": "kita-asaka",
+      "name": "北朝霞",
+      "kana": "きたあさか"
+    },
+    {
+      "id": "niiza",
+      "name": "新座",
+      "kana": "にいざ"
+    },
+    {
+      "id": "higashi-tokorozawa",
+      "name": "東所沢",
+      "kana": "ひがしところざわ"
+    },
+    {
+      "id": "shin-akitsu",
+      "name": "新秋津",
+      "kana": "しんあきつ"
+    },
+    {
+      "id": "shin-kodaira",
+      "name": "新小平",
+      "kana": "しんこだいら"
+    },
+    {
+      "id": "kita-fuchu",
+      "name": "北府中",
+      "kana": "きたふちゅう"
+    },
+    {
+      "id": "fuchu-hommachi",
+      "name": "府中本町",
+      "kana": "ふちゅうほんまち"
+    },
+    {
+      "id": "etchujima",
+      "name": "越中島",
+      "kana": "えっちゅうじま"
+    },
+    {
+      "id": "shiomi",
+      "name": "潮見",
+      "kana": "しおみ"
+    },
+    {
+      "id": "kasai-rinkai-koen",
+      "name": "葛西臨海公園",
+      "kana": "かさいりんかいこうえん"
+    },
+    {
+      "id": "maihama",
+      "name": "舞浜",
+      "kana": "まいはま"
+    },
+    {
+      "id": "shin-urayasu",
+      "name": "新浦安",
+      "kana": "しんうらやす"
+    },
+    {
+      "id": "ichikawashiohama",
+      "name": "市川塩浜",
+      "kana": "いちかわしおはま"
+    },
+    {
+      "id": "futamatashimmachi",
+      "name": "二俣新町",
+      "kana": "ふたまたしんまち"
+    },
+    {
+      "id": "minami-funabashi",
+      "name": "南船橋",
+      "kana": "みなみふなばし"
+    },
+    {
+      "id": "shin-narashino",
+      "name": "新習志野",
+      "kana": "しんならしの"
+    },
+    {
+      "id": "makuhari-toyosuna",
+      "name": "幕張豊砂",
+      "kana": "まくはりとよすな"
+    },
+    {
+      "id": "kaihin-makuhari",
+      "name": "海浜幕張",
+      "kana": "かいひんまくはり"
+    },
+    {
+      "id": "kemigawahama",
+      "name": "検見川浜",
+      "kana": "けみがわはま"
+    },
+    {
+      "id": "inagekaigan",
+      "name": "稲毛海岸",
+      "kana": "いなげかいがん"
+    },
+    {
+      "id": "chibaminato",
+      "name": "千葉みなと",
+      "kana": "ちばみなと"
+    },
+    {
+      "id": "soga",
+      "name": "蘇我",
+      "kana": "そが"
+    },
+    {
+      "id": "shitte",
+      "name": "尻手",
+      "kana": "しって"
+    },
+    {
+      "id": "yako",
+      "name": "矢向",
+      "kana": "やこう"
+    },
+    {
+      "id": "kashimada",
+      "name": "鹿島田",
+      "kana": "かしまだ"
+    },
+    {
+      "id": "hirama",
+      "name": "平間",
+      "kana": "ひらま"
+    },
+    {
+      "id": "mukaigawara",
+      "name": "向河原",
+      "kana": "むかいがわら"
+    },
+    {
+      "id": "musashi-nakahara",
+      "name": "武蔵中原",
+      "kana": "むさしなかはら"
+    },
+    {
+      "id": "musashi-shinjo",
+      "name": "武蔵新城",
+      "kana": "むさししんじょう"
+    },
+    {
+      "id": "musashi-mizonokuchi",
+      "name": "武蔵溝ノ口",
+      "kana": "むさしみぞのくち"
+    },
+    {
+      "id": "tsudayama",
+      "name": "津田山",
+      "kana": "つだやま"
+    },
+    {
+      "id": "kuji",
+      "name": "久地",
+      "kana": "くじ"
+    },
+    {
+      "id": "shukugawara",
+      "name": "宿河原",
+      "kana": "しゅくがわら"
+    },
+    {
+      "id": "noborito",
+      "name": "登戸",
+      "kana": "のぼりと"
+    },
+    {
+      "id": "nakanoshima",
+      "name": "中野島",
+      "kana": "なかのしま"
+    },
+    {
+      "id": "inadazutsumi",
+      "name": "稲田堤",
+      "kana": "いなだづつみ"
+    },
+    {
+      "id": "yanokuchi",
+      "name": "矢野口",
+      "kana": "やのくち"
+    },
+    {
+      "id": "inagi-naganuma",
+      "name": "稲城長沼",
+      "kana": "いなぎながぬま"
+    },
+    {
+      "id": "minami-tama",
+      "name": "南多摩",
+      "kana": "みなみたま"
+    },
+    {
+      "id": "bubaigawara",
+      "name": "分倍河原",
+      "kana": "ぶばいがわら"
+    },
+    {
+      "id": "nishifu",
+      "name": "西府",
+      "kana": "にしふ"
+    },
+    {
+      "id": "yaho",
+      "name": "谷保",
+      "kana": "やほ"
+    },
+    {
+      "id": "yagawa",
+      "name": "矢川",
+      "kana": "やがわ"
+    },
+    {
+      "id": "nishi-kunitachi",
+      "name": "西国立",
+      "kana": "にしくにたち"
+    },
+    {
+      "id": "hatchonawate",
+      "name": "八丁畷",
+      "kana": "はっちょうなわて"
+    },
+    {
+      "id": "kawasaki-shinmachi",
+      "name": "川崎新町",
+      "kana": "かわさきしんまち"
+    },
+    {
+      "id": "odasakae",
+      "name": "小田栄",
+      "kana": "おださかえ"
+    },
+    {
+      "id": "hama-kawasaki",
+      "name": "浜川崎",
+      "kana": "はまかわさき"
+    },
+    {
+      "id": "oguchi",
+      "name": "大口",
+      "kana": "おおぐち"
+    },
+    {
+      "id": "kikuna",
+      "name": "菊名",
+      "kana": "きくな"
+    },
+    {
+      "id": "shin-yokohama",
+      "name": "新横浜",
+      "kana": "しんよこはま"
+    },
+    {
+      "id": "kozukue",
+      "name": "小机",
+      "kana": "こづくえ"
+    },
+    {
+      "id": "kamoi",
+      "name": "鴨居",
+      "kana": "かもい"
+    },
+    {
+      "id": "nakayama",
+      "name": "中山",
+      "kana": "なかやま"
+    },
+    {
+      "id": "tokaichiba-yokohama",
+      "name": "十日市場",
+      "kana": "とおかいちば"
+    },
+    {
+      "id": "nagatsuta",
+      "name": "長津田",
+      "kana": "ながつた"
+    },
+    {
+      "id": "naruse",
+      "name": "成瀬",
+      "kana": "なるせ"
+    },
+    {
+      "id": "machida",
+      "name": "町田",
+      "kana": "まちだ"
+    },
+    {
+      "id": "kobuchi",
+      "name": "古淵",
+      "kana": "こぶち"
+    },
+    {
+      "id": "fuchinobe",
+      "name": "淵野辺",
+      "kana": "ふちのべ"
+    },
+    {
+      "id": "yabe",
+      "name": "矢部",
+      "kana": "やべ"
+    },
+    {
+      "id": "sagamihara",
+      "name": "相模原",
+      "kana": "さがみはら"
+    },
+    {
+      "id": "hashimoto",
+      "name": "橋本",
+      "kana": "はしもと"
+    },
+    {
+      "id": "aihara",
+      "name": "相原",
+      "kana": "あいはら"
+    },
+    {
+      "id": "hachioji-minamino",
+      "name": "八王子みなみ野",
+      "kana": "はちおうじみなみの"
+    },
+    {
+      "id": "katakura",
+      "name": "片倉",
+      "kana": "かたくら"
+    },
+    {
+      "id": "fujisawa",
+      "name": "藤沢",
+      "kana": "ふじさわ"
+    },
+    {
+      "id": "tsujido",
+      "name": "辻堂",
+      "kana": "つじどう"
+    },
+    {
+      "id": "chigasaki",
+      "name": "茅ケ崎",
+      "kana": "ちがさき"
+    },
+    {
+      "id": "hiratsuka",
+      "name": "平塚",
+      "kana": "ひらつか"
+    },
+    {
+      "id": "oiso",
+      "name": "大磯",
+      "kana": "おおいそ"
+    },
+    {
+      "id": "ninomiya",
+      "name": "二宮",
+      "kana": "にのみや"
+    },
+    {
+      "id": "kozu",
+      "name": "国府津",
+      "kana": "こうづ"
+    },
+    {
+      "id": "kamonomiya",
+      "name": "鴨宮",
+      "kana": "かものみや"
+    },
+    {
+      "id": "odawara",
+      "name": "小田原",
+      "kana": "おだわら"
+    },
+    {
+      "id": "hayakawa",
+      "name": "早川",
+      "kana": "はやかわ"
+    },
+    {
+      "id": "nebukawa",
+      "name": "根府川",
+      "kana": "ねぶかわ"
+    },
+    {
+      "id": "manazuru",
+      "name": "真鶴",
+      "kana": "まなづる"
+    },
+    {
+      "id": "yugawara",
+      "name": "湯河原",
+      "kana": "ゆがわら"
+    },
+    {
+      "id": "atami",
+      "name": "熱海",
+      "kana": "あたみ"
+    },
+    {
+      "id": "kinomiya",
+      "name": "来宮",
+      "kana": "きのみや"
+    },
+    {
+      "id": "izu-taga",
+      "name": "伊豆多賀",
+      "kana": "いずたが"
+    },
+    {
+      "id": "ajiro",
+      "name": "網代",
+      "kana": "あじろ"
+    },
+    {
+      "id": "usami",
+      "name": "宇佐美",
+      "kana": "うさみ"
+    },
+    {
+      "id": "ito",
+      "name": "伊東",
+      "kana": "いとう"
+    },
+    {
+      "id": "nishi-tachikawa",
+      "name": "西立川",
+      "kana": "にしたちかわ"
+    },
+    {
+      "id": "higashi-nakagami",
+      "name": "東中神",
+      "kana": "ひがしなかがみ"
+    },
+    {
+      "id": "nakagami",
+      "name": "中神",
+      "kana": "なかがみ"
+    },
+    {
+      "id": "akishima",
+      "name": "昭島",
+      "kana": "あきしま"
+    },
+    {
+      "id": "haijima",
+      "name": "拝島",
+      "kana": "はいじま"
+    },
+    {
+      "id": "ushihama",
+      "name": "牛浜",
+      "kana": "うしはま"
+    },
+    {
+      "id": "fussa",
+      "name": "福生",
+      "kana": "ふっさ"
+    },
+    {
+      "id": "hamura",
+      "name": "羽村",
+      "kana": "はむら"
+    },
+    {
+      "id": "ozaku",
+      "name": "小作",
+      "kana": "おざく"
+    },
+    {
+      "id": "kabe",
+      "name": "河辺",
+      "kana": "かべ"
+    },
+    {
+      "id": "higashi-ome",
+      "name": "東青梅",
+      "kana": "ひがしおうめ"
+    },
+    {
+      "id": "ome",
+      "name": "青梅",
+      "kana": "おうめ"
+    },
+    {
+      "id": "miyanohira",
+      "name": "宮ノ平",
+      "kana": "みやのひら"
+    },
+    {
+      "id": "hinatawada",
+      "name": "日向和田",
+      "kana": "ひなたわだ"
+    },
+    {
+      "id": "ishigamimae",
+      "name": "石神前",
+      "kana": "いしがみまえ"
+    },
+    {
+      "id": "futamatao",
+      "name": "二俣尾",
+      "kana": "ふたまたお"
+    },
+    {
+      "id": "ikusabata",
+      "name": "軍畑",
+      "kana": "いくさばた"
+    },
+    {
+      "id": "sawai",
+      "name": "沢井",
+      "kana": "さわい"
+    },
+    {
+      "id": "mitake",
+      "name": "御嶽",
+      "kana": "みたけ"
+    },
+    {
+      "id": "kawai",
+      "name": "川井",
+      "kana": "かわい"
+    },
+    {
+      "id": "kori",
+      "name": "古里",
+      "kana": "こり"
+    },
+    {
+      "id": "hatonosu",
+      "name": "鳩ノ巣",
+      "kana": "はとのす"
+    },
+    {
+      "id": "shiromaru",
+      "name": "白丸",
+      "kana": "しろまる"
+    },
+    {
+      "id": "oku-tama",
+      "name": "奥多摩",
+      "kana": "おくたま"
+    },
+    {
+      "id": "kumagawa",
+      "name": "熊川",
+      "kana": "くまがわ"
+    },
+    {
+      "id": "higashi-akiru",
+      "name": "東秋留",
+      "kana": "ひがしあきる"
+    },
+    {
+      "id": "akigawa",
+      "name": "秋川",
+      "kana": "あきがわ"
+    },
+    {
+      "id": "musashi-hikida",
+      "name": "武蔵引田",
+      "kana": "むさしひきだ"
+    },
+    {
+      "id": "musashi-masuko",
+      "name": "武蔵増戸",
+      "kana": "むさしますこ"
+    },
+    {
+      "id": "musashi-itsukaichi",
+      "name": "武蔵五日市",
+      "kana": "むさしいつかいち"
+    },
+    {
+      "id": "kokudo",
+      "name": "国道",
+      "kana": "こくどう"
+    },
+    {
+      "id": "tsurumi-ono",
+      "name": "鶴見小野",
+      "kana": "つるみおの"
+    },
+    {
+      "id": "bentembashi",
+      "name": "弁天橋",
+      "kana": "べんてんばし"
+    },
+    {
+      "id": "asano",
+      "name": "浅野",
+      "kana": "あさの"
+    },
+    {
+      "id": "anzen",
+      "name": "安善",
+      "kana": "あんぜん"
+    },
+    {
+      "id": "musashi-shiraishi",
+      "name": "武蔵白石",
+      "kana": "むさししらいし"
+    },
+    {
+      "id": "showa",
+      "name": "昭和",
+      "kana": "しょうわ"
+    },
+    {
+      "id": "ogimachi",
+      "name": "扇町",
+      "kana": "おうぎまち"
+    },
+    {
+      "id": "shin-shibaura",
+      "name": "新芝浦",
+      "kana": "しんしばうら"
+    },
+    {
+      "id": "umi-shibaura",
+      "name": "海芝浦",
+      "kana": "うみしばうら"
+    },
+    {
+      "id": "okawa",
+      "name": "大川",
+      "kana": "おおかわ"
+    },
+    {
+      "id": "kita-chigasaki",
+      "name": "北茅ケ崎",
+      "kana": "きたちがさき"
+    },
+    {
+      "id": "kagawa",
+      "name": "香川",
+      "kana": "かがわ"
+    },
+    {
+      "id": "samukawa",
+      "name": "寒川",
+      "kana": "さむかわ"
+    },
+    {
+      "id": "miyayama",
+      "name": "宮山",
+      "kana": "みややま"
+    },
+    {
+      "id": "kurami",
+      "name": "倉見",
+      "kana": "くらみ"
+    },
+    {
+      "id": "kadosawabashi",
+      "name": "門沢橋",
+      "kana": "かどさわばし"
+    },
+    {
+      "id": "shake",
+      "name": "社家",
+      "kana": "しゃけ"
+    },
+    {
+      "id": "atsugi",
+      "name": "厚木",
+      "kana": "あつぎ"
+    },
+    {
+      "id": "ebina",
+      "name": "海老名",
+      "kana": "えびな"
+    },
+    {
+      "id": "iriya-kanagawa",
+      "name": "入谷",
+      "kana": "いりや"
+    },
+    {
+      "id": "sobudaishita",
+      "name": "相武台下",
+      "kana": "そうぶだいした"
+    },
+    {
+      "id": "shimomizo",
+      "name": "下溝",
+      "kana": "しもみぞ"
+    },
+    {
+      "id": "harataima",
+      "name": "原当麻",
+      "kana": "はらたいま"
+    },
+    {
+      "id": "banda",
+      "name": "番田",
+      "kana": "ばんだ"
+    },
+    {
+      "id": "kamimizo",
+      "name": "上溝",
+      "kana": "かみみぞ"
+    },
+    {
+      "id": "minami-hashimoto",
+      "name": "南橋本",
+      "kana": "みなみはしもと"
+    },
+    {
+      "id": "kita-hachioji",
+      "name": "北八王子",
+      "kana": "きたはちおうじ"
+    },
+    {
+      "id": "komiya",
+      "name": "小宮",
+      "kana": "こみや"
+    },
+    {
+      "id": "higashi-fussa",
+      "name": "東福生",
+      "kana": "ひがしふっさ"
+    },
+    {
+      "id": "hakonegasaki",
+      "name": "箱根ケ崎",
+      "kana": "はこねがさき"
+    },
+    {
+      "id": "kaneko",
+      "name": "金子",
+      "kana": "かねこ"
+    },
+    {
+      "id": "higashi-hanno",
+      "name": "東飯能",
+      "kana": "ひがしはんのう"
+    },
+    {
+      "id": "komagawa",
+      "name": "高麗川",
+      "kana": "こまがわ"
+    },
+    {
+      "id": "moro",
+      "name": "毛呂",
+      "kana": "もろ"
+    },
+    {
+      "id": "ogose",
+      "name": "越生",
+      "kana": "おごせ"
+    },
+    {
+      "id": "myokaku",
+      "name": "明覚",
+      "kana": "みょうかく"
+    },
+    {
+      "id": "ogawamachi-saitama",
+      "name": "小川町",
+      "kana": "おがわまち"
+    },
+    {
+      "id": "takezawa",
+      "name": "竹沢",
+      "kana": "たけざわ"
+    },
+    {
+      "id": "orihara",
+      "name": "折原",
+      "kana": "おりはら"
+    },
+    {
+      "id": "yorii",
+      "name": "寄居",
+      "kana": "よりい"
+    },
+    {
+      "id": "yodo",
+      "name": "用土",
+      "kana": "ようど"
+    },
+    {
+      "id": "matsuhisa",
+      "name": "松久",
+      "kana": "まつひさ"
+    },
+    {
+      "id": "kodama",
+      "name": "児玉",
+      "kana": "こだま"
+    },
+    {
+      "id": "tansho",
+      "name": "丹荘",
+      "kana": "たんしょう"
+    },
+    {
+      "id": "gunma-fujioka",
+      "name": "群馬藤岡",
+      "kana": "ぐんまふじおか"
+    },
+    {
+      "id": "kita-fujioka",
+      "name": "北藤岡",
+      "kana": "きたふじおか"
+    },
+    {
+      "id": "nisshin",
+      "name": "日進",
+      "kana": "にっしん"
+    },
+    {
+      "id": "nishi-omiya",
+      "name": "西大宮",
+      "kana": "にしおおみや"
+    },
+    {
+      "id": "sashiogi",
+      "name": "指扇",
+      "kana": "さしおうぎ"
+    },
+    {
+      "id": "minami-furuya",
+      "name": "南古谷",
+      "kana": "みなみふるや"
+    },
+    {
+      "id": "kawagoe",
+      "name": "川越",
+      "kana": "かわごえ"
+    },
+    {
+      "id": "nishi-kawagoe",
+      "name": "西川越",
+      "kana": "にしかわごえ"
+    },
+    {
+      "id": "matoba",
+      "name": "的場",
+      "kana": "まとば"
+    },
+    {
+      "id": "kasahata",
+      "name": "笠幡",
+      "kana": "かさはた"
+    },
+    {
+      "id": "musashi-takahagi",
+      "name": "武蔵高萩",
+      "kana": "むさしたかはぎ"
+    },
+    {
+      "id": "higashi-chiba",
+      "name": "東千葉",
+      "kana": "ひがしちば"
+    },
+    {
+      "id": "tsuga",
+      "name": "都賀",
+      "kana": "つが"
+    },
+    {
+      "id": "yotsukaido",
+      "name": "四街道",
+      "kana": "よつかいどう"
+    },
+    {
+      "id": "monoi",
+      "name": "物井",
+      "kana": "ものい"
+    },
+    {
+      "id": "sakura",
+      "name": "佐倉",
+      "kana": "さくら"
+    },
+    {
+      "id": "minami-shisui",
+      "name": "南酒々井",
+      "kana": "みなみしすい"
+    },
+    {
+      "id": "enokido",
+      "name": "榎戸",
+      "kana": "えのきど"
+    },
+    {
+      "id": "yachimata",
+      "name": "八街",
+      "kana": "やちまた"
+    },
+    {
+      "id": "hyuga",
+      "name": "日向",
+      "kana": "ひゅうが"
+    },
+    {
+      "id": "naruto",
+      "name": "成東",
+      "kana": "なるとう"
+    },
+    {
+      "id": "matsuo",
+      "name": "松尾",
+      "kana": "まつお"
+    },
+    {
+      "id": "yokoshiba",
+      "name": "横芝",
+      "kana": "よこしば"
+    },
+    {
+      "id": "iigura",
+      "name": "飯倉",
+      "kana": "いいぐら"
+    },
+    {
+      "id": "yokaichiba",
+      "name": "八日市場",
+      "kana": "ようかいちば"
+    },
+    {
+      "id": "higata",
+      "name": "干潟",
+      "kana": "ひがた"
+    },
+    {
+      "id": "asahi",
+      "name": "旭",
+      "kana": "あさひ"
+    },
+    {
+      "id": "iioka",
+      "name": "飯岡",
+      "kana": "いいおか"
+    },
+    {
+      "id": "kurahashi",
+      "name": "倉橋",
+      "kana": "くらはし"
+    },
+    {
+      "id": "saruda",
+      "name": "猿田",
+      "kana": "さるだ"
+    },
+    {
+      "id": "matsugishi",
+      "name": "松岸",
+      "kana": "まつぎし"
+    },
+    {
+      "id": "choshi",
+      "name": "銚子",
+      "kana": "ちょうし"
+    },
+    {
+      "id": "hon-chiba",
+      "name": "本千葉",
+      "kana": "ほんちば"
+    },
+    {
+      "id": "kamatori",
+      "name": "鎌取",
+      "kana": "かまとり"
+    },
+    {
+      "id": "honda",
+      "name": "誉田",
+      "kana": "ほんだ"
+    },
+    {
+      "id": "toke",
+      "name": "土気",
+      "kana": "とけ"
+    },
+    {
+      "id": "oami",
+      "name": "大網",
+      "kana": "おおあみ"
+    },
+    {
+      "id": "nagata-chiba",
+      "name": "永田",
+      "kana": "ながた"
+    },
+    {
+      "id": "honno",
+      "name": "本納",
+      "kana": "ほんのう"
+    },
+    {
+      "id": "shin-mobara",
+      "name": "新茂原",
+      "kana": "しんもばら"
+    },
+    {
+      "id": "mobara",
+      "name": "茂原",
+      "kana": "もばら"
+    },
+    {
+      "id": "yatsumi",
+      "name": "八積",
+      "kana": "やつみ"
+    },
+    {
+      "id": "kazusa-ichinomiya",
+      "name": "上総一ノ宮",
+      "kana": "かずさいちのみや"
+    },
+    {
+      "id": "torami",
+      "name": "東浪見",
+      "kana": "とらみ"
+    },
+    {
+      "id": "taito",
+      "name": "太東",
+      "kana": "たいとう"
+    },
+    {
+      "id": "chojamachi",
+      "name": "長者町",
+      "kana": "ちょうじゃまち"
+    },
+    {
+      "id": "mikado",
+      "name": "三門",
+      "kana": "みかど"
+    },
+    {
+      "id": "ohara",
+      "name": "大原",
+      "kana": "おおはら"
+    },
+    {
+      "id": "namihana",
+      "name": "浪花",
+      "kana": "なみはな"
+    },
+    {
+      "id": "onjuku",
+      "name": "御宿",
+      "kana": "おんじゅく"
+    },
+    {
+      "id": "katsuura",
+      "name": "勝浦",
+      "kana": "かつうら"
+    },
+    {
+      "id": "ubara",
+      "name": "鵜原",
+      "kana": "うばら"
+    },
+    {
+      "id": "kazusa-okitsu",
+      "name": "上総興津",
+      "kana": "かずさおきつ"
+    },
+    {
+      "id": "namegawa-island",
+      "name": "行川アイランド",
+      "kana": "なめがわあいらんど"
+    },
+    {
+      "id": "awa-kominato",
+      "name": "安房小湊",
+      "kana": "あわこみなと"
+    },
+    {
+      "id": "awa-amatsu",
+      "name": "安房天津",
+      "kana": "あわあまつ"
+    },
+    {
+      "id": "awa-kamogawa",
+      "name": "安房鴨川",
+      "kana": "あわかもがわ"
+    },
+    {
+      "id": "hamano",
+      "name": "浜野",
+      "kana": "はまの"
+    },
+    {
+      "id": "yawatajuku",
+      "name": "八幡宿",
+      "kana": "やわたじゅく"
+    },
+    {
+      "id": "goi",
+      "name": "五井",
+      "kana": "ごい"
+    },
+    {
+      "id": "anegasaki",
+      "name": "姉ケ崎",
+      "kana": "あねがさき"
+    },
+    {
+      "id": "nagaura",
+      "name": "長浦",
+      "kana": "ながうら"
+    },
+    {
+      "id": "sodegaura",
+      "name": "袖ケ浦",
+      "kana": "そでがうら"
+    },
+    {
+      "id": "iwane",
+      "name": "巌根",
+      "kana": "いわね"
+    },
+    {
+      "id": "kisarazu",
+      "name": "木更津",
+      "kana": "きさらづ"
+    },
+    {
+      "id": "kimitsu",
+      "name": "君津",
+      "kana": "きみつ"
+    },
+    {
+      "id": "aohori",
+      "name": "青堀",
+      "kana": "あおほり"
+    },
+    {
+      "id": "onuki",
+      "name": "大貫",
+      "kana": "おおぬき"
+    },
+    {
+      "id": "sanukimachi",
+      "name": "佐貫町",
+      "kana": "さぬきまち"
+    },
+    {
+      "id": "kazusa-minato",
+      "name": "上総湊",
+      "kana": "かずさみなと"
+    },
+    {
+      "id": "takeoka",
+      "name": "竹岡",
+      "kana": "たけおか"
+    },
+    {
+      "id": "hamakanaya",
+      "name": "浜金谷",
+      "kana": "はまかなや"
+    },
+    {
+      "id": "hota",
+      "name": "保田",
+      "kana": "ほた"
+    },
+    {
+      "id": "awa-katsuyama",
+      "name": "安房勝山",
+      "kana": "あわかつやま"
+    },
+    {
+      "id": "iwai",
+      "name": "岩井",
+      "kana": "いわい"
+    },
+    {
+      "id": "tomiura",
+      "name": "富浦",
+      "kana": "とみうら"
+    },
+    {
+      "id": "nako-funakata",
+      "name": "那古船形",
+      "kana": "なこふなかた"
+    },
+    {
+      "id": "tateyama",
+      "name": "館山",
+      "kana": "たてやま"
+    },
+    {
+      "id": "kokonoe",
+      "name": "九重",
+      "kana": "ここのえ"
+    },
+    {
+      "id": "chikura",
+      "name": "千倉",
+      "kana": "ちくら"
+    },
+    {
+      "id": "chitose",
+      "name": "千歳",
+      "kana": "ちとせ"
+    },
+    {
+      "id": "minamihara",
+      "name": "南三原",
+      "kana": "みなみはら"
+    },
+    {
+      "id": "wadaura",
+      "name": "和田浦",
+      "kana": "わだうら"
+    },
+    {
+      "id": "emi",
+      "name": "江見",
+      "kana": "えみ"
+    },
+    {
+      "id": "futomi",
+      "name": "太海",
+      "kana": "ふとみ"
+    },
+    {
+      "id": "shisui",
+      "name": "酒々井",
+      "kana": "しすい"
+    },
+    {
+      "id": "narita",
+      "name": "成田",
+      "kana": "なりた"
+    },
+    {
+      "id": "kuzumi",
+      "name": "久住",
+      "kana": "くずみ"
+    },
+    {
+      "id": "namegawa",
+      "name": "滑河",
+      "kana": "なめかわ"
+    },
+    {
+      "id": "shimosa-kozaki",
+      "name": "下総神崎",
+      "kana": "しもうさこうざき"
+    },
+    {
+      "id": "oto",
+      "name": "大戸",
+      "kana": "おおど"
+    },
+    {
+      "id": "sawara",
+      "name": "佐原",
+      "kana": "さわら"
+    },
+    {
+      "id": "katori",
+      "name": "香取",
+      "kana": "かとり"
+    },
+    {
+      "id": "suigo",
+      "name": "水郷",
+      "kana": "すいごう"
+    },
+    {
+      "id": "omigawa",
+      "name": "小見川",
+      "kana": "おみがわ"
+    },
+    {
+      "id": "sasagawa",
+      "name": "笹川",
+      "kana": "ささがわ"
+    },
+    {
+      "id": "shimosa-tachibana",
+      "name": "下総橘",
+      "kana": "しもうさたちばな"
+    },
+    {
+      "id": "shimosa-toyosato",
+      "name": "下総豊里",
+      "kana": "しもうさとよさと"
+    },
+    {
+      "id": "shiishiba",
+      "name": "椎柴",
+      "kana": "しいしば"
+    },
+    {
+      "id": "kuko-daini-biru",
+      "name": "空港第2ビル",
+      "kana": "くうこうだいにびる"
+    },
+    {
+      "id": "narita-kuko",
+      "name": "成田空港",
+      "kana": "なりたくうこう"
+    },
+    {
+      "id": "shimosa-manzaki",
+      "name": "下総松崎",
+      "kana": "しもうさまんざき"
+    },
+    {
+      "id": "ajiki",
+      "name": "安食",
+      "kana": "あじき"
+    },
+    {
+      "id": "kobayashi",
+      "name": "小林",
+      "kana": "こばやし"
+    },
+    {
+      "id": "kioroshi",
+      "name": "木下",
+      "kana": "きおろし"
+    },
+    {
+      "id": "fusa",
+      "name": "布佐",
+      "kana": "ふさ"
+    },
+    {
+      "id": "araki",
+      "name": "新木",
+      "kana": "あらき"
+    },
+    {
+      "id": "kohoku",
+      "name": "湖北",
+      "kana": "こほく"
+    },
+    {
+      "id": "higashi-abiko",
+      "name": "東我孫子",
+      "kana": "ひがしあびこ"
+    },
+    {
+      "id": "junikyo",
+      "name": "十二橋",
+      "kana": "じゅうにきょう"
+    },
+    {
+      "id": "itako",
+      "name": "潮来",
+      "kana": "いたこ"
+    },
+    {
+      "id": "nobukata",
+      "name": "延方",
+      "kana": "のぶかた"
+    },
+    {
+      "id": "kashimajingu",
+      "name": "鹿島神宮",
+      "kana": "かしまじんぐう"
+    },
+    {
+      "id": "kashima-soccer-stadium",
+      "name": "鹿島サッカースタジアム",
+      "kana": "かしまさっかーすたじあむ"
+    },
+    {
+      "id": "fukudawara",
+      "name": "福俵",
+      "kana": "ふくだわら"
+    },
+    {
+      "id": "togane",
+      "name": "東金",
+      "kana": "とうがね"
+    },
+    {
+      "id": "gumyo",
+      "name": "求名",
+      "kana": "ぐみょう"
+    },
+    {
+      "id": "gion",
+      "name": "祇園",
+      "kana": "ぎおん"
+    },
+    {
+      "id": "kazusa-kiyokawa",
+      "name": "上総清川",
+      "kana": "かずさきよかわ"
+    },
+    {
+      "id": "higashi-kiyokawa",
+      "name": "東清川",
+      "kana": "ひがしきよかわ"
+    },
+    {
+      "id": "yokota",
+      "name": "横田",
+      "kana": "よこた"
+    },
+    {
+      "id": "higashi-yokota",
+      "name": "東横田",
+      "kana": "ひがしよこた"
+    },
+    {
+      "id": "makuta",
+      "name": "馬来田",
+      "kana": "まくた"
+    },
+    {
+      "id": "shimogori",
+      "name": "下郡",
+      "kana": "しもごおり"
+    },
+    {
+      "id": "obitsu",
+      "name": "小櫃",
+      "kana": "おびつ"
+    },
+    {
+      "id": "tawarada",
+      "name": "俵田",
+      "kana": "たわらだ"
+    },
+    {
+      "id": "kururi",
+      "name": "久留里",
+      "kana": "くるり"
+    },
+    {
+      "id": "hirayama",
+      "name": "平山",
+      "kana": "ひらやま"
+    },
+    {
+      "id": "kazusa-matsuoka",
+      "name": "上総松丘",
+      "kana": "かずさまつおか"
+    },
+    {
+      "id": "kazusa-kameyama",
+      "name": "上総亀山",
+      "kana": "かずさかめやま"
+    },
+    {
+      "id": "fujishiro",
+      "name": "藤代",
+      "kana": "ふじしろ"
+    },
+    {
+      "id": "ryugasakishi",
+      "name": "龍ケ崎市",
+      "kana": "りゅうがさきし"
+    },
+    {
+      "id": "ushiku",
+      "name": "牛久",
+      "kana": "うしく"
+    },
+    {
+      "id": "hitachino-ushiku",
+      "name": "ひたち野うしく",
+      "kana": "ひたちのうしく"
+    },
+    {
+      "id": "arakawaoki",
+      "name": "荒川沖",
+      "kana": "あらかわおき"
+    },
+    {
+      "id": "tsuchiura",
+      "name": "土浦",
+      "kana": "つちうら"
+    },
+    {
+      "id": "kandatsu",
+      "name": "神立",
+      "kana": "かんだつ"
+    },
+    {
+      "id": "takahama",
+      "name": "高浜",
+      "kana": "たかはま"
+    },
+    {
+      "id": "ishioka",
+      "name": "石岡",
+      "kana": "いしおか"
+    },
+    {
+      "id": "hatori",
+      "name": "羽鳥",
+      "kana": "はとり"
+    },
+    {
+      "id": "iwama",
+      "name": "岩間",
+      "kana": "いわま"
+    },
+    {
+      "id": "tomobe",
+      "name": "友部",
+      "kana": "ともべ"
+    },
+    {
+      "id": "uchihara",
+      "name": "内原",
+      "kana": "うちはら"
+    },
+    {
+      "id": "akatsuka",
+      "name": "赤塚",
+      "kana": "あかつか"
+    },
+    {
+      "id": "kairakuen",
+      "name": "偕楽園",
+      "kana": "かいらくえん"
+    },
+    {
+      "id": "mito",
+      "name": "水戸",
+      "kana": "みと"
+    },
+    {
+      "id": "katsuta",
+      "name": "勝田",
+      "kana": "かつた"
+    },
+    {
+      "id": "sawa",
+      "name": "佐和",
+      "kana": "さわ"
+    },
+    {
+      "id": "tokai",
+      "name": "東海",
+      "kana": "とうかい"
+    },
+    {
+      "id": "omika",
+      "name": "大甕",
+      "kana": "おおみか"
+    },
+    {
+      "id": "hitachi-taga",
+      "name": "常陸多賀",
+      "kana": "ひたちたが"
+    },
+    {
+      "id": "hitachi",
+      "name": "日立",
+      "kana": "ひたち"
+    },
+    {
+      "id": "ogitsu",
+      "name": "小木津",
+      "kana": "おぎつ"
+    },
+    {
+      "id": "juo",
+      "name": "十王",
+      "kana": "じゅうおう"
+    },
+    {
+      "id": "takahagi",
+      "name": "高萩",
+      "kana": "たかはぎ"
+    },
+    {
+      "id": "minami-nakago",
+      "name": "南中郷",
+      "kana": "みなみなかごう"
+    },
+    {
+      "id": "isohara",
+      "name": "磯原",
+      "kana": "いそはら"
+    },
+    {
+      "id": "otsuko",
+      "name": "大津港",
+      "kana": "おおつこう"
+    },
+    {
+      "id": "nakoso",
+      "name": "勿来",
+      "kana": "なこそ"
+    },
+    {
+      "id": "ueda-fukushima",
+      "name": "植田",
+      "kana": "うえだ"
+    },
+    {
+      "id": "izumi",
+      "name": "泉",
+      "kana": "いずみ"
+    },
+    {
+      "id": "yumoto",
+      "name": "湯本",
+      "kana": "ゆもと"
+    },
+    {
+      "id": "uchigo",
+      "name": "内郷",
+      "kana": "ないごう"
+    },
+    {
+      "id": "iwaki",
+      "name": "いわき",
+      "kana": "いわき"
+    },
+    {
+      "id": "otabayashi",
+      "name": "小田林",
+      "kana": "おたばやし"
+    },
+    {
+      "id": "yuki",
+      "name": "結城",
+      "kana": "ゆうき"
+    },
+    {
+      "id": "higashi-yuki",
+      "name": "東結城",
+      "kana": "ひがしゆうき"
+    },
+    {
+      "id": "kawashima",
+      "name": "川島",
+      "kana": "かわしま"
+    },
+    {
+      "id": "tamado",
+      "name": "玉戸",
+      "kana": "たまど"
+    },
+    {
+      "id": "shimodate",
+      "name": "下館",
+      "kana": "しもだて"
+    },
+    {
+      "id": "niihari",
+      "name": "新治",
+      "kana": "にいはり"
+    },
+    {
+      "id": "yamato-ibaraki",
+      "name": "大和",
+      "kana": "やまと"
+    },
+    {
+      "id": "iwase",
+      "name": "岩瀬",
+      "kana": "いわせ"
+    },
+    {
+      "id": "haguro",
+      "name": "羽黒",
+      "kana": "はぐろ"
+    },
+    {
+      "id": "fukuhara",
+      "name": "福原",
+      "kana": "ふくはら"
+    },
+    {
+      "id": "inada",
+      "name": "稲田",
+      "kana": "いなだ"
+    },
+    {
+      "id": "kasama",
+      "name": "笠間",
+      "kana": "かさま"
+    },
+    {
+      "id": "shishido",
+      "name": "宍戸",
+      "kana": "ししど"
+    },
+    {
+      "id": "hitachi-aoyagi",
+      "name": "常陸青柳",
+      "kana": "ひたちあおやぎ"
+    },
+    {
+      "id": "hitachi-tsuda",
+      "name": "常陸津田",
+      "kana": "ひたちつだ"
+    },
+    {
+      "id": "godai",
+      "name": "後台",
+      "kana": "ごだい"
+    },
+    {
+      "id": "shimo-sugaya",
+      "name": "下菅谷",
+      "kana": "しもすがや"
+    },
+    {
+      "id": "naka-sugaya",
+      "name": "中菅谷",
+      "kana": "なかすがや"
+    },
+    {
+      "id": "kami-sugaya",
+      "name": "上菅谷",
+      "kana": "かみすがや"
+    },
+    {
+      "id": "hitachi-konosu",
+      "name": "常陸鴻巣",
+      "kana": "ひたちこうのす"
+    },
+    {
+      "id": "urizura",
+      "name": "瓜連",
+      "kana": "うりづら"
+    },
+    {
+      "id": "shizu",
+      "name": "静",
+      "kana": "しず"
+    },
+    {
+      "id": "hitachi-omiya",
+      "name": "常陸大宮",
+      "kana": "ひたちおおみや"
+    },
+    {
+      "id": "tamagawamura",
+      "name": "玉川村",
+      "kana": "たまがわむら"
+    },
+    {
+      "id": "nogamihara",
+      "name": "野上原",
+      "kana": "のがみはら"
+    },
+    {
+      "id": "yamagatajuku",
+      "name": "山方宿",
+      "kana": "やまがたじゅく"
+    },
+    {
+      "id": "naka-funyu",
+      "name": "中舟生",
+      "kana": "なかふにゅう"
+    },
+    {
+      "id": "shimo-ogawa",
+      "name": "下小川",
+      "kana": "しもおがわ"
+    },
+    {
+      "id": "saigane",
+      "name": "西金",
+      "kana": "さいがね"
+    },
+    {
+      "id": "kami-ogawa",
+      "name": "上小川",
+      "kana": "かみおがわ"
+    },
+    {
+      "id": "fukuroda",
+      "name": "袋田",
+      "kana": "ふくろだ"
+    },
+    {
+      "id": "hitachi-daigo",
+      "name": "常陸大子",
+      "kana": "ひたちだいご"
+    },
+    {
+      "id": "minami-sakaide",
+      "name": "南酒出",
+      "kana": "みなみさかいで"
+    },
+    {
+      "id": "nukada",
+      "name": "額田",
+      "kana": "ぬかだ"
+    },
+    {
+      "id": "kawai-ibaraki",
+      "name": "河合",
+      "kana": "かわい"
+    },
+    {
+      "id": "yagawara",
+      "name": "谷河原",
+      "kana": "やがわら"
+    },
+    {
+      "id": "hitachi-ota",
+      "name": "常陸太田",
+      "kana": "ひたちおおた"
+    },
+    {
+      "id": "omoigawa",
+      "name": "思川",
+      "kana": "おもいがわ"
+    },
+    {
+      "id": "tochigi",
+      "name": "栃木",
+      "kana": "とちぎ"
+    },
+    {
+      "id": "ohirashita",
+      "name": "大平下",
+      "kana": "おおひらした"
+    },
+    {
+      "id": "iwafune",
+      "name": "岩舟",
+      "kana": "いわふね"
+    },
+    {
+      "id": "sano",
+      "name": "佐野",
+      "kana": "さの"
+    },
+    {
+      "id": "tomita",
+      "name": "富田",
+      "kana": "とみた"
+    },
+    {
+      "id": "ashikaga-flower-park",
+      "name": "あしかがフラワーパーク",
+      "kana": "あしかがふらわーぱーく"
+    },
+    {
+      "id": "ashikaga",
+      "name": "足利",
+      "kana": "あしかが"
+    },
+    {
+      "id": "yamamae",
+      "name": "山前",
+      "kana": "やままえ"
+    },
+    {
+      "id": "omata",
+      "name": "小俣",
+      "kana": "おまた"
+    },
+    {
+      "id": "kiryu",
+      "name": "桐生",
+      "kana": "きりゅう"
+    },
+    {
+      "id": "iwajuku",
+      "name": "岩宿",
+      "kana": "いわじゅく"
+    },
+    {
+      "id": "kunisada",
+      "name": "国定",
+      "kana": "くにさだ"
+    },
+    {
+      "id": "isesaki",
+      "name": "伊勢崎",
+      "kana": "いせさき"
+    },
+    {
+      "id": "komagata",
+      "name": "駒形",
+      "kana": "こまがた"
+    },
+    {
+      "id": "maebashi-oshima",
+      "name": "前橋大島",
+      "kana": "まえばしおおしま"
+    },
+    {
+      "id": "maebashi",
+      "name": "前橋",
+      "kana": "まえばし"
+    },
+    {
+      "id": "shin-maebashi",
+      "name": "新前橋",
+      "kana": "しんまえばし"
+    },
+    {
+      "id": "tsuruta",
+      "name": "鶴田",
+      "kana": "つるた"
+    },
+    {
+      "id": "kanuma",
+      "name": "鹿沼",
+      "kana": "かぬま"
+    },
+    {
+      "id": "fubasami",
+      "name": "文挟",
+      "kana": "ふばさみ"
+    },
+    {
+      "id": "shimotsuke-osawa",
+      "name": "下野大沢",
+      "kana": "しもつけおおさわ"
+    },
+    {
+      "id": "imaichi",
+      "name": "今市",
+      "kana": "いまいち"
+    },
+    {
+      "id": "nikko",
+      "name": "日光",
+      "kana": "にっこう"
+    },
+    {
+      "id": "shimotsuke-hanaoka",
+      "name": "下野花岡",
+      "kana": "しもつけはなおか"
+    },
+    {
+      "id": "niita",
+      "name": "仁井田",
+      "kana": "にいた"
+    },
+    {
+      "id": "konoyama",
+      "name": "鴻野山",
+      "kana": "こうのやま"
+    },
+    {
+      "id": "ogane",
+      "name": "大金",
+      "kana": "おおがね"
+    },
+    {
+      "id": "kobana",
+      "name": "小塙",
+      "kana": "こばな"
+    },
+    {
+      "id": "taki",
+      "name": "滝",
+      "kana": "たき"
+    },
+    {
+      "id": "karasuyama",
+      "name": "烏山",
+      "kana": "からすやま"
+    },
+    {
+      "id": "sagamiko",
+      "name": "相模湖",
+      "kana": "さがみこ"
+    },
+    {
+      "id": "fujino",
+      "name": "藤野",
+      "kana": "ふじの"
+    },
+    {
+      "id": "uenohara",
+      "name": "上野原",
+      "kana": "うえのはら"
+    },
+    {
+      "id": "shiotsu",
+      "name": "四方津",
+      "kana": "しおつ"
+    },
+    {
+      "id": "yanagawa",
+      "name": "梁川",
+      "kana": "やながわ"
+    },
+    {
+      "id": "torisawa",
+      "name": "鳥沢",
+      "kana": "とりさわ"
+    },
+    {
+      "id": "saruhashi",
+      "name": "猿橋",
+      "kana": "さるはし"
+    },
+    {
+      "id": "otsuki",
+      "name": "大月",
+      "kana": "おおつき"
+    },
+    {
+      "id": "hatsukari",
+      "name": "初狩",
+      "kana": "はつかり"
+    },
+    {
+      "id": "sasago",
+      "name": "笹子",
+      "kana": "ささご"
+    },
+    {
+      "id": "kai-yamato",
+      "name": "甲斐大和",
+      "kana": "かいやまと"
+    },
+    {
+      "id": "katsunuma-budokyo",
+      "name": "勝沼ぶどう郷",
+      "kana": "かつぬまぶどうきょう"
+    },
+    {
+      "id": "enzan",
+      "name": "塩山",
+      "kana": "えんざん"
+    },
+    {
+      "id": "higashi-yamanashi",
+      "name": "東山梨",
+      "kana": "ひがしやまなし"
+    },
+    {
+      "id": "yamanashishi",
+      "name": "山梨市",
+      "kana": "やまなしし"
+    },
+    {
+      "id": "kasugaicho",
+      "name": "春日居町",
+      "kana": "かすがいちょう"
+    },
+    {
+      "id": "isawaonsen",
+      "name": "石和温泉",
+      "kana": "いさわおんせん"
+    },
+    {
+      "id": "sakaori",
+      "name": "酒折",
+      "kana": "さかおり"
+    },
+    {
+      "id": "kofu",
+      "name": "甲府",
+      "kana": "こうふ"
+    },
+    {
+      "id": "ryuo",
+      "name": "竜王",
+      "kana": "りゅうおう"
+    },
+    {
+      "id": "shiozaki",
+      "name": "塩崎",
+      "kana": "しおざき"
+    },
+    {
+      "id": "nirasaki",
+      "name": "韮崎",
+      "kana": "にらさき"
+    },
+    {
+      "id": "shimpu",
+      "name": "新府",
+      "kana": "しんぷ"
+    },
+    {
+      "id": "anayama",
+      "name": "穴山",
+      "kana": "あなやま"
+    },
+    {
+      "id": "hinoharu",
+      "name": "日野春",
+      "kana": "ひのはる"
+    },
+    {
+      "id": "nagasaka",
+      "name": "長坂",
+      "kana": "ながさか"
+    },
+    {
+      "id": "kobuchizawa",
+      "name": "小淵沢",
+      "kana": "こぶちざわ"
+    },
+    {
+      "id": "shinano-sakai",
+      "name": "信濃境",
+      "kana": "しなのさかい"
+    },
+    {
+      "id": "fujimi",
+      "name": "富士見",
+      "kana": "ふじみ"
+    },
+    {
+      "id": "suzuran-no-sato",
+      "name": "すずらんの里",
+      "kana": "すずらんのさと"
+    },
+    {
+      "id": "aoyagi",
+      "name": "青柳",
+      "kana": "あおやぎ"
+    },
+    {
+      "id": "chino",
+      "name": "茅野",
+      "kana": "ちの"
+    },
+    {
+      "id": "kami-suwa",
+      "name": "上諏訪",
+      "kana": "かみすわ"
+    },
+    {
+      "id": "shimo-suwa",
+      "name": "下諏訪",
+      "kana": "しもすわ"
+    },
+    {
+      "id": "okaya",
+      "name": "岡谷",
+      "kana": "おかや"
+    },
+    {
+      "id": "midoriko",
+      "name": "みどり湖",
+      "kana": "みどりこ"
+    },
+    {
+      "id": "shiojiri",
+      "name": "塩尻",
+      "kana": "しおじり"
+    },
+    {
+      "id": "takasaki-tonyamachi",
+      "name": "高崎問屋町",
+      "kana": "たかさきとんやまち"
+    },
+    {
+      "id": "ino-gunma",
+      "name": "井野",
+      "kana": "いの"
+    },
+    {
+      "id": "gunma-soja",
+      "name": "群馬総社",
+      "kana": "ぐんまそうじゃ"
+    },
+    {
+      "id": "yagihara",
+      "name": "八木原",
+      "kana": "やぎはら"
+    },
+    {
+      "id": "shibukawa",
+      "name": "渋川",
+      "kana": "しぶかわ"
+    },
+    {
+      "id": "shikishima",
+      "name": "敷島",
+      "kana": "しきしま"
+    },
+    {
+      "id": "tsukuda",
+      "name": "津久田",
+      "kana": "つくだ"
+    },
+    {
+      "id": "iwamoto",
+      "name": "岩本",
+      "kana": "いわもと"
+    },
+    {
+      "id": "numata",
+      "name": "沼田",
+      "kana": "ぬまた"
+    },
+    {
+      "id": "gokan",
+      "name": "後閑",
+      "kana": "ごかん"
+    },
+    {
+      "id": "kamimoku",
+      "name": "上牧",
+      "kana": "かみもく"
+    },
+    {
+      "id": "minakami",
+      "name": "水上",
+      "kana": "みなかみ"
+    },
+    {
+      "id": "kanashima",
+      "name": "金島",
+      "kana": "かなしま"
+    },
+    {
+      "id": "ubashima",
+      "name": "祖母島",
+      "kana": "うばしま"
+    },
+    {
+      "id": "onogami",
+      "name": "小野上",
+      "kana": "おのがみ"
+    },
+    {
+      "id": "onogami-onsen",
+      "name": "小野上温泉",
+      "kana": "おのがみおんせん"
+    },
+    {
+      "id": "ichishiro",
+      "name": "市城",
+      "kana": "いちしろ"
+    },
+    {
+      "id": "nakanojo",
+      "name": "中之条",
+      "kana": "なかのじょう"
+    },
+    {
+      "id": "gunma-haramachi",
+      "name": "群馬原町",
+      "kana": "ぐんまはらまち"
+    },
+    {
+      "id": "gobara",
+      "name": "郷原",
+      "kana": "ごうばら"
+    },
+    {
+      "id": "yagura",
+      "name": "矢倉",
+      "kana": "やぐら"
+    },
+    {
+      "id": "iwashima",
+      "name": "岩島",
+      "kana": "いわしま"
+    },
+    {
+      "id": "kawarayu-onsen",
+      "name": "川原湯温泉",
+      "kana": "かわらゆおんせん"
+    },
+    {
+      "id": "naganohara-kusatsuguchi",
+      "name": "長野原草津口",
+      "kana": "ながのはらくさつぐち"
+    },
+    {
+      "id": "gunma-otsu",
+      "name": "群馬大津",
+      "kana": "ぐんまおおつ"
+    },
+    {
+      "id": "haneo",
+      "name": "羽根尾",
+      "kana": "はねお"
+    },
+    {
+      "id": "fukurogura",
+      "name": "袋倉",
+      "kana": "ふくろぐら"
+    },
+    {
+      "id": "manza-kazawaguchi",
+      "name": "万座・鹿沢口",
+      "kana": "まんざ・かざわぐち"
+    },
+    {
+      "id": "kai-koizumi",
+      "name": "甲斐小泉",
+      "kana": "かいこいずみ"
+    },
+    {
+      "id": "kai-oizumi",
+      "name": "甲斐大泉",
+      "kana": "かいおおいずみ"
+    },
+    {
+      "id": "kiyosato",
+      "name": "清里",
+      "kana": "きよさと"
+    },
+    {
+      "id": "nobeyama",
+      "name": "野辺山",
+      "kana": "のべやま"
+    },
+    {
+      "id": "shinano-kawakami",
+      "name": "信濃川上",
+      "kana": "しなのかわかみ"
+    },
+    {
+      "id": "saku-hirose",
+      "name": "佐久広瀬",
+      "kana": "さくひろせ"
+    },
+    {
+      "id": "saku-uminokuchi",
+      "name": "佐久海ノ口",
+      "kana": "さくうみのくち"
+    },
+    {
+      "id": "umijiri",
+      "name": "海尻",
+      "kana": "うみじり"
+    },
+    {
+      "id": "matsubarako",
+      "name": "松原湖",
+      "kana": "まつばらこ"
+    },
+    {
+      "id": "koumi",
+      "name": "小海",
+      "kana": "こうみ"
+    },
+    {
+      "id": "managashi",
+      "name": "馬流",
+      "kana": "まながし"
+    },
+    {
+      "id": "takaiwa",
+      "name": "高岩",
+      "kana": "たかいわ"
+    },
+    {
+      "id": "yachiho",
+      "name": "八千穂",
+      "kana": "やちほ"
+    },
+    {
+      "id": "kaize",
+      "name": "海瀬",
+      "kana": "かいぜ"
+    },
+    {
+      "id": "haguroshita",
+      "name": "羽黒下",
+      "kana": "はぐろした"
+    },
+    {
+      "id": "aonuma",
+      "name": "青沼",
+      "kana": "あおぬま"
+    },
+    {
+      "id": "usuda",
+      "name": "臼田",
+      "kana": "うすだ"
+    },
+    {
+      "id": "tatsuokajo",
+      "name": "龍岡城",
+      "kana": "たつおかじょう"
+    },
+    {
+      "id": "otabe",
+      "name": "太田部",
+      "kana": "おおたべ"
+    },
+    {
+      "id": "nakagomi",
+      "name": "中込",
+      "kana": "なかごみ"
+    },
+    {
+      "id": "namezu",
+      "name": "滑津",
+      "kana": "なめづ"
+    },
+    {
+      "id": "kita-nakagomi",
+      "name": "北中込",
+      "kana": "きたなかごみ"
+    },
+    {
+      "id": "iwamurada",
+      "name": "岩村田",
+      "kana": "いわむらだ"
+    },
+    {
+      "id": "sakudaira",
+      "name": "佐久平",
+      "kana": "さくだいら"
+    },
+    {
+      "id": "nakasato",
+      "name": "中佐都",
+      "kana": "なかさと"
+    },
+    {
+      "id": "misato-nagano",
+      "name": "美里",
+      "kana": "みさと"
+    },
+    {
+      "id": "mitsuoka",
+      "name": "三岡",
+      "kana": "みつおか"
+    },
+    {
+      "id": "otome",
+      "name": "乙女",
+      "kana": "おとめ"
+    },
+    {
+      "id": "higashi-komoro",
+      "name": "東小諸",
+      "kana": "ひがしこもろ"
+    },
+    {
+      "id": "komoro",
+      "name": "小諸",
+      "kana": "こもろ"
+    },
+    {
+      "id": "matsumoto",
+      "name": "松本",
+      "kana": "まつもと"
+    },
+    {
+      "id": "kita-matsumoto",
+      "name": "北松本",
+      "kana": "きたまつもと"
+    },
+    {
+      "id": "shimauchi",
+      "name": "島内",
+      "kana": "しまうち"
+    },
+    {
+      "id": "shimatakamatsu",
+      "name": "島高松",
+      "kana": "しまたかまつ"
+    },
+    {
+      "id": "azusabashi",
+      "name": "梓橋",
+      "kana": "あずさばし"
+    },
+    {
+      "id": "hitoichiba",
+      "name": "一日市場",
+      "kana": "ひといちば"
+    },
+    {
+      "id": "nakagaya",
+      "name": "中萱",
+      "kana": "なかがや"
+    },
+    {
+      "id": "minami-toyoshina",
+      "name": "南豊科",
+      "kana": "みなみとよしな"
+    },
+    {
+      "id": "toyoshina",
+      "name": "豊科",
+      "kana": "とよしな"
+    },
+    {
+      "id": "hakuyacho",
+      "name": "柏矢町",
+      "kana": "はくやちょう"
+    },
+    {
+      "id": "hotaka",
+      "name": "穂高",
+      "kana": "ほたか"
+    },
+    {
+      "id": "ariake-nagano",
+      "name": "有明",
+      "kana": "ありあけ"
+    },
+    {
+      "id": "azumi-oiwake",
+      "name": "安曇追分",
+      "kana": "あずみおいわけ"
+    },
+    {
+      "id": "hosono",
+      "name": "細野",
+      "kana": "ほその"
+    },
+    {
+      "id": "kita-hosono",
+      "name": "北細野",
+      "kana": "きたほその"
+    },
+    {
+      "id": "shinano-matsukawa",
+      "name": "信濃松川",
+      "kana": "しなのまつかわ"
+    },
+    {
+      "id": "azumi-kutsukake",
+      "name": "安曇沓掛",
+      "kana": "あずみくつかけ"
+    },
+    {
+      "id": "shinano-tokiwa",
+      "name": "信濃常盤",
+      "kana": "しなのときわ"
+    },
+    {
+      "id": "minami-omachi",
+      "name": "南大町",
+      "kana": "みなみおおまち"
+    },
+    {
+      "id": "shinano-omachi",
+      "name": "信濃大町",
+      "kana": "しなのおおまち"
+    },
+    {
+      "id": "kita-omachi",
+      "name": "北大町",
+      "kana": "きたおおまち"
+    },
+    {
+      "id": "shinano-kizaki",
+      "name": "信濃木崎",
+      "kana": "しなのきざき"
+    },
+    {
+      "id": "inao",
+      "name": "稲尾",
+      "kana": "いなお"
+    },
+    {
+      "id": "uminokuchi",
+      "name": "海ノ口",
+      "kana": "うみのくち"
+    },
+    {
+      "id": "yanaba",
+      "name": "簗場",
+      "kana": "やなば"
+    },
+    {
+      "id": "minami-kamishiro",
+      "name": "南神城",
+      "kana": "みなみかみしろ"
+    },
+    {
+      "id": "kamishiro",
+      "name": "神城",
+      "kana": "かみしろ"
+    },
+    {
+      "id": "iimori",
+      "name": "飯森",
+      "kana": "いいもり"
+    },
+    {
+      "id": "hakuba",
+      "name": "白馬",
+      "kana": "はくば"
+    },
+    {
+      "id": "hirooka",
+      "name": "広丘",
+      "kana": "ひろおか"
+    },
+    {
+      "id": "murai",
+      "name": "村井",
+      "kana": "むらい"
+    },
+    {
+      "id": "hirata",
+      "name": "平田",
+      "kana": "ひらた"
+    },
+    {
+      "id": "minami-matsumoto",
+      "name": "南松本",
+      "kana": "みなみまつもと"
+    },
+    {
+      "id": "tazawa",
+      "name": "田沢",
+      "kana": "たざわ"
+    },
+    {
+      "id": "akashina",
+      "name": "明科",
+      "kana": "あかしな"
+    },
+    {
+      "id": "nishijo",
+      "name": "西条",
+      "kana": "にしじょう"
+    },
+    {
+      "id": "sakakita",
+      "name": "坂北",
+      "kana": "さかきた"
+    },
+    {
+      "id": "hijiri-kogen",
+      "name": "聖高原",
+      "kana": "ひじりこうげん"
+    },
+    {
+      "id": "kamuriki",
+      "name": "冠着",
+      "kana": "かむりき"
+    },
+    {
+      "id": "obasute",
+      "name": "姨捨",
+      "kana": "おばすて"
+    },
+    {
+      "id": "inariyama",
+      "name": "稲荷山",
+      "kana": "いなりやま"
+    },
+    {
+      "id": "shinonoi",
+      "name": "篠ノ井",
+      "kana": "しののい"
+    },
+    {
+      "id": "kita-takasaki",
+      "name": "北高崎",
+      "kana": "きたたかさき"
+    },
+    {
+      "id": "gunma-yawata",
+      "name": "群馬八幡",
+      "kana": "ぐんまやわた"
+    },
+    {
+      "id": "annaka",
+      "name": "安中",
+      "kana": "あんなか"
+    },
+    {
+      "id": "isobe",
+      "name": "磯部",
+      "kana": "いそべ"
+    },
+    {
+      "id": "matsuida",
+      "name": "松井田",
+      "kana": "まついだ"
+    },
+    {
+      "id": "nishi-matsuida",
+      "name": "西松井田",
+      "kana": "にしまついだ"
+    },
+    {
+      "id": "yokokawa",
+      "name": "横川",
+      "kana": "よこかわ"
+    },
+    {
+      "id": "imai",
+      "name": "今井",
+      "kana": "いまい"
+    },
+    {
+      "id": "kawanakajima",
+      "name": "川中島",
+      "kana": "かわなかじま"
+    },
+    {
+      "id": "amori",
+      "name": "安茂里",
+      "kana": "あもり"
+    },
+    {
+      "id": "nagano",
+      "name": "長野",
+      "kana": "ながの"
+    },
+    {
+      "id": "akai",
+      "name": "赤井",
+      "kana": "あかい"
+    },
+    {
+      "id": "ogawago",
+      "name": "小川郷",
+      "kana": "おがわごう"
+    },
+    {
+      "id": "eda-fukushima",
+      "name": "江田",
+      "kana": "えだ"
+    },
+    {
+      "id": "kawamae",
+      "name": "川前",
+      "kana": "かわまえ"
+    },
+    {
+      "id": "natsui",
+      "name": "夏井",
+      "kana": "なつい"
+    },
+    {
+      "id": "ononiimachi",
+      "name": "小野新町",
+      "kana": "おのにいまち"
+    },
+    {
+      "id": "kanmata",
+      "name": "神俣",
+      "kana": "かんまた"
+    },
+    {
+      "id": "sugaya",
+      "name": "菅谷",
+      "kana": "すがや"
+    },
+    {
+      "id": "ogoe",
+      "name": "大越",
+      "kana": "おおごえ"
+    },
+    {
+      "id": "iwaki-tokiwa",
+      "name": "磐城常葉",
+      "kana": "いわきときわ"
+    },
+    {
+      "id": "funehiki",
+      "name": "船引",
+      "kana": "ふねひき"
+    },
+    {
+      "id": "kanameta",
+      "name": "要田",
+      "kana": "かなめた"
+    },
+    {
+      "id": "miharu",
+      "name": "三春",
+      "kana": "みはる"
+    },
+    {
+      "id": "mogi",
+      "name": "舞木",
+      "kana": "もうぎ"
+    },
+    {
+      "id": "koriyama",
+      "name": "郡山",
+      "kana": "こおりやま"
+    },
+    {
+      "id": "honjo-waseda",
+      "name": "本庄早稲田",
+      "kana": "ほんじょうわせだ"
+    },
+    {
+      "id": "jomo-kogen",
+      "name": "上毛高原",
+      "kana": "じょうもうこうげん"
+    },
+    {
+      "id": "annaka-haruna",
+      "name": "安中榛名",
+      "kana": "あんなかはるな"
+    },
+    {
+      "id": "karuizawa",
+      "name": "軽井沢",
+      "kana": "かるいざわ"
+    },
+    {
+      "id": "ueda-nagano",
+      "name": "上田",
+      "kana": "うえだ"
+    },
+    {
+      "id": "iiyama",
+      "name": "飯山",
+      "kana": "いいやま"
+    },
+    {
+      "id": "joetsumyoko",
+      "name": "上越妙高",
+      "kana": "じょうえつみょうこう"
+    },
+    {
+      "id": "shimo-soga",
+      "name": "下曽我",
+      "kana": "しもそが"
+    },
+    {
+      "id": "kami-oi",
+      "name": "上大井",
+      "kana": "かみおおい"
+    },
+    {
+      "id": "sagami-kaneko",
+      "name": "相模金子",
+      "kana": "さがみかねこ"
+    },
+    {
+      "id": "matsuda",
+      "name": "松田",
+      "kana": "まつだ"
+    },
+    {
+      "id": "higashi-yamakita",
+      "name": "東山北",
+      "kana": "ひがしやまきた"
+    },
+    {
+      "id": "yamakita",
+      "name": "山北",
+      "kana": "やまきた"
+    },
+    {
+      "id": "yaga",
+      "name": "谷峨",
+      "kana": "やが"
+    },
+    {
+      "id": "suruga-oyama",
+      "name": "駿河小山",
+      "kana": "するがおやま"
+    },
+    {
+      "id": "ashigara-shizuoka",
+      "name": "足柄",
+      "kana": "あしがら"
+    },
+    {
+      "id": "kanente",
+      "name": "金手",
+      "kana": "かねんて"
+    },
+    {
+      "id": "zenkoji",
+      "name": "善光寺",
+      "kana": "ぜんこうじ"
+    },
+    {
+      "id": "minami-kofu",
+      "name": "南甲府",
+      "kana": "みなみこうふ"
+    },
+    {
+      "id": "kai-sumiyoshi",
+      "name": "甲斐住吉",
+      "kana": "かいすみよし"
+    },
+    {
+      "id": "kokubo",
+      "name": "国母",
+      "kana": "こくぼ"
+    },
+    {
+      "id": "joei",
+      "name": "常永",
+      "kana": "じょうえい"
+    },
+    {
+      "id": "koikawa",
+      "name": "小井川",
+      "kana": "こいかわ"
+    },
+    {
+      "id": "higashi-hanawa",
+      "name": "東花輪",
+      "kana": "ひがしはなわ"
+    },
+    {
+      "id": "kai-ueno",
+      "name": "甲斐上野",
+      "kana": "かいうえの"
+    },
+    {
+      "id": "ashigawa",
+      "name": "芦川",
+      "kana": "あしがわ"
+    },
+    {
+      "id": "ichikawa-hommachi",
+      "name": "市川本町",
+      "kana": "いちかわほんまち"
+    },
+    {
+      "id": "ichikawa-daimon",
+      "name": "市川大門",
+      "kana": "いちかわだいもん"
+    },
+    {
+      "id": "kajikazawaguchi",
+      "name": "鰍沢口",
+      "kana": "かじかざわぐち"
+    },
+    {
+      "id": "ochii",
+      "name": "落居",
+      "kana": "おちい"
+    },
+    {
+      "id": "kai-iwama",
+      "name": "甲斐岩間",
+      "kana": "かいいわま"
+    },
+    {
+      "id": "kunado",
+      "name": "久那土",
+      "kana": "くなど"
+    },
+    {
+      "id": "ichinose",
+      "name": "市ノ瀬",
+      "kana": "いちのせ"
+    },
+    {
+      "id": "kai-tokiwa",
+      "name": "甲斐常葉",
+      "kana": "かいときわ"
+    },
+    {
+      "id": "shimobe-onsen",
+      "name": "下部温泉",
+      "kana": "しもべおんせん"
+    },
+    {
+      "id": "hadakajima",
+      "name": "波高島",
+      "kana": "はだかじま"
+    },
+    {
+      "id": "shionosawa",
+      "name": "塩之沢",
+      "kana": "しおのさわ"
+    },
+    {
+      "id": "minobu",
+      "name": "身延",
+      "kana": "みのぶ"
+    },
+    {
+      "id": "kai-oshima",
+      "name": "甲斐大島",
+      "kana": "かいおおしま"
+    },
+    {
+      "id": "utsubuna",
+      "name": "内船",
+      "kana": "うつぶな"
+    },
+    {
+      "id": "yorihata",
+      "name": "寄畑",
+      "kana": "よりはた"
+    },
+    {
+      "id": "ide",
+      "name": "井出",
+      "kana": "いで"
+    },
+    {
+      "id": "toshima",
+      "name": "十島",
+      "kana": "とおしま"
+    },
+    {
+      "id": "inako",
+      "name": "稲子",
+      "kana": "いなこ"
+    },
+    {
+      "id": "shibakawa",
+      "name": "芝川",
+      "kana": "しばかわ"
+    },
+    {
+      "id": "numakubo",
+      "name": "沼久保",
+      "kana": "ぬまくぼ"
+    },
+    {
+      "id": "nishi-fujinomiya",
+      "name": "西富士宮",
+      "kana": "にしふじのみや"
+    },
+    {
+      "id": "fujinomiya",
+      "name": "富士宮",
+      "kana": "ふじのみや"
+    },
+    {
+      "id": "gendoji",
+      "name": "源道寺",
+      "kana": "げんどうじ"
+    },
+    {
+      "id": "fujine",
+      "name": "富士根",
+      "kana": "ふじね"
+    },
+    {
+      "id": "iriyamase",
+      "name": "入山瀬",
+      "kana": "いりやませ"
+    },
+    {
+      "id": "tatebori",
+      "name": "竪堀",
+      "kana": "たてぼり"
+    },
+    {
+      "id": "yunoki",
+      "name": "柚木",
+      "kana": "ゆのき"
+    },
+    {
+      "id": "fuji",
+      "name": "富士",
+      "kana": "ふじ"
+    },
+    {
+      "id": "gotemba",
+      "name": "御殿場",
+      "kana": "ごてんば"
+    },
+    {
+      "id": "minami-gotemba",
+      "name": "南御殿場",
+      "kana": "みなみごてんば"
+    },
+    {
+      "id": "fujioka",
+      "name": "富士岡",
+      "kana": "ふじおか"
+    },
+    {
+      "id": "iwanami",
+      "name": "岩波",
+      "kana": "いわなみ"
+    },
+    {
+      "id": "susono",
+      "name": "裾野",
+      "kana": "すその"
+    },
+    {
+      "id": "nagaizumi-nameri",
+      "name": "長泉なめり",
+      "kana": "ながいずみなめり"
+    },
+    {
+      "id": "shimo-togari",
+      "name": "下土狩",
+      "kana": "しもとがり"
+    },
+    {
+      "id": "ooka",
+      "name": "大岡",
+      "kana": "おおおか"
+    },
+    {
+      "id": "numazu",
+      "name": "沼津",
+      "kana": "ぬまづ"
+    },
+    {
+      "id": "tokyo-sukaitsurii",
+      "name": "とうきょうスカイツリー",
+      "kana": "とうきょうすかいつりー"
+    },
+    {
+      "id": "hikifune",
+      "name": "曳舟",
+      "kana": "ひきふね"
+    },
+    {
+      "id": "higashi-mukojima",
+      "name": "東向島",
+      "kana": "ひがしむこうじま"
+    },
+    {
+      "id": "kanegafuchi",
+      "name": "鐘ヶ淵",
+      "kana": "かねがふち"
+    },
+    {
+      "id": "horikiri",
+      "name": "堀切",
+      "kana": "ほりきり"
+    },
+    {
+      "id": "ushida",
+      "name": "牛田",
+      "kana": "うしだ"
+    },
+    {
+      "id": "kosuge",
+      "name": "小菅",
+      "kana": "こすげ"
+    },
+    {
+      "id": "gotanno",
+      "name": "五反野",
+      "kana": "ごたんの"
+    },
+    {
+      "id": "umejima",
+      "name": "梅島",
+      "kana": "うめじま"
+    },
+    {
+      "id": "nishiarai",
+      "name": "西新井",
+      "kana": "にしあらい"
+    },
+    {
+      "id": "takenotsuka",
+      "name": "竹ノ塚",
+      "kana": "たけのつか"
+    },
+    {
+      "id": "yatsuka",
+      "name": "谷塚",
+      "kana": "やつか"
+    },
+    {
+      "id": "soka",
+      "name": "草加",
+      "kana": "そうか"
+    },
+    {
+      "id": "dokkyodaigakumae",
+      "name": "獨協大学前",
+      "kana": "どっきょうだいがくまえ"
+    },
+    {
+      "id": "shinden-tobu",
+      "name": "新田",
+      "kana": "しんでん"
+    },
+    {
+      "id": "gamo",
+      "name": "蒲生",
+      "kana": "がもう"
+    },
+    {
+      "id": "shin-koshigaya",
+      "name": "新越谷",
+      "kana": "しんこしがや"
+    },
+    {
+      "id": "koshigaya",
+      "name": "越谷",
+      "kana": "こしがや"
+    },
+    {
+      "id": "kita-koshigaya",
+      "name": "北越谷",
+      "kana": "きたこしがや"
+    },
+    {
+      "id": "obukuro",
+      "name": "大袋",
+      "kana": "おおぶくろ"
+    },
+    {
+      "id": "sengendai",
+      "name": "せんげん台",
+      "kana": "せんげんだい"
+    },
+    {
+      "id": "takesato",
+      "name": "武里",
+      "kana": "たけさと"
+    },
+    {
+      "id": "ichinowari",
+      "name": "一ノ割",
+      "kana": "いちのわり"
+    },
+    {
+      "id": "kasukabe",
+      "name": "春日部",
+      "kana": "かすかべ"
+    },
+    {
+      "id": "kita-kasukabe",
+      "name": "北春日部",
+      "kana": "きたかすかべ"
+    },
+    {
+      "id": "himemiya",
+      "name": "姫宮",
+      "kana": "ひめみや"
+    },
+    {
+      "id": "tobu-dobutsu-koen",
+      "name": "東武動物公園",
+      "kana": "とうぶどうぶつこうえん"
+    },
+    {
+      "id": "wado",
+      "name": "和戸",
+      "kana": "わど"
+    },
+    {
+      "id": "washinomiya",
+      "name": "鷲宮",
+      "kana": "わしのみや"
+    },
+    {
+      "id": "hanasaki",
+      "name": "花崎",
+      "kana": "はなさき"
+    },
+    {
+      "id": "kazo",
+      "name": "加須",
+      "kana": "かぞ"
+    },
+    {
+      "id": "minami-hanyu",
+      "name": "南羽生",
+      "kana": "みなみはにゅう"
+    },
+    {
+      "id": "hanyu",
+      "name": "羽生",
+      "kana": "はにゅう"
+    },
+    {
+      "id": "kawamata",
+      "name": "川俣",
+      "kana": "かわまた"
+    },
+    {
+      "id": "morinjimae",
+      "name": "茂林寺前",
+      "kana": "もりんじまえ"
+    },
+    {
+      "id": "tatebayashi",
+      "name": "館林",
+      "kana": "たてばやし"
+    },
+    {
+      "id": "tatara",
+      "name": "多々良",
+      "kana": "たたら"
+    },
+    {
+      "id": "agata",
+      "name": "県",
+      "kana": "あがた"
+    },
+    {
+      "id": "fukui-tobu",
+      "name": "福居",
+      "kana": "ふくい"
+    },
+    {
+      "id": "tobu-izumi",
+      "name": "東武和泉",
+      "kana": "とうぶいずみ"
+    },
+    {
+      "id": "ashikagashi",
+      "name": "足利市",
+      "kana": "あしかがし"
+    },
+    {
+      "id": "yashu-yamabe",
+      "name": "野州山辺",
+      "kana": "やしゅうやまべ"
+    },
+    {
+      "id": "niragawa",
+      "name": "韮川",
+      "kana": "にらがわ"
+    },
+    {
+      "id": "ota-tobu",
+      "name": "太田",
+      "kana": "おおた"
+    },
+    {
+      "id": "hosoya",
+      "name": "細谷",
+      "kana": "ほそや"
+    },
+    {
+      "id": "kizaki",
+      "name": "木崎",
+      "kana": "きざき"
+    },
+    {
+      "id": "serada",
+      "name": "世良田",
+      "kana": "せらだ"
+    },
+    {
+      "id": "sakaimachi",
+      "name": "境町",
+      "kana": "さかいまち"
+    },
+    {
+      "id": "goshi",
+      "name": "剛志",
+      "kana": "ごうし"
+    },
+    {
+      "id": "shin-isesaki",
+      "name": "新伊勢崎",
+      "kana": "しんいせさき"
+    },
+    {
+      "id": "sugito-takanodai",
+      "name": "杉戸高野台",
+      "kana": "すぎとたかのだい"
+    },
+    {
+      "id": "satte",
+      "name": "幸手",
+      "kana": "さって"
+    },
+    {
+      "id": "minami-kurihashi",
+      "name": "南栗橋",
+      "kana": "みなみくりはし"
+    },
+    {
+      "id": "shin-koga",
+      "name": "新古河",
+      "kana": "しんこが"
+    },
+    {
+      "id": "yagyu",
+      "name": "柳生",
+      "kana": "やぎゅう"
+    },
+    {
+      "id": "itakura-toyodai-mae",
+      "name": "板倉東洋大前",
+      "kana": "いたくらとうようだいまえ"
+    },
+    {
+      "id": "fujioka-tochigi",
+      "name": "藤岡",
+      "kana": "ふじおか"
+    },
+    {
+      "id": "shizuwa",
+      "name": "静和",
+      "kana": "しずわ"
+    },
+    {
+      "id": "shin-ohirashita",
+      "name": "新大平下",
+      "kana": "しんおおひらした"
+    },
+    {
+      "id": "shin-tochigi",
+      "name": "新栃木",
+      "kana": "しんとちぎ"
+    },
+    {
+      "id": "kassemba",
+      "name": "合戦場",
+      "kana": "かっせんば"
+    },
+    {
+      "id": "ienaka",
+      "name": "家中",
+      "kana": "いえなか"
+    },
+    {
+      "id": "tobu-kanasaki",
+      "name": "東武金崎",
+      "kana": "とうぶかなさき"
+    },
+    {
+      "id": "niregi",
+      "name": "楡木",
+      "kana": "にれぎ"
+    },
+    {
+      "id": "momiyama",
+      "name": "樅山",
+      "kana": "もみやま"
+    },
+    {
+      "id": "shin-kanuma",
+      "name": "新鹿沼",
+      "kana": "しんかぬま"
+    },
+    {
+      "id": "kita-kanuma",
+      "name": "北鹿沼",
+      "kana": "きたかぬま"
+    },
+    {
+      "id": "itaga",
+      "name": "板荷",
+      "kana": "いたが"
+    },
+    {
+      "id": "shimo-goshiro",
+      "name": "下小代",
+      "kana": "しもごしろ"
+    },
+    {
+      "id": "myojin",
+      "name": "明神",
+      "kana": "みょうじん"
+    },
+    {
+      "id": "shimo-imaichi",
+      "name": "下今市",
+      "kana": "しもいまいち"
+    },
+    {
+      "id": "kami-imaichi",
+      "name": "上今市",
+      "kana": "かみいまいち"
+    },
+    {
+      "id": "tobu-nikko",
+      "name": "東武日光",
+      "kana": "とうぶにっこう"
+    },
+    {
+      "id": "daiya-muko",
+      "name": "大谷向",
+      "kana": "だいやむこう"
+    },
+    {
+      "id": "okuwa",
+      "name": "大桑",
+      "kana": "おおくわ"
+    },
+    {
+      "id": "shin-takatoku",
+      "name": "新高徳",
+      "kana": "しんたかとく"
+    },
+    {
+      "id": "kosagoe",
+      "name": "小佐越",
+      "kana": "こさごえ"
+    },
+    {
+      "id": "tobu-world-square",
+      "name": "東武ワールドスクウェア",
+      "kana": "とうぶわーるどすくうぇあ"
+    },
+    {
+      "id": "kinugawa-onsen",
+      "name": "鬼怒川温泉",
+      "kana": "きぬがわおんせん"
+    },
+    {
+      "id": "kinugawa-koen",
+      "name": "鬼怒川公園",
+      "kana": "きぬがわこうえん"
+    },
+    {
+      "id": "shin-fujiwara",
+      "name": "新藤原",
+      "kana": "しんふじわら"
+    },
+    {
+      "id": "omurai",
+      "name": "小村井",
+      "kana": "おむらい"
+    },
+    {
+      "id": "higashi-azuma",
+      "name": "東あずま",
+      "kana": "ひがしあずま"
+    },
+    {
+      "id": "kameido-suijin",
+      "name": "亀戸水神",
+      "kana": "かめいどすいじん"
+    },
+    {
+      "id": "daishimae",
+      "name": "大師前",
+      "kana": "だいしまえ"
+    },
+    {
+      "id": "kita-ikebukuro",
+      "name": "北池袋",
+      "kana": "きたいけぶくろ"
+    },
+    {
+      "id": "shimo-itabashi",
+      "name": "下板橋",
+      "kana": "しもいたばし"
+    },
+    {
+      "id": "oyama-tobu",
+      "name": "大山",
+      "kana": "おおやま"
+    },
+    {
+      "id": "naka-itabashi",
+      "name": "中板橋",
+      "kana": "なかいたばし"
+    },
+    {
+      "id": "tokiwadai",
+      "name": "ときわ台",
+      "kana": "ときわだい"
+    },
+    {
+      "id": "kami-itabashi",
+      "name": "上板橋",
+      "kana": "かみいたばし"
+    },
+    {
+      "id": "tobu-nerima",
+      "name": "東武練馬",
+      "kana": "とうぶねりま"
+    },
+    {
+      "id": "shimo-akatsuka",
+      "name": "下赤塚",
+      "kana": "しもあかつか"
+    },
+    {
+      "id": "narimasu-tobu",
+      "name": "成増",
+      "kana": "なります"
+    },
+    {
+      "id": "asaka",
+      "name": "朝霞",
+      "kana": "あさか"
+    },
+    {
+      "id": "asakadai",
+      "name": "朝霞台",
+      "kana": "あさかだい"
+    },
+    {
+      "id": "shiki",
+      "name": "志木",
+      "kana": "しき"
+    },
+    {
+      "id": "yanasegawa",
+      "name": "柳瀬川",
+      "kana": "やなせがわ"
+    },
+    {
+      "id": "mizuhodai",
+      "name": "みずほ台",
+      "kana": "みずほだい"
+    },
+    {
+      "id": "tsuruse",
+      "name": "鶴瀬",
+      "kana": "つるせ"
+    },
+    {
+      "id": "fujimino",
+      "name": "ふじみ野",
+      "kana": "ふじみの"
+    },
+    {
+      "id": "kami-fukuoka",
+      "name": "上福岡",
+      "kana": "かみふくおか"
+    },
+    {
+      "id": "shingashi",
+      "name": "新河岸",
+      "kana": "しんがし"
+    },
+    {
+      "id": "kawagoeshi",
+      "name": "川越市",
+      "kana": "かわごえし"
+    },
+    {
+      "id": "kasumigaseki-tojo",
+      "name": "霞ヶ関",
+      "kana": "かすみがせき"
+    },
+    {
+      "id": "tsurugashima",
+      "name": "鶴ヶ島",
+      "kana": "つるがしま"
+    },
+    {
+      "id": "wakaba",
+      "name": "若葉",
+      "kana": "わかば"
+    },
+    {
+      "id": "sakado",
+      "name": "坂戸",
+      "kana": "さかど"
+    },
+    {
+      "id": "kita-sakado",
+      "name": "北坂戸",
+      "kana": "きたさかど"
+    },
+    {
+      "id": "takasaka",
+      "name": "高坂",
+      "kana": "たかさか"
+    },
+    {
+      "id": "higashi-matsuyama",
+      "name": "東松山",
+      "kana": "ひがしまつやま"
+    },
+    {
+      "id": "shinrin-koen",
+      "name": "森林公園",
+      "kana": "しんりんこうえん"
+    },
+    {
+      "id": "tsukinowa",
+      "name": "つきのわ",
+      "kana": "つきのわ"
+    },
+    {
+      "id": "musashi-ranzan",
+      "name": "武蔵嵐山",
+      "kana": "むさしらんざん"
+    },
+    {
+      "id": "tobu-takezawa",
+      "name": "東武竹沢",
+      "kana": "とうぶたけざわ"
+    },
+    {
+      "id": "minami-yorii",
+      "name": "みなみ寄居",
+      "kana": "みなみよりい"
+    },
+    {
+      "id": "obusuma",
+      "name": "男衾",
+      "kana": "おぶすま"
+    },
+    {
+      "id": "hachigata",
+      "name": "鉢形",
+      "kana": "はちがた"
+    },
+    {
+      "id": "tamayodo",
+      "name": "玉淀",
+      "kana": "たまよど"
+    },
+    {
+      "id": "ippommatsu",
+      "name": "一本松",
+      "kana": "いっぽんまつ"
+    },
+    {
+      "id": "nishi-oya",
+      "name": "西大家",
+      "kana": "にしおおや"
+    },
+    {
+      "id": "kawakado",
+      "name": "川角",
+      "kana": "かわかど"
+    },
+    {
+      "id": "bushu-nagase",
+      "name": "武州長瀬",
+      "kana": "ぶしゅうながせ"
+    },
+    {
+      "id": "higashi-moro",
+      "name": "東毛呂",
+      "kana": "ひがしもろ"
+    },
+    {
+      "id": "bushu-karasawa",
+      "name": "武州唐沢",
+      "kana": "ぶしゅうからさわ"
+    },
+    {
+      "id": "kita-omiya",
+      "name": "北大宮",
+      "kana": "きたおおみや"
+    },
+    {
+      "id": "omiya-koen",
+      "name": "大宮公園",
+      "kana": "おおみやこうえん"
+    },
+    {
+      "id": "owada",
+      "name": "大和田",
+      "kana": "おおわだ"
+    },
+    {
+      "id": "nanasato",
+      "name": "七里",
+      "kana": "なさと"
+    },
+    {
+      "id": "iwatsuki",
+      "name": "岩槻",
+      "kana": "いわつき"
+    },
+    {
+      "id": "higashi-iwatsuki",
+      "name": "東岩槻",
+      "kana": "ひがしいわつき"
+    },
+    {
+      "id": "toyoharu",
+      "name": "豊春",
+      "kana": "とよはる"
+    },
+    {
+      "id": "yagisaki",
+      "name": "八木崎",
+      "kana": "やぎさき"
+    },
+    {
+      "id": "fujino-ushijima",
+      "name": "藤の牛島",
+      "kana": "ふじのうしじま"
+    },
+    {
+      "id": "minami-sakurai",
+      "name": "南桜井",
+      "kana": "みなみさくらい"
+    },
+    {
+      "id": "kawama",
+      "name": "川間",
+      "kana": "かわま"
+    },
+    {
+      "id": "nanakodai",
+      "name": "七光台",
+      "kana": "ななこうだい"
+    },
+    {
+      "id": "shimizu-koen",
+      "name": "清水公園",
+      "kana": "しみずこうえん"
+    },
+    {
+      "id": "atago-tobu",
+      "name": "愛宕",
+      "kana": "あたご"
+    },
+    {
+      "id": "nodashi",
+      "name": "野田市",
+      "kana": "のだし"
+    },
+    {
+      "id": "umesato",
+      "name": "梅郷",
+      "kana": "うめさと"
+    },
+    {
+      "id": "unga",
+      "name": "運河",
+      "kana": "うんが"
+    },
+    {
+      "id": "edogawadai",
+      "name": "江戸川台",
+      "kana": "えどがわだい"
+    },
+    {
+      "id": "hatsuishi",
+      "name": "初石",
+      "kana": "はついし"
+    },
+    {
+      "id": "nagareyama-otakanomori",
+      "name": "流山おおたかの森",
+      "kana": "ながれやまおおたかのもり"
+    },
+    {
+      "id": "toyoshiki",
+      "name": "豊四季",
+      "kana": "とよしき"
+    },
+    {
+      "id": "shin-kashiwa",
+      "name": "新柏",
+      "kana": "しんかしわ"
+    },
+    {
+      "id": "masuo",
+      "name": "増尾",
+      "kana": "ますお"
+    },
+    {
+      "id": "sakasai",
+      "name": "逆井",
+      "kana": "さかさい"
+    },
+    {
+      "id": "takayanagi",
+      "name": "高柳",
+      "kana": "たかやなぎ"
+    },
+    {
+      "id": "mutsumi",
+      "name": "六実",
+      "kana": "むつみ"
+    },
+    {
+      "id": "shin-kamagaya",
+      "name": "新鎌ヶ谷",
+      "kana": "しんかまがや"
+    },
+    {
+      "id": "kamagaya",
+      "name": "鎌ヶ谷",
+      "kana": "かまがや"
+    },
+    {
+      "id": "magomezawa",
+      "name": "馬込沢",
+      "kana": "まごめざわ"
+    },
+    {
+      "id": "tsukada",
+      "name": "塚田",
+      "kana": "つかだ"
+    },
+    {
+      "id": "shin-funabashi",
+      "name": "新船橋",
+      "kana": "しんふなばし"
+    },
+    {
+      "id": "watarase",
+      "name": "渡瀬",
+      "kana": "わたらせ"
+    },
+    {
+      "id": "tajima-tobu",
+      "name": "田島",
+      "kana": "たじま"
+    },
+    {
+      "id": "sanoshi",
+      "name": "佐野市",
+      "kana": "さのし"
+    },
+    {
+      "id": "horigome",
+      "name": "堀米",
+      "kana": "ほりごめ"
+    },
+    {
+      "id": "yoshimizu",
+      "name": "吉水",
+      "kana": "よしみず"
+    },
+    {
+      "id": "tanuma",
+      "name": "田沼",
+      "kana": "たぬま"
+    },
+    {
+      "id": "tada-tobu",
+      "name": "多田",
+      "kana": "ただ"
+    },
+    {
+      "id": "kuzu",
+      "name": "葛生",
+      "kana": "くずう"
+    },
+    {
+      "id": "sammaibashi",
+      "name": "三枚橋",
+      "kana": "さんまいばし"
+    },
+    {
+      "id": "jiroembashi",
+      "name": "治良門橋",
+      "kana": "じろえんばし"
+    },
+    {
+      "id": "yabuzuka",
+      "name": "藪塚",
+      "kana": "やぶつか"
+    },
+    {
+      "id": "azami",
+      "name": "阿左美",
+      "kana": "あざみ"
+    },
+    {
+      "id": "shin-kiryu",
+      "name": "新桐生",
+      "kana": "しんきりゅう"
+    },
+    {
+      "id": "aioi",
+      "name": "相老",
+      "kana": "あいおい"
+    },
+    {
+      "id": "akagi",
+      "name": "赤城",
+      "kana": "あかぎ"
+    },
+    {
+      "id": "narushima",
+      "name": "成島",
+      "kana": "なるしま"
+    },
+    {
+      "id": "hon-nakano",
+      "name": "本中野",
+      "kana": "ほんなかの"
+    },
+    {
+      "id": "shinozuka",
+      "name": "篠塚",
+      "kana": "しのづか"
+    },
+    {
+      "id": "higashi-koizumi",
+      "name": "東小泉",
+      "kana": "ひがしこいずみ"
+    },
+    {
+      "id": "koizumimachi",
+      "name": "小泉町",
+      "kana": "こいずみまち"
+    },
+    {
+      "id": "nishi-koizumi",
+      "name": "西小泉",
+      "kana": "にしこいずみ"
+    },
+    {
+      "id": "ryumai",
+      "name": "竜舞",
+      "kana": "りゅうまい"
+    },
+    {
+      "id": "yashu-hirakawa",
+      "name": "野州平川",
+      "kana": "やしゅうひらかわ"
+    },
+    {
+      "id": "yashu-otsuka",
+      "name": "野州大塚",
+      "kana": "やしゅうおおつか"
+    },
+    {
+      "id": "mibu",
+      "name": "壬生",
+      "kana": "みぶ"
+    },
+    {
+      "id": "kuniya",
+      "name": "国谷",
+      "kana": "くにや"
+    },
+    {
+      "id": "omocha-no-machi",
+      "name": "おもちゃのまち",
+      "kana": "おもちゃのまち"
+    },
+    {
+      "id": "yasuzuka",
+      "name": "安塚",
+      "kana": "やすづか"
+    },
+    {
+      "id": "nishi-kawada",
+      "name": "西川田",
+      "kana": "にしかわだ"
+    },
+    {
+      "id": "esojima",
+      "name": "江曽島",
+      "kana": "えそじま"
+    },
+    {
+      "id": "minami-utsunomiya",
+      "name": "南宇都宮",
+      "kana": "みなみうつのみや"
+    },
+    {
+      "id": "tobu-utsunomiya",
+      "name": "東武宇都宮",
+      "kana": "とうぶうつのみや"
+    },
+    {
+      "id": "shiinamachi",
+      "name": "椎名町",
+      "kana": "しいなまち"
+    },
+    {
+      "id": "higashi-nagasaki",
+      "name": "東長崎",
+      "kana": "ひがしながさき"
+    },
+    {
+      "id": "ekoda",
+      "name": "江古田",
+      "kana": "えこだ"
+    },
+    {
+      "id": "sakuradai",
+      "name": "桜台",
+      "kana": "さくらだい"
+    },
+    {
+      "id": "nakamurabashi",
+      "name": "中村橋",
+      "kana": "なかむらばし"
+    },
+    {
+      "id": "fujimidai",
+      "name": "富士見台",
+      "kana": "ふじみだい"
+    },
+    {
+      "id": "nerima-takanodai",
+      "name": "練馬高野台",
+      "kana": "ねりまたかのだい"
+    },
+    {
+      "id": "shakujii-koen",
+      "name": "石神井公園",
+      "kana": "しゃくじいこうえん"
+    },
+    {
+      "id": "oizumi-gakuen",
+      "name": "大泉学園",
+      "kana": "おおいずみがくえん"
+    },
+    {
+      "id": "hoya",
+      "name": "保谷",
+      "kana": "ほうや"
+    },
+    {
+      "id": "hibarigaoka",
+      "name": "ひばりヶ丘",
+      "kana": "ひばりがおか"
+    },
+    {
+      "id": "higashi-kurume",
+      "name": "東久留米",
+      "kana": "ひがしくるめ"
+    },
+    {
+      "id": "kiyose",
+      "name": "清瀬",
+      "kana": "きよせ"
+    },
+    {
+      "id": "akitsu",
+      "name": "秋津",
+      "kana": "あきつ"
+    },
+    {
+      "id": "tokorozawa",
+      "name": "所沢",
+      "kana": "ところざわ"
+    },
+    {
+      "id": "nishi-tokorozawa",
+      "name": "西所沢",
+      "kana": "にしところざわ"
+    },
+    {
+      "id": "kotesashi",
+      "name": "小手指",
+      "kana": "こてさし"
+    },
+    {
+      "id": "sayamagaoka",
+      "name": "狭山ヶ丘",
+      "kana": "さやまがおか"
+    },
+    {
+      "id": "musashi-fujisawa",
+      "name": "武蔵藤沢",
+      "kana": "むさしふじさわ"
+    },
+    {
+      "id": "inariyama-koen",
+      "name": "稲荷山公園",
+      "kana": "いなりやまこうえん"
+    },
+    {
+      "id": "irumashi",
+      "name": "入間市",
+      "kana": "いるまし"
+    },
+    {
+      "id": "bushi",
+      "name": "仏子",
+      "kana": "ぶし"
+    },
+    {
+      "id": "motokaji",
+      "name": "元加治",
+      "kana": "もとかじ"
+    },
+    {
+      "id": "hanno",
+      "name": "飯能",
+      "kana": "はんのう"
+    },
+    {
+      "id": "koma",
+      "name": "高麗",
+      "kana": "こま"
+    },
+    {
+      "id": "musashi-yokote",
+      "name": "武蔵横手",
+      "kana": "むさしよこて"
+    },
+    {
+      "id": "higashi-agano",
+      "name": "東吾野",
+      "kana": "ひがしあがの"
+    },
+    {
+      "id": "agano",
+      "name": "吾野",
+      "kana": "あがの"
+    },
+    {
+      "id": "nishi-agano",
+      "name": "西吾野",
+      "kana": "にしあがの"
+    },
+    {
+      "id": "shomaru",
+      "name": "正丸",
+      "kana": "しょうまる"
+    },
+    {
+      "id": "ashigakubo",
+      "name": "芦ヶ久保",
+      "kana": "あしがくぼ"
+    },
+    {
+      "id": "yokoze",
+      "name": "横瀬",
+      "kana": "よこぜ"
+    },
+    {
+      "id": "seibu-chichibu",
+      "name": "西武秩父",
+      "kana": "せいぶちちぶ"
+    },
+    {
+      "id": "shin-sakuradai",
+      "name": "新桜台",
+      "kana": "しんさくらだい"
+    },
+    {
+      "id": "shimo-yamaguchi",
+      "name": "下山口",
+      "kana": "しもやまぐち"
+    },
+    {
+      "id": "seibukyujo-mae",
+      "name": "西武球場前",
+      "kana": "せいぶきゅうじょうまえ"
+    },
+    {
+      "id": "seibu-shinjuku",
+      "name": "西武新宿",
+      "kana": "せいぶしんじゅく"
+    },
+    {
+      "id": "shimo-ochiai",
+      "name": "下落合",
+      "kana": "しもおちあい"
+    },
+    {
+      "id": "araiyakushi-mae",
+      "name": "新井薬師前",
+      "kana": "あらいやくしまえ"
+    },
+    {
+      "id": "numabukuro",
+      "name": "沼袋",
+      "kana": "ぬまぶくろ"
+    },
+    {
+      "id": "nogata",
+      "name": "野方",
+      "kana": "のがた"
+    },
+    {
+      "id": "toritsu-kasei",
+      "name": "都立家政",
+      "kana": "とりつかせい"
+    },
+    {
+      "id": "saginomiya",
+      "name": "鷺ノ宮",
+      "kana": "さぎのみや"
+    },
+    {
+      "id": "shimo-igusa",
+      "name": "下井草",
+      "kana": "しもいぐさ"
+    },
+    {
+      "id": "iogi",
+      "name": "井荻",
+      "kana": "いおぎ"
+    },
+    {
+      "id": "kami-igusa",
+      "name": "上井草",
+      "kana": "かみいぐさ"
+    },
+    {
+      "id": "kami-shakujii",
+      "name": "上石神井",
+      "kana": "かみしゃくじい"
+    },
+    {
+      "id": "musashi-seki",
+      "name": "武蔵関",
+      "kana": "むさしせき"
+    },
+    {
+      "id": "higashi-fushimi",
+      "name": "東伏見",
+      "kana": "ひがしふしみ"
+    },
+    {
+      "id": "seibu-yagisawa",
+      "name": "西武柳沢",
+      "kana": "せいぶやぎさわ"
+    },
+    {
+      "id": "tanashi",
+      "name": "田無",
+      "kana": "たなし"
+    },
+    {
+      "id": "hana-koganei",
+      "name": "花小金井",
+      "kana": "はなこがねい"
+    },
+    {
+      "id": "kodaira",
+      "name": "小平",
+      "kana": "こだいら"
+    },
+    {
+      "id": "kumegawa",
+      "name": "久米川",
+      "kana": "くめがわ"
+    },
+    {
+      "id": "higashi-murayama",
+      "name": "東村山",
+      "kana": "ひがしむらやま"
+    },
+    {
+      "id": "koku-koen",
+      "name": "航空公園",
+      "kana": "こうくうこうえん"
+    },
+    {
+      "id": "shin-tokorozawa",
+      "name": "新所沢",
+      "kana": "しんところざわ"
+    },
+    {
+      "id": "iriso",
+      "name": "入曽",
+      "kana": "いりそ"
+    },
+    {
+      "id": "sayamashi",
+      "name": "狭山市",
+      "kana": "さやまし"
+    },
+    {
+      "id": "shin-sayama",
+      "name": "新狭山",
+      "kana": "しんさやま"
+    },
+    {
+      "id": "minami-otsuka",
+      "name": "南大塚",
+      "kana": "みなみおおつか"
+    },
+    {
+      "id": "hon-kawagoe",
+      "name": "本川越",
+      "kana": "ほんかわごえ"
+    },
+    {
+      "id": "hagiyama",
+      "name": "萩山",
+      "kana": "はぎやま"
+    },
+    {
+      "id": "ogawa-seibu",
+      "name": "小川",
+      "kana": "おがわ"
+    },
+    {
+      "id": "higashi-yamatoshi",
+      "name": "東大和市",
+      "kana": "ひがしやまとし"
+    },
+    {
+      "id": "tamagawa-josui",
+      "name": "玉川上水",
+      "kana": "たまがわじょうすい"
+    },
+    {
+      "id": "musashi-sunagawa",
+      "name": "武蔵砂川",
+      "kana": "むさしすながわ"
+    },
+    {
+      "id": "seibu-tachikawa",
+      "name": "西武立川",
+      "kana": "せいぶたちかわ"
+    },
+    {
+      "id": "koigakubo",
+      "name": "恋ヶ窪",
+      "kana": "こいがくぼ"
+    },
+    {
+      "id": "takanodai",
+      "name": "鷹の台",
+      "kana": "たかのだい"
+    },
+    {
+      "id": "seibuen",
+      "name": "西武園",
+      "kana": "せいぶえん"
+    },
+    {
+      "id": "hitotsubashi-gakuen",
+      "name": "一橋学園",
+      "kana": "ひとつばしがくえん"
+    },
+    {
+      "id": "omekaido",
+      "name": "青梅街道",
+      "kana": "おうめかいどう"
+    },
+    {
+      "id": "yasaka",
+      "name": "八坂",
+      "kana": "やさか"
+    },
+    {
+      "id": "musashi-yamato",
+      "name": "武蔵大和",
+      "kana": "むさしやまと"
+    },
+    {
+      "id": "tamako",
+      "name": "多摩湖",
+      "kana": "たまこ"
+    },
+    {
+      "id": "shin-koganei",
+      "name": "新小金井",
+      "kana": "しんこがねい"
+    },
+    {
+      "id": "tama-seibu",
+      "name": "多磨",
+      "kana": "たま"
+    },
+    {
+      "id": "shiraitodai",
+      "name": "白糸台",
+      "kana": "しらいとだい"
+    },
+    {
+      "id": "kyoteijo-mae",
+      "name": "競艇場前",
+      "kana": "きょうていじょうまえ"
+    },
+    {
+      "id": "koremasa",
+      "name": "是政",
+      "kana": "これまさ"
+    },
+    {
+      "id": "seibuen-yuenchi",
+      "name": "西武園ゆうえんち",
+      "kana": "せいぶえんゆうえんち"
+    },
+    {
+      "id": "keisei-ueno",
+      "name": "京成上野",
+      "kana": "けいせいうえの"
+    },
+    {
+      "id": "shim-mikawashima",
+      "name": "新三河島",
+      "kana": "しんみかわしま"
+    },
+    {
+      "id": "senju-ohashi",
+      "name": "千住大橋",
+      "kana": "せんじゅおおはし"
+    },
+    {
+      "id": "keisei-sekiya",
+      "name": "京成関屋",
+      "kana": "けいせいせきや"
+    },
+    {
+      "id": "horikiri-shobuen",
+      "name": "堀切菖蒲園",
+      "kana": "ほりきりしょうぶえん"
+    },
+    {
+      "id": "ohanajaya",
+      "name": "お花茶屋",
+      "kana": "おはなちゃや"
+    },
+    {
+      "id": "aoto",
+      "name": "青砥",
+      "kana": "あおと"
+    },
+    {
+      "id": "keisei-takasago",
+      "name": "京成高砂",
+      "kana": "けいせいたかさご"
+    },
+    {
+      "id": "keisei-koiwa",
+      "name": "京成小岩",
+      "kana": "けいせいこいわ"
+    },
+    {
+      "id": "edogawa",
+      "name": "江戸川",
+      "kana": "えどがわ"
+    },
+    {
+      "id": "konodai",
+      "name": "国府台",
+      "kana": "こうのだい"
+    },
+    {
+      "id": "ichikawamama",
+      "name": "市川真間",
+      "kana": "いちかわまま"
+    },
+    {
+      "id": "sugano",
+      "name": "菅野",
+      "kana": "すがの"
+    },
+    {
+      "id": "keisei-yawata",
+      "name": "京成八幡",
+      "kana": "けいせいやわた"
+    },
+    {
+      "id": "onigoe",
+      "name": "鬼越",
+      "kana": "おにごえ"
+    },
+    {
+      "id": "keisei-nakayama",
+      "name": "京成中山",
+      "kana": "けいせいなかやま"
+    },
+    {
+      "id": "higashi-nakayama",
+      "name": "東中山",
+      "kana": "ひがしなかやま"
+    },
+    {
+      "id": "keisei-nishifuna",
+      "name": "京成西船",
+      "kana": "けいせいにしふな"
+    },
+    {
+      "id": "kaijin",
+      "name": "海神",
+      "kana": "かいじん"
+    },
+    {
+      "id": "keisei-funabashi",
+      "name": "京成船橋",
+      "kana": "けいせいふなばし"
+    },
+    {
+      "id": "daijingushita",
+      "name": "大神宮下",
+      "kana": "だいじんぐうした"
+    },
+    {
+      "id": "funabashi-keibajo",
+      "name": "船橋競馬場",
+      "kana": "ふなばしけいばじょう"
+    },
+    {
+      "id": "yatsu",
+      "name": "谷津",
+      "kana": "やつ"
+    },
+    {
+      "id": "keisei-tsudanuma",
+      "name": "京成津田沼",
+      "kana": "けいせいつだぬま"
+    },
+    {
+      "id": "keisei-okubo",
+      "name": "京成大久保",
+      "kana": "けいせいおおくぼ"
+    },
+    {
+      "id": "mimomi",
+      "name": "実籾",
+      "kana": "みもみ"
+    },
+    {
+      "id": "yachiyodai",
+      "name": "八千代台",
+      "kana": "やちよだい"
+    },
+    {
+      "id": "keisei-owada",
+      "name": "京成大和田",
+      "kana": "けいせいおおわだ"
+    },
+    {
+      "id": "katsutadai",
+      "name": "勝田台",
+      "kana": "かつただい"
+    },
+    {
+      "id": "shizu-keisei",
+      "name": "志津",
+      "kana": "しづ"
+    },
+    {
+      "id": "yukarigaoka",
+      "name": "ユーカリが丘",
+      "kana": "ゆーかりがおか"
+    },
+    {
+      "id": "keisei-usui",
+      "name": "京成臼井",
+      "kana": "けいせいうすい"
+    },
+    {
+      "id": "keisei-sakura",
+      "name": "京成佐倉",
+      "kana": "けいせいさくら"
+    },
+    {
+      "id": "osakura",
+      "name": "大佐倉",
+      "kana": "おおさくら"
+    },
+    {
+      "id": "keisei-shisui",
+      "name": "京成酒々井",
+      "kana": "けいせいしすい"
+    },
+    {
+      "id": "sogosando",
+      "name": "宗吾参道",
+      "kana": "そうごさんどう"
+    },
+    {
+      "id": "kozunomori",
+      "name": "公津の杜",
+      "kana": "こうづのもり"
+    },
+    {
+      "id": "keisei-narita",
+      "name": "京成成田",
+      "kana": "けいせいなりた"
+    },
+    {
+      "id": "keisei-hikifune",
+      "name": "京成曳舟",
+      "kana": "けいせいひきふね"
+    },
+    {
+      "id": "yahiro",
+      "name": "八広",
+      "kana": "やひろ"
+    },
+    {
+      "id": "yotsugi",
+      "name": "四ツ木",
+      "kana": "よつぎ"
+    },
+    {
+      "id": "keisei-tateishi",
+      "name": "京成立石",
+      "kana": "けいせいたていし"
+    },
+    {
+      "id": "shibamata",
+      "name": "柴又",
+      "kana": "しばまた"
+    },
+    {
+      "id": "keisei-kanamachi",
+      "name": "京成金町",
+      "kana": "けいせいかなまち"
+    },
+    {
+      "id": "keisei-makuharihongo",
+      "name": "京成幕張本郷",
+      "kana": "けいせいまくはりほんごう"
+    },
+    {
+      "id": "keisei-makuhari",
+      "name": "京成幕張",
+      "kana": "けいせいまくはり"
+    },
+    {
+      "id": "kemigawa",
+      "name": "検見川",
+      "kana": "けみがわ"
+    },
+    {
+      "id": "keisei-inage",
+      "name": "京成稲毛",
+      "kana": "けいせいいなげ"
+    },
+    {
+      "id": "midoridai",
+      "name": "みどり台",
+      "kana": "みどりだい"
+    },
+    {
+      "id": "nishi-nobuto",
+      "name": "西登戸",
+      "kana": "にしのぶと"
+    },
+    {
+      "id": "shin-chiba",
+      "name": "新千葉",
+      "kana": "しんちば"
+    },
+    {
+      "id": "keisei-chiba",
+      "name": "京成千葉",
+      "kana": "けいせいちば"
+    },
+    {
+      "id": "chiba-chuo",
+      "name": "千葉中央",
+      "kana": "ちばちゅうおう"
+    },
+    {
+      "id": "chibadera",
+      "name": "千葉寺",
+      "kana": "ちばでら"
+    },
+    {
+      "id": "omoridai",
+      "name": "大森台",
+      "kana": "おおもりだい"
+    },
+    {
+      "id": "gakuemmae-keisei",
+      "name": "学園前",
+      "kana": "がくえんまえ"
+    },
+    {
+      "id": "oyumino",
+      "name": "おゆみ野",
+      "kana": "おゆみの"
+    },
+    {
+      "id": "chiharadai",
+      "name": "ちはら台",
+      "kana": "ちはらだい"
+    },
+    {
+      "id": "higashi-narita",
+      "name": "東成田",
+      "kana": "ひがしなりた"
+    },
+    {
+      "id": "chiba-newtown-chuo",
+      "name": "千葉ニュータウン中央",
+      "kana": "ちばにゅーたうんちゅうおう"
+    },
+    {
+      "id": "imba-nihon-idai",
+      "name": "印旛日本医大",
+      "kana": "いんばにほんいだい"
+    },
+    {
+      "id": "narita-yukawa",
+      "name": "成田湯川",
+      "kana": "なりたゆかわ"
+    },
+    {
+      "id": "shin-tsudanuma",
+      "name": "新津田沼",
+      "kana": "しんつだぬま"
+    },
+    {
+      "id": "maebara",
+      "name": "前原",
+      "kana": "まえばら"
+    },
+    {
+      "id": "yakuendai",
+      "name": "薬園台",
+      "kana": "やくえんだい"
+    },
+    {
+      "id": "narashino",
+      "name": "習志野",
+      "kana": "ならしの"
+    },
+    {
+      "id": "kita-narashino",
+      "name": "北習志野",
+      "kana": "きたならしの"
+    },
+    {
+      "id": "takanekido",
+      "name": "高根木戸",
+      "kana": "たかねきど"
+    },
+    {
+      "id": "takanekodan",
+      "name": "高根公団",
+      "kana": "たかねこうだん"
+    },
+    {
+      "id": "takifudo",
+      "name": "滝不動",
+      "kana": "たきふどう"
+    },
+    {
+      "id": "misaki",
+      "name": "三咲",
+      "kana": "みさき"
+    },
+    {
+      "id": "futawamukodai",
+      "name": "二和向台",
+      "kana": "ふたわむこうだい"
+    },
+    {
+      "id": "kamagaya-daibutsu",
+      "name": "鎌ヶ谷大仏",
+      "kana": "かまがやだいぶつ"
+    },
+    {
+      "id": "hatsutomi",
+      "name": "初富",
+      "kana": "はつとみ"
+    },
+    {
+      "id": "kita-hatsutomi",
+      "name": "北初富",
+      "kana": "きたはつとみ"
+    },
+    {
+      "id": "kunugiyama",
+      "name": "くぬぎ山",
+      "kana": "くぬぎやま"
+    },
+    {
+      "id": "motoyama",
+      "name": "元山",
+      "kana": "もとやま"
+    },
+    {
+      "id": "goko",
+      "name": "五香",
+      "kana": "ごこう"
+    },
+    {
+      "id": "tokiwadaira",
+      "name": "常盤平",
+      "kana": "ときわだいら"
+    },
+    {
+      "id": "yabashira",
+      "name": "八柱",
+      "kana": "やばしら"
+    },
+    {
+      "id": "minoridai",
+      "name": "みのり台",
+      "kana": "みのりだい"
+    },
+    {
+      "id": "matsudo-shinden",
+      "name": "松戸新田",
+      "kana": "まつどしんでん"
+    },
+    {
+      "id": "kamihongo",
+      "name": "上本郷",
+      "kana": "かみほんごう"
+    },
+    {
+      "id": "shin-shibamata",
+      "name": "新柴又",
+      "kana": "しんしばまた"
+    },
+    {
+      "id": "yagiri",
+      "name": "矢切",
+      "kana": "やぎり"
+    },
+    {
+      "id": "kita-kokubun",
+      "name": "北国分",
+      "kana": "きたこくぶん"
+    },
+    {
+      "id": "akiyama",
+      "name": "秋山",
+      "kana": "あきやま"
+    },
+    {
+      "id": "matsuhidai",
+      "name": "松飛台",
+      "kana": "まつひだい"
+    },
+    {
+      "id": "omachi",
+      "name": "大町",
+      "kana": "おおまち"
+    },
+    {
+      "id": "nishi-shiroi",
+      "name": "西白井",
+      "kana": "にししろい"
+    },
+    {
+      "id": "shiroi",
+      "name": "白井",
+      "kana": "しろい"
+    },
+    {
+      "id": "komuro",
+      "name": "小室",
+      "kana": "こむろ"
+    },
+    {
+      "id": "inzai-makinohara",
+      "name": "印西牧の原",
+      "kana": "いんざいまきのはら"
+    },
+    {
+      "id": "shibayama-chiyoda",
+      "name": "芝山千代田",
+      "kana": "しばやまちよだ"
+    },
+    {
+      "id": "daikan-yama",
+      "name": "代官山",
+      "kana": "だいかんやま"
+    },
+    {
+      "id": "yutenji",
+      "name": "祐天寺",
+      "kana": "ゆうてんじ"
+    },
+    {
+      "id": "gakugei-daigaku",
+      "name": "学芸大学",
+      "kana": "がくげいだいがく"
+    },
+    {
+      "id": "toritsu-daigaku",
+      "name": "都立大学",
+      "kana": "とりつだいがく"
+    },
+    {
+      "id": "jiyugaoka",
+      "name": "自由が丘",
+      "kana": "じゆうがおか"
+    },
+    {
+      "id": "den-en-chofu",
+      "name": "田園調布",
+      "kana": "でんえんちょうふ"
+    },
+    {
+      "id": "tamagawa-tokyu",
+      "name": "多摩川",
+      "kana": "たまがわ"
+    },
+    {
+      "id": "shin-maruko",
+      "name": "新丸子",
+      "kana": "しんまるこ"
+    },
+    {
+      "id": "motosumiyoshi",
+      "name": "元住吉",
+      "kana": "もとすみよし"
+    },
+    {
+      "id": "hiyoshi",
+      "name": "日吉",
+      "kana": "ひよし"
+    },
+    {
+      "id": "tsunashima",
+      "name": "綱島",
+      "kana": "つなしま"
+    },
+    {
+      "id": "okurayama",
+      "name": "大倉山",
+      "kana": "おおくらやま"
+    },
+    {
+      "id": "myorenji",
+      "name": "妙蓮寺",
+      "kana": "みょうれんじ"
+    },
+    {
+      "id": "hakuraku",
+      "name": "白楽",
+      "kana": "はくらく"
+    },
+    {
+      "id": "higashi-hakuraku",
+      "name": "東白楽",
+      "kana": "ひがしはくらく"
+    },
+    {
+      "id": "tammachi",
+      "name": "反町",
+      "kana": "そりまち"
+    },
+    {
+      "id": "fudo-mae",
+      "name": "不動前",
+      "kana": "ふどうまえ"
+    },
+    {
+      "id": "musashi-koyama",
+      "name": "武蔵小山",
+      "kana": "むさしこやま"
+    },
+    {
+      "id": "nishi-koyama",
+      "name": "西小山",
+      "kana": "にしこやま"
+    },
+    {
+      "id": "senzoku",
+      "name": "洗足",
+      "kana": "せんぞく"
+    },
+    {
+      "id": "ookayama",
+      "name": "大岡山",
+      "kana": "おおおかやま"
+    },
+    {
+      "id": "okusawa",
+      "name": "奥沢",
+      "kana": "おくさわ"
+    },
+    {
+      "id": "ikejiri-ohashi",
+      "name": "池尻大橋",
+      "kana": "いけじりおおはし"
+    },
+    {
+      "id": "sangen-jaya",
+      "name": "三軒茶屋",
+      "kana": "さんげんぢゃや"
+    },
+    {
+      "id": "komazawa-daigaku",
+      "name": "駒沢大学",
+      "kana": "こまざわだいがく"
+    },
+    {
+      "id": "sakura-shimmachi",
+      "name": "桜新町",
+      "kana": "さくらしんまち"
+    },
+    {
+      "id": "yoga",
+      "name": "用賀",
+      "kana": "ようが"
+    },
+    {
+      "id": "futako-tamagawa",
+      "name": "二子玉川",
+      "kana": "ふたこたまがわ"
+    },
+    {
+      "id": "futako-shinchi",
+      "name": "二子新地",
+      "kana": "ふたこしんち"
+    },
+    {
+      "id": "takatsu",
+      "name": "高津",
+      "kana": "たかつ"
+    },
+    {
+      "id": "mizonokuchi",
+      "name": "溝の口",
+      "kana": "みぞのくち"
+    },
+    {
+      "id": "kajigaya",
+      "name": "梶が谷",
+      "kana": "かじがや"
+    },
+    {
+      "id": "miyazakidai",
+      "name": "宮崎台",
+      "kana": "みやざきだい"
+    },
+    {
+      "id": "miyamaedaira",
+      "name": "宮前平",
+      "kana": "みやまえだいら"
+    },
+    {
+      "id": "saginuma",
+      "name": "鷺沼",
+      "kana": "さぎぬま"
+    },
+    {
+      "id": "tama-plaza",
+      "name": "たまプラーザ",
+      "kana": "たまぷらーざ"
+    },
+    {
+      "id": "azamino",
+      "name": "あざみ野",
+      "kana": "あざみの"
+    },
+    {
+      "id": "ichigao",
+      "name": "市が尾",
+      "kana": "いちがお"
+    },
+    {
+      "id": "fujigaoka",
+      "name": "藤が丘",
+      "kana": "ふじがおか"
+    },
+    {
+      "id": "aobadai",
+      "name": "青葉台",
+      "kana": "あおばだい"
+    },
+    {
+      "id": "tana",
+      "name": "田奈",
+      "kana": "たな"
+    },
+    {
+      "id": "tsukushino",
+      "name": "つくし野",
+      "kana": "つくしの"
+    },
+    {
+      "id": "suzukakedai",
+      "name": "すずかけ台",
+      "kana": "すずかけだい"
+    },
+    {
+      "id": "minami-machida-grandberry-park",
+      "name": "南町田グランベリーパーク",
+      "kana": "みなみまちだぐらんべりーぱーく"
+    },
+    {
+      "id": "tsukimino",
+      "name": "つきみ野",
+      "kana": "つきみの"
+    },
+    {
+      "id": "chuo-rinkan",
+      "name": "中央林間",
+      "kana": "ちゅうおうりんかん"
+    },
+    {
+      "id": "shimo-shimmei",
+      "name": "下神明",
+      "kana": "しもしんめい"
+    },
+    {
+      "id": "togoshi-koen",
+      "name": "戸越公園",
+      "kana": "とごしこうえん"
+    },
+    {
+      "id": "ebaramachi",
+      "name": "荏原町",
+      "kana": "えばらまち"
+    },
+    {
+      "id": "hatanodai",
+      "name": "旗の台",
+      "kana": "はたのだい"
+    },
+    {
+      "id": "kita-senzoku",
+      "name": "北千束",
+      "kana": "きたせんぞく"
+    },
+    {
+      "id": "midorigaoka",
+      "name": "緑が丘",
+      "kana": "みどりがおか"
+    },
+    {
+      "id": "kuhombutsu",
+      "name": "九品仏",
+      "kana": "くほんぶつ"
+    },
+    {
+      "id": "oyamadai",
+      "name": "尾山台",
+      "kana": "おやまだい"
+    },
+    {
+      "id": "todoroki",
+      "name": "等々力",
+      "kana": "とどろき"
+    },
+    {
+      "id": "kaminoge",
+      "name": "上野毛",
+      "kana": "かみのげ"
+    },
+    {
+      "id": "osakihirokoji",
+      "name": "大崎広小路",
+      "kana": "おおさきひろこうじ"
+    },
+    {
+      "id": "togoshi-ginza",
+      "name": "戸越銀座",
+      "kana": "とごしぎんざ"
+    },
+    {
+      "id": "ebara-nakanobu",
+      "name": "荏原中延",
+      "kana": "えばらなかのぶ"
+    },
+    {
+      "id": "nagahara",
+      "name": "長原",
+      "kana": "ながはら"
+    },
+    {
+      "id": "senzoku-ike",
+      "name": "洗足池",
+      "kana": "せんぞくいけ"
+    },
+    {
+      "id": "ishikawa-dai",
+      "name": "石川台",
+      "kana": "いしかわだい"
+    },
+    {
+      "id": "yukigaya-otsuka",
+      "name": "雪が谷大塚",
+      "kana": "ゆきがやおおつか"
+    },
+    {
+      "id": "ontakesan",
+      "name": "御嶽山",
+      "kana": "おんたけさん"
+    },
+    {
+      "id": "kugahara",
+      "name": "久が原",
+      "kana": "くがはら"
+    },
+    {
+      "id": "chidoricho",
+      "name": "千鳥町",
+      "kana": "ちどりちょう"
+    },
+    {
+      "id": "ikegami",
+      "name": "池上",
+      "kana": "いけがみ"
+    },
+    {
+      "id": "hasunuma",
+      "name": "蓮沼",
+      "kana": "はすぬま"
+    },
+    {
+      "id": "numabe",
+      "name": "沼部",
+      "kana": "ぬまべ"
+    },
+    {
+      "id": "unoki",
+      "name": "鵜の木",
+      "kana": "うのき"
+    },
+    {
+      "id": "shimomaruko",
+      "name": "下丸子",
+      "kana": "しもまるこ"
+    },
+    {
+      "id": "musashi-nitta",
+      "name": "武蔵新田",
+      "kana": "むさしにった"
+    },
+    {
+      "id": "yaguchinowatashi",
+      "name": "矢口渡",
+      "kana": "やぐちのわたし"
+    },
+    {
+      "id": "nishi-taishido",
+      "name": "西太子堂",
+      "kana": "にしたいしどう"
+    },
+    {
+      "id": "wakabayashi",
+      "name": "若林",
+      "kana": "わかばやし"
+    },
+    {
+      "id": "shoin-jinja-mae",
+      "name": "松陰神社前",
+      "kana": "しょういんじんじゃまえ"
+    },
+    {
+      "id": "setagaya",
+      "name": "世田谷",
+      "kana": "せたがや"
+    },
+    {
+      "id": "kamimachi",
+      "name": "上町",
+      "kana": "かみまち"
+    },
+    {
+      "id": "miyanosaka",
+      "name": "宮の坂",
+      "kana": "みやのさか"
+    },
+    {
+      "id": "yamashita",
+      "name": "山下",
+      "kana": "やました"
+    },
+    {
+      "id": "matsubara",
+      "name": "松原",
+      "kana": "まつばら"
+    },
+    {
+      "id": "shimo-takaido",
+      "name": "下高井戸",
+      "kana": "しもたかいど"
+    },
+    {
+      "id": "shin-tsunashima",
+      "name": "新綱島",
+      "kana": "しんつなしま"
+    },
+    {
+      "id": "onda",
+      "name": "恩田",
+      "kana": "おんだ"
+    },
+    {
+      "id": "kodomonokuni",
+      "name": "こどもの国",
+      "kana": "こどものくに"
+    },
+    {
+      "id": "shin-takashima",
+      "name": "新高島",
+      "kana": "しんたかしま"
+    },
+    {
+      "id": "minatomirai",
+      "name": "みなとみらい",
+      "kana": "みなとみらい"
+    },
+    {
+      "id": "bashamichi",
+      "name": "馬車道",
+      "kana": "ばしゃみち"
+    },
+    {
+      "id": "nihon-odori",
+      "name": "日本大通り",
+      "kana": "にほんおおどおり"
+    },
+    {
+      "id": "motomachi-chukagai",
+      "name": "元町・中華街",
+      "kana": "もとまちちゅうかがい"
+    },
+    {
+      "id": "sasazuka",
+      "name": "笹塚",
+      "kana": "ささづか"
+    },
+    {
+      "id": "daitabashi",
+      "name": "代田橋",
+      "kana": "だいたばし"
+    },
+    {
+      "id": "meidaimae",
+      "name": "明大前",
+      "kana": "めいだいまえ"
+    },
+    {
+      "id": "sakurajosui",
+      "name": "桜上水",
+      "kana": "さくらじょうすい"
+    },
+    {
+      "id": "kami-kitazawa",
+      "name": "上北沢",
+      "kana": "かみきたざわ"
+    },
+    {
+      "id": "hachimanyama",
+      "name": "八幡山",
+      "kana": "はちまんやま"
+    },
+    {
+      "id": "roka-koen",
+      "name": "芦花公園",
+      "kana": "ろかこうえん"
+    },
+    {
+      "id": "chitose-karasuyama",
+      "name": "千歳烏山",
+      "kana": "ちとせからすやま"
+    },
+    {
+      "id": "sengawa",
+      "name": "仙川",
+      "kana": "せんがわ"
+    },
+    {
+      "id": "tsutsujigaoka",
+      "name": "つつじヶ丘",
+      "kana": "つつじがおか"
+    },
+    {
+      "id": "shibasaki",
+      "name": "柴崎",
+      "kana": "しばさき"
+    },
+    {
+      "id": "kokuryo",
+      "name": "国領",
+      "kana": "こくりょう"
+    },
+    {
+      "id": "fuda",
+      "name": "布田",
+      "kana": "ふだ"
+    },
+    {
+      "id": "chofu",
+      "name": "調布",
+      "kana": "ちょうふ"
+    },
+    {
+      "id": "nishi-chofu",
+      "name": "西調布",
+      "kana": "にしちょうふ"
+    },
+    {
+      "id": "tobitakyu",
+      "name": "飛田給",
+      "kana": "とびたきゅう"
+    },
+    {
+      "id": "musashinodai",
+      "name": "武蔵野台",
+      "kana": "むさしのだい"
+    },
+    {
+      "id": "tama-reien",
+      "name": "多磨霊園",
+      "kana": "たまれいえん"
+    },
+    {
+      "id": "higashi-fuchu",
+      "name": "東府中",
+      "kana": "ひがしふちゅう"
+    },
+    {
+      "id": "fuchu",
+      "name": "府中",
+      "kana": "ふちゅう"
+    },
+    {
+      "id": "nakagawara",
+      "name": "中河原",
+      "kana": "なかがわら"
+    },
+    {
+      "id": "seiseki-sakuragaoka",
+      "name": "聖蹟桜ヶ丘",
+      "kana": "せいせきさくらがおか"
+    },
+    {
+      "id": "mogusaen",
+      "name": "百草園",
+      "kana": "もぐさえん"
+    },
+    {
+      "id": "takahatafudo",
+      "name": "高幡不動",
+      "kana": "たかはたふどう"
+    },
+    {
+      "id": "minamidaira",
+      "name": "南平",
+      "kana": "みなみだいら"
+    },
+    {
+      "id": "hirayamajoshi-koen",
+      "name": "平山城址公園",
+      "kana": "ひらやまじょうしこうえん"
+    },
+    {
+      "id": "naganuma",
+      "name": "長沼",
+      "kana": "ながぬま"
+    },
+    {
+      "id": "kitano",
+      "name": "北野",
+      "kana": "きたの"
+    },
+    {
+      "id": "keio-hachioji",
+      "name": "京王八王子",
+      "kana": "けいおうはちおうじ"
+    },
+    {
+      "id": "hatsudai",
+      "name": "初台",
+      "kana": "はつだい"
+    },
+    {
+      "id": "hatagaya",
+      "name": "幡ヶ谷",
+      "kana": "はたがや"
+    },
+    {
+      "id": "keio-tamagawa",
+      "name": "京王多摩川",
+      "kana": "けいおうたまがわ"
+    },
+    {
+      "id": "keio-inadazutsumi",
+      "name": "京王稲田堤",
+      "kana": "けいおういなだづつみ"
+    },
+    {
+      "id": "keio-yomiuri-land",
+      "name": "京王よみうりランド",
+      "kana": "けいおうよみうりらんど"
+    },
+    {
+      "id": "inagi",
+      "name": "稲城",
+      "kana": "いなぎ"
+    },
+    {
+      "id": "wakabadai",
+      "name": "若葉台",
+      "kana": "わかばだい"
+    },
+    {
+      "id": "keio-nagayama",
+      "name": "京王永山",
+      "kana": "けいおうながやま"
+    },
+    {
+      "id": "keio-tama-center",
+      "name": "京王多摩センター",
+      "kana": "けいおうたませんたー"
+    },
+    {
+      "id": "keio-horinouchi",
+      "name": "京王堀之内",
+      "kana": "けいおうほりのうち"
+    },
+    {
+      "id": "minami-osawa",
+      "name": "南大沢",
+      "kana": "みなみおおさわ"
+    },
+    {
+      "id": "tamasakai",
+      "name": "多摩境",
+      "kana": "たまさかい"
+    },
+    {
+      "id": "keio-katakura",
+      "name": "京王片倉",
+      "kana": "けいおうかたくら"
+    },
+    {
+      "id": "yamada",
+      "name": "山田",
+      "kana": "やまだ"
+    },
+    {
+      "id": "mejirodai",
+      "name": "めじろ台",
+      "kana": "めじろだい"
+    },
+    {
+      "id": "hazama",
+      "name": "狭間",
+      "kana": "はざま"
+    },
+    {
+      "id": "takaosanguchi",
+      "name": "高尾山口",
+      "kana": "たかおさんぐち"
+    },
+    {
+      "id": "tama-dobutsukoen",
+      "name": "多摩動物公園",
+      "kana": "たまどうぶつこうえん"
+    },
+    {
+      "id": "fuchukeiba-seimommae",
+      "name": "府中競馬正門前",
+      "kana": "ふちゅうけいばせいもんまえ"
+    },
+    {
+      "id": "shinsen",
+      "name": "神泉",
+      "kana": "しんせん"
+    },
+    {
+      "id": "komaba-todaimae",
+      "name": "駒場東大前",
+      "kana": "こまばとうだいまえ"
+    },
+    {
+      "id": "ikenoue",
+      "name": "池ノ上",
+      "kana": "いけのうえ"
+    },
+    {
+      "id": "shimo-kitazawa",
+      "name": "下北沢",
+      "kana": "しもきたざわ"
+    },
+    {
+      "id": "shindaita",
+      "name": "新代田",
+      "kana": "しんだいた"
+    },
+    {
+      "id": "higashi-matsubara",
+      "name": "東松原",
+      "kana": "ひがしまつばら"
+    },
+    {
+      "id": "eifukucho",
+      "name": "永福町",
+      "kana": "えいふくちょう"
+    },
+    {
+      "id": "nishi-eifuku",
+      "name": "西永福",
+      "kana": "にしえいふく"
+    },
+    {
+      "id": "hamadayama",
+      "name": "浜田山",
+      "kana": "はまだやま"
+    },
+    {
+      "id": "takaido",
+      "name": "高井戸",
+      "kana": "たかいど"
+    },
+    {
+      "id": "fujimigaoka",
+      "name": "富士見ヶ丘",
+      "kana": "ふじみがおか"
+    },
+    {
+      "id": "kugayama",
+      "name": "久我山",
+      "kana": "くがやま"
+    },
+    {
+      "id": "mitakadai",
+      "name": "三鷹台",
+      "kana": "みたかだい"
+    },
+    {
+      "id": "inokashira-koen",
+      "name": "井の頭公園",
+      "kana": "いのかしらこうえん"
+    },
+    {
+      "id": "kitashinagawa",
+      "name": "北品川",
+      "kana": "きたしながわ"
+    },
+    {
+      "id": "shimbamba",
+      "name": "新馬場",
+      "kana": "しんばんば"
+    },
+    {
+      "id": "aomono-yokocho",
+      "name": "青物横丁",
+      "kana": "あおものよこちょう"
+    },
+    {
+      "id": "samezu",
+      "name": "鮫洲",
+      "kana": "さめず"
+    },
+    {
+      "id": "tachiaigawa",
+      "name": "立会川",
+      "kana": "たちあいがわ"
+    },
+    {
+      "id": "omorikaigan",
+      "name": "大森海岸",
+      "kana": "おおもりかいがん"
+    },
+    {
+      "id": "heiwajima",
+      "name": "平和島",
+      "kana": "へいわじま"
+    },
+    {
+      "id": "omorimachi",
+      "name": "大森町",
+      "kana": "おおもりまち"
+    },
+    {
+      "id": "umeyashiki",
+      "name": "梅屋敷",
+      "kana": "うめやしき"
+    },
+    {
+      "id": "keikyu-kamata",
+      "name": "京急蒲田",
+      "kana": "けいきゅうかまた"
+    },
+    {
+      "id": "zoshiki",
+      "name": "雑色",
+      "kana": "ぞうしき"
+    },
+    {
+      "id": "rokugodote",
+      "name": "六郷土手",
+      "kana": "ろくごうどて"
+    },
+    {
+      "id": "keikyu-kawasaki",
+      "name": "京急川崎",
+      "kana": "けいきゅうかわさき"
+    },
+    {
+      "id": "tsurumi-ichiba",
+      "name": "鶴見市場",
+      "kana": "つるみいちば"
+    },
+    {
+      "id": "keikyu-tsurumi",
+      "name": "京急鶴見",
+      "kana": "けいきゅうつるみ"
+    },
+    {
+      "id": "kagetsu-sojiji",
+      "name": "花月総持寺",
+      "kana": "かげつそうじじ"
+    },
+    {
+      "id": "namamugi",
+      "name": "生麦",
+      "kana": "なまむぎ"
+    },
+    {
+      "id": "keikyu-shinkoyasu",
+      "name": "京急新子安",
+      "kana": "けいきゅうしんこやす"
+    },
+    {
+      "id": "koyasu",
+      "name": "子安",
+      "kana": "こやす"
+    },
+    {
+      "id": "kanagawa-shimmachi",
+      "name": "神奈川新町",
+      "kana": "かながわしんまち"
+    },
+    {
+      "id": "keikyu-higashi-kanagawa",
+      "name": "京急東神奈川",
+      "kana": "けいきゅうひがしかながわ"
+    },
+    {
+      "id": "kanagawa",
+      "name": "神奈川",
+      "kana": "かながわ"
+    },
+    {
+      "id": "tobe",
+      "name": "戸部",
+      "kana": "とべ"
+    },
+    {
+      "id": "hinodecho",
+      "name": "日ノ出町",
+      "kana": "ひのでちょう"
+    },
+    {
+      "id": "koganecho",
+      "name": "黄金町",
+      "kana": "こがねちょう"
+    },
+    {
+      "id": "minamiota",
+      "name": "南太田",
+      "kana": "みなみおおた"
+    },
+    {
+      "id": "idogaya",
+      "name": "井土ヶ谷",
+      "kana": "いどがや"
+    },
+    {
+      "id": "gumyoji",
+      "name": "弘明寺",
+      "kana": "ぐみょうじ"
+    },
+    {
+      "id": "kamiooka",
+      "name": "上大岡",
+      "kana": "かみおおおか"
+    },
+    {
+      "id": "byobugaura",
+      "name": "屛風浦",
+      "kana": "びょうぶがうら"
+    },
+    {
+      "id": "sugita",
+      "name": "杉田",
+      "kana": "すぎた"
+    },
+    {
+      "id": "keikyu-tomioka",
+      "name": "京急富岡",
+      "kana": "けいきゅうとみおか"
+    },
+    {
+      "id": "nokendai",
+      "name": "能見台",
+      "kana": "のうけんだい"
+    },
+    {
+      "id": "kanazawa-bunko",
+      "name": "金沢文庫",
+      "kana": "かなざわぶんこ"
+    },
+    {
+      "id": "kanazawa-hakkei",
+      "name": "金沢八景",
+      "kana": "かなざわはっけい"
+    },
+    {
+      "id": "oppama",
+      "name": "追浜",
+      "kana": "おっぱま"
+    },
+    {
+      "id": "keikyu-taura",
+      "name": "京急田浦",
+      "kana": "けいきゅうたうら"
+    },
+    {
+      "id": "anjinzuka",
+      "name": "安針塚",
+      "kana": "あんじんづか"
+    },
+    {
+      "id": "hemi",
+      "name": "逸見",
+      "kana": "へみ"
+    },
+    {
+      "id": "shioiri",
+      "name": "汐入",
+      "kana": "しおいり"
+    },
+    {
+      "id": "yokosuka-chuo",
+      "name": "横須賀中央",
+      "kana": "よこすかちゅうおう"
+    },
+    {
+      "id": "kenritsudaigaku",
+      "name": "県立大学",
+      "kana": "けんりつだいがく"
+    },
+    {
+      "id": "horinouchi",
+      "name": "堀ノ内",
+      "kana": "ほりのうち"
+    },
+    {
+      "id": "keikyu-otsu",
+      "name": "京急大津",
+      "kana": "けいきゅうおおつ"
+    },
+    {
+      "id": "maborikaigan",
+      "name": "馬堀海岸",
+      "kana": "まほりかいがん"
+    },
+    {
+      "id": "uraga",
+      "name": "浦賀",
+      "kana": "うらが"
+    },
+    {
+      "id": "kojiya",
+      "name": "糀谷",
+      "kana": "こうじや"
+    },
+    {
+      "id": "otorii",
+      "name": "大鳥居",
+      "kana": "おおとりい"
+    },
+    {
+      "id": "anamori-inari",
+      "name": "穴守稲荷",
+      "kana": "あなもりいなり"
+    },
+    {
+      "id": "tenkubashi",
+      "name": "天空橋",
+      "kana": "てんくうばし"
+    },
+    {
+      "id": "haneda-airport-terminal-3",
+      "name": "羽田空港第3ターミナル",
+      "kana": "はねだくうこうだいさんたーみなる"
+    },
+    {
+      "id": "haneda-airport-terminal-1-2",
+      "name": "羽田空港第1・第2ターミナル",
+      "kana": "はねだくうこうだいいち・だいにたーみなる"
+    },
+    {
+      "id": "minatocho",
+      "name": "港町",
+      "kana": "みなとちょう"
+    },
+    {
+      "id": "suzukicho",
+      "name": "鈴木町",
+      "kana": "すずきちょう"
+    },
+    {
+      "id": "kawasaki-daishi",
+      "name": "川崎大師",
+      "kana": "かわさきだいし"
+    },
+    {
+      "id": "higashi-monzen",
+      "name": "東門前",
+      "kana": "ひがしもんぜん"
+    },
+    {
+      "id": "daishibashi",
+      "name": "大師橋",
+      "kana": "だいしばし"
+    },
+    {
+      "id": "kojimashinden",
+      "name": "小島新田",
+      "kana": "こじましんでん"
+    },
+    {
+      "id": "mutsuura",
+      "name": "六浦",
+      "kana": "むつうら"
+    },
+    {
+      "id": "jimmuji",
+      "name": "神武寺",
+      "kana": "じんむじ"
+    },
+    {
+      "id": "zushi-hayama",
+      "name": "逗子・葉山",
+      "kana": "ずし・はやま"
+    },
+    {
+      "id": "shin-otsu",
+      "name": "新大津",
+      "kana": "しんおおつ"
+    },
+    {
+      "id": "kitakurihama",
+      "name": "北久里浜",
+      "kana": "きたくりはま"
+    },
+    {
+      "id": "keikyu-kurihama",
+      "name": "京急久里浜",
+      "kana": "けいきゅうくりはま"
+    },
+    {
+      "id": "yrp-nobi",
+      "name": "YRP野比",
+      "kana": "わいあーるぴーのび"
+    },
+    {
+      "id": "keikyu-nagasawa",
+      "name": "京急長沢",
+      "kana": "けいきゅうながさわ"
+    },
+    {
+      "id": "tsukuihama",
+      "name": "津久井浜",
+      "kana": "つくいはま"
+    },
+    {
+      "id": "miurakaigan",
+      "name": "三浦海岸",
+      "kana": "みうらかいがん"
+    },
+    {
+      "id": "misakiguchi",
+      "name": "三崎口",
+      "kana": "みさきぐち"
+    },
+    {
+      "id": "minami-shinjuku",
+      "name": "南新宿",
+      "kana": "みなみしんじゅく"
+    },
+    {
+      "id": "sangubashi",
+      "name": "参宮橋",
+      "kana": "さんぐうばし"
+    },
+    {
+      "id": "yoyogi-hachiman",
+      "name": "代々木八幡",
+      "kana": "よよぎはちまん"
+    },
+    {
+      "id": "higashi-kitazawa",
+      "name": "東北沢",
+      "kana": "ひがしきたざわ"
+    },
+    {
+      "id": "setagaya-daita",
+      "name": "世田谷代田",
+      "kana": "せたがやだいた"
+    },
+    {
+      "id": "umegaoka",
+      "name": "梅ヶ丘",
+      "kana": "うめがおか"
+    },
+    {
+      "id": "gotokuji",
+      "name": "豪徳寺",
+      "kana": "ごうとくじ"
+    },
+    {
+      "id": "kyodo",
+      "name": "経堂",
+      "kana": "きょうどう"
+    },
+    {
+      "id": "chitose-funabashi",
+      "name": "千歳船橋",
+      "kana": "ちとせふなばし"
+    },
+    {
+      "id": "soshigaya-okura",
+      "name": "祖師ヶ谷大蔵",
+      "kana": "そしがやおおくら"
+    },
+    {
+      "id": "seijogakuen-mae",
+      "name": "成城学園前",
+      "kana": "せいじょうがくえんまえ"
+    },
+    {
+      "id": "kitami",
+      "name": "喜多見",
+      "kana": "きたみ"
+    },
+    {
+      "id": "komae",
+      "name": "狛江",
+      "kana": "こまえ"
+    },
+    {
+      "id": "izumi-tamagawa",
+      "name": "和泉多摩川",
+      "kana": "いずみたまがわ"
+    },
+    {
+      "id": "mukogaoka-yuen",
+      "name": "向ヶ丘遊園",
+      "kana": "むこうがおかゆうえん"
+    },
+    {
+      "id": "ikuta",
+      "name": "生田",
+      "kana": "いくた"
+    },
+    {
+      "id": "yomiuri-land-mae",
+      "name": "読売ランド前",
+      "kana": "よみうりらんどまえ"
+    },
+    {
+      "id": "yurigaoka",
+      "name": "百合ヶ丘",
+      "kana": "ゆりがおか"
+    },
+    {
+      "id": "shin-yurigaoka",
+      "name": "新百合ヶ丘",
+      "kana": "しんゆりがおか"
+    },
+    {
+      "id": "kakio",
+      "name": "柿生",
+      "kana": "かきお"
+    },
+    {
+      "id": "tsurukawa",
+      "name": "鶴川",
+      "kana": "つるかわ"
+    },
+    {
+      "id": "tamagawagakuen-mae",
+      "name": "玉川学園前",
+      "kana": "たまがわがくえんまえ"
+    },
+    {
+      "id": "sagami-ono",
+      "name": "相模大野",
+      "kana": "さがみおおの"
+    },
+    {
+      "id": "odakyu-sagamihara",
+      "name": "小田急相模原",
+      "kana": "おだきゅうさがみはら"
+    },
+    {
+      "id": "sobudai-mae",
+      "name": "相武台前",
+      "kana": "そうぶだいまえ"
+    },
+    {
+      "id": "zama",
+      "name": "座間",
+      "kana": "ざま"
+    },
+    {
+      "id": "hon-atsugi",
+      "name": "本厚木",
+      "kana": "ほんあつぎ"
+    },
+    {
+      "id": "aiko-ishida",
+      "name": "愛甲石田",
+      "kana": "あいこういしだ"
+    },
+    {
+      "id": "isehara",
+      "name": "伊勢原",
+      "kana": "いせはら"
+    },
+    {
+      "id": "tsurumaki-onsen",
+      "name": "鶴巻温泉",
+      "kana": "つるまきおんせん"
+    },
+    {
+      "id": "tokaidaigaku-mae",
+      "name": "東海大学前",
+      "kana": "とうかいだいがくまえ"
+    },
+    {
+      "id": "hadano",
+      "name": "秦野",
+      "kana": "はだの"
+    },
+    {
+      "id": "shibusawa",
+      "name": "渋沢",
+      "kana": "しぶさわ"
+    },
+    {
+      "id": "shin-matsuda",
+      "name": "新松田",
+      "kana": "しんまつだ"
+    },
+    {
+      "id": "kaisei",
+      "name": "開成",
+      "kana": "かいせい"
+    },
+    {
+      "id": "kayama",
+      "name": "栢山",
+      "kana": "かやま"
+    },
+    {
+      "id": "tomizu",
+      "name": "富水",
+      "kana": "とみず"
+    },
+    {
+      "id": "hotaruda",
+      "name": "蛍田",
+      "kana": "ほたるだ"
+    },
+    {
+      "id": "higashi-rinkan",
+      "name": "東林間",
+      "kana": "ひがしりんかん"
+    },
+    {
+      "id": "minami-rinkan",
+      "name": "南林間",
+      "kana": "みなみりんかん"
+    },
+    {
+      "id": "tsuruma",
+      "name": "鶴間",
+      "kana": "つるま"
+    },
+    {
+      "id": "sakuragaoka",
+      "name": "桜ヶ丘",
+      "kana": "さくらがおか"
+    },
+    {
+      "id": "koza-shibuya",
+      "name": "高座渋谷",
+      "kana": "こうざしぶや"
+    },
+    {
+      "id": "chogo",
+      "name": "長後",
+      "kana": "ちょうご"
+    },
+    {
+      "id": "shonandai",
+      "name": "湘南台",
+      "kana": "しょうなんだい"
+    },
+    {
+      "id": "mutsuai-nichidaimae",
+      "name": "六会日大前",
+      "kana": "むつあいにちだいまえ"
+    },
+    {
+      "id": "zengyo",
+      "name": "善行",
+      "kana": "ぜんぎょう"
+    },
+    {
+      "id": "fujisawa-hommachi",
+      "name": "藤沢本町",
+      "kana": "ふじさわほんまち"
+    },
+    {
+      "id": "hon-kugenuma",
+      "name": "本鵠沼",
+      "kana": "ほんくげぬま"
+    },
+    {
+      "id": "kugenuma-kaigan",
+      "name": "鵠沼海岸",
+      "kana": "くげぬまかいがん"
+    },
+    {
+      "id": "katase-enoshima",
+      "name": "片瀬江ノ島",
+      "kana": "かたせえのしま"
+    },
+    {
+      "id": "satsukidai",
+      "name": "五月台",
+      "kana": "さつきだい"
+    },
+    {
+      "id": "kurihira",
+      "name": "栗平",
+      "kana": "くりひら"
+    },
+    {
+      "id": "kurokawa",
+      "name": "黒川",
+      "kana": "くろかわ"
+    },
+    {
+      "id": "haruhino",
+      "name": "はるひ野",
+      "kana": "はるひの"
+    },
+    {
+      "id": "odakyu-nagayama",
+      "name": "小田急永山",
+      "kana": "おだきゅうながやま"
+    },
+    {
+      "id": "odakyu-tama-center",
+      "name": "小田急多摩センター",
+      "kana": "おだきゅうたませんたー"
+    },
+    {
+      "id": "karakida",
+      "name": "唐木田",
+      "kana": "からきだ"
+    },
+    {
+      "id": "hiranumabashi",
+      "name": "平沼橋",
+      "kana": "ひらぬまばし"
+    },
+    {
+      "id": "nishi-yokohama",
+      "name": "西横浜",
+      "kana": "にしよこはま"
+    },
+    {
+      "id": "tennocho",
+      "name": "天王町",
+      "kana": "てんのうちょう"
+    },
+    {
+      "id": "hoshikawa",
+      "name": "星川",
+      "kana": "ほしかわ"
+    },
+    {
+      "id": "wadamachi",
+      "name": "和田町",
+      "kana": "わだまち"
+    },
+    {
+      "id": "kamihoshikawa",
+      "name": "上星川",
+      "kana": "かみほしかわ"
+    },
+    {
+      "id": "nishiya",
+      "name": "西谷",
+      "kana": "にしや"
+    },
+    {
+      "id": "tsurugamine",
+      "name": "鶴ヶ峰",
+      "kana": "つるがみね"
+    },
+    {
+      "id": "futamatagawa",
+      "name": "二俣川",
+      "kana": "ふたまたがわ"
+    },
+    {
+      "id": "kibogaoka",
+      "name": "希望ヶ丘",
+      "kana": "きぼうがおか"
+    },
+    {
+      "id": "mitsukyo",
+      "name": "三ツ境",
+      "kana": "みつきょう"
+    },
+    {
+      "id": "seya",
+      "name": "瀬谷",
+      "kana": "せや"
+    },
+    {
+      "id": "sagami-otsuka",
+      "name": "相模大塚",
+      "kana": "さがみおおつか"
+    },
+    {
+      "id": "sagamino",
+      "name": "さがみ野",
+      "kana": "さがみの"
+    },
+    {
+      "id": "kashiwadai",
+      "name": "かしわ台",
+      "kana": "かしわだい"
+    },
+    {
+      "id": "minami-makigahara",
+      "name": "南万騎が原",
+      "kana": "みなみまきがはら"
+    },
+    {
+      "id": "ryokuentoshi",
+      "name": "緑園都市",
+      "kana": "りょくえんとし"
+    },
+    {
+      "id": "yayoidai",
+      "name": "弥生台",
+      "kana": "やよいだい"
+    },
+    {
+      "id": "izumino",
+      "name": "いずみ野",
+      "kana": "いずみの"
+    },
+    {
+      "id": "izumi-chuo",
+      "name": "いずみ中央",
+      "kana": "いずみちゅうおう"
+    },
+    {
+      "id": "yumegaoka",
+      "name": "ゆめが丘",
+      "kana": "ゆめがおか"
+    },
+    {
+      "id": "hazawa-yokohama-kokudai",
+      "name": "羽沢横浜国大",
+      "kana": "はざわよこはまこくだい"
+    },
+    {
+      "id": "shimoiida",
+      "name": "下飯田",
+      "kana": "しもいいだ"
+    },
+    {
+      "id": "tateba",
+      "name": "立場",
+      "kana": "たてば"
+    },
+    {
+      "id": "nakada",
+      "name": "中田",
+      "kana": "なかだ"
+    },
+    {
+      "id": "odoriba",
+      "name": "踊場",
+      "kana": "おどりば"
+    },
+    {
+      "id": "maioka",
+      "name": "舞岡",
+      "kana": "まいおか"
+    },
+    {
+      "id": "shimonagaya",
+      "name": "下永谷",
+      "kana": "しもながや"
+    },
+    {
+      "id": "kaminagaya",
+      "name": "上永谷",
+      "kana": "かみながや"
+    },
+    {
+      "id": "konan-chuo",
+      "name": "港南中央",
+      "kana": "こうなんちゅうおう"
+    },
+    {
+      "id": "maita",
+      "name": "蒔田",
+      "kana": "まいた"
+    },
+    {
+      "id": "yoshinocho",
+      "name": "吉野町",
+      "kana": "よしのちょう"
+    },
+    {
+      "id": "bandobashi",
+      "name": "阪東橋",
+      "kana": "ばんどうばし"
+    },
+    {
+      "id": "isezakichojamachi",
+      "name": "伊勢佐木長者町",
+      "kana": "いせざきちょうじゃまち"
+    },
+    {
+      "id": "takashimacho",
+      "name": "高島町",
+      "kana": "たかしまちょう"
+    },
+    {
+      "id": "mitsuzawa-shimocho",
+      "name": "三ツ沢下町",
+      "kana": "みつざわしもちょう"
+    },
+    {
+      "id": "mitsuzawa-kamicho",
+      "name": "三ツ沢上町",
+      "kana": "みつざわかみちょう"
+    },
+    {
+      "id": "katakuracho",
+      "name": "片倉町",
+      "kana": "かたくらちょう"
+    },
+    {
+      "id": "kishine-koen",
+      "name": "岸根公園",
+      "kana": "きしねこうえん"
+    },
+    {
+      "id": "kita-shin-yokohama",
+      "name": "北新横浜",
+      "kana": "きたしんよこはま"
+    },
+    {
+      "id": "nippa",
+      "name": "新羽",
+      "kana": "にっぱ"
+    },
+    {
+      "id": "nakamachidai",
+      "name": "仲町台",
+      "kana": "なかまちだい"
+    },
+    {
+      "id": "center-minami",
+      "name": "センター南",
+      "kana": "せんたーみなみ"
+    },
+    {
+      "id": "center-kita",
+      "name": "センター北",
+      "kana": "せんたーきた"
+    },
+    {
+      "id": "nakagawa",
+      "name": "中川",
+      "kana": "なかがわ"
+    },
+    {
+      "id": "kawawacho",
+      "name": "川和町",
+      "kana": "かわわちょう"
+    },
+    {
+      "id": "tsuzuki-fureainooka",
+      "name": "都筑ふれあいの丘",
+      "kana": "つづきふれあいのおか"
+    },
+    {
+      "id": "kita-yamata",
+      "name": "北山田",
+      "kana": "きたやまた"
+    },
+    {
+      "id": "higashi-yamata",
+      "name": "東山田",
+      "kana": "ひがしやまた"
+    },
+    {
+      "id": "takata",
+      "name": "高田",
+      "kana": "たかた"
+    },
+    {
+      "id": "hiyoshi-honcho",
+      "name": "日吉本町",
+      "kana": "ひよしほんちょう"
+    },
+    {
+      "id": "minowabashi",
+      "name": "三ノ輪橋",
+      "kana": "みのわばし"
+    },
+    {
+      "id": "arakawa-itchumae",
+      "name": "荒川一中前",
+      "kana": "あらかわいっちゅうまえ"
+    },
+    {
+      "id": "arakawa-kuyakushomae",
+      "name": "荒川区役所前",
+      "kana": "あらかわくやくしょまえ"
+    },
+    {
+      "id": "arakawa-nichome",
+      "name": "荒川二丁目",
+      "kana": "あらかわにちょうめ"
+    },
+    {
+      "id": "arakawa-nanachome",
+      "name": "荒川七丁目",
+      "kana": "あらかわななちょうめ"
+    },
+    {
+      "id": "machiya-ekimae",
+      "name": "町屋駅前",
+      "kana": "まちやえきまえ"
+    },
+    {
+      "id": "machiya-nichome",
+      "name": "町屋二丁目",
+      "kana": "まちやにちょうめ"
+    },
+    {
+      "id": "higashi-ogu-sanchome",
+      "name": "東尾久三丁目",
+      "kana": "ひがしおぐさんちょうめ"
+    },
+    {
+      "id": "kumanomae",
+      "name": "熊野前",
+      "kana": "くまのまえ"
+    },
+    {
+      "id": "miyanomae",
+      "name": "宮ノ前",
+      "kana": "みやのまえ"
+    },
+    {
+      "id": "odai",
+      "name": "小台",
+      "kana": "おだい"
+    },
+    {
+      "id": "arakawa-yuenchimae",
+      "name": "荒川遊園地前",
+      "kana": "あらかわゆうえんちまえ"
+    },
+    {
+      "id": "arakawa-shakomae",
+      "name": "荒川車庫前",
+      "kana": "あらかわしゃこまえ"
+    },
+    {
+      "id": "kajiwara",
+      "name": "梶原",
+      "kana": "かじわら"
+    },
+    {
+      "id": "sakaecho-toden",
+      "name": "栄町",
+      "kana": "さかえちょう"
+    },
+    {
+      "id": "oji-ekimae",
+      "name": "王子駅前",
+      "kana": "おうじえきまえ"
+    },
+    {
+      "id": "asukayama",
+      "name": "飛鳥山",
+      "kana": "あすかやま"
+    },
+    {
+      "id": "takinogawa-itchome",
+      "name": "滝野川一丁目",
+      "kana": "たきのがわいっちょうめ"
+    },
+    {
+      "id": "nishigahara-yonchome",
+      "name": "西ケ原四丁目",
+      "kana": "にしがはらよんちょうめ"
+    },
+    {
+      "id": "shin-koshinzuka",
+      "name": "新庚申塚",
+      "kana": "しんこうしんづか"
+    },
+    {
+      "id": "koshinzuka",
+      "name": "庚申塚",
+      "kana": "こうしんづか"
+    },
+    {
+      "id": "sugamoshinden",
+      "name": "巣鴨新田",
+      "kana": "すがもしんでん"
+    },
+    {
+      "id": "otsuka-ekimae",
+      "name": "大塚駅前",
+      "kana": "おおつかえきまえ"
+    },
+    {
+      "id": "mukohara",
+      "name": "向原",
+      "kana": "むこうはら"
+    },
+    {
+      "id": "higashi-ikebukuro-yonchome",
+      "name": "東池袋四丁目",
+      "kana": "ひがしいけぶくろよんちょうめ"
+    },
+    {
+      "id": "toden-zoshigaya",
+      "name": "都電雑司ケ谷",
+      "kana": "とでんぞうしがや"
+    },
+    {
+      "id": "kishibojimmae",
+      "name": "鬼子母神前",
+      "kana": "きしぼじんまえ"
+    },
+    {
+      "id": "gakushuinshita",
+      "name": "学習院下",
+      "kana": "がくしゅういんした"
+    },
+    {
+      "id": "omokagebashi",
+      "name": "面影橋",
+      "kana": "おもかげばし"
+    },
+    {
+      "id": "monorail-hamamatsucho",
+      "name": "モノレール浜松町",
+      "kana": "ものれーるはままつちょう"
+    },
+    {
+      "id": "tennozu-isle",
+      "name": "天王洲アイル",
+      "kana": "てんのうずあいる"
+    },
+    {
+      "id": "oi-keibajo-mae",
+      "name": "大井競馬場前",
+      "kana": "おおいけいばじょうまえ"
+    },
+    {
+      "id": "ryutsu-center",
+      "name": "流通センター",
+      "kana": "りゅうつうせんたー"
+    },
+    {
+      "id": "showajima",
+      "name": "昭和島",
+      "kana": "しょうわじま"
+    },
+    {
+      "id": "seibijo",
+      "name": "整備場",
+      "kana": "せいびじょう"
+    },
+    {
+      "id": "shin-seibijo",
+      "name": "新整備場",
+      "kana": "しんせいびじょう"
+    },
+    {
+      "id": "haneda-airport-terminal-1",
+      "name": "羽田空港第1ターミナル",
+      "kana": "はねだくうこうだいいちたーみなる"
+    },
+    {
+      "id": "haneda-airport-terminal-2",
+      "name": "羽田空港第2ターミナル",
+      "kana": "はねだくうこうだいにたーみなる"
+    },
+    {
+      "id": "takeshiba",
+      "name": "竹芝",
+      "kana": "たけしば"
+    },
+    {
+      "id": "hinode",
+      "name": "日の出",
+      "kana": "ひので"
+    },
+    {
+      "id": "shibaura-futo",
+      "name": "芝浦ふ頭",
+      "kana": "しばうらふとう"
+    },
+    {
+      "id": "odaiba-kaihinkoen",
+      "name": "お台場海浜公園",
+      "kana": "おだいばかいひんこうえん"
+    },
+    {
+      "id": "daiba",
+      "name": "台場",
+      "kana": "だいば"
+    },
+    {
+      "id": "tokyo-intl-cruise-terminal",
+      "name": "東京国際クルーズターミナル",
+      "kana": "とうきょうこくさいくるーずたーみなる"
+    },
+    {
+      "id": "telecom-center",
+      "name": "テレコムセンター",
+      "kana": "てれこむせんたー"
+    },
+    {
+      "id": "aomi",
+      "name": "青海",
+      "kana": "あおみ"
+    },
+    {
+      "id": "tokyo-big-sight",
+      "name": "東京ビッグサイト",
+      "kana": "とうきょうびっぐさいと"
+    },
+    {
+      "id": "ariake-tennis-no-mori",
+      "name": "有明テニスの森",
+      "kana": "ありあけてにすのもり"
+    },
+    {
+      "id": "shijomae",
+      "name": "市場前",
+      "kana": "しじょうまえ"
+    },
+    {
+      "id": "shin-toyosu",
+      "name": "新豊洲",
+      "kana": "しんとよす"
+    },
+    {
+      "id": "akado-shogakko-mae",
+      "name": "赤土小学校前",
+      "kana": "あかどしょうがっこうまえ"
+    },
+    {
+      "id": "adachi-odai",
+      "name": "足立小台",
+      "kana": "あだちおだい"
+    },
+    {
+      "id": "ogi-ohashi",
+      "name": "扇大橋",
+      "kana": "おうぎおおはし"
+    },
+    {
+      "id": "koya",
+      "name": "高野",
+      "kana": "こうや"
+    },
+    {
+      "id": "kohoku-nippori",
+      "name": "江北",
+      "kana": "こうほく"
+    },
+    {
+      "id": "nishiaraidaishi-nishi",
+      "name": "西新井大師西",
+      "kana": "にしあらいだいしにし"
+    },
+    {
+      "id": "yazaike",
+      "name": "谷在家",
+      "kana": "やざいけ"
+    },
+    {
+      "id": "toneri-koen",
+      "name": "舎人公園",
+      "kana": "とねりこうえん"
+    },
+    {
+      "id": "toneri",
+      "name": "舎人",
+      "kana": "とねり"
+    },
+    {
+      "id": "minumadai-shinsuikoen",
+      "name": "見沼代親水公園",
+      "kana": "みぬまだいしんすいこうえん"
+    },
+    {
+      "id": "aoi",
+      "name": "青井",
+      "kana": "あおい"
+    },
+    {
+      "id": "rokucho",
+      "name": "六町",
+      "kana": "ろくちょう"
+    },
+    {
+      "id": "yashio",
+      "name": "八潮",
+      "kana": "やしお"
+    },
+    {
+      "id": "misato-chuo",
+      "name": "三郷中央",
+      "kana": "みさとちゅうおう"
+    },
+    {
+      "id": "nagareyama-centralpark",
+      "name": "流山セントラルパーク",
+      "kana": "ながれやませんとらるぱーく"
+    },
+    {
+      "id": "kashiwanoha-campus",
+      "name": "柏の葉キャンパス",
+      "kana": "かしわのはきゃんぱす"
+    },
+    {
+      "id": "kashiwa-tanaka",
+      "name": "柏たなか",
+      "kana": "かしわたなか"
+    },
+    {
+      "id": "moriya",
+      "name": "守谷",
+      "kana": "もりや"
+    },
+    {
+      "id": "miraidaira",
+      "name": "みらい平",
+      "kana": "みらいだいら"
+    },
+    {
+      "id": "midorino",
+      "name": "みどりの",
+      "kana": "みどりの"
+    },
+    {
+      "id": "bampaku-kinenkoen",
+      "name": "万博記念公園",
+      "kana": "ばんぱくきねんこうえん"
+    },
+    {
+      "id": "kenkyu-gakuen",
+      "name": "研究学園",
+      "kana": "けんきゅうがくえん"
+    },
+    {
+      "id": "tsukuba",
+      "name": "つくば",
+      "kana": "つくば"
+    },
+    {
+      "id": "shinonome",
+      "name": "東雲",
+      "kana": "しののめ"
+    },
+    {
+      "id": "kokusai-tenjijo",
+      "name": "国際展示場",
+      "kana": "こくさいてんじじょう"
+    },
+    {
+      "id": "tokyo-teleport",
+      "name": "東京テレポート",
+      "kana": "とうきょうてれぽーと"
+    },
+    {
+      "id": "shinagawa-seaside",
+      "name": "品川シーサイド",
+      "kana": "しながわしーさいど"
+    },
+    {
+      "id": "kawaguchi-motogo",
+      "name": "川口元郷",
+      "kana": "かわぐちもとごう"
+    },
+    {
+      "id": "minami-hatogaya",
+      "name": "南鳩ヶ谷",
+      "kana": "みなみはとがや"
+    },
+    {
+      "id": "hatogaya",
+      "name": "鳩ヶ谷",
+      "kana": "はとがや"
+    },
+    {
+      "id": "araijuku",
+      "name": "新井宿",
+      "kana": "あらいじゅく"
+    },
+    {
+      "id": "tozuka-angyo",
+      "name": "戸塚安行",
+      "kana": "とづかあんぎょう"
+    },
+    {
+      "id": "urawa-misono",
+      "name": "浦和美園",
+      "kana": "うらわみその"
+    },
+    {
+      "id": "higashi-kaijin",
+      "name": "東海神",
+      "kana": "ひがしかいじん"
+    },
+    {
+      "id": "hasama",
+      "name": "飯山満",
+      "kana": "はさま"
+    },
+    {
+      "id": "funabashi-nichidai-mae",
+      "name": "船橋日大前",
+      "kana": "ふなばしにちだいまえ"
+    },
+    {
+      "id": "yachiyo-midorigaoka",
+      "name": "八千代緑が丘",
+      "kana": "やちよみどりがおか"
+    },
+    {
+      "id": "yachiyo-chuo",
+      "name": "八千代中央",
+      "kana": "やちよちゅうおう"
+    },
+    {
+      "id": "murakami",
+      "name": "村上",
+      "kana": "むらかみ"
+    },
+    {
+      "id": "toyo-katsutadai",
+      "name": "東葉勝田台",
+      "kana": "とうようかつただい"
+    },
+    {
+      "id": "tama-center-monorail",
+      "name": "多摩センター",
+      "kana": "たませんたー"
+    },
+    {
+      "id": "matsugaya",
+      "name": "松が谷",
+      "kana": "まつがや"
+    },
+    {
+      "id": "otsuka-teikyodaigaku",
+      "name": "大塚・帝京大学",
+      "kana": "おおつかていきょうだいがく"
+    },
+    {
+      "id": "chuodaigaku-meiseidaigaku",
+      "name": "中央大学・明星大学",
+      "kana": "ちゅうおうだいがくめいせいだいがく"
+    },
+    {
+      "id": "hodokubo",
+      "name": "程久保",
+      "kana": "ほどくぼ"
+    },
+    {
+      "id": "manganji",
+      "name": "万願寺",
+      "kana": "まんがんじ"
+    },
+    {
+      "id": "koshu-kaido",
+      "name": "甲州街道",
+      "kana": "こうしゅうかいどう"
+    },
+    {
+      "id": "shibasaki-taiikukan",
+      "name": "柴崎体育館",
+      "kana": "しばさきたいいくかん"
+    },
+    {
+      "id": "tachikawa-minami",
+      "name": "立川南",
+      "kana": "たちかわみなみ"
+    },
+    {
+      "id": "tachikawa-kita",
+      "name": "立川北",
+      "kana": "たちかわきた"
+    },
+    {
+      "id": "takamatsu",
+      "name": "高松",
+      "kana": "たかまつ"
+    },
+    {
+      "id": "tachihi",
+      "name": "立飛",
+      "kana": "たちひ"
+    },
+    {
+      "id": "izumi-taiikukan",
+      "name": "泉体育館",
+      "kana": "いずみたいいくかん"
+    },
+    {
+      "id": "sunagawa-nanaban",
+      "name": "砂川七番",
+      "kana": "すながわななばん"
+    },
+    {
+      "id": "sakura-kaido",
+      "name": "桜街道",
+      "kana": "さくらかいどう"
+    },
+    {
+      "id": "kamikitadai",
+      "name": "上北台",
+      "kana": "かみきただい"
+    },
+    {
+      "id": "fujimicho",
+      "name": "富士見町",
+      "kana": "ふじみちょう"
+    },
+    {
+      "id": "shonan-machiya",
+      "name": "湘南町屋",
+      "kana": "しょうなんまちや"
+    },
+    {
+      "id": "shonan-fukasawa",
+      "name": "湘南深沢",
+      "kana": "しょうなんふかさわ"
+    },
+    {
+      "id": "nishi-kamakura",
+      "name": "西鎌倉",
+      "kana": "にしかまくら"
+    },
+    {
+      "id": "katase-yama",
+      "name": "片瀬山",
+      "kana": "かたせやま"
+    },
+    {
+      "id": "mejiroyama-shita",
+      "name": "目白山下",
+      "kana": "めじろやました"
+    },
+    {
+      "id": "shonan-enoshima",
+      "name": "湘南江の島",
+      "kana": "しょうなんえのしま"
+    },
+    {
+      "id": "shiyakushomae",
+      "name": "市役所前",
+      "kana": "しやくしょまえ"
+    },
+    {
+      "id": "yoshikawa-koen",
+      "name": "葭川公園",
+      "kana": "よしかわこうえん"
+    },
+    {
+      "id": "kencho-mae",
+      "name": "県庁前",
+      "kana": "けんちょうまえ"
+    },
+    {
+      "id": "chiba-koen",
+      "name": "千葉公園",
+      "kana": "ちばこうえん"
+    },
+    {
+      "id": "sakusabe",
+      "name": "作草部",
+      "kana": "さくさべ"
+    },
+    {
+      "id": "tendai",
+      "name": "天台",
+      "kana": "てんだい"
+    },
+    {
+      "id": "anagawa",
+      "name": "穴川",
+      "kana": "あながわ"
+    },
+    {
+      "id": "sports-center",
+      "name": "スポーツセンター",
+      "kana": "すぽーつせんたー"
+    },
+    {
+      "id": "dobutsu-koen",
+      "name": "動物公園",
+      "kana": "どうぶつこうえん"
+    },
+    {
+      "id": "mitsuwadai",
+      "name": "みつわ台",
+      "kana": "みつわだい"
+    },
+    {
+      "id": "sakuragi",
+      "name": "桜木",
+      "kana": "さくらぎ"
+    },
+    {
+      "id": "oguradai",
+      "name": "小倉台",
+      "kana": "おぐらだい"
+    },
+    {
+      "id": "chishirodai-kita",
+      "name": "千城台北",
+      "kana": "ちしろだいきた"
+    },
+    {
+      "id": "chishirodai",
+      "name": "千城台",
+      "kana": "ちしろだい"
+    },
+    {
+      "id": "nambu-shijo",
+      "name": "南部市場",
+      "kana": "なんぶしじょう"
+    },
+    {
+      "id": "torihama",
+      "name": "鳥浜",
+      "kana": "とりはま"
+    },
+    {
+      "id": "namiki-kita",
+      "name": "並木北",
+      "kana": "なみききた"
+    },
+    {
+      "id": "namiki-chuo",
+      "name": "並木中央",
+      "kana": "なみきちゅうおう"
+    },
+    {
+      "id": "sachiura",
+      "name": "幸浦",
+      "kana": "さちうら"
+    },
+    {
+      "id": "sangyo-shinko-center",
+      "name": "産業振興センター",
+      "kana": "さんぎょうしんこうせんたー"
+    },
+    {
+      "id": "fukuura",
+      "name": "福浦",
+      "kana": "ふくうら"
+    },
+    {
+      "id": "shidai-igakubu",
+      "name": "市大医学部",
+      "kana": "しだいいがくぶ"
+    },
+    {
+      "id": "hakkeijima",
+      "name": "八景島",
+      "kana": "はっけいじま"
+    },
+    {
+      "id": "uminokoen-shibaguchi",
+      "name": "海の公園柴口",
+      "kana": "うみのこうえんしばぐち"
+    },
+    {
+      "id": "uminokoen-minamiguchi",
+      "name": "海の公園南口",
+      "kana": "うみのこうえんみなみぐち"
+    },
+    {
+      "id": "nojima-koen",
+      "name": "野島公園",
+      "kana": "のじまこうえん"
+    },
+    {
+      "id": "resort-gateway-station",
+      "name": "リゾートゲートウェイ・ステーション",
+      "kana": "りぞーとげーとうぇい・すてーしょん"
+    },
+    {
+      "id": "tokyo-disneyland-station",
+      "name": "東京ディズニーランド・ステーション",
+      "kana": "とうきょうでぃずにーらんど・すてーしょん"
+    },
+    {
+      "id": "bayside-station",
+      "name": "ベイサイド・ステーション",
+      "kana": "べいさいど・すてーしょん"
+    },
+    {
+      "id": "tokyo-disneysea-station",
+      "name": "東京ディズニーシー・ステーション",
+      "kana": "とうきょうでぃずにーしー・すてーしょん"
+    },
+    {
+      "id": "chiku-center",
+      "name": "地区センター",
+      "kana": "ちくせんたー"
+    },
+    {
+      "id": "koen-yamaman",
+      "name": "公園",
+      "kana": "こうえん"
+    },
+    {
+      "id": "joshidai",
+      "name": "女子大",
+      "kana": "じょしだい"
+    },
+    {
+      "id": "chugakko",
+      "name": "中学校",
+      "kana": "ちゅうがっこう"
+    },
+    {
+      "id": "nishi-hanyu",
+      "name": "西羽生",
+      "kana": "にしはにゅう"
+    },
+    {
+      "id": "shingo",
+      "name": "新郷",
+      "kana": "しんごう"
+    },
+    {
+      "id": "bushu-araki",
+      "name": "武州荒木",
+      "kana": "ぶしゅうあらき"
+    },
+    {
+      "id": "higashi-gyoda",
+      "name": "東行田",
+      "kana": "ひがしぎょうだ"
+    },
+    {
+      "id": "gyodashi",
+      "name": "行田市",
+      "kana": "ぎょうだし"
+    },
+    {
+      "id": "mochida",
+      "name": "持田",
+      "kana": "もちだ"
+    },
+    {
+      "id": "socio-ryutsu-center",
+      "name": "ソシオ流通センター",
+      "kana": "そしおりゅうつうせんたー"
+    },
+    {
+      "id": "kami-kumagaya",
+      "name": "上熊谷",
+      "kana": "かみくまがや"
+    },
+    {
+      "id": "ishihara",
+      "name": "石原",
+      "kana": "いしはら"
+    },
+    {
+      "id": "hirose-yachonomori",
+      "name": "ひろせ野鳥の森",
+      "kana": "ひろせやちょうのもり"
+    },
+    {
+      "id": "oaso",
+      "name": "大麻生",
+      "kana": "おおあそう"
+    },
+    {
+      "id": "aketo",
+      "name": "明戸",
+      "kana": "あけと"
+    },
+    {
+      "id": "takekawa",
+      "name": "武川",
+      "kana": "たけかわ"
+    },
+    {
+      "id": "fukaya-hanazono",
+      "name": "ふかや花園",
+      "kana": "ふかやはなぞの"
+    },
+    {
+      "id": "omaeda",
+      "name": "小前田",
+      "kana": "おまえだ"
+    },
+    {
+      "id": "sakurazawa",
+      "name": "桜沢",
+      "kana": "さくらざわ"
+    },
+    {
+      "id": "hagure",
+      "name": "波久礼",
+      "kana": "はぐれ"
+    },
+    {
+      "id": "higuchi",
+      "name": "樋口",
+      "kana": "ひぐち"
+    },
+    {
+      "id": "nogami",
+      "name": "野上",
+      "kana": "のがみ"
+    },
+    {
+      "id": "nagatoro",
+      "name": "長瀞",
+      "kana": "ながとろ"
+    },
+    {
+      "id": "kami-nagatoro",
+      "name": "上長瀞",
+      "kana": "かみながとろ"
+    },
+    {
+      "id": "oyahana",
+      "name": "親鼻",
+      "kana": "おやはな"
+    },
+    {
+      "id": "minano",
+      "name": "皆野",
+      "kana": "みなの"
+    },
+    {
+      "id": "wado-kuroya",
+      "name": "和銅黒谷",
+      "kana": "わどうくろや"
+    },
+    {
+      "id": "onohara",
+      "name": "大野原",
+      "kana": "おおのはら"
+    },
+    {
+      "id": "chichibu",
+      "name": "秩父",
+      "kana": "ちちぶ"
+    },
+    {
+      "id": "ohanabatake",
+      "name": "御花畑",
+      "kana": "おはなばたけ"
+    },
+    {
+      "id": "kagemori",
+      "name": "影森",
+      "kana": "かげもり"
+    },
+    {
+      "id": "urayamaguchi",
+      "name": "浦山口",
+      "kana": "うらやまぐち"
+    },
+    {
+      "id": "bushu-nakagawa",
+      "name": "武州中川",
+      "kana": "ぶしゅうなかがわ"
+    },
+    {
+      "id": "bushu-hino",
+      "name": "武州日野",
+      "kana": "ぶしゅうひの"
+    },
+    {
+      "id": "shiroku",
+      "name": "白久",
+      "kana": "しろく"
+    },
+    {
+      "id": "mitsumineguchi",
+      "name": "三峰口",
+      "kana": "みつみねぐち"
+    },
+    {
+      "id": "tetsudo-hakubutsukan",
+      "name": "鉄道博物館",
+      "kana": "てつどうはくぶつかん"
+    },
+    {
+      "id": "kamomiya",
+      "name": "加茂宮",
+      "kana": "かもみや"
+    },
+    {
+      "id": "higashi-miyahara",
+      "name": "東宮原",
+      "kana": "ひがしみやはら"
+    },
+    {
+      "id": "komba",
+      "name": "今羽",
+      "kana": "こんば"
+    },
+    {
+      "id": "yoshinohara-shuttle",
+      "name": "吉野原",
+      "kana": "よしのはら"
+    },
+    {
+      "id": "haraichi",
+      "name": "原市",
+      "kana": "はらいち"
+    },
+    {
+      "id": "shonan-shuttle",
+      "name": "沼南",
+      "kana": "しょうなん"
+    },
+    {
+      "id": "maruyama",
+      "name": "丸山",
+      "kana": "まるやま"
+    },
+    {
+      "id": "shiku",
+      "name": "志久",
+      "kana": "しく"
+    },
+    {
+      "id": "ina-chuo",
+      "name": "伊奈中央",
+      "kana": "いなちゅうおう"
+    },
+    {
+      "id": "hanuki",
+      "name": "羽貫",
+      "kana": "はぬき"
+    },
+    {
+      "id": "uchijuku",
+      "name": "内宿",
+      "kana": "うちじゅく"
+    },
+    {
+      "id": "ishigami",
+      "name": "石上",
+      "kana": "いしがみ"
+    },
+    {
+      "id": "yanagikoji",
+      "name": "柳小路",
+      "kana": "やなぎこうじ"
+    },
+    {
+      "id": "kugenuma",
+      "name": "鵠沼",
+      "kana": "くげぬま"
+    },
+    {
+      "id": "shonankaigan-koen",
+      "name": "湘南海岸公園",
+      "kana": "しょうなんかいがんこうえん"
+    },
+    {
+      "id": "enoshima-enoden",
+      "name": "江ノ島",
+      "kana": "えのしま"
+    },
+    {
+      "id": "koshigoe",
+      "name": "腰越",
+      "kana": "こしごえ"
+    },
+    {
+      "id": "kamakura-kokomae",
+      "name": "鎌倉高校前",
+      "kana": "かまくらこうこうまえ"
+    },
+    {
+      "id": "shichirigahama",
+      "name": "七里ヶ浜",
+      "kana": "しちりがはま"
+    },
+    {
+      "id": "inamuragasaki",
+      "name": "稲村ヶ崎",
+      "kana": "いなむらがさき"
+    },
+    {
+      "id": "gokurakuji",
+      "name": "極楽寺",
+      "kana": "ごくらくじ"
+    },
+    {
+      "id": "hase",
+      "name": "長谷",
+      "kana": "はせ"
+    },
+    {
+      "id": "yuigahama",
+      "name": "由比ヶ浜",
+      "kana": "ゆいがはま"
+    },
+    {
+      "id": "wadazuka",
+      "name": "和田塚",
+      "kana": "わだづか"
+    },
+    {
+      "id": "minami-ito",
+      "name": "南伊東",
+      "kana": "みなみいとう"
+    },
+    {
+      "id": "kawana",
+      "name": "川奈",
+      "kana": "かわな"
+    },
+    {
+      "id": "futo",
+      "name": "富戸",
+      "kana": "ふと"
+    },
+    {
+      "id": "jogasaki-kaigan",
+      "name": "城ヶ崎海岸",
+      "kana": "じょうがさきかいがん"
+    },
+    {
+      "id": "izu-kogen",
+      "name": "伊豆高原",
+      "kana": "いずこうげん"
+    },
+    {
+      "id": "izu-okawa",
+      "name": "伊豆大川",
+      "kana": "いずおおかわ"
+    },
+    {
+      "id": "izu-hokkawa",
+      "name": "伊豆北川",
+      "kana": "いずほっかわ"
+    },
+    {
+      "id": "izu-atagawa",
+      "name": "伊豆熱川",
+      "kana": "いずあたがわ"
+    },
+    {
+      "id": "katase-shirata",
+      "name": "片瀬白田",
+      "kana": "かたせしらた"
+    },
+    {
+      "id": "izu-inatori",
+      "name": "伊豆稲取",
+      "kana": "いずいなとり"
+    },
+    {
+      "id": "imaihama-kaigan",
+      "name": "今井浜海岸",
+      "kana": "いまいはまかいがん"
+    },
+    {
+      "id": "kawazu",
+      "name": "河津",
+      "kana": "かわづ"
+    },
+    {
+      "id": "inazusa",
+      "name": "稲梓",
+      "kana": "いなずさ"
+    },
+    {
+      "id": "rendaiji",
+      "name": "蓮台寺",
+      "kana": "れんだいじ"
+    },
+    {
+      "id": "izukyu-shimoda",
+      "name": "伊豆急下田",
+      "kana": "いずきゅうしもだ"
+    },
+    {
+      "id": "hakone-itabashi",
+      "name": "箱根板橋",
+      "kana": "はこねいたばし"
+    },
+    {
+      "id": "kazamatsuri",
+      "name": "風祭",
+      "kana": "かざまつり"
+    },
+    {
+      "id": "iriuda",
+      "name": "入生田",
+      "kana": "いりゅうだ"
+    },
+    {
+      "id": "hakone-yumoto",
+      "name": "箱根湯本",
+      "kana": "はこねゆもと"
+    },
+    {
+      "id": "tonosawa",
+      "name": "塔ノ沢",
+      "kana": "とうのさわ"
+    },
+    {
+      "id": "ohiradai",
+      "name": "大平台",
+      "kana": "おおひらだい"
+    },
+    {
+      "id": "miyanoshita",
+      "name": "宮ノ下",
+      "kana": "みやのした"
+    },
+    {
+      "id": "kowakidani",
+      "name": "小涌谷",
+      "kana": "こわきだに"
+    },
+    {
+      "id": "chokoku-no-mori",
+      "name": "彫刻の森",
+      "kana": "ちょうこくのもり"
+    },
+    {
+      "id": "gora",
+      "name": "強羅",
+      "kana": "ごうら"
+    },
+    {
+      "id": "midoricho",
+      "name": "緑町",
+      "kana": "みどりちょう"
+    },
+    {
+      "id": "isaida",
+      "name": "井細田",
+      "kana": "いさいだ"
+    },
+    {
+      "id": "gohyaku-rakan",
+      "name": "五百羅漢",
+      "kana": "ごひゃくらかん"
+    },
+    {
+      "id": "anabe",
+      "name": "穴部",
+      "kana": "あなべ"
+    },
+    {
+      "id": "iidaoka",
+      "name": "飯田岡",
+      "kana": "いいだおか"
+    },
+    {
+      "id": "sagami-numata",
+      "name": "相模沼田",
+      "kana": "さがみぬまた"
+    },
+    {
+      "id": "iwahara",
+      "name": "岩原",
+      "kana": "いわはら"
+    },
+    {
+      "id": "tsukahara",
+      "name": "塚原",
+      "kana": "つかはら"
+    },
+    {
+      "id": "wadagahara",
+      "name": "和田河原",
+      "kana": "わだがわら"
+    },
+    {
+      "id": "fujifilm-mae",
+      "name": "富士フイルム前",
+      "kana": "ふじふいるむまえ"
+    },
+    {
+      "id": "daiyuzan",
+      "name": "大雄山",
+      "kana": "だいゆうざん"
+    },
+    {
+      "id": "koya-ryutetsu",
+      "name": "幸谷",
+      "kana": "こうや"
+    },
+    {
+      "id": "kogane-joshi",
+      "name": "小金城趾",
+      "kana": "こがねじょうし"
+    },
+    {
+      "id": "hiregasaki",
+      "name": "鰭ヶ崎",
+      "kana": "ひれがさき"
+    },
+    {
+      "id": "nagareyama",
+      "name": "流山",
+      "kana": "ながれやま"
+    },
+    {
+      "id": "minami-takasaki",
+      "name": "南高崎",
+      "kana": "みなみたかさき"
+    },
+    {
+      "id": "sano-no-watashi",
+      "name": "佐野のわたし",
+      "kana": "さののわたし"
+    },
+    {
+      "id": "nekoya",
+      "name": "根小屋",
+      "kana": "ねこや"
+    },
+    {
+      "id": "takasaki-shoka-daigaku-mae",
+      "name": "高崎商科大学前",
+      "kana": "たかさきしょうかだいがくまえ"
+    },
+    {
+      "id": "yamana",
+      "name": "山名",
+      "kana": "やまな"
+    },
+    {
+      "id": "nishi-yamana",
+      "name": "西山名",
+      "kana": "にしやまな"
+    },
+    {
+      "id": "umaniwa",
+      "name": "馬庭",
+      "kana": "うまにわ"
+    },
+    {
+      "id": "yoshii",
+      "name": "吉井",
+      "kana": "よしい"
+    },
+    {
+      "id": "nishi-yoshii",
+      "name": "西吉井",
+      "kana": "にしよしい"
+    },
+    {
+      "id": "joshu-shinya",
+      "name": "上州新屋",
+      "kana": "じょうしゅうしんや"
+    },
+    {
+      "id": "joshu-fukushima",
+      "name": "上州福島",
+      "kana": "じょうしゅうふくしま"
+    },
+    {
+      "id": "higashi-tomioka",
+      "name": "東富岡",
+      "kana": "ひがしとみおか"
+    },
+    {
+      "id": "joshu-tomioka",
+      "name": "上州富岡",
+      "kana": "じょうしゅうとみおか"
+    },
+    {
+      "id": "nishi-tomioka",
+      "name": "西富岡",
+      "kana": "にしとみおか"
+    },
+    {
+      "id": "joshu-nanokaichi",
+      "name": "上州七日市",
+      "kana": "じょうしゅうなぬかいち"
+    },
+    {
+      "id": "joshu-ichinomiya",
+      "name": "上州一ノ宮",
+      "kana": "じょうしゅういちのみや"
+    },
+    {
+      "id": "jinnohara",
+      "name": "神農原",
+      "kana": "じんのうはら"
+    },
+    {
+      "id": "minamijai",
+      "name": "南蛇井",
+      "kana": "みなみじゃい"
+    },
+    {
+      "id": "chibira",
+      "name": "千平",
+      "kana": "ちびら"
+    },
+    {
+      "id": "shimonita",
+      "name": "下仁田",
+      "kana": "しもにた"
+    },
+    {
+      "id": "shimo-shinden",
+      "name": "下新田",
+      "kana": "しもしんでん"
+    },
+    {
+      "id": "undo-koen",
+      "name": "運動公園",
+      "kana": "うんどうこうえん"
+    },
+    {
+      "id": "omama",
+      "name": "大間々",
+      "kana": "おおまま"
+    },
+    {
+      "id": "kami-kambai",
+      "name": "上神梅",
+      "kana": "かみかんばい"
+    },
+    {
+      "id": "motojuku",
+      "name": "本宿",
+      "kana": "もとじゅく"
+    },
+    {
+      "id": "mizunuma",
+      "name": "水沼",
+      "kana": "みずぬま"
+    },
+    {
+      "id": "hanawa-watarase",
+      "name": "花輪",
+      "kana": "はなわ"
+    },
+    {
+      "id": "konaka",
+      "name": "小中",
+      "kana": "こなか"
+    },
+    {
+      "id": "godo",
+      "name": "神戸",
+      "kana": "ごうど"
+    },
+    {
+      "id": "sori",
+      "name": "沢入",
+      "kana": "そうり"
+    },
+    {
+      "id": "haramuko",
+      "name": "原向",
+      "kana": "はらむこう"
+    },
+    {
+      "id": "tsudo",
+      "name": "通洞",
+      "kana": "つうどう"
+    },
+    {
+      "id": "ashio",
+      "name": "足尾",
+      "kana": "あしお"
+    },
+    {
+      "id": "mato",
+      "name": "間藤",
+      "kana": "まとう"
+    },
+    {
+      "id": "chuo-maebashi",
+      "name": "中央前橋",
+      "kana": "ちゅうおうまえばし"
+    },
+    {
+      "id": "joto",
+      "name": "城東",
+      "kana": "じょうとう"
+    },
+    {
+      "id": "mitsumata",
+      "name": "三俣",
+      "kana": "みつまた"
+    },
+    {
+      "id": "katakai",
+      "name": "片貝",
+      "kana": "かたかい"
+    },
+    {
+      "id": "kamiizumi",
+      "name": "上泉",
+      "kana": "かみいずみ"
+    },
+    {
+      "id": "shinzo-kekkan-center",
+      "name": "心臓血管センター",
+      "kana": "しんぞうけっかんせんたー"
+    },
+    {
+      "id": "egi",
+      "name": "江木",
+      "kana": "えぎ"
+    },
+    {
+      "id": "ogo",
+      "name": "大胡",
+      "kana": "おおご"
+    },
+    {
+      "id": "higoshi",
+      "name": "樋越",
+      "kana": "ひごし"
+    },
+    {
+      "id": "kitahara",
+      "name": "北原",
+      "kana": "きたはら"
+    },
+    {
+      "id": "araya",
+      "name": "新屋",
+      "kana": "あらや"
+    },
+    {
+      "id": "kasukawa",
+      "name": "粕川",
+      "kana": "かすかわ"
+    },
+    {
+      "id": "zen",
+      "name": "膳",
+      "kana": "ぜん"
+    },
+    {
+      "id": "niisato",
+      "name": "新里",
+      "kana": "にいさと"
+    },
+    {
+      "id": "nikkawa",
+      "name": "新川",
+      "kana": "にっかわ"
+    },
+    {
+      "id": "higashi-nikkawa",
+      "name": "東新川",
+      "kana": "ひがしにっかわ"
+    },
+    {
+      "id": "kiryu-kyujo-mae",
+      "name": "桐生球場前",
+      "kana": "きりゅうきゅうじょうまえ"
+    },
+    {
+      "id": "tennojuku",
+      "name": "天王宿",
+      "kana": "てんのうじゅく"
+    },
+    {
+      "id": "fujiyamashita",
+      "name": "富士山下",
+      "kana": "ふじやました"
+    },
+    {
+      "id": "maruyamashita",
+      "name": "丸山下",
+      "kana": "まるやました"
+    },
+    {
+      "id": "nishi-kiryu",
+      "name": "西桐生",
+      "kana": "にしきりゅう"
+    },
+    {
+      "id": "nakanocho",
+      "name": "仲ノ町",
+      "kana": "なかのちょう"
+    },
+    {
+      "id": "kannon",
+      "name": "観音",
+      "kana": "かんのん"
+    },
+    {
+      "id": "hon-choshi",
+      "name": "本銚子",
+      "kana": "ほんちょうし"
+    },
+    {
+      "id": "kasagami-kuroo",
+      "name": "笠上黒生",
+      "kana": "かさがみくろお"
+    },
+    {
+      "id": "nishi-kaikajima",
+      "name": "西海鹿島",
+      "kana": "にしかいかじま"
+    },
+    {
+      "id": "kaikajima",
+      "name": "海鹿島",
+      "kana": "かいかじま"
+    },
+    {
+      "id": "kimigahama",
+      "name": "君ヶ浜",
+      "kana": "きみがはま"
+    },
+    {
+      "id": "inubo",
+      "name": "犬吠",
+      "kana": "いぬぼう"
+    },
+    {
+      "id": "tokawa",
+      "name": "外川",
+      "kana": "とかわ"
+    },
+    {
+      "id": "nishi-toride",
+      "name": "西取手",
+      "kana": "にしとりで"
+    },
+    {
+      "id": "terahara",
+      "name": "寺原",
+      "kana": "てらはら"
+    },
+    {
+      "id": "shin-toride",
+      "name": "新取手",
+      "kana": "しんとりで"
+    },
+    {
+      "id": "yumemino",
+      "name": "ゆめみ野",
+      "kana": "ゆめみの"
+    },
+    {
+      "id": "inatoi",
+      "name": "稲戸井",
+      "kana": "いなとい"
+    },
+    {
+      "id": "togashira",
+      "name": "戸頭",
+      "kana": "とがしら"
+    },
+    {
+      "id": "minami-moriya",
+      "name": "南守谷",
+      "kana": "みなみもりや"
+    },
+    {
+      "id": "shin-moriya",
+      "name": "新守谷",
+      "kana": "しんもりや"
+    },
+    {
+      "id": "kokinu",
+      "name": "小絹",
+      "kana": "こきぬ"
+    },
+    {
+      "id": "mitsukaido",
+      "name": "水海道",
+      "kana": "みつかいどう"
+    },
+    {
+      "id": "kita-mitsukaido",
+      "name": "北水海道",
+      "kana": "きたみつかいどう"
+    },
+    {
+      "id": "nakatsuma",
+      "name": "中妻",
+      "kana": "なかつま"
+    },
+    {
+      "id": "mitsuma",
+      "name": "三妻",
+      "kana": "みつま"
+    },
+    {
+      "id": "minami-ishige",
+      "name": "南石下",
+      "kana": "みなみいしげ"
+    },
+    {
+      "id": "ishige",
+      "name": "石下",
+      "kana": "いしげ"
+    },
+    {
+      "id": "tamamura",
+      "name": "玉村",
+      "kana": "たままら"
+    },
+    {
+      "id": "sodo",
+      "name": "宗道",
+      "kana": "そうどう"
+    },
+    {
+      "id": "shimotsuma",
+      "name": "下妻",
+      "kana": "しもつま"
+    },
+    {
+      "id": "daiho",
+      "name": "大宝",
+      "kana": "だいほう"
+    },
+    {
+      "id": "tobanoe",
+      "name": "騰波ノ江",
+      "kana": "とばのえ"
+    },
+    {
+      "id": "kurogo",
+      "name": "黒子",
+      "kana": "くろご"
+    },
+    {
+      "id": "otago",
+      "name": "大田郷",
+      "kana": "おおたごう"
+    },
+    {
+      "id": "sanuki-kanto",
+      "name": "佐貫",
+      "kana": "さぬき"
+    },
+    {
+      "id": "ireji",
+      "name": "入地",
+      "kana": "いれじ"
+    },
+    {
+      "id": "ryugasaki",
+      "name": "竜ヶ崎",
+      "kana": "りゅうがさき"
+    },
+    {
+      "id": "higashi-mito",
+      "name": "東水戸",
+      "kana": "ひがしみと"
+    },
+    {
+      "id": "tsunezumi",
+      "name": "常澄",
+      "kana": "つねずみ"
+    },
+    {
+      "id": "oarai",
+      "name": "大洗",
+      "kana": "おおあらい"
+    },
+    {
+      "id": "hinuma",
+      "name": "涸沼",
+      "kana": "ひぬま"
+    },
+    {
+      "id": "kashima-asahi",
+      "name": "鹿島旭",
+      "kana": "かしまあさひ"
+    },
+    {
+      "id": "tokushuku",
+      "name": "徳宿",
+      "kana": "とくしゅく"
+    },
+    {
+      "id": "shin-hokota",
+      "name": "新鉾田",
+      "kana": "しんほこた"
+    },
+    {
+      "id": "kitaura-kohan",
+      "name": "北浦湖畔",
+      "kana": "きたうらこはん"
+    },
+    {
+      "id": "taiyo",
+      "name": "大洋",
+      "kana": "たいよう"
+    },
+    {
+      "id": "kashimanada",
+      "name": "鹿島灘",
+      "kana": "かしまなだ"
+    },
+    {
+      "id": "kashima-ono",
+      "name": "鹿島大野",
+      "kana": "かしまおおの"
+    },
+    {
+      "id": "chojagahama-shiosai-hamanasu-koenmae",
+      "name": "長者ヶ浜潮騒はまなす公園前",
+      "kana": "ちょうじゃがはましおさいはまなすこうえんまえ"
+    },
+    {
+      "id": "kouyadai",
+      "name": "荒野台",
+      "kana": "こうやだい"
+    },
+    {
+      "id": "kokimae",
+      "name": "工機前",
+      "kana": "こうきまえ"
+    },
+    {
+      "id": "kaneage",
+      "name": "金上",
+      "kana": "かねあげ"
+    },
+    {
+      "id": "nakane",
+      "name": "中根",
+      "kana": "なかね"
+    },
+    {
+      "id": "takadano-tekkyo",
+      "name": "高田の鉄橋",
+      "kana": "たかだのてっきょう"
+    },
+    {
+      "id": "nakaminato",
+      "name": "那珂湊",
+      "kana": "なかみなと"
+    },
+    {
+      "id": "tonoyama",
+      "name": "殿山",
+      "kana": "とのやま"
+    },
+    {
+      "id": "hiraiso",
+      "name": "平磯",
+      "kana": "ひらいそ"
+    },
+    {
+      "id": "minohama-gakuen",
+      "name": "美乃浜学園",
+      "kana": "みのはまがくえん"
+    },
+    {
+      "id": "isozaki",
+      "name": "磯崎",
+      "kana": "いそざき"
+    },
+    {
+      "id": "ajigaura",
+      "name": "阿字ヶ浦",
+      "kana": "あじがうら"
+    },
+    {
+      "id": "nishi-ohara",
+      "name": "西大原",
+      "kana": "にしおおはら"
+    },
+    {
+      "id": "kazusa-higashi",
+      "name": "上総東",
+      "kana": "かずさひがし"
+    },
+    {
+      "id": "nittano",
+      "name": "新田野",
+      "kana": "にったの"
+    },
+    {
+      "id": "kuniyoshi",
+      "name": "国吉",
+      "kana": "くによし"
+    },
+    {
+      "id": "kazusa-nakagawa",
+      "name": "上総中川",
+      "kana": "かずさなかがわ"
+    },
+    {
+      "id": "shiromigaoka",
+      "name": "城見ヶ丘",
+      "kana": "しろみがおか"
+    },
+    {
+      "id": "otaki",
+      "name": "大多喜",
+      "kana": "おおたき"
+    },
+    {
+      "id": "koyamatsu",
+      "name": "小谷松",
+      "kana": "こやまつ"
+    },
+    {
+      "id": "higashi-somoto",
+      "name": "東総元",
+      "kana": "ひがしそうもと"
+    },
+    {
+      "id": "kugahara-isumi",
+      "name": "久我原",
+      "kana": "くがはら"
+    },
+    {
+      "id": "somoto",
+      "name": "総元",
+      "kana": "そうもと"
+    },
+    {
+      "id": "nishihata",
+      "name": "西畑",
+      "kana": "にしはた"
+    },
+    {
+      "id": "kazusa-nakano",
+      "name": "上総中野",
+      "kana": "かずさなかの"
+    },
+    {
+      "id": "kazusa-murakami",
+      "name": "上総村上",
+      "kana": "かずさむらかみ"
+    },
+    {
+      "id": "amaariki",
+      "name": "海士有木",
+      "kana": "あまありき"
+    },
+    {
+      "id": "kazusa-mitsumata",
+      "name": "上総三又",
+      "kana": "かずさみつまた"
+    },
+    {
+      "id": "kazusa-yamada",
+      "name": "上総山田",
+      "kana": "かずさやまだ"
+    },
+    {
+      "id": "kofudai",
+      "name": "光風台",
+      "kana": "こうふうだい"
+    },
+    {
+      "id": "umatate",
+      "name": "馬立",
+      "kana": "うまたて"
+    },
+    {
+      "id": "kazusa-ushiku",
+      "name": "上総牛久",
+      "kana": "かずさうしく"
+    },
+    {
+      "id": "kazusa-kawama",
+      "name": "上総川間",
+      "kana": "かずさかわま"
+    },
+    {
+      "id": "kazusa-tsurumai",
+      "name": "上総鶴舞",
+      "kana": "かずさつるまい"
+    },
+    {
+      "id": "kazusa-kubo",
+      "name": "上総久保",
+      "kana": "かずさくぼ"
+    },
+    {
+      "id": "takataki",
+      "name": "高滝",
+      "kana": "たかたき"
+    },
+    {
+      "id": "satomi",
+      "name": "里見",
+      "kana": "さとみ"
+    },
+    {
+      "id": "itabu",
+      "name": "飯給",
+      "kana": "いいたま"
+    },
+    {
+      "id": "tsukisaki",
+      "name": "月崎",
+      "kana": "つきさき"
+    },
+    {
+      "id": "kazusa-okubo",
+      "name": "上総大久保",
+      "kana": "かずさおおくぼ"
+    },
+    {
+      "id": "yoro-keikoku",
+      "name": "養老渓谷",
+      "kana": "ようろうけいこく"
+    },
+    {
+      "id": "kami-otsuki",
+      "name": "上大月",
+      "kana": "かみおおつき"
+    },
+    {
+      "id": "tanokura",
+      "name": "田野倉",
+      "kana": "たのくら"
+    },
+    {
+      "id": "kasei",
+      "name": "禾生",
+      "kana": "かせい"
+    },
+    {
+      "id": "tsurushi",
+      "name": "都留市",
+      "kana": "つるし"
+    },
+    {
+      "id": "yamuramachi",
+      "name": "谷村町",
+      "kana": "やむらまち"
+    },
+    {
+      "id": "tsuru-bunka-daigaku-mae",
+      "name": "都留文科大学前",
+      "kana": "つるぶんかだいがくまえ"
+    },
+    {
+      "id": "tokaichiba-yamanashi",
+      "name": "十日市場",
+      "kana": "とおかいちば"
+    },
+    {
+      "id": "higashi-katsura",
+      "name": "東桂",
+      "kana": "ひがしかつら"
+    },
+    {
+      "id": "mitsutoge",
+      "name": "三つ峠",
+      "kana": "みつとうげ"
+    },
+    {
+      "id": "kotobuki-fujikyu",
+      "name": "寿",
+      "kana": "ことぶき"
+    },
+    {
+      "id": "yoshiike-onsen-mae",
+      "name": "葭池温泉前",
+      "kana": "よしいけおんせんまえ"
+    },
+    {
+      "id": "shimo-yoshida",
+      "name": "下吉田",
+      "kana": "しもよしだ"
+    },
+    {
+      "id": "gekkoji",
+      "name": "月江寺",
+      "kana": "げっこうじ"
+    },
+    {
+      "id": "fujisan",
+      "name": "富士山",
+      "kana": "ふじさん"
+    },
+    {
+      "id": "fujikyu-highland",
+      "name": "富士急ハイランド",
+      "kana": "ふじきゅうはいらんど"
+    },
+    {
+      "id": "kawaguchiko",
+      "name": "河口湖",
+      "kana": "かわぐちこ"
+    },
+    {
+      "id": "naka-karuizawa",
+      "name": "中軽井沢",
+      "kana": "なかかるいざわ"
+    },
+    {
+      "id": "shinano-oiwake",
+      "name": "信濃追分",
+      "kana": "しなのおいわけ"
+    },
+    {
+      "id": "miyota",
+      "name": "御代田",
+      "kana": "みよた"
+    },
+    {
+      "id": "hirahara",
+      "name": "平原",
+      "kana": "ひらはら"
+    },
+    {
+      "id": "shigeno",
+      "name": "滋野",
+      "kana": "しげの"
+    },
+    {
+      "id": "tanaka-shinano",
+      "name": "田中",
+      "kana": "たなか"
+    },
+    {
+      "id": "oya",
+      "name": "大屋",
+      "kana": "おおや"
+    },
+    {
+      "id": "shinano-kokubunji",
+      "name": "信濃国分寺",
+      "kana": "しなのこくぶんじ"
+    },
+    {
+      "id": "nishi-ueda",
+      "name": "西上田",
+      "kana": "にしうえだ"
+    },
+    {
+      "id": "tekuno-sakaki",
+      "name": "テクノさかき",
+      "kana": "てくのさかき"
+    },
+    {
+      "id": "sakaki",
+      "name": "坂城",
+      "kana": "さかき"
+    },
+    {
+      "id": "togura",
+      "name": "戸倉",
+      "kana": "とぐら"
+    },
+    {
+      "id": "chikuma",
+      "name": "千曲",
+      "kana": "ちくま"
+    },
+    {
+      "id": "yashiro",
+      "name": "屋代",
+      "kana": "やしろ"
+    },
+    {
+      "id": "yashiro-koko-mae",
+      "name": "屋代高校前",
+      "kana": "やしろこうこうまえ"
+    },
+    {
+      "id": "naoetsu",
+      "name": "直江津",
+      "kana": "なおえつ"
+    },
+    {
+      "id": "kasugayama",
+      "name": "春日山",
+      "kana": "かすがやま"
+    },
+    {
+      "id": "takada-niigata",
+      "name": "高田",
+      "kana": "たかだ"
+    },
+    {
+      "id": "minami-takada",
+      "name": "南高田",
+      "kana": "みなみたかだ"
+    },
+    {
+      "id": "kita-arai",
+      "name": "北新井",
+      "kana": "きたあらい"
+    },
+    {
+      "id": "arai",
+      "name": "新井",
+      "kana": "あらい"
+    },
+    {
+      "id": "nihongi",
+      "name": "二本木",
+      "kana": "にほんぎ"
+    },
+    {
+      "id": "sekiyama",
+      "name": "関山",
+      "kana": "せきやま"
+    },
+    {
+      "id": "myoko-kogen",
+      "name": "妙高高原",
+      "kana": "みょうこうこうげん"
+    },
+    {
+      "id": "ichiburi",
+      "name": "市振",
+      "kana": "いちぶり"
+    },
+    {
+      "id": "oyashirazu",
+      "name": "親不知",
+      "kana": "おやしらず"
+    },
+    {
+      "id": "omi-niigata",
+      "name": "青海",
+      "kana": "おうみ"
+    },
+    {
+      "id": "itoigawa",
+      "name": "糸魚川",
+      "kana": "いといがわ"
+    },
+    {
+      "id": "echigo-oshiage-hisui-kaigan",
+      "name": "えちご押上ひすい海岸",
+      "kana": "えちごおしあげひすいかいがん"
+    },
+    {
+      "id": "kajiyashiki",
+      "name": "梶屋敷",
+      "kana": "かじやしき"
+    },
+    {
+      "id": "uramoto",
+      "name": "浦本",
+      "kana": "うらもと"
+    },
+    {
+      "id": "no",
+      "name": "能生",
+      "kana": "のう"
+    },
+    {
+      "id": "tsutsuishi",
+      "name": "筒石",
+      "kana": "つついし"
+    },
+    {
+      "id": "nadachi",
+      "name": "名立",
+      "kana": "なだち"
+    },
+    {
+      "id": "arimagawa",
+      "name": "有間川",
+      "kana": "ありまがわ"
+    },
+    {
+      "id": "taniham",
+      "name": "谷浜",
+      "kana": "たにはま"
+    },
+    {
+      "id": "akasaka-yamanashi",
+      "name": "赤坂",
+      "kana": "あかさか"
+    },
+    {
+      "id": "akasaka-gunma",
+      "name": "赤坂",
+      "kana": "あかさか"
+    },
+    {
+      "id": "yamato-kanagawa",
+      "name": "大和",
+      "kana": "やまと"
+    },
+    {
+      "id": "nakano-gunma",
+      "name": "中野",
+      "kana": "なかの"
+    },
+    {
+      "id": "heiwadai-chiba",
+      "name": "平和台",
+      "kana": "へいわだい"
+    },
+    {
+      "id": "sakaecho-chiba",
+      "name": "栄町",
+      "kana": "さかえちょう"
+    },
+    {
+      "id": "ino-chiba",
+      "name": "井野",
+      "kana": "いの"
+    },
+    {
+      "id": "nagata-saitama",
+      "name": "永田",
+      "kana": "ながた"
+    },
+    {
+      "id": "eda-kanagawa",
+      "name": "江田",
+      "kana": "えだ"
+    },
+    {
+      "id": "ashigara-kanagawa",
+      "name": "足柄",
+      "kana": "あしがら"
+    },
+    {
+      "id": "ariake-tokyo",
+      "name": "有明",
+      "kana": "ありあけ"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "shinano--shinano",
+  "operatorId": "shinano",
+  "name": "しなの鉄道線",
+  "formalName": "しなの鉄道線",
+  "kana": "しなのてつどうせん",
+  "color": "#E60012",
+  "colorName": "赤",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版（一部日本語版）Wikipediaで確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　　この路線は路線図PDFの描画範囲の外（「至○○」の注記のみ）にあり、路線図との駅名照合ができていない。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Shinano_Railway_Line"
+  ],
+  "stations": [
+    {
+      "stationId": "karuizawa"
+    },
+    {
+      "stationId": "naka-karuizawa"
+    },
+    {
+      "stationId": "shinano-oiwake"
+    },
+    {
+      "stationId": "miyota"
+    },
+    {
+      "stationId": "hirahara"
+    },
+    {
+      "stationId": "komoro"
+    },
+    {
+      "stationId": "shigeno"
+    },
+    {
+      "stationId": "tanaka-shinano"
+    },
+    {
+      "stationId": "oya"
+    },
+    {
+      "stationId": "shinano-kokubunji"
+    },
+    {
+      "stationId": "ueda-nagano"
+    },
+    {
+      "stationId": "nishi-ueda"
+    },
+    {
+      "stationId": "tekuno-sakaki"
+    },
+    {
+      "stationId": "sakaki"
+    },
+    {
+      "stationId": "togura"
+    },
+    {
+      "stationId": "chikuma"
+    },
+    {
+      "stationId": "yashiro"
+    },
+    {
+      "stationId": "yashiro-koko-mae"
+    },
+    {
+      "stationId": "shinonoi"
+    }
+  ]
+}

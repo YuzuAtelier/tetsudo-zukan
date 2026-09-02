@@ -1,0 +1,32 @@
+{
+  "id": "tokyu--shin-yokohama",
+  "operatorId": "tokyu",
+  "name": "東急新横浜線",
+  "formalName": "新横浜線",
+  "kana": "とうきゅうしんよこはません",
+  "symbol": "SH",
+  "color": "#890D84",
+  "colorName": "紫",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（東横線は日本語版とも照合）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tokyu_Shin-yokohama_Line",
+    "https://www.tokyu.co.jp/railway/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "shin-yokohama",
+      "numbering": "SH01"
+    },
+    {
+      "stationId": "shin-tsunashima",
+      "numbering": "SH02"
+    },
+    {
+      "stationId": "hiyoshi",
+      "numbering": "SH03"
+    }
+  ]
+}

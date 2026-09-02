@@ -1,0 +1,96 @@
+{
+  "id": "jr-east--shonan-shinjuku",
+  "operatorId": "jr-east",
+  "name": "湘南新宿ライン",
+  "formalName": "湘南新宿ライン",
+  "kana": "しょうなんしんじゅくらいん",
+  "symbol": "JS",
+  "color": "#E21F26",
+  "colorName": "赤",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版・日本語版Wikipediaの2系統で照合。食い違いは個別の駅記事で決着させた。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　日本語版Wikipediaの駅一覧は江ノ島電鉄・小田急の駅を混入していたため、英語版を採用した。JS番号はJS06（逗子）〜JS24（大宮）にのみ設定されている。全駅が他路線と重複する運行系統なので、駅マスタには新規駅を追加していない。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Sh%C5%8Dnan%E2%80%93Shinjuku_Line",
+    "https://ja.wikipedia.org/wiki/湘南新宿ライン",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "zushi",
+      "numbering": "JS06"
+    },
+    {
+      "stationId": "kamakura",
+      "numbering": "JS07"
+    },
+    {
+      "stationId": "kita-kamakura",
+      "numbering": "JS08"
+    },
+    {
+      "stationId": "ofuna",
+      "numbering": "JS09"
+    },
+    {
+      "stationId": "totsuka",
+      "numbering": "JS10"
+    },
+    {
+      "stationId": "higashi-totsuka",
+      "numbering": "JS11"
+    },
+    {
+      "stationId": "hodogaya",
+      "numbering": "JS12"
+    },
+    {
+      "stationId": "yokohama",
+      "numbering": "JS13"
+    },
+    {
+      "stationId": "shin-kawasaki",
+      "numbering": "JS14"
+    },
+    {
+      "stationId": "musashi-kosugi",
+      "numbering": "JS15"
+    },
+    {
+      "stationId": "nishi-oi",
+      "numbering": "JS16"
+    },
+    {
+      "stationId": "osaki",
+      "numbering": "JS17"
+    },
+    {
+      "stationId": "ebisu",
+      "numbering": "JS18"
+    },
+    {
+      "stationId": "shibuya",
+      "numbering": "JS19"
+    },
+    {
+      "stationId": "shinjuku",
+      "numbering": "JS20"
+    },
+    {
+      "stationId": "ikebukuro",
+      "numbering": "JS21"
+    },
+    {
+      "stationId": "akabane",
+      "numbering": "JS22"
+    },
+    {
+      "stationId": "urawa",
+      "numbering": "JS23"
+    },
+    {
+      "stationId": "omiya",
+      "numbering": "JS24"
+    }
+  ]
+}

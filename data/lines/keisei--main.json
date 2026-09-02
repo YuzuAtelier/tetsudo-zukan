@@ -1,0 +1,189 @@
+{
+  "id": "keisei--main",
+  "operatorId": "keisei",
+  "name": "京成本線",
+  "formalName": "本線",
+  "kana": "けいせいほんせん",
+  "symbol": "KS",
+  "color": "#15388B",
+  "colorName": "紺",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を日本語版・英語版Wikipediaの2系統で照合。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。「ケ／ヶ」は事業者の正式表記に従った。　日本語版が海神の読みを「わたつみ」としていたが、英語版のローマ字 Kaijin により「かいじん」に直した。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/京成本線",
+    "https://en.wikipedia.org/wiki/Keisei_Main_Line",
+    "https://www.keisei.co.jp/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "keisei-ueno",
+      "numbering": "KS01"
+    },
+    {
+      "stationId": "nippori",
+      "numbering": "KS02"
+    },
+    {
+      "stationId": "shim-mikawashima",
+      "numbering": "KS03"
+    },
+    {
+      "stationId": "machiya",
+      "numbering": "KS04"
+    },
+    {
+      "stationId": "senju-ohashi",
+      "numbering": "KS05"
+    },
+    {
+      "stationId": "keisei-sekiya",
+      "numbering": "KS06"
+    },
+    {
+      "stationId": "horikiri-shobuen",
+      "numbering": "KS07"
+    },
+    {
+      "stationId": "ohanajaya",
+      "numbering": "KS08"
+    },
+    {
+      "stationId": "aoto",
+      "numbering": "KS09"
+    },
+    {
+      "stationId": "keisei-takasago",
+      "numbering": "KS10"
+    },
+    {
+      "stationId": "keisei-koiwa",
+      "numbering": "KS11"
+    },
+    {
+      "stationId": "edogawa",
+      "numbering": "KS12"
+    },
+    {
+      "stationId": "konodai",
+      "numbering": "KS13"
+    },
+    {
+      "stationId": "ichikawamama",
+      "numbering": "KS14"
+    },
+    {
+      "stationId": "sugano",
+      "numbering": "KS15"
+    },
+    {
+      "stationId": "keisei-yawata",
+      "numbering": "KS16"
+    },
+    {
+      "stationId": "onigoe",
+      "numbering": "KS17"
+    },
+    {
+      "stationId": "keisei-nakayama",
+      "numbering": "KS18"
+    },
+    {
+      "stationId": "higashi-nakayama",
+      "numbering": "KS19"
+    },
+    {
+      "stationId": "keisei-nishifuna",
+      "numbering": "KS20"
+    },
+    {
+      "stationId": "kaijin",
+      "numbering": "KS21"
+    },
+    {
+      "stationId": "keisei-funabashi",
+      "numbering": "KS22"
+    },
+    {
+      "stationId": "daijingushita",
+      "numbering": "KS23"
+    },
+    {
+      "stationId": "funabashi-keibajo",
+      "numbering": "KS24"
+    },
+    {
+      "stationId": "yatsu",
+      "numbering": "KS25"
+    },
+    {
+      "stationId": "keisei-tsudanuma",
+      "numbering": "KS26"
+    },
+    {
+      "stationId": "keisei-okubo",
+      "numbering": "KS27"
+    },
+    {
+      "stationId": "mimomi",
+      "numbering": "KS28"
+    },
+    {
+      "stationId": "yachiyodai",
+      "numbering": "KS29"
+    },
+    {
+      "stationId": "keisei-owada",
+      "numbering": "KS30"
+    },
+    {
+      "stationId": "katsutadai",
+      "numbering": "KS31"
+    },
+    {
+      "stationId": "shizu-keisei",
+      "numbering": "KS32"
+    },
+    {
+      "stationId": "yukarigaoka",
+      "numbering": "KS33"
+    },
+    {
+      "stationId": "keisei-usui",
+      "numbering": "KS34"
+    },
+    {
+      "stationId": "keisei-sakura",
+      "numbering": "KS35"
+    },
+    {
+      "stationId": "osakura",
+      "numbering": "KS36"
+    },
+    {
+      "stationId": "keisei-shisui",
+      "numbering": "KS37"
+    },
+    {
+      "stationId": "sogosando",
+      "numbering": "KS38"
+    },
+    {
+      "stationId": "kozunomori",
+      "numbering": "KS39"
+    },
+    {
+      "stationId": "keisei-narita",
+      "numbering": "KS40"
+    },
+    {
+      "stationId": "kuko-daini-biru",
+      "numbering": "KS41"
+    },
+    {
+      "stationId": "narita-kuko",
+      "numbering": "KS42"
+    }
+  ]
+}

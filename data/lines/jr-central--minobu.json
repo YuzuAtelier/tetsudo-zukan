@@ -1,0 +1,134 @@
+{
+  "id": "jr-central--minobu",
+  "operatorId": "jr-central",
+  "name": "身延線",
+  "formalName": "身延線",
+  "kana": "みのぶせん",
+  "color": "#0072BC",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版Wikipediaで確認。ふりがなはローマ字表記から起こした。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせて確認。　路線図には甲府と『至富士』の注記しか無く、途中駅は描かれていない。路線として成立させるため全区間（甲府〜富士）を入れてある。**路線図との照合ができていない**。並びは路線図に載る甲府を起点にした（正式な起点は富士）。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Minobu_Line"
+  ],
+  "stations": [
+    {
+      "stationId": "kofu"
+    },
+    {
+      "stationId": "kanente"
+    },
+    {
+      "stationId": "zenkoji"
+    },
+    {
+      "stationId": "minami-kofu"
+    },
+    {
+      "stationId": "kai-sumiyoshi"
+    },
+    {
+      "stationId": "kokubo"
+    },
+    {
+      "stationId": "joei"
+    },
+    {
+      "stationId": "koikawa"
+    },
+    {
+      "stationId": "higashi-hanawa"
+    },
+    {
+      "stationId": "kai-ueno"
+    },
+    {
+      "stationId": "ashigawa"
+    },
+    {
+      "stationId": "ichikawa-hommachi"
+    },
+    {
+      "stationId": "ichikawa-daimon"
+    },
+    {
+      "stationId": "kajikazawaguchi"
+    },
+    {
+      "stationId": "ochii"
+    },
+    {
+      "stationId": "kai-iwama"
+    },
+    {
+      "stationId": "kunado"
+    },
+    {
+      "stationId": "ichinose"
+    },
+    {
+      "stationId": "kai-tokiwa"
+    },
+    {
+      "stationId": "shimobe-onsen"
+    },
+    {
+      "stationId": "hadakajima"
+    },
+    {
+      "stationId": "shionosawa"
+    },
+    {
+      "stationId": "minobu"
+    },
+    {
+      "stationId": "kai-oshima"
+    },
+    {
+      "stationId": "utsubuna"
+    },
+    {
+      "stationId": "yorihata"
+    },
+    {
+      "stationId": "ide"
+    },
+    {
+      "stationId": "toshima"
+    },
+    {
+      "stationId": "inako"
+    },
+    {
+      "stationId": "shibakawa"
+    },
+    {
+      "stationId": "numakubo"
+    },
+    {
+      "stationId": "nishi-fujinomiya"
+    },
+    {
+      "stationId": "fujinomiya"
+    },
+    {
+      "stationId": "gendoji"
+    },
+    {
+      "stationId": "fujine"
+    },
+    {
+      "stationId": "iriyamase"
+    },
+    {
+      "stationId": "tatebori"
+    },
+    {
+      "stationId": "yunoki"
+    },
+    {
+      "stationId": "fuji"
+    }
+  ]
+}

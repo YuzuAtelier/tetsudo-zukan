@@ -1,0 +1,100 @@
+{
+  "id": "jr-east--sotobo",
+  "operatorId": "jr-east",
+  "name": "外房線",
+  "formalName": "外房線",
+  "kana": "そとぼうせん",
+  "color": "#DC4532",
+  "colorName": "赤",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版・日本語版Wikipediaの2系統で照合。ふりがなは英語版のローマ字から起こした（日本語版のふりがなには誤りが多数あった）。駅名を路線図PDFの抽出結果と照合。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　日本語版のふりがなの誤りを英語版ローマ字で修正した（東浪見→とらみ、太東→たいとう、八積→やつみ、本納→ほんのう、安房小湊→あわこみなと）。座標検査の本千葉→蘇我・蘇我→鎌取は、蘇我のラベルが分岐駅として線の西側に離して置かれているための誤検知。　2026-09-02: 同名の別駅と1駅に統合されていたため「永田」を nagata-chiba（外房線（千葉県大網白里市））として分離した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Sotob%C5%8D_Line",
+    "https://ja.wikipedia.org/wiki/外房線",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "chiba"
+    },
+    {
+      "stationId": "hon-chiba"
+    },
+    {
+      "stationId": "soga"
+    },
+    {
+      "stationId": "kamatori"
+    },
+    {
+      "stationId": "honda"
+    },
+    {
+      "stationId": "toke"
+    },
+    {
+      "stationId": "oami"
+    },
+    {
+      "stationId": "nagata-chiba"
+    },
+    {
+      "stationId": "honno"
+    },
+    {
+      "stationId": "shin-mobara"
+    },
+    {
+      "stationId": "mobara"
+    },
+    {
+      "stationId": "yatsumi"
+    },
+    {
+      "stationId": "kazusa-ichinomiya"
+    },
+    {
+      "stationId": "torami"
+    },
+    {
+      "stationId": "taito"
+    },
+    {
+      "stationId": "chojamachi"
+    },
+    {
+      "stationId": "mikado"
+    },
+    {
+      "stationId": "ohara"
+    },
+    {
+      "stationId": "namihana"
+    },
+    {
+      "stationId": "onjuku"
+    },
+    {
+      "stationId": "katsuura"
+    },
+    {
+      "stationId": "ubara"
+    },
+    {
+      "stationId": "kazusa-okitsu"
+    },
+    {
+      "stationId": "namegawa-island"
+    },
+    {
+      "stationId": "awa-kominato"
+    },
+    {
+      "stationId": "awa-amatsu"
+    },
+    {
+      "stationId": "awa-kamogawa"
+    }
+  ]
+}

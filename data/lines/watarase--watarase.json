@@ -1,0 +1,68 @@
+{
+  "id": "watarase--watarase",
+  "operatorId": "watarase",
+  "name": "わたらせ渓谷鐵道わたらせ渓谷線",
+  "formalName": "わたらせ渓谷線",
+  "kana": "わたらせけいこくてつどうわたらせけいこくせん",
+  "color": "#00A650",
+  "colorName": "緑",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版（一部日本語版）Wikipediaで確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　　この路線は路線図PDFの描画範囲の外（「至○○」の注記のみ）にあり、路線図との駅名照合ができていない。　2026-09-02: 同名の別駅と1駅に統合されていたため「中野」を nakano-gunma（わたらせ渓谷線（群馬県みどり市））として分離した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Watarase_Keikoku_Line"
+  ],
+  "stations": [
+    {
+      "stationId": "kiryu"
+    },
+    {
+      "stationId": "shimo-shinden"
+    },
+    {
+      "stationId": "aioi"
+    },
+    {
+      "stationId": "undo-koen"
+    },
+    {
+      "stationId": "omama"
+    },
+    {
+      "stationId": "kami-kambai"
+    },
+    {
+      "stationId": "motojuku"
+    },
+    {
+      "stationId": "mizunuma"
+    },
+    {
+      "stationId": "hanawa-watarase"
+    },
+    {
+      "stationId": "nakano-gunma"
+    },
+    {
+      "stationId": "konaka"
+    },
+    {
+      "stationId": "godo"
+    },
+    {
+      "stationId": "sori"
+    },
+    {
+      "stationId": "haramuko"
+    },
+    {
+      "stationId": "tsudo"
+    },
+    {
+      "stationId": "ashio"
+    },
+    {
+      "stationId": "mato"
+    }
+  ]
+}

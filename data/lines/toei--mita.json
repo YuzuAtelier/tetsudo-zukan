@@ -1,0 +1,128 @@
+{
+  "id": "toei--mita",
+  "operatorId": "toei",
+  "name": "都営三田線",
+  "formalName": "東京都地下鉄6号線 三田線",
+  "kana": "とえいみたせん",
+  "symbol": "I",
+  "color": "#2E6AB1",
+  "colorName": "ブルー",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を事業者公式サイトとWikipediaの2系統で照合し一致を確認。駅名を路線図PDFの抽出結果と照合。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、破綻が無いことを確認。　白金高輪→三田の間隔が他より広いと指摘されたが、実際に約2.3kmある三田線最長区間のため正常。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/東京都交通局三田線",
+    "https://en.wikipedia.org/wiki/Toei_Mita_Line",
+    "https://www.marorika.com/entry/tokyo-metro-line-color-code"
+  ],
+  "stations": [
+    {
+      "stationId": "meguro",
+      "numbering": "I01"
+    },
+    {
+      "stationId": "shirokanedai",
+      "numbering": "I02"
+    },
+    {
+      "stationId": "shirokane-takanawa",
+      "numbering": "I03"
+    },
+    {
+      "stationId": "mita",
+      "numbering": "I04"
+    },
+    {
+      "stationId": "shibakoen",
+      "numbering": "I05"
+    },
+    {
+      "stationId": "onarimon",
+      "numbering": "I06"
+    },
+    {
+      "stationId": "uchisaiwaicho",
+      "numbering": "I07"
+    },
+    {
+      "stationId": "hibiya",
+      "numbering": "I08"
+    },
+    {
+      "stationId": "otemachi",
+      "numbering": "I09"
+    },
+    {
+      "stationId": "jimbocho",
+      "numbering": "I10"
+    },
+    {
+      "stationId": "suidobashi",
+      "numbering": "I11"
+    },
+    {
+      "stationId": "kasuga",
+      "numbering": "I12"
+    },
+    {
+      "stationId": "hakusan",
+      "numbering": "I13"
+    },
+    {
+      "stationId": "sengoku",
+      "numbering": "I14"
+    },
+    {
+      "stationId": "sugamo",
+      "numbering": "I15"
+    },
+    {
+      "stationId": "nishi-sugamo",
+      "numbering": "I16"
+    },
+    {
+      "stationId": "shin-itabashi",
+      "numbering": "I17"
+    },
+    {
+      "stationId": "itabashikuyakushomae",
+      "numbering": "I18"
+    },
+    {
+      "stationId": "itabashi-honcho",
+      "numbering": "I19"
+    },
+    {
+      "stationId": "motohasunuma",
+      "numbering": "I20"
+    },
+    {
+      "stationId": "shimura-sakaue",
+      "numbering": "I21"
+    },
+    {
+      "stationId": "shimura-sanchome",
+      "numbering": "I22"
+    },
+    {
+      "stationId": "hasune",
+      "numbering": "I23"
+    },
+    {
+      "stationId": "nishidai",
+      "numbering": "I24"
+    },
+    {
+      "stationId": "takashimadaira",
+      "numbering": "I25"
+    },
+    {
+      "stationId": "shin-takashimadaira",
+      "numbering": "I26"
+    },
+    {
+      "stationId": "nishi-takashimadaira",
+      "numbering": "I27"
+    }
+  ]
+}

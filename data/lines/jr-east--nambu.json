@@ -1,0 +1,123 @@
+{
+  "id": "jr-east--nambu",
+  "operatorId": "jr-east",
+  "name": "南武線",
+  "formalName": "南武線",
+  "kana": "なんぶせん",
+  "symbol": "JN",
+  "color": "#FBD05D",
+  "colorName": "黄",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を複数の出典で照合。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Nambu_Line",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "kawasaki",
+      "numbering": "JN01"
+    },
+    {
+      "stationId": "shitte",
+      "numbering": "JN02"
+    },
+    {
+      "stationId": "yako",
+      "numbering": "JN03"
+    },
+    {
+      "stationId": "kashimada",
+      "numbering": "JN04"
+    },
+    {
+      "stationId": "hirama",
+      "numbering": "JN05"
+    },
+    {
+      "stationId": "mukaigawara",
+      "numbering": "JN06"
+    },
+    {
+      "stationId": "musashi-kosugi",
+      "numbering": "JN07"
+    },
+    {
+      "stationId": "musashi-nakahara",
+      "numbering": "JN08"
+    },
+    {
+      "stationId": "musashi-shinjo",
+      "numbering": "JN09"
+    },
+    {
+      "stationId": "musashi-mizonokuchi",
+      "numbering": "JN10"
+    },
+    {
+      "stationId": "tsudayama",
+      "numbering": "JN11"
+    },
+    {
+      "stationId": "kuji",
+      "numbering": "JN12"
+    },
+    {
+      "stationId": "shukugawara",
+      "numbering": "JN13"
+    },
+    {
+      "stationId": "noborito",
+      "numbering": "JN14"
+    },
+    {
+      "stationId": "nakanoshima",
+      "numbering": "JN15"
+    },
+    {
+      "stationId": "inadazutsumi",
+      "numbering": "JN16"
+    },
+    {
+      "stationId": "yanokuchi",
+      "numbering": "JN17"
+    },
+    {
+      "stationId": "inagi-naganuma",
+      "numbering": "JN18"
+    },
+    {
+      "stationId": "minami-tama",
+      "numbering": "JN19"
+    },
+    {
+      "stationId": "fuchu-hommachi",
+      "numbering": "JN20"
+    },
+    {
+      "stationId": "bubaigawara",
+      "numbering": "JN21"
+    },
+    {
+      "stationId": "nishifu",
+      "numbering": "JN22"
+    },
+    {
+      "stationId": "yaho",
+      "numbering": "JN23"
+    },
+    {
+      "stationId": "yagawa",
+      "numbering": "JN24"
+    },
+    {
+      "stationId": "nishi-kunitachi",
+      "numbering": "JN25"
+    },
+    {
+      "stationId": "tachikawa",
+      "numbering": "JN26"
+    }
+  ]
+}

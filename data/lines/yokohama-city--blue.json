@@ -1,0 +1,147 @@
+{
+  "id": "yokohama-city--blue",
+  "operatorId": "yokohama-city",
+  "name": "横浜市営地下鉄ブルーライン",
+  "formalName": "ブルーライン（1号線・3号線）",
+  "kana": "よこはましえいちかてつぶるーらいん",
+  "symbol": "B",
+  "color": "#0079C2",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認。ふりがなはローマ字表記から起こした。ブルーラインは湘南台(B01)を起点として番号が振られているため、その順で並べた。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Blue_Line_(Yokohama)",
+    "https://www.city.yokohama.lg.jp/kotsu/"
+  ],
+  "stations": [
+    {
+      "stationId": "shonandai",
+      "numbering": "B01"
+    },
+    {
+      "stationId": "shimoiida",
+      "numbering": "B02"
+    },
+    {
+      "stationId": "tateba",
+      "numbering": "B03"
+    },
+    {
+      "stationId": "nakada",
+      "numbering": "B04"
+    },
+    {
+      "stationId": "odoriba",
+      "numbering": "B05"
+    },
+    {
+      "stationId": "totsuka",
+      "numbering": "B06"
+    },
+    {
+      "stationId": "maioka",
+      "numbering": "B07"
+    },
+    {
+      "stationId": "shimonagaya",
+      "numbering": "B08"
+    },
+    {
+      "stationId": "kaminagaya",
+      "numbering": "B09"
+    },
+    {
+      "stationId": "konan-chuo",
+      "numbering": "B10"
+    },
+    {
+      "stationId": "kamiooka",
+      "numbering": "B11"
+    },
+    {
+      "stationId": "gumyoji",
+      "numbering": "B12"
+    },
+    {
+      "stationId": "maita",
+      "numbering": "B13"
+    },
+    {
+      "stationId": "yoshinocho",
+      "numbering": "B14"
+    },
+    {
+      "stationId": "bandobashi",
+      "numbering": "B15"
+    },
+    {
+      "stationId": "isezakichojamachi",
+      "numbering": "B16"
+    },
+    {
+      "stationId": "kannai",
+      "numbering": "B17"
+    },
+    {
+      "stationId": "sakuragicho",
+      "numbering": "B18"
+    },
+    {
+      "stationId": "takashimacho",
+      "numbering": "B19"
+    },
+    {
+      "stationId": "yokohama",
+      "numbering": "B20"
+    },
+    {
+      "stationId": "mitsuzawa-shimocho",
+      "numbering": "B21"
+    },
+    {
+      "stationId": "mitsuzawa-kamicho",
+      "numbering": "B22"
+    },
+    {
+      "stationId": "katakuracho",
+      "numbering": "B23"
+    },
+    {
+      "stationId": "kishine-koen",
+      "numbering": "B24"
+    },
+    {
+      "stationId": "shin-yokohama",
+      "numbering": "B25"
+    },
+    {
+      "stationId": "kita-shin-yokohama",
+      "numbering": "B26"
+    },
+    {
+      "stationId": "nippa",
+      "numbering": "B27"
+    },
+    {
+      "stationId": "nakamachidai",
+      "numbering": "B28"
+    },
+    {
+      "stationId": "center-minami",
+      "numbering": "B29"
+    },
+    {
+      "stationId": "center-kita",
+      "numbering": "B30"
+    },
+    {
+      "stationId": "nakagawa",
+      "numbering": "B31"
+    },
+    {
+      "stationId": "azamino",
+      "numbering": "B32"
+    }
+  ]
+}

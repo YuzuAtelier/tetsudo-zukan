@@ -1,0 +1,59 @@
+{
+  "id": "yokohama-city--green",
+  "operatorId": "yokohama-city",
+  "name": "横浜市営地下鉄グリーンライン",
+  "formalName": "グリーンライン（4号線）",
+  "kana": "よこはましえいちかてつぐりーんらいん",
+  "symbol": "G",
+  "color": "#0DA14F",
+  "colorName": "緑",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認。ふりがなはローマ字表記から起こした。ブルーラインは湘南台(B01)を起点として番号が振られているため、その順で並べた。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Green_Line_(Yokohama)",
+    "https://www.city.yokohama.lg.jp/kotsu/"
+  ],
+  "stations": [
+    {
+      "stationId": "nakayama",
+      "numbering": "G01"
+    },
+    {
+      "stationId": "kawawacho",
+      "numbering": "G02"
+    },
+    {
+      "stationId": "tsuzuki-fureainooka",
+      "numbering": "G03"
+    },
+    {
+      "stationId": "center-minami",
+      "numbering": "G04"
+    },
+    {
+      "stationId": "center-kita",
+      "numbering": "G05"
+    },
+    {
+      "stationId": "kita-yamata",
+      "numbering": "G06"
+    },
+    {
+      "stationId": "higashi-yamata",
+      "numbering": "G07"
+    },
+    {
+      "stationId": "takata",
+      "numbering": "G08"
+    },
+    {
+      "stationId": "hiyoshi-honcho",
+      "numbering": "G09"
+    },
+    {
+      "stationId": "hiyoshi",
+      "numbering": "G10"
+    }
+  ]
+}

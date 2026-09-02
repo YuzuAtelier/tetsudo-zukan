@@ -1,0 +1,51 @@
+{
+  "id": "jr-east--kawagoe",
+  "operatorId": "jr-east",
+  "name": "川越線",
+  "formalName": "川越線",
+  "kana": "かわごえせん",
+  "color": "#00AC9A",
+  "colorName": "緑",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を複数の出典で照合。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　駅ナンバリングは設定されていないことを西大宮駅の記事で確認済み。路線カラーは出典が大宮〜川越の値(#00AC9A)しか持たない。川越〜高麗川は八高線と同じ運行で色が異なる可能性があるため**要確認**。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/川越線",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "omiya"
+    },
+    {
+      "stationId": "nisshin"
+    },
+    {
+      "stationId": "nishi-omiya"
+    },
+    {
+      "stationId": "sashiogi"
+    },
+    {
+      "stationId": "minami-furuya"
+    },
+    {
+      "stationId": "kawagoe"
+    },
+    {
+      "stationId": "nishi-kawagoe"
+    },
+    {
+      "stationId": "matoba"
+    },
+    {
+      "stationId": "kasahata"
+    },
+    {
+      "stationId": "musashi-takahagi"
+    },
+    {
+      "stationId": "komagawa"
+    }
+  ]
+}

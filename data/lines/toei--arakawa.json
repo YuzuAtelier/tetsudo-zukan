@@ -1,0 +1,139 @@
+{
+  "id": "toei--arakawa",
+  "operatorId": "toei",
+  "name": "東京さくらトラム（都電荒川線）",
+  "formalName": "都電荒川線",
+  "kana": "とうきょうさくらとらむ",
+  "symbol": "SA",
+  "color": "#E85298",
+  "colorName": "ローズ",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と停留場番号を英語版Wikipediaで確認。ふりがなはローマ字表記から起こした。路線図PDFの表記「東京さくらトラム（都電荒川線）」に合わせて路線名を付けた。都電の停留場名は西ケ原四丁目・都電雑司ケ谷とも路線図PDFの表記（大きいケ）で登録している。　2026-09-02: 同名の別駅と1駅に統合されていたため「栄町」を sakaecho-toden（都電荒川線（東京都北区））として分離した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Toden_Arakawa_Line",
+    "https://www.kotsu.metro.tokyo.jp/"
+  ],
+  "stations": [
+    {
+      "stationId": "minowabashi",
+      "numbering": "SA01"
+    },
+    {
+      "stationId": "arakawa-itchumae",
+      "numbering": "SA02"
+    },
+    {
+      "stationId": "arakawa-kuyakushomae",
+      "numbering": "SA03"
+    },
+    {
+      "stationId": "arakawa-nichome",
+      "numbering": "SA04"
+    },
+    {
+      "stationId": "arakawa-nanachome",
+      "numbering": "SA05"
+    },
+    {
+      "stationId": "machiya-ekimae",
+      "numbering": "SA06"
+    },
+    {
+      "stationId": "machiya-nichome",
+      "numbering": "SA07"
+    },
+    {
+      "stationId": "higashi-ogu-sanchome",
+      "numbering": "SA08"
+    },
+    {
+      "stationId": "kumanomae",
+      "numbering": "SA09"
+    },
+    {
+      "stationId": "miyanomae",
+      "numbering": "SA10"
+    },
+    {
+      "stationId": "odai",
+      "numbering": "SA11"
+    },
+    {
+      "stationId": "arakawa-yuenchimae",
+      "numbering": "SA12"
+    },
+    {
+      "stationId": "arakawa-shakomae",
+      "numbering": "SA13"
+    },
+    {
+      "stationId": "kajiwara",
+      "numbering": "SA14"
+    },
+    {
+      "stationId": "sakaecho-toden",
+      "numbering": "SA15"
+    },
+    {
+      "stationId": "oji-ekimae",
+      "numbering": "SA16"
+    },
+    {
+      "stationId": "asukayama",
+      "numbering": "SA17"
+    },
+    {
+      "stationId": "takinogawa-itchome",
+      "numbering": "SA18"
+    },
+    {
+      "stationId": "nishigahara-yonchome",
+      "numbering": "SA19"
+    },
+    {
+      "stationId": "shin-koshinzuka",
+      "numbering": "SA20"
+    },
+    {
+      "stationId": "koshinzuka",
+      "numbering": "SA21"
+    },
+    {
+      "stationId": "sugamoshinden",
+      "numbering": "SA22"
+    },
+    {
+      "stationId": "otsuka-ekimae",
+      "numbering": "SA23"
+    },
+    {
+      "stationId": "mukohara",
+      "numbering": "SA24"
+    },
+    {
+      "stationId": "higashi-ikebukuro-yonchome",
+      "numbering": "SA25"
+    },
+    {
+      "stationId": "toden-zoshigaya",
+      "numbering": "SA26"
+    },
+    {
+      "stationId": "kishibojimmae",
+      "numbering": "SA27"
+    },
+    {
+      "stationId": "gakushuinshita",
+      "numbering": "SA28"
+    },
+    {
+      "stationId": "omokagebashi",
+      "numbering": "SA29"
+    },
+    {
+      "stationId": "waseda",
+      "numbering": "SA30"
+    }
+  ]
+}

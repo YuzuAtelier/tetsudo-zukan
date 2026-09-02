@@ -1,0 +1,119 @@
+{
+  "id": "jr-east--ome",
+  "operatorId": "jr-east",
+  "name": "青梅線",
+  "formalName": "青梅線",
+  "kana": "おうめせん",
+  "symbol": "JC",
+  "color": "#FFD400",
+  "colorName": "カナリア",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を複数の出典で照合。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　起点の立川は中央線快速と共有（JC19）。青梅線内はJC51〜JC74。",
+  "source": [
+    "https://en.wikipedia.org/wiki/%C5%8Cme_Line",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "tachikawa",
+      "numbering": "JC19"
+    },
+    {
+      "stationId": "nishi-tachikawa",
+      "numbering": "JC51"
+    },
+    {
+      "stationId": "higashi-nakagami",
+      "numbering": "JC52"
+    },
+    {
+      "stationId": "nakagami",
+      "numbering": "JC53"
+    },
+    {
+      "stationId": "akishima",
+      "numbering": "JC54"
+    },
+    {
+      "stationId": "haijima",
+      "numbering": "JC55"
+    },
+    {
+      "stationId": "ushihama",
+      "numbering": "JC56"
+    },
+    {
+      "stationId": "fussa",
+      "numbering": "JC57"
+    },
+    {
+      "stationId": "hamura",
+      "numbering": "JC58"
+    },
+    {
+      "stationId": "ozaku",
+      "numbering": "JC59"
+    },
+    {
+      "stationId": "kabe",
+      "numbering": "JC60"
+    },
+    {
+      "stationId": "higashi-ome",
+      "numbering": "JC61"
+    },
+    {
+      "stationId": "ome",
+      "numbering": "JC62"
+    },
+    {
+      "stationId": "miyanohira",
+      "numbering": "JC63"
+    },
+    {
+      "stationId": "hinatawada",
+      "numbering": "JC64"
+    },
+    {
+      "stationId": "ishigamimae",
+      "numbering": "JC65"
+    },
+    {
+      "stationId": "futamatao",
+      "numbering": "JC66"
+    },
+    {
+      "stationId": "ikusabata",
+      "numbering": "JC67"
+    },
+    {
+      "stationId": "sawai",
+      "numbering": "JC68"
+    },
+    {
+      "stationId": "mitake",
+      "numbering": "JC69"
+    },
+    {
+      "stationId": "kawai",
+      "numbering": "JC70"
+    },
+    {
+      "stationId": "kori",
+      "numbering": "JC71"
+    },
+    {
+      "stationId": "hatonosu",
+      "numbering": "JC72"
+    },
+    {
+      "stationId": "shiromaru",
+      "numbering": "JC73"
+    },
+    {
+      "stationId": "oku-tama",
+      "numbering": "JC74"
+    }
+  ]
+}

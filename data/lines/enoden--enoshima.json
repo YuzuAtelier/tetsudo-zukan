@@ -1,0 +1,62 @@
+{
+  "id": "enoden--enoshima",
+  "operatorId": "enoden",
+  "name": "江ノ島電鉄線",
+  "formalName": "江ノ島電鉄線",
+  "kana": "えのしまでんてつせん",
+  "color": "#00A0E9",
+  "colorName": "水色",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版（一部日本語版）Wikipediaで確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Enoshima_Electric_Railway"
+  ],
+  "stations": [
+    {
+      "stationId": "fujisawa"
+    },
+    {
+      "stationId": "ishigami"
+    },
+    {
+      "stationId": "yanagikoji"
+    },
+    {
+      "stationId": "kugenuma"
+    },
+    {
+      "stationId": "shonankaigan-koen"
+    },
+    {
+      "stationId": "enoshima-enoden"
+    },
+    {
+      "stationId": "koshigoe"
+    },
+    {
+      "stationId": "kamakura-kokomae"
+    },
+    {
+      "stationId": "shichirigahama"
+    },
+    {
+      "stationId": "inamuragasaki"
+    },
+    {
+      "stationId": "gokurakuji"
+    },
+    {
+      "stationId": "hase"
+    },
+    {
+      "stationId": "yuigahama"
+    },
+    {
+      "stationId": "wadazuka"
+    },
+    {
+      "stationId": "kamakura"
+    }
+  ]
+}

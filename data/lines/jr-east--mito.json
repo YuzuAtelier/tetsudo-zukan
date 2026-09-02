@@ -1,0 +1,66 @@
+{
+  "id": "jr-east--mito",
+  "operatorId": "jr-east",
+  "name": "水戸線",
+  "formalName": "水戸線",
+  "kana": "みとせん",
+  "color": "#3333FF",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版・日本語版Wikipediaの2系統で照合。ふりがなはローマ字表記から起こした。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせて確認。　大和（茨城県桜川市）は小田急・相鉄の大和（神奈川県）と同名の別駅なので yamato-ibaraki とした。神奈川の大和を追加するときは yamato-kanagawa にすること。　2026-09-02: 同名の別駅と1駅に統合されていたため「大和」を yamato-ibaraki（水戸線（茨城県桜川市））として分離した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Mito_Line",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "oyama"
+    },
+    {
+      "stationId": "otabayashi"
+    },
+    {
+      "stationId": "yuki"
+    },
+    {
+      "stationId": "higashi-yuki"
+    },
+    {
+      "stationId": "kawashima"
+    },
+    {
+      "stationId": "tamado"
+    },
+    {
+      "stationId": "shimodate"
+    },
+    {
+      "stationId": "niihari"
+    },
+    {
+      "stationId": "yamato-ibaraki"
+    },
+    {
+      "stationId": "iwase"
+    },
+    {
+      "stationId": "haguro"
+    },
+    {
+      "stationId": "fukuhara"
+    },
+    {
+      "stationId": "inada"
+    },
+    {
+      "stationId": "kasama"
+    },
+    {
+      "stationId": "shishido"
+    },
+    {
+      "stationId": "tomobe"
+    }
+  ]
+}

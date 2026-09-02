@@ -1,0 +1,49 @@
+{
+  "id": "jr-east--narita-abiko",
+  "operatorId": "jr-east",
+  "name": "成田線我孫子支線",
+  "formalName": "成田線（成田〜我孫子）",
+  "kana": "なりたせんあびこしせん",
+  "color": "#339966",
+  "colorName": "緑",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版・日本語版Wikipediaの2系統で照合。ふりがなは英語版のローマ字から起こした（日本語版のふりがなには誤りが多数あった）。駅名を路線図PDFの抽出結果と照合。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　ふりがなを英語版ローマ字で修正（新木→あらき、下総松崎→しもうさまんざき）。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Narita_Line",
+    "https://ja.wikipedia.org/wiki/成田線",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "narita"
+    },
+    {
+      "stationId": "shimosa-manzaki"
+    },
+    {
+      "stationId": "ajiki"
+    },
+    {
+      "stationId": "kobayashi"
+    },
+    {
+      "stationId": "kioroshi"
+    },
+    {
+      "stationId": "fusa"
+    },
+    {
+      "stationId": "araki"
+    },
+    {
+      "stationId": "kohoku"
+    },
+    {
+      "stationId": "higashi-abiko"
+    },
+    {
+      "stationId": "abiko"
+    }
+  ]
+}

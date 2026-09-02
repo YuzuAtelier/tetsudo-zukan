@@ -1,0 +1,208 @@
+{
+  "id": "odakyu--odawara",
+  "operatorId": "odakyu",
+  "name": "小田急小田原線",
+  "formalName": "小田原線",
+  "kana": "おだきゅうおだわらせん",
+  "symbol": "OH",
+  "color": "#2288CC",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、小田急電鉄公式サイトと突き合わせた。ふりがなはローマ字表記から起こした。「ケ／ヶ」は事業者の正式表記（小さいヶ）に従った。　足柄（神奈川県小田原市）は御殿場線の足柄（静岡県）と同名の別駅なので ashigara-kanagawa とした。　2026-09-02: 同名の別駅と1駅に統合されていたため「足柄」を ashigara-kanagawa（小田急小田原線（神奈川県小田原市））として分離した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Odakyu_Odawara_Line",
+    "https://www.odakyu.jp/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "shinjuku",
+      "numbering": "OH01"
+    },
+    {
+      "stationId": "minami-shinjuku",
+      "numbering": "OH02"
+    },
+    {
+      "stationId": "sangubashi",
+      "numbering": "OH03"
+    },
+    {
+      "stationId": "yoyogi-hachiman",
+      "numbering": "OH04"
+    },
+    {
+      "stationId": "yoyogi-uehara",
+      "numbering": "OH05"
+    },
+    {
+      "stationId": "higashi-kitazawa",
+      "numbering": "OH06"
+    },
+    {
+      "stationId": "shimo-kitazawa",
+      "numbering": "OH07"
+    },
+    {
+      "stationId": "setagaya-daita",
+      "numbering": "OH08"
+    },
+    {
+      "stationId": "umegaoka",
+      "numbering": "OH09"
+    },
+    {
+      "stationId": "gotokuji",
+      "numbering": "OH10"
+    },
+    {
+      "stationId": "kyodo",
+      "numbering": "OH11"
+    },
+    {
+      "stationId": "chitose-funabashi",
+      "numbering": "OH12"
+    },
+    {
+      "stationId": "soshigaya-okura",
+      "numbering": "OH13"
+    },
+    {
+      "stationId": "seijogakuen-mae",
+      "numbering": "OH14"
+    },
+    {
+      "stationId": "kitami",
+      "numbering": "OH15"
+    },
+    {
+      "stationId": "komae",
+      "numbering": "OH16"
+    },
+    {
+      "stationId": "izumi-tamagawa",
+      "numbering": "OH17"
+    },
+    {
+      "stationId": "noborito",
+      "numbering": "OH18"
+    },
+    {
+      "stationId": "mukogaoka-yuen",
+      "numbering": "OH19"
+    },
+    {
+      "stationId": "ikuta",
+      "numbering": "OH20"
+    },
+    {
+      "stationId": "yomiuri-land-mae",
+      "numbering": "OH21"
+    },
+    {
+      "stationId": "yurigaoka",
+      "numbering": "OH22"
+    },
+    {
+      "stationId": "shin-yurigaoka",
+      "numbering": "OH23"
+    },
+    {
+      "stationId": "kakio",
+      "numbering": "OH24"
+    },
+    {
+      "stationId": "tsurukawa",
+      "numbering": "OH25"
+    },
+    {
+      "stationId": "tamagawagakuen-mae",
+      "numbering": "OH26"
+    },
+    {
+      "stationId": "machida",
+      "numbering": "OH27"
+    },
+    {
+      "stationId": "sagami-ono",
+      "numbering": "OH28"
+    },
+    {
+      "stationId": "odakyu-sagamihara",
+      "numbering": "OH29"
+    },
+    {
+      "stationId": "sobudai-mae",
+      "numbering": "OH30"
+    },
+    {
+      "stationId": "zama",
+      "numbering": "OH31"
+    },
+    {
+      "stationId": "ebina",
+      "numbering": "OH32"
+    },
+    {
+      "stationId": "atsugi",
+      "numbering": "OH33"
+    },
+    {
+      "stationId": "hon-atsugi",
+      "numbering": "OH34"
+    },
+    {
+      "stationId": "aiko-ishida",
+      "numbering": "OH35"
+    },
+    {
+      "stationId": "isehara",
+      "numbering": "OH36"
+    },
+    {
+      "stationId": "tsurumaki-onsen",
+      "numbering": "OH37"
+    },
+    {
+      "stationId": "tokaidaigaku-mae",
+      "numbering": "OH38"
+    },
+    {
+      "stationId": "hadano",
+      "numbering": "OH39"
+    },
+    {
+      "stationId": "shibusawa",
+      "numbering": "OH40"
+    },
+    {
+      "stationId": "shin-matsuda",
+      "numbering": "OH41"
+    },
+    {
+      "stationId": "kaisei",
+      "numbering": "OH42"
+    },
+    {
+      "stationId": "kayama",
+      "numbering": "OH43"
+    },
+    {
+      "stationId": "tomizu",
+      "numbering": "OH44"
+    },
+    {
+      "stationId": "hotaruda",
+      "numbering": "OH45"
+    },
+    {
+      "stationId": "ashigara-kanagawa",
+      "numbering": "OH46"
+    },
+    {
+      "stationId": "odawara",
+      "numbering": "OH47"
+    }
+  ]
+}

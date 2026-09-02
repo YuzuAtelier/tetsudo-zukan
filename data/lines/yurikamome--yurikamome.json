@@ -1,0 +1,82 @@
+{
+  "id": "yurikamome--yurikamome",
+  "operatorId": "yurikamome",
+  "name": "ゆりかもめ",
+  "formalName": "東京臨海新交通臨海線",
+  "kana": "ゆりかもめ",
+  "symbol": "U",
+  "color": "#00A0DE",
+  "colorName": "水色",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版Wikipedia（湘南モノレールは日本語版）で確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　有明(U12)はJR京葉線・りんかい線の国際展示場に近いが別駅。東京テレポートの有明とは表記が同じだが、東京都江東区内の同一エリアの駅なのでariake-tokyo として1エントリにした。　2026-09-02: 同名の別駅と1駅に統合されていたため「有明」を ariake-tokyo（ゆりかもめ（東京都江東区））として分離した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Yurikamome"
+  ],
+  "stations": [
+    {
+      "stationId": "shimbashi",
+      "numbering": "U01"
+    },
+    {
+      "stationId": "shiodome",
+      "numbering": "U02"
+    },
+    {
+      "stationId": "takeshiba",
+      "numbering": "U03"
+    },
+    {
+      "stationId": "hinode",
+      "numbering": "U04"
+    },
+    {
+      "stationId": "shibaura-futo",
+      "numbering": "U05"
+    },
+    {
+      "stationId": "odaiba-kaihinkoen",
+      "numbering": "U06"
+    },
+    {
+      "stationId": "daiba",
+      "numbering": "U07"
+    },
+    {
+      "stationId": "tokyo-intl-cruise-terminal",
+      "numbering": "U08"
+    },
+    {
+      "stationId": "telecom-center",
+      "numbering": "U09"
+    },
+    {
+      "stationId": "aomi",
+      "numbering": "U10"
+    },
+    {
+      "stationId": "tokyo-big-sight",
+      "numbering": "U11"
+    },
+    {
+      "stationId": "ariake-tokyo",
+      "numbering": "U12"
+    },
+    {
+      "stationId": "ariake-tennis-no-mori",
+      "numbering": "U13"
+    },
+    {
+      "stationId": "shijomae",
+      "numbering": "U14"
+    },
+    {
+      "stationId": "shin-toyosu",
+      "numbering": "U15"
+    },
+    {
+      "stationId": "toyosu",
+      "numbering": "U16"
+    }
+  ]
+}

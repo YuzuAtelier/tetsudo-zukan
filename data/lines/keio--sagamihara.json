@@ -1,0 +1,68 @@
+{
+  "id": "keio--sagamihara",
+  "operatorId": "keio",
+  "name": "京王相模原線",
+  "formalName": "相模原線",
+  "kana": "けいおうさがみはらせん",
+  "symbol": "KO",
+  "color": "#DD0076",
+  "colorName": "ピンク",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、京王電鉄公式サイトと突き合わせた。ふりがなはローマ字表記から起こした。「ケ／ヶ」は事業者の正式表記（小さいヶ）に従った。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Keio_Sagamihara_Line",
+    "https://www.keio.co.jp/train/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "chofu",
+      "numbering": "KO18"
+    },
+    {
+      "stationId": "keio-tamagawa",
+      "numbering": "KO35"
+    },
+    {
+      "stationId": "keio-inadazutsumi",
+      "numbering": "KO36"
+    },
+    {
+      "stationId": "keio-yomiuri-land",
+      "numbering": "KO37"
+    },
+    {
+      "stationId": "inagi",
+      "numbering": "KO38"
+    },
+    {
+      "stationId": "wakabadai",
+      "numbering": "KO39"
+    },
+    {
+      "stationId": "keio-nagayama",
+      "numbering": "KO40"
+    },
+    {
+      "stationId": "keio-tama-center",
+      "numbering": "KO41"
+    },
+    {
+      "stationId": "keio-horinouchi",
+      "numbering": "KO42"
+    },
+    {
+      "stationId": "minami-osawa",
+      "numbering": "KO43"
+    },
+    {
+      "stationId": "tamasakai",
+      "numbering": "KO44"
+    },
+    {
+      "stationId": "hashimoto",
+      "numbering": "KO45"
+    }
+  ]
+}

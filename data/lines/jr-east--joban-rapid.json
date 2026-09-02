@@ -1,0 +1,63 @@
+{
+  "id": "jr-east--joban-rapid",
+  "operatorId": "jr-east",
+  "name": "常磐線快速",
+  "formalName": "常磐線（常磐快速線）",
+  "kana": "じょうばんせんかいそく",
+  "symbol": "JJ",
+  "color": "#36AE6E",
+  "colorName": "エメラルドグリーン",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を複数の出典で照合。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　駅番号の一覧が路線記事から取れなかったため、三河島(JJ03)・北千住(JJ05)・松戸(JJ06)・天王台(JJ09)・取手(JJ10)の各駅記事で個別に確定させ、間の駅は確定した番号の間に挟まる順で決めた。JJ01の上野は、JJ02日暮里の手前の停車駅であることから確定。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/常磐線",
+    "https://ja.wikipedia.org/wiki/取手駅",
+    "https://ja.wikipedia.org/wiki/三河島駅",
+    "https://ja.wikipedia.org/wiki/松戸駅",
+    "https://ja.wikipedia.org/wiki/天王台駅",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "ueno",
+      "numbering": "JJ01"
+    },
+    {
+      "stationId": "nippori",
+      "numbering": "JJ02"
+    },
+    {
+      "stationId": "mikawashima",
+      "numbering": "JJ03"
+    },
+    {
+      "stationId": "minami-senju",
+      "numbering": "JJ04"
+    },
+    {
+      "stationId": "kita-senju",
+      "numbering": "JJ05"
+    },
+    {
+      "stationId": "matsudo",
+      "numbering": "JJ06"
+    },
+    {
+      "stationId": "kashiwa",
+      "numbering": "JJ07"
+    },
+    {
+      "stationId": "abiko",
+      "numbering": "JJ08"
+    },
+    {
+      "stationId": "tennodai",
+      "numbering": "JJ09"
+    },
+    {
+      "stationId": "toride",
+      "numbering": "JJ10"
+    }
+  ]
+}

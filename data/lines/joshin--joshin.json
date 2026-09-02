@@ -1,0 +1,80 @@
+{
+  "id": "joshin--joshin",
+  "operatorId": "joshin",
+  "name": "上信電鉄上信線",
+  "formalName": "上信線",
+  "kana": "じょうしんでんてつじょうしんせん",
+  "color": "#E60012",
+  "colorName": "赤",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版（一部日本語版）Wikipediaで確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　　この路線は路線図PDFの描画範囲の外（「至○○」の注記のみ）にあり、路線図との駅名照合ができていない。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/上信電鉄上信線"
+  ],
+  "stations": [
+    {
+      "stationId": "takasaki"
+    },
+    {
+      "stationId": "minami-takasaki"
+    },
+    {
+      "stationId": "sano-no-watashi"
+    },
+    {
+      "stationId": "nekoya"
+    },
+    {
+      "stationId": "takasaki-shoka-daigaku-mae"
+    },
+    {
+      "stationId": "yamana"
+    },
+    {
+      "stationId": "nishi-yamana"
+    },
+    {
+      "stationId": "umaniwa"
+    },
+    {
+      "stationId": "yoshii"
+    },
+    {
+      "stationId": "nishi-yoshii"
+    },
+    {
+      "stationId": "joshu-shinya"
+    },
+    {
+      "stationId": "joshu-fukushima"
+    },
+    {
+      "stationId": "higashi-tomioka"
+    },
+    {
+      "stationId": "joshu-tomioka"
+    },
+    {
+      "stationId": "nishi-tomioka"
+    },
+    {
+      "stationId": "joshu-nanokaichi"
+    },
+    {
+      "stationId": "joshu-ichinomiya"
+    },
+    {
+      "stationId": "jinnohara"
+    },
+    {
+      "stationId": "minamijai"
+    },
+    {
+      "stationId": "chibira"
+    },
+    {
+      "stationId": "shimonita"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "jr-east--hokuriku-shinkansen",
+  "operatorId": "jr-east",
+  "name": "北陸新幹線",
+  "formalName": "北陸新幹線（長野経由）",
+  "kana": "ほくりくしんかんせん",
+  "color": "#0F5474",
+  "colorName": "紺",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版Wikipediaで確認。ふりがなはローマ字表記から起こした。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせて確認。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Hokuriku_Shinkansen",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "takasaki"
+    },
+    {
+      "stationId": "annaka-haruna"
+    },
+    {
+      "stationId": "karuizawa"
+    },
+    {
+      "stationId": "sakudaira"
+    },
+    {
+      "stationId": "ueda-nagano"
+    },
+    {
+      "stationId": "nagano"
+    },
+    {
+      "stationId": "iiyama"
+    },
+    {
+      "stationId": "joetsumyoko"
+    }
+  ]
+}

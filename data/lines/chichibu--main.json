@@ -1,0 +1,128 @@
+{
+  "id": "chichibu--main",
+  "operatorId": "chichibu",
+  "name": "秩父鉄道秩父本線",
+  "formalName": "秩父本線",
+  "kana": "ちちぶてつどうちちぶほんせん",
+  "color": "#8FC31F",
+  "colorName": "緑",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版（一部日本語版）Wikipediaで確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　英語版Wikipediaのローマ字表記が不明瞭な区間があったため、駅名は路線図PDFの表記（例：ひろせ野鳥の森）を優先した。　2026-09-02: 同名の別駅と1駅に統合されていたため「永田」を nagata-saitama（秩父本線（埼玉県深谷市））として分離した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Chichibu_Railway_Main_Line"
+  ],
+  "stations": [
+    {
+      "stationId": "hanyu"
+    },
+    {
+      "stationId": "nishi-hanyu"
+    },
+    {
+      "stationId": "shingo"
+    },
+    {
+      "stationId": "bushu-araki"
+    },
+    {
+      "stationId": "higashi-gyoda"
+    },
+    {
+      "stationId": "gyodashi"
+    },
+    {
+      "stationId": "mochida"
+    },
+    {
+      "stationId": "socio-ryutsu-center"
+    },
+    {
+      "stationId": "kumagaya"
+    },
+    {
+      "stationId": "kami-kumagaya"
+    },
+    {
+      "stationId": "ishihara"
+    },
+    {
+      "stationId": "hirose-yachonomori"
+    },
+    {
+      "stationId": "oaso"
+    },
+    {
+      "stationId": "aketo"
+    },
+    {
+      "stationId": "takekawa"
+    },
+    {
+      "stationId": "nagata-saitama"
+    },
+    {
+      "stationId": "fukaya-hanazono"
+    },
+    {
+      "stationId": "omaeda"
+    },
+    {
+      "stationId": "sakurazawa"
+    },
+    {
+      "stationId": "yorii"
+    },
+    {
+      "stationId": "hagure"
+    },
+    {
+      "stationId": "higuchi"
+    },
+    {
+      "stationId": "nogami"
+    },
+    {
+      "stationId": "nagatoro"
+    },
+    {
+      "stationId": "kami-nagatoro"
+    },
+    {
+      "stationId": "oyahana"
+    },
+    {
+      "stationId": "minano"
+    },
+    {
+      "stationId": "wado-kuroya"
+    },
+    {
+      "stationId": "onohara"
+    },
+    {
+      "stationId": "chichibu"
+    },
+    {
+      "stationId": "ohanabatake"
+    },
+    {
+      "stationId": "kagemori"
+    },
+    {
+      "stationId": "urayamaguchi"
+    },
+    {
+      "stationId": "bushu-nakagawa"
+    },
+    {
+      "stationId": "bushu-hino"
+    },
+    {
+      "stationId": "shiroku"
+    },
+    {
+      "stationId": "mitsumineguchi"
+    }
+  ]
+}

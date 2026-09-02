@@ -1,0 +1,52 @@
+{
+  "id": "odakyu--tama",
+  "operatorId": "odakyu",
+  "name": "小田急多摩線",
+  "formalName": "多摩線",
+  "kana": "おだきゅうたません",
+  "symbol": "OT",
+  "color": "#2288CC",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、小田急電鉄公式サイトと突き合わせた。ふりがなはローマ字表記から起こした。「ケ／ヶ」は事業者の正式表記（小さいヶ）に従った。　起点の新百合ヶ丘(OH23)は小田原線と共有しており、多摩線側の番号は付いていない。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Odakyu_Tama_Line",
+    "https://www.odakyu.jp/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "shin-yurigaoka",
+      "numbering": "OH23"
+    },
+    {
+      "stationId": "satsukidai",
+      "numbering": "OT01"
+    },
+    {
+      "stationId": "kurihira",
+      "numbering": "OT02"
+    },
+    {
+      "stationId": "kurokawa",
+      "numbering": "OT03"
+    },
+    {
+      "stationId": "haruhino",
+      "numbering": "OT04"
+    },
+    {
+      "stationId": "odakyu-nagayama",
+      "numbering": "OT05"
+    },
+    {
+      "stationId": "odakyu-tama-center",
+      "numbering": "OT06"
+    },
+    {
+      "stationId": "karakida",
+      "numbering": "OT07"
+    }
+  ]
+}

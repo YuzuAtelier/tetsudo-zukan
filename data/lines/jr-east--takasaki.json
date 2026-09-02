@@ -1,0 +1,78 @@
+{
+  "id": "jr-east--takasaki",
+  "operatorId": "jr-east",
+  "name": "高崎線",
+  "formalName": "高崎線",
+  "kana": "たかさきせん",
+  "symbol": "JU",
+  "color": "#F68B1E",
+  "colorName": "オレンジ",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版・日本語版Wikipediaの2系統で照合。食い違いは個別の駅記事で決着させた。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　駅番号は大宮(JU07)のみ。大宮以北は上尾駅・籠原駅の記事で番号が無いことを確認した。英語版Wikipediaは「宮原JU08〜籠原JU18」としていたが誤り。日本語版が含めていた北藤岡は八高線の駅で高崎線列車は通過するため除外した。座標検査の大宮→宮原の指摘は、大宮がハブ駅で余白を広く取って描かれているための誤検知。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Takasaki_Line",
+    "https://ja.wikipedia.org/wiki/高崎線",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "omiya",
+      "numbering": "JU07"
+    },
+    {
+      "stationId": "miyahara"
+    },
+    {
+      "stationId": "ageo"
+    },
+    {
+      "stationId": "kita-ageo"
+    },
+    {
+      "stationId": "okegawa"
+    },
+    {
+      "stationId": "kitamoto"
+    },
+    {
+      "stationId": "konosu"
+    },
+    {
+      "stationId": "kita-konosu"
+    },
+    {
+      "stationId": "fukiage"
+    },
+    {
+      "stationId": "gyoda"
+    },
+    {
+      "stationId": "kumagaya"
+    },
+    {
+      "stationId": "kagohara"
+    },
+    {
+      "stationId": "fukaya"
+    },
+    {
+      "stationId": "okabe"
+    },
+    {
+      "stationId": "honjo"
+    },
+    {
+      "stationId": "jimbohara"
+    },
+    {
+      "stationId": "shinmachi"
+    },
+    {
+      "stationId": "kuragano"
+    },
+    {
+      "stationId": "takasaki"
+    }
+  ]
+}

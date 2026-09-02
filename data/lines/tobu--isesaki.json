@@ -1,0 +1,124 @@
+{
+  "id": "tobu--isesaki",
+  "operatorId": "tobu",
+  "name": "伊勢崎線",
+  "formalName": "伊勢崎線（東武動物公園〜伊勢崎）",
+  "kana": "いせさきせん",
+  "symbol": "TI",
+  "color": "#FF0000",
+  "colorName": "赤",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（伊勢崎線は日本語版とも一致）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　駅番号の記号が路線記号と違う警告は、起点の東武動物公園(TS30)をスカイツリーライン側と共有しているため。座標検査の東武動物公園→和戸は正常な区間長。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tobu_Isesaki_Line",
+    "https://ja.wikipedia.org/wiki/東武伊勢崎線",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "tobu-dobutsu-koen",
+      "numbering": "TS30"
+    },
+    {
+      "stationId": "wado",
+      "numbering": "TI01"
+    },
+    {
+      "stationId": "kuki",
+      "numbering": "TI02"
+    },
+    {
+      "stationId": "washinomiya",
+      "numbering": "TI03"
+    },
+    {
+      "stationId": "hanasaki",
+      "numbering": "TI04"
+    },
+    {
+      "stationId": "kazo",
+      "numbering": "TI05"
+    },
+    {
+      "stationId": "minami-hanyu",
+      "numbering": "TI06"
+    },
+    {
+      "stationId": "hanyu",
+      "numbering": "TI07"
+    },
+    {
+      "stationId": "kawamata",
+      "numbering": "TI08"
+    },
+    {
+      "stationId": "morinjimae",
+      "numbering": "TI09"
+    },
+    {
+      "stationId": "tatebayashi",
+      "numbering": "TI10"
+    },
+    {
+      "stationId": "tatara",
+      "numbering": "TI11"
+    },
+    {
+      "stationId": "agata",
+      "numbering": "TI12"
+    },
+    {
+      "stationId": "fukui-tobu",
+      "numbering": "TI13"
+    },
+    {
+      "stationId": "tobu-izumi",
+      "numbering": "TI14"
+    },
+    {
+      "stationId": "ashikagashi",
+      "numbering": "TI15"
+    },
+    {
+      "stationId": "yashu-yamabe",
+      "numbering": "TI16"
+    },
+    {
+      "stationId": "niragawa",
+      "numbering": "TI17"
+    },
+    {
+      "stationId": "ota-tobu",
+      "numbering": "TI18"
+    },
+    {
+      "stationId": "hosoya",
+      "numbering": "TI19"
+    },
+    {
+      "stationId": "kizaki",
+      "numbering": "TI20"
+    },
+    {
+      "stationId": "serada",
+      "numbering": "TI21"
+    },
+    {
+      "stationId": "sakaimachi",
+      "numbering": "TI22"
+    },
+    {
+      "stationId": "goshi",
+      "numbering": "TI23"
+    },
+    {
+      "stationId": "shin-isesaki",
+      "numbering": "TI24"
+    },
+    {
+      "stationId": "isesaki",
+      "numbering": "TI25"
+    }
+  ]
+}

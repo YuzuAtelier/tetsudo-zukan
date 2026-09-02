@@ -1,0 +1,44 @@
+{
+  "id": "seibu--chichibu",
+  "operatorId": "seibu",
+  "name": "西武秩父線",
+  "formalName": "西武秩父線",
+  "kana": "せいぶちちぶせん",
+  "symbol": "SI",
+  "color": "#EF7A00",
+  "colorName": "オレンジ",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、西武鉄道公式サイトの駅ナンバリング表記と突き合わせた。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。「ケ／ヶ」は事業者の正式表記（小さいヶ）に従った。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Seibu_Chichibu_Line",
+    "https://www.seiburailway.jp/railway/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "agano",
+      "numbering": "SI31"
+    },
+    {
+      "stationId": "nishi-agano",
+      "numbering": "SI32"
+    },
+    {
+      "stationId": "shomaru",
+      "numbering": "SI33"
+    },
+    {
+      "stationId": "ashigakubo",
+      "numbering": "SI34"
+    },
+    {
+      "stationId": "yokoze",
+      "numbering": "SI35"
+    },
+    {
+      "stationId": "seibu-chichibu",
+      "numbering": "SI36"
+    }
+  ]
+}

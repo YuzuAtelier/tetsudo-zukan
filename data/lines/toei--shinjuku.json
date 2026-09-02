@@ -1,0 +1,104 @@
+{
+  "id": "toei--shinjuku",
+  "operatorId": "toei",
+  "name": "都営新宿線",
+  "formalName": "東京都地下鉄10号線 新宿線",
+  "kana": "とえいしんじゅくせん",
+  "symbol": "S",
+  "color": "#B3C146",
+  "colorName": "リーフ",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を事業者公式サイトとWikipediaの2系統で照合し一致を確認。駅名を路線図PDFの抽出結果と照合。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、破綻が無いことを確認。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/東京都交通局新宿線",
+    "https://en.wikipedia.org/wiki/Toei_Shinjuku_Line",
+    "https://www.marorika.com/entry/tokyo-metro-line-color-code"
+  ],
+  "stations": [
+    {
+      "stationId": "shinjuku",
+      "numbering": "S01"
+    },
+    {
+      "stationId": "shinjuku-sanchome",
+      "numbering": "S02"
+    },
+    {
+      "stationId": "akebonobashi",
+      "numbering": "S03"
+    },
+    {
+      "stationId": "ichigaya",
+      "numbering": "S04"
+    },
+    {
+      "stationId": "kudanshita",
+      "numbering": "S05"
+    },
+    {
+      "stationId": "jimbocho",
+      "numbering": "S06"
+    },
+    {
+      "stationId": "ogawamachi-tokyo",
+      "numbering": "S07"
+    },
+    {
+      "stationId": "iwamotocho",
+      "numbering": "S08"
+    },
+    {
+      "stationId": "bakuro-yokoyama",
+      "numbering": "S09"
+    },
+    {
+      "stationId": "hamacho",
+      "numbering": "S10"
+    },
+    {
+      "stationId": "morishita",
+      "numbering": "S11"
+    },
+    {
+      "stationId": "kikukawa",
+      "numbering": "S12"
+    },
+    {
+      "stationId": "sumiyoshi",
+      "numbering": "S13"
+    },
+    {
+      "stationId": "nishi-ojima",
+      "numbering": "S14"
+    },
+    {
+      "stationId": "ojima",
+      "numbering": "S15"
+    },
+    {
+      "stationId": "higashi-ojima",
+      "numbering": "S16"
+    },
+    {
+      "stationId": "funabori",
+      "numbering": "S17"
+    },
+    {
+      "stationId": "ichinoe",
+      "numbering": "S18"
+    },
+    {
+      "stationId": "mizue",
+      "numbering": "S19"
+    },
+    {
+      "stationId": "shinozaki",
+      "numbering": "S20"
+    },
+    {
+      "stationId": "motoyawata",
+      "numbering": "S21"
+    }
+  ]
+}

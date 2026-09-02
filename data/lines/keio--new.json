@@ -1,0 +1,36 @@
+{
+  "id": "keio--new",
+  "operatorId": "keio",
+  "name": "京王新線",
+  "formalName": "京王新線",
+  "kana": "けいおうしんせん",
+  "symbol": "KO",
+  "color": "#DD0076",
+  "colorName": "ピンク",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、京王電鉄公式サイトと突き合わせた。ふりがなはローマ字表記から起こした。「ケ／ヶ」は事業者の正式表記（小さいヶ）に従った。　新宿(KO01)と笹塚(KO04)を京王線と共有している。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Keio_New_Line",
+    "https://www.keio.co.jp/train/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "shinjuku",
+      "numbering": "KO01"
+    },
+    {
+      "stationId": "hatsudai",
+      "numbering": "KO02"
+    },
+    {
+      "stationId": "hatagaya",
+      "numbering": "KO03"
+    },
+    {
+      "stationId": "sasazuka",
+      "numbering": "KO04"
+    }
+  ]
+}

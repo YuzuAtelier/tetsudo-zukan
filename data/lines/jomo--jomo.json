@@ -1,0 +1,86 @@
+{
+  "id": "jomo--jomo",
+  "operatorId": "jomo",
+  "name": "上毛電気鉄道上毛線",
+  "formalName": "上毛線",
+  "kana": "じょうもうでんきてつどうじょうもうせん",
+  "color": "#F39800",
+  "colorName": "橙",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版（一部日本語版）Wikipediaで確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　　この路線は路線図PDFの描画範囲の外（「至○○」の注記のみ）にあり、路線図との駅名照合ができていない。　2026-09-02: 同名の別駅と1駅に統合されていたため「赤坂」を akasaka-gunma（上毛線（群馬県前橋市））として分離した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/J%C5%8Dm%C5%8D_Electric_Railway"
+  ],
+  "stations": [
+    {
+      "stationId": "chuo-maebashi"
+    },
+    {
+      "stationId": "joto"
+    },
+    {
+      "stationId": "mitsumata"
+    },
+    {
+      "stationId": "katakai"
+    },
+    {
+      "stationId": "kamiizumi"
+    },
+    {
+      "stationId": "akasaka-gunma"
+    },
+    {
+      "stationId": "shinzo-kekkan-center"
+    },
+    {
+      "stationId": "egi"
+    },
+    {
+      "stationId": "ogo"
+    },
+    {
+      "stationId": "higoshi"
+    },
+    {
+      "stationId": "kitahara"
+    },
+    {
+      "stationId": "araya"
+    },
+    {
+      "stationId": "kasukawa"
+    },
+    {
+      "stationId": "zen"
+    },
+    {
+      "stationId": "niisato"
+    },
+    {
+      "stationId": "nikkawa"
+    },
+    {
+      "stationId": "higashi-nikkawa"
+    },
+    {
+      "stationId": "akagi"
+    },
+    {
+      "stationId": "kiryu-kyujo-mae"
+    },
+    {
+      "stationId": "tennojuku"
+    },
+    {
+      "stationId": "fujiyamashita"
+    },
+    {
+      "stationId": "maruyamashita"
+    },
+    {
+      "stationId": "nishi-kiryu"
+    }
+  ]
+}

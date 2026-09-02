@@ -1,0 +1,286 @@
+{
+  "operators": [
+    {
+      "id": "jr-east",
+      "name": "東日本旅客鉄道",
+      "shortName": "JR東日本",
+      "kana": "ひがしにほんりょかくてつどう"
+    },
+    {
+      "id": "jr-central",
+      "name": "東海旅客鉄道",
+      "shortName": "JR東海",
+      "kana": "とうかいりょかくてつどう"
+    },
+    {
+      "id": "tokyo-metro",
+      "name": "東京地下鉄",
+      "shortName": "東京メトロ",
+      "kana": "とうきょうちかてつ"
+    },
+    {
+      "id": "toei",
+      "name": "東京都交通局",
+      "shortName": "都営",
+      "kana": "とうきょうとこうつうきょく"
+    },
+    {
+      "id": "tobu",
+      "name": "東武鉄道",
+      "shortName": "東武",
+      "kana": "とうぶてつどう"
+    },
+    {
+      "id": "seibu",
+      "name": "西武鉄道",
+      "shortName": "西武",
+      "kana": "せいぶてつどう"
+    },
+    {
+      "id": "keisei",
+      "name": "京成電鉄",
+      "shortName": "京成",
+      "kana": "けいせいでんてつ"
+    },
+    {
+      "id": "hokuso",
+      "name": "北総鉄道",
+      "shortName": "北総",
+      "kana": "ほくそうてつどう"
+    },
+    {
+      "id": "shibayama",
+      "name": "芝山鉄道",
+      "shortName": "芝山鉄道",
+      "kana": "しばやまてつどう"
+    },
+    {
+      "id": "tokyu",
+      "name": "東急電鉄",
+      "shortName": "東急",
+      "kana": "とうきゅうでんてつ"
+    },
+    {
+      "id": "yokohama-minatomirai",
+      "name": "横浜高速鉄道",
+      "shortName": "みなとみらい線",
+      "kana": "よこはまこうそくてつどう"
+    },
+    {
+      "id": "keio",
+      "name": "京王電鉄",
+      "shortName": "京王",
+      "kana": "けいおうでんてつ"
+    },
+    {
+      "id": "keikyu",
+      "name": "京浜急行電鉄",
+      "shortName": "京急",
+      "kana": "けいひんきゅうこうでんてつ"
+    },
+    {
+      "id": "odakyu",
+      "name": "小田急電鉄",
+      "shortName": "小田急",
+      "kana": "おだきゅうでんてつ"
+    },
+    {
+      "id": "sotetsu",
+      "name": "相模鉄道",
+      "shortName": "相鉄",
+      "kana": "さがみてつどう"
+    },
+    {
+      "id": "yokohama-city",
+      "name": "横浜市交通局",
+      "shortName": "横浜市営地下鉄",
+      "kana": "よこはましこうつうきょく"
+    },
+    {
+      "id": "tokyo-monorail",
+      "name": "東京モノレール",
+      "shortName": "東京モノレール",
+      "kana": "とうきょうものれーる"
+    },
+    {
+      "id": "yurikamome",
+      "name": "ゆりかもめ",
+      "shortName": "ゆりかもめ",
+      "kana": "ゆりかもめ"
+    },
+    {
+      "id": "mir",
+      "name": "首都圏新都市鉄道",
+      "shortName": "つくばエクスプレス",
+      "kana": "しゅとけんしんとしてつどう"
+    },
+    {
+      "id": "twr",
+      "name": "東京臨海高速鉄道",
+      "shortName": "りんかい線",
+      "kana": "とうきょうりんかいこうそくてつどう"
+    },
+    {
+      "id": "saitama-railway",
+      "name": "埼玉高速鉄道",
+      "shortName": "埼玉高速鉄道",
+      "kana": "さいたまこうそくてつどう"
+    },
+    {
+      "id": "toyo-rapid",
+      "name": "東葉高速鉄道",
+      "shortName": "東葉高速鉄道",
+      "kana": "とうようこうそくてつどう"
+    },
+    {
+      "id": "tama-monorail",
+      "name": "多摩都市モノレール",
+      "shortName": "多摩モノレール",
+      "kana": "たまとしものれーる"
+    },
+    {
+      "id": "shonan-monorail",
+      "name": "湘南モノレール",
+      "shortName": "湘南モノレール",
+      "kana": "しょうなんものれーる"
+    },
+    {
+      "id": "chiba-monorail",
+      "name": "千葉都市モノレール",
+      "shortName": "千葉モノレール",
+      "kana": "ちばとしものれーる"
+    },
+    {
+      "id": "yokohama-seaside",
+      "name": "横浜シーサイドライン",
+      "shortName": "シーサイドライン",
+      "kana": "よこはましーさいどらいん"
+    },
+    {
+      "id": "maihama",
+      "name": "舞浜リゾートライン",
+      "shortName": "ディズニーリゾートライン",
+      "kana": "まいはまりぞーとらいん"
+    },
+    {
+      "id": "yamaman",
+      "name": "山万",
+      "shortName": "山万",
+      "kana": "やままん"
+    },
+    {
+      "id": "chichibu",
+      "name": "秩父鉄道",
+      "shortName": "秩父鉄道",
+      "kana": "ちちぶてつどう"
+    },
+    {
+      "id": "saitama-shintoshi",
+      "name": "埼玉新都市交通",
+      "shortName": "ニューシャトル",
+      "kana": "さいたましんとしこうつう"
+    },
+    {
+      "id": "enoden",
+      "name": "江ノ島電鉄",
+      "shortName": "江ノ電",
+      "kana": "えのしまでんてつ"
+    },
+    {
+      "id": "izukyu",
+      "name": "伊豆急行",
+      "shortName": "伊豆急行",
+      "kana": "いずきゅうこう"
+    },
+    {
+      "id": "hakone-tozan",
+      "name": "箱根登山鉄道",
+      "shortName": "箱根登山鉄道",
+      "kana": "はこねとざんてつどう"
+    },
+    {
+      "id": "izuhakone",
+      "name": "伊豆箱根鉄道",
+      "shortName": "伊豆箱根鉄道",
+      "kana": "いずはこねてつどう"
+    },
+    {
+      "id": "ryutetsu",
+      "name": "流鉄",
+      "shortName": "流鉄",
+      "kana": "りゅうてつ"
+    },
+    {
+      "id": "joshin",
+      "name": "上信電鉄",
+      "shortName": "上信電鉄",
+      "kana": "じょうしんでんてつ"
+    },
+    {
+      "id": "watarase",
+      "name": "わたらせ渓谷鐵道",
+      "shortName": "わたらせ渓谷鐵道",
+      "kana": "わたらせけいこくてつどう"
+    },
+    {
+      "id": "jomo",
+      "name": "上毛電気鉄道",
+      "shortName": "上毛電鉄",
+      "kana": "じょうもうでんきてつどう"
+    },
+    {
+      "id": "choshi",
+      "name": "銚子電気鉄道",
+      "shortName": "銚子電鉄",
+      "kana": "ちょうしでんきてつどう"
+    },
+    {
+      "id": "kanto",
+      "name": "関東鉄道",
+      "shortName": "関東鉄道",
+      "kana": "かんとうてつどう"
+    },
+    {
+      "id": "kashima-rinkai",
+      "name": "鹿島臨海鉄道",
+      "shortName": "鹿島臨海鉄道",
+      "kana": "かしまりんかいてつどう"
+    },
+    {
+      "id": "hitachinaka",
+      "name": "ひたちなか海浜鉄道",
+      "shortName": "ひたちなか海浜鉄道",
+      "kana": "ひたちなかかいひんてつどう"
+    },
+    {
+      "id": "isumi",
+      "name": "いすみ鉄道",
+      "shortName": "いすみ鉄道",
+      "kana": "いすみてつどう"
+    },
+    {
+      "id": "kominato",
+      "name": "小湊鐵道",
+      "shortName": "小湊鐵道",
+      "kana": "こみなとてつどう"
+    },
+    {
+      "id": "fujikyu",
+      "name": "富士山麓電気鉄道",
+      "shortName": "富士急行",
+      "kana": "ふじさんろくでんきてつどう"
+    },
+    {
+      "id": "shinano",
+      "name": "しなの鉄道",
+      "shortName": "しなの鉄道",
+      "kana": "しなのてつどう"
+    },
+    {
+      "id": "tokimeki",
+      "name": "えちごトキめき鉄道",
+      "shortName": "トキめき鉄道",
+      "kana": "えちごときめきてつどう"
+    }
+  ]
+}

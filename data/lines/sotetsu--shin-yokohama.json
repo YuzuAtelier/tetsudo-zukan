@@ -1,0 +1,32 @@
+{
+  "id": "sotetsu--shin-yokohama",
+  "operatorId": "sotetsu",
+  "name": "相鉄新横浜線",
+  "formalName": "新横浜線",
+  "kana": "そうてつしんよこはません",
+  "symbol": "SO",
+  "color": "#000080",
+  "colorName": "紺",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、相模鉄道公式サイトと突き合わせた。ふりがなはローマ字表記から起こした。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Sotetsu_Shin-yokohama_Line",
+    "https://www.sotetsu.co.jp/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "nishiya",
+      "numbering": "SO08"
+    },
+    {
+      "stationId": "hazawa-yokohama-kokudai",
+      "numbering": "SO51"
+    },
+    {
+      "stationId": "shin-yokohama",
+      "numbering": "SO52"
+    }
+  ]
+}

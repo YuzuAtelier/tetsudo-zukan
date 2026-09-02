@@ -1,0 +1,148 @@
+{
+  "id": "keio--keio",
+  "operatorId": "keio",
+  "name": "京王線",
+  "formalName": "京王線",
+  "kana": "けいおうせん",
+  "symbol": "KO",
+  "color": "#DD0076",
+  "colorName": "ピンク",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、京王電鉄公式サイトと突き合わせた。ふりがなはローマ字表記から起こした。「ケ／ヶ」は事業者の正式表記（小さいヶ）に従った。　初台(KO02)・幡ヶ谷(KO03)は京王新線のみの駅なので京王線には含めていない。そのため駅番号がKO01→KO04と飛ぶ。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Keio_Line",
+    "https://www.keio.co.jp/train/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "shinjuku",
+      "numbering": "KO01"
+    },
+    {
+      "stationId": "sasazuka",
+      "numbering": "KO04"
+    },
+    {
+      "stationId": "daitabashi",
+      "numbering": "KO05"
+    },
+    {
+      "stationId": "meidaimae",
+      "numbering": "KO06"
+    },
+    {
+      "stationId": "shimo-takaido",
+      "numbering": "KO07"
+    },
+    {
+      "stationId": "sakurajosui",
+      "numbering": "KO08"
+    },
+    {
+      "stationId": "kami-kitazawa",
+      "numbering": "KO09"
+    },
+    {
+      "stationId": "hachimanyama",
+      "numbering": "KO10"
+    },
+    {
+      "stationId": "roka-koen",
+      "numbering": "KO11"
+    },
+    {
+      "stationId": "chitose-karasuyama",
+      "numbering": "KO12"
+    },
+    {
+      "stationId": "sengawa",
+      "numbering": "KO13"
+    },
+    {
+      "stationId": "tsutsujigaoka",
+      "numbering": "KO14"
+    },
+    {
+      "stationId": "shibasaki",
+      "numbering": "KO15"
+    },
+    {
+      "stationId": "kokuryo",
+      "numbering": "KO16"
+    },
+    {
+      "stationId": "fuda",
+      "numbering": "KO17"
+    },
+    {
+      "stationId": "chofu",
+      "numbering": "KO18"
+    },
+    {
+      "stationId": "nishi-chofu",
+      "numbering": "KO19"
+    },
+    {
+      "stationId": "tobitakyu",
+      "numbering": "KO20"
+    },
+    {
+      "stationId": "musashinodai",
+      "numbering": "KO21"
+    },
+    {
+      "stationId": "tama-reien",
+      "numbering": "KO22"
+    },
+    {
+      "stationId": "higashi-fuchu",
+      "numbering": "KO23"
+    },
+    {
+      "stationId": "fuchu",
+      "numbering": "KO24"
+    },
+    {
+      "stationId": "bubaigawara",
+      "numbering": "KO25"
+    },
+    {
+      "stationId": "nakagawara",
+      "numbering": "KO26"
+    },
+    {
+      "stationId": "seiseki-sakuragaoka",
+      "numbering": "KO27"
+    },
+    {
+      "stationId": "mogusaen",
+      "numbering": "KO28"
+    },
+    {
+      "stationId": "takahatafudo",
+      "numbering": "KO29"
+    },
+    {
+      "stationId": "minamidaira",
+      "numbering": "KO30"
+    },
+    {
+      "stationId": "hirayamajoshi-koen",
+      "numbering": "KO31"
+    },
+    {
+      "stationId": "naganuma",
+      "numbering": "KO32"
+    },
+    {
+      "stationId": "kitano",
+      "numbering": "KO33"
+    },
+    {
+      "stationId": "keio-hachioji",
+      "numbering": "KO34"
+    }
+  ]
+}

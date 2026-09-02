@@ -1,0 +1,35 @@
+{
+  "id": "ryutetsu--nagareyama",
+  "operatorId": "ryutetsu",
+  "name": "流鉄流山線",
+  "formalName": "流山線",
+  "kana": "りゅうてつながれやません",
+  "color": "#E4007F",
+  "colorName": "赤紫",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版（一部日本語版）Wikipediaで確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　2026-09-02: 同名の別駅と1駅に統合されていたため「平和台」を heiwadai-chiba（流鉄流山線（千葉県流山市））として分離した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Ry%C5%ABtetsu_Nagareyama_Line"
+  ],
+  "stations": [
+    {
+      "stationId": "mabashi"
+    },
+    {
+      "stationId": "koya-ryutetsu"
+    },
+    {
+      "stationId": "kogane-joshi"
+    },
+    {
+      "stationId": "hiregasaki"
+    },
+    {
+      "stationId": "heiwadai-chiba"
+    },
+    {
+      "stationId": "nagareyama"
+    }
+  ]
+}

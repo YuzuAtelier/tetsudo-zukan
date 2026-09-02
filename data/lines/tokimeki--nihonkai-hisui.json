@@ -1,0 +1,56 @@
+{
+  "id": "tokimeki--nihonkai-hisui",
+  "operatorId": "tokimeki",
+  "name": "えちごトキめき鉄道日本海ひすいライン",
+  "formalName": "日本海ひすいライン",
+  "kana": "えちごときめきてつどうにほんかいひすいらいん",
+  "color": "#0068B7",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版（一部日本語版）Wikipediaで確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　　この路線は路線図PDFの描画範囲の外（「至○○」の注記のみ）にあり、路線図との駅名照合ができていない。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/えちごトキめき鉄道日本海ひすいライン"
+  ],
+  "stations": [
+    {
+      "stationId": "ichiburi"
+    },
+    {
+      "stationId": "oyashirazu"
+    },
+    {
+      "stationId": "omi-niigata"
+    },
+    {
+      "stationId": "itoigawa"
+    },
+    {
+      "stationId": "echigo-oshiage-hisui-kaigan"
+    },
+    {
+      "stationId": "kajiyashiki"
+    },
+    {
+      "stationId": "uramoto"
+    },
+    {
+      "stationId": "no"
+    },
+    {
+      "stationId": "tsutsuishi"
+    },
+    {
+      "stationId": "nadachi"
+    },
+    {
+      "stationId": "arimagawa"
+    },
+    {
+      "stationId": "taniham"
+    },
+    {
+      "stationId": "naoetsu"
+    }
+  ]
+}

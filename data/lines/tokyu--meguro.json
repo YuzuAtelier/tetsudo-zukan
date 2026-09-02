@@ -1,0 +1,72 @@
+{
+  "id": "tokyu--meguro",
+  "operatorId": "tokyu",
+  "name": "東急目黒線",
+  "formalName": "目黒線",
+  "kana": "とうきゅうめぐろせん",
+  "symbol": "MG",
+  "color": "#009CD2",
+  "colorName": "水色",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（東横線は日本語版とも照合）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tokyu_Meguro_Line",
+    "https://www.tokyu.co.jp/railway/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "meguro",
+      "numbering": "MG01"
+    },
+    {
+      "stationId": "fudo-mae",
+      "numbering": "MG02"
+    },
+    {
+      "stationId": "musashi-koyama",
+      "numbering": "MG03"
+    },
+    {
+      "stationId": "nishi-koyama",
+      "numbering": "MG04"
+    },
+    {
+      "stationId": "senzoku",
+      "numbering": "MG05"
+    },
+    {
+      "stationId": "ookayama",
+      "numbering": "MG06"
+    },
+    {
+      "stationId": "okusawa",
+      "numbering": "MG07"
+    },
+    {
+      "stationId": "den-en-chofu",
+      "numbering": "MG08"
+    },
+    {
+      "stationId": "tamagawa-tokyu",
+      "numbering": "MG09"
+    },
+    {
+      "stationId": "shin-maruko",
+      "numbering": "MG10"
+    },
+    {
+      "stationId": "musashi-kosugi",
+      "numbering": "MG11"
+    },
+    {
+      "stationId": "motosumiyoshi",
+      "numbering": "MG12"
+    },
+    {
+      "stationId": "hiyoshi",
+      "numbering": "MG13"
+    }
+  ]
+}

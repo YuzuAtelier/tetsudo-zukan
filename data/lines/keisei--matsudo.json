@@ -1,0 +1,112 @@
+{
+  "id": "keisei--matsudo",
+  "operatorId": "keisei",
+  "name": "京成松戸線",
+  "formalName": "松戸線（旧・新京成線）",
+  "kana": "けいせいまつどせん",
+  "symbol": "KS",
+  "color": "#15388B",
+  "colorName": "紺",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を日本語版・英語版Wikipediaの2系統で照合。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。「ケ／ヶ」は事業者の正式表記に従った。　2025年4月に新京成電鉄が京成電鉄へ統合され「京成松戸線」に改称された路線。駅番号は KS66（新津田沼）〜KS88（松戸）。路線図PDFの表記も「京成松戸線」で一致している。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Shin-Keisei_Line",
+    "https://www.keisei.co.jp/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "shin-tsudanuma",
+      "numbering": "KS66"
+    },
+    {
+      "stationId": "maebara",
+      "numbering": "KS67"
+    },
+    {
+      "stationId": "yakuendai",
+      "numbering": "KS68"
+    },
+    {
+      "stationId": "narashino",
+      "numbering": "KS69"
+    },
+    {
+      "stationId": "kita-narashino",
+      "numbering": "KS70"
+    },
+    {
+      "stationId": "takanekido",
+      "numbering": "KS71"
+    },
+    {
+      "stationId": "takanekodan",
+      "numbering": "KS72"
+    },
+    {
+      "stationId": "takifudo",
+      "numbering": "KS73"
+    },
+    {
+      "stationId": "misaki",
+      "numbering": "KS74"
+    },
+    {
+      "stationId": "futawamukodai",
+      "numbering": "KS75"
+    },
+    {
+      "stationId": "kamagaya-daibutsu",
+      "numbering": "KS76"
+    },
+    {
+      "stationId": "hatsutomi",
+      "numbering": "KS77"
+    },
+    {
+      "stationId": "shin-kamagaya",
+      "numbering": "KS78"
+    },
+    {
+      "stationId": "kita-hatsutomi",
+      "numbering": "KS79"
+    },
+    {
+      "stationId": "kunugiyama",
+      "numbering": "KS80"
+    },
+    {
+      "stationId": "motoyama",
+      "numbering": "KS81"
+    },
+    {
+      "stationId": "goko",
+      "numbering": "KS82"
+    },
+    {
+      "stationId": "tokiwadaira",
+      "numbering": "KS83"
+    },
+    {
+      "stationId": "yabashira",
+      "numbering": "KS84"
+    },
+    {
+      "stationId": "minoridai",
+      "numbering": "KS85"
+    },
+    {
+      "stationId": "matsudo-shinden",
+      "numbering": "KS86"
+    },
+    {
+      "stationId": "kamihongo",
+      "numbering": "KS87"
+    },
+    {
+      "stationId": "matsudo",
+      "numbering": "KS88"
+    }
+  ]
+}

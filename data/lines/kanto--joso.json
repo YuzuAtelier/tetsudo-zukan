@@ -1,0 +1,92 @@
+{
+  "id": "kanto--joso",
+  "operatorId": "kanto",
+  "name": "関東鉄道常総線",
+  "formalName": "常総線",
+  "kana": "かんとうてつどうじょうそうせん",
+  "color": "#0072BC",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版（一部日本語版）Wikipediaで確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/J%C5%8Ds%C5%8D_Line"
+  ],
+  "stations": [
+    {
+      "stationId": "toride"
+    },
+    {
+      "stationId": "nishi-toride"
+    },
+    {
+      "stationId": "terahara"
+    },
+    {
+      "stationId": "shin-toride"
+    },
+    {
+      "stationId": "yumemino"
+    },
+    {
+      "stationId": "inatoi"
+    },
+    {
+      "stationId": "togashira"
+    },
+    {
+      "stationId": "minami-moriya"
+    },
+    {
+      "stationId": "moriya"
+    },
+    {
+      "stationId": "shin-moriya"
+    },
+    {
+      "stationId": "kokinu"
+    },
+    {
+      "stationId": "mitsukaido"
+    },
+    {
+      "stationId": "kita-mitsukaido"
+    },
+    {
+      "stationId": "nakatsuma"
+    },
+    {
+      "stationId": "mitsuma"
+    },
+    {
+      "stationId": "minami-ishige"
+    },
+    {
+      "stationId": "ishige"
+    },
+    {
+      "stationId": "tamamura"
+    },
+    {
+      "stationId": "sodo"
+    },
+    {
+      "stationId": "shimotsuma"
+    },
+    {
+      "stationId": "daiho"
+    },
+    {
+      "stationId": "tobanoe"
+    },
+    {
+      "stationId": "kurogo"
+    },
+    {
+      "stationId": "otago"
+    },
+    {
+      "stationId": "shimodate"
+    }
+  ]
+}

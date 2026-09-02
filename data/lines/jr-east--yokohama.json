@@ -1,0 +1,99 @@
+{
+  "id": "jr-east--yokohama",
+  "operatorId": "jr-east",
+  "name": "横浜線",
+  "formalName": "横浜線",
+  "kana": "よこはません",
+  "symbol": "JH",
+  "color": "#9ACD32",
+  "colorName": "黄緑",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を複数の出典で照合。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　十日市場は路線図に2箇所ある（横浜線と中央本線・山梨県）。横浜線側を tokaichiba-yokohama とし、中央本線に着手するときに山梨県側を別idで足すこと。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Yokohama_Line",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "higashi-kanagawa",
+      "numbering": "JH13"
+    },
+    {
+      "stationId": "oguchi",
+      "numbering": "JH14"
+    },
+    {
+      "stationId": "kikuna",
+      "numbering": "JH15"
+    },
+    {
+      "stationId": "shin-yokohama",
+      "numbering": "JH16"
+    },
+    {
+      "stationId": "kozukue",
+      "numbering": "JH17"
+    },
+    {
+      "stationId": "kamoi",
+      "numbering": "JH18"
+    },
+    {
+      "stationId": "nakayama",
+      "numbering": "JH19"
+    },
+    {
+      "stationId": "tokaichiba-yokohama",
+      "numbering": "JH20"
+    },
+    {
+      "stationId": "nagatsuta",
+      "numbering": "JH21"
+    },
+    {
+      "stationId": "naruse",
+      "numbering": "JH22"
+    },
+    {
+      "stationId": "machida",
+      "numbering": "JH23"
+    },
+    {
+      "stationId": "kobuchi",
+      "numbering": "JH24"
+    },
+    {
+      "stationId": "fuchinobe",
+      "numbering": "JH25"
+    },
+    {
+      "stationId": "yabe",
+      "numbering": "JH26"
+    },
+    {
+      "stationId": "sagamihara",
+      "numbering": "JH27"
+    },
+    {
+      "stationId": "hashimoto",
+      "numbering": "JH28"
+    },
+    {
+      "stationId": "aihara",
+      "numbering": "JH29"
+    },
+    {
+      "stationId": "hachioji-minamino",
+      "numbering": "JH30"
+    },
+    {
+      "stationId": "katakura",
+      "numbering": "JH31"
+    },
+    {
+      "stationId": "hachioji",
+      "numbering": "JH32"
+    }
+  ]
+}

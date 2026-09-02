@@ -1,0 +1,159 @@
+{
+  "id": "tobu--urban-park",
+  "operatorId": "tobu",
+  "name": "東武アーバンパークライン",
+  "formalName": "野田線",
+  "kana": "とうぶあーばんぱーくらいん",
+  "symbol": "TD",
+  "color": "#40B3E5",
+  "colorName": "水色",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（伊勢崎線は日本語版とも一致）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　新鎌ヶ谷・鎌ヶ谷は路線図上でラベルが見つからなかった（要確認）。路線図はどちらも大きいケ「鎌ケ谷」で表記しており、小さいヶとの字体差の可能性がある。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tobu_Urban_Park_Line",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "omiya",
+      "numbering": "TD01"
+    },
+    {
+      "stationId": "kita-omiya",
+      "numbering": "TD02"
+    },
+    {
+      "stationId": "omiya-koen",
+      "numbering": "TD03"
+    },
+    {
+      "stationId": "owada",
+      "numbering": "TD04"
+    },
+    {
+      "stationId": "nanasato",
+      "numbering": "TD05"
+    },
+    {
+      "stationId": "iwatsuki",
+      "numbering": "TD06"
+    },
+    {
+      "stationId": "higashi-iwatsuki",
+      "numbering": "TD07"
+    },
+    {
+      "stationId": "toyoharu",
+      "numbering": "TD08"
+    },
+    {
+      "stationId": "yagisaki",
+      "numbering": "TD09"
+    },
+    {
+      "stationId": "kasukabe",
+      "numbering": "TD10"
+    },
+    {
+      "stationId": "fujino-ushijima",
+      "numbering": "TD11"
+    },
+    {
+      "stationId": "minami-sakurai",
+      "numbering": "TD12"
+    },
+    {
+      "stationId": "kawama",
+      "numbering": "TD13"
+    },
+    {
+      "stationId": "nanakodai",
+      "numbering": "TD14"
+    },
+    {
+      "stationId": "shimizu-koen",
+      "numbering": "TD15"
+    },
+    {
+      "stationId": "atago-tobu",
+      "numbering": "TD16"
+    },
+    {
+      "stationId": "nodashi",
+      "numbering": "TD17"
+    },
+    {
+      "stationId": "umesato",
+      "numbering": "TD18"
+    },
+    {
+      "stationId": "unga",
+      "numbering": "TD19"
+    },
+    {
+      "stationId": "edogawadai",
+      "numbering": "TD20"
+    },
+    {
+      "stationId": "hatsuishi",
+      "numbering": "TD21"
+    },
+    {
+      "stationId": "nagareyama-otakanomori",
+      "numbering": "TD22"
+    },
+    {
+      "stationId": "toyoshiki",
+      "numbering": "TD23"
+    },
+    {
+      "stationId": "kashiwa",
+      "numbering": "TD24"
+    },
+    {
+      "stationId": "shin-kashiwa",
+      "numbering": "TD25"
+    },
+    {
+      "stationId": "masuo",
+      "numbering": "TD26"
+    },
+    {
+      "stationId": "sakasai",
+      "numbering": "TD27"
+    },
+    {
+      "stationId": "takayanagi",
+      "numbering": "TD28"
+    },
+    {
+      "stationId": "mutsumi",
+      "numbering": "TD29"
+    },
+    {
+      "stationId": "shin-kamagaya",
+      "numbering": "TD30"
+    },
+    {
+      "stationId": "kamagaya",
+      "numbering": "TD31"
+    },
+    {
+      "stationId": "magomezawa",
+      "numbering": "TD32"
+    },
+    {
+      "stationId": "tsukada",
+      "numbering": "TD33"
+    },
+    {
+      "stationId": "shin-funabashi",
+      "numbering": "TD34"
+    },
+    {
+      "stationId": "funabashi",
+      "numbering": "TD35"
+    }
+  ]
+}

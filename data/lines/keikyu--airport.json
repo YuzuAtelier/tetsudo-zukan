@@ -1,0 +1,48 @@
+{
+  "id": "keikyu--airport",
+  "operatorId": "keikyu",
+  "name": "京急空港線",
+  "formalName": "空港線",
+  "kana": "けいきゅうくうこうせん",
+  "symbol": "KK",
+  "color": "#00A3E4",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、京急電鉄公式サイトと突き合わせた。ふりがなはローマ字表記から起こした。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Keiky%C5%AB_Airport_Line",
+    "https://www.keikyu.co.jp/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "keikyu-kamata",
+      "numbering": "KK11"
+    },
+    {
+      "stationId": "kojiya",
+      "numbering": "KK12"
+    },
+    {
+      "stationId": "otorii",
+      "numbering": "KK13"
+    },
+    {
+      "stationId": "anamori-inari",
+      "numbering": "KK14"
+    },
+    {
+      "stationId": "tenkubashi",
+      "numbering": "KK15"
+    },
+    {
+      "stationId": "haneda-airport-terminal-3",
+      "numbering": "KK16"
+    },
+    {
+      "stationId": "haneda-airport-terminal-1-2",
+      "numbering": "KK17"
+    }
+  ]
+}

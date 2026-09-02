@@ -1,0 +1,128 @@
+{
+  "id": "tokyu--den-en-toshi",
+  "operatorId": "tokyu",
+  "name": "東急田園都市線",
+  "formalName": "田園都市線",
+  "kana": "とうきゅうでんえんとしせん",
+  "symbol": "DT",
+  "color": "#20A288",
+  "colorName": "緑",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（東横線は日本語版とも照合）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　江田（神奈川県横浜市）は磐越東線の江田（福島県）と同名の別駅なので eda-kanagawa とした。　2026-09-02: 同名の別駅と1駅に統合されていたため「江田」を eda-kanagawa（東急田園都市線（横浜市青葉区））として分離した。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tokyu_Den-en-toshi_Line",
+    "https://www.tokyu.co.jp/railway/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "shibuya",
+      "numbering": "DT01"
+    },
+    {
+      "stationId": "ikejiri-ohashi",
+      "numbering": "DT02"
+    },
+    {
+      "stationId": "sangen-jaya",
+      "numbering": "DT03"
+    },
+    {
+      "stationId": "komazawa-daigaku",
+      "numbering": "DT04"
+    },
+    {
+      "stationId": "sakura-shimmachi",
+      "numbering": "DT05"
+    },
+    {
+      "stationId": "yoga",
+      "numbering": "DT06"
+    },
+    {
+      "stationId": "futako-tamagawa",
+      "numbering": "DT07"
+    },
+    {
+      "stationId": "futako-shinchi",
+      "numbering": "DT08"
+    },
+    {
+      "stationId": "takatsu",
+      "numbering": "DT09"
+    },
+    {
+      "stationId": "mizonokuchi",
+      "numbering": "DT10"
+    },
+    {
+      "stationId": "kajigaya",
+      "numbering": "DT11"
+    },
+    {
+      "stationId": "miyazakidai",
+      "numbering": "DT12"
+    },
+    {
+      "stationId": "miyamaedaira",
+      "numbering": "DT13"
+    },
+    {
+      "stationId": "saginuma",
+      "numbering": "DT14"
+    },
+    {
+      "stationId": "tama-plaza",
+      "numbering": "DT15"
+    },
+    {
+      "stationId": "azamino",
+      "numbering": "DT16"
+    },
+    {
+      "stationId": "eda-kanagawa",
+      "numbering": "DT17"
+    },
+    {
+      "stationId": "ichigao",
+      "numbering": "DT18"
+    },
+    {
+      "stationId": "fujigaoka",
+      "numbering": "DT19"
+    },
+    {
+      "stationId": "aobadai",
+      "numbering": "DT20"
+    },
+    {
+      "stationId": "tana",
+      "numbering": "DT21"
+    },
+    {
+      "stationId": "nagatsuta",
+      "numbering": "DT22"
+    },
+    {
+      "stationId": "tsukushino",
+      "numbering": "DT23"
+    },
+    {
+      "stationId": "suzukakedai",
+      "numbering": "DT24"
+    },
+    {
+      "stationId": "minami-machida-grandberry-park",
+      "numbering": "DT25"
+    },
+    {
+      "stationId": "tsukimino",
+      "numbering": "DT26"
+    },
+    {
+      "stationId": "chuo-rinkan",
+      "numbering": "DT27"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "jr-east--togane",
+  "operatorId": "jr-east",
+  "name": "東金線",
+  "formalName": "東金線",
+  "kana": "とうがねせん",
+  "color": "#F15F2B",
+  "colorName": "朱",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版・日本語版Wikipediaの2系統で照合。ふりがなは英語版のローマ字から起こした（日本語版のふりがなには誤りが多数あった）。駅名を路線図PDFの抽出結果と照合。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。",
+  "source": [
+    "https://en.wikipedia.org/wiki/T%C5%8Dgane_Line",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "oami"
+    },
+    {
+      "stationId": "fukudawara"
+    },
+    {
+      "stationId": "togane"
+    },
+    {
+      "stationId": "gumyo"
+    },
+    {
+      "stationId": "naruto"
+    }
+  ]
+}

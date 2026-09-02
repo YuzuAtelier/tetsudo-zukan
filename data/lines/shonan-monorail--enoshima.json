@@ -1,0 +1,50 @@
+{
+  "id": "shonan-monorail--enoshima",
+  "operatorId": "shonan-monorail",
+  "name": "湘南モノレール江の島線",
+  "formalName": "江の島線",
+  "kana": "しょうなんものれーるえのしません",
+  "symbol": "SM",
+  "color": "#EE7B1A",
+  "colorName": "橙",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版Wikipedia（湘南モノレールは日本語版）で確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/湘南モノレール江の島線"
+  ],
+  "stations": [
+    {
+      "stationId": "ofuna",
+      "numbering": "SM01"
+    },
+    {
+      "stationId": "fujimicho",
+      "numbering": "SM02"
+    },
+    {
+      "stationId": "shonan-machiya",
+      "numbering": "SM03"
+    },
+    {
+      "stationId": "shonan-fukasawa",
+      "numbering": "SM04"
+    },
+    {
+      "stationId": "nishi-kamakura",
+      "numbering": "SM05"
+    },
+    {
+      "stationId": "katase-yama",
+      "numbering": "SM06"
+    },
+    {
+      "stationId": "mejiroyama-shita",
+      "numbering": "SM07"
+    },
+    {
+      "stationId": "shonan-enoshima",
+      "numbering": "SM08"
+    }
+  ]
+}

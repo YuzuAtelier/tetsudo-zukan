@@ -1,0 +1,48 @@
+{
+  "id": "tokyu--tamagawa",
+  "operatorId": "tokyu",
+  "name": "東急多摩川線",
+  "formalName": "多摩川線",
+  "kana": "とうきゅうたまがわせん",
+  "symbol": "TM",
+  "color": "#AE0378",
+  "colorName": "赤紫",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（東横線は日本語版とも照合）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tokyu_Tamagawa_Line",
+    "https://www.tokyu.co.jp/railway/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "tamagawa-tokyu",
+      "numbering": "TM01"
+    },
+    {
+      "stationId": "numabe",
+      "numbering": "TM02"
+    },
+    {
+      "stationId": "unoki",
+      "numbering": "TM03"
+    },
+    {
+      "stationId": "shimomaruko",
+      "numbering": "TM04"
+    },
+    {
+      "stationId": "musashi-nitta",
+      "numbering": "TM05"
+    },
+    {
+      "stationId": "yaguchinowatashi",
+      "numbering": "TM06"
+    },
+    {
+      "stationId": "kamata",
+      "numbering": "TM07"
+    }
+  ]
+}

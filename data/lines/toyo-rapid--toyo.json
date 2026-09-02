@@ -1,0 +1,54 @@
+{
+  "id": "toyo-rapid--toyo",
+  "operatorId": "toyo-rapid",
+  "name": "東葉高速線",
+  "formalName": "東葉高速線",
+  "kana": "とうようこうそくせん",
+  "symbol": "TR",
+  "color": "#0091CC",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版Wikipedia（湘南モノレールは日本語版）で確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/T%C5%8Dy%C5%8D_Rapid_Railway"
+  ],
+  "stations": [
+    {
+      "stationId": "nishi-funabashi",
+      "numbering": "TR01"
+    },
+    {
+      "stationId": "higashi-kaijin",
+      "numbering": "TR02"
+    },
+    {
+      "stationId": "hasama",
+      "numbering": "TR03"
+    },
+    {
+      "stationId": "kita-narashino",
+      "numbering": "TR04"
+    },
+    {
+      "stationId": "funabashi-nichidai-mae",
+      "numbering": "TR05"
+    },
+    {
+      "stationId": "yachiyo-midorigaoka",
+      "numbering": "TR06"
+    },
+    {
+      "stationId": "yachiyo-chuo",
+      "numbering": "TR07"
+    },
+    {
+      "stationId": "murakami",
+      "numbering": "TR08"
+    },
+    {
+      "stationId": "toyo-katsutadai",
+      "numbering": "TR09"
+    }
+  ]
+}

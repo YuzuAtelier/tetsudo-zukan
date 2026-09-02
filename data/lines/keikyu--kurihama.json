@@ -1,0 +1,56 @@
+{
+  "id": "keikyu--kurihama",
+  "operatorId": "keikyu",
+  "name": "京急久里浜線",
+  "formalName": "久里浜線",
+  "kana": "けいきゅうくりはません",
+  "symbol": "KK",
+  "color": "#00A3E4",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、京急電鉄公式サイトと突き合わせた。ふりがなはローマ字表記から起こした。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Keiky%C5%AB_Kurihama_Line",
+    "https://www.keikyu.co.jp/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "horinouchi",
+      "numbering": "KK61"
+    },
+    {
+      "stationId": "shin-otsu",
+      "numbering": "KK65"
+    },
+    {
+      "stationId": "kitakurihama",
+      "numbering": "KK66"
+    },
+    {
+      "stationId": "keikyu-kurihama",
+      "numbering": "KK67"
+    },
+    {
+      "stationId": "yrp-nobi",
+      "numbering": "KK68"
+    },
+    {
+      "stationId": "keikyu-nagasawa",
+      "numbering": "KK69"
+    },
+    {
+      "stationId": "tsukuihama",
+      "numbering": "KK70"
+    },
+    {
+      "stationId": "miurakaigan",
+      "numbering": "KK71"
+    },
+    {
+      "stationId": "misakiguchi",
+      "numbering": "KK72"
+    }
+  ]
+}

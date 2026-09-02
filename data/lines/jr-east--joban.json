@@ -1,0 +1,123 @@
+{
+  "id": "jr-east--joban",
+  "operatorId": "jr-east",
+  "name": "常磐線",
+  "formalName": "常磐線（取手〜いわき）",
+  "kana": "じょうばんせん",
+  "color": "#36AE6E",
+  "colorName": "エメラルドグリーン",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版・日本語版Wikipediaの2系統で照合。ふりがなはローマ字表記から起こした。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせて確認。　英語版Wikipediaは駅名を複数誤記していた（神立→「上大津」、羽鳥→「波鳥」、勿来→「中ノ沢」、植田→「上田」）うえ大甕〜大津港を欠落させていたため、日本語版を採用した。偕楽園は臨時駅。座標検査の藤代→龍ケ崎市は路線図の縮尺による誤検知。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/常磐線",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "toride"
+    },
+    {
+      "stationId": "fujishiro"
+    },
+    {
+      "stationId": "ryugasakishi"
+    },
+    {
+      "stationId": "ushiku"
+    },
+    {
+      "stationId": "hitachino-ushiku"
+    },
+    {
+      "stationId": "arakawaoki"
+    },
+    {
+      "stationId": "tsuchiura"
+    },
+    {
+      "stationId": "kandatsu"
+    },
+    {
+      "stationId": "takahama"
+    },
+    {
+      "stationId": "ishioka"
+    },
+    {
+      "stationId": "hatori"
+    },
+    {
+      "stationId": "iwama"
+    },
+    {
+      "stationId": "tomobe"
+    },
+    {
+      "stationId": "uchihara"
+    },
+    {
+      "stationId": "akatsuka"
+    },
+    {
+      "stationId": "kairakuen"
+    },
+    {
+      "stationId": "mito"
+    },
+    {
+      "stationId": "katsuta"
+    },
+    {
+      "stationId": "sawa"
+    },
+    {
+      "stationId": "tokai"
+    },
+    {
+      "stationId": "omika"
+    },
+    {
+      "stationId": "hitachi-taga"
+    },
+    {
+      "stationId": "hitachi"
+    },
+    {
+      "stationId": "ogitsu"
+    },
+    {
+      "stationId": "juo"
+    },
+    {
+      "stationId": "takahagi"
+    },
+    {
+      "stationId": "minami-nakago"
+    },
+    {
+      "stationId": "isohara"
+    },
+    {
+      "stationId": "otsuko"
+    },
+    {
+      "stationId": "nakoso"
+    },
+    {
+      "stationId": "ueda-fukushima"
+    },
+    {
+      "stationId": "izumi"
+    },
+    {
+      "stationId": "yumoto"
+    },
+    {
+      "stationId": "uchigo"
+    },
+    {
+      "stationId": "iwaki"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "id": "tokyo-metro--marunouchi",
+  "operatorId": "tokyo-metro",
+  "name": "丸ノ内線",
+  "formalName": "東京メトロ丸ノ内線",
+  "kana": "まるのうちせん",
+  "symbol": "M",
+  "color": "#E24340",
+  "colorName": "スカーレット",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を事業者公式サイトとWikipediaの2系統で照合し一致を確認。駅名を路線図PDFの抽出結果と照合。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、破綻が無いことを確認。",
+  "source": [
+    "https://www.tokyometro.jp/station/line_marunouchi/index.html",
+    "https://www.tokyometro.jp/lang_en/station/line_marunouchi/index.html",
+    "https://www.marorika.com/entry/tokyo-metro-line-color-code"
+  ],
+  "stations": [
+    {
+      "stationId": "ogikubo",
+      "numbering": "M01"
+    },
+    {
+      "stationId": "minami-asagaya",
+      "numbering": "M02"
+    },
+    {
+      "stationId": "shin-koenji",
+      "numbering": "M03"
+    },
+    {
+      "stationId": "higashi-koenji",
+      "numbering": "M04"
+    },
+    {
+      "stationId": "shin-nakano",
+      "numbering": "M05"
+    },
+    {
+      "stationId": "nakano-sakaue",
+      "numbering": "M06"
+    },
+    {
+      "stationId": "nishi-shinjuku",
+      "numbering": "M07"
+    },
+    {
+      "stationId": "shinjuku",
+      "numbering": "M08"
+    },
+    {
+      "stationId": "shinjuku-sanchome",
+      "numbering": "M09"
+    },
+    {
+      "stationId": "shinjuku-gyoemmae",
+      "numbering": "M10"
+    },
+    {
+      "stationId": "yotsuya-sanchome",
+      "numbering": "M11"
+    },
+    {
+      "stationId": "yotsuya",
+      "numbering": "M12"
+    },
+    {
+      "stationId": "akasaka-mitsuke",
+      "numbering": "M13"
+    },
+    {
+      "stationId": "kokkai-gijidomae",
+      "numbering": "M14"
+    },
+    {
+      "stationId": "kasumigaseki",
+      "numbering": "M15"
+    },
+    {
+      "stationId": "ginza",
+      "numbering": "M16"
+    },
+    {
+      "stationId": "tokyo",
+      "numbering": "M17"
+    },
+    {
+      "stationId": "otemachi",
+      "numbering": "M18"
+    },
+    {
+      "stationId": "awajicho",
+      "numbering": "M19"
+    },
+    {
+      "stationId": "ochanomizu",
+      "numbering": "M20"
+    },
+    {
+      "stationId": "hongo-sanchome",
+      "numbering": "M21"
+    },
+    {
+      "stationId": "korakuen",
+      "numbering": "M22"
+    },
+    {
+      "stationId": "myogadani",
+      "numbering": "M23"
+    },
+    {
+      "stationId": "shin-otsuka",
+      "numbering": "M24"
+    },
+    {
+      "stationId": "ikebukuro",
+      "numbering": "M25"
+    }
+  ]
+}

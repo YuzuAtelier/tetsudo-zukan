@@ -1,0 +1,59 @@
+{
+  "id": "tobu--sano",
+  "operatorId": "tobu",
+  "name": "佐野線",
+  "formalName": "佐野線",
+  "kana": "さのせん",
+  "symbol": "TI",
+  "color": "#AB60A2",
+  "colorName": "紫",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（伊勢崎線は日本語版とも一致）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tobu_Sano_Line",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "tatebayashi",
+      "numbering": "TI10"
+    },
+    {
+      "stationId": "watarase",
+      "numbering": "TI31"
+    },
+    {
+      "stationId": "tajima-tobu",
+      "numbering": "TI32"
+    },
+    {
+      "stationId": "sanoshi",
+      "numbering": "TI33"
+    },
+    {
+      "stationId": "sano",
+      "numbering": "TI34"
+    },
+    {
+      "stationId": "horigome",
+      "numbering": "TI35"
+    },
+    {
+      "stationId": "yoshimizu",
+      "numbering": "TI36"
+    },
+    {
+      "stationId": "tanuma",
+      "numbering": "TI37"
+    },
+    {
+      "stationId": "tada-tobu",
+      "numbering": "TI38"
+    },
+    {
+      "stationId": "kuzu",
+      "numbering": "TI39"
+    }
+  ]
+}

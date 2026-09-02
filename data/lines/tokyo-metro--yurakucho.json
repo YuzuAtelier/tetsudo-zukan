@@ -1,0 +1,116 @@
+{
+  "id": "tokyo-metro--yurakucho",
+  "operatorId": "tokyo-metro",
+  "name": "有楽町線",
+  "formalName": "東京メトロ有楽町線",
+  "kana": "ゆうらくちょうせん",
+  "symbol": "Y",
+  "color": "#BDA577",
+  "colorName": "ゴールド",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を事業者公式サイトとWikipediaの2系統で照合し一致を確認。駅名を路線図PDFの抽出結果と照合。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、破綻が無いことを確認。　麹町のみ路線図が旧字体「麴町」。事業者公式の「麹町」を採用している。　2026-09-02: 同名の別駅と1駅に統合されていたため「平和台」を heiwadai-tokyo（有楽町線・副都心線（東京都練馬区））として分離した。",
+  "source": [
+    "https://www.tokyometro.jp/station/line_yurakucho/index.html",
+    "https://www.tokyometro.jp/lang_en/station/line_yurakucho/index.html",
+    "https://www.marorika.com/entry/tokyo-metro-line-color-code"
+  ],
+  "stations": [
+    {
+      "stationId": "wakoshi",
+      "numbering": "Y01"
+    },
+    {
+      "stationId": "chikatetsu-narimasu",
+      "numbering": "Y02"
+    },
+    {
+      "stationId": "chikatetsu-akatsuka",
+      "numbering": "Y03"
+    },
+    {
+      "stationId": "heiwadai-tokyo",
+      "numbering": "Y04"
+    },
+    {
+      "stationId": "hikawadai",
+      "numbering": "Y05"
+    },
+    {
+      "stationId": "kotake-mukaihara",
+      "numbering": "Y06"
+    },
+    {
+      "stationId": "senkawa",
+      "numbering": "Y07"
+    },
+    {
+      "stationId": "kanamecho",
+      "numbering": "Y08"
+    },
+    {
+      "stationId": "ikebukuro",
+      "numbering": "Y09"
+    },
+    {
+      "stationId": "higashi-ikebukuro",
+      "numbering": "Y10"
+    },
+    {
+      "stationId": "gokokuji",
+      "numbering": "Y11"
+    },
+    {
+      "stationId": "edogawabashi",
+      "numbering": "Y12"
+    },
+    {
+      "stationId": "iidabashi",
+      "numbering": "Y13"
+    },
+    {
+      "stationId": "ichigaya",
+      "numbering": "Y14"
+    },
+    {
+      "stationId": "kojimachi",
+      "numbering": "Y15"
+    },
+    {
+      "stationId": "nagatacho",
+      "numbering": "Y16"
+    },
+    {
+      "stationId": "sakuradamon",
+      "numbering": "Y17"
+    },
+    {
+      "stationId": "yurakucho",
+      "numbering": "Y18"
+    },
+    {
+      "stationId": "ginza-itchome",
+      "numbering": "Y19"
+    },
+    {
+      "stationId": "shintomicho",
+      "numbering": "Y20"
+    },
+    {
+      "stationId": "tsukishima",
+      "numbering": "Y21"
+    },
+    {
+      "stationId": "toyosu",
+      "numbering": "Y22"
+    },
+    {
+      "stationId": "tatsumi",
+      "numbering": "Y23"
+    },
+    {
+      "stationId": "shin-kiba",
+      "numbering": "Y24"
+    }
+  ]
+}

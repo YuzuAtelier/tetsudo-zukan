@@ -1,0 +1,79 @@
+{
+  "id": "jr-east--joban-local",
+  "operatorId": "jr-east",
+  "name": "常磐線各駅停車",
+  "formalName": "常磐線（常磐緩行線）",
+  "kana": "じょうばんせんかくえきていしゃ",
+  "symbol": "JL",
+  "color": "#2F9A9A",
+  "colorName": "エメラルドグリーン",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を複数の出典で照合。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　綾瀬(JL19)・松戸(JL22)・北小金(JL26)・南柏(JL27)・柏(JL28)・天王台(JL31)・取手(JL32)を各駅記事で確定させ、間の駅は確定した番号の間に挟まる順で決めた。番号が19から始まるのは、直通する千代田線の綾瀬がC19であることに合わせているため。綾瀬駅の記事には北千住をJL18とする記述があるが、北千住駅の記事にはJLの記載が無いため、常磐線の記事の「JLは綾瀬〜取手」に従い北千住は含めていない。要確認。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/常磐線",
+    "https://ja.wikipedia.org/wiki/綾瀬駅",
+    "https://ja.wikipedia.org/wiki/南柏駅",
+    "https://ja.wikipedia.org/wiki/松戸駅",
+    "https://ja.wikipedia.org/wiki/天王台駅",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "ayase",
+      "numbering": "JL19"
+    },
+    {
+      "stationId": "kameari",
+      "numbering": "JL20"
+    },
+    {
+      "stationId": "kanamachi",
+      "numbering": "JL21"
+    },
+    {
+      "stationId": "matsudo",
+      "numbering": "JL22"
+    },
+    {
+      "stationId": "kita-matsudo",
+      "numbering": "JL23"
+    },
+    {
+      "stationId": "mabashi",
+      "numbering": "JL24"
+    },
+    {
+      "stationId": "shin-matsudo",
+      "numbering": "JL25"
+    },
+    {
+      "stationId": "kita-kogane",
+      "numbering": "JL26"
+    },
+    {
+      "stationId": "minami-kashiwa",
+      "numbering": "JL27"
+    },
+    {
+      "stationId": "kashiwa",
+      "numbering": "JL28"
+    },
+    {
+      "stationId": "kita-kashiwa",
+      "numbering": "JL29"
+    },
+    {
+      "stationId": "abiko",
+      "numbering": "JL30"
+    },
+    {
+      "stationId": "tennodai",
+      "numbering": "JL31"
+    },
+    {
+      "stationId": "toride",
+      "numbering": "JL32"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "seibu--toshima",
+  "operatorId": "seibu",
+  "name": "西武豊島線",
+  "formalName": "豊島線",
+  "kana": "せいぶとしません",
+  "symbol": "SI",
+  "color": "#EF7A00",
+  "colorName": "オレンジ",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、西武鉄道公式サイトの駅ナンバリング表記と突き合わせた。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。「ケ／ヶ」は事業者の正式表記（小さいヶ）に従った。　分岐駅の練馬(SI06)を池袋線と共有している。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Seibu_Toshima_Line",
+    "https://www.seiburailway.jp/railway/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "nerima",
+      "numbering": "SI06"
+    },
+    {
+      "stationId": "toshimaen",
+      "numbering": "SI39"
+    }
+  ]
+}

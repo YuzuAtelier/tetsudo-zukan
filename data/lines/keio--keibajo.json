@@ -1,0 +1,28 @@
+{
+  "id": "keio--keibajo",
+  "operatorId": "keio",
+  "name": "京王競馬場線",
+  "formalName": "競馬場線",
+  "kana": "けいおうけいばじょうせん",
+  "symbol": "KO",
+  "color": "#DD0076",
+  "colorName": "ピンク",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、京王電鉄公式サイトと突き合わせた。ふりがなはローマ字表記から起こした。「ケ／ヶ」は事業者の正式表記（小さいヶ）に従った。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Keio_Keibaj%C5%8D_Line",
+    "https://www.keio.co.jp/train/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "higashi-fuchu",
+      "numbering": "KO23"
+    },
+    {
+      "stationId": "fuchukeiba-seimommae",
+      "numbering": "KO46"
+    }
+  ]
+}

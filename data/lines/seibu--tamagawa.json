@@ -1,0 +1,44 @@
+{
+  "id": "seibu--tamagawa",
+  "operatorId": "seibu",
+  "name": "西武多摩川線",
+  "formalName": "多摩川線",
+  "kana": "せいぶたまがわせん",
+  "symbol": "SW",
+  "color": "#EF7A00",
+  "colorName": "オレンジ",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、西武鉄道公式サイトの駅ナンバリング表記と突き合わせた。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。「ケ／ヶ」は事業者の正式表記（小さいヶ）に従った。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Seibu_Tamagawa_Line",
+    "https://www.seiburailway.jp/railway/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "musashi-sakai",
+      "numbering": "SW01"
+    },
+    {
+      "stationId": "shin-koganei",
+      "numbering": "SW02"
+    },
+    {
+      "stationId": "tama-seibu",
+      "numbering": "SW03"
+    },
+    {
+      "stationId": "shiraitodai",
+      "numbering": "SW04"
+    },
+    {
+      "stationId": "kyoteijo-mae",
+      "numbering": "SW05"
+    },
+    {
+      "stationId": "koremasa",
+      "numbering": "SW06"
+    }
+  ]
+}

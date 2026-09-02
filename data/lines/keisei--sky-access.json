@@ -1,0 +1,52 @@
+{
+  "id": "keisei--sky-access",
+  "operatorId": "keisei",
+  "name": "成田スカイアクセス線",
+  "formalName": "成田空港線",
+  "kana": "なりたすかいあくせすせん",
+  "symbol": "KS",
+  "color": "#EC7B02",
+  "colorName": "オレンジ",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を日本語版・英語版Wikipediaの2系統で照合。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。「ケ／ヶ」は事業者の正式表記に従った。　北総線と線路を共用する区間があり、その区間の駅番号は HS のまま。駅番号の記号が路線記号と違う警告はこのため。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Narita_Sky_Access_Line",
+    "https://www.keisei.co.jp/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "keisei-takasago",
+      "numbering": "KS10"
+    },
+    {
+      "stationId": "higashi-matsudo",
+      "numbering": "HS05"
+    },
+    {
+      "stationId": "shin-kamagaya",
+      "numbering": "HS08"
+    },
+    {
+      "stationId": "chiba-newtown-chuo",
+      "numbering": "HS12"
+    },
+    {
+      "stationId": "imba-nihon-idai",
+      "numbering": "HS14"
+    },
+    {
+      "stationId": "narita-yukawa",
+      "numbering": "KS43"
+    },
+    {
+      "stationId": "kuko-daini-biru",
+      "numbering": "KS41"
+    },
+    {
+      "stationId": "narita-kuko",
+      "numbering": "KS42"
+    }
+  ]
+}

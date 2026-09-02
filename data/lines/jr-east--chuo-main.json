@@ -1,0 +1,133 @@
+{
+  "id": "jr-east--chuo-main",
+  "operatorId": "jr-east",
+  "name": "中央本線",
+  "formalName": "中央本線（高尾〜塩尻）",
+  "kana": "ちゅうおうほんせん",
+  "color": "#007AC0",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版・日本語版Wikipediaの2系統で照合。ふりがなはローマ字表記から起こした。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせて確認。　日本語版Wikipediaの駅一覧は鳥沢と東山梨を落としていたため英語版で補った。ふりがなも英語版ローマ字で修正（初狩→はつかり、勝沼ぶどう郷→かつぬまぶどうきょう、春日居町→かすがいちょう、石和温泉→いさわおんせん）。甲府〜塩尻の区間は英語版の表が途中で切れており、ふりがなを漢字とローマ字の一般則から起こしている。**要確認**。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/中央本線",
+    "https://en.wikipedia.org/wiki/Ch%C5%AB%C5%8D_Main_Line",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "takao"
+    },
+    {
+      "stationId": "sagamiko"
+    },
+    {
+      "stationId": "fujino"
+    },
+    {
+      "stationId": "uenohara"
+    },
+    {
+      "stationId": "shiotsu"
+    },
+    {
+      "stationId": "yanagawa"
+    },
+    {
+      "stationId": "torisawa"
+    },
+    {
+      "stationId": "saruhashi"
+    },
+    {
+      "stationId": "otsuki"
+    },
+    {
+      "stationId": "hatsukari"
+    },
+    {
+      "stationId": "sasago"
+    },
+    {
+      "stationId": "kai-yamato"
+    },
+    {
+      "stationId": "katsunuma-budokyo"
+    },
+    {
+      "stationId": "enzan"
+    },
+    {
+      "stationId": "higashi-yamanashi"
+    },
+    {
+      "stationId": "yamanashishi"
+    },
+    {
+      "stationId": "kasugaicho"
+    },
+    {
+      "stationId": "isawaonsen"
+    },
+    {
+      "stationId": "sakaori"
+    },
+    {
+      "stationId": "kofu"
+    },
+    {
+      "stationId": "ryuo"
+    },
+    {
+      "stationId": "shiozaki"
+    },
+    {
+      "stationId": "nirasaki"
+    },
+    {
+      "stationId": "shimpu"
+    },
+    {
+      "stationId": "anayama"
+    },
+    {
+      "stationId": "hinoharu"
+    },
+    {
+      "stationId": "nagasaka"
+    },
+    {
+      "stationId": "kobuchizawa"
+    },
+    {
+      "stationId": "shinano-sakai"
+    },
+    {
+      "stationId": "fujimi"
+    },
+    {
+      "stationId": "suzuran-no-sato"
+    },
+    {
+      "stationId": "aoyagi"
+    },
+    {
+      "stationId": "chino"
+    },
+    {
+      "stationId": "kami-suwa"
+    },
+    {
+      "stationId": "shimo-suwa"
+    },
+    {
+      "stationId": "okaya"
+    },
+    {
+      "stationId": "midoriko"
+    },
+    {
+      "stationId": "shiojiri"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "toei--asakusa",
+  "operatorId": "toei",
+  "name": "都営浅草線",
+  "formalName": "東京都地下鉄1号線 浅草線",
+  "kana": "とえいあさくさせん",
+  "symbol": "A",
+  "color": "#D04E3C",
+  "colorName": "ローズ",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を事業者公式サイトとWikipediaの2系統で照合し一致を確認。駅名を路線図PDFの抽出結果と照合。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、破綻が無いことを確認。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/東京都交通局浅草線",
+    "https://en.wikipedia.org/wiki/Toei_Asakusa_Line",
+    "https://www.marorika.com/entry/tokyo-metro-line-color-code"
+  ],
+  "stations": [
+    {
+      "stationId": "nishi-magome",
+      "numbering": "A01"
+    },
+    {
+      "stationId": "magome",
+      "numbering": "A02"
+    },
+    {
+      "stationId": "nakanobu",
+      "numbering": "A03"
+    },
+    {
+      "stationId": "togoshi",
+      "numbering": "A04"
+    },
+    {
+      "stationId": "gotanda",
+      "numbering": "A05"
+    },
+    {
+      "stationId": "takanawadai",
+      "numbering": "A06"
+    },
+    {
+      "stationId": "sengakuji",
+      "numbering": "A07"
+    },
+    {
+      "stationId": "mita",
+      "numbering": "A08"
+    },
+    {
+      "stationId": "daimon",
+      "numbering": "A09"
+    },
+    {
+      "stationId": "shimbashi",
+      "numbering": "A10"
+    },
+    {
+      "stationId": "higashi-ginza",
+      "numbering": "A11"
+    },
+    {
+      "stationId": "takaracho",
+      "numbering": "A12"
+    },
+    {
+      "stationId": "nihombashi",
+      "numbering": "A13"
+    },
+    {
+      "stationId": "ningyocho",
+      "numbering": "A14"
+    },
+    {
+      "stationId": "higashi-nihombashi",
+      "numbering": "A15"
+    },
+    {
+      "stationId": "asakusabashi",
+      "numbering": "A16"
+    },
+    {
+      "stationId": "kuramae",
+      "numbering": "A17"
+    },
+    {
+      "stationId": "asakusa",
+      "numbering": "A18"
+    },
+    {
+      "stationId": "honjo-azumabashi",
+      "numbering": "A19"
+    },
+    {
+      "stationId": "oshiage",
+      "numbering": "A20"
+    }
+  ]
+}

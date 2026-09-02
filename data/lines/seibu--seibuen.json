@@ -1,0 +1,28 @@
+{
+  "id": "seibu--seibuen",
+  "operatorId": "seibu",
+  "name": "西武園線",
+  "formalName": "西武園線",
+  "kana": "せいぶえんせん",
+  "symbol": "SK",
+  "color": "#1EAD4C",
+  "colorName": "緑",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、西武鉄道公式サイトの駅ナンバリング表記と突き合わせた。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。「ケ／ヶ」は事業者の正式表記（小さいヶ）に従った。　起点の東村山(SK05)を国分寺線と共有している。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Seibuen_Line",
+    "https://www.seiburailway.jp/railway/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "higashi-murayama",
+      "numbering": "SK05"
+    },
+    {
+      "stationId": "seibuen",
+      "numbering": "SK06"
+    }
+  ]
+}

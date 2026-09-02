@@ -1,0 +1,51 @@
+{
+  "id": "tobu--ogose",
+  "operatorId": "tobu",
+  "name": "越生線",
+  "formalName": "越生線",
+  "kana": "おごせせん",
+  "symbol": "TJ",
+  "color": "#F9AB41",
+  "colorName": "橙",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（伊勢崎線は日本語版とも一致）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tobu_Ogose_Line",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "sakado",
+      "numbering": "TJ26"
+    },
+    {
+      "stationId": "ippommatsu",
+      "numbering": "TJ41"
+    },
+    {
+      "stationId": "nishi-oya",
+      "numbering": "TJ42"
+    },
+    {
+      "stationId": "kawakado",
+      "numbering": "TJ43"
+    },
+    {
+      "stationId": "bushu-nagase",
+      "numbering": "TJ44"
+    },
+    {
+      "stationId": "higashi-moro",
+      "numbering": "TJ45"
+    },
+    {
+      "stationId": "bushu-karasawa",
+      "numbering": "TJ46"
+    },
+    {
+      "stationId": "ogose",
+      "numbering": "TJ47"
+    }
+  ]
+}

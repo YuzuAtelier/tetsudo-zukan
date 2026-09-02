@@ -1,0 +1,26 @@
+{
+  "id": "kanto--ryugasaki",
+  "operatorId": "kanto",
+  "name": "関東鉄道竜ヶ崎線",
+  "formalName": "竜ヶ崎線",
+  "kana": "かんとうてつどうりゅうがさきせん",
+  "color": "#F39800",
+  "colorName": "橙",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版（一部日本語版）Wikipediaで確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Ry%C5%ABgasaki_Line"
+  ],
+  "stations": [
+    {
+      "stationId": "sanuki-kanto"
+    },
+    {
+      "stationId": "ireji"
+    },
+    {
+      "stationId": "ryugasaki"
+    }
+  ]
+}

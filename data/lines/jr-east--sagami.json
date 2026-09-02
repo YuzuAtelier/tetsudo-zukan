@@ -1,0 +1,72 @@
+{
+  "id": "jr-east--sagami",
+  "operatorId": "jr-east",
+  "name": "相模線",
+  "formalName": "相模線",
+  "kana": "さがみせん",
+  "color": "#009793",
+  "colorName": "青緑",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を複数の出典で照合。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　駅ナンバリングは設定されていない。入谷（神奈川県座間市）は日比谷線の入谷（東京都台東区）と同名の別駅なので、iriya-kanagawa / iriya-tokyo に分けた。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Sagami_Line",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "chigasaki"
+    },
+    {
+      "stationId": "kita-chigasaki"
+    },
+    {
+      "stationId": "kagawa"
+    },
+    {
+      "stationId": "samukawa"
+    },
+    {
+      "stationId": "miyayama"
+    },
+    {
+      "stationId": "kurami"
+    },
+    {
+      "stationId": "kadosawabashi"
+    },
+    {
+      "stationId": "shake"
+    },
+    {
+      "stationId": "atsugi"
+    },
+    {
+      "stationId": "ebina"
+    },
+    {
+      "stationId": "iriya-kanagawa"
+    },
+    {
+      "stationId": "sobudaishita"
+    },
+    {
+      "stationId": "shimomizo"
+    },
+    {
+      "stationId": "harataima"
+    },
+    {
+      "stationId": "banda"
+    },
+    {
+      "stationId": "kamimizo"
+    },
+    {
+      "stationId": "minami-hashimoto"
+    },
+    {
+      "stationId": "hashimoto"
+    }
+  ]
+}

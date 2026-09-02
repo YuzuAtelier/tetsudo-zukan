@@ -1,0 +1,35 @@
+{
+  "id": "yamaman--yukarigaoka",
+  "operatorId": "yamaman",
+  "name": "山万ユーカリが丘線",
+  "formalName": "ユーカリが丘線",
+  "kana": "やままんゆーかりがおかせん",
+  "color": "#F39800",
+  "colorName": "橙",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版（一部日本語版）Wikipediaで確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　環状（ラケット型）運転のため、公園・地区センター・ユーカリが丘は往復で2回通るが、配列には1回だけ入れてある。英語版Wikipediaの「猪野」は誤りで、日本語版で確認したところ正しくは「井野」。　この路線は路線図PDFの描画範囲の外（「至○○」の注記のみ）にあり、路線図との駅名照合ができていない。　2026-09-02: 同名の別駅と1駅に統合されていたため「井野」を ino-chiba（山万ユーカリが丘線（千葉県佐倉市））として分離した。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/山万ユーカリが丘線"
+  ],
+  "stations": [
+    {
+      "stationId": "yukarigaoka"
+    },
+    {
+      "stationId": "chiku-center"
+    },
+    {
+      "stationId": "koen-yamaman"
+    },
+    {
+      "stationId": "joshidai"
+    },
+    {
+      "stationId": "chugakko"
+    },
+    {
+      "stationId": "ino-chiba"
+    }
+  ]
+}

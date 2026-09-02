@@ -1,0 +1,29 @@
+{
+  "id": "maihama--disney-resort",
+  "operatorId": "maihama",
+  "name": "ディズニーリゾートライン",
+  "formalName": "ディズニーリゾートライン",
+  "kana": "でぃずにーりぞーとらいん",
+  "color": "#EC297B",
+  "colorName": "ピンク",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版Wikipedia（湘南モノレールは日本語版）で確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　環状（ループ）運転のため、start=endでリゾートゲートウェイに戻る形にした。駅ナンバリングは無い。運営は舞浜リゾートライン（東京ディズニーリゾート内の会社）。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tokyo_Disney_Resort_Line"
+  ],
+  "stations": [
+    {
+      "stationId": "resort-gateway-station"
+    },
+    {
+      "stationId": "tokyo-disneyland-station"
+    },
+    {
+      "stationId": "bayside-station"
+    },
+    {
+      "stationId": "tokyo-disneysea-station"
+    }
+  ]
+}

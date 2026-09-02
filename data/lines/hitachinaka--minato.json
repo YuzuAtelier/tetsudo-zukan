@@ -1,0 +1,50 @@
+{
+  "id": "hitachinaka--minato",
+  "operatorId": "hitachinaka",
+  "name": "ひたちなか海浜鉄道湊線",
+  "formalName": "湊線",
+  "kana": "ひたちなかかいひんてつどうみなとせん",
+  "color": "#E85298",
+  "colorName": "ピンク",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順を英語版（一部日本語版）Wikipediaで確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　　この路線は路線図PDFの描画範囲の外（「至○○」の注記のみ）にあり、路線図との駅名照合ができていない。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Hitachinaka_Seaside_Railway_Minato_Line"
+  ],
+  "stations": [
+    {
+      "stationId": "katsuta"
+    },
+    {
+      "stationId": "kokimae"
+    },
+    {
+      "stationId": "kaneage"
+    },
+    {
+      "stationId": "nakane"
+    },
+    {
+      "stationId": "takadano-tekkyo"
+    },
+    {
+      "stationId": "nakaminato"
+    },
+    {
+      "stationId": "tonoyama"
+    },
+    {
+      "stationId": "hiraiso"
+    },
+    {
+      "stationId": "minohama-gakuen"
+    },
+    {
+      "stationId": "isozaki"
+    },
+    {
+      "stationId": "ajigaura"
+    }
+  ]
+}

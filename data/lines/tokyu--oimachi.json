@@ -1,0 +1,84 @@
+{
+  "id": "tokyu--oimachi",
+  "operatorId": "tokyu",
+  "name": "東急大井町線",
+  "formalName": "大井町線",
+  "kana": "とうきゅうおおいまちせん",
+  "symbol": "OM",
+  "color": "#F18C43",
+  "colorName": "オレンジ",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（東横線は日本語版とも照合）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Tokyu_Oimachi_Line",
+    "https://www.tokyu.co.jp/railway/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "oimachi",
+      "numbering": "OM01"
+    },
+    {
+      "stationId": "shimo-shimmei",
+      "numbering": "OM02"
+    },
+    {
+      "stationId": "togoshi-koen",
+      "numbering": "OM03"
+    },
+    {
+      "stationId": "nakanobu",
+      "numbering": "OM04"
+    },
+    {
+      "stationId": "ebaramachi",
+      "numbering": "OM05"
+    },
+    {
+      "stationId": "hatanodai",
+      "numbering": "OM06"
+    },
+    {
+      "stationId": "kita-senzoku",
+      "numbering": "OM07"
+    },
+    {
+      "stationId": "ookayama",
+      "numbering": "OM08"
+    },
+    {
+      "stationId": "midorigaoka",
+      "numbering": "OM09"
+    },
+    {
+      "stationId": "jiyugaoka",
+      "numbering": "OM10"
+    },
+    {
+      "stationId": "kuhombutsu",
+      "numbering": "OM11"
+    },
+    {
+      "stationId": "oyamadai",
+      "numbering": "OM12"
+    },
+    {
+      "stationId": "todoroki",
+      "numbering": "OM13"
+    },
+    {
+      "stationId": "kaminoge",
+      "numbering": "OM14"
+    },
+    {
+      "stationId": "futako-tamagawa",
+      "numbering": "OM15"
+    },
+    {
+      "stationId": "mizonokuchi",
+      "numbering": "OM16"
+    }
+  ]
+}

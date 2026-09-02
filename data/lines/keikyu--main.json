@@ -1,0 +1,216 @@
+{
+  "id": "keikyu--main",
+  "operatorId": "keikyu",
+  "name": "京急本線",
+  "formalName": "本線",
+  "kana": "けいきゅうほんせん",
+  "symbol": "KK",
+  "color": "#00A3E4",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、京急電鉄公式サイトと突き合わせた。ふりがなはローマ字表記から起こした。　支線に割り当てられた番号（KK12〜17は空港線、KK21〜26は大師線、KK51〜53は逗子線、KK65〜72は久里浜線）を飛ばすため、本線の番号は連続しない。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Keiky%C5%AB_Main_Line",
+    "https://www.keikyu.co.jp/",
+    "https://ayaito.net/webtips/color_code/12224/"
+  ],
+  "stations": [
+    {
+      "stationId": "shinagawa",
+      "numbering": "KK01"
+    },
+    {
+      "stationId": "kitashinagawa",
+      "numbering": "KK02"
+    },
+    {
+      "stationId": "shimbamba",
+      "numbering": "KK03"
+    },
+    {
+      "stationId": "aomono-yokocho",
+      "numbering": "KK04"
+    },
+    {
+      "stationId": "samezu",
+      "numbering": "KK05"
+    },
+    {
+      "stationId": "tachiaigawa",
+      "numbering": "KK06"
+    },
+    {
+      "stationId": "omorikaigan",
+      "numbering": "KK07"
+    },
+    {
+      "stationId": "heiwajima",
+      "numbering": "KK08"
+    },
+    {
+      "stationId": "omorimachi",
+      "numbering": "KK09"
+    },
+    {
+      "stationId": "umeyashiki",
+      "numbering": "KK10"
+    },
+    {
+      "stationId": "keikyu-kamata",
+      "numbering": "KK11"
+    },
+    {
+      "stationId": "zoshiki",
+      "numbering": "KK18"
+    },
+    {
+      "stationId": "rokugodote",
+      "numbering": "KK19"
+    },
+    {
+      "stationId": "keikyu-kawasaki",
+      "numbering": "KK20"
+    },
+    {
+      "stationId": "hatchonawate",
+      "numbering": "KK27"
+    },
+    {
+      "stationId": "tsurumi-ichiba",
+      "numbering": "KK28"
+    },
+    {
+      "stationId": "keikyu-tsurumi",
+      "numbering": "KK29"
+    },
+    {
+      "stationId": "kagetsu-sojiji",
+      "numbering": "KK30"
+    },
+    {
+      "stationId": "namamugi",
+      "numbering": "KK31"
+    },
+    {
+      "stationId": "keikyu-shinkoyasu",
+      "numbering": "KK32"
+    },
+    {
+      "stationId": "koyasu",
+      "numbering": "KK33"
+    },
+    {
+      "stationId": "kanagawa-shimmachi",
+      "numbering": "KK34"
+    },
+    {
+      "stationId": "keikyu-higashi-kanagawa",
+      "numbering": "KK35"
+    },
+    {
+      "stationId": "kanagawa",
+      "numbering": "KK36"
+    },
+    {
+      "stationId": "yokohama",
+      "numbering": "KK37"
+    },
+    {
+      "stationId": "tobe",
+      "numbering": "KK38"
+    },
+    {
+      "stationId": "hinodecho",
+      "numbering": "KK39"
+    },
+    {
+      "stationId": "koganecho",
+      "numbering": "KK40"
+    },
+    {
+      "stationId": "minamiota",
+      "numbering": "KK41"
+    },
+    {
+      "stationId": "idogaya",
+      "numbering": "KK42"
+    },
+    {
+      "stationId": "gumyoji",
+      "numbering": "KK43"
+    },
+    {
+      "stationId": "kamiooka",
+      "numbering": "KK44"
+    },
+    {
+      "stationId": "byobugaura",
+      "numbering": "KK45"
+    },
+    {
+      "stationId": "sugita",
+      "numbering": "KK46"
+    },
+    {
+      "stationId": "keikyu-tomioka",
+      "numbering": "KK47"
+    },
+    {
+      "stationId": "nokendai",
+      "numbering": "KK48"
+    },
+    {
+      "stationId": "kanazawa-bunko",
+      "numbering": "KK49"
+    },
+    {
+      "stationId": "kanazawa-hakkei",
+      "numbering": "KK50"
+    },
+    {
+      "stationId": "oppama",
+      "numbering": "KK54"
+    },
+    {
+      "stationId": "keikyu-taura",
+      "numbering": "KK55"
+    },
+    {
+      "stationId": "anjinzuka",
+      "numbering": "KK56"
+    },
+    {
+      "stationId": "hemi",
+      "numbering": "KK57"
+    },
+    {
+      "stationId": "shioiri",
+      "numbering": "KK58"
+    },
+    {
+      "stationId": "yokosuka-chuo",
+      "numbering": "KK59"
+    },
+    {
+      "stationId": "kenritsudaigaku",
+      "numbering": "KK60"
+    },
+    {
+      "stationId": "horinouchi",
+      "numbering": "KK61"
+    },
+    {
+      "stationId": "keikyu-otsu",
+      "numbering": "KK62"
+    },
+    {
+      "stationId": "maborikaigan",
+      "numbering": "KK63"
+    },
+    {
+      "stationId": "uraga",
+      "numbering": "KK64"
+    }
+  ]
+}

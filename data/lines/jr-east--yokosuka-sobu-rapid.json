@@ -1,0 +1,132 @@
+{
+  "id": "jr-east--yokosuka-sobu-rapid",
+  "operatorId": "jr-east",
+  "name": "横須賀線・総武快速線",
+  "formalName": "横須賀線・総武本線（総武快速線）",
+  "kana": "よこすかせん・そうぶかいそくせん",
+  "symbol": "JO",
+  "color": "#007AC0",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を英語版・日本語版Wikipediaの2系統で照合。食い違いは個別の駅記事で決着させた。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　駅番号JO01（久里浜）〜JO28（千葉）が横須賀線と総武快速線で連番のため1ファイルにまとめてある。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Yokosuka_Line",
+    "https://en.wikipedia.org/wiki/S%C5%8Dbu_Line_(Rapid)",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "kurihama",
+      "numbering": "JO01"
+    },
+    {
+      "stationId": "kinugasa",
+      "numbering": "JO02"
+    },
+    {
+      "stationId": "yokosuka",
+      "numbering": "JO03"
+    },
+    {
+      "stationId": "taura",
+      "numbering": "JO04"
+    },
+    {
+      "stationId": "higashi-zushi",
+      "numbering": "JO05"
+    },
+    {
+      "stationId": "zushi",
+      "numbering": "JO06"
+    },
+    {
+      "stationId": "kamakura",
+      "numbering": "JO07"
+    },
+    {
+      "stationId": "kita-kamakura",
+      "numbering": "JO08"
+    },
+    {
+      "stationId": "ofuna",
+      "numbering": "JO09"
+    },
+    {
+      "stationId": "totsuka",
+      "numbering": "JO10"
+    },
+    {
+      "stationId": "higashi-totsuka",
+      "numbering": "JO11"
+    },
+    {
+      "stationId": "hodogaya",
+      "numbering": "JO12"
+    },
+    {
+      "stationId": "yokohama",
+      "numbering": "JO13"
+    },
+    {
+      "stationId": "shin-kawasaki",
+      "numbering": "JO14"
+    },
+    {
+      "stationId": "musashi-kosugi",
+      "numbering": "JO15"
+    },
+    {
+      "stationId": "nishi-oi",
+      "numbering": "JO16"
+    },
+    {
+      "stationId": "shinagawa",
+      "numbering": "JO17"
+    },
+    {
+      "stationId": "shimbashi",
+      "numbering": "JO18"
+    },
+    {
+      "stationId": "tokyo",
+      "numbering": "JO19"
+    },
+    {
+      "stationId": "shin-nihombashi",
+      "numbering": "JO20"
+    },
+    {
+      "stationId": "bakurocho",
+      "numbering": "JO21"
+    },
+    {
+      "stationId": "kinshicho",
+      "numbering": "JO22"
+    },
+    {
+      "stationId": "shin-koiwa",
+      "numbering": "JO23"
+    },
+    {
+      "stationId": "ichikawa",
+      "numbering": "JO24"
+    },
+    {
+      "stationId": "funabashi",
+      "numbering": "JO25"
+    },
+    {
+      "stationId": "tsudanuma",
+      "numbering": "JO26"
+    },
+    {
+      "stationId": "inage",
+      "numbering": "JO27"
+    },
+    {
+      "stationId": "chiba",
+      "numbering": "JO28"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "jr-east--nambu-branch",
+  "operatorId": "jr-east",
+  "name": "南武線支線",
+  "formalName": "南武線（尻手〜浜川崎）",
+  "kana": "なんぶせんしせん",
+  "symbol": "JN",
+  "color": "#FBD05D",
+  "colorName": "黄",
+  "verified": true,
+  "verifiedOn": "2026-09-01",
+  "verifiedNote": "駅順と駅番号を複数の出典で照合。駅名を路線図PDFの抽出結果と照合し全駅一致。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせ、座標列が単調に進むことを確認。　分岐駅の尻手(JN02)を本線と共有している。支線側の番号はJN51〜JN54。",
+  "source": [
+    "https://en.wikipedia.org/wiki/Nambu_Line",
+    "https://ayaito.net/webtips/color_code/164/"
+  ],
+  "stations": [
+    {
+      "stationId": "shitte",
+      "numbering": "JN02"
+    },
+    {
+      "stationId": "hatchonawate",
+      "numbering": "JN51"
+    },
+    {
+      "stationId": "kawasaki-shinmachi",
+      "numbering": "JN52"
+    },
+    {
+      "stationId": "odasakae",
+      "numbering": "JN53"
+    },
+    {
+      "stationId": "hama-kawasaki",
+      "numbering": "JN54"
+    }
+  ]
+}
