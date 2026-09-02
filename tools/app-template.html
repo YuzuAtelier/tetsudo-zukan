@@ -664,11 +664,80 @@ resetHistory();
 go(stack[0], false);
 syncHeaderHeight();
 
-// オフラインでも開けるようにする。file:// で直接開いたときは使えないので黙って見送る
+// オフラインでも開けるようにする。file:// で直接開いたときは使えないので見送る。
+// 失敗した理由は ?pwa を付けて開くと画面で確認できる（swError に控えておく）
+var swError = null;
 if ("serviceWorker" in navigator && location.protocol.indexOf("http") === 0){
   window.addEventListener("load", function(){
-    navigator.serviceWorker.register("./sw.js").catch(function(){});
+    navigator.serviceWorker.register("./sw.js").catch(function(e){
+      swError = e.name + ": " + e.message;
+    });
   });
+}
+
+// ---- 診断画面（?pwa を付けて開いたときだけ出る）----
+// スマホでホーム画面に追加できないときに、何が足りないのかを見るためのもの
+if (/[?&]pwa/.test(location.search)){
+  window.addEventListener("load", function(){ setTimeout(showPwaStatus, 1200); });
+}
+function showPwaStatus(){
+  var rows = [];
+  var add = function(k, v, good){
+    rows.push('<tr><td style="padding:6px 10px;border-bottom:1px solid #dfe3ec;white-space:nowrap">' + k +
+      '</td><td style="padding:6px 10px;border-bottom:1px solid #dfe3ec;word-break:break-all;' +
+      (good === true ? "color:#137333" : good === false ? "color:#c5221f;font-weight:700" : "") +
+      '">' + v + "</td></tr>");
+  };
+  var standalone = window.matchMedia("(display-mode: standalone)").matches ||
+                   navigator.standalone === true;
+  add("URL", location.href);
+  add("安全な接続(HTTPS)", window.isSecureContext ? "はい" : "いいえ", window.isSecureContext);
+  add("ServiceWorker対応", ("serviceWorker" in navigator) ? "対応" : "非対応",
+      "serviceWorker" in navigator);
+  add("いま独立起動中", standalone ? "はい（インストール済み）" : "いいえ（ブラウザ内）");
+
+  var done = function(){
+    var box = el("div", "card");
+    box.innerHTML = '<div style="padding:14px 12px 6px;font-weight:800;font-size:16px">' +
+      "PWAの状態しらべ</div><table style='width:100%;border-collapse:collapse;font-size:13px'>" +
+      rows.join("") + "</table>" +
+      '<div style="padding:10px 12px;font-size:12px;color:#6b7280">' +
+      "この画面はURLの末尾から <code>?pwa</code> を消すと出なくなります。</div>";
+    view.innerHTML = "";
+    view.appendChild(box);
+    tabs.classList.remove("on");
+  };
+
+  fetch("./manifest.webmanifest").then(function(r){
+    add("manifest取得", r.status + " " + (r.headers.get("content-type") || ""), r.ok);
+    return r.json();
+  }).then(function(m){
+    add("manifest内容", "name=" + m.name + " / display=" + m.display +
+        " / icons=" + m.icons.length + "件", true);
+  }).catch(function(e){
+    add("manifest取得", "失敗 " + e.message, false);
+  }).then(function(){
+    if (!("serviceWorker" in navigator)) return null;
+    return navigator.serviceWorker.getRegistrations();
+  }).then(function(regs){
+    if (regs == null) return;
+    if (!regs.length){
+      add("SW登録", swError ? ("失敗 — " + swError) : "登録なし（理由不明）", false);
+    } else {
+      var r = regs[0];
+      add("SW登録", "成功", true);
+      add("SW状態", r.active ? "active（動作中）" : r.installing ? "installing（準備中）" : "waiting",
+          !!r.active);
+      add("SWの担当範囲", r.scope);
+    }
+    add("ページの管理", navigator.serviceWorker.controller ? "SWが管理中" :
+        "まだ管理していない（再読み込みで変わります）", !!navigator.serviceWorker.controller);
+    return caches.keys();
+  }).then(function(keys){
+    if (keys) add("保存済みの箱", keys.length ? keys.join(", ") : "まだ無い", keys.length > 0);
+  }).catch(function(e){
+    add("しらべ中のエラー", e.message, false);
+  }).then(done, done);
 }
 })();
 </script>
