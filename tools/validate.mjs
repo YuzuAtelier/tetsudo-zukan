@@ -4,7 +4,7 @@
  *   使い方: node tools/validate.mjs
  * 路線を追加したら必ずこれを通してからコミットすること。
  */
-import { readFileSync, readdirSync } from "node:fs";
+import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -132,6 +132,45 @@ for (const id of stationIds) {
   if (!usedStations.has(id)) warn(`どの路線にも属さない駅: ${id} (${stationName.get(id)})`);
 }
 
+// --- walking transfers (data/transfers.json) --------------------------------
+// 駅名は違うが歩いて乗り換えられる駅の組。ファイルが無ければ検査しない
+const transfersPath = join(dataDir, "transfers.json");
+let walkTransfers = [];
+if (existsSync(transfersPath)) {
+  const tf = readJson(transfersPath);
+  const KINDS = new Set(["same-facility", "passage", "official", "near"]);
+  const seenPairs = new Set();
+  if (!Array.isArray(tf.transfers)) err("transfers.json: transfers が配列ではない");
+  (tf.transfers ?? []).forEach((t, i) => {
+    const tag = `[transfers.json #${i}]`;
+    const [a, b] = t.stations ?? [];
+    if (!Array.isArray(t.stations) || t.stations.length !== 2) {
+      err(`${tag} stations は駅idを2つ持つ配列にする`);
+      return;
+    }
+    if (a === b) err(`${tag} 同じ駅どうしになっている: ${a}`);
+    for (const s of [a, b]) {
+      if (!stationIds.has(s)) err(`${tag} stations.json に無い駅id: ${s}`);
+      else if (!usedStations.has(s)) warn(`${tag} どの路線にも属さない駅: ${s}`);
+    }
+    const key = [a, b].sort().join("⇔");
+    if (seenPairs.has(key)) err(`${tag} 同じ組が2回ある: ${key}`);
+    seenPairs.add(key);
+    if (!KINDS.has(t.kind)) err(`${tag} kind が不正: ${t.kind}`);
+    if (typeof t.distanceM !== "number" || t.distanceM < 0) err(`${tag} distanceM は0以上の数にする`);
+    else if (t.distanceM > 700) warn(`${tag} ${key} が ${t.distanceM}m 離れている（採用基準は700m以内）`);
+    // 参考サイトに http でしか公開されていないものがあるので http も許す
+    if (!Array.isArray(t.source) || t.source.length === 0 || t.source.some((u) => !/^https?:\/\//.test(u)))
+      err(`${tag} source に根拠URL（http/https）を1つ以上書く`);
+    // どちらから歩いても新しい路線に乗れない組（路線がまったく同じ）は乗換として意味がない。
+    // 片方が他方に含まれるだけなら、小さい駅から大きい駅へ歩く意味があるので許す（新宿西口→新宿）
+    const la = new Set(stationToLines.get(a) ?? []), lb = new Set(stationToLines.get(b) ?? []);
+    if (la.size && la.size === lb.size && [...la].every((x) => lb.has(x)))
+      warn(`${tag} ${key} は両方の路線がまったく同じ（歩いて乗り換える意味がない）`);
+  });
+  walkTransfers = tf.transfers ?? [];
+}
+
 // --- report ----------------------------------------------------------------
 const transfers = [...stationToLines.entries()].filter(([, l]) => l.length > 1);
 
@@ -139,6 +178,7 @@ console.log("─".repeat(52));
 console.log(`路線数        : ${lineFiles.length}（未検証 ${unverified}）`);
 console.log(`駅数          : ${stationIds.size}`);
 console.log(`乗換駅        : ${transfers.length}`);
+console.log(`歩く乗換      : ${walkTransfers.length}組`);
 console.log("─".repeat(52));
 if (warnings.length) {
   console.log(`\n⚠ 警告 ${warnings.length}件`);

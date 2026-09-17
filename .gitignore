@@ -19,3 +19,7 @@ node_modules/
 # 個人の作業メモ。公開しても他人の役に立たないため含めない
 PROMPT.md
 docs/REQUIREMENTS.md
+# 開発記録。手元用（公開したい場合はこの行を消す）
+DEVELOPMENT_LOG.md
+# note記事用のプロンプト。手元用
+NOTE_ARTICLE_PROMPT.md

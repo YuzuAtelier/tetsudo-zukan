@@ -189,6 +189,12 @@
   .nbr.end{color:var(--muted);cursor:default;background:#f7f8fb}
   .nbr.end:hover{background:#f7f8fb}
 
+  /* 歩いて乗り換える駅。同じ駅の乗換と見分けられるよう点線の丸にする */
+  .xfer .mini.walk{border-style:dashed}
+  .xfer .mini.dot.walk{box-shadow:none;border:2.5px dashed var(--c2)}
+  .walksec{margin-top:18px}
+  .walksec .wkind{font-size:11.5px;color:#2f6df6;font-weight:700;margin-top:2px}
+
   .empty{text-align:center;color:var(--muted);padding:40px 16px;font-size:14px}
   .note{font-size:11.5px;color:var(--muted);margin-top:26px;line-height:1.7;text-align:center}
   .warn{background:#fff8e6;border:1px solid #f2dfa8;color:#7a5c00;border-radius:12px;
@@ -248,6 +254,20 @@ LINES.forEach(function(L){
   });
 });
 
+// 駅 → 歩いて乗り換えられる別名の駅（data/transfers.json 由来）
+var WALKS = {};
+(DATA.walks || []).forEach(function(w){
+  var a = w.stations[0], b = w.stations[1];
+  (WALKS[a] || (WALKS[a] = [])).push({to:b, kind:w.kind});
+  (WALKS[b] || (WALKS[b] = [])).push({to:a, kind:w.kind});
+});
+var WALK_LABEL = {
+  "same-facility": "すぐ となり",
+  "passage": "ちかの みちで つながっている",
+  "official": "のりかえ できる えき",
+  "near": "あるいて すぐ"
+};
+
 // ---- ちいさな道具 ----
 function el(tag, cls, txt){
   var n = document.createElement(tag);
@@ -297,8 +317,8 @@ function badge(line, numbering, small){
   return b;
 }
 // 乗りかえ表示用の小さい丸。記号が無い路線は色だけの丸にする
-function mini(line){
-  var m = el("div", "mini" + (line.symbol ? "" : " dot"), line.symbol || "");
+function mini(line, walk){
+  var m = el("div", "mini" + (line.symbol ? "" : " dot") + (walk ? " walk" : ""), line.symbol || "");
   m.style.setProperty("--c2", line.color);
   m.title = line.name;
   return m;
@@ -512,9 +532,19 @@ function viewLine(id, focus){
     b.appendChild(nameBlock(st));
     // 乗りかえできる路線
     var others = (BY_STATION[st.id] || []).filter(function(x){ return x.line.id !== L.id; });
-    if (others.length){
+    // 歩いて乗り換えられる駅の路線（この駅にすでにある路線は重ねない）
+    var have = {}; have[L.id] = true;
+    others.forEach(function(o){ have[o.line.id] = true; });
+    var walkLines = [];
+    (WALKS[st.id] || []).forEach(function(w){
+      (BY_STATION[w.to] || []).forEach(function(o){
+        if (!have[o.line.id]){ have[o.line.id] = true; walkLines.push(o.line); }
+      });
+    });
+    if (others.length || walkLines.length){
       var x = el("div", "xfer");
       others.forEach(function(o){ x.appendChild(mini(o.line)); });
+      walkLines.forEach(function(wl){ x.appendChild(mini(wl, true)); });
       b.appendChild(x);
     }
     b.onclick = function(){ go({v:"station", id:st.id}); };
@@ -537,11 +567,13 @@ function viewStation(id){
   var st = STATIONS[id];
   if (!st) return;
   var entries = BY_STATION[id] || [];
+  var walks = (WALKS[id] || []).filter(function(w){ return STATIONS[w.to]; });
   var h = el("div", "shead");
   h.appendChild(el("div", "kana", st.kana));
   h.appendChild(el("div", "kanji", st.name));
   if (st.subName) h.appendChild(el("div", "sub", "〈" + st.subName + "〉 " + st.subKana));
-  h.appendChild(el("div", "cnt", entries.length + "ろせんが とまります"));
+  h.appendChild(el("div", "cnt", entries.length + "ろせんが とまります" +
+    (walks.length ? " ／ あるいて のりかえ " + walks.length + "えき" : "")));
   view.appendChild(h);
 
   entries.forEach(function(e){
@@ -577,6 +609,28 @@ function viewStation(id){
     c.appendChild(nb);
     view.appendChild(c);
   });
+
+  // 駅名は違うが、歩いて乗り換えられる駅
+  if (walks.length){
+    var ws = el("section", "opsec walksec");
+    ws.appendChild(el("h2", "sec", "🚶 あるいて のりかえ"));
+    var wc = el("div", "card");
+    walks.forEach(function(w){
+      var to = STATIONS[w.to];
+      var r = el("button", "row"); r.type = "button";
+      var nmb = nameBlock(to, true);
+      nmb.appendChild(el("div", "wkind", WALK_LABEL[w.kind] || ""));
+      r.appendChild(nmb);
+      var xx = el("div", "xfer"); xx.style.marginLeft = "auto";
+      (BY_STATION[w.to] || []).forEach(function(o){ xx.appendChild(mini(o.line)); });
+      r.appendChild(xx);
+      r.appendChild(chev());
+      r.onclick = function(){ go({v:"station", id:to.id}); };
+      wc.appendChild(r);
+    });
+    ws.appendChild(wc);
+    view.appendChild(ws);
+  }
 }
 
 // 検索

@@ -112,6 +112,30 @@ UIでの表示は `subName` があれば `明治神宮前〈原宿〉` と組み
 
 ---
 
+## data/transfers.json
+
+駅名は違うが、**通路でつながっている・目の前にあるなど、歩いて乗り換えられる駅の組**。
+（上野⇔京成上野、町屋⇔町屋駅前、京成関屋⇔牛田 など）
+同じ駅名の乗換（上野のJRと銀座線など）は `stations.json` の統合で表すので、ここには書かない。
+
+```json
+{
+  "stations": ["keisei-sekiya", "ushida"],
+  "kind": "near",
+  "distanceM": 53,
+  "source": ["https://ja.wikipedia.org/wiki/京成関屋駅", "https://ja.wikipedia.org/wiki/牛田駅_(東京都)"]
+}
+```
+
+| 項目 | 内容 |
+|---|---|
+| `stations` | 駅idを2つ。順序に意味はない |
+| `kind` | `same-facility` 1つの駅施設として扱われている / `passage` 地下通路などで連絡 / `official` 事業者が乗換駅に指定 / `near` 距離が近い |
+| `distanceM` | Wikipedia記事の代表地点どうしの**直線距離（目安）**。歩く距離ではない。`same-facility` は0 |
+| `source` | 根拠URL（1つ以上） |
+
+採用の基準と経緯は `docs/DECISIONS.md` を参照。
+
 ## 後から足すもの（フェーズ2以降）
 
 - `stations[].transferNote` … 「同一駅だが改札外乗換」などの注記

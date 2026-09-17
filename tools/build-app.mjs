@@ -9,7 +9,7 @@
  * データを直接fetchしないのは、file:// で開いたときにCORSで読めないため。
  * data/ を直したら、このスクリプトを流し直すこと。
  */
-import { readFileSync, writeFileSync, readdirSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
@@ -260,10 +260,18 @@ if (missing.length) {
   process.exit(1);
 }
 
+// 駅名は違うが歩いて乗り換えられる駅の組（data/transfers.json）。
+// アプリで使うのは組とつながり方だけ。距離や根拠URLは載せない
+const transfersPath = join(dataDir, "transfers.json");
+const walks = existsSync(transfersPath)
+  ? readJson(transfersPath).transfers.map((t) => ({ stations: t.stations, kind: t.kind }))
+  : [];
+
 const payload = {
   operators,
   stations,
   categories: CATEGORIES,
+  walks,
   lines: lines.map((L) => ({
     id: L.id, operatorId: L.operatorId, name: L.name, formalName: L.formalName,
     kana: L.kana, symbol: L.symbol, color: L.color, colorName: L.colorName,
@@ -300,6 +308,7 @@ console.log("─".repeat(52));
 console.log(`書き出し      : app/index.html（${kb} KB・単体で開けます）`);
 console.log(`路線数        : ${lines.length}（未検証 ${unverified}）`);
 console.log(`駅数          : ${stations.length}`);
+console.log(`歩く乗換      : ${walks.length}組`);
 console.log("─".repeat(52));
 CATEGORIES.forEach((c) => {
   const ls = lines.filter((L) => categoryOf(L) === c.id);
