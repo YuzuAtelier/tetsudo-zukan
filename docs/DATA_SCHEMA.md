@@ -136,6 +136,28 @@ UIでの表示は `subName` があれば `明治神宮前〈原宿〉` と組み
 
 採用の基準と経緯は `docs/DECISIONS.md` を参照。
 
+## data/trains.json
+
+新幹線の列車（のぞみ・はやぶさ など）と停車駅。
+
+```json
+{
+  "id": "nozomi",
+  "name": "のぞみ",
+  "kana": "のぞみ",
+  "lines": ["jr-central--tokaido-shinkansen", "jr-west--sanyo-shinkansen"],
+  "stops": [{ "stationId": "tokyo", "stop": "all" }, { "stationId": "himeji", "stop": "some" }]
+}
+```
+
+| 項目 | 内容 |
+|---|---|
+| `lines` | その列車が走る路線id。複数路線にまたがる（のぞみは東海道＋山陽） |
+| `stops[].stop` | `all` すべての列車がとまる / `some` 一部の列車だけとまる |
+| `stops` の並び | `lines` の路線の駅順と同じ向きにする（validate.mjs が検査する） |
+
+**同じ列車名でも1本ごとに停車駅が違う**ので、目安として扱う。
+
 ## 後から足すもの（フェーズ2以降）
 
 - `stations[].transferNote` … 「同一駅だが改札外乗換」などの注記

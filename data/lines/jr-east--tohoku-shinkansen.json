@@ -5,13 +5,16 @@
   "formalName": "東北新幹線",
   "kana": "とうほくしんかんせん",
   "color": "#3CB371",
-  "colorName": "緑",
+  "colorName": "グリーン",
   "verified": true,
-  "verifiedOn": "2026-09-01",
-  "verifiedNote": "駅順を英語版Wikipediaで確認。ふりがなはローマ字表記から起こした。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせて確認。",
+  "verifiedOn": "2026-09-18",
+  "verifiedNote": "駅の並びを参考サイト「新幹線の停車駅全リスト」とWikipediaの路線記事の2系統で確認。ふりがなはWikipediaの駅記事のよみがな欄から取り、ローマ字表記と突き合わせた。路線図PDFの範囲外なので駅名の照合はできていない。全線（東京〜新青森）に延長。",
   "source": [
-    "https://en.wikipedia.org/wiki/T%C5%8Dhoku_Shinkansen",
-    "https://ayaito.net/webtips/color_code/164/"
+    "https://shinkansen.tabiris.com/teisya00.html",
+    "https://ja.wikipedia.org/wiki/東北新幹線",
+    "https://ja.wikipedia.org/wiki/いわて沼宮内駅",
+    "https://ja.wikipedia.org/wiki/くりこま高原駅",
+    "https://ja.wikipedia.org/wiki/一ノ関駅"
   ],
   "stations": [
     {
@@ -31,6 +34,57 @@
     },
     {
       "stationId": "nasushiobara"
+    },
+    {
+      "stationId": "shin-shirakawa"
+    },
+    {
+      "stationId": "koriyama"
+    },
+    {
+      "stationId": "fukushima"
+    },
+    {
+      "stationId": "shiroishizao"
+    },
+    {
+      "stationId": "sendai"
+    },
+    {
+      "stationId": "furukawa"
+    },
+    {
+      "stationId": "kurikoma-kogen"
+    },
+    {
+      "stationId": "ichinoseki"
+    },
+    {
+      "stationId": "mizusawaesashi"
+    },
+    {
+      "stationId": "kitakami"
+    },
+    {
+      "stationId": "shin-hanamaki"
+    },
+    {
+      "stationId": "morioka"
+    },
+    {
+      "stationId": "iwate-numakunai"
+    },
+    {
+      "stationId": "ninohe"
+    },
+    {
+      "stationId": "hachinohe"
+    },
+    {
+      "stationId": "shichinohe-towada"
+    },
+    {
+      "stationId": "shin-aomori"
     }
   ]
 }

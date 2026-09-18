@@ -1,0 +1,33 @@
+{
+  "id": "jr-hokkaido--hokkaido-shinkansen",
+  "operatorId": "jr-hokkaido",
+  "name": "北海道新幹線",
+  "formalName": "北海道新幹線",
+  "kana": "ほっかいどうしんかんせん",
+  "color": "#2CB431",
+  "colorName": "グリーン",
+  "verified": true,
+  "verifiedOn": "2026-09-18",
+  "verifiedNote": "駅の並びを参考サイト「新幹線の停車駅全リスト」とWikipediaの路線記事の2系統で確認。ふりがなはWikipediaの駅記事のよみがな欄から取り、ローマ字表記と突き合わせた。路線図PDFの範囲外なので駅名の照合はできていない。",
+  "source": [
+    "https://shinkansen.tabiris.com/teisya00.html",
+    "https://ja.wikipedia.org/wiki/北海道新幹線",
+    "https://ja.wikipedia.org/wiki/奥津軽いまべつ駅",
+    "https://ja.wikipedia.org/wiki/新函館北斗駅",
+    "https://ja.wikipedia.org/wiki/新青森駅"
+  ],
+  "stations": [
+    {
+      "stationId": "shin-aomori"
+    },
+    {
+      "stationId": "okutsugaru-imabetsu"
+    },
+    {
+      "stationId": "kikonai"
+    },
+    {
+      "stationId": "shin-hakodate-hokuto"
+    }
+  ]
+}

@@ -2,18 +2,36 @@
   "id": "jr-east--hokuriku-shinkansen",
   "operatorId": "jr-east",
   "name": "北陸新幹線",
-  "formalName": "北陸新幹線（長野経由）",
+  "formalName": "北陸新幹線",
   "kana": "ほくりくしんかんせん",
   "color": "#0F5474",
-  "colorName": "紺",
+  "colorName": "ネイビー",
   "verified": true,
-  "verifiedOn": "2026-09-01",
-  "verifiedNote": "駅順を英語版Wikipediaで確認。ふりがなはローマ字表記から起こした。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせて確認。",
+  "verifiedOn": "2026-09-18",
+  "verifiedNote": "駅の並びを参考サイト「新幹線の停車駅全リスト」とWikipediaの路線記事の2系統で確認。ふりがなはWikipediaの駅記事のよみがな欄から取り、ローマ字表記と突き合わせた。路線図PDFの範囲外なので駅名の照合はできていない。全線（東京〜敦賀）に延長。上越妙高〜敦賀はJR西日本の区間。",
   "source": [
-    "https://en.wikipedia.org/wiki/Hokuriku_Shinkansen",
-    "https://ayaito.net/webtips/color_code/164/"
+    "https://shinkansen.tabiris.com/teisya00.html",
+    "https://ja.wikipedia.org/wiki/北陸新幹線",
+    "https://ja.wikipedia.org/wiki/加賀温泉駅",
+    "https://ja.wikipedia.org/wiki/富山駅",
+    "https://ja.wikipedia.org/wiki/小松駅"
   ],
   "stations": [
+    {
+      "stationId": "tokyo"
+    },
+    {
+      "stationId": "ueno"
+    },
+    {
+      "stationId": "omiya"
+    },
+    {
+      "stationId": "kumagaya"
+    },
+    {
+      "stationId": "honjo-waseda"
+    },
     {
       "stationId": "takasaki"
     },
@@ -37,6 +55,39 @@
     },
     {
       "stationId": "joetsumyoko"
+    },
+    {
+      "stationId": "itoigawa"
+    },
+    {
+      "stationId": "kurobe-unazukionsenbrshin-kurobe"
+    },
+    {
+      "stationId": "toyama"
+    },
+    {
+      "stationId": "shin-takaoka"
+    },
+    {
+      "stationId": "kanazawa"
+    },
+    {
+      "stationId": "komatsu"
+    },
+    {
+      "stationId": "kagaonsen"
+    },
+    {
+      "stationId": "awaraonsen"
+    },
+    {
+      "stationId": "fukui"
+    },
+    {
+      "stationId": "echizen-takefu"
+    },
+    {
+      "stationId": "tsuruga"
     }
   ]
 }

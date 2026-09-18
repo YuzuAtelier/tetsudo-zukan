@@ -1,0 +1,78 @@
+{
+  "id": "jr-west--sanyo-shinkansen",
+  "operatorId": "jr-west",
+  "name": "山陽新幹線",
+  "formalName": "山陽新幹線",
+  "kana": "さんようしんかんせん",
+  "color": "#0072BC",
+  "colorName": "ブルー",
+  "verified": true,
+  "verifiedOn": "2026-09-18",
+  "verifiedNote": "駅の並びを参考サイト「新幹線の停車駅全リスト」とWikipediaの路線記事の2系統で確認。ふりがなはWikipediaの駅記事のよみがな欄から取り、ローマ字表記と突き合わせた。路線図PDFの範囲外なので駅名の照合はできていない。東海道新幹線と直通するため、路線カラーも同じ青。",
+  "source": [
+    "https://shinkansen.tabiris.com/teisya00.html",
+    "https://ja.wikipedia.org/wiki/山陽新幹線",
+    "https://ja.wikipedia.org/wiki/三原駅",
+    "https://ja.wikipedia.org/wiki/博多駅",
+    "https://ja.wikipedia.org/wiki/厚狭駅"
+  ],
+  "stations": [
+    {
+      "stationId": "shin-osaka"
+    },
+    {
+      "stationId": "shin-kobe"
+    },
+    {
+      "stationId": "nishi-akashi"
+    },
+    {
+      "stationId": "himeji"
+    },
+    {
+      "stationId": "aioi-hyogo"
+    },
+    {
+      "stationId": "okayama"
+    },
+    {
+      "stationId": "shin-kurashiki"
+    },
+    {
+      "stationId": "fukuyama"
+    },
+    {
+      "stationId": "shin-onomichi"
+    },
+    {
+      "stationId": "mihara"
+    },
+    {
+      "stationId": "higashihiroshima"
+    },
+    {
+      "stationId": "hiroshimabrhiroshima-station"
+    },
+    {
+      "stationId": "shin-iwakuni"
+    },
+    {
+      "stationId": "tokuyama"
+    },
+    {
+      "stationId": "shin-yamaguchi"
+    },
+    {
+      "stationId": "asa"
+    },
+    {
+      "stationId": "shin-shimonoseki"
+    },
+    {
+      "stationId": "kokura"
+    },
+    {
+      "stationId": "hakata"
+    }
+  ]
+}

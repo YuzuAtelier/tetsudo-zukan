@@ -1,0 +1,1424 @@
+{
+  "note": "新幹線の列車（のぞみ・はやぶさ など）と停車駅。stop: all=すべての列車がとまる / some=一部の列車だけとまる。同じ列車名でも列車ごとに停車駅が違うため、目安として使うこと。",
+  "checkedOn": "2026-09-18",
+  "source": [
+    "https://shinkansen.tabiris.com/teisya00.html"
+  ],
+  "trains": [
+    {
+      "id": "nozomi",
+      "name": "のぞみ",
+      "kana": "のぞみ",
+      "lines": [
+        "jr-central--tokaido-shinkansen",
+        "jr-west--sanyo-shinkansen"
+      ],
+      "stops": [
+        {
+          "stationId": "tokyo",
+          "stop": "all"
+        },
+        {
+          "stationId": "shinagawa",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-yokohama",
+          "stop": "all"
+        },
+        {
+          "stationId": "nagoya",
+          "stop": "all"
+        },
+        {
+          "stationId": "kyoto-kyoto",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-osaka",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-kobe",
+          "stop": "all"
+        },
+        {
+          "stationId": "nishi-akashi",
+          "stop": "some"
+        },
+        {
+          "stationId": "himeji",
+          "stop": "some"
+        },
+        {
+          "stationId": "okayama",
+          "stop": "all"
+        },
+        {
+          "stationId": "fukuyama",
+          "stop": "some"
+        },
+        {
+          "stationId": "hiroshimabrhiroshima-station",
+          "stop": "all"
+        },
+        {
+          "stationId": "tokuyama",
+          "stop": "some"
+        },
+        {
+          "stationId": "shin-yamaguchi",
+          "stop": "some"
+        },
+        {
+          "stationId": "kokura",
+          "stop": "all"
+        },
+        {
+          "stationId": "hakata",
+          "stop": "all"
+        }
+      ]
+    },
+    {
+      "id": "hikari",
+      "name": "ひかり",
+      "kana": "ひかり",
+      "lines": [
+        "jr-central--tokaido-shinkansen",
+        "jr-west--sanyo-shinkansen"
+      ],
+      "stops": [
+        {
+          "stationId": "tokyo",
+          "stop": "all"
+        },
+        {
+          "stationId": "shinagawa",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-yokohama",
+          "stop": "all"
+        },
+        {
+          "stationId": "odawara",
+          "stop": "some"
+        },
+        {
+          "stationId": "atami",
+          "stop": "some"
+        },
+        {
+          "stationId": "mishima",
+          "stop": "some"
+        },
+        {
+          "stationId": "shizuoka",
+          "stop": "some"
+        },
+        {
+          "stationId": "hamamatsu",
+          "stop": "some"
+        },
+        {
+          "stationId": "toyohashi",
+          "stop": "some"
+        },
+        {
+          "stationId": "nagoya",
+          "stop": "all"
+        },
+        {
+          "stationId": "gifu-hashima",
+          "stop": "some"
+        },
+        {
+          "stationId": "maibara",
+          "stop": "some"
+        },
+        {
+          "stationId": "kyoto-kyoto",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-osaka",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-kobe",
+          "stop": "all"
+        },
+        {
+          "stationId": "nishi-akashi",
+          "stop": "some"
+        },
+        {
+          "stationId": "himeji",
+          "stop": "all"
+        },
+        {
+          "stationId": "aioi-hyogo",
+          "stop": "some"
+        },
+        {
+          "stationId": "okayama",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-kurashiki",
+          "stop": "some"
+        },
+        {
+          "stationId": "fukuyama",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-onomichi",
+          "stop": "some"
+        },
+        {
+          "stationId": "mihara",
+          "stop": "some"
+        },
+        {
+          "stationId": "higashihiroshima",
+          "stop": "some"
+        },
+        {
+          "stationId": "hiroshimabrhiroshima-station",
+          "stop": "all"
+        },
+        {
+          "stationId": "tokuyama",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-yamaguchi",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-shimonoseki",
+          "stop": "all"
+        },
+        {
+          "stationId": "kokura",
+          "stop": "all"
+        },
+        {
+          "stationId": "hakata",
+          "stop": "all"
+        }
+      ]
+    },
+    {
+      "id": "kodama",
+      "name": "こだま",
+      "kana": "こだま",
+      "lines": [
+        "jr-central--tokaido-shinkansen",
+        "jr-west--sanyo-shinkansen"
+      ],
+      "stops": [
+        {
+          "stationId": "tokyo",
+          "stop": "all"
+        },
+        {
+          "stationId": "shinagawa",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-yokohama",
+          "stop": "all"
+        },
+        {
+          "stationId": "odawara",
+          "stop": "all"
+        },
+        {
+          "stationId": "atami",
+          "stop": "all"
+        },
+        {
+          "stationId": "mishima",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-fuji",
+          "stop": "all"
+        },
+        {
+          "stationId": "shizuoka",
+          "stop": "all"
+        },
+        {
+          "stationId": "kakegawa",
+          "stop": "all"
+        },
+        {
+          "stationId": "hamamatsu",
+          "stop": "all"
+        },
+        {
+          "stationId": "toyohashi",
+          "stop": "all"
+        },
+        {
+          "stationId": "mikawa-anjo",
+          "stop": "all"
+        },
+        {
+          "stationId": "nagoya",
+          "stop": "all"
+        },
+        {
+          "stationId": "gifu-hashima",
+          "stop": "all"
+        },
+        {
+          "stationId": "maibara",
+          "stop": "all"
+        },
+        {
+          "stationId": "kyoto-kyoto",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-osaka",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-kobe",
+          "stop": "all"
+        },
+        {
+          "stationId": "nishi-akashi",
+          "stop": "all"
+        },
+        {
+          "stationId": "himeji",
+          "stop": "all"
+        },
+        {
+          "stationId": "aioi-hyogo",
+          "stop": "all"
+        },
+        {
+          "stationId": "okayama",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-kurashiki",
+          "stop": "all"
+        },
+        {
+          "stationId": "fukuyama",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-onomichi",
+          "stop": "all"
+        },
+        {
+          "stationId": "mihara",
+          "stop": "all"
+        },
+        {
+          "stationId": "higashihiroshima",
+          "stop": "all"
+        },
+        {
+          "stationId": "hiroshimabrhiroshima-station",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-iwakuni",
+          "stop": "all"
+        },
+        {
+          "stationId": "tokuyama",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-yamaguchi",
+          "stop": "all"
+        },
+        {
+          "stationId": "asa",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-shimonoseki",
+          "stop": "all"
+        },
+        {
+          "stationId": "kokura",
+          "stop": "all"
+        },
+        {
+          "stationId": "hakata",
+          "stop": "all"
+        }
+      ]
+    },
+    {
+      "id": "mizuho",
+      "name": "みずほ",
+      "kana": "みずほ",
+      "lines": [
+        "jr-west--sanyo-shinkansen",
+        "jr-kyushu--kyushu-shinkansen"
+      ],
+      "stops": [
+        {
+          "stationId": "shin-osaka",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-kobe",
+          "stop": "all"
+        },
+        {
+          "stationId": "himeji",
+          "stop": "some"
+        },
+        {
+          "stationId": "okayama",
+          "stop": "all"
+        },
+        {
+          "stationId": "fukuyama",
+          "stop": "some"
+        },
+        {
+          "stationId": "hiroshimabrhiroshima-station",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-yamaguchi",
+          "stop": "some"
+        },
+        {
+          "stationId": "kokura",
+          "stop": "all"
+        },
+        {
+          "stationId": "hakata",
+          "stop": "all"
+        },
+        {
+          "stationId": "kurume",
+          "stop": "some"
+        },
+        {
+          "stationId": "kumamoto",
+          "stop": "all"
+        },
+        {
+          "stationId": "sendai-kagoshima",
+          "stop": "some"
+        },
+        {
+          "stationId": "kagoshima-chuo",
+          "stop": "all"
+        }
+      ]
+    },
+    {
+      "id": "sakura",
+      "name": "さくら",
+      "kana": "さくら",
+      "lines": [
+        "jr-west--sanyo-shinkansen",
+        "jr-kyushu--kyushu-shinkansen"
+      ],
+      "stops": [
+        {
+          "stationId": "shin-osaka",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-kobe",
+          "stop": "all"
+        },
+        {
+          "stationId": "himeji",
+          "stop": "some"
+        },
+        {
+          "stationId": "okayama",
+          "stop": "all"
+        },
+        {
+          "stationId": "fukuyama",
+          "stop": "all"
+        },
+        {
+          "stationId": "hiroshimabrhiroshima-station",
+          "stop": "all"
+        },
+        {
+          "stationId": "tokuyama",
+          "stop": "some"
+        },
+        {
+          "stationId": "shin-yamaguchi",
+          "stop": "some"
+        },
+        {
+          "stationId": "shin-shimonoseki",
+          "stop": "some"
+        },
+        {
+          "stationId": "kokura",
+          "stop": "all"
+        },
+        {
+          "stationId": "hakata",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-tosu",
+          "stop": "some"
+        },
+        {
+          "stationId": "kurume",
+          "stop": "some"
+        },
+        {
+          "stationId": "chikugo-funagoya",
+          "stop": "some"
+        },
+        {
+          "stationId": "shin-omuta",
+          "stop": "some"
+        },
+        {
+          "stationId": "shin-tamana",
+          "stop": "some"
+        },
+        {
+          "stationId": "kumamoto",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-yatsushiro",
+          "stop": "some"
+        },
+        {
+          "stationId": "shin-minamata",
+          "stop": "some"
+        },
+        {
+          "stationId": "izumi-kagoshima",
+          "stop": "some"
+        },
+        {
+          "stationId": "sendai-kagoshima",
+          "stop": "all"
+        },
+        {
+          "stationId": "kagoshima-chuo",
+          "stop": "all"
+        }
+      ]
+    },
+    {
+      "id": "tsubame",
+      "name": "つばめ",
+      "kana": "つばめ",
+      "lines": [
+        "jr-kyushu--kyushu-shinkansen"
+      ],
+      "stops": [
+        {
+          "stationId": "hakata",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-tosu",
+          "stop": "all"
+        },
+        {
+          "stationId": "kurume",
+          "stop": "all"
+        },
+        {
+          "stationId": "chikugo-funagoya",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-omuta",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-tamana",
+          "stop": "all"
+        },
+        {
+          "stationId": "kumamoto",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-yatsushiro",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-minamata",
+          "stop": "all"
+        },
+        {
+          "stationId": "izumi-kagoshima",
+          "stop": "all"
+        },
+        {
+          "stationId": "sendai-kagoshima",
+          "stop": "all"
+        },
+        {
+          "stationId": "kagoshima-chuo",
+          "stop": "all"
+        }
+      ]
+    },
+    {
+      "id": "kamome",
+      "name": "かもめ",
+      "kana": "かもめ",
+      "lines": [
+        "jr-kyushu--nishi-kyushu-shinkansen"
+      ],
+      "stops": [
+        {
+          "stationId": "takeo-onsen",
+          "stop": "all"
+        },
+        {
+          "stationId": "ureshino-onsen",
+          "stop": "some"
+        },
+        {
+          "stationId": "shin-omura",
+          "stop": "some"
+        },
+        {
+          "stationId": "isahaya",
+          "stop": "all"
+        },
+        {
+          "stationId": "nagasaki",
+          "stop": "all"
+        }
+      ]
+    },
+    {
+      "id": "hayabusa",
+      "name": "はやぶさ",
+      "kana": "はやぶさ",
+      "lines": [
+        "jr-east--tohoku-shinkansen",
+        "jr-hokkaido--hokkaido-shinkansen"
+      ],
+      "stops": [
+        {
+          "stationId": "tokyo",
+          "stop": "all"
+        },
+        {
+          "stationId": "ueno",
+          "stop": "some"
+        },
+        {
+          "stationId": "omiya",
+          "stop": "all"
+        },
+        {
+          "stationId": "sendai",
+          "stop": "all"
+        },
+        {
+          "stationId": "furukawa",
+          "stop": "some"
+        },
+        {
+          "stationId": "kurikoma-kogen",
+          "stop": "some"
+        },
+        {
+          "stationId": "ichinoseki",
+          "stop": "some"
+        },
+        {
+          "stationId": "mizusawaesashi",
+          "stop": "some"
+        },
+        {
+          "stationId": "kitakami",
+          "stop": "some"
+        },
+        {
+          "stationId": "shin-hanamaki",
+          "stop": "some"
+        },
+        {
+          "stationId": "morioka",
+          "stop": "all"
+        },
+        {
+          "stationId": "iwate-numakunai",
+          "stop": "some"
+        },
+        {
+          "stationId": "ninohe",
+          "stop": "some"
+        },
+        {
+          "stationId": "hachinohe",
+          "stop": "some"
+        },
+        {
+          "stationId": "shichinohe-towada",
+          "stop": "some"
+        },
+        {
+          "stationId": "shin-aomori",
+          "stop": "all"
+        },
+        {
+          "stationId": "okutsugaru-imabetsu",
+          "stop": "some"
+        },
+        {
+          "stationId": "kikonai",
+          "stop": "some"
+        },
+        {
+          "stationId": "shin-hakodate-hokuto",
+          "stop": "all"
+        }
+      ]
+    },
+    {
+      "id": "hayate",
+      "name": "はやて",
+      "kana": "はやて",
+      "lines": [
+        "jr-east--tohoku-shinkansen",
+        "jr-hokkaido--hokkaido-shinkansen"
+      ],
+      "stops": [
+        {
+          "stationId": "tokyo",
+          "stop": "all"
+        },
+        {
+          "stationId": "ueno",
+          "stop": "some"
+        },
+        {
+          "stationId": "omiya",
+          "stop": "all"
+        },
+        {
+          "stationId": "sendai",
+          "stop": "all"
+        },
+        {
+          "stationId": "furukawa",
+          "stop": "some"
+        },
+        {
+          "stationId": "kurikoma-kogen",
+          "stop": "some"
+        },
+        {
+          "stationId": "ichinoseki",
+          "stop": "some"
+        },
+        {
+          "stationId": "mizusawaesashi",
+          "stop": "some"
+        },
+        {
+          "stationId": "kitakami",
+          "stop": "some"
+        },
+        {
+          "stationId": "shin-hanamaki",
+          "stop": "some"
+        },
+        {
+          "stationId": "morioka",
+          "stop": "all"
+        },
+        {
+          "stationId": "iwate-numakunai",
+          "stop": "some"
+        },
+        {
+          "stationId": "ninohe",
+          "stop": "some"
+        },
+        {
+          "stationId": "hachinohe",
+          "stop": "all"
+        },
+        {
+          "stationId": "shichinohe-towada",
+          "stop": "some"
+        },
+        {
+          "stationId": "shin-aomori",
+          "stop": "all"
+        },
+        {
+          "stationId": "okutsugaru-imabetsu",
+          "stop": "some"
+        },
+        {
+          "stationId": "kikonai",
+          "stop": "some"
+        },
+        {
+          "stationId": "shin-hakodate-hokuto",
+          "stop": "all"
+        }
+      ]
+    },
+    {
+      "id": "yamabiko",
+      "name": "やまびこ",
+      "kana": "やまびこ",
+      "lines": [
+        "jr-east--tohoku-shinkansen"
+      ],
+      "stops": [
+        {
+          "stationId": "tokyo",
+          "stop": "all"
+        },
+        {
+          "stationId": "ueno",
+          "stop": "some"
+        },
+        {
+          "stationId": "omiya",
+          "stop": "all"
+        },
+        {
+          "stationId": "oyama",
+          "stop": "some"
+        },
+        {
+          "stationId": "utsunomiya",
+          "stop": "some"
+        },
+        {
+          "stationId": "nasushiobara",
+          "stop": "some"
+        },
+        {
+          "stationId": "shin-shirakawa",
+          "stop": "some"
+        },
+        {
+          "stationId": "koriyama",
+          "stop": "some"
+        },
+        {
+          "stationId": "fukushima",
+          "stop": "all"
+        },
+        {
+          "stationId": "shiroishizao",
+          "stop": "some"
+        },
+        {
+          "stationId": "sendai",
+          "stop": "all"
+        },
+        {
+          "stationId": "furukawa",
+          "stop": "all"
+        },
+        {
+          "stationId": "kurikoma-kogen",
+          "stop": "all"
+        },
+        {
+          "stationId": "ichinoseki",
+          "stop": "all"
+        },
+        {
+          "stationId": "mizusawaesashi",
+          "stop": "all"
+        },
+        {
+          "stationId": "kitakami",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-hanamaki",
+          "stop": "all"
+        },
+        {
+          "stationId": "morioka",
+          "stop": "all"
+        }
+      ]
+    },
+    {
+      "id": "nasuno",
+      "name": "なすの",
+      "kana": "なすの",
+      "lines": [
+        "jr-east--tohoku-shinkansen"
+      ],
+      "stops": [
+        {
+          "stationId": "tokyo",
+          "stop": "all"
+        },
+        {
+          "stationId": "ueno",
+          "stop": "all"
+        },
+        {
+          "stationId": "omiya",
+          "stop": "all"
+        },
+        {
+          "stationId": "oyama",
+          "stop": "all"
+        },
+        {
+          "stationId": "utsunomiya",
+          "stop": "all"
+        },
+        {
+          "stationId": "nasushiobara",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-shirakawa",
+          "stop": "all"
+        },
+        {
+          "stationId": "koriyama",
+          "stop": "all"
+        }
+      ]
+    },
+    {
+      "id": "komachi",
+      "name": "こまち",
+      "kana": "こまち",
+      "lines": [
+        "jr-east--tohoku-shinkansen",
+        "jr-east--akita-shinkansen"
+      ],
+      "stops": [
+        {
+          "stationId": "tokyo",
+          "stop": "all"
+        },
+        {
+          "stationId": "ueno",
+          "stop": "some"
+        },
+        {
+          "stationId": "omiya",
+          "stop": "all"
+        },
+        {
+          "stationId": "sendai",
+          "stop": "all"
+        },
+        {
+          "stationId": "furukawa",
+          "stop": "some"
+        },
+        {
+          "stationId": "kurikoma-kogen",
+          "stop": "some"
+        },
+        {
+          "stationId": "ichinoseki",
+          "stop": "some"
+        },
+        {
+          "stationId": "mizusawaesashi",
+          "stop": "some"
+        },
+        {
+          "stationId": "kitakami",
+          "stop": "some"
+        },
+        {
+          "stationId": "shin-hanamaki",
+          "stop": "some"
+        },
+        {
+          "stationId": "morioka",
+          "stop": "all"
+        },
+        {
+          "stationId": "shizukuishi",
+          "stop": "some"
+        },
+        {
+          "stationId": "tazawako",
+          "stop": "some"
+        },
+        {
+          "stationId": "kakunodate",
+          "stop": "some"
+        },
+        {
+          "stationId": "omagari",
+          "stop": "all"
+        },
+        {
+          "stationId": "akita",
+          "stop": "all"
+        }
+      ]
+    },
+    {
+      "id": "tsubasa",
+      "name": "つばさ",
+      "kana": "つばさ",
+      "lines": [
+        "jr-east--tohoku-shinkansen",
+        "jr-east--yamagata-shinkansen"
+      ],
+      "stops": [
+        {
+          "stationId": "tokyo",
+          "stop": "all"
+        },
+        {
+          "stationId": "ueno",
+          "stop": "some"
+        },
+        {
+          "stationId": "omiya",
+          "stop": "all"
+        },
+        {
+          "stationId": "utsunomiya",
+          "stop": "some"
+        },
+        {
+          "stationId": "koriyama",
+          "stop": "some"
+        },
+        {
+          "stationId": "fukushima",
+          "stop": "all"
+        },
+        {
+          "stationId": "yonezawa",
+          "stop": "all"
+        },
+        {
+          "stationId": "takahata",
+          "stop": "some"
+        },
+        {
+          "stationId": "akayu",
+          "stop": "some"
+        },
+        {
+          "stationId": "kaminoyamaonsen",
+          "stop": "some"
+        },
+        {
+          "stationId": "yamagata",
+          "stop": "all"
+        },
+        {
+          "stationId": "tendo",
+          "stop": "all"
+        },
+        {
+          "stationId": "sakurambohigashine",
+          "stop": "all"
+        },
+        {
+          "stationId": "murayama",
+          "stop": "all"
+        },
+        {
+          "stationId": "oishida",
+          "stop": "all"
+        },
+        {
+          "stationId": "shinjo",
+          "stop": "all"
+        }
+      ]
+    },
+    {
+      "id": "toki",
+      "name": "とき",
+      "kana": "とき",
+      "lines": [
+        "jr-east--joetsu-shinkansen"
+      ],
+      "stops": [
+        {
+          "stationId": "tokyo",
+          "stop": "all"
+        },
+        {
+          "stationId": "ueno",
+          "stop": "some"
+        },
+        {
+          "stationId": "omiya",
+          "stop": "some"
+        },
+        {
+          "stationId": "kumagaya",
+          "stop": "some"
+        },
+        {
+          "stationId": "honjo-waseda",
+          "stop": "some"
+        },
+        {
+          "stationId": "takasaki",
+          "stop": "some"
+        },
+        {
+          "stationId": "jomo-kogen",
+          "stop": "some"
+        },
+        {
+          "stationId": "echigo-yuzawa",
+          "stop": "some"
+        },
+        {
+          "stationId": "urasa",
+          "stop": "some"
+        },
+        {
+          "stationId": "nagaoka",
+          "stop": "some"
+        },
+        {
+          "stationId": "tsubamesanjo",
+          "stop": "some"
+        },
+        {
+          "stationId": "niigata",
+          "stop": "all"
+        }
+      ]
+    },
+    {
+      "id": "tanigawa",
+      "name": "たにがわ",
+      "kana": "たにがわ",
+      "lines": [
+        "jr-east--joetsu-shinkansen"
+      ],
+      "stops": [
+        {
+          "stationId": "tokyo",
+          "stop": "all"
+        },
+        {
+          "stationId": "ueno",
+          "stop": "all"
+        },
+        {
+          "stationId": "omiya",
+          "stop": "all"
+        },
+        {
+          "stationId": "kumagaya",
+          "stop": "all"
+        },
+        {
+          "stationId": "honjo-waseda",
+          "stop": "all"
+        },
+        {
+          "stationId": "takasaki",
+          "stop": "all"
+        },
+        {
+          "stationId": "jomo-kogen",
+          "stop": "all"
+        },
+        {
+          "stationId": "echigo-yuzawa",
+          "stop": "all"
+        }
+      ]
+    },
+    {
+      "id": "kagayaki",
+      "name": "かがやき",
+      "kana": "かがやき",
+      "lines": [
+        "jr-east--hokuriku-shinkansen"
+      ],
+      "stops": [
+        {
+          "stationId": "tokyo",
+          "stop": "all"
+        },
+        {
+          "stationId": "ueno",
+          "stop": "some"
+        },
+        {
+          "stationId": "omiya",
+          "stop": "all"
+        },
+        {
+          "stationId": "nagano",
+          "stop": "all"
+        },
+        {
+          "stationId": "toyama",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-takaoka",
+          "stop": "some"
+        },
+        {
+          "stationId": "kanazawa",
+          "stop": "all"
+        },
+        {
+          "stationId": "komatsu",
+          "stop": "some"
+        },
+        {
+          "stationId": "kagaonsen",
+          "stop": "some"
+        },
+        {
+          "stationId": "awaraonsen",
+          "stop": "some"
+        },
+        {
+          "stationId": "fukui",
+          "stop": "all"
+        },
+        {
+          "stationId": "echizen-takefu",
+          "stop": "some"
+        },
+        {
+          "stationId": "tsuruga",
+          "stop": "all"
+        }
+      ]
+    },
+    {
+      "id": "hakutaka",
+      "name": "はくたか",
+      "kana": "はくたか",
+      "lines": [
+        "jr-east--hokuriku-shinkansen"
+      ],
+      "stops": [
+        {
+          "stationId": "tokyo",
+          "stop": "all"
+        },
+        {
+          "stationId": "ueno",
+          "stop": "all"
+        },
+        {
+          "stationId": "omiya",
+          "stop": "all"
+        },
+        {
+          "stationId": "takasaki",
+          "stop": "some"
+        },
+        {
+          "stationId": "annaka-haruna",
+          "stop": "some"
+        },
+        {
+          "stationId": "karuizawa",
+          "stop": "some"
+        },
+        {
+          "stationId": "sakudaira",
+          "stop": "some"
+        },
+        {
+          "stationId": "ueda-nagano",
+          "stop": "some"
+        },
+        {
+          "stationId": "nagano",
+          "stop": "all"
+        },
+        {
+          "stationId": "iiyama",
+          "stop": "some"
+        },
+        {
+          "stationId": "joetsumyoko",
+          "stop": "all"
+        },
+        {
+          "stationId": "itoigawa",
+          "stop": "all"
+        },
+        {
+          "stationId": "kurobe-unazukionsenbrshin-kurobe",
+          "stop": "all"
+        },
+        {
+          "stationId": "toyama",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-takaoka",
+          "stop": "all"
+        },
+        {
+          "stationId": "kanazawa",
+          "stop": "all"
+        },
+        {
+          "stationId": "komatsu",
+          "stop": "all"
+        },
+        {
+          "stationId": "kagaonsen",
+          "stop": "all"
+        },
+        {
+          "stationId": "awaraonsen",
+          "stop": "all"
+        },
+        {
+          "stationId": "fukui",
+          "stop": "all"
+        },
+        {
+          "stationId": "echizen-takefu",
+          "stop": "all"
+        },
+        {
+          "stationId": "tsuruga",
+          "stop": "all"
+        }
+      ]
+    },
+    {
+      "id": "asama",
+      "name": "あさま",
+      "kana": "あさま",
+      "lines": [
+        "jr-east--hokuriku-shinkansen"
+      ],
+      "stops": [
+        {
+          "stationId": "tokyo",
+          "stop": "all"
+        },
+        {
+          "stationId": "ueno",
+          "stop": "all"
+        },
+        {
+          "stationId": "omiya",
+          "stop": "all"
+        },
+        {
+          "stationId": "kumagaya",
+          "stop": "some"
+        },
+        {
+          "stationId": "honjo-waseda",
+          "stop": "some"
+        },
+        {
+          "stationId": "takasaki",
+          "stop": "all"
+        },
+        {
+          "stationId": "annaka-haruna",
+          "stop": "some"
+        },
+        {
+          "stationId": "karuizawa",
+          "stop": "all"
+        },
+        {
+          "stationId": "sakudaira",
+          "stop": "all"
+        },
+        {
+          "stationId": "ueda-nagano",
+          "stop": "all"
+        },
+        {
+          "stationId": "nagano",
+          "stop": "all"
+        }
+      ]
+    },
+    {
+      "id": "tsurugi",
+      "name": "つるぎ",
+      "kana": "つるぎ",
+      "lines": [
+        "jr-east--hokuriku-shinkansen"
+      ],
+      "stops": [
+        {
+          "stationId": "toyama",
+          "stop": "all"
+        },
+        {
+          "stationId": "shin-takaoka",
+          "stop": "all"
+        },
+        {
+          "stationId": "kanazawa",
+          "stop": "all"
+        },
+        {
+          "stationId": "komatsu",
+          "stop": "some"
+        },
+        {
+          "stationId": "kagaonsen",
+          "stop": "some"
+        },
+        {
+          "stationId": "awaraonsen",
+          "stop": "some"
+        },
+        {
+          "stationId": "fukui",
+          "stop": "all"
+        },
+        {
+          "stationId": "echizen-takefu",
+          "stop": "some"
+        },
+        {
+          "stationId": "tsuruga",
+          "stop": "all"
+        }
+      ]
+    }
+  ]
+}

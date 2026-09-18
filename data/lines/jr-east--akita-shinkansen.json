@@ -1,0 +1,39 @@
+{
+  "id": "jr-east--akita-shinkansen",
+  "operatorId": "jr-east",
+  "name": "秋田新幹線",
+  "formalName": "秋田新幹線",
+  "kana": "あきたしんかんせん",
+  "color": "#ED4399",
+  "colorName": "ピンク",
+  "verified": true,
+  "verifiedOn": "2026-09-18",
+  "verifiedNote": "駅の並びを参考サイト「新幹線の停車駅全リスト」とWikipediaの路線記事の2系統で確認。ふりがなはWikipediaの駅記事のよみがな欄から取り、ローマ字表記と突き合わせた。路線図PDFの範囲外なので駅名の照合はできていない。在来線（田沢湖線・奥羽本線）を走るミニ新幹線。盛岡で東北新幹線とつながる。",
+  "source": [
+    "https://shinkansen.tabiris.com/teisya00.html",
+    "https://ja.wikipedia.org/wiki/秋田新幹線",
+    "https://ja.wikipedia.org/wiki/大曲駅_(秋田県)",
+    "https://ja.wikipedia.org/wiki/田沢湖駅",
+    "https://ja.wikipedia.org/wiki/盛岡駅"
+  ],
+  "stations": [
+    {
+      "stationId": "morioka"
+    },
+    {
+      "stationId": "shizukuishi"
+    },
+    {
+      "stationId": "tazawako"
+    },
+    {
+      "stationId": "kakunodate"
+    },
+    {
+      "stationId": "omagari"
+    },
+    {
+      "stationId": "akita"
+    }
+  ]
+}

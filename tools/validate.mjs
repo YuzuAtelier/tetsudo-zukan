@@ -171,6 +171,46 @@ if (existsSync(transfersPath)) {
   walkTransfers = tf.transfers ?? [];
 }
 
+// --- shinkansen trains (data/trains.json) -----------------------------------
+// 新幹線の列車（のぞみ・はやぶさ など）と停車駅。ファイルが無ければ検査しない
+const trainsPath = join(dataDir, "trains.json");
+let trains = [];
+if (existsSync(trainsPath)) {
+  const td = readJson(trainsPath);
+  const seenId = new Set();
+  const lineStations = new Map();     // 路線id -> 駅idの並び
+  for (const f of lineFiles) {
+    const line = readJson(join(linesDir, f));
+    if (line) lineStations.set(line.id, line.stations.map((s) => s.stationId));
+  }
+  (td.trains ?? []).forEach((t) => {
+    const tag = `[trains.json ${t.id ?? "?"}]`;
+    if (!t.id || !/^[a-z0-9-]+$/.test(t.id)) err(`${tag} 列車idに使えない文字`);
+    if (seenId.has(t.id)) err(`${tag} 列車idが重複`);
+    seenId.add(t.id);
+    if (!t.name) err(`${tag} 列車名が空`);
+    if (!t.kana || !KANA.test(t.kana)) err(`${tag} 列車のふりがなが不正: ${t.kana}`);
+    if (!Array.isArray(t.lines) || !t.lines.length) err(`${tag} 走る路線が空`);
+    // その列車が走る路線の駅を、路線の並び順どおりに並べたもの
+    const order = [];
+    for (const lid of t.lines ?? []) {
+      if (!lineStations.has(lid)) { err(`${tag} 無い路線id: ${lid}`); continue; }
+      for (const sid of lineStations.get(lid)) if (!order.includes(sid)) order.push(sid);
+    }
+    let prev = -1;
+    (t.stops ?? []).forEach((s) => {
+      if (!stationIds.has(s.stationId)) { err(`${tag} 無い駅id: ${s.stationId}`); return; }
+      if (!["all", "some"].includes(s.stop)) err(`${tag} stop は all か some: ${s.stop}`);
+      const i = order.indexOf(s.stationId);
+      if (i < 0) { err(`${tag} 走る路線に無い駅がある: ${stationName.get(s.stationId)}`); return; }
+      if (i <= prev) err(`${tag} 停車駅の並びが路線の順序と違う: ${stationName.get(s.stationId)}`);
+      prev = i;
+    });
+    if ((t.stops ?? []).length < 2) err(`${tag} 停車駅が2つ未満`);
+  });
+  trains = td.trains ?? [];
+}
+
 // --- report ----------------------------------------------------------------
 const transfers = [...stationToLines.entries()].filter(([, l]) => l.length > 1);
 
@@ -179,6 +219,7 @@ console.log(`路線数        : ${lineFiles.length}（未検証 ${unverified}）
 console.log(`駅数          : ${stationIds.size}`);
 console.log(`乗換駅        : ${transfers.length}`);
 console.log(`歩く乗換      : ${walkTransfers.length}組`);
+console.log(`新幹線の列車  : ${trains.length}本`);
 console.log("─".repeat(52));
 if (warnings.length) {
   console.log(`\n⚠ 警告 ${warnings.length}件`);

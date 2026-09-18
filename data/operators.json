@@ -13,6 +13,24 @@
       "kana": "とうかいりょかくてつどう"
     },
     {
+      "id": "jr-west",
+      "name": "西日本旅客鉄道",
+      "shortName": "JR西日本",
+      "kana": "にしにほんりょかくてつどう"
+    },
+    {
+      "id": "jr-kyushu",
+      "name": "九州旅客鉄道",
+      "shortName": "JR九州",
+      "kana": "きゅうしゅうりょかくてつどう"
+    },
+    {
+      "id": "jr-hokkaido",
+      "name": "北海道旅客鉄道",
+      "shortName": "JR北海道",
+      "kana": "ほっかいどうりょかくてつどう"
+    },
+    {
       "id": "tokyo-metro",
       "name": "東京地下鉄",
       "shortName": "東京メトロ",

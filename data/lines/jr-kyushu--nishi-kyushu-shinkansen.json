@@ -1,0 +1,36 @@
+{
+  "id": "jr-kyushu--nishi-kyushu-shinkansen",
+  "operatorId": "jr-kyushu",
+  "name": "西九州新幹線",
+  "formalName": "西九州新幹線",
+  "kana": "にしきゅうしゅうしんかんせん",
+  "color": "#FF0000",
+  "colorName": "レッド",
+  "verified": true,
+  "verifiedOn": "2026-09-18",
+  "verifiedNote": "駅の並びを参考サイト「新幹線の停車駅全リスト」とWikipediaの路線記事の2系統で確認。ふりがなはWikipediaの駅記事のよみがな欄から取り、ローマ字表記と突き合わせた。路線図PDFの範囲外なので駅名の照合はできていない。武雄温泉で在来線特急「リレーかもめ」と乗り継ぐ。在来線区間は含めていない。",
+  "source": [
+    "https://shinkansen.tabiris.com/teisya00.html",
+    "https://ja.wikipedia.org/wiki/西九州新幹線",
+    "https://ja.wikipedia.org/wiki/嬉野温泉駅",
+    "https://ja.wikipedia.org/wiki/新大村駅",
+    "https://ja.wikipedia.org/wiki/武雄温泉駅"
+  ],
+  "stations": [
+    {
+      "stationId": "takeo-onsen"
+    },
+    {
+      "stationId": "ureshino-onsen"
+    },
+    {
+      "stationId": "shin-omura"
+    },
+    {
+      "stationId": "isahaya"
+    },
+    {
+      "stationId": "nagasaki"
+    }
+  ]
+}

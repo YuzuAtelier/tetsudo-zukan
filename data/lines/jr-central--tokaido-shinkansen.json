@@ -5,12 +5,16 @@
   "formalName": "東海道新幹線",
   "kana": "とうかいどうしんかんせん",
   "color": "#0072BC",
-  "colorName": "青",
+  "colorName": "ブルー",
   "verified": true,
-  "verifiedOn": "2026-09-01",
-  "verifiedNote": "駅順を英語版Wikipediaで確認。ふりがなはローマ字表記から起こした。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせて確認。",
+  "verifiedOn": "2026-09-18",
+  "verifiedNote": "駅の並びを参考サイト「新幹線の停車駅全リスト」とWikipediaの路線記事の2系統で確認。ふりがなはWikipediaの駅記事のよみがな欄から取り、ローマ字表記と突き合わせた。路線図PDFの範囲外なので駅名の照合はできていない。全線（東京〜新大阪）に延長。",
   "source": [
-    "https://en.wikipedia.org/wiki/T%C5%8Dkaid%C5%8D_Shinkansen"
+    "https://shinkansen.tabiris.com/teisya00.html",
+    "https://ja.wikipedia.org/wiki/東海道新幹線",
+    "https://ja.wikipedia.org/wiki/三島駅",
+    "https://ja.wikipedia.org/wiki/三河安城駅",
+    "https://ja.wikipedia.org/wiki/京都駅"
   ],
   "stations": [
     {
@@ -27,6 +31,42 @@
     },
     {
       "stationId": "atami"
+    },
+    {
+      "stationId": "mishima"
+    },
+    {
+      "stationId": "shin-fuji"
+    },
+    {
+      "stationId": "shizuoka"
+    },
+    {
+      "stationId": "kakegawa"
+    },
+    {
+      "stationId": "hamamatsu"
+    },
+    {
+      "stationId": "toyohashi"
+    },
+    {
+      "stationId": "mikawa-anjo"
+    },
+    {
+      "stationId": "nagoya"
+    },
+    {
+      "stationId": "gifu-hashima"
+    },
+    {
+      "stationId": "maibara"
+    },
+    {
+      "stationId": "kyoto-kyoto"
+    },
+    {
+      "stationId": "shin-osaka"
     }
   ]
 }

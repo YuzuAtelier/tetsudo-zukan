@@ -5,13 +5,16 @@
   "formalName": "上越新幹線",
   "kana": "じょうえつしんかんせん",
   "color": "#00B3E6",
-  "colorName": "水色",
+  "colorName": "スカイブルー",
   "verified": true,
-  "verifiedOn": "2026-09-01",
-  "verifiedNote": "駅順を英語版Wikipediaで確認。ふりがなはローマ字表記から起こした。並び順を tools/check-order.mjs で路線図上のラベル座標と突き合わせて確認。　越後湯沢以北は路線図の外なので含めていない（上毛高原まで）。",
+  "verifiedOn": "2026-09-18",
+  "verifiedNote": "駅の並びを参考サイト「新幹線の停車駅全リスト」とWikipediaの路線記事の2系統で確認。ふりがなはWikipediaの駅記事のよみがな欄から取り、ローマ字表記と突き合わせた。路線図PDFの範囲外なので駅名の照合はできていない。全線（東京〜新潟）に延長。越後湯沢から分かれるガーラ湯沢支線は含めていない（冬季のみ営業）。",
   "source": [
-    "https://en.wikipedia.org/wiki/J%C5%8Detsu_Shinkansen",
-    "https://ayaito.net/webtips/color_code/164/"
+    "https://shinkansen.tabiris.com/teisya00.html",
+    "https://ja.wikipedia.org/wiki/上越新幹線",
+    "https://ja.wikipedia.org/wiki/新潟駅",
+    "https://ja.wikipedia.org/wiki/浦佐駅",
+    "https://ja.wikipedia.org/wiki/燕三条駅"
   ],
   "stations": [
     {
@@ -34,6 +37,21 @@
     },
     {
       "stationId": "jomo-kogen"
+    },
+    {
+      "stationId": "echigo-yuzawa"
+    },
+    {
+      "stationId": "urasa"
+    },
+    {
+      "stationId": "nagaoka"
+    },
+    {
+      "stationId": "tsubamesanjo"
+    },
+    {
+      "stationId": "niigata"
     }
   ]
 }

@@ -30,6 +30,17 @@ const lines = readdirSync(linesDir)
 
 // 事業者ごとに、路線idの昇順ではなく「路線記号の並び」で見せたいので明示的に並べる
 const ORDER = [
+  // 新幹線（北から南の順）
+  "jr-hokkaido--hokkaido-shinkansen",
+  "jr-east--tohoku-shinkansen",
+  "jr-east--akita-shinkansen",
+  "jr-east--yamagata-shinkansen",
+  "jr-east--joetsu-shinkansen",
+  "jr-east--hokuriku-shinkansen",
+  "jr-central--tokaido-shinkansen",
+  "jr-west--sanyo-shinkansen",
+  "jr-kyushu--kyushu-shinkansen",
+  "jr-kyushu--nishi-kyushu-shinkansen",
   "jr-east--yamanote",
   "jr-east--keihin-tohoku-negishi",
   "jr-east--chuo-rapid",
@@ -81,10 +92,6 @@ const ORDER = [
   "jr-east--shinetsu-takasaki",
   "jr-east--shinetsu-nagano",
   "jr-east--banetsu-east",
-  "jr-east--tohoku-shinkansen",
-  "jr-east--joetsu-shinkansen",
-  "jr-east--hokuriku-shinkansen",
-  "jr-central--tokaido-shinkansen",
   "jr-central--gotemba",
   "jr-central--minobu",
   "tokyo-metro--ginza",
@@ -213,6 +220,7 @@ lines.sort((a, b) => rank(a.id) - rank(b.id) || a.id.localeCompare(b.id));
 // ---- 画面上部の大分類タブ ----
 // 事業者ごとに割り当てる。これは「見せかた」の都合なので data/ には持たせない。
 const CATEGORIES = [
+  { id: "shinkansen",    label: "新幹線" },
   { id: "jr",            label: "JR" },
   { id: "subway",        label: "地下鉄" },
   { id: "private-major", label: "大手私鉄" },
@@ -221,7 +229,7 @@ const CATEGORIES = [
   { id: "other",         label: "その他" },
 ];
 const CAT_OF_OPERATOR = {
-  jr: ["jr-east", "jr-central"],
+  jr: ["jr-east", "jr-central", "jr-west", "jr-kyushu", "jr-hokkaido"],
   subway: ["tokyo-metro", "toei", "yokohama-city"],
   // 大手私鉄。関東の大手は東京メトロを除くとこの8社
   "private-major": [
@@ -247,6 +255,8 @@ const CAT_OF_LINE = {
   "toei--arakawa": "other",             // 東京さくらトラム（路面電車）
   "toei--nippori-toneri": "newtransit", // 日暮里・舎人ライナー
 };
+// 新幹線はJR各社にまたがるので、事業者ではなく路線idで分類する
+for (const L of lines) if (/shinkansen/.test(L.id)) CAT_OF_LINE[L.id] = "shinkansen";
 const catByOperator = {};
 for (const [cat, ops] of Object.entries(CAT_OF_OPERATOR)) {
   for (const op of ops) catByOperator[op] = cat;
@@ -267,11 +277,18 @@ const walks = existsSync(transfersPath)
   ? readJson(transfersPath).transfers.map((t) => ({ stations: t.stations, kind: t.kind }))
   : [];
 
+const trainsPath = join(dataDir, "trains.json");
+const trains = existsSync(trainsPath)
+  ? readJson(trainsPath).trains.map((t) => ({ id: t.id, name: t.name, kana: t.kana,
+      lines: t.lines, stops: t.stops }))
+  : [];
+
 const payload = {
   operators,
   stations,
   categories: CATEGORIES,
   walks,
+  trains,
   lines: lines.map((L) => ({
     id: L.id, operatorId: L.operatorId, name: L.name, formalName: L.formalName,
     kana: L.kana, symbol: L.symbol, color: L.color, colorName: L.colorName,
@@ -309,6 +326,7 @@ console.log(`書き出し      : app/index.html（${kb} KB・単体で開けま�
 console.log(`路線数        : ${lines.length}（未検証 ${unverified}）`);
 console.log(`駅数          : ${stations.length}`);
 console.log(`歩く乗換      : ${walks.length}組`);
+console.log(`新幹線の列車  : ${trains.length}本`);
 console.log("─".repeat(52));
 CATEGORIES.forEach((c) => {
   const ls = lines.filter((L) => categoryOf(L) === c.id);

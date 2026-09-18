@@ -1,0 +1,54 @@
+{
+  "id": "jr-east--yamagata-shinkansen",
+  "operatorId": "jr-east",
+  "name": "山形新幹線",
+  "formalName": "山形新幹線",
+  "kana": "やまがたしんかんせん",
+  "color": "#EE7B28",
+  "colorName": "オレンジ",
+  "verified": true,
+  "verifiedOn": "2026-09-18",
+  "verifiedNote": "駅の並びを参考サイト「新幹線の停車駅全リスト」とWikipediaの路線記事の2系統で確認。ふりがなはWikipediaの駅記事のよみがな欄から取り、ローマ字表記と突き合わせた。路線図PDFの範囲外なので駅名の照合はできていない。在来線（奥羽本線）を走るミニ新幹線。福島で東北新幹線とつながる。",
+  "source": [
+    "https://shinkansen.tabiris.com/teisya00.html",
+    "https://ja.wikipedia.org/wiki/山形新幹線",
+    "https://ja.wikipedia.org/wiki/かみのやま温泉駅",
+    "https://ja.wikipedia.org/wiki/さくらんぼ東根駅",
+    "https://ja.wikipedia.org/wiki/大石田駅"
+  ],
+  "stations": [
+    {
+      "stationId": "fukushima"
+    },
+    {
+      "stationId": "yonezawa"
+    },
+    {
+      "stationId": "takahata"
+    },
+    {
+      "stationId": "akayu"
+    },
+    {
+      "stationId": "kaminoyamaonsen"
+    },
+    {
+      "stationId": "yamagata"
+    },
+    {
+      "stationId": "tendo"
+    },
+    {
+      "stationId": "sakurambohigashine"
+    },
+    {
+      "stationId": "murayama"
+    },
+    {
+      "stationId": "oishida"
+    },
+    {
+      "stationId": "shinjo"
+    }
+  ]
+}
