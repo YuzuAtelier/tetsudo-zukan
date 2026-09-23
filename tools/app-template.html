@@ -736,19 +736,21 @@ function viewTrain(id){
 // 検索
 function viewSearch(q){
   var k = norm(q);
+  // 「い」と入れたら「い」で始まるものだけ出す（前方一致）。
+  // 「いし」なら「いし」で始まるもの。五十音をたどる使いかたに合わせている
+  function head(v){ var t = norm(v); return t && t.indexOf(k) === 0; }
+
   var ls = LINES.filter(function(L){
-    return norm(L.name).indexOf(k) >= 0 || norm(L.kana).indexOf(k) >= 0
-        || norm(L.symbol) === k || norm(L.formalName).indexOf(k) >= 0;
+    return head(L.name) || head(L.kana) || norm(L.symbol) === k || head(L.formalName);
   });
   var sts = DATA.stations.filter(function(s){
-    if (norm(fullName(s)).indexOf(k) >= 0 || norm(fullKana(s)).indexOf(k) >= 0) return true;
-    return (BY_STATION[s.id] || []).some(function(e){ return norm(e.numbering).indexOf(k) >= 0; });
+    // 副称（明治神宮前〈原宿〉の「原宿」）は、それだけでも先頭から引けるようにする
+    if (head(s.name) || head(s.kana) || head(s.subName) || head(s.subKana)) return true;
+    return (BY_STATION[s.id] || []).some(function(e){ return head(e.numbering); });
   });
 
   // 新幹線の列車名（のぞみ・はやぶさ など）でも引けるようにする
-  var trs = TRAINS.filter(function(t){
-    return norm(t.name).indexOf(k) >= 0 || norm(t.kana).indexOf(k) >= 0;
-  });
+  var trs = TRAINS.filter(function(t){ return head(t.name) || head(t.kana); });
 
   if (!ls.length && !sts.length && !trs.length){
     view.appendChild(el("div", "empty", "「" + q + "」は みつかりませんでした"));
