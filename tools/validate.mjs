@@ -99,6 +99,8 @@ for (const f of lineFiles) {
     warn(`${tag} 駅番号が無いのに路線記号がある: ${line.symbol}`);
   }
   if (!Array.isArray(line.source) || line.source.length === 0) warn(`${tag} source（根拠URL）が空`);
+  // 環状線（山手線・大阪環状線）は最後の駅の次が最初の駅に戻る。駅を2回書かずにこの印で表す
+  if (line.loop !== undefined && typeof line.loop !== "boolean") err(`${tag} loop は true/false で書く`);
 
   const seenNum = new Set();
   const seen = new Set();

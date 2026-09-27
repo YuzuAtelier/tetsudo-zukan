@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>首都圏てつどうずかん</title>
-<meta name="description" content="首都圏の鉄道173路線・2159駅を、漢字とふりがなで調べられる図鑑。">
+<meta name="description" content="首都圏の鉄道と全国の新幹線を、漢字とふりがなで調べられる図鑑。">
 <!-- ホーム画面に置いてアプリのように使うための設定 -->
 <link rel="manifest" href="./manifest.webmanifest">
 <meta name="theme-color" content="#ffc93c">
@@ -202,6 +202,39 @@
   .stop.sometimes .nm .kanji{color:var(--muted)}
   .stop .wkind{margin-left:auto;font-size:11.5px;color:var(--muted);font-weight:700}
 
+  /* 「ろせんを見る」は指で押しやすい大きさに */
+  .lncard .go{padding:9px 14px;font-size:13px;min-height:40px}
+  /* 新幹線の丸に入る「新」の字 */
+  .badge.dot{color:#fff;font-weight:800;font-size:17px}
+  .badge.dot.sm{font-size:14px}
+  .xfer .mini.dot{color:#fff;font-size:11px}
+  /* 環状線 */
+  .loopmark{color:var(--c)}
+  .stop.loopend{min-height:54px}
+  .loopicon{width:32px;height:32px;border-radius:50%;background:#fff;border:3px solid var(--c);
+            color:var(--c);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800}
+  .looptxt{font-size:14px;font-weight:700;color:var(--muted)}
+  /* 横に並ぶボタン（とまる新幹線・すきな路線と駅） */
+  .chipcard{padding:12px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{appearance:none;font:inherit;font-size:15px;font-weight:800;padding:8px 14px;min-height:44px;
+        border-radius:999px;border:2.5px solid var(--c,#2f6df6);background:#fff;color:var(--ink);cursor:pointer}
+  .chip:active{background:#e2e8f8}
+  .chip.some{border-style:dashed;color:var(--muted)}
+  .chip.sta{--c:#aab2c3}
+  .chiplegend{font-size:11.5px;color:var(--muted);margin-top:10px}
+  /* すき（お気に入り） */
+  .favbtn{appearance:none;flex:none;font:inherit;font-size:13px;font-weight:800;padding:8px 13px;min-height:40px;
+          border-radius:999px;border:1.5px solid #e6c34a;background:#fff;color:#8a6d00;cursor:pointer}
+  .favbtn.on{background:#ffe27a;border-color:#e0b000}
+  .favbtn:active{background:#fff3bf}
+  .lhead .favbtn{margin-left:auto;align-self:flex-start}
+  .shead .favbtn{margin-top:10px}
+  /* タブがまだ右にあることを、右はしを薄くして知らせる */
+  .tabs{-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 40px),transparent);
+        mask-image:linear-gradient(to right,#000 calc(100% - 40px),transparent)}
+  .tabs.end{-webkit-mask-image:none;mask-image:none}
+
   .empty{text-align:center;color:var(--muted);padding:40px 16px;font-size:14px}
   .note{font-size:11.5px;color:var(--muted);margin-top:26px;line-height:1.7;text-align:center}
   .warn{background:#fff8e6;border:1px solid #f2dfa8;color:#7a5c00;border-radius:12px;
@@ -222,6 +255,10 @@
     .tabs{padding-bottom:7px}
     .tab{min-height:38px;padding:6px 14px}
   }
+  /* iPhoneのノッチ（切り欠き）やホームバーに文字が隠れないようにする */
+  .hd, .tabs{padding-left:max(14px, env(safe-area-inset-left));padding-right:max(14px, env(safe-area-inset-right))}
+  .wrap{padding-left:max(14px, env(safe-area-inset-left));padding-right:max(14px, env(safe-area-inset-right));
+        padding-bottom:calc(64px + env(safe-area-inset-bottom))}
 </style>
 </head>
 <body>
@@ -317,12 +354,15 @@ function nameBlock(st, small){
   }
   return b;
 }
+// 記号を持たない路線の丸に入れる字。新幹線は色だけの丸が4つ5つ並ぶと
+// どれが新幹線か分からないので「新」を入れる。それ以外は色だけのまま
+function dotLabel(line){ return line.category === "shinkansen" ? "新" : ""; }
 // 路線記号バッジ
 // 駅ナンバリングが無い路線（総武本線など）は記号を持たないので、路線カラーの丸を出す
 function badge(line, numbering, small){
   var m = /^([A-Za-z]+)(\d+)$/.exec(numbering || "");
   if (!m && !line.symbol){
-    var d = el("div", "badge dot" + (small ? " sm" : ""));
+    var d = el("div", "badge dot" + (small ? " sm" : ""), dotLabel(line) || null);
     d.style.setProperty("--c", line.color);
     d.title = line.name;
     return d;
@@ -335,10 +375,16 @@ function badge(line, numbering, small){
 }
 // 乗りかえ表示用の小さい丸。記号が無い路線は色だけの丸にする
 function mini(line, walk){
-  var m = el("div", "mini" + (line.symbol ? "" : " dot") + (walk ? " walk" : ""), line.symbol || "");
+  var m = el("div", "mini" + (line.symbol ? "" : " dot") + (walk ? " walk" : ""), line.symbol || dotLabel(line));
   m.style.setProperty("--c2", line.color);
   m.title = line.name;
   return m;
+}
+// 路線上で step だけ進んだ駅。環状線（山手線・大阪環状線）は端から反対の端へつながる
+function neighbor(L, idx, step){
+  var j = idx + step, n = L.stations.length;
+  if (L.loop) j = (j + n) % n;
+  return L.stations[j];
 }
 // 「JY02 神田」のような表示。駅番号が無ければ駅名だけ
 function stopLabel(entry, st){ return (entry.numbering ? entry.numbering + " " : "") + st.name; }
@@ -466,6 +512,11 @@ function selectCat(catId){
   render(s); markTabs(catId);
   window.scrollTo(0, 0);
 }
+function tabsEnd(){
+  tabs.classList.toggle("end", tabs.scrollLeft + tabs.clientWidth >= tabs.scrollWidth - 4);
+}
+tabs.addEventListener("scroll", tabsEnd);
+window.addEventListener("resize", tabsEnd);
 function markTabs(catId){
   var want = catId == null ? "" : catId;
   Array.prototype.forEach.call(tabs.children, function(b){
@@ -473,6 +524,7 @@ function markTabs(catId){
     b.classList.toggle("on", on);
     if (on && b.scrollIntoView) b.scrollIntoView({ block:"nearest", inline:"center" });
   });
+  tabsEnd();
 }
 // 見出しを画面上部に貼りつけるため、ヘッダーの高さを CSS に伝える
 function syncHeaderHeight(){
@@ -482,49 +534,113 @@ function syncHeaderHeight(){
 window.addEventListener("resize", syncHeaderHeight);
 window.addEventListener("orientationchange", function(){ setTimeout(syncHeaderHeight, 200); });
 
+// ---- すき（お気に入り）----
+// よく見る路線・駅をすぐ開けるように覚えておく。この端末のブラウザの中だけに保存し、外には送らない
+var FAV_KEY = "tetsudo-zukan:fav";
+function loadFav(){
+  try {
+    var v = JSON.parse(localStorage.getItem(FAV_KEY) || "{}");
+    return { lines: v.lines || [], stations: v.stations || [] };
+  } catch (e) { return { lines: [], stations: [] }; }
+}
+function saveFav(f){ try { localStorage.setItem(FAV_KEY, JSON.stringify(f)); } catch (e) {} }
+function toggleFav(kind, id){
+  var f = loadFav(), a = f[kind], i = a.indexOf(id);
+  if (i >= 0) a.splice(i, 1); else a.unshift(id);      // 新しく足したものを先頭に
+  saveFav(f);
+  return i < 0;
+}
+function favButton(kind, id){
+  var b = el("button", "favbtn"); b.type = "button";
+  function paint(on){
+    b.textContent = on ? "★ すき" : "☆ すき";
+    b.classList.toggle("on", on);
+    b.setAttribute("aria-pressed", on ? "true" : "false");
+  }
+  paint(loadFav()[kind].indexOf(id) >= 0);
+  b.onclick = function(ev){ ev.stopPropagation(); paint(toggleFav(kind, id)); };
+  return b;
+}
+function favSection(){
+  var f = loadFav();
+  var ls = f.lines.map(lineById).filter(Boolean);
+  var ss = f.stations.map(function(id){ return STATIONS[id]; }).filter(Boolean);
+  if (!ls.length && !ss.length) return null;
+  var sec = el("section", "opsec");
+  sec.appendChild(el("h2", "sec", "★ すきな ろせん・えき"));
+  var c = el("div", "card chipcard");
+  var chips = el("div", "chips");
+  ls.forEach(function(L){
+    var b = el("button", "chip", L.name); b.type = "button";
+    b.style.setProperty("--c", L.color);
+    b.onclick = function(){ go({v:"line", id:L.id}); };
+    chips.appendChild(b);
+  });
+  ss.forEach(function(st){
+    var b = el("button", "chip sta", st.name); b.type = "button";
+    b.onclick = function(){ go({v:"station", id:st.id}); };
+    chips.appendChild(b);
+  });
+  c.appendChild(chips);
+  sec.appendChild(c);
+  return sec;
+}
+
+// 路線いちらんの1行
+function lineRow(L, sub){
+  var r = el("button", "row"); r.type = "button";
+  r.appendChild(badge(L, null));
+  var nm = el("div", "nm");
+  nm.appendChild(el("div", "kana", L.kana));
+  nm.appendChild(el("div", "kanji", L.name));
+  nm.appendChild(el("div", "sub", sub || (L.stations.length + "えき")));
+  r.appendChild(nm);
+  r.appendChild(chev());
+  r.onclick = function(){ go({v:"line", id:L.id}); };
+  return r;
+}
+
 // ① 路線いちらん（catId を渡すとその分類だけにしぼる）
 function viewHome(catId){
   markTabs(catId);
-  var order = DATA.operators.map(function(o){ return o.id; });
+  if (!catId){ var fs = favSection(); if (fs) view.appendChild(fs); }
   var shown = 0, shownSt = 0;
-  order.forEach(function(opId){
-    var ls = LINES.filter(function(L){
-      return L.operatorId === opId && (!catId || L.category === catId);
+  if (catId === "shinkansen"){
+    // 新幹線はJR5社にまたがるので、会社ごとに分けず北から南の順に1つに並べる
+    var sk = LINES.filter(function(L){ return L.category === "shinkansen"; });
+    var ssec = el("section", "opsec");
+    ssec.appendChild(el("h2", "sec", "きた から みなみ へ"));
+    var sc = el("div", "card");
+    sk.forEach(function(L){
+      shown++; shownSt += L.stations.length;
+      sc.appendChild(lineRow(L, OPS[L.operatorId].shortName + " ・ " + L.stations.length + "えき"));
     });
-    if (!ls.length) return;
-    shown += ls.length;
-    ls.forEach(function(L){ shownSt += L.stations.length; });
-    // 事業者ごとに囲っておく。こうしないと貼りついた見出しが次々と積み重なってしまう
-    var sec = el("section", "opsec");
-    sec.appendChild(el("h2", "sec", OPS[opId].shortName));
-    var c = el("div", "card");
-    ls.forEach(function(L){
-      var r = el("button", "row"); r.type = "button";
-      r.appendChild(badge(L, null));
-      var nm = el("div", "nm");
-      nm.appendChild(el("div", "kana", L.kana));
-      nm.appendChild(el("div", "kanji", L.name));
-      nm.appendChild(el("div", "sub", L.stations.length + "えき"));
-      r.appendChild(nm);
-      r.appendChild(chev());
-      r.onclick = function(){ go({v:"line", id:L.id}); };
-      c.appendChild(r);
+    ssec.appendChild(sc);
+    view.appendChild(ssec);
+  } else {
+    DATA.operators.forEach(function(o){
+      var ls = LINES.filter(function(L){
+        return L.operatorId === o.id && (!catId || L.category === catId);
+      });
+      if (!ls.length) return;
+      shown += ls.length;
+      ls.forEach(function(L){ shownSt += L.stations.length; });
+      // 事業者ごとに囲っておく。こうしないと貼りついた見出しが次々と積み重なってしまう
+      var sec = el("section", "opsec");
+      sec.appendChild(el("h2", "sec", o.shortName));
+      var c = el("div", "card");
+      ls.forEach(function(L){ c.appendChild(lineRow(L)); });
+      sec.appendChild(c);
+      view.appendChild(sec);
     });
-    sec.appendChild(c);
-    view.appendChild(sec);
-  });
+  }
   var n = el("div", "note");
   var cat = catId && DATA.categories.filter(function(c){ return c.id === catId; })[0];
   n.innerHTML = cat
     ? cat.label + "：" + shown + "ろせん / " + shownSt + "えき"
     : DATA.lines.length + "ろせん / " + DATA.stations.length + "えき<br>"
-      + "データは <code>data/</code> の JSON から作っています。";
+      + "てつどうがいしゃの こうしきの ものでは ありません";
   view.appendChild(n);
-  if (LINES.some(function(L){ return !L.verified; })){
-    var w = el("div", "warn",
-      "⚠ このデータはまだ人の確認が済んでいません（verified: false）。駅の順番はかならず路線図で確かめてください。");
-    view.appendChild(w);
-  }
 }
 
 // ② 路線 → 駅（起点から順）。focus に駅idを渡すとその駅を目立たせる
@@ -537,10 +653,12 @@ function viewLine(id, focus){
   t.appendChild(el("div", "kana", L.kana));
   t.appendChild(el("div", "nm2", L.name));
   var meta = el("div", "meta");
-  meta.innerHTML = '<span class="swatch"></span>' + L.colorName + "（" + L.color + "） ・ "
-    + OPS[L.operatorId].shortName + " ・ " + L.stations.length + "えき";
+  meta.innerHTML = '<span class="swatch"></span>' + L.colorName + " ・ "
+    + OPS[L.operatorId].shortName + " ・ " + L.stations.length + "えき"
+    + (L.loop ? ' ・ <b class="loopmark">↻ ぐるっと 1しゅう</b>' : "");
   t.appendChild(meta);
   h.appendChild(t);
+  h.appendChild(favButton("lines", L.id));
   view.appendChild(h);
 
   var rail = el("div", "rail");
@@ -572,6 +690,22 @@ function viewLine(id, focus){
     b.onclick = function(){ go({v:"station", id:st.id}); };
     rail.appendChild(b);
   });
+  // 環状線は、最後の駅のあと最初の駅にもどることを線でつないで見せる
+  if (L.loop){
+    var first = STATIONS[L.stations[0].stationId];
+    var lp = el("button", "stop loopend"); lp.type = "button";
+    lp.style.setProperty("--c", L.color);
+    var tr0 = el("div", "track"); tr0.appendChild(el("div", "loopicon", "↻"));
+    lp.appendChild(tr0);
+    lp.appendChild(el("div", "looptxt", "ぐるっと まわって " + first.name + " に もどる"));
+    lp.onclick = function(){
+      var top = rail.querySelector(".stop");
+      top.classList.remove("focus"); void top.offsetWidth; top.classList.add("focus");
+      var head = document.querySelector("header").getBoundingClientRect().height;
+      window.scrollTo({ top: window.scrollY + top.getBoundingClientRect().top - head - 12, behavior: "smooth" });
+    };
+    rail.appendChild(lp);
+  }
   view.appendChild(rail);
 
   var tl = TRAINS_OF_LINE[L.id] || [];
@@ -599,10 +733,10 @@ function viewLine(id, focus){
     view.appendChild(el("div", "warn",
       "⚠ この路線はまだ人の確認が済んでいません。駅の順番を路線図で確かめてください。"));
   }
-  var n = el("div", "note");
-  var hasNum = L.stations.some(function(s){ return !!s.numbering; });
-  n.textContent = "正式名称：" + L.formalName + (hasNum ? " ／ 起点は駅番号の01がわ" : "");
-  view.appendChild(n);
+  // 正式な名前が案内の名前とちがうときだけ出す（西武新宿線＝新宿線 など）
+  if (L.formalName && L.formalName !== L.name){
+    view.appendChild(el("div", "note", "せいしきな なまえ：" + L.formalName));
+  }
 }
 
 // ③ 駅 → つながる全路線
@@ -617,6 +751,7 @@ function viewStation(id){
   if (st.subName) h.appendChild(el("div", "sub", "〈" + st.subName + "〉 " + st.subKana));
   h.appendChild(el("div", "cnt", entries.length + "ろせんが とまります" +
     (walks.length ? " ／ あるいて のりかえ " + walks.length + "えき" : "")));
+  h.appendChild(favButton("stations", id));
   view.appendChild(h);
 
   entries.forEach(function(e){
@@ -634,7 +769,7 @@ function viewStation(id){
 
     var nb = el("div", "nbrs");
     [[-1, "まえの えき"], [1, "つぎの えき"]].forEach(function(p){
-      var j = e.idx + p[0], next = L.stations[j];
+      var next = neighbor(L, e.idx, p[0]);
       if (!next){
         var d = el("div", "nbr end");
         d.appendChild(el("div", "lbl", p[1]));
@@ -658,19 +793,20 @@ function viewStation(id){
   if (tst.length){
     var sec2 = el("section", "opsec");
     sec2.appendChild(el("h2", "sec", "とまる しんかんせん"));
-    var c2 = el("div", "card");
+    // 1本1行だと東京駅で14行になるので、ボタンを横に並べて短くする
+    var c2 = el("div", "card chipcard");
+    var chips = el("div", "chips");
     tst.forEach(function(x){
-      var r = el("button", "row"); r.type = "button";
-      var nm = el("div", "nm");
-      nm.appendChild(el("div", "kana", x.train.kana));
-      nm.appendChild(el("div", "kanji", x.train.name));
-      nm.appendChild(el("div", x.stop === "all" ? "sub" : "wkind",
-        x.stop === "all" ? "いつも とまる" : "ときどき とまる"));
-      r.appendChild(nm);
-      r.appendChild(chev());
-      r.onclick = function(){ go({v:"train", id:x.train.id}); };
-      c2.appendChild(r);
+      var L0 = lineById(x.train.lines[0]);
+      var b = el("button", "chip" + (x.stop === "some" ? " some" : ""), x.train.name); b.type = "button";
+      b.style.setProperty("--c", L0 ? L0.color : "#888");
+      b.onclick = function(){ go({v:"train", id:x.train.id}); };
+      chips.appendChild(b);
     });
+    c2.appendChild(chips);
+    if (tst.some(function(x){ return x.stop === "some"; })){
+      c2.appendChild(el("div", "chiplegend", "てんせんの れっしゃは ときどき とまります"));
+    }
     sec2.appendChild(c2);
     view.appendChild(sec2);
   }

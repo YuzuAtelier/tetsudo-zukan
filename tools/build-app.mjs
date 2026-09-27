@@ -30,17 +30,6 @@ const lines = readdirSync(linesDir)
 
 // 事業者ごとに、路線idの昇順ではなく「路線記号の並び」で見せたいので明示的に並べる
 const ORDER = [
-  // 新幹線（北から南の順）
-  "jr-hokkaido--hokkaido-shinkansen",
-  "jr-east--tohoku-shinkansen",
-  "jr-east--akita-shinkansen",
-  "jr-east--yamagata-shinkansen",
-  "jr-east--joetsu-shinkansen",
-  "jr-east--hokuriku-shinkansen",
-  "jr-central--tokaido-shinkansen",
-  "jr-west--sanyo-shinkansen",
-  "jr-kyushu--kyushu-shinkansen",
-  "jr-kyushu--nishi-kyushu-shinkansen",
   "jr-east--yamanote",
   "jr-east--keihin-tohoku-negishi",
   "jr-east--chuo-rapid",
@@ -94,6 +83,7 @@ const ORDER = [
   "jr-east--banetsu-east",
   "jr-central--gotemba",
   "jr-central--minobu",
+  "jr-west--osaka-loop",
   "tokyo-metro--ginza",
   "tokyo-metro--marunouchi",
   "tokyo-metro--marunouchi-branch",
@@ -210,6 +200,17 @@ const ORDER = [
   "tokimeki--nihonkai-hisui",
   "watarase--watarase",
   "yamaman--yukarigaoka",
+  // 新幹線（北から南の順）
+  "jr-hokkaido--hokkaido-shinkansen",
+  "jr-east--tohoku-shinkansen",
+  "jr-east--akita-shinkansen",
+  "jr-east--yamagata-shinkansen",
+  "jr-east--joetsu-shinkansen",
+  "jr-east--hokuriku-shinkansen",
+  "jr-central--tokaido-shinkansen",
+  "jr-west--sanyo-shinkansen",
+  "jr-kyushu--kyushu-shinkansen",
+  "jr-kyushu--nishi-kyushu-shinkansen",
 ];
 const rank = (id) => {
   const i = ORDER.indexOf(id);
@@ -292,6 +293,7 @@ const payload = {
   lines: lines.map((L) => ({
     id: L.id, operatorId: L.operatorId, name: L.name, formalName: L.formalName,
     kana: L.kana, symbol: L.symbol, color: L.color, colorName: L.colorName,
+    loop: L.loop === true,
     category: categoryOf(L),
     verified: L.verified === true,
     stations: L.stations.map((s) => ({ stationId: s.stationId, numbering: s.numbering })),

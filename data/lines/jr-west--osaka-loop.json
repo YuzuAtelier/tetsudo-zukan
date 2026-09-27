@@ -1,0 +1,97 @@
+{
+  "id": "jr-west--osaka-loop",
+  "operatorId": "jr-west",
+  "name": "大阪環状線",
+  "formalName": "大阪環状線",
+  "kana": "おおさかかんじょうせん",
+  "symbol": "O",
+  "color": "#E80000",
+  "colorName": "バーミリオン",
+  "loop": true,
+  "verified": true,
+  "verifiedOn": "2026-09-27",
+  "verifiedNote": "駅の並びと駅番号（JR-O01 天王寺〜JR-O19 新今宮）をWikipediaの路線記事で確認し、駅数19がJR西日本の路線データと一致することを確かめた。ふりがなはWikipediaの駅記事のよみがな欄から取り、ローマ字表記と突き合わせた。駅番号は公式表記では「JR-O01」だが、他路線とそろえて「O01」とした。環状線なので新今宮の次は天王寺に戻る（loop: true）。京橋・福島は東京・福島県の同名駅と別なので kyobashi-osaka / fukushima-osaka とした。路線カラーはWikipediaの記事とラインカラー一覧の値 #E80000 を採った（一覧には #E72943 も併記されている。どちらもJR西日本の近畿エリア路線図が出典）。路線図PDFの範囲外なので駅名の照合はできていない。首都圏の路線とつながる駅は無い。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/大阪環状線",
+    "https://www.jr-odekake.net/station/pdf/ubn.pdf",
+    "https://ja.wikipedia.org/wiki/日本の鉄道ラインカラー一覧"
+  ],
+  "stations": [
+    {
+      "stationId": "tennoji",
+      "numbering": "O01"
+    },
+    {
+      "stationId": "teradacho",
+      "numbering": "O02"
+    },
+    {
+      "stationId": "momodani",
+      "numbering": "O03"
+    },
+    {
+      "stationId": "tsuruhashi",
+      "numbering": "O04"
+    },
+    {
+      "stationId": "tamatsukuri",
+      "numbering": "O05"
+    },
+    {
+      "stationId": "morinomiya",
+      "numbering": "O06"
+    },
+    {
+      "stationId": "osakajokoen",
+      "numbering": "O07"
+    },
+    {
+      "stationId": "kyobashi-osaka",
+      "numbering": "O08"
+    },
+    {
+      "stationId": "sakuranomiya",
+      "numbering": "O09"
+    },
+    {
+      "stationId": "temma",
+      "numbering": "O10"
+    },
+    {
+      "stationId": "osaka",
+      "numbering": "O11"
+    },
+    {
+      "stationId": "fukushima-osaka",
+      "numbering": "O12"
+    },
+    {
+      "stationId": "noda",
+      "numbering": "O13"
+    },
+    {
+      "stationId": "nishikujo",
+      "numbering": "O14"
+    },
+    {
+      "stationId": "bentencho",
+      "numbering": "O15"
+    },
+    {
+      "stationId": "taisho",
+      "numbering": "O16"
+    },
+    {
+      "stationId": "ashiharabashi",
+      "numbering": "O17"
+    },
+    {
+      "stationId": "imamiya",
+      "numbering": "O18"
+    },
+    {
+      "stationId": "shin-imamiya",
+      "numbering": "O19"
+    }
+  ]
+}

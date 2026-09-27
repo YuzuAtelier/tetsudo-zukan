@@ -11275,6 +11275,101 @@
       "id": "shin-hakodate-hokuto",
       "name": "新函館北斗",
       "kana": "しんはこだてほくと"
+    },
+    {
+      "id": "tennoji",
+      "name": "天王寺",
+      "kana": "てんのうじ"
+    },
+    {
+      "id": "teradacho",
+      "name": "寺田町",
+      "kana": "てらだちょう"
+    },
+    {
+      "id": "momodani",
+      "name": "桃谷",
+      "kana": "ももだに"
+    },
+    {
+      "id": "tsuruhashi",
+      "name": "鶴橋",
+      "kana": "つるはし"
+    },
+    {
+      "id": "tamatsukuri",
+      "name": "玉造",
+      "kana": "たまつくり"
+    },
+    {
+      "id": "morinomiya",
+      "name": "森ノ宮",
+      "kana": "もりのみや"
+    },
+    {
+      "id": "osakajokoen",
+      "name": "大阪城公園",
+      "kana": "おおさかじょうこうえん"
+    },
+    {
+      "id": "kyobashi-osaka",
+      "name": "京橋",
+      "kana": "きょうばし"
+    },
+    {
+      "id": "sakuranomiya",
+      "name": "桜ノ宮",
+      "kana": "さくらのみや"
+    },
+    {
+      "id": "temma",
+      "name": "天満",
+      "kana": "てんま"
+    },
+    {
+      "id": "osaka",
+      "name": "大阪",
+      "kana": "おおさか"
+    },
+    {
+      "id": "fukushima-osaka",
+      "name": "福島",
+      "kana": "ふくしま"
+    },
+    {
+      "id": "noda",
+      "name": "野田",
+      "kana": "のだ"
+    },
+    {
+      "id": "nishikujo",
+      "name": "西九条",
+      "kana": "にしくじょう"
+    },
+    {
+      "id": "bentencho",
+      "name": "弁天町",
+      "kana": "べんてんちょう"
+    },
+    {
+      "id": "taisho",
+      "name": "大正",
+      "kana": "たいしょう"
+    },
+    {
+      "id": "ashiharabashi",
+      "name": "芦原橋",
+      "kana": "あしはらばし"
+    },
+    {
+      "id": "imamiya",
+      "name": "今宮",
+      "kana": "いまみや"
+    },
+    {
+      "id": "shin-imamiya",
+      "name": "新今宮",
+      "kana": "しんいまみや"
     }
   ]
 }
