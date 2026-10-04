@@ -166,6 +166,8 @@ const REVIEWED_JUNCTIONS = new Set([
   "ikebukuro", "goi", "moriya", "kanazawa-hakkei", "higashi-narita",
   "yukarigaoka", "kita-narashino", "chuo-rinkan", "shonandai",
   "akabane-iwabuchi", "tamagawa-josui", "aioi", "tennozu-isle", "shimodate",
+  // 2026-10-04 確認済み。新幹線の会社の境目と、京急本線と都営浅草線の境目
+  "shin-osaka", "shin-aomori", "hakata", "sengakuji",
 ]);
 let reviewedPairs = 0;
 for (const [k, sids] of pairStations) {

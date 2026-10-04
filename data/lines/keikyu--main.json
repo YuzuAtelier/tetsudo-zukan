@@ -9,13 +9,18 @@
   "colorName": "青",
   "verified": true,
   "verifiedOn": "2026-09-01",
-  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、京急電鉄公式サイトと突き合わせた。ふりがなはローマ字表記から起こした。　支線に割り当てられた番号（KK12〜17は空港線、KK21〜26は大師線、KK51〜53は逗子線、KK65〜72は久里浜線）を飛ばすため、本線の番号は連続しない。",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認し、京急電鉄公式サイトと突き合わせた。ふりがなはローマ字表記から起こした。　支線に割り当てられた番号（KK12〜17は空港線、KK21〜26は大師線、KK51〜53は逗子線、KK65〜72は久里浜線）を飛ばすため、本線の番号は連続しない。　2026-10-04: 泉岳寺〜品川（1.2km）も京急本線の区間なので、先頭に泉岳寺を追加した（Wikipedia「京急本線」：起点 品川、終点 浦賀・泉岳寺、駅数50）。泉岳寺は京急の駅番号の対象外で、京急の案内でも都営の A07 を使っているため、駅番号は A07 とした。",
   "source": [
     "https://en.wikipedia.org/wiki/Keiky%C5%AB_Main_Line",
     "https://www.keikyu.co.jp/",
-    "https://ayaito.net/webtips/color_code/12224/"
+    "https://ayaito.net/webtips/color_code/12224/",
+    "https://ja.wikipedia.org/wiki/泉岳寺駅"
   ],
   "stations": [
+    {
+      "stationId": "sengakuji",
+      "numbering": "A07"
+    },
     {
       "stationId": "shinagawa",
       "numbering": "KK01"
