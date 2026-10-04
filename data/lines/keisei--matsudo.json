@@ -9,13 +9,17 @@
   "colorName": "紺",
   "verified": true,
   "verifiedOn": "2026-09-01",
-  "verifiedNote": "駅順と駅番号を日本語版・英語版Wikipediaの2系統で照合。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。「ケ／ヶ」は事業者の正式表記に従った。　2025年4月に新京成電鉄が京成電鉄へ統合され「京成松戸線」に改称された路線。駅番号は KS66（新津田沼）〜KS88（松戸）。路線図PDFの表記も「京成松戸線」で一致している。",
+  "verifiedNote": "駅順と駅番号を日本語版・英語版Wikipediaの2系統で照合。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。「ケ／ヶ」は事業者の正式表記に従った。　2025年4月に新京成電鉄が京成電鉄へ統合され「京成松戸線」に改称された路線。駅番号は KS66（新津田沼）〜KS88（松戸）。路線図PDFの表記も「京成松戸線」で一致している。　2026-10-04: 京成津田沼（KS26）までが京成松戸線の区間なので先頭に加えた（Wikipedia「京成松戸線」の駅一覧：KS26 京成津田沼〜KS88 松戸、24駅）。それまでは新津田沼で止まっていて、京成本線・千葉線とつながっていなかった。",
   "source": [
     "https://en.wikipedia.org/wiki/Shin-Keisei_Line",
     "https://www.keisei.co.jp/",
     "https://ayaito.net/webtips/color_code/12224/"
   ],
   "stations": [
+    {
+      "stationId": "keisei-tsudanuma",
+      "numbering": "KS26"
+    },
     {
       "stationId": "shin-tsudanuma",
       "numbering": "KS66"

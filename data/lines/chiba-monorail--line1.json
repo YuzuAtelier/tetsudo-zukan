@@ -9,9 +9,10 @@
   "colorName": "橙",
   "verified": true,
   "verifiedOn": "2026-09-01",
-  "verifiedNote": "駅順を英語版Wikipedia（湘南モノレールは日本語版）で確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　2026-09-02: 同名の別駅と1駅に統合されていたため「栄町」を sakaecho-chiba（千葉都市モノレール1号線（千葉市中央区））として分離した。",
+  "verifiedNote": "駅順を英語版Wikipedia（湘南モノレールは日本語版）で確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　2026-09-02: 同名の別駅と1駅に統合されていたため「栄町」を sakaecho-chiba（千葉都市モノレール1号線（千葉市中央区））として分離した。　2026-10-04: 栄町・葭川公園・県庁前の駅番号を CM04〜CM06 としていたが、正しくは CM16〜CM18（CM04〜CM15 は2号線）。各駅のWikipedia記事と千葉都市モノレールの駅ナンバリング発表で確認して直した。",
   "source": [
-    "https://en.wikipedia.org/wiki/Chiba_Urban_Monorail"
+    "https://en.wikipedia.org/wiki/Chiba_Urban_Monorail",
+    "https://chiba-monorail.co.jp/index.php/20190218nanbering/"
   ],
   "stations": [
     {
@@ -28,15 +29,15 @@
     },
     {
       "stationId": "sakaecho-chiba",
-      "numbering": "CM04"
+      "numbering": "CM16"
     },
     {
       "stationId": "yoshikawa-koen",
-      "numbering": "CM05"
+      "numbering": "CM17"
     },
     {
       "stationId": "kencho-mae",
-      "numbering": "CM06"
+      "numbering": "CM18"
     }
   ]
 }

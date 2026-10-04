@@ -9,9 +9,10 @@
   "colorName": "水色",
   "verified": true,
   "verifiedOn": "2026-09-01",
-  "verifiedNote": "駅順を英語版Wikipedia（湘南モノレールは日本語版）で確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　英語版Wikipediaの駅名に複数の誤りがあった。「三津ヶ辻台」「栂」「千代田台北」「千代田台」はいずれも路線図PDFに存在しない表記で、路線図と照合して みつわ台・（栂は実在しない駅と判断し削除）・千城台北・千城台 に修正した。",
+  "verifiedNote": "駅順を英語版Wikipedia（湘南モノレールは日本語版）で確認。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　英語版Wikipediaの駅名に複数の誤りがあった。「三津ヶ辻台」「栂」「千代田台北」「千代田台」はいずれも路線図PDFに存在しない表記で、路線図と照合して みつわ台・（栂は実在しない駅と判断し削除）・千城台北・千城台 に修正した。　2026-10-04: 3つの誤りを直した。(1) 都賀（つが・CM11）が抜けていた。英語版Wikipediaの「栂」を実在しない駅と判断して消していたが、栂も「つが」と読み、都賀の誤記だった。(2) 駅番号を CM07〜CM17 としていたが、正しくは CM04〜CM15。なお2号線の正式区間は千葉〜千城台だが、深夜の1本を除く全列車が1号線の千葉みなとまで直通するため、千葉みなと・市役所前も含めている（Wikipedia「千葉都市モノレール2号線」の運行形態）。各駅のWikipedia記事と千葉都市モノレールの駅ナンバリング発表で確認した。",
   "source": [
-    "https://en.wikipedia.org/wiki/Chiba_Urban_Monorail"
+    "https://en.wikipedia.org/wiki/Chiba_Urban_Monorail",
+    "https://chiba-monorail.co.jp/index.php/20190218nanbering/"
   ],
   "stations": [
     {
@@ -28,47 +29,51 @@
     },
     {
       "stationId": "chiba-koen",
-      "numbering": "CM07"
+      "numbering": "CM04"
     },
     {
       "stationId": "sakusabe",
-      "numbering": "CM08"
+      "numbering": "CM05"
     },
     {
       "stationId": "tendai",
-      "numbering": "CM09"
+      "numbering": "CM06"
     },
     {
       "stationId": "anagawa",
-      "numbering": "CM10"
+      "numbering": "CM07"
     },
     {
       "stationId": "sports-center",
-      "numbering": "CM11"
+      "numbering": "CM08"
     },
     {
       "stationId": "dobutsu-koen",
-      "numbering": "CM12"
+      "numbering": "CM09"
     },
     {
       "stationId": "mitsuwadai",
-      "numbering": "CM13"
+      "numbering": "CM10"
+    },
+    {
+      "stationId": "tsuga",
+      "numbering": "CM11"
     },
     {
       "stationId": "sakuragi",
-      "numbering": "CM14"
+      "numbering": "CM12"
     },
     {
       "stationId": "oguradai",
-      "numbering": "CM15"
+      "numbering": "CM13"
     },
     {
       "stationId": "chishirodai-kita",
-      "numbering": "CM16"
+      "numbering": "CM14"
     },
     {
       "stationId": "chishirodai",
-      "numbering": "CM17"
+      "numbering": "CM15"
     }
   ]
 }

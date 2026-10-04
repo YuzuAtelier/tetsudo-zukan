@@ -9,7 +9,7 @@
   "colorName": "青",
   "verified": true,
   "verifiedOn": "2026-09-01",
-  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認。英語版は起点の京成高砂を HS10 と誤記していた（HS10は白井）ため HS01 に直し、以降の番号を1つずつ繰り下げて整合させた。ふりがなはローマ字表記から起こした。",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認。英語版は起点の京成高砂を HS10 と誤記していた（HS10は白井）ため HS01 に直し、以降の番号を1つずつ繰り下げて整合させた。ふりがなはローマ字表記から起こした。　2026-10-04: 駅番号が新柴又から先すべて1つずれていた（HS02〜HS15）。9/2に「英語版が京成高砂をHS10と誤記」と判断して京成高砂をHS01にし以降を繰り下げたが、その判断が誤りだった。京成高砂は京成の KS10 で北総の番号は無く、新柴又 HS01 〜 印旛日本医大 HS14 が正しい。各駅のWikipedia記事と北総線の駅一覧で確認した。",
   "source": [
     "https://en.wikipedia.org/wiki/Hokus%C5%8D_Line",
     "https://www.hokuso-railway.co.jp/"
@@ -17,63 +17,63 @@
   "stations": [
     {
       "stationId": "keisei-takasago",
-      "numbering": "HS01"
+      "numbering": "KS10"
     },
     {
       "stationId": "shin-shibamata",
-      "numbering": "HS02"
+      "numbering": "HS01"
     },
     {
       "stationId": "yagiri",
-      "numbering": "HS03"
+      "numbering": "HS02"
     },
     {
       "stationId": "kita-kokubun",
-      "numbering": "HS04"
+      "numbering": "HS03"
     },
     {
       "stationId": "akiyama",
-      "numbering": "HS05"
+      "numbering": "HS04"
     },
     {
       "stationId": "higashi-matsudo",
-      "numbering": "HS06"
+      "numbering": "HS05"
     },
     {
       "stationId": "matsuhidai",
-      "numbering": "HS07"
+      "numbering": "HS06"
     },
     {
       "stationId": "omachi",
-      "numbering": "HS08"
+      "numbering": "HS07"
     },
     {
       "stationId": "shin-kamagaya",
-      "numbering": "HS09"
+      "numbering": "HS08"
     },
     {
       "stationId": "nishi-shiroi",
-      "numbering": "HS10"
+      "numbering": "HS09"
     },
     {
       "stationId": "shiroi",
-      "numbering": "HS11"
+      "numbering": "HS10"
     },
     {
       "stationId": "komuro",
-      "numbering": "HS12"
+      "numbering": "HS11"
     },
     {
       "stationId": "chiba-newtown-chuo",
-      "numbering": "HS13"
+      "numbering": "HS12"
     },
     {
       "stationId": "inzai-makinohara",
-      "numbering": "HS14"
+      "numbering": "HS13"
     },
     {
       "stationId": "imba-nihon-idai",
-      "numbering": "HS15"
+      "numbering": "HS14"
     }
   ]
 }

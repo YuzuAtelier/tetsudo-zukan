@@ -9,7 +9,7 @@
   "colorName": "青",
   "verified": true,
   "verifiedOn": "2026-09-01",
-  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（伊勢崎線は日本語版とも一致）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　鐘ヶ淵は路線図上でラベルが見つからなかった（要確認）。座標検査で北千住↔小菅の順序が指摘されたが、TS09北千住→TS10小菅→TS11五反野は公式・Wikipediaとも一致しており、駅間が近接しているためのラベル誤検知と判断した。",
+  "verifiedNote": "駅順と駅番号を英語版Wikipediaで確認（伊勢崎線は日本語版とも一致）。ふりがなはローマ字表記から起こした。駅名を路線図PDFの抽出結果と照合。　鐘ヶ淵は路線図上でラベルが見つからなかった（要確認）。座標検査で北千住↔小菅の順序が指摘されたが、TS09北千住→TS10小菅→TS11五反野は公式・Wikipediaとも一致しており、駅間が近接しているためのラベル誤検知と判断した。　2026-10-04: 押上（TS03）を本線から外した。線路は「浅草→とうきょうスカイツリー→曳舟」と「押上→曳舟」の2本に分かれていて、とうきょうスカイツリーと押上の間を走る電車は無い（両駅は隣接し東武では同一駅扱い）。押上〜曳舟は tobu--skytree-oshiage に分けた。Wikipedia「東武伊勢崎線」「押上駅」で確認。",
   "source": [
     "https://en.wikipedia.org/wiki/Tobu_Skytree_Line",
     "https://ja.wikipedia.org/wiki/東武伊勢崎線",
@@ -23,10 +23,6 @@
     {
       "stationId": "tokyo-sukaitsurii",
       "numbering": "TS02"
-    },
-    {
-      "stationId": "oshiage",
-      "numbering": "TS03"
     },
     {
       "stationId": "hikifune",

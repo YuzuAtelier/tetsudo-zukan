@@ -1,0 +1,27 @@
+{
+  "id": "tobu--skytree-oshiage",
+  "operatorId": "tobu",
+  "name": "東武スカイツリーライン押上支線",
+  "formalName": "伊勢崎線（押上〜曳舟）",
+  "kana": "とうぶすかいつりーらいんおしあげしせん",
+  "symbol": "TS",
+  "color": "#0F6CC3",
+  "colorName": "青",
+  "verified": true,
+  "verifiedOn": "2026-10-04",
+  "verifiedNote": "伊勢崎線のうち押上〜曳舟の区間（東京メトロ半蔵門線と直通する電車が走る）。本線の浅草〜とうきょうスカイツリー〜曳舟とは別の線路なので、丸ノ内線分岐線と同じく別ファイルにした。「押上支線」は区別のために付けた呼び名で、正式な路線名ではない（正式には伊勢崎線の一部）。駅番号は押上 TS03・曳舟 TS04。Wikipedia「東武伊勢崎線」「押上駅」で確認。",
+  "source": [
+    "https://ja.wikipedia.org/wiki/東武伊勢崎線",
+    "https://ja.wikipedia.org/wiki/押上駅"
+  ],
+  "stations": [
+    {
+      "stationId": "oshiage",
+      "numbering": "TS03"
+    },
+    {
+      "stationId": "hikifune",
+      "numbering": "TS04"
+    }
+  ]
+}

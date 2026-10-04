@@ -334,10 +334,14 @@ function kataToHira(s){
     return String.fromCharCode(c.charCodeAt(0) - 0x60);
   });
 }
+// 同じ字の書き分け。駅名は事業者の表記（螢田・西ヶ原四丁目など）に合わせてあるが、
+// 検索では「蛍田」「西ケ原」と打っても見つかるように、どちらも同じ字にそろえて比べる
+var FOLD = { "ヶ": "ケ", "ヵ": "カ", "螢": "蛍", "屛": "屏", "麴": "麹" };
 function norm(s){
   var t = String(s || "");
   // 半角カタカナ・全角英数を先に寄せてから、カタカナをひらがなに直す
   try { t = t.normalize("NFKC"); } catch (e) {}
+  t = t.replace(/[ヶヵ螢屛麴]/g, function(c){ return FOLD[c]; });
   return kataToHira(t.toLowerCase()).replace(/[\s　\-‐－・]/g, "");
 }
 function fullName(st){ return st.name + (st.subName ? "〈" + st.subName + "〉" : ""); }
