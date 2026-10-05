@@ -1,5 +1,5 @@
 {
-  "note": "首都圏の特急（有料の特急・ライナー）と停車駅。variants は「いきさき」ごとの停車駅で、lines は走る順の路線id。stop: all=いつも とまる / some=ときどき とまる。途中の駅でおわる列車も、停車駅に含めたまま扱う（2026-10-05 の方針）。臨時停車・運転停車・臨時列車は入れない。continues は、アプリに無い区間へ続くときの行き先。",
+  "note": "首都圏の特急（有料の特急・ライナー）と停車駅。variants は「いきさき」ごとの停車駅で、lines は走る順の路線id。stop: all=いつも とまる / some=ときどき とまる。途中の駅でおわる列車も、停車駅に含めたまま扱う（2026-10-05 の方針）。始発・終点も一部の列車だけなら some。臨時停車・運転停車・臨時列車は入れない。continues は、アプリに無い区間へ続くときの行き先（some: true は一部の列車だけ）。",
   "checkedOn": "2026-10-05",
   "links": [
     {
@@ -1147,6 +1147,1084 @@
             },
             {
               "stationId": "kuzu",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "narita-express",
+      "operatorId": "jr-east",
+      "name": "成田エクスプレス",
+      "kana": "なりたえくすぷれす",
+      "car": "E259系",
+      "aliases": [
+        "N'EX",
+        "NEX",
+        "ねっくす"
+      ],
+      "source": [
+        "https://timetables.jreast.co.jp/2610/timetable-v/213d1.html",
+        "https://ja.wikipedia.org/wiki/成田エクスプレス"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "jr-east--yokosuka-sobu-rapid",
+            "jr-east--sobu-main",
+            "jr-east--narita",
+            "jr-east--narita-airport"
+          ],
+          "name": "大船 から",
+          "kana": "おおふな から",
+          "stops": [
+            {
+              "stationId": "ofuna",
+              "stop": "all"
+            },
+            {
+              "stationId": "totsuka",
+              "stop": "all"
+            },
+            {
+              "stationId": "yokohama",
+              "stop": "all"
+            },
+            {
+              "stationId": "musashi-kosugi",
+              "stop": "all"
+            },
+            {
+              "stationId": "shinagawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "tokyo",
+              "stop": "all"
+            },
+            {
+              "stationId": "chiba",
+              "stop": "some"
+            },
+            {
+              "stationId": "yotsukaido",
+              "stop": "some"
+            },
+            {
+              "stationId": "sakura",
+              "stop": "some"
+            },
+            {
+              "stationId": "narita",
+              "stop": "some"
+            },
+            {
+              "stationId": "kuko-daini-biru",
+              "stop": "all"
+            },
+            {
+              "stationId": "narita-kuko",
+              "stop": "all"
+            }
+          ]
+        },
+        {
+          "lines": [
+            "jr-east--shonan-shinjuku",
+            "jr-east--yokosuka-sobu-rapid",
+            "jr-east--sobu-main",
+            "jr-east--narita",
+            "jr-east--narita-airport"
+          ],
+          "name": "新宿 から",
+          "kana": "しんじゅく から",
+          "stops": [
+            {
+              "stationId": "shinjuku",
+              "stop": "all"
+            },
+            {
+              "stationId": "shibuya",
+              "stop": "all"
+            },
+            {
+              "stationId": "shinagawa",
+              "stop": "some"
+            },
+            {
+              "stationId": "tokyo",
+              "stop": "all"
+            },
+            {
+              "stationId": "chiba",
+              "stop": "some"
+            },
+            {
+              "stationId": "yotsukaido",
+              "stop": "some"
+            },
+            {
+              "stationId": "sakura",
+              "stop": "some"
+            },
+            {
+              "stationId": "narita",
+              "stop": "some"
+            },
+            {
+              "stationId": "kuko-daini-biru",
+              "stop": "all"
+            },
+            {
+              "stationId": "narita-kuko",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hitachi",
+      "operatorId": "jr-east",
+      "name": "ひたち",
+      "kana": "ひたち",
+      "car": "E657系",
+      "source": [
+        "https://timetables.jreast.co.jp/2610/timetable-v/240d1.html",
+        "https://ja.wikipedia.org/wiki/ひたち_(列車)"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "jr-east--tokaido",
+            "jr-east--utsunomiya",
+            "jr-east--joban-rapid",
+            "jr-east--joban"
+          ],
+          "stops": [
+            {
+              "stationId": "shinagawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "tokyo",
+              "stop": "all"
+            },
+            {
+              "stationId": "ueno",
+              "stop": "all"
+            },
+            {
+              "stationId": "kashiwa",
+              "stop": "some"
+            },
+            {
+              "stationId": "tsuchiura",
+              "stop": "some"
+            },
+            {
+              "stationId": "mito",
+              "stop": "all"
+            },
+            {
+              "stationId": "katsuta",
+              "stop": "all"
+            },
+            {
+              "stationId": "tokai",
+              "stop": "some"
+            },
+            {
+              "stationId": "omika",
+              "stop": "some"
+            },
+            {
+              "stationId": "hitachi-taga",
+              "stop": "some"
+            },
+            {
+              "stationId": "hitachi",
+              "stop": "all"
+            },
+            {
+              "stationId": "takahagi",
+              "stop": "some"
+            },
+            {
+              "stationId": "isohara",
+              "stop": "some"
+            },
+            {
+              "stationId": "nakoso",
+              "stop": "some"
+            },
+            {
+              "stationId": "izumi",
+              "stop": "all"
+            },
+            {
+              "stationId": "yumoto",
+              "stop": "all"
+            },
+            {
+              "stationId": "iwaki",
+              "stop": "all"
+            }
+          ],
+          "continues": {
+            "name": "仙台",
+            "kana": "せんだい",
+            "some": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "tokiwa",
+      "operatorId": "jr-east",
+      "name": "ときわ",
+      "kana": "ときわ",
+      "car": "E657系",
+      "source": [
+        "https://timetables.jreast.co.jp/2610/timetable-v/240d1.html",
+        "https://ja.wikipedia.org/wiki/ひたち_(列車)"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "jr-east--tokaido",
+            "jr-east--utsunomiya",
+            "jr-east--joban-rapid",
+            "jr-east--joban"
+          ],
+          "stops": [
+            {
+              "stationId": "shinagawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "tokyo",
+              "stop": "all"
+            },
+            {
+              "stationId": "ueno",
+              "stop": "all"
+            },
+            {
+              "stationId": "nippori",
+              "stop": "some"
+            },
+            {
+              "stationId": "kashiwa",
+              "stop": "all"
+            },
+            {
+              "stationId": "ryugasakishi",
+              "stop": "some"
+            },
+            {
+              "stationId": "ushiku",
+              "stop": "some"
+            },
+            {
+              "stationId": "hitachino-ushiku",
+              "stop": "some"
+            },
+            {
+              "stationId": "arakawaoki",
+              "stop": "some"
+            },
+            {
+              "stationId": "tsuchiura",
+              "stop": "all"
+            },
+            {
+              "stationId": "ishioka",
+              "stop": "some"
+            },
+            {
+              "stationId": "tomobe",
+              "stop": "some"
+            },
+            {
+              "stationId": "akatsuka",
+              "stop": "some"
+            },
+            {
+              "stationId": "mito",
+              "stop": "some"
+            },
+            {
+              "stationId": "katsuta",
+              "stop": "some"
+            },
+            {
+              "stationId": "tokai",
+              "stop": "some"
+            },
+            {
+              "stationId": "omika",
+              "stop": "some"
+            },
+            {
+              "stationId": "hitachi-taga",
+              "stop": "some"
+            },
+            {
+              "stationId": "hitachi",
+              "stop": "some"
+            },
+            {
+              "stationId": "takahagi",
+              "stop": "some"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "azusa",
+      "operatorId": "jr-east",
+      "name": "あずさ",
+      "kana": "あずさ",
+      "car": "E353系",
+      "source": [
+        "https://timetables.jreast.co.jp/2610/timetable-v/223d1.html",
+        "https://timetables.jreast.co.jp/2610/timetable-v/230d1.html",
+        "https://ja.wikipedia.org/wiki/あずさ_(列車)"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "jr-east--chuo-rapid",
+            "jr-east--chuo-main",
+            "jr-east--shinonoi",
+            "jr-east--oito"
+          ],
+          "stops": [
+            {
+              "stationId": "tokyo",
+              "stop": "some"
+            },
+            {
+              "stationId": "shinjuku",
+              "stop": "all"
+            },
+            {
+              "stationId": "tachikawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "hachioji",
+              "stop": "all"
+            },
+            {
+              "stationId": "otsuki",
+              "stop": "some"
+            },
+            {
+              "stationId": "enzan",
+              "stop": "some"
+            },
+            {
+              "stationId": "yamanashishi",
+              "stop": "some"
+            },
+            {
+              "stationId": "isawaonsen",
+              "stop": "some"
+            },
+            {
+              "stationId": "kofu",
+              "stop": "all"
+            },
+            {
+              "stationId": "nirasaki",
+              "stop": "some"
+            },
+            {
+              "stationId": "kobuchizawa",
+              "stop": "some"
+            },
+            {
+              "stationId": "fujimi",
+              "stop": "some"
+            },
+            {
+              "stationId": "chino",
+              "stop": "all"
+            },
+            {
+              "stationId": "kami-suwa",
+              "stop": "all"
+            },
+            {
+              "stationId": "shimo-suwa",
+              "stop": "some"
+            },
+            {
+              "stationId": "okaya",
+              "stop": "some"
+            },
+            {
+              "stationId": "shiojiri",
+              "stop": "some"
+            },
+            {
+              "stationId": "matsumoto",
+              "stop": "all"
+            },
+            {
+              "stationId": "toyoshina",
+              "stop": "some"
+            },
+            {
+              "stationId": "hotaka",
+              "stop": "some"
+            },
+            {
+              "stationId": "shinano-omachi",
+              "stop": "some"
+            },
+            {
+              "stationId": "hakuba",
+              "stop": "some"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kaiji",
+      "operatorId": "jr-east",
+      "name": "かいじ",
+      "kana": "かいじ",
+      "car": "E353系",
+      "source": [
+        "https://timetables.jreast.co.jp/2610/timetable-v/223d1.html",
+        "https://ja.wikipedia.org/wiki/あずさ_(列車)"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "jr-east--chuo-rapid",
+            "jr-east--chuo-main"
+          ],
+          "stops": [
+            {
+              "stationId": "tokyo",
+              "stop": "some"
+            },
+            {
+              "stationId": "shinjuku",
+              "stop": "all"
+            },
+            {
+              "stationId": "tachikawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "hachioji",
+              "stop": "all"
+            },
+            {
+              "stationId": "otsuki",
+              "stop": "all"
+            },
+            {
+              "stationId": "enzan",
+              "stop": "all"
+            },
+            {
+              "stationId": "yamanashishi",
+              "stop": "all"
+            },
+            {
+              "stationId": "isawaonsen",
+              "stop": "all"
+            },
+            {
+              "stationId": "kofu",
+              "stop": "all"
+            },
+            {
+              "stationId": "ryuo",
+              "stop": "some"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fuji-kaiyu",
+      "operatorId": "jr-east",
+      "name": "富士回遊",
+      "kana": "ふじかいゆう",
+      "car": "E353系",
+      "source": [
+        "https://timetables.jreast.co.jp/2608/train/100/103001.html",
+        "https://ja.wikipedia.org/wiki/富士回遊"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "jr-east--chuo-rapid",
+            "jr-east--chuo-main",
+            "fujikyu--fujikyu"
+          ],
+          "stops": [
+            {
+              "stationId": "shinjuku",
+              "stop": "all"
+            },
+            {
+              "stationId": "tachikawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "hachioji",
+              "stop": "all"
+            },
+            {
+              "stationId": "otsuki",
+              "stop": "all"
+            },
+            {
+              "stationId": "tsuru-bunka-daigaku-mae",
+              "stop": "all"
+            },
+            {
+              "stationId": "shimo-yoshida",
+              "stop": "all"
+            },
+            {
+              "stationId": "fujisan",
+              "stop": "all"
+            },
+            {
+              "stationId": "fujikyu-highland",
+              "stop": "all"
+            },
+            {
+              "stationId": "kawaguchiko",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "odoriko",
+      "operatorId": "jr-east",
+      "name": "踊り子",
+      "kana": "おどりこ",
+      "car": "E257系",
+      "source": [
+        "https://timetables.jreast.co.jp/2610/timetable-v/101d1.html",
+        "https://ja.wikipedia.org/wiki/踊り子_(列車)"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "jr-east--tokaido",
+            "jr-east--ito",
+            "izukyu--izukyu"
+          ],
+          "stops": [
+            {
+              "stationId": "tokyo",
+              "stop": "all"
+            },
+            {
+              "stationId": "shinagawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "kawasaki",
+              "stop": "all"
+            },
+            {
+              "stationId": "yokohama",
+              "stop": "all"
+            },
+            {
+              "stationId": "ofuna",
+              "stop": "all"
+            },
+            {
+              "stationId": "odawara",
+              "stop": "all"
+            },
+            {
+              "stationId": "yugawara",
+              "stop": "all"
+            },
+            {
+              "stationId": "atami",
+              "stop": "all"
+            },
+            {
+              "stationId": "ito",
+              "stop": "all"
+            },
+            {
+              "stationId": "izu-kogen",
+              "stop": "all"
+            },
+            {
+              "stationId": "izu-atagawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "izu-inatori",
+              "stop": "all"
+            },
+            {
+              "stationId": "kawazu",
+              "stop": "all"
+            },
+            {
+              "stationId": "izukyu-shimoda",
+              "stop": "all"
+            }
+          ]
+        },
+        {
+          "lines": [
+            "jr-east--tokaido"
+          ],
+          "stops": [
+            {
+              "stationId": "tokyo",
+              "stop": "all"
+            },
+            {
+              "stationId": "shinagawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "kawasaki",
+              "stop": "all"
+            },
+            {
+              "stationId": "yokohama",
+              "stop": "all"
+            },
+            {
+              "stationId": "ofuna",
+              "stop": "all"
+            },
+            {
+              "stationId": "odawara",
+              "stop": "all"
+            },
+            {
+              "stationId": "yugawara",
+              "stop": "all"
+            },
+            {
+              "stationId": "atami",
+              "stop": "all"
+            }
+          ],
+          "continues": {
+            "name": "修善寺",
+            "kana": "しゅぜんじ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "saphir-odoriko",
+      "operatorId": "jr-east",
+      "name": "サフィール踊り子",
+      "kana": "さふぃーるおどりこ",
+      "car": "E261系",
+      "source": [
+        "https://timetables.jreast.co.jp/2610/timetable-v/101d1.html",
+        "https://ja.wikipedia.org/wiki/踊り子_(列車)"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "jr-east--tokaido",
+            "jr-east--ito",
+            "izukyu--izukyu"
+          ],
+          "stops": [
+            {
+              "stationId": "tokyo",
+              "stop": "all"
+            },
+            {
+              "stationId": "shinagawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "yokohama",
+              "stop": "all"
+            },
+            {
+              "stationId": "atami",
+              "stop": "all"
+            },
+            {
+              "stationId": "ito",
+              "stop": "all"
+            },
+            {
+              "stationId": "izu-kogen",
+              "stop": "all"
+            },
+            {
+              "stationId": "izu-atagawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "izu-inatori",
+              "stop": "all"
+            },
+            {
+              "stationId": "kawazu",
+              "stop": "all"
+            },
+            {
+              "stationId": "izukyu-shimoda",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shiosai",
+      "operatorId": "jr-east",
+      "name": "しおさい",
+      "kana": "しおさい",
+      "car": "E257系",
+      "source": [
+        "https://timetables.jreast.co.jp/2610/timetable-v/213d1.html",
+        "https://ja.wikipedia.org/wiki/しおさい_(列車)"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "jr-east--yokosuka-sobu-rapid",
+            "jr-east--sobu-main"
+          ],
+          "stops": [
+            {
+              "stationId": "tokyo",
+              "stop": "all"
+            },
+            {
+              "stationId": "kinshicho",
+              "stop": "all"
+            },
+            {
+              "stationId": "funabashi",
+              "stop": "all"
+            },
+            {
+              "stationId": "chiba",
+              "stop": "all"
+            },
+            {
+              "stationId": "yotsukaido",
+              "stop": "some"
+            },
+            {
+              "stationId": "sakura",
+              "stop": "all"
+            },
+            {
+              "stationId": "yachimata",
+              "stop": "some"
+            },
+            {
+              "stationId": "naruto",
+              "stop": "some"
+            },
+            {
+              "stationId": "yokoshiba",
+              "stop": "some"
+            },
+            {
+              "stationId": "yokaichiba",
+              "stop": "some"
+            },
+            {
+              "stationId": "asahi",
+              "stop": "some"
+            },
+            {
+              "stationId": "iioka",
+              "stop": "some"
+            },
+            {
+              "stationId": "choshi",
+              "stop": "some"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wakashio",
+      "operatorId": "jr-east",
+      "name": "わかしお",
+      "kana": "わかしお",
+      "car": "E257系",
+      "source": [
+        "https://timetables.jreast.co.jp/2610/timetable-v/220d1.html",
+        "https://ja.wikipedia.org/wiki/わかしお_(列車)"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "jr-east--keiyo",
+            "jr-east--sotobo"
+          ],
+          "stops": [
+            {
+              "stationId": "tokyo",
+              "stop": "all"
+            },
+            {
+              "stationId": "kaihin-makuhari",
+              "stop": "some"
+            },
+            {
+              "stationId": "soga",
+              "stop": "all"
+            },
+            {
+              "stationId": "toke",
+              "stop": "some"
+            },
+            {
+              "stationId": "oami",
+              "stop": "all"
+            },
+            {
+              "stationId": "mobara",
+              "stop": "all"
+            },
+            {
+              "stationId": "kazusa-ichinomiya",
+              "stop": "some"
+            },
+            {
+              "stationId": "ohara",
+              "stop": "some"
+            },
+            {
+              "stationId": "onjuku",
+              "stop": "some"
+            },
+            {
+              "stationId": "katsuura",
+              "stop": "some"
+            },
+            {
+              "stationId": "kazusa-okitsu",
+              "stop": "some"
+            },
+            {
+              "stationId": "awa-kominato",
+              "stop": "some"
+            },
+            {
+              "stationId": "awa-kamogawa",
+              "stop": "some"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kusatsu-shima",
+      "operatorId": "jr-east",
+      "name": "草津・四万",
+      "kana": "くさつ・しま",
+      "car": "E257系",
+      "aliases": [
+        "くさつ",
+        "しま"
+      ],
+      "source": [
+        "https://timetables.jreast.co.jp/2610/timetable-v/238d1.html",
+        "https://timetables.jreast.co.jp/2610/timetable-v/236d1.html",
+        "https://ja.wikipedia.org/wiki/草津・四万"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "jr-east--utsunomiya",
+            "jr-east--takasaki",
+            "jr-east--joetsu",
+            "jr-east--agatsuma"
+          ],
+          "stops": [
+            {
+              "stationId": "ueno",
+              "stop": "all"
+            },
+            {
+              "stationId": "akabane",
+              "stop": "all"
+            },
+            {
+              "stationId": "urawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "omiya",
+              "stop": "all"
+            },
+            {
+              "stationId": "kumagaya",
+              "stop": "all"
+            },
+            {
+              "stationId": "takasaki",
+              "stop": "all"
+            },
+            {
+              "stationId": "shin-maebashi",
+              "stop": "all"
+            },
+            {
+              "stationId": "shibukawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "nakanojo",
+              "stop": "all"
+            },
+            {
+              "stationId": "naganohara-kusatsuguchi",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spacia-nikko",
+      "operatorId": "jr-east",
+      "name": "スペーシア日光",
+      "kana": "すぺーしあにっこう",
+      "car": "スペーシア",
+      "aliases": [
+        "にっこう"
+      ],
+      "source": [
+        "https://timetables.jreast.co.jp/2610/timetable-v/239d1.html",
+        "https://www.tobu.co.jp/railway/special_express/stop_station/",
+        "https://ja.wikipedia.org/wiki/日光_(列車)"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "jr-east--shonan-shinjuku",
+            "jr-east--utsunomiya",
+            "tobu--nikko"
+          ],
+          "stops": [
+            {
+              "stationId": "shinjuku",
+              "stop": "all"
+            },
+            {
+              "stationId": "ikebukuro",
+              "stop": "all"
+            },
+            {
+              "stationId": "urawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "omiya",
+              "stop": "all"
+            },
+            {
+              "stationId": "tochigi",
+              "stop": "all"
+            },
+            {
+              "stationId": "shin-kanuma",
+              "stop": "all"
+            },
+            {
+              "stationId": "shimo-imaichi",
+              "stop": "all"
+            },
+            {
+              "stationId": "tobu-nikko",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kinugawa",
+      "operatorId": "jr-east",
+      "name": "きぬがわ",
+      "kana": "きぬがわ",
+      "aliases": [
+        "スペーシアきぬがわ"
+      ],
+      "source": [
+        "https://timetables.jreast.co.jp/2610/timetable-v/239d1.html",
+        "https://www.tobu.co.jp/railway/special_express/stop_station/",
+        "https://ja.wikipedia.org/wiki/日光_(列車)"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "jr-east--shonan-shinjuku",
+            "jr-east--utsunomiya",
+            "tobu--nikko",
+            "tobu--kinugawa"
+          ],
+          "stops": [
+            {
+              "stationId": "shinjuku",
+              "stop": "all"
+            },
+            {
+              "stationId": "ikebukuro",
+              "stop": "all"
+            },
+            {
+              "stationId": "urawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "omiya",
+              "stop": "all"
+            },
+            {
+              "stationId": "tochigi",
+              "stop": "all"
+            },
+            {
+              "stationId": "shin-kanuma",
+              "stop": "all"
+            },
+            {
+              "stationId": "shimo-imaichi",
+              "stop": "all"
+            },
+            {
+              "stationId": "tobu-world-square",
+              "stop": "all"
+            },
+            {
+              "stationId": "kinugawa-onsen",
               "stop": "all"
             }
           ]

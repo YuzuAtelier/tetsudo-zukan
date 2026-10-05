@@ -299,7 +299,7 @@ if (existsSync(expressesPath)) {
         console.error(`✗ ${e.id} いきさき${i + 1}: ${r.errors.join(" / ")}（node tools/validate.mjs で確かめること）`);
         process.exit(1);
       }
-      return { name: v.name, lines: v.lines, stops: r.stops, continues: v.continues };
+      return { name: v.name, kana: v.kana, lines: v.lines, stops: r.stops, continues: v.continues };
     });
     expresses.push({ id: e.id, operatorId: e.operatorId, name: e.name, kana: e.kana,
       car: e.car, aliases: e.aliases, variants });

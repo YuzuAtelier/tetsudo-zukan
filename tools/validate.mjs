@@ -252,8 +252,11 @@ if (existsSync(expressesPath)) {
       const r = routeOf(v, lineMap, ed.links ?? []);
       r.errors.forEach((m) => err(`${vt} ${m}`));
       const st = v.stops ?? [];
-      if (st.length && (st[0].stop !== "all" || st[st.length - 1].stop !== "all"))
-        err(`${vt} 始発と終点は stop: all にする`);
+      // 始発・終点も「ときどき」でよい（品川始発のひたち、竜王まで行くかいじ など）。
+      // ただし「いつも とまる」駅が1つも無いのは書きまちがい
+      if (st.length && !st.some((s) => s.stop === "all")) err(`${vt} いつも とまる駅が1つも無い`);
+      if (v.name && v.kana !== undefined && !KANA.test(v.kana)) err(`${vt} いきさきのふりがなが不正: ${v.kana}`);
+      if (v.kana !== undefined && !v.name) err(`${vt} kana は name とセットで書く`);
       if (v.continues && (!v.continues.name || !KANA.test(v.continues.kana ?? "")))
         err(`${vt} continues には name と ひらがなの kana が要る`);
       // 同じ名前・同じ終点のいきさきが2つあると、アプリのボタンで区別できない

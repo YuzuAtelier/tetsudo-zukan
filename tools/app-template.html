@@ -447,17 +447,20 @@ function expBadge(e, small){
   d.style.setProperty("--c", expColor(e));
   return d;
 }
-// いきさきの呼び名。名前があればそれ（スーパーはこね）、無ければ「終点の駅名 ゆき」
+// いきさきの呼び名。名前があればそれ（スーパーはこね・大船 から）、無ければ「終点の駅名 ゆき」。
+// アプリに無い区間へ続くいきさきは、その先の駅名（修善寺 ゆき）
 function variantLabel(v){
-  if (v.name) return { kana: kataToHira(v.name), kanji: v.name };
+  if (v.name) return { kana: v.kana || kataToHira(v.name), kanji: v.name };
+  if (v.continues && !v.continues.some) return { kana: v.continues.kana + " ゆき", kanji: v.continues.name + " ゆき" };
   var last = STATIONS[v.stops[v.stops.length - 1].stationId];
   return { kana: last.kana + " ゆき", kanji: last.name + " ゆき" };
 }
 function expDests(e){
   var seen = {}, out = [];
   e.variants.forEach(function(v){
-    var n = v.continues ? v.continues.name : STATIONS[v.stops[v.stops.length - 1].stationId].name;
-    if (!seen[n]){ seen[n] = true; out.push(n); }
+    var last = STATIONS[v.stops[v.stops.length - 1].stationId].name;
+    var ns = !v.continues ? [last] : v.continues.some ? [last, v.continues.name] : [v.continues.name];
+    ns.forEach(function(n){ if (!seen[n]){ seen[n] = true; out.push(n); } });
   });
   return out.join("・") + " ゆき";
 }
@@ -1070,7 +1073,7 @@ function viewExpress(id, vi){
     var tr2 = el("div", "track"); tr2.appendChild(el("div", "contmark", "…"));
     ct.appendChild(tr2);
     var nm = el("div", "nm");
-    nm.appendChild(el("div", "kana", "このさきも はしるよ"));
+    nm.appendChild(el("div", "kana", v.continues.some ? "ときどき このさきも はしるよ" : "このさきも はしるよ"));
     nm.appendChild(el("div", "kanji", v.continues.name + " まで"));
     nm.appendChild(el("div", "sub", v.continues.kana + " まで"));
     ct.appendChild(nm);
