@@ -1,0 +1,1157 @@
+{
+  "note": "首都圏の特急（有料の特急・ライナー）と停車駅。variants は「いきさき」ごとの停車駅で、lines は走る順の路線id。stop: all=いつも とまる / some=ときどき とまる。途中の駅でおわる列車も、停車駅に含めたまま扱う（2026-10-05 の方針）。臨時停車・運転停車・臨時列車は入れない。continues は、アプリに無い区間へ続くときの行き先。",
+  "checkedOn": "2026-10-05",
+  "links": [
+    {
+      "stations": [
+        "shin-matsuda",
+        "matsuda"
+      ],
+      "note": "小田急小田原線の新松田付近と御殿場線の松田を結ぶ連絡線（特急ふじさんが通る）"
+    }
+  ],
+  "expresses": [
+    {
+      "id": "skyliner",
+      "operatorId": "keisei",
+      "name": "スカイライナー",
+      "kana": "すかいらいなー",
+      "car": "AE形",
+      "aliases": [
+        "skyliner"
+      ],
+      "source": [
+        "https://www.keisei.co.jp/cms/files/keisei/MASTER/0610/hiXQZmfy.pdf",
+        "https://ja.wikipedia.org/wiki/スカイライナー"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "keisei--main",
+            "keisei--sky-access"
+          ],
+          "stops": [
+            {
+              "stationId": "keisei-ueno",
+              "stop": "all"
+            },
+            {
+              "stationId": "nippori",
+              "stop": "all"
+            },
+            {
+              "stationId": "aoto",
+              "stop": "some"
+            },
+            {
+              "stationId": "shin-kamagaya",
+              "stop": "some"
+            },
+            {
+              "stationId": "kuko-daini-biru",
+              "stop": "all"
+            },
+            {
+              "stationId": "narita-kuko",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "evening-liner",
+      "operatorId": "keisei",
+      "name": "イブニングライナー",
+      "kana": "いぶにんぐらいなー",
+      "car": "AE形",
+      "source": [
+        "https://www.keisei.co.jp/keisei/tetudou/skyliner/jp/skyliner/liner_0226.php"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "keisei--main"
+          ],
+          "stops": [
+            {
+              "stationId": "keisei-ueno",
+              "stop": "all"
+            },
+            {
+              "stationId": "nippori",
+              "stop": "all"
+            },
+            {
+              "stationId": "aoto",
+              "stop": "all"
+            },
+            {
+              "stationId": "keisei-funabashi",
+              "stop": "all"
+            },
+            {
+              "stationId": "yachiyodai",
+              "stop": "all"
+            },
+            {
+              "stationId": "keisei-sakura",
+              "stop": "all"
+            },
+            {
+              "stationId": "keisei-narita",
+              "stop": "all"
+            },
+            {
+              "stationId": "kuko-daini-biru",
+              "stop": "all"
+            },
+            {
+              "stationId": "narita-kuko",
+              "stop": "all"
+            }
+          ]
+        },
+        {
+          "lines": [
+            "keisei--main"
+          ],
+          "stops": [
+            {
+              "stationId": "keisei-ueno",
+              "stop": "all"
+            },
+            {
+              "stationId": "nippori",
+              "stop": "all"
+            },
+            {
+              "stationId": "aoto",
+              "stop": "all"
+            },
+            {
+              "stationId": "keisei-funabashi",
+              "stop": "all"
+            },
+            {
+              "stationId": "yachiyodai",
+              "stop": "all"
+            },
+            {
+              "stationId": "keisei-sakura",
+              "stop": "all"
+            },
+            {
+              "stationId": "keisei-narita",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hakone",
+      "operatorId": "odakyu",
+      "name": "はこね",
+      "kana": "はこね",
+      "car": "ロマンスカー",
+      "aliases": [
+        "ロマンスカー",
+        "スーパーはこね"
+      ],
+      "source": [
+        "https://www.odakyu.jp/romancecar/timetable/",
+        "https://ja.wikipedia.org/wiki/はこね_(列車)"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "odakyu--odawara",
+            "hakone-tozan--tozan"
+          ],
+          "name": "はこね",
+          "stops": [
+            {
+              "stationId": "shinjuku",
+              "stop": "all"
+            },
+            {
+              "stationId": "shin-yurigaoka",
+              "stop": "some"
+            },
+            {
+              "stationId": "machida",
+              "stop": "some"
+            },
+            {
+              "stationId": "sagami-ono",
+              "stop": "some"
+            },
+            {
+              "stationId": "ebina",
+              "stop": "some"
+            },
+            {
+              "stationId": "hon-atsugi",
+              "stop": "some"
+            },
+            {
+              "stationId": "isehara",
+              "stop": "some"
+            },
+            {
+              "stationId": "hadano",
+              "stop": "some"
+            },
+            {
+              "stationId": "odawara",
+              "stop": "all"
+            },
+            {
+              "stationId": "hakone-yumoto",
+              "stop": "all"
+            }
+          ]
+        },
+        {
+          "lines": [
+            "odakyu--odawara",
+            "hakone-tozan--tozan"
+          ],
+          "name": "スーパーはこね",
+          "stops": [
+            {
+              "stationId": "shinjuku",
+              "stop": "all"
+            },
+            {
+              "stationId": "odawara",
+              "stop": "all"
+            },
+            {
+              "stationId": "hakone-yumoto",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sagami",
+      "operatorId": "odakyu",
+      "name": "さがみ",
+      "kana": "さがみ",
+      "car": "ロマンスカー",
+      "aliases": [
+        "ロマンスカー"
+      ],
+      "source": [
+        "https://www.odakyu.jp/romancecar/timetable/",
+        "https://ja.wikipedia.org/wiki/はこね_(列車)"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "odakyu--odawara"
+          ],
+          "stops": [
+            {
+              "stationId": "shinjuku",
+              "stop": "all"
+            },
+            {
+              "stationId": "shin-yurigaoka",
+              "stop": "some"
+            },
+            {
+              "stationId": "machida",
+              "stop": "some"
+            },
+            {
+              "stationId": "sagami-ono",
+              "stop": "some"
+            },
+            {
+              "stationId": "ebina",
+              "stop": "some"
+            },
+            {
+              "stationId": "hon-atsugi",
+              "stop": "some"
+            },
+            {
+              "stationId": "isehara",
+              "stop": "some"
+            },
+            {
+              "stationId": "hadano",
+              "stop": "some"
+            },
+            {
+              "stationId": "odawara",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enoshima",
+      "operatorId": "odakyu",
+      "name": "えのしま",
+      "kana": "えのしま",
+      "car": "ロマンスカー",
+      "aliases": [
+        "ロマンスカー"
+      ],
+      "source": [
+        "https://www.odakyu.jp/romancecar/timetable/",
+        "https://ja.wikipedia.org/wiki/えのしま_(列車)"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "odakyu--odawara",
+            "odakyu--enoshima"
+          ],
+          "stops": [
+            {
+              "stationId": "shinjuku",
+              "stop": "all"
+            },
+            {
+              "stationId": "shin-yurigaoka",
+              "stop": "all"
+            },
+            {
+              "stationId": "sagami-ono",
+              "stop": "all"
+            },
+            {
+              "stationId": "yamato-kanagawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "fujisawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "katase-enoshima",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fujisan",
+      "operatorId": "odakyu",
+      "name": "ふじさん",
+      "kana": "ふじさん",
+      "car": "ロマンスカー",
+      "aliases": [
+        "ロマンスカー"
+      ],
+      "source": [
+        "https://www.odakyu.jp/romancecar/timetable/",
+        "https://timetables.jreast.co.jp/2610/timetable-v/107d1.html",
+        "https://ja.wikipedia.org/wiki/ふじさん_(列車)"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "odakyu--odawara",
+            "jr-central--gotemba"
+          ],
+          "stops": [
+            {
+              "stationId": "shinjuku",
+              "stop": "all"
+            },
+            {
+              "stationId": "shin-yurigaoka",
+              "stop": "all"
+            },
+            {
+              "stationId": "sagami-ono",
+              "stop": "all"
+            },
+            {
+              "stationId": "hon-atsugi",
+              "stop": "all"
+            },
+            {
+              "stationId": "hadano",
+              "stop": "all"
+            },
+            {
+              "stationId": "matsuda",
+              "stop": "all"
+            },
+            {
+              "stationId": "suruga-oyama",
+              "stop": "some"
+            },
+            {
+              "stationId": "gotemba",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "metro-hakone",
+      "operatorId": "odakyu",
+      "name": "メトロはこね",
+      "kana": "めとろはこね",
+      "car": "ロマンスカー",
+      "aliases": [
+        "ロマンスカー"
+      ],
+      "source": [
+        "https://www.odakyu.jp/romancecar/timetable/",
+        "https://ja.wikipedia.org/wiki/はこね_(列車)"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "tokyo-metro--chiyoda",
+            "odakyu--odawara",
+            "hakone-tozan--tozan"
+          ],
+          "stops": [
+            {
+              "stationId": "kita-senju",
+              "stop": "all"
+            },
+            {
+              "stationId": "otemachi",
+              "stop": "all"
+            },
+            {
+              "stationId": "kasumigaseki",
+              "stop": "all"
+            },
+            {
+              "stationId": "omote-sando",
+              "stop": "all"
+            },
+            {
+              "stationId": "seijogakuen-mae",
+              "stop": "all"
+            },
+            {
+              "stationId": "machida",
+              "stop": "some"
+            },
+            {
+              "stationId": "sagami-ono",
+              "stop": "some"
+            },
+            {
+              "stationId": "hon-atsugi",
+              "stop": "some"
+            },
+            {
+              "stationId": "isehara",
+              "stop": "all"
+            },
+            {
+              "stationId": "odawara",
+              "stop": "all"
+            },
+            {
+              "stationId": "hakone-yumoto",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chichibu",
+      "operatorId": "seibu",
+      "name": "ちちぶ",
+      "kana": "ちちぶ",
+      "car": "Laview",
+      "aliases": [
+        "らびゅー",
+        "Laview"
+      ],
+      "source": [
+        "https://www.seiburailway.jp/railway/reservedtrain/laview/"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "seibu--ikebukuro",
+            "seibu--chichibu"
+          ],
+          "stops": [
+            {
+              "stationId": "ikebukuro",
+              "stop": "all"
+            },
+            {
+              "stationId": "tokorozawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "irumashi",
+              "stop": "all"
+            },
+            {
+              "stationId": "hanno",
+              "stop": "all"
+            },
+            {
+              "stationId": "yokoze",
+              "stop": "all"
+            },
+            {
+              "stationId": "seibu-chichibu",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "musashi",
+      "operatorId": "seibu",
+      "name": "むさし",
+      "kana": "むさし",
+      "car": "Laview",
+      "aliases": [
+        "らびゅー",
+        "Laview"
+      ],
+      "source": [
+        "https://www.seiburailway.jp/railway/reservedtrain/laview/"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "seibu--ikebukuro"
+          ],
+          "stops": [
+            {
+              "stationId": "ikebukuro",
+              "stop": "all"
+            },
+            {
+              "stationId": "tokorozawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "irumashi",
+              "stop": "all"
+            },
+            {
+              "stationId": "hanno",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "koedo",
+      "operatorId": "seibu",
+      "name": "小江戸",
+      "kana": "こえど",
+      "car": "ニューレッドアロー",
+      "aliases": [
+        "レッドアロー"
+      ],
+      "source": [
+        "https://www.seiburailway.jp/railway/reservedtrain/redarrow/"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "seibu--shinjuku"
+          ],
+          "stops": [
+            {
+              "stationId": "seibu-shinjuku",
+              "stop": "all"
+            },
+            {
+              "stationId": "takadanobaba",
+              "stop": "all"
+            },
+            {
+              "stationId": "higashi-murayama",
+              "stop": "all"
+            },
+            {
+              "stationId": "tokorozawa",
+              "stop": "all"
+            },
+            {
+              "stationId": "sayamashi",
+              "stop": "all"
+            },
+            {
+              "stationId": "hon-kawagoe",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spacia-x",
+      "operatorId": "tobu",
+      "name": "スペーシアX",
+      "kana": "すぺーしあえっくす",
+      "car": "N100系",
+      "aliases": [
+        "スペーシアエックス",
+        "spacia x"
+      ],
+      "source": [
+        "https://www.tobu.co.jp/railway/special_express/stop_station/"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "tobu--skytree",
+            "tobu--nikko"
+          ],
+          "stops": [
+            {
+              "stationId": "asakusa",
+              "stop": "all"
+            },
+            {
+              "stationId": "tokyo-sukaitsurii",
+              "stop": "all"
+            },
+            {
+              "stationId": "kita-senju",
+              "stop": "all"
+            },
+            {
+              "stationId": "kasukabe",
+              "stop": "all"
+            },
+            {
+              "stationId": "tochigi",
+              "stop": "all"
+            },
+            {
+              "stationId": "shin-kanuma",
+              "stop": "all"
+            },
+            {
+              "stationId": "shimo-imaichi",
+              "stop": "all"
+            },
+            {
+              "stationId": "tobu-nikko",
+              "stop": "all"
+            }
+          ]
+        },
+        {
+          "lines": [
+            "tobu--skytree",
+            "tobu--nikko",
+            "tobu--kinugawa"
+          ],
+          "stops": [
+            {
+              "stationId": "asakusa",
+              "stop": "all"
+            },
+            {
+              "stationId": "tokyo-sukaitsurii",
+              "stop": "all"
+            },
+            {
+              "stationId": "kita-senju",
+              "stop": "all"
+            },
+            {
+              "stationId": "kasukabe",
+              "stop": "all"
+            },
+            {
+              "stationId": "tochigi",
+              "stop": "all"
+            },
+            {
+              "stationId": "shin-kanuma",
+              "stop": "all"
+            },
+            {
+              "stationId": "shimo-imaichi",
+              "stop": "all"
+            },
+            {
+              "stationId": "tobu-world-square",
+              "stop": "all"
+            },
+            {
+              "stationId": "kinugawa-onsen",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kegon",
+      "operatorId": "tobu",
+      "name": "けごん",
+      "kana": "けごん",
+      "car": "スペーシア・リバティ",
+      "aliases": [
+        "リバティけごん",
+        "スペーシアけごん"
+      ],
+      "source": [
+        "https://www.tobu.co.jp/railway/special_express/stop_station/",
+        "https://ja.wikipedia.org/wiki/けごん"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "tobu--skytree",
+            "tobu--nikko"
+          ],
+          "stops": [
+            {
+              "stationId": "asakusa",
+              "stop": "all"
+            },
+            {
+              "stationId": "tokyo-sukaitsurii",
+              "stop": "all"
+            },
+            {
+              "stationId": "hikifune",
+              "stop": "some"
+            },
+            {
+              "stationId": "kita-senju",
+              "stop": "all"
+            },
+            {
+              "stationId": "kasukabe",
+              "stop": "all"
+            },
+            {
+              "stationId": "sugito-takanodai",
+              "stop": "some"
+            },
+            {
+              "stationId": "minami-kurihashi",
+              "stop": "some"
+            },
+            {
+              "stationId": "itakura-toyodai-mae",
+              "stop": "some"
+            },
+            {
+              "stationId": "tochigi",
+              "stop": "all"
+            },
+            {
+              "stationId": "shin-tochigi",
+              "stop": "some"
+            },
+            {
+              "stationId": "shin-kanuma",
+              "stop": "all"
+            },
+            {
+              "stationId": "shimo-imaichi",
+              "stop": "all"
+            },
+            {
+              "stationId": "tobu-nikko",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kinu",
+      "operatorId": "tobu",
+      "name": "きぬ",
+      "kana": "きぬ",
+      "car": "スペーシア・リバティ",
+      "aliases": [
+        "リバティきぬ",
+        "スペーシアきぬ"
+      ],
+      "source": [
+        "https://www.tobu.co.jp/railway/special_express/stop_station/",
+        "https://ja.wikipedia.org/wiki/けごん"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "tobu--skytree",
+            "tobu--nikko",
+            "tobu--kinugawa"
+          ],
+          "stops": [
+            {
+              "stationId": "asakusa",
+              "stop": "all"
+            },
+            {
+              "stationId": "tokyo-sukaitsurii",
+              "stop": "all"
+            },
+            {
+              "stationId": "hikifune",
+              "stop": "some"
+            },
+            {
+              "stationId": "kita-senju",
+              "stop": "all"
+            },
+            {
+              "stationId": "kasukabe",
+              "stop": "all"
+            },
+            {
+              "stationId": "sugito-takanodai",
+              "stop": "some"
+            },
+            {
+              "stationId": "minami-kurihashi",
+              "stop": "some"
+            },
+            {
+              "stationId": "tochigi",
+              "stop": "all"
+            },
+            {
+              "stationId": "shin-kanuma",
+              "stop": "all"
+            },
+            {
+              "stationId": "shimo-imaichi",
+              "stop": "all"
+            },
+            {
+              "stationId": "shin-takatoku",
+              "stop": "all"
+            },
+            {
+              "stationId": "tobu-world-square",
+              "stop": "all"
+            },
+            {
+              "stationId": "kinugawa-onsen",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "revaty-aizu",
+      "operatorId": "tobu",
+      "name": "リバティ会津",
+      "kana": "りばてぃあいづ",
+      "car": "リバティ",
+      "aliases": [
+        "リバティ"
+      ],
+      "source": [
+        "https://www.tobu.co.jp/railway/special_express/stop_station/",
+        "https://ja.wikipedia.org/wiki/けごん"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "tobu--skytree",
+            "tobu--nikko",
+            "tobu--kinugawa"
+          ],
+          "stops": [
+            {
+              "stationId": "asakusa",
+              "stop": "all"
+            },
+            {
+              "stationId": "tokyo-sukaitsurii",
+              "stop": "all"
+            },
+            {
+              "stationId": "kita-senju",
+              "stop": "all"
+            },
+            {
+              "stationId": "kasukabe",
+              "stop": "all"
+            },
+            {
+              "stationId": "itakura-toyodai-mae",
+              "stop": "some"
+            },
+            {
+              "stationId": "tochigi",
+              "stop": "all"
+            },
+            {
+              "stationId": "shin-kanuma",
+              "stop": "all"
+            },
+            {
+              "stationId": "shimo-imaichi",
+              "stop": "all"
+            },
+            {
+              "stationId": "shin-takatoku",
+              "stop": "all"
+            },
+            {
+              "stationId": "tobu-world-square",
+              "stop": "all"
+            },
+            {
+              "stationId": "kinugawa-onsen",
+              "stop": "all"
+            },
+            {
+              "stationId": "kinugawa-koen",
+              "stop": "all"
+            },
+            {
+              "stationId": "shin-fujiwara",
+              "stop": "all"
+            }
+          ],
+          "continues": {
+            "name": "会津田島",
+            "kana": "あいづたじま"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ryomo",
+      "operatorId": "tobu",
+      "name": "りょうもう",
+      "kana": "りょうもう",
+      "car": "200型・リバティ",
+      "aliases": [
+        "リバティりょうもう"
+      ],
+      "source": [
+        "https://www.tobu.co.jp/railway/special_express/stop_station/",
+        "https://ja.wikipedia.org/wiki/りょうもう"
+      ],
+      "variants": [
+        {
+          "lines": [
+            "tobu--skytree",
+            "tobu--isesaki",
+            "tobu--kiryu"
+          ],
+          "stops": [
+            {
+              "stationId": "asakusa",
+              "stop": "all"
+            },
+            {
+              "stationId": "tokyo-sukaitsurii",
+              "stop": "all"
+            },
+            {
+              "stationId": "hikifune",
+              "stop": "some"
+            },
+            {
+              "stationId": "kita-senju",
+              "stop": "all"
+            },
+            {
+              "stationId": "tobu-dobutsu-koen",
+              "stop": "all"
+            },
+            {
+              "stationId": "kuki",
+              "stop": "all"
+            },
+            {
+              "stationId": "kazo",
+              "stop": "some"
+            },
+            {
+              "stationId": "hanyu",
+              "stop": "some"
+            },
+            {
+              "stationId": "tatebayashi",
+              "stop": "all"
+            },
+            {
+              "stationId": "ashikagashi",
+              "stop": "all"
+            },
+            {
+              "stationId": "ota-tobu",
+              "stop": "all"
+            },
+            {
+              "stationId": "yabuzuka",
+              "stop": "all"
+            },
+            {
+              "stationId": "shin-kiryu",
+              "stop": "all"
+            },
+            {
+              "stationId": "aioi",
+              "stop": "all"
+            },
+            {
+              "stationId": "akagi",
+              "stop": "all"
+            }
+          ]
+        },
+        {
+          "lines": [
+            "tobu--skytree",
+            "tobu--isesaki"
+          ],
+          "stops": [
+            {
+              "stationId": "asakusa",
+              "stop": "all"
+            },
+            {
+              "stationId": "tokyo-sukaitsurii",
+              "stop": "all"
+            },
+            {
+              "stationId": "hikifune",
+              "stop": "some"
+            },
+            {
+              "stationId": "kita-senju",
+              "stop": "all"
+            },
+            {
+              "stationId": "tobu-dobutsu-koen",
+              "stop": "all"
+            },
+            {
+              "stationId": "kuki",
+              "stop": "all"
+            },
+            {
+              "stationId": "kazo",
+              "stop": "some"
+            },
+            {
+              "stationId": "hanyu",
+              "stop": "some"
+            },
+            {
+              "stationId": "tatebayashi",
+              "stop": "all"
+            },
+            {
+              "stationId": "ashikagashi",
+              "stop": "all"
+            },
+            {
+              "stationId": "ota-tobu",
+              "stop": "all"
+            },
+            {
+              "stationId": "kizaki",
+              "stop": "all"
+            },
+            {
+              "stationId": "sakaimachi",
+              "stop": "all"
+            },
+            {
+              "stationId": "shin-isesaki",
+              "stop": "all"
+            },
+            {
+              "stationId": "isesaki",
+              "stop": "all"
+            }
+          ]
+        },
+        {
+          "lines": [
+            "tobu--skytree",
+            "tobu--isesaki",
+            "tobu--sano"
+          ],
+          "stops": [
+            {
+              "stationId": "asakusa",
+              "stop": "all"
+            },
+            {
+              "stationId": "tokyo-sukaitsurii",
+              "stop": "all"
+            },
+            {
+              "stationId": "hikifune",
+              "stop": "some"
+            },
+            {
+              "stationId": "kita-senju",
+              "stop": "all"
+            },
+            {
+              "stationId": "tobu-dobutsu-koen",
+              "stop": "all"
+            },
+            {
+              "stationId": "kuki",
+              "stop": "all"
+            },
+            {
+              "stationId": "kazo",
+              "stop": "some"
+            },
+            {
+              "stationId": "hanyu",
+              "stop": "some"
+            },
+            {
+              "stationId": "tatebayashi",
+              "stop": "all"
+            },
+            {
+              "stationId": "sanoshi",
+              "stop": "all"
+            },
+            {
+              "stationId": "sano",
+              "stop": "all"
+            },
+            {
+              "stationId": "tanuma",
+              "stop": "all"
+            },
+            {
+              "stationId": "kuzu",
+              "stop": "all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

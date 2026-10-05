@@ -8,7 +8,7 @@
  *   （stale-while-revalidate）
  *   ビルドするたび CACHE 名が変わるので、データを直せば必ず新しいものに入れ替わる。
  */
-var CACHE = "tetsudo-zukan-9976938240ad";
+var CACHE = "tetsudo-zukan-0a75b3fbab8d";
 var ASSETS = [
   "./",
   "./index.html",

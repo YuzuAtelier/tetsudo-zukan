@@ -13,6 +13,7 @@ import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from 
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
+import { routeOf } from "./express-route.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const dataDir = join(root, "data");
@@ -284,12 +285,34 @@ const trains = existsSync(trainsPath)
       lines: t.lines, stops: t.stops }))
   : [];
 
+// 有料の特急（data/expresses.json）。停車駅ごとに、どの路線を走っているか（lineId）を付けて渡す。
+// アプリはそれで停車駅の丸を路線の色にぬる。根拠URLや注記はアプリでは使わないので載せない
+const expressesPath = join(dataDir, "expresses.json");
+const expresses = [];
+if (existsSync(expressesPath)) {
+  const ed = readJson(expressesPath);
+  const lineMap = new Map(lines.map((L) => [L.id, L.stations.map((s) => s.stationId)]));
+  for (const e of ed.expresses) {
+    const variants = e.variants.map((v, i) => {
+      const r = routeOf(v, lineMap, ed.links ?? []);
+      if (r.errors.length) {
+        console.error(`✗ ${e.id} いきさき${i + 1}: ${r.errors.join(" / ")}（node tools/validate.mjs で確かめること）`);
+        process.exit(1);
+      }
+      return { name: v.name, lines: v.lines, stops: r.stops, continues: v.continues };
+    });
+    expresses.push({ id: e.id, operatorId: e.operatorId, name: e.name, kana: e.kana,
+      car: e.car, aliases: e.aliases, variants });
+  }
+}
+
 const payload = {
   operators,
   stations,
   categories: CATEGORIES,
   walks,
   trains,
+  expresses,
   lines: lines.map((L) => ({
     id: L.id, operatorId: L.operatorId, name: L.name, formalName: L.formalName,
     kana: L.kana, symbol: L.symbol, color: L.color, colorName: L.colorName,
@@ -329,6 +352,7 @@ console.log(`路線数        : ${lines.length}（未検証 ${unverified}）`);
 console.log(`駅数          : ${stations.length}`);
 console.log(`歩く乗換      : ${walks.length}組`);
 console.log(`新幹線の列車  : ${trains.length}本`);
+console.log(`特急          : ${expresses.length}本`);
 console.log("─".repeat(52));
 CATEGORIES.forEach((c) => {
   const ls = lines.filter((L) => categoryOf(L) === c.id);

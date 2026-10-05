@@ -16,6 +16,7 @@
 - ③ 駅を選ぶと、その駅につながる全路線がわかる
 - ④ 歩いて乗り換えられる駅（上野⇔京成上野 など）もつながる
 - ⑤ 新幹線は列車ごと（のぞみ・はやぶさ など）の停車駅も見られる
+- ⑦ 私鉄の特急（スカイライナー・ロマンスカー・Laview・スペーシアX など15列車）の停車駅を、いきさきごとに見られる
 - ⑥ よく見る路線・駅を「すき」に登録して、ホームからすぐ開ける
 
 駅名はすべて **漢字＋ひらがな** で表示する。子どもが漢字を読めなくても使えるようにするため。
@@ -70,6 +71,7 @@ node tools/validate.mjs
 │   ├── stations.json         駅マスタ（2,273駅）
 │   ├── transfers.json        駅名は違うが歩いて乗り換えられる駅の組（120組）
 │   ├── trains.json           新幹線の列車と停車駅（のぞみ・はやぶさ など19本）
+│   ├── expresses.json        私鉄の特急といきさきごとの停車駅（15列車）
 │   └── lines/                路線181本（1路線1ファイル）
 ├── refs/                     参照資料（Git管理外・配布しない）
 │   ├── README.md             各資料の使い分け
@@ -88,6 +90,7 @@ node tools/validate.mjs
     ├── audit.mjs             データの粗探し（壊れてはいないが怪しい箇所）
     ├── check-order.mjs       並び順を路線図の座標と突き合わせる検査
     ├── extract-map-refs.py   路線図PDF → refs/map-station-names.txt と map-station-coords.json
+    ├── express-route.mjs     特急の道すじを組み立てる（validate と build で共用）
     ├── app-template.html     アプリのUIソース（ここを直す）
     ├── sw-template.js        Service Workerのソース（app/sw.js は生成物）
     ├── make-icons.py         アイコンを図形から描く

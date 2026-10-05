@@ -7,6 +7,7 @@
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { routeOf } from "./express-route.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const dataDir = join(root, "data");
@@ -213,6 +214,57 @@ if (existsSync(trainsPath)) {
   trains = td.trains ?? [];
 }
 
+// --- limited expresses (data/expresses.json) --------------------------------
+// 有料の特急（スカイライナー・ロマンスカー など）。いきさき（variants）ごとに停車駅を持つ
+const expressesPath = join(dataDir, "expresses.json");
+let expresses = [];
+if (existsSync(expressesPath)) {
+  const ed = readJson(expressesPath);
+  const lineMap = new Map();
+  for (const f of lineFiles) {
+    const line = readJson(join(linesDir, f));
+    if (line) lineMap.set(line.id, line.stations.map((s) => s.stationId));
+  }
+  if (!ed.checkedOn) err("[expresses.json] checkedOn（調べた日）が無い");
+  (ed.links ?? []).forEach((k, i) => {
+    (k.stations ?? []).forEach((s) => { if (!stationIds.has(s)) err(`[expresses.json links[${i}]] 無い駅id: ${s}`); });
+    if ((k.stations ?? []).length !== 2) err(`[expresses.json links[${i}]] stations は2駅`);
+  });
+  const seenId = new Set();
+  (ed.expresses ?? []).forEach((e) => {
+    const tag = `[expresses.json ${e.id ?? "?"}]`;
+    if (!e.id || !/^[a-z0-9-]+$/.test(e.id)) err(`${tag} 列車idに使えない文字`);
+    if (seenId.has(e.id)) err(`${tag} 列車idが重複`);
+    seenId.add(e.id);
+    if (!operatorIds.has(e.operatorId)) err(`${tag} 無い事業者id: ${e.operatorId}`);
+    if (!e.name) err(`${tag} 列車名が空`);
+    if (!e.kana || !KANA.test(e.kana)) err(`${tag} 列車のふりがなが不正: ${e.kana}`);
+    if (!Array.isArray(e.source) || !e.source.length) err(`${tag} source（根拠）が無い`);
+    (e.source ?? []).forEach((u) => { if (!/^https?:\/\//.test(u)) err(`${tag} source がURLでない: ${u}`); });
+    if (!Array.isArray(e.variants) || !e.variants.length) { err(`${tag} いきさき（variants）が空`); return; }
+    const seenV = new Set();
+    e.variants.forEach((v, vi) => {
+      const vt = `${tag} いきさき${vi + 1}`;
+      (v.stops ?? []).forEach((s) => {
+        if (!stationIds.has(s.stationId)) err(`${vt} 無い駅id: ${s.stationId}`);
+        if (!["all", "some"].includes(s.stop)) err(`${vt} stop は all か some: ${s.stop}`);
+      });
+      const r = routeOf(v, lineMap, ed.links ?? []);
+      r.errors.forEach((m) => err(`${vt} ${m}`));
+      const st = v.stops ?? [];
+      if (st.length && (st[0].stop !== "all" || st[st.length - 1].stop !== "all"))
+        err(`${vt} 始発と終点は stop: all にする`);
+      if (v.continues && (!v.continues.name || !KANA.test(v.continues.kana ?? "")))
+        err(`${vt} continues には name と ひらがなの kana が要る`);
+      // 同じ名前・同じ終点のいきさきが2つあると、アプリのボタンで区別できない
+      const key = (v.name ?? "") + ">" + (st.length ? st[st.length - 1].stationId : "");
+      if (seenV.has(key)) err(`${vt} いきさきの名前と終点が、ほかのいきさきと同じ`);
+      seenV.add(key);
+    });
+  });
+  expresses = ed.expresses ?? [];
+}
+
 // --- report ----------------------------------------------------------------
 const transfers = [...stationToLines.entries()].filter(([, l]) => l.length > 1);
 
@@ -222,6 +274,7 @@ console.log(`駅数          : ${stationIds.size}`);
 console.log(`乗換駅        : ${transfers.length}`);
 console.log(`歩く乗換      : ${walkTransfers.length}組`);
 console.log(`新幹線の列車  : ${trains.length}本`);
+console.log(`特急          : ${expresses.length}本（いきさき ${expresses.reduce((n, e) => n + (e.variants ?? []).length, 0)}）`);
 console.log("─".repeat(52));
 if (warnings.length) {
   console.log(`\n⚠ 警告 ${warnings.length}件`);

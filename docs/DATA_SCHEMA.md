@@ -167,6 +167,47 @@ UIでの表示は `subName` があれば `明治神宮前〈原宿〉` と組み
 
 **同じ列車名でも1本ごとに停車駅が違う**ので、目安として扱う。
 
+## data/expresses.json
+
+有料の特急（スカイライナー・ロマンスカー・スペーシアX など）と停車駅。
+新幹線（trains.json）とちがい、同じ列車名でも**いきさき（variants）ごと**に停車駅を持つ。
+
+```json
+{
+  "checkedOn": "2026-10-05",
+  "links": [{ "stations": ["shin-matsuda", "matsuda"], "note": "小田急と御殿場線の連絡線" }],
+  "expresses": [{
+    "id": "spacia-x",
+    "operatorId": "tobu",
+    "name": "スペーシアX",
+    "kana": "すぺーしあえっくす",
+    "car": "N100系",
+    "aliases": ["スペーシアエックス"],
+    "source": ["https://www.tobu.co.jp/railway/special_express/stop_station/"],
+    "variants": [
+      { "lines": ["tobu--skytree", "tobu--nikko"],
+        "stops": [{ "stationId": "asakusa", "stop": "all" }, { "stationId": "tobu-nikko", "stop": "all" }] }
+    ]
+  }]
+}
+```
+
+| 項目 | 内容 |
+|---|---|
+| `car` | 車両の愛称・形式（Laview、N100系 など）。画面に出し、検索でも引ける |
+| `aliases` | 検索だけに使う別名（「らびゅー」「リバティけごん」など） |
+| `source` | 停車駅の根拠URL。会社の公式（時刻表・停車駅案内）を先に書く |
+| `variants[].lines` | 走る順に並べた路線id。路線のつなぎ目は両方の路線にある駅で決まる |
+| `variants[].stops` | 走る順の停車駅。`all` いつも とまる / `some` ときどき とまる。始発と終点は `all` |
+| `variants[].name` | いきさきのボタン名を変えたいときだけ（「スーパーはこね」）。無ければ「終点の駅名 ゆき」 |
+| `variants[].continues` | アプリに無い区間へ続くときの行き先（`name` と `kana`）。リバティ会津の会津田島など |
+| `links` | 駅名がちがう駅どうしを結ぶ線路（新松田〜松田）。同じ駅を持たない路線をつなぐのに使う |
+
+- 向きは東京から出ていく方向にそろえる（片方向しか走らない列車は、今は入れていない）。
+- 途中の駅でおわる列車（さがみの本厚木ゆき など）は、別のいきさきにせず停車駅に含めたまま扱う。
+- 臨時停車・運転停車（代々木上原など）・臨時列車は入れない。
+- 道すじの組み立ては `tools/express-route.mjs`。validate.mjs が、停車駅が走る順に並んでいるかを検査する。
+
 ## 後から足すもの（フェーズ2以降）
 
 - `stations[].transferNote` … 「同一駅だが改札外乗換」などの注記
