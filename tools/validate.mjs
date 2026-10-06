@@ -292,8 +292,20 @@ if (existsSync(throughPath)) {
       if (!["all", "some", "none"].includes(s.go)) err(`${tag} go は all・some・none: ${s.go}`);
       (s.to ?? []).forEach((t) => { if (!stationIds.has(t)) err(`${tag} to に無い駅id: ${t}`); });
       if (s.go === "none" && (s.to ?? []).length) err(`${tag} go: none なのに to がある`);
+      // reach は直通の電車が走っていく路線。最初は相手の路線、to の駅はこのどれかにある
+      const reach = s.reach ?? [];
+      reach.forEach((r) => { if (!lineInfo.has(r)) err(`${tag} reach に無い路線id: ${r}`); });
+      if (s.go !== "none" && !reach.length) err(`${tag} ${s.line} 側に reach が無い`);
+      (s.to ?? []).forEach((t) => {
+        if (reach.length && !reach.some((r) => (lineInfo.get(r)?.stations ?? []).includes(t)))
+          err(`${tag} to の駅 ${t} が reach のどの路線にも無い`);
+      });
     });
     if (sides.every((s) => s.go === "none")) err(`${tag} どちらの向きにも直通が無い`);
+    sides.forEach((s, j) => {
+      const o = sides[1 - j];
+      if ((s.reach ?? []).length && s.reach[0] !== o.line) err(`${tag} ${s.line} 側の reach の最初が相手の路線（${o.line}）でない`);
+    });
     const [a, b] = sides.map((s) => lineInfo.get(s.line));
     if (a && b && a.operatorId === b.operatorId) warn(`${tag} 同じ会社どうし（会社をまたぐ直通だけを入れる方針）`);
     // とおり道の路線は、両側の境目の駅をつなげるものでなければならない

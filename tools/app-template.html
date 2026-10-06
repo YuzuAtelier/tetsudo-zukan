@@ -239,6 +239,19 @@
   .nbr.thrnbr{background:#fff;border:2px solid var(--c2)}
   .nbr.thrnbr .v{white-space:normal;font-size:13px;line-height:1.35}
   .stop.thru .chev{margin-left:auto}
+  .chip.far{font-size:13.5px;padding:6px 11px;min-height:38px}
+  .thrfargrp{display:inline-flex;flex-wrap:wrap;align-items:center;gap:4px}
+  .thrdot{color:var(--muted);font-weight:800}
+  .thrchain + .thrchain{margin-top:10px;padding-top:10px;border-top:1px dashed #d5dbe8}
+  .stop.viastop{min-height:52px}
+  .stop.viastop .nm .kanji{font-size:16px}
+  .stop.viastop .nm .sub{color:var(--muted)}
+  .viachips{display:flex;flex-wrap:wrap;align-items:center;gap:5px;margin-top:6px}
+  .viachips .lbl{font-size:11px;color:var(--muted);font-weight:700}
+  .viachip{appearance:none;font:inherit;font-size:12.5px;font-weight:800;padding:4px 9px;min-height:32px;
+           border-radius:999px;border:2px solid var(--c2);background:#fff;color:var(--ink);cursor:pointer}
+  .viachip:active{background:#e2e8f8}
+  .stop.thru{cursor:pointer}
   .thrgroup{margin-top:11px;border:2px solid #c9d1e3;border-radius:calc(var(--radius) + 6px);padding:0 6px 6px;background:#eef2fa}
   .thrgroup > .lncard{margin-top:6px}
   .thrconn{text-align:center;font-size:12.5px;font-weight:800;color:var(--ink);padding:7px 4px 1px}
@@ -386,6 +399,7 @@ EXPRESSES.forEach(function(e){
 //   go: この路線の電車が相手へ入るか（all いつも / some ときどき / none 入らない）
 //   to: 直通の電車がよく行く先 / via: 間でとおる短い路線
 //   next: 境目の駅で、線路がすぐにつながる路線（相手の路線か、間の短い路線）
+//   reach: 直通の電車が走っていく路線（相手の路線から順に） / gapAt: とおり道のうちアプリに無い区間がおわる駅
 var THR_OF_LINE = {};
 function addThr(lineId, x){
   var a = THR_OF_LINE[lineId] || (THR_OF_LINE[lineId] = []);
@@ -395,6 +409,7 @@ function addThr(lineId, x){
     if (y.other === x.other && y.at === x.at){
       if (x.go === "all" || (x.go === "some" && y.go === "none")) y.go = x.go;
       x.to.forEach(function(t){ if (y.to.indexOf(t) < 0) y.to.push(t); });
+      x.reach.forEach(function(r){ if (y.reach.indexOf(r) < 0) y.reach.push(r); });
       return;
     }
   }
@@ -416,18 +431,34 @@ function meetOn(v, n, s){
 }
 (DATA.throughs || []).forEach(function(k){
   var a = k.sides[0], b = k.sides[1], via = k.via || [];
-  addThr(a.line, { at:a.station, other:b.line, otherAt:b.station, go:a.go, to:(a.to || []).slice(), via:via, next:via[0] || b.line });
-  addThr(b.line, { at:b.station, other:a.line, otherAt:a.station, go:b.go, to:(b.to || []).slice(), via:via.slice().reverse(),
-                   next:via[via.length - 1] || a.line });
+  var ra = (a.reach || []).slice(), rb = (b.reach || []).slice();
+  addThr(a.line, { at:a.station, other:b.line, otherAt:b.station, go:a.go, to:(a.to || []).slice(), reach:ra,
+                   via:via, next:via[0] || b.line, gapAt:k.gapAt });
+  addThr(b.line, { at:b.station, other:a.line, otherAt:a.station, go:b.go, to:(b.to || []).slice(), reach:rb,
+                   via:via.slice().reverse(), next:via[via.length - 1] || a.line });
   // とおり道の路線（西武有楽町線など）からは、両側の路線が直通の相手になる。
   // a 側へ向かうのは b 側から来た電車なので、go と to は b のものを使う
   via.forEach(function(v, i){
     var towardA = i === 0 ? (k.gapAt && !lineHas(v, a.station) ? k.gapAt : meetOn(v, a.line, a.station)) : meetOn(v, via[i - 1], a.station);
     var towardB = i === via.length - 1 ? meetOn(v, b.line, b.station) : meetOn(v, via[i + 1], b.station);
-    if (towardA) addThr(v, { at:towardA, other:a.line, otherAt:a.station, go:b.go, to:(b.to || []).slice(),
+    if (towardA) addThr(v, { at:towardA, other:a.line, otherAt:a.station, go:b.go, to:(b.to || []).slice(), reach:rb.slice(),
                              via:via.slice(0, i).reverse(), next:i === 0 ? a.line : via[i - 1] });
-    if (towardB) addThr(v, { at:towardB, other:b.line, otherAt:b.station, go:a.go, to:(a.to || []).slice(),
+    if (towardB) addThr(v, { at:towardB, other:b.line, otherAt:b.station, go:a.go, to:(a.to || []).slice(), reach:ra.slice(),
                              via:via.slice(i + 1), next:i === via.length - 1 ? b.line : via[i + 1] });
+  });
+});
+
+// 直通の電車が入ってくるのに、直通の相手としてはつながっていない路線（東武伊勢崎線・京急空港線 など）。
+// 路線id -> その路線まで電車が来る、出発側の路線idの並び
+var THR_INCOMING = {};
+(DATA.throughs || []).forEach(function(k){
+  var chain = [k.sides[0].line, k.sides[1].line].concat(k.via || []);
+  k.sides.forEach(function(s){
+    (s.reach || []).forEach(function(r){
+      if (chain.indexOf(r) >= 0) return;
+      var a = THR_INCOMING[r] || (THR_INCOMING[r] = []);
+      if (a.indexOf(s.line) < 0) a.push(s.line);
+    });
   });
 });
 
@@ -852,9 +883,32 @@ function viewHome(catId){
 function thrLabel(x){
   return x.go === "all" ? "ちょくつう（いつも）" : x.go === "some" ? "ちょくつう（ときどき）" : "ちょくつう（はいってくる）";
 }
+// 直通の相手のさらに先へ、直通の電車が走っていく路線（田園都市線→半蔵門線→東武スカイツリーライン の、東武）。
+// x.reach（データの「走っていく路線」）にある路線だけをたどる
+function thrFar(L, x){
+  var out = [], seen = {};
+  seen[L.id] = true; seen[x.other] = true;
+  (function walk(Y, enteredAt, go, depth){
+    if (depth > 4) return;
+    (THR_OF_LINE[Y] || []).forEach(function(z){
+      if (z.at === enteredAt || seen[z.other] || x.reach.indexOf(z.other) < 0) return;
+      seen[z.other] = true;
+      var g = (go === "all" && z.go === "all") ? "all" : "some";
+      z.via.forEach(function(v){
+        if (seen[v] || x.reach.indexOf(v) < 0) return;
+        seen[v] = true;
+        out.push({ line:v, go:"some", at:z.at, depth:depth });
+      });
+      out.push({ line:z.other, go:g, at:z.otherAt, depth:depth });
+      walk(z.other, z.otherAt, g, depth + 1);
+    });
+  })(x.other, x.otherAt, x.go, 1);
+  return out;
+}
 // 路線の画面の見出しの下に出す「ちょくつうで つながる ろせん」。
-// 起点の駅でつながる路線を左、それ以外を右に、駅の順で並べる
-function thrChainSection(L, list){
+// 起点の駅でつながる路線を左、それ以外を右に置き、その先の路線も続けて並べる。
+// 相手が片側に2つ以上あるときは、相手ごとに1行にする（どれとどれがつながるか分かるように）
+function thrChainSection(L, list, shown){
   var idxOf = function(sid){
     for (var i = 0; i < L.stations.length; i++) if (L.stations[i].stationId === sid) return i;
     return 0;
@@ -862,35 +916,120 @@ function thrChainSection(L, list){
   var sorted = list.slice().sort(function(p, q){ return idxOf(p.at) - idxOf(q.at); });
   var left = sorted.filter(function(x){ return idxOf(x.at) === 0; });
   var right = sorted.filter(function(x){ return idxOf(x.at) !== 0; });
-  var seen = {};
-  function chip(x){
-    var O = lineById(x.other);
-    if (!O || seen[O.id]) return null;
-    seen[O.id] = true;
-    var b = el("button", "chip" + (x.go === "all" ? "" : " some"), O.name); b.type = "button";
+  function chip(id, goKind, focusAt, far){
+    var O = lineById(id);
+    shown[id] = true;
+    var b = el("button", "chip" + (goKind === "all" ? "" : " some") + (far ? " far" : ""), O.name); b.type = "button";
     b.style.setProperty("--c", O.color);
-    b.onclick = function(){ go({v:"line", id:O.id, focus:x.otherAt}); };
+    b.onclick = function(){ go({v:"line", id:O.id, focus:focusAt}); };
     return b;
   }
+  function arrow(){ return el("span", "thrarrow", "⇄"); }
+  // 相手 x とその先を、自分から見た順の部品の並びにする（[相手, ⇄, その先, …]）
+  function partsOf(x){
+    var parts = [chip(x.other, x.go, x.otherAt, false)];
+    var far = thrFar(L, x), d = 1;
+    while (far.some(function(f){ return f.depth === d; })){
+      parts.push(arrow());
+      var grp = el("span", "thrfargrp");
+      far.filter(function(f){ return f.depth === d; }).forEach(function(f, n){
+        if (n) grp.appendChild(el("span", "thrdot", "・"));
+        grp.appendChild(chip(f.line, f.go, f.at, true));
+      });
+      parts.push(grp);
+      d++;
+    }
+    return parts;
+  }
+  function me(){ var m = el("span", "chip me", L.name); m.style.setProperty("--c", L.color); return m; }
   var sec = el("section", "opsec");
   sec.appendChild(el("h2", "sec", "ちょくつうで つながる ろせん"));
   var c = el("div", "card chipcard");
-  var row = el("div", "chips thrchain");
-  left.forEach(function(x){ var b = chip(x); if (b){ row.appendChild(b); row.appendChild(el("span", "thrarrow", "⇄")); } });
-  var me = el("span", "chip me", L.name); me.style.setProperty("--c", L.color);
-  row.appendChild(me);
-  seen[L.id] = true;
-  right.forEach(function(x){ var b = chip(x); if (b){ row.appendChild(el("span", "thrarrow", "⇄")); row.appendChild(b); } });
-  c.appendChild(row);
+  var rows = [];
+  if (left.length <= 1 && right.length <= 1){
+    rows.push({ left:left[0], right:right[0] });
+  } else {
+    left.forEach(function(x){ rows.push({ left:x }); });
+    right.forEach(function(x){ rows.push({ right:x }); });
+  }
+  rows.forEach(function(rw){
+    var row = el("div", "chips thrchain");
+    if (rw.left){ partsOf(rw.left).reverse().forEach(function(p){ row.appendChild(p); }); row.appendChild(arrow()); }
+    row.appendChild(me());
+    if (rw.right){ row.appendChild(arrow()); partsOf(rw.right).forEach(function(p){ row.appendChild(p); }); }
+    c.appendChild(row);
+  });
   c.appendChild(el("div", "chiplegend", "のりかえなしで そのまま いける ろせん。てんせんは いちぶの でんしゃだけ"));
   sec.appendChild(c);
   return sec;
 }
+// 直通の電車が入ってくるだけの路線（東武伊勢崎線 など）に出す案内
+function thrIncomingSection(L, shown){
+  var inc = (THR_INCOMING[L.id] || []).filter(function(id){ return !shown[id] && id !== L.id && lineById(id); });
+  if (!inc.length) return null;
+  var sec = el("section", "opsec");
+  sec.appendChild(el("h2", "sec", "ちょくつうの でんしゃが くる ろせん"));
+  var c = el("div", "card chipcard");
+  var row = el("div", "chips");
+  inc.forEach(function(id){
+    var O = lineById(id);
+    var b = el("button", "chip some", O.name); b.type = "button";
+    b.style.setProperty("--c", O.color);
+    b.onclick = function(){ go({v:"line", id:O.id}); };
+    row.appendChild(b);
+  });
+  c.appendChild(row);
+  c.appendChild(el("div", "chiplegend", "この ろせんまで、のりかえなしで はいってくる でんしゃが ある ろせん（いちぶの でんしゃ）"));
+  sec.appendChild(c);
+  return sec;
+}
+// 直通の電車が「とおり道」の短い路線でとおる駅（東武スカイツリーラインの曳舟から押上 など）。
+// 境目の駅から外へ向かう順。自分の路線にもある駅は出さない
+function viaStops(L, x){
+  var out = [], cur = x.at;
+  x.via.forEach(function(v, i){
+    var V = lineById(v);
+    if (!V) return;
+    var ids = V.stations.map(function(e){ return e.stationId; });
+    var end = i === x.via.length - 1 ? x.otherAt : meetOn(v, x.via[i + 1], x.otherAt);
+    var s = ids.indexOf(cur);
+    if (s < 0 && x.gapAt){ s = ids.indexOf(x.gapAt); if (s >= 0) out.push({ line:V, e:V.stations[s] }); }
+    var t = ids.indexOf(end);
+    if (s < 0 || t < 0) return;
+    var step = t >= s ? 1 : -1;
+    for (var k = s + step; k !== t + step; k += step) out.push({ line:V, e:V.stations[k] });
+    cur = end;
+  });
+  var mine = {};
+  L.stations.forEach(function(e){ mine[e.stationId] = true; });
+  var seen = {};
+  return out.filter(function(o){
+    var sid = o.e.stationId;
+    if (mine[sid] || seen[sid]) return false;
+    seen[sid] = true;
+    return true;
+  });
+}
+function viaStopRow(L, o, atEnd){
+  var st = STATIONS[o.e.stationId];
+  var b = el("button", "stop viastop" + (atEnd ? " end" : " mid")); b.type = "button";
+  b.style.setProperty("--c", atEnd ? o.line.color : L.color);
+  var tr = el("div", "track");
+  tr.appendChild(badge(o.line, o.e.numbering, true));
+  b.appendChild(tr);
+  var nmb = nameBlock(st, true);
+  nmb.appendChild(el("div", "sub", "とおる えき（" + o.line.name + "）"));
+  b.appendChild(nmb);
+  b.onclick = function(){ go({v:"station", id:st.id}); };
+  return b;
+}
 // 路線の画面で、境目の駅のとなりに入れる行。「このまま ○○線へ（○○ まで）」
 // 線の端の駅なら線を相手の色にし、途中の駅なら自分の線はそのまま続けて印だけ出す
-function thrRow(L, x, atEnd){
+function thrRow(L, x, atEnd, stops){
   var O = lineById(x.other);
-  var r = el("button", "stop thru" + (x.go === "all" ? "" : " some") + (atEnd ? " end" : " mid")); r.type = "button";
+  var r = el("div", "stop thru" + (x.go === "all" ? "" : " some") + (atEnd ? " end" : " mid"));
+  r.setAttribute("role", "button");
+  r.tabIndex = 0;
   r.style.setProperty("--c", atEnd ? O.color : L.color);
   r.style.setProperty("--c2", O.color);
   var tr = el("div", "track"); tr.appendChild(el("div", "thrmark", "⇄"));
@@ -901,15 +1040,35 @@ function thrRow(L, x, atEnd){
     ? O.name + " から でんしゃが はいってくる"
     : "このまま " + O.name + " へ"));
   var to = x.to.map(function(t){ return STATIONS[t]; }).filter(Boolean);
-  var sub = [];
-  if (to.length) sub.push(to.map(function(s){ return s.name; }).join("・") + " まで");
-  var vn = x.via.map(function(v){ var V = lineById(v); return V ? V.name : ""; }).filter(Boolean);
-  if (vn.length) sub.push(vn.join("・") + " を とおる");
-  if (sub.length) nm.appendChild(el("div", "sub", sub.join(" ／ ")));
+  if (to.length) nm.appendChild(el("div", "sub", to.map(function(s){ return s.name; }).join("・") + " まで"));
+  if (stops && stops.length){
+    var vc = el("div", "viachips");
+    vc.appendChild(el("span", "lbl", "とおる えき"));
+    stops.forEach(function(o){
+      var st = STATIONS[o.e.stationId];
+      var b = el("button", "viachip", (o.e.numbering ? o.e.numbering + " " : "") + st.name); b.type = "button";
+      b.style.setProperty("--c2", o.line.color);
+      b.onclick = function(ev){ ev.stopPropagation(); go({v:"station", id:st.id}); };
+      vc.appendChild(b);
+    });
+    nm.appendChild(vc);
+  }
   r.appendChild(nm);
   r.appendChild(chev());
   r.onclick = function(){ go({v:"line", id:O.id, focus:x.otherAt}); };
+  r.onkeydown = function(ev){ if (ev.key === "Enter" || ev.key === " "){ ev.preventDefault(); r.onclick(); } };
   return r;
+}
+// 境目の駅のとなりに入れる行のまとまり（とおる駅 ＋「このまま ○○線へ」）。
+// 起点の駅なら駅の上に、相手側から順に（相手 → とおる駅 → この駅）並べる
+// 1つの駅に直通先が2つ以上あるとき（相鉄本線の西谷など）は、縦に並べると別々の行き先が
+// 1本の線に見えてしまうので、とおる駅は「このまま ○○線へ」の行の中にボタンで出す（compact）
+function thrBlock(L, x, atEnd, above, compact){
+  var stops = viaStops(L, x);
+  if (compact) return [thrRow(L, x, atEnd, stops)];
+  var rows = stops.map(function(o){ return viaStopRow(L, o, atEnd); });
+  rows.push(thrRow(L, x, atEnd));
+  return above ? rows.reverse() : rows;
 }
 
 // ② 路線 → 駅（起点から順）。focus に駅idを渡すとその駅を目立たせる
@@ -931,7 +1090,10 @@ function viewLine(id, focus){
   view.appendChild(h);
 
   var thr = THR_OF_LINE[L.id] || [];
-  if (thr.length) view.appendChild(thrChainSection(L, thr));
+  var shown = {};
+  if (thr.length) view.appendChild(thrChainSection(L, thr, shown));
+  var incSec = thrIncomingSection(L, shown);
+  if (incSec) view.appendChild(incSec);
 
   var rail = el("div", "rail");
   var lastIdx = L.stations.length - 1;
@@ -939,7 +1101,8 @@ function viewLine(id, focus){
     var st = STATIONS[e.stationId];
     var here = thr.filter(function(x){ return x.at === st.id; });
     // 起点の駅でつながる直通は、駅の上に出す（線が相手の路線から続いてくるように見せる）
-    if (i === 0 && !L.loop) here.forEach(function(x){ rail.appendChild(thrRow(L, x, true)); });
+    var compact = here.length > 1;
+    if (i === 0 && !L.loop) here.forEach(function(x){ thrBlock(L, x, true, true, compact).forEach(function(r){ rail.appendChild(r); }); });
     var b = el("button", "stop" + (focus && st.id === focus ? " focus" : "")); b.type = "button";
     b.style.setProperty("--c", L.color);
     var tr = el("div", "track");
@@ -971,7 +1134,9 @@ function viewLine(id, focus){
     }
     b.onclick = function(){ go({v:"station", id:st.id}); };
     rail.appendChild(b);
-    if (i !== 0 || L.loop) here.forEach(function(x){ rail.appendChild(thrRow(L, x, i === lastIdx && !L.loop)); });
+    if (i !== 0 || L.loop) here.forEach(function(x){
+      thrBlock(L, x, i === lastIdx && !L.loop, false, compact).forEach(function(r){ rail.appendChild(r); });
+    });
   });
   // 環状線は、最後の駅のあと最初の駅にもどることを線でつないで見せる
   if (L.loop){
