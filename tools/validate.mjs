@@ -268,6 +268,55 @@ if (existsSync(expressesPath)) {
   expresses = ed.expresses ?? [];
 }
 
+// --- through services (data/through.json) -----------------------------------
+// 会社をまたぐ直通運転。境目の駅が、その路線に本当にあるかを確かめる
+const throughPath = join(dataDir, "through.json");
+let throughs = [];
+if (existsSync(throughPath)) {
+  const td = readJson(throughPath);
+  const lineInfo = new Map();          // 路線id -> { operatorId, stations }
+  for (const f of lineFiles) {
+    const line = readJson(join(linesDir, f));
+    if (line) lineInfo.set(line.id, { operatorId: line.operatorId, stations: line.stations.map((s) => s.stationId) });
+  }
+  if (!td.checkedOn) err("[through.json] checkedOn（調べた日）が無い");
+  const seenPair = new Set();
+  (td.links ?? []).forEach((k, i) => {
+    const sides = k.sides ?? [];
+    const tag = `[through.json ${i + 1}: ${sides.map((s) => s.line).join(" ⇄ ")}]`;
+    if (sides.length !== 2) { err(`${tag} sides は2つ`); return; }
+    sides.forEach((s) => {
+      const L = lineInfo.get(s.line);
+      if (!L) { err(`${tag} 無い路線id: ${s.line}`); return; }
+      if (!L.stations.includes(s.station)) err(`${tag} 境目の駅 ${s.station} が ${s.line} に無い`);
+      if (!["all", "some", "none"].includes(s.go)) err(`${tag} go は all・some・none: ${s.go}`);
+      (s.to ?? []).forEach((t) => { if (!stationIds.has(t)) err(`${tag} to に無い駅id: ${t}`); });
+      if (s.go === "none" && (s.to ?? []).length) err(`${tag} go: none なのに to がある`);
+    });
+    if (sides.every((s) => s.go === "none")) err(`${tag} どちらの向きにも直通が無い`);
+    const [a, b] = sides.map((s) => lineInfo.get(s.line));
+    if (a && b && a.operatorId === b.operatorId) warn(`${tag} 同じ会社どうし（会社をまたぐ直通だけを入れる方針）`);
+    // とおり道の路線は、両側の境目の駅をつなげるものでなければならない
+    (k.via ?? []).forEach((v) => { if (!lineInfo.has(v)) err(`${tag} via に無い路線id: ${v}`); });
+    // gap は、とおり道の一部がアプリに無いとき（相鉄・JR直通線の大崎〜羽沢横浜国大）の説明
+    if (k.gap !== undefined && !k.gap) err(`${tag} gap が空`);
+    if (k.gap && !(k.via ?? []).length) err(`${tag} gap は via とセットで書く`);
+    if (k.gap && !(lineInfo.get((k.via ?? [])[0])?.stations ?? []).includes(k.gapAt)) err(`${tag} gapAt が via の最初の路線の駅でない`);
+    if ((k.via ?? []).length && !k.gap) {
+      const vs = k.via.map((v) => lineInfo.get(v)?.stations ?? []);
+      if (!vs[0].includes(sides[0].station)) err(`${tag} via の最初の路線に ${sides[0].station} が無い`);
+      if (!vs[vs.length - 1].includes(sides[1].station)) err(`${tag} via の最後の路線に ${sides[1].station} が無い`);
+    } else if (sides[0].station !== sides[1].station && !k.note) {
+      err(`${tag} 境目の駅が両側で違うのに via も note も無い`);
+    }
+    if (!Array.isArray(k.source) || !k.source.length) err(`${tag} source（根拠）が無い`);
+    const key = sides.map((s) => s.line + "@" + s.station).sort().join("|");
+    if (seenPair.has(key)) err(`${tag} 同じつながりが2回ある`);
+    seenPair.add(key);
+  });
+  throughs = td.links ?? [];
+}
+
 // --- report ----------------------------------------------------------------
 const transfers = [...stationToLines.entries()].filter(([, l]) => l.length > 1);
 
@@ -278,6 +327,7 @@ console.log(`乗換駅        : ${transfers.length}`);
 console.log(`歩く乗換      : ${walkTransfers.length}組`);
 console.log(`新幹線の列車  : ${trains.length}本`);
 console.log(`特急          : ${expresses.length}本（いきさき ${expresses.reduce((n, e) => n + (e.variants ?? []).length, 0)}）`);
+console.log(`直通運転      : ${throughs.length}か所`);
 console.log("─".repeat(52));
 if (warnings.length) {
   console.log(`\n⚠ 警告 ${warnings.length}件`);

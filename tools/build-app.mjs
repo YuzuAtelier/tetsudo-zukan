@@ -306,6 +306,12 @@ if (existsSync(expressesPath)) {
   }
 }
 
+// 会社をまたぐ直通運転（data/through.json）。アプリで使うのは つながり方だけ。根拠URLや注記は載せない
+const throughPath = join(dataDir, "through.json");
+const throughs = existsSync(throughPath)
+  ? readJson(throughPath).links.map((k) => ({ sides: k.sides, via: k.via, gapAt: k.gapAt }))
+  : [];
+
 const payload = {
   operators,
   stations,
@@ -313,6 +319,7 @@ const payload = {
   walks,
   trains,
   expresses,
+  throughs,
   lines: lines.map((L) => ({
     id: L.id, operatorId: L.operatorId, name: L.name, formalName: L.formalName,
     kana: L.kana, symbol: L.symbol, color: L.color, colorName: L.colorName,
@@ -353,6 +360,7 @@ console.log(`駅数          : ${stations.length}`);
 console.log(`歩く乗換      : ${walks.length}組`);
 console.log(`新幹線の列車  : ${trains.length}本`);
 console.log(`特急          : ${expresses.length}本`);
+console.log(`直通運転      : ${throughs.length}か所`);
 console.log("─".repeat(52));
 CATEGORIES.forEach((c) => {
   const ls = lines.filter((L) => categoryOf(L) === c.id);

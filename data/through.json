@@ -1,0 +1,808 @@
+{
+  "note": "会社をまたぐ直通運転。sides は境目の2路線で、station はその路線の境目の駅。go は「その路線の電車が、そのまま相手の路線へ入るか」：all=いつも（ほとんど）/ some=ときどき（一部）/ none=入らない。to は、直通の電車がよく行く先の駅。via は、間をつなぐだけの短い路線（西武有楽町線・京王新線 など）。gap は、とおり道の一部がアプリに無いときの説明で、gapAt はアプリに無い区間がはじまる駅。特急だけの直通と、同じ会社の中の直通は入れない（2026-10-06 の方針）。",
+  "checkedOn": "2026-10-06",
+  "links": [
+    {
+      "sides": [
+        {
+          "line": "tokyu--den-en-toshi",
+          "station": "shibuya",
+          "go": "all",
+          "to": [
+            "oshiage",
+            "kuki",
+            "minami-kurihashi"
+          ]
+        },
+        {
+          "line": "tokyo-metro--hanzomon",
+          "station": "shibuya",
+          "go": "all",
+          "to": [
+            "chuo-rinkan"
+          ]
+        }
+      ],
+      "note": "半蔵門線は、数本をのぞいて全列車が田園都市線と直通",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東京メトロ半蔵門線",
+        "https://ja.wikipedia.org/wiki/東急田園都市線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tokyo-metro--hanzomon",
+          "station": "oshiage",
+          "go": "some",
+          "to": [
+            "kuki",
+            "minami-kurihashi"
+          ]
+        },
+        {
+          "line": "tobu--skytree",
+          "station": "hikifune",
+          "go": "some",
+          "to": [
+            "shibuya",
+            "chuo-rinkan"
+          ]
+        }
+      ],
+      "via": [
+        "tobu--skytree-oshiage"
+      ],
+      "note": "日中の半蔵門線は半数が押上で折り返す。押上〜曳舟は東武の押上支線をとおる",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東京メトロ半蔵門線",
+        "https://ja.wikipedia.org/wiki/東急田園都市線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tokyo-metro--hibiya",
+          "station": "kita-senju",
+          "go": "some",
+          "to": [
+            "tobu-dobutsu-koen"
+          ]
+        },
+        {
+          "line": "tobu--skytree",
+          "station": "kita-senju",
+          "go": "some",
+          "to": [
+            "naka-meguro"
+          ]
+        }
+      ],
+      "note": "日比谷線は北千住で折り返す電車も多い",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東京メトロ日比谷線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tokyu--toyoko",
+          "station": "shibuya",
+          "go": "all",
+          "to": [
+            "wakoshi",
+            "shinrin-koen",
+            "kotesashi"
+          ]
+        },
+        {
+          "line": "tokyo-metro--fukutoshin",
+          "station": "shibuya",
+          "go": "all",
+          "to": [
+            "yokohama",
+            "motomachi-chukagai"
+          ]
+        }
+      ],
+      "note": "数本をのぞいて全列車が直通",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東京メトロ副都心線",
+        "https://ja.wikipedia.org/wiki/みなとみらい線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tokyu--toyoko",
+          "station": "yokohama",
+          "go": "all",
+          "to": [
+            "motomachi-chukagai"
+          ]
+        },
+        {
+          "line": "yokohama-minatomirai--minatomirai",
+          "station": "yokohama",
+          "go": "all",
+          "to": [
+            "shibuya"
+          ]
+        }
+      ],
+      "note": "始発の1本をのぞいて全列車が直通",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/みなとみらい線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tokyo-metro--fukutoshin",
+          "station": "wakoshi",
+          "go": "some",
+          "to": [
+            "shinrin-koen",
+            "kawagoeshi",
+            "ogawamachi-saitama"
+          ]
+        },
+        {
+          "line": "tobu--tojo",
+          "station": "wakoshi",
+          "go": "some",
+          "to": [
+            "shibuya",
+            "motomachi-chukagai"
+          ]
+        }
+      ],
+      "note": "副都心線は東武東上線行きと西武池袋線行きに分かれる",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東京メトロ副都心線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tokyo-metro--yurakucho",
+          "station": "wakoshi",
+          "go": "some",
+          "to": [
+            "kawagoeshi",
+            "shinrin-koen"
+          ]
+        },
+        {
+          "line": "tobu--tojo",
+          "station": "wakoshi",
+          "go": "some",
+          "to": [
+            "shin-kiba"
+          ]
+        }
+      ],
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東京メトロ有楽町線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tokyo-metro--fukutoshin",
+          "station": "kotake-mukaihara",
+          "go": "some",
+          "to": [
+            "kotesashi",
+            "hanno"
+          ]
+        },
+        {
+          "line": "seibu--ikebukuro",
+          "station": "nerima",
+          "go": "some",
+          "to": [
+            "shibuya",
+            "motomachi-chukagai"
+          ]
+        }
+      ],
+      "via": [
+        "seibu--yurakucho"
+      ],
+      "note": "小竹向原〜練馬は西武有楽町線をとおる",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東京メトロ副都心線",
+        "https://ja.wikipedia.org/wiki/西武有楽町線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tokyo-metro--yurakucho",
+          "station": "kotake-mukaihara",
+          "go": "some",
+          "to": [
+            "kotesashi",
+            "hanno"
+          ]
+        },
+        {
+          "line": "seibu--ikebukuro",
+          "station": "nerima",
+          "go": "some",
+          "to": [
+            "toyosu",
+            "shin-kiba"
+          ]
+        }
+      ],
+      "via": [
+        "seibu--yurakucho"
+      ],
+      "note": "小竹向原〜練馬は西武有楽町線をとおる",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東京メトロ有楽町線",
+        "https://ja.wikipedia.org/wiki/西武有楽町線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tokyo-metro--chiyoda",
+          "station": "yoyogi-uehara",
+          "go": "some",
+          "to": [
+            "hon-atsugi",
+            "isehara",
+            "karakida"
+          ]
+        },
+        {
+          "line": "odakyu--odawara",
+          "station": "yoyogi-uehara",
+          "go": "some",
+          "to": [
+            "ayase",
+            "toride"
+          ]
+        }
+      ],
+      "note": "一部の電車だけ",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東京メトロ千代田線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tokyo-metro--chiyoda",
+          "station": "ayase",
+          "go": "some",
+          "to": [
+            "abiko",
+            "toride"
+          ]
+        },
+        {
+          "line": "jr-east--joban-local",
+          "station": "ayase",
+          "go": "all",
+          "to": [
+            "yoyogi-uehara"
+          ]
+        }
+      ],
+      "note": "常磐線の上りはほとんどが千代田線へ。千代田線は半数が綾瀬・北綾瀬止まり",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東京メトロ千代田線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tokyo-metro--tozai",
+          "station": "nakano-tokyo",
+          "go": "some",
+          "to": [
+            "mitaka"
+          ]
+        },
+        {
+          "line": "jr-east--chuo-sobu-local",
+          "station": "nakano-tokyo",
+          "go": "some",
+          "to": [
+            "nishi-funabashi",
+            "toyo-katsutadai"
+          ]
+        }
+      ],
+      "note": "朝夕が中心",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東京メトロ東西線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tokyo-metro--tozai",
+          "station": "nishi-funabashi",
+          "go": "some",
+          "to": [
+            "tsudanuma"
+          ]
+        },
+        {
+          "line": "jr-east--chuo-sobu-local",
+          "station": "nishi-funabashi",
+          "go": "some",
+          "to": [
+            "nakano-tokyo",
+            "mitaka"
+          ]
+        }
+      ],
+      "note": "平日の朝夕だけ",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東京メトロ東西線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tokyo-metro--tozai",
+          "station": "nishi-funabashi",
+          "go": "some",
+          "to": [
+            "toyo-katsutadai"
+          ]
+        },
+        {
+          "line": "toyo-rapid--toyo",
+          "station": "nishi-funabashi",
+          "go": "all",
+          "to": [
+            "nakano-tokyo",
+            "mitaka"
+          ]
+        }
+      ],
+      "note": "東葉高速線は、ほぼすべての電車が東西線へ",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東葉高速鉄道東葉高速線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tokyo-metro--namboku",
+          "station": "meguro",
+          "go": "some",
+          "to": [
+            "hiyoshi",
+            "shin-yokohama",
+            "ebina"
+          ]
+        },
+        {
+          "line": "tokyu--meguro",
+          "station": "meguro",
+          "go": "some",
+          "to": [
+            "akabane-iwabuchi",
+            "urawa-misono"
+          ]
+        }
+      ],
+      "note": "南北線の約6割が東急線へ（王子駅の平日時刻表で数えた）。目黒線の電車は南北線と三田線に分かれる",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://transfer.tokyometro.jp/website/timetable?numbering=N16&direction=1&schedule=weekday",
+        "https://ja.wikipedia.org/wiki/東京メトロ南北線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "toei--mita",
+          "station": "meguro",
+          "go": "some",
+          "to": [
+            "hiyoshi",
+            "shin-yokohama",
+            "ebina"
+          ]
+        },
+        {
+          "line": "tokyu--meguro",
+          "station": "meguro",
+          "go": "some",
+          "to": [
+            "nishi-takashimadaira"
+          ]
+        }
+      ],
+      "note": "日中は1時間に、東急線へ直通6本・白金高輪止まり4本",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/都営地下鉄三田線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tokyo-metro--namboku",
+          "station": "akabane-iwabuchi",
+          "go": "some",
+          "to": [
+            "urawa-misono"
+          ]
+        },
+        {
+          "line": "saitama-railway--saitama",
+          "station": "akabane-iwabuchi",
+          "go": "all",
+          "to": [
+            "shirokane-takanawa",
+            "hiyoshi",
+            "shin-yokohama"
+          ]
+        }
+      ],
+      "note": "埼玉高速鉄道はすべての定期列車が南北線へ。南北線は日中の半数が赤羽岩淵で折り返す",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/埼玉高速鉄道線",
+        "https://ja.wikipedia.org/wiki/東京メトロ南北線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tokyu--toyoko",
+          "station": "hiyoshi",
+          "go": "some",
+          "to": [
+            "ebina",
+            "shonandai"
+          ]
+        },
+        {
+          "line": "sotetsu--main",
+          "station": "nishiya",
+          "go": "some",
+          "to": [
+            "shibuya"
+          ]
+        }
+      ],
+      "via": [
+        "tokyu--shin-yokohama",
+        "sotetsu--shin-yokohama"
+      ],
+      "note": "日吉〜新横浜は東急新横浜線、新横浜〜西谷は相鉄新横浜線をとおる",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東急新横浜線",
+        "https://ja.wikipedia.org/wiki/相鉄新横浜線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tokyu--meguro",
+          "station": "hiyoshi",
+          "go": "some",
+          "to": [
+            "ebina",
+            "shonandai"
+          ]
+        },
+        {
+          "line": "sotetsu--main",
+          "station": "nishiya",
+          "go": "some",
+          "to": [
+            "meguro"
+          ]
+        }
+      ],
+      "via": [
+        "tokyu--shin-yokohama",
+        "sotetsu--shin-yokohama"
+      ],
+      "note": "日吉〜新横浜は東急新横浜線、新横浜〜西谷は相鉄新横浜線をとおる",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東急新横浜線",
+        "https://ja.wikipedia.org/wiki/相鉄新横浜線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "jr-east--saikyo",
+          "station": "osaki",
+          "go": "some",
+          "to": [
+            "ebina"
+          ]
+        },
+        {
+          "line": "sotetsu--main",
+          "station": "nishiya",
+          "go": "some",
+          "to": [
+            "shinjuku",
+            "kawagoe"
+          ]
+        }
+      ],
+      "via": [
+        "sotetsu--shin-yokohama"
+      ],
+      "gap": "大崎〜羽沢横浜国大はJRの線路（西大井・武蔵小杉をとおる）で、アプリには無い区間",
+      "gapAt": "hazawa-yokohama-kokudai",
+      "note": "大崎〜羽沢横浜国大はJRの線路（西大井・武蔵小杉をとおる）、羽沢横浜国大〜西谷は相鉄新横浜線",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/相鉄・JR直通線",
+        "https://ja.wikipedia.org/wiki/相鉄新横浜線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "jr-east--saikyo",
+          "station": "osaki",
+          "go": "some",
+          "to": [
+            "shin-kiba"
+          ]
+        },
+        {
+          "line": "twr--rinkai",
+          "station": "osaki",
+          "go": "some",
+          "to": [
+            "shinjuku",
+            "omiya",
+            "kawagoe"
+          ]
+        }
+      ],
+      "note": "りんかい線は日中1時間7本のうち3本が埼京線へ",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東京臨海高速鉄道りんかい線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "toei--shinjuku",
+          "station": "shinjuku",
+          "go": "some",
+          "to": [
+            "hashimoto",
+            "keio-tama-center"
+          ]
+        },
+        {
+          "line": "keio--keio",
+          "station": "sasazuka",
+          "go": "some",
+          "to": [
+            "motoyawata"
+          ]
+        }
+      ],
+      "via": [
+        "keio--new"
+      ],
+      "note": "都営新宿線の約6割が京王線へ。新宿〜笹塚は京王新線をとおる",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/都営地下鉄新宿線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "toei--asakusa",
+          "station": "sengakuji",
+          "go": "some",
+          "to": [
+            "haneda-airport-terminal-1-2",
+            "misakiguchi"
+          ]
+        },
+        {
+          "line": "keikyu--main",
+          "station": "sengakuji",
+          "go": "some",
+          "to": [
+            "oshiage",
+            "narita-kuko",
+            "imba-nihon-idai"
+          ]
+        }
+      ],
+      "note": "浅草線は西馬込へ行く電車と分かれる",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/都営地下鉄浅草線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "toei--asakusa",
+          "station": "oshiage",
+          "go": "all",
+          "to": [
+            "aoto",
+            "keisei-takasago",
+            "narita-kuko",
+            "imba-nihon-idai"
+          ]
+        },
+        {
+          "line": "keisei--oshiage",
+          "station": "oshiage",
+          "go": "all",
+          "to": [
+            "nishi-magome",
+            "haneda-airport-terminal-1-2",
+            "misakiguchi"
+          ]
+        }
+      ],
+      "note": "押上で折り返す電車は少なく、ほとんどが直通",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/都営地下鉄浅草線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "hokuso--hokuso",
+          "station": "keisei-takasago",
+          "go": "some",
+          "to": [
+            "oshiage",
+            "haneda-airport-terminal-1-2"
+          ]
+        },
+        {
+          "line": "keisei--oshiage",
+          "station": "aoto",
+          "go": "some",
+          "to": [
+            "imba-nihon-idai"
+          ]
+        }
+      ],
+      "note": "京成高砂〜青砥は京成本線をとおる",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/北総鉄道北総線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "keisei--higashi-narita",
+          "station": "higashi-narita",
+          "go": "all",
+          "to": [
+            "shibayama-chiyoda"
+          ]
+        },
+        {
+          "line": "shibayama--shibayama",
+          "station": "higashi-narita",
+          "go": "all",
+          "to": [
+            "keisei-narita"
+          ]
+        }
+      ],
+      "note": "全列車が直通",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/芝山鉄道線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "jr-east--kashima",
+          "station": "kashima-soccer-stadium",
+          "go": "none"
+        },
+        {
+          "line": "kashima-rinkai--oarai",
+          "station": "kashima-soccer-stadium",
+          "go": "all",
+          "to": [
+            "kashimajingu"
+          ]
+        }
+      ],
+      "note": "大洗鹿島線の電車が鹿島神宮まで1駅だけ乗り入れる。JRの電車は大洗鹿島線に入らない",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/鹿島臨海鉄道大洗鹿島線",
+        "https://ja.wikipedia.org/wiki/鹿島線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "jr-east--ito",
+          "station": "ito",
+          "go": "some",
+          "to": [
+            "izu-kogen",
+            "izukyu-shimoda"
+          ]
+        },
+        {
+          "line": "izukyu--izukyu",
+          "station": "ito",
+          "go": "some",
+          "to": [
+            "atami"
+          ]
+        }
+      ],
+      "note": "伊東線の33本中17本が伊豆急へ、伊豆急の31本中17本が伊東線へ（JRの時刻表 2026年10月）",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://timetables.jreast.co.jp/2610/timetable-v/101d1.html"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "jr-east--chuo-main",
+          "station": "otsuki",
+          "go": "some",
+          "to": [
+            "kawaguchiko"
+          ]
+        },
+        {
+          "line": "fujikyu--fujikyu",
+          "station": "otsuki",
+          "go": "some",
+          "to": [
+            "takao"
+          ]
+        }
+      ],
+      "note": "JRの電車が河口湖まで乗り入れる（一部）",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/富士山麓電気鉄道富士急行線"
+      ]
+    }
+  ]
+}
