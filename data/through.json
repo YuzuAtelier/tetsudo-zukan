@@ -1,6 +1,6 @@
 {
-  "note": "会社をまたぐ直通運転。sides は境目の2路線で、station はその路線の境目の駅。go は「その路線の電車が、そのまま相手の路線へ入るか」：all=いつも（ほとんど）/ some=ときどき（一部）/ none=入らない。to は、直通の電車がよく行く先の駅と、その駅がある路線。reach は、その直通の電車が走っていく路線（相手の路線から順に）。via は、間をつなぐだけの短い路線（西武有楽町線・京王新線 など）。gap は、とおり道の一部がアプリに無いときの説明で、gapAt はアプリに無い区間がはじまる駅。特急だけの直通と、同じ会社の中の直通は入れない（2026-10-06 の方針）。",
-  "checkedOn": "2026-10-07",
+  "note": "会社をまたぐ直通運転。sides は境目の2路線で、station はその路線の境目の駅。go は「その路線の電車が、そのまま相手の路線へ入るか」：all=いつも（ほとんど）/ some=ときどき（一部）/ none=入らない。to は、直通の電車がよく行く先の駅と、その駅がある路線。reach は、その直通の電車が走っていく路線（相手の路線から順に）。via は、間をつなぐだけの短い路線（西武有楽町線・京王新線 など）。gap は、とおり道の一部がアプリに無いときの説明で、gapAt はアプリに無い区間がはじまる駅。kind: same は同じ会社の中の直通（データ上は路線を分けているが電車がそのまま続くところ。2026-10-08 追加）。特急だけの直通は入れない。",
+  "checkedOn": "2026-10-08",
   "links": [
     {
       "sides": [
@@ -1353,6 +1353,1424 @@
       "source": [
         "https://ja.wikipedia.org/wiki/直通運転",
         "https://ja.wikipedia.org/wiki/富士山麓電気鉄道富士急行線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tobu--skytree",
+          "station": "tobu-dobutsu-koen",
+          "go": "some",
+          "to": [
+            {
+              "station": "kuki",
+              "line": "tobu--isesaki"
+            },
+            {
+              "station": "tatebayashi",
+              "line": "tobu--isesaki"
+            }
+          ],
+          "reach": [
+            "tobu--isesaki"
+          ]
+        },
+        {
+          "line": "tobu--isesaki",
+          "station": "tobu-dobutsu-koen",
+          "go": "some",
+          "to": [
+            {
+              "station": "asakusa",
+              "line": "tobu--skytree"
+            },
+            {
+              "station": "chuo-rinkan",
+              "line": "tokyu--den-en-toshi"
+            }
+          ],
+          "reach": [
+            "tobu--skytree",
+            "tokyo-metro--hanzomon",
+            "tokyu--den-en-toshi"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "浅草・押上方面からの区間急行などが久喜・館林まで。久喜・館林から先は分かれて走る",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東武伊勢崎線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tobu--skytree",
+          "station": "tobu-dobutsu-koen",
+          "go": "some",
+          "to": [
+            {
+              "station": "minami-kurihashi",
+              "line": "tobu--nikko"
+            }
+          ],
+          "reach": [
+            "tobu--nikko"
+          ]
+        },
+        {
+          "line": "tobu--nikko",
+          "station": "tobu-dobutsu-koen",
+          "go": "some",
+          "to": [
+            {
+              "station": "asakusa",
+              "line": "tobu--skytree"
+            },
+            {
+              "station": "chuo-rinkan",
+              "line": "tokyu--den-en-toshi"
+            },
+            {
+              "station": "naka-meguro",
+              "line": "tokyo-metro--hibiya"
+            }
+          ],
+          "reach": [
+            "tobu--skytree",
+            "tokyo-metro--hanzomon",
+            "tokyu--den-en-toshi",
+            "tokyo-metro--hibiya"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "南栗橋までは浅草・押上方面から直通。南栗橋から先は分かれて走る",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東武日光線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tobu--nikko",
+          "station": "shimo-imaichi",
+          "go": "some",
+          "to": [
+            {
+              "station": "kinugawa-onsen",
+              "line": "tobu--kinugawa"
+            },
+            {
+              "station": "shin-fujiwara",
+              "line": "tobu--kinugawa"
+            }
+          ],
+          "reach": [
+            "tobu--kinugawa"
+          ]
+        },
+        {
+          "line": "tobu--kinugawa",
+          "station": "shimo-imaichi",
+          "go": "some",
+          "to": [
+            {
+              "station": "tobu-nikko",
+              "line": "tobu--nikko"
+            },
+            {
+              "station": "minami-kurihashi",
+              "line": "tobu--nikko"
+            }
+          ],
+          "reach": [
+            "tobu--nikko"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "普通の一部が東武日光・南栗橋まで直通。特急は特急の画面で見られる",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東武鬼怒川線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tobu--nikko",
+          "station": "shin-tochigi",
+          "go": "some",
+          "to": [
+            {
+              "station": "tobu-utsunomiya",
+              "line": "tobu--utsunomiya"
+            }
+          ],
+          "reach": [
+            "tobu--utsunomiya"
+          ]
+        },
+        {
+          "line": "tobu--utsunomiya",
+          "station": "shin-tochigi",
+          "go": "some",
+          "to": [
+            {
+              "station": "minami-kurihashi",
+              "line": "tobu--nikko"
+            }
+          ],
+          "reach": [
+            "tobu--nikko"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "東武宇都宮線の電車のおよそ半分が南栗橋まで直通",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東武宇都宮線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "keikyu--main",
+          "station": "keikyu-kamata",
+          "go": "some",
+          "to": [
+            {
+              "station": "haneda-airport-terminal-1-2",
+              "line": "keikyu--airport"
+            }
+          ],
+          "reach": [
+            "keikyu--airport"
+          ]
+        },
+        {
+          "line": "keikyu--airport",
+          "station": "keikyu-kamata",
+          "go": "all",
+          "to": [
+            {
+              "station": "shinagawa",
+              "line": "keikyu--main"
+            },
+            {
+              "station": "yokohama",
+              "line": "keikyu--main"
+            },
+            {
+              "station": "oshiage",
+              "line": "toei--asakusa"
+            },
+            {
+              "station": "narita-kuko",
+              "line": "keisei--sky-access"
+            }
+          ],
+          "reach": [
+            "keikyu--main",
+            "toei--asakusa",
+            "keisei--oshiage",
+            "keisei--main",
+            "keisei--sky-access",
+            "hokuso--hokuso"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "空港線の電車は、朝夕の一部をのぞいて本線へ直通",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/京急空港線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "keikyu--main",
+          "station": "horinouchi",
+          "go": "some",
+          "to": [
+            {
+              "station": "misakiguchi",
+              "line": "keikyu--kurihama"
+            }
+          ],
+          "reach": [
+            "keikyu--kurihama"
+          ]
+        },
+        {
+          "line": "keikyu--kurihama",
+          "station": "horinouchi",
+          "go": "all",
+          "to": [
+            {
+              "station": "shinagawa",
+              "line": "keikyu--main"
+            },
+            {
+              "station": "oshiage",
+              "line": "toei--asakusa"
+            }
+          ],
+          "reach": [
+            "keikyu--main",
+            "toei--asakusa",
+            "keisei--oshiage"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "快特などの速達列車のほとんどが久里浜線へ直通し、実質的に本線の一部",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/京急久里浜線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "keikyu--main",
+          "station": "kanazawa-hakkei",
+          "go": "some",
+          "to": [
+            {
+              "station": "zushi-hayama",
+              "line": "keikyu--zushi"
+            }
+          ],
+          "reach": [
+            "keikyu--zushi"
+          ]
+        },
+        {
+          "line": "keikyu--zushi",
+          "station": "kanazawa-hakkei",
+          "go": "some",
+          "to": [
+            {
+              "station": "haneda-airport-terminal-1-2",
+              "line": "keikyu--airport"
+            }
+          ],
+          "reach": [
+            "keikyu--main",
+            "keikyu--airport"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "普通は主に線内。エアポート急行が羽田空港方面へ直通",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/京急逗子線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "keio--keio",
+          "station": "chofu",
+          "go": "some",
+          "to": [
+            {
+              "station": "hashimoto",
+              "line": "keio--sagamihara"
+            }
+          ],
+          "reach": [
+            "keio--sagamihara"
+          ]
+        },
+        {
+          "line": "keio--sagamihara",
+          "station": "chofu",
+          "go": "all",
+          "to": [
+            {
+              "station": "shinjuku",
+              "line": "keio--keio"
+            },
+            {
+              "station": "motoyawata",
+              "line": "toei--shinjuku"
+            }
+          ],
+          "reach": [
+            "keio--keio",
+            "toei--shinjuku"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "相模原線のほとんどの電車が京王線へ直通",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/京王相模原線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "keio--keio",
+          "station": "kitano",
+          "go": "some",
+          "to": [
+            {
+              "station": "takaosanguchi",
+              "line": "keio--takao"
+            }
+          ],
+          "reach": [
+            "keio--takao"
+          ]
+        },
+        {
+          "line": "keio--takao",
+          "station": "kitano",
+          "go": "all",
+          "to": [
+            {
+              "station": "shinjuku",
+              "line": "keio--keio"
+            }
+          ],
+          "reach": [
+            "keio--keio"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "高尾線のほとんどの電車が新宿まで直通（夕方以降の一部は線内折り返し）",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/京王高尾線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "odakyu--odawara",
+          "station": "sagami-ono",
+          "go": "some",
+          "to": [
+            {
+              "station": "fujisawa",
+              "line": "odakyu--enoshima"
+            },
+            {
+              "station": "katase-enoshima",
+              "line": "odakyu--enoshima"
+            }
+          ],
+          "reach": [
+            "odakyu--enoshima"
+          ]
+        },
+        {
+          "line": "odakyu--enoshima",
+          "station": "sagami-ono",
+          "go": "some",
+          "to": [
+            {
+              "station": "shinjuku",
+              "line": "odakyu--odawara"
+            }
+          ],
+          "reach": [
+            "odakyu--odawara"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "快速急行などが新宿へ直通。各駅停車の大半は線内折り返し",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/小田急江ノ島線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "odakyu--odawara",
+          "station": "shin-yurigaoka",
+          "go": "some",
+          "to": [
+            {
+              "station": "karakida",
+              "line": "odakyu--tama"
+            }
+          ],
+          "reach": [
+            "odakyu--tama"
+          ]
+        },
+        {
+          "line": "odakyu--tama",
+          "station": "shin-yurigaoka",
+          "go": "some",
+          "to": [
+            {
+              "station": "shinjuku",
+              "line": "odakyu--odawara"
+            }
+          ],
+          "reach": [
+            "odakyu--odawara"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "急行などが新宿へ直通。各駅停車は線内折り返しが基本",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/小田急多摩線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "keisei--main",
+          "station": "keisei-tsudanuma",
+          "go": "some",
+          "to": [
+            {
+              "station": "chiba-chuo",
+              "line": "keisei--chiba"
+            },
+            {
+              "station": "chiharadai",
+              "line": "keisei--chihara"
+            }
+          ],
+          "reach": [
+            "keisei--chiba",
+            "keisei--chihara"
+          ]
+        },
+        {
+          "line": "keisei--chiba",
+          "station": "keisei-tsudanuma",
+          "go": "some",
+          "to": [
+            {
+              "station": "keisei-ueno",
+              "line": "keisei--main"
+            }
+          ],
+          "reach": [
+            "keisei--main"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "朝夜の一部に京成上野発着の直通がある",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/京成千葉線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "keisei--matsudo",
+          "station": "keisei-tsudanuma",
+          "go": "some",
+          "to": [
+            {
+              "station": "chiba-chuo",
+              "line": "keisei--chiba"
+            }
+          ],
+          "reach": [
+            "keisei--chiba"
+          ]
+        },
+        {
+          "line": "keisei--chiba",
+          "station": "keisei-tsudanuma",
+          "go": "some",
+          "to": [
+            {
+              "station": "matsudo",
+              "line": "keisei--matsudo"
+            }
+          ],
+          "reach": [
+            "keisei--matsudo"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "日中は松戸〜千葉中央の直通が20分ごと",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/京成千葉線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "keisei--chiba",
+          "station": "chiba-chuo",
+          "go": "some",
+          "to": [
+            {
+              "station": "chiharadai",
+              "line": "keisei--chihara"
+            }
+          ],
+          "reach": [
+            "keisei--chihara"
+          ]
+        },
+        {
+          "line": "keisei--chihara",
+          "station": "chiba-chuo",
+          "go": "all",
+          "to": [
+            {
+              "station": "keisei-tsudanuma",
+              "line": "keisei--chiba"
+            },
+            {
+              "station": "keisei-ueno",
+              "line": "keisei--main"
+            }
+          ],
+          "reach": [
+            "keisei--chiba",
+            "keisei--main"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "千原線は線内だけの電車がなく、すべて千葉線へ直通",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/京成千原線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "keisei--main",
+          "station": "keisei-narita",
+          "go": "some",
+          "to": [
+            {
+              "station": "shibayama-chiyoda",
+              "line": "shibayama--shibayama"
+            }
+          ],
+          "reach": [
+            "keisei--higashi-narita",
+            "shibayama--shibayama"
+          ]
+        },
+        {
+          "line": "keisei--higashi-narita",
+          "station": "keisei-narita",
+          "go": "some",
+          "to": [
+            {
+              "station": "keisei-ueno",
+              "line": "keisei--main"
+            }
+          ],
+          "reach": [
+            "keisei--main"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "東成田線の電車はすべて芝山鉄道へ直通。京成成田から先へも一部が直通",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/京成東成田線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "keisei--main",
+          "station": "keisei-takasago",
+          "go": "some",
+          "to": [
+            {
+              "station": "narita-kuko",
+              "line": "keisei--sky-access"
+            }
+          ],
+          "reach": [
+            "keisei--sky-access"
+          ]
+        },
+        {
+          "line": "keisei--sky-access",
+          "station": "keisei-takasago",
+          "go": "all",
+          "to": [
+            {
+              "station": "keisei-ueno",
+              "line": "keisei--main"
+            },
+            {
+              "station": "haneda-airport-terminal-1-2",
+              "line": "keikyu--airport"
+            }
+          ],
+          "reach": [
+            "keisei--main",
+            "keisei--oshiage",
+            "toei--asakusa",
+            "keikyu--main",
+            "keikyu--airport"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "スカイアクセス線の電車は、京成高砂から京成上野方面か押上線方面へ続く",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/成田スカイアクセス線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "seibu--ikebukuro",
+          "station": "agano",
+          "go": "all",
+          "to": [
+            {
+              "station": "seibu-chichibu",
+              "line": "seibu--chichibu"
+            }
+          ],
+          "reach": [
+            "seibu--chichibu"
+          ]
+        },
+        {
+          "line": "seibu--chichibu",
+          "station": "agano",
+          "go": "all",
+          "to": [
+            {
+              "station": "hanno",
+              "line": "seibu--ikebukuro"
+            },
+            {
+              "station": "ikebukuro",
+              "line": "seibu--ikebukuro"
+            }
+          ],
+          "reach": [
+            "seibu--ikebukuro"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "池袋線の吾野と西武秩父線は、ふつうは1本の線として電車が走る",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/西武秩父線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "seibu--shinjuku",
+          "station": "kodaira",
+          "go": "some",
+          "to": [
+            {
+              "station": "haijima",
+              "line": "seibu--haijima"
+            }
+          ],
+          "reach": [
+            "seibu--haijima"
+          ]
+        },
+        {
+          "line": "seibu--haijima",
+          "station": "kodaira",
+          "go": "some",
+          "to": [
+            {
+              "station": "seibu-shinjuku",
+              "line": "seibu--shinjuku"
+            }
+          ],
+          "reach": [
+            "seibu--shinjuku"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "日中は急行が西武新宿へ直通、ほかは線内折り返し",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/西武拝島線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "seibu--ikebukuro",
+          "station": "nishi-tokorozawa",
+          "go": "some",
+          "to": [
+            {
+              "station": "seibukyujo-mae",
+              "line": "seibu--sayama"
+            }
+          ],
+          "reach": [
+            "seibu--sayama"
+          ]
+        },
+        {
+          "line": "seibu--sayama",
+          "station": "nishi-tokorozawa",
+          "go": "some",
+          "to": [
+            {
+              "station": "ikebukuro",
+              "line": "seibu--ikebukuro"
+            }
+          ],
+          "reach": [
+            "seibu--ikebukuro"
+          ]
+        }
+      ],
+      "kind": "same",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/西武狭山線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "seibu--ikebukuro",
+          "station": "nerima",
+          "go": "some",
+          "to": [
+            {
+              "station": "toshimaen",
+              "line": "seibu--toshima"
+            }
+          ],
+          "reach": [
+            "seibu--toshima"
+          ]
+        },
+        {
+          "line": "seibu--toshima",
+          "station": "nerima",
+          "go": "all",
+          "to": [
+            {
+              "station": "ikebukuro",
+              "line": "seibu--ikebukuro"
+            }
+          ],
+          "reach": [
+            "seibu--ikebukuro"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "豊島線は、始発の1本をのぞいて池袋へ直通",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/西武豊島線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "sotetsu--main",
+          "station": "futamatagawa",
+          "go": "some",
+          "to": [
+            {
+              "station": "shonandai",
+              "line": "sotetsu--izumino"
+            }
+          ],
+          "reach": [
+            "sotetsu--izumino"
+          ]
+        },
+        {
+          "line": "sotetsu--izumino",
+          "station": "futamatagawa",
+          "go": "all",
+          "to": [
+            {
+              "station": "yokohama",
+              "line": "sotetsu--main"
+            },
+            {
+              "station": "shibuya",
+              "line": "tokyu--toyoko"
+            }
+          ],
+          "reach": [
+            "sotetsu--main",
+            "tokyu--toyoko"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "いずみ野線の快速は全列車が横浜まで",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/相鉄いずみ野線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tokyu--oimachi",
+          "station": "mizonokuchi",
+          "go": "some",
+          "to": [
+            {
+              "station": "nagatsuta",
+              "line": "tokyu--den-en-toshi"
+            },
+            {
+              "station": "chuo-rinkan",
+              "line": "tokyu--den-en-toshi"
+            }
+          ],
+          "reach": [
+            "tokyu--den-en-toshi"
+          ]
+        },
+        {
+          "line": "tokyu--den-en-toshi",
+          "station": "mizonokuchi",
+          "go": "some",
+          "to": [
+            {
+              "station": "oimachi",
+              "line": "tokyu--oimachi"
+            }
+          ],
+          "reach": [
+            "tokyu--oimachi"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "大井町線は溝の口折り返しが基本。急行などが長津田・中央林間へ直通",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東急大井町線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "tokyo-metro--marunouchi",
+          "station": "nakano-sakaue",
+          "go": "some",
+          "to": [
+            {
+              "station": "honancho",
+              "line": "tokyo-metro--marunouchi-branch"
+            }
+          ],
+          "reach": [
+            "tokyo-metro--marunouchi-branch"
+          ]
+        },
+        {
+          "line": "tokyo-metro--marunouchi-branch",
+          "station": "nakano-sakaue",
+          "go": "all",
+          "to": [
+            {
+              "station": "ikebukuro",
+              "line": "tokyo-metro--marunouchi"
+            }
+          ],
+          "reach": [
+            "tokyo-metro--marunouchi"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "池袋〜方南町の直通が基本",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/東京メトロ丸ノ内線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "jr-east--chuo-rapid",
+          "station": "takao",
+          "go": "some",
+          "to": [
+            {
+              "station": "otsuki",
+              "line": "jr-east--chuo-main"
+            },
+            {
+              "station": "kawaguchiko",
+              "line": "fujikyu--fujikyu"
+            }
+          ],
+          "reach": [
+            "jr-east--chuo-main",
+            "fujikyu--fujikyu"
+          ]
+        },
+        {
+          "line": "jr-east--chuo-main",
+          "station": "takao",
+          "go": "some",
+          "to": [
+            {
+              "station": "tokyo",
+              "line": "jr-east--chuo-rapid"
+            }
+          ],
+          "reach": [
+            "jr-east--chuo-rapid"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "大月・河口湖方面へ直通する電車がある（高尾から先は普通）",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/中央線快速"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "jr-east--chuo-rapid",
+          "station": "tachikawa",
+          "go": "some",
+          "to": [
+            {
+              "station": "ome",
+              "line": "jr-east--ome"
+            }
+          ],
+          "reach": [
+            "jr-east--ome"
+          ]
+        },
+        {
+          "line": "jr-east--ome",
+          "station": "tachikawa",
+          "go": "some",
+          "to": [
+            {
+              "station": "tokyo",
+              "line": "jr-east--chuo-rapid"
+            }
+          ],
+          "reach": [
+            "jr-east--chuo-rapid"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "青梅特快などが青梅線へ直通",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/青梅線",
+        "https://ja.wikipedia.org/wiki/中央線快速"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "jr-east--joban-rapid",
+          "station": "toride",
+          "go": "some",
+          "to": [
+            {
+              "station": "tsuchiura",
+              "line": "jr-east--joban"
+            },
+            {
+              "station": "mito",
+              "line": "jr-east--joban"
+            }
+          ],
+          "reach": [
+            "jr-east--joban"
+          ]
+        },
+        {
+          "line": "jr-east--joban",
+          "station": "toride",
+          "go": "all",
+          "to": [
+            {
+              "station": "ueno",
+              "line": "jr-east--joban-rapid"
+            }
+          ],
+          "reach": [
+            "jr-east--joban-rapid"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "土浦・水戸方面の中距離電車は上野・品川へ直通。快速電車は取手まで",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/常磐線快速"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "jr-east--joban-rapid",
+          "station": "abiko",
+          "go": "some",
+          "to": [
+            {
+              "station": "narita",
+              "line": "jr-east--narita-abiko"
+            }
+          ],
+          "reach": [
+            "jr-east--narita-abiko"
+          ]
+        },
+        {
+          "line": "jr-east--narita-abiko",
+          "station": "abiko",
+          "go": "some",
+          "to": [
+            {
+              "station": "ueno",
+              "line": "jr-east--joban-rapid"
+            }
+          ],
+          "reach": [
+            "jr-east--joban-rapid"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "一部の電車が我孫子から成田線に乗り入れ、成田まで直通",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/常磐線快速"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "jr-east--tokaido",
+          "station": "atami",
+          "go": "some",
+          "to": [
+            {
+              "station": "ito",
+              "line": "jr-east--ito"
+            }
+          ],
+          "reach": [
+            "jr-east--ito"
+          ]
+        },
+        {
+          "line": "jr-east--ito",
+          "station": "atami",
+          "go": "some",
+          "to": [
+            {
+              "station": "tokyo",
+              "line": "jr-east--tokaido"
+            }
+          ],
+          "reach": [
+            "jr-east--tokaido"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "東海道線から伊東線へ直通する普通がある（JRの時刻表 2026年10月で16本）",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://timetables.jreast.co.jp/2610/timetable-v/101d1.html",
+        "https://ja.wikipedia.org/wiki/伊東線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "jr-east--yokosuka-sobu-rapid",
+          "station": "chiba",
+          "go": "some",
+          "to": [
+            {
+              "station": "narita",
+              "line": "jr-east--narita"
+            },
+            {
+              "station": "narita-kuko",
+              "line": "jr-east--narita-airport"
+            }
+          ],
+          "reach": [
+            "jr-east--sobu-main",
+            "jr-east--narita",
+            "jr-east--narita-airport"
+          ]
+        },
+        {
+          "line": "jr-east--sobu-main",
+          "station": "chiba",
+          "go": "some",
+          "to": [
+            {
+              "station": "tokyo",
+              "line": "jr-east--yokosuka-sobu-rapid"
+            }
+          ],
+          "reach": [
+            "jr-east--yokosuka-sobu-rapid"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "快速が成田・成田空港方面へ直通",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/総武快速線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "jr-east--yokosuka-sobu-rapid",
+          "station": "chiba",
+          "go": "some",
+          "to": [
+            {
+              "station": "kazusa-ichinomiya",
+              "line": "jr-east--sotobo"
+            }
+          ],
+          "reach": [
+            "jr-east--sotobo"
+          ]
+        },
+        {
+          "line": "jr-east--sotobo",
+          "station": "chiba",
+          "go": "some",
+          "to": [
+            {
+              "station": "tokyo",
+              "line": "jr-east--yokosuka-sobu-rapid"
+            }
+          ],
+          "reach": [
+            "jr-east--yokosuka-sobu-rapid"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "快速の一部が外房線へ直通",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/総武快速線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "jr-east--keiyo",
+          "station": "soga",
+          "go": "some",
+          "to": [
+            {
+              "station": "kazusa-ichinomiya",
+              "line": "jr-east--sotobo"
+            }
+          ],
+          "reach": [
+            "jr-east--sotobo"
+          ]
+        },
+        {
+          "line": "jr-east--sotobo",
+          "station": "soga",
+          "go": "some",
+          "to": [
+            {
+              "station": "tokyo",
+              "line": "jr-east--keiyo"
+            }
+          ],
+          "reach": [
+            "jr-east--keiyo"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "京葉線の一部が外房線の上総一ノ宮まで直通",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/京葉線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "jr-east--keiyo",
+          "station": "soga",
+          "go": "some",
+          "to": [
+            {
+              "station": "kimitsu",
+              "line": "jr-east--uchibo"
+            }
+          ],
+          "reach": [
+            "jr-east--uchibo"
+          ]
+        },
+        {
+          "line": "jr-east--uchibo",
+          "station": "soga",
+          "go": "some",
+          "to": [
+            {
+              "station": "tokyo",
+              "line": "jr-east--keiyo"
+            }
+          ],
+          "reach": [
+            "jr-east--keiyo"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "京葉線の一部が内房線の君津まで直通",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/京葉線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "jr-east--saikyo",
+          "station": "omiya",
+          "go": "some",
+          "to": [
+            {
+              "station": "kawagoe",
+              "line": "jr-east--kawagoe"
+            }
+          ],
+          "reach": [
+            "jr-east--kawagoe"
+          ]
+        },
+        {
+          "line": "jr-east--kawagoe",
+          "station": "omiya",
+          "go": "all",
+          "to": [
+            {
+              "station": "shinjuku",
+              "line": "jr-east--saikyo"
+            },
+            {
+              "station": "shin-kiba",
+              "line": "twr--rinkai"
+            },
+            {
+              "station": "ebina",
+              "line": "sotetsu--main"
+            }
+          ],
+          "reach": [
+            "jr-east--saikyo",
+            "twr--rinkai",
+            "sotetsu--main"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "川越線の大宮〜川越は埼京線と直通運転",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/川越線"
+      ]
+    },
+    {
+      "sides": [
+        {
+          "line": "jr-east--takasaki",
+          "station": "takasaki",
+          "go": "some",
+          "to": [
+            {
+              "station": "shibukawa",
+              "line": "jr-east--joetsu"
+            },
+            {
+              "station": "maebashi",
+              "line": "jr-east--ryomo"
+            }
+          ],
+          "reach": [
+            "jr-east--joetsu",
+            "jr-east--ryomo"
+          ]
+        },
+        {
+          "line": "jr-east--joetsu",
+          "station": "takasaki",
+          "go": "some",
+          "to": [
+            {
+              "station": "ueno",
+              "line": "jr-east--utsunomiya"
+            }
+          ],
+          "reach": [
+            "jr-east--takasaki",
+            "jr-east--utsunomiya"
+          ]
+        }
+      ],
+      "kind": "same",
+      "note": "高崎線から上越線・両毛線（前橋）へ直通する電車がある",
+      "source": [
+        "https://ja.wikipedia.org/wiki/直通運転",
+        "https://ja.wikipedia.org/wiki/上越線"
       ]
     }
   ]

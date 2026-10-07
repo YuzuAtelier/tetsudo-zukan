@@ -310,7 +310,10 @@ if (existsSync(throughPath)) {
       if ((s.reach ?? []).length && s.reach[0] !== o.line) err(`${tag} ${s.line} 側の reach の最初が相手の路線（${o.line}）でない`);
     });
     const [a, b] = sides.map((s) => lineInfo.get(s.line));
-    if (a && b && a.operatorId === b.operatorId) warn(`${tag} 同じ会社どうし（会社をまたぐ直通だけを入れる方針）`);
+    // 同じ会社の中の直通は kind: "same" を付ける（データ上は路線を分けているが電車がそのまま続くところ）
+    if (k.kind !== undefined && k.kind !== "same") err(`${tag} kind は same だけ: ${k.kind}`);
+    if (a && b && a.operatorId === b.operatorId && k.kind !== "same") err(`${tag} 同じ会社どうしなのに kind: "same" が無い`);
+    if (a && b && a.operatorId !== b.operatorId && k.kind === "same") err(`${tag} 会社がちがうのに kind: "same" になっている`);
     // とおり道の路線は、両側の境目の駅をつなげるものでなければならない
     (k.via ?? []).forEach((v) => { if (!lineInfo.has(v)) err(`${tag} via に無い路線id: ${v}`); });
     // gap は、とおり道の一部がアプリに無いとき（相鉄・JR直通線の大崎〜羽沢横浜国大）の説明
