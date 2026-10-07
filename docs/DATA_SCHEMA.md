@@ -218,8 +218,12 @@ UIでの表示は `subName` があれば `明治神宮前〈原宿〉` と組み
   "checkedOn": "2026-10-06",
   "links": [{
     "sides": [
-      { "line": "tokyo-metro--hanzomon", "station": "oshiage", "go": "some", "to": ["kuki", "minami-kurihashi"] },
-      { "line": "tobu--skytree", "station": "hikifune", "go": "some", "to": ["shibuya", "chuo-rinkan"] }
+      { "line": "tokyo-metro--hanzomon", "station": "oshiage", "go": "some",
+        "to": [{ "station": "kuki", "line": "tobu--isesaki" }, { "station": "minami-kurihashi", "line": "tobu--nikko" }],
+        "reach": ["tobu--skytree", "tobu--isesaki", "tobu--nikko"] },
+      { "line": "tobu--skytree", "station": "hikifune", "go": "some",
+        "to": [{ "station": "shibuya", "line": "tokyo-metro--hanzomon" }, { "station": "chuo-rinkan", "line": "tokyu--den-en-toshi" }],
+        "reach": ["tokyo-metro--hanzomon", "tokyu--den-en-toshi"] }
     ],
     "via": ["tobu--skytree-oshiage"],
     "note": "日中の半蔵門線は半数が押上で折り返す",
@@ -232,7 +236,7 @@ UIでの表示は `subName` があれば `明治神宮前〈原宿〉` と組み
 |---|---|
 | `sides[].line` / `station` | 境目の2路線と、それぞれの路線での境目の駅 |
 | `sides[].go` | その路線の電車が相手の路線へそのまま入るか。`all` いつも（ほとんど）/ `some` ときどき（一部）/ `none` 入らない（鹿島線→大洗鹿島線） |
-| `sides[].to` | 直通の電車がよく行く先の駅（相手の路線の先でもよい）。画面に「○○ まで」と出す |
+| `sides[].to` | 直通の電車がよく行く先。`{ station, line }` で、line はその駅がある路線（reach のどれか）。相手の路線の駅は「○○ まで」、その先の路線の駅は「そのさき ○○線の ○○ まで」と出す。同じ駅が2つ以上の路線にあるときは、直通の電車が実際に走る路線を書く（成田空港 → 成田スカイアクセス線） |
 | `sides[].reach` | その直通の電車が走っていく路線（相手の路線から順に。同じ会社の先の路線も入れる）。`to` の駅はこのどれかにある。画面の「ちょくつうで つながる ろせん」をその先までのばすのと、「ちょくつうの でんしゃが くる ろせん」（東武伊勢崎線など）に使う |
 | `via` | 間をつなぐだけの短い路線（西武有楽町線・京王新線・押上支線・東急新横浜線・相鉄新横浜線）。走る順に並べる |
 | `gap` / `gapAt` | とおり道の一部がアプリに無いとき（相鉄・JR直通線の大崎〜羽沢横浜国大）の説明と、無い区間がはじまる駅 |

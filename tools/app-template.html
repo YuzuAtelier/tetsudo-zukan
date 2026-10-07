@@ -252,6 +252,7 @@
            border-radius:999px;border:2px solid var(--c2);background:#fff;color:var(--ink);cursor:pointer}
   .viachip:active{background:#e2e8f8}
   .stop.thru{cursor:pointer}
+  .stop.thru .nm .sub.farto{color:var(--ink);font-weight:700}
   .thrgroup{margin-top:11px;border:2px solid #c9d1e3;border-radius:calc(var(--radius) + 6px);padding:0 6px 6px;background:#eef2fa}
   .thrgroup > .lncard{margin-top:6px}
   .thrconn{text-align:center;font-size:12.5px;font-weight:800;color:var(--ink);padding:7px 4px 1px}
@@ -397,7 +398,7 @@ EXPRESSES.forEach(function(e){
 // 会社をまたぐ直通運転（data/through.json）。路線ごとに「どの駅で、どの路線へ、そのまま行けるか」を持つ。
 //   at: この路線の境目の駅 / other: 相手の路線 / otherAt: 相手の路線の境目の駅
 //   go: この路線の電車が相手へ入るか（all いつも / some ときどき / none 入らない）
-//   to: 直通の電車がよく行く先 / via: 間でとおる短い路線
+//   to: 直通の電車がよく行く先（{station, line}） / via: 間でとおる短い路線
 //   next: 境目の駅で、線路がすぐにつながる路線（相手の路線か、間の短い路線）
 //   reach: 直通の電車が走っていく路線（相手の路線から順に） / gapAt: とおり道のうちアプリに無い区間がおわる駅
 var THR_OF_LINE = {};
@@ -408,7 +409,9 @@ function addThr(lineId, x){
     var y = a[i];
     if (y.other === x.other && y.at === x.at){
       if (x.go === "all" || (x.go === "some" && y.go === "none")) y.go = x.go;
-      x.to.forEach(function(t){ if (y.to.indexOf(t) < 0) y.to.push(t); });
+      x.to.forEach(function(t){
+        if (!y.to.some(function(u){ return u.station === t.station; })) y.to.push(t);
+      });
       x.reach.forEach(function(r){ if (y.reach.indexOf(r) < 0) y.reach.push(r); });
       return;
     }
@@ -894,15 +897,42 @@ function thrFar(L, x){
       if (z.at === enteredAt || seen[z.other] || x.reach.indexOf(z.other) < 0) return;
       seen[z.other] = true;
       var g = (go === "all" && z.go === "all") ? "all" : "some";
+      // とおり道の路線も走っていく路線に入っていれば、とおる順に1段ずつ並べる
+      // （東急目黒線 ⇄ 東急新横浜線 ⇄ 相鉄新横浜線 ⇄ 相鉄本線）
+      var d = depth;
       z.via.forEach(function(v){
         if (seen[v] || x.reach.indexOf(v) < 0) return;
         seen[v] = true;
-        out.push({ line:v, go:"some", at:z.at, depth:depth });
+        out.push({ line:v, go:g, at:z.at, depth:d });
+        d++;
       });
-      out.push({ line:z.other, go:g, at:z.otherAt, depth:depth });
-      walk(z.other, z.otherAt, g, depth + 1);
+      out.push({ line:z.other, go:g, at:z.otherAt, depth:d });
+      walk(z.other, z.otherAt, g, d + 1);
     });
   })(x.other, x.otherAt, x.go, 1);
+  // 直通の境目どうしのつながりでは届かない、同じ会社の中の先の路線（東武スカイツリーラインの先の
+  // 伊勢崎線・東武日光線、京急本線の先の京急空港線 など）。走っていく路線に入っていて、
+  // すでに並べた路線と同じ駅を持つ（線路がつながる）ものを、その次の段に足す
+  var placed = [{ line:x.other, depth:0 }].concat(out), added = true;
+  while (added){
+    added = false;
+    x.reach.forEach(function(r){
+      if (seen[r]) return;
+      var R = lineById(r);
+      if (!R) return;
+      for (var i = 0; i < placed.length; i++){
+        var Y = lineById(placed[i].line);
+        var common = Y && R.stations.filter(function(e){
+          return Y.stations.some(function(f){ return f.stationId === e.stationId; });
+        })[0];
+        if (!common) continue;
+        seen[r] = true; added = true;
+        var f = { line:r, go:"some", at:common.stationId, depth:placed[i].depth + 1 };
+        out.push(f); placed.push(f);
+        break;
+      }
+    });
+  }
   return out;
 }
 // 路線の画面の見出しの下に出す「ちょくつうで つながる ろせん」。
@@ -1039,8 +1069,22 @@ function thrRow(L, x, atEnd, stops){
   nm.appendChild(el("div", "kanji", x.go === "none"
     ? O.name + " から でんしゃが はいってくる"
     : "このまま " + O.name + " へ"));
-  var to = x.to.map(function(t){ return STATIONS[t]; }).filter(Boolean);
-  if (to.length) nm.appendChild(el("div", "sub", to.map(function(s){ return s.name; }).join("・") + " まで"));
+  // よく行く先は、相手の路線の駅（○○ まで）と、その先の別の路線の駅（そのさき ○○線の ○○ まで）に分けて出す
+  var near = [], far = [], farLines = [];
+  x.to.forEach(function(t){
+    var s = STATIONS[t.station];
+    if (!s) return;
+    if (t.line === O.id){ near.push(s.name); return; }
+    var i = farLines.indexOf(t.line);
+    if (i < 0){ farLines.push(t.line); far.push([s.name]); } else far[i].push(s.name);
+  });
+  if (near.length) nm.appendChild(el("div", "sub", near.join("・") + " まで"));
+  if (far.length){
+    nm.appendChild(el("div", "sub farto", "そのさき " + farLines.map(function(id, i){
+      var FL = lineById(id);
+      return (FL ? FL.name + "の " : "") + far[i].join("・");
+    }).join("、") + " まで"));
+  }
   if (stops && stops.length){
     var vc = el("div", "viachips");
     vc.appendChild(el("span", "lbl", "とおる えき"));

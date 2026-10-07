@@ -1,5 +1,5 @@
 {
-  "note": "会社をまたぐ直通運転。sides は境目の2路線で、station はその路線の境目の駅。go は「その路線の電車が、そのまま相手の路線へ入るか」：all=いつも（ほとんど）/ some=ときどき（一部）/ none=入らない。to は、直通の電車がよく行く先の駅。reach は、その直通の電車が走っていく路線（相手の路線から順に）。via は、間をつなぐだけの短い路線（西武有楽町線・京王新線 など）。gap は、とおり道の一部がアプリに無いときの説明で、gapAt はアプリに無い区間がはじまる駅。特急だけの直通と、同じ会社の中の直通は入れない（2026-10-06 の方針）。",
+  "note": "会社をまたぐ直通運転。sides は境目の2路線で、station はその路線の境目の駅。go は「その路線の電車が、そのまま相手の路線へ入るか」：all=いつも（ほとんど）/ some=ときどき（一部）/ none=入らない。to は、直通の電車がよく行く先の駅と、その駅がある路線。reach は、その直通の電車が走っていく路線（相手の路線から順に）。via は、間をつなぐだけの短い路線（西武有楽町線・京王新線 など）。gap は、とおり道の一部がアプリに無いときの説明で、gapAt はアプリに無い区間がはじまる駅。特急だけの直通と、同じ会社の中の直通は入れない（2026-10-06 の方針）。",
   "checkedOn": "2026-10-07",
   "links": [
     {
@@ -9,9 +9,18 @@
           "station": "shibuya",
           "go": "all",
           "to": [
-            "oshiage",
-            "kuki",
-            "minami-kurihashi"
+            {
+              "station": "oshiage",
+              "line": "tokyo-metro--hanzomon"
+            },
+            {
+              "station": "kuki",
+              "line": "tobu--isesaki"
+            },
+            {
+              "station": "minami-kurihashi",
+              "line": "tobu--nikko"
+            }
           ],
           "reach": [
             "tokyo-metro--hanzomon",
@@ -25,7 +34,10 @@
           "station": "shibuya",
           "go": "all",
           "to": [
-            "chuo-rinkan"
+            {
+              "station": "chuo-rinkan",
+              "line": "tokyu--den-en-toshi"
+            }
           ],
           "reach": [
             "tokyu--den-en-toshi"
@@ -46,8 +58,14 @@
           "station": "oshiage",
           "go": "some",
           "to": [
-            "kuki",
-            "minami-kurihashi"
+            {
+              "station": "kuki",
+              "line": "tobu--isesaki"
+            },
+            {
+              "station": "minami-kurihashi",
+              "line": "tobu--nikko"
+            }
           ],
           "reach": [
             "tobu--skytree",
@@ -60,8 +78,14 @@
           "station": "hikifune",
           "go": "some",
           "to": [
-            "shibuya",
-            "chuo-rinkan"
+            {
+              "station": "shibuya",
+              "line": "tokyo-metro--hanzomon"
+            },
+            {
+              "station": "chuo-rinkan",
+              "line": "tokyu--den-en-toshi"
+            }
           ],
           "reach": [
             "tokyo-metro--hanzomon",
@@ -86,10 +110,18 @@
           "station": "kita-senju",
           "go": "some",
           "to": [
-            "tobu-dobutsu-koen"
+            {
+              "station": "tobu-dobutsu-koen",
+              "line": "tobu--skytree"
+            },
+            {
+              "station": "minami-kurihashi",
+              "line": "tobu--nikko"
+            }
           ],
           "reach": [
-            "tobu--skytree"
+            "tobu--skytree",
+            "tobu--nikko"
           ]
         },
         {
@@ -97,14 +129,17 @@
           "station": "kita-senju",
           "go": "some",
           "to": [
-            "naka-meguro"
+            {
+              "station": "naka-meguro",
+              "line": "tokyo-metro--hibiya"
+            }
           ],
           "reach": [
             "tokyo-metro--hibiya"
           ]
         }
       ],
-      "note": "日比谷線は北千住で折り返す電車も多い",
+      "note": "日比谷線は北千住で折り返す電車も多い。直通は東武日光線の南栗橋まで",
       "source": [
         "https://ja.wikipedia.org/wiki/直通運転",
         "https://ja.wikipedia.org/wiki/東京メトロ日比谷線"
@@ -117,9 +152,18 @@
           "station": "shibuya",
           "go": "all",
           "to": [
-            "wakoshi",
-            "shinrin-koen",
-            "kotesashi"
+            {
+              "station": "wakoshi",
+              "line": "tokyo-metro--fukutoshin"
+            },
+            {
+              "station": "shinrin-koen",
+              "line": "tobu--tojo"
+            },
+            {
+              "station": "kotesashi",
+              "line": "seibu--ikebukuro"
+            }
           ],
           "reach": [
             "tokyo-metro--fukutoshin",
@@ -132,8 +176,14 @@
           "station": "shibuya",
           "go": "all",
           "to": [
-            "yokohama",
-            "motomachi-chukagai"
+            {
+              "station": "yokohama",
+              "line": "tokyu--toyoko"
+            },
+            {
+              "station": "motomachi-chukagai",
+              "line": "yokohama-minatomirai--minatomirai"
+            }
           ],
           "reach": [
             "tokyu--toyoko",
@@ -155,7 +205,10 @@
           "station": "yokohama",
           "go": "all",
           "to": [
-            "motomachi-chukagai"
+            {
+              "station": "motomachi-chukagai",
+              "line": "yokohama-minatomirai--minatomirai"
+            }
           ],
           "reach": [
             "yokohama-minatomirai--minatomirai"
@@ -166,9 +219,18 @@
           "station": "yokohama",
           "go": "all",
           "to": [
-            "shibuya",
-            "shinrin-koen",
-            "kotesashi"
+            {
+              "station": "shibuya",
+              "line": "tokyu--toyoko"
+            },
+            {
+              "station": "shinrin-koen",
+              "line": "tobu--tojo"
+            },
+            {
+              "station": "kotesashi",
+              "line": "seibu--ikebukuro"
+            }
           ],
           "reach": [
             "tokyu--toyoko",
@@ -191,9 +253,18 @@
           "station": "wakoshi",
           "go": "some",
           "to": [
-            "shinrin-koen",
-            "kawagoeshi",
-            "ogawamachi-saitama"
+            {
+              "station": "shinrin-koen",
+              "line": "tobu--tojo"
+            },
+            {
+              "station": "kawagoeshi",
+              "line": "tobu--tojo"
+            },
+            {
+              "station": "ogawamachi-saitama",
+              "line": "tobu--tojo"
+            }
           ],
           "reach": [
             "tobu--tojo"
@@ -204,8 +275,14 @@
           "station": "wakoshi",
           "go": "some",
           "to": [
-            "shibuya",
-            "motomachi-chukagai"
+            {
+              "station": "shibuya",
+              "line": "tokyo-metro--fukutoshin"
+            },
+            {
+              "station": "motomachi-chukagai",
+              "line": "yokohama-minatomirai--minatomirai"
+            }
           ],
           "reach": [
             "tokyo-metro--fukutoshin",
@@ -227,8 +304,14 @@
           "station": "wakoshi",
           "go": "some",
           "to": [
-            "kawagoeshi",
-            "shinrin-koen"
+            {
+              "station": "kawagoeshi",
+              "line": "tobu--tojo"
+            },
+            {
+              "station": "shinrin-koen",
+              "line": "tobu--tojo"
+            }
           ],
           "reach": [
             "tobu--tojo"
@@ -239,7 +322,10 @@
           "station": "wakoshi",
           "go": "some",
           "to": [
-            "shin-kiba"
+            {
+              "station": "shin-kiba",
+              "line": "tokyo-metro--yurakucho"
+            }
           ],
           "reach": [
             "tokyo-metro--yurakucho"
@@ -258,8 +344,14 @@
           "station": "kotake-mukaihara",
           "go": "some",
           "to": [
-            "kotesashi",
-            "hanno"
+            {
+              "station": "kotesashi",
+              "line": "seibu--ikebukuro"
+            },
+            {
+              "station": "hanno",
+              "line": "seibu--ikebukuro"
+            }
           ],
           "reach": [
             "seibu--ikebukuro"
@@ -270,8 +362,14 @@
           "station": "nerima",
           "go": "some",
           "to": [
-            "shibuya",
-            "motomachi-chukagai"
+            {
+              "station": "shibuya",
+              "line": "tokyo-metro--fukutoshin"
+            },
+            {
+              "station": "motomachi-chukagai",
+              "line": "yokohama-minatomirai--minatomirai"
+            }
           ],
           "reach": [
             "tokyo-metro--fukutoshin",
@@ -297,8 +395,14 @@
           "station": "kotake-mukaihara",
           "go": "some",
           "to": [
-            "kotesashi",
-            "hanno"
+            {
+              "station": "kotesashi",
+              "line": "seibu--ikebukuro"
+            },
+            {
+              "station": "hanno",
+              "line": "seibu--ikebukuro"
+            }
           ],
           "reach": [
             "seibu--ikebukuro"
@@ -309,8 +413,14 @@
           "station": "nerima",
           "go": "some",
           "to": [
-            "toyosu",
-            "shin-kiba"
+            {
+              "station": "toyosu",
+              "line": "tokyo-metro--yurakucho"
+            },
+            {
+              "station": "shin-kiba",
+              "line": "tokyo-metro--yurakucho"
+            }
           ],
           "reach": [
             "tokyo-metro--yurakucho"
@@ -334,9 +444,18 @@
           "station": "yoyogi-uehara",
           "go": "some",
           "to": [
-            "hon-atsugi",
-            "isehara",
-            "karakida"
+            {
+              "station": "hon-atsugi",
+              "line": "odakyu--odawara"
+            },
+            {
+              "station": "isehara",
+              "line": "odakyu--odawara"
+            },
+            {
+              "station": "karakida",
+              "line": "odakyu--tama"
+            }
           ],
           "reach": [
             "odakyu--odawara",
@@ -348,8 +467,14 @@
           "station": "yoyogi-uehara",
           "go": "some",
           "to": [
-            "ayase",
-            "toride"
+            {
+              "station": "ayase",
+              "line": "tokyo-metro--chiyoda"
+            },
+            {
+              "station": "toride",
+              "line": "jr-east--joban-local"
+            }
           ],
           "reach": [
             "tokyo-metro--chiyoda",
@@ -370,8 +495,14 @@
           "station": "ayase",
           "go": "some",
           "to": [
-            "abiko",
-            "toride"
+            {
+              "station": "abiko",
+              "line": "jr-east--joban-local"
+            },
+            {
+              "station": "toride",
+              "line": "jr-east--joban-local"
+            }
           ],
           "reach": [
             "jr-east--joban-local"
@@ -382,8 +513,14 @@
           "station": "ayase",
           "go": "all",
           "to": [
-            "yoyogi-uehara",
-            "hon-atsugi"
+            {
+              "station": "yoyogi-uehara",
+              "line": "tokyo-metro--chiyoda"
+            },
+            {
+              "station": "hon-atsugi",
+              "line": "odakyu--odawara"
+            }
           ],
           "reach": [
             "tokyo-metro--chiyoda",
@@ -404,7 +541,10 @@
           "station": "nakano-tokyo",
           "go": "some",
           "to": [
-            "mitaka"
+            {
+              "station": "mitaka",
+              "line": "jr-east--chuo-sobu-local"
+            }
           ],
           "reach": [
             "jr-east--chuo-sobu-local"
@@ -415,8 +555,14 @@
           "station": "nakano-tokyo",
           "go": "some",
           "to": [
-            "nishi-funabashi",
-            "toyo-katsutadai"
+            {
+              "station": "nishi-funabashi",
+              "line": "tokyo-metro--tozai"
+            },
+            {
+              "station": "toyo-katsutadai",
+              "line": "toyo-rapid--toyo"
+            }
           ],
           "reach": [
             "tokyo-metro--tozai",
@@ -424,7 +570,7 @@
           ]
         }
       ],
-      "note": "朝夕が中心",
+      "note": "一部の電車（中野〜三鷹は終日。西船橋〜津田沼は朝夕だけ）",
       "source": [
         "https://ja.wikipedia.org/wiki/直通運転",
         "https://ja.wikipedia.org/wiki/東京メトロ東西線"
@@ -437,7 +583,10 @@
           "station": "nishi-funabashi",
           "go": "some",
           "to": [
-            "tsudanuma"
+            {
+              "station": "tsudanuma",
+              "line": "jr-east--chuo-sobu-local"
+            }
           ],
           "reach": [
             "jr-east--chuo-sobu-local"
@@ -448,7 +597,10 @@
           "station": "nishi-funabashi",
           "go": "some",
           "to": [
-            "nakano-tokyo"
+            {
+              "station": "nakano-tokyo",
+              "line": "tokyo-metro--tozai"
+            }
           ],
           "reach": [
             "tokyo-metro--tozai"
@@ -468,7 +620,10 @@
           "station": "nishi-funabashi",
           "go": "some",
           "to": [
-            "toyo-katsutadai"
+            {
+              "station": "toyo-katsutadai",
+              "line": "toyo-rapid--toyo"
+            }
           ],
           "reach": [
             "toyo-rapid--toyo"
@@ -479,8 +634,14 @@
           "station": "nishi-funabashi",
           "go": "all",
           "to": [
-            "nakano-tokyo",
-            "mitaka"
+            {
+              "station": "nakano-tokyo",
+              "line": "tokyo-metro--tozai"
+            },
+            {
+              "station": "mitaka",
+              "line": "jr-east--chuo-sobu-local"
+            }
           ],
           "reach": [
             "tokyo-metro--tozai",
@@ -501,9 +662,18 @@
           "station": "meguro",
           "go": "some",
           "to": [
-            "hiyoshi",
-            "shin-yokohama",
-            "ebina"
+            {
+              "station": "hiyoshi",
+              "line": "tokyu--meguro"
+            },
+            {
+              "station": "shin-yokohama",
+              "line": "tokyu--shin-yokohama"
+            },
+            {
+              "station": "ebina",
+              "line": "sotetsu--main"
+            }
           ],
           "reach": [
             "tokyu--meguro",
@@ -517,8 +687,14 @@
           "station": "meguro",
           "go": "some",
           "to": [
-            "akabane-iwabuchi",
-            "urawa-misono"
+            {
+              "station": "akabane-iwabuchi",
+              "line": "tokyo-metro--namboku"
+            },
+            {
+              "station": "urawa-misono",
+              "line": "saitama-railway--saitama"
+            }
           ],
           "reach": [
             "tokyo-metro--namboku",
@@ -540,9 +716,18 @@
           "station": "meguro",
           "go": "some",
           "to": [
-            "hiyoshi",
-            "shin-yokohama",
-            "ebina"
+            {
+              "station": "hiyoshi",
+              "line": "tokyu--meguro"
+            },
+            {
+              "station": "shin-yokohama",
+              "line": "tokyu--shin-yokohama"
+            },
+            {
+              "station": "ebina",
+              "line": "sotetsu--main"
+            }
           ],
           "reach": [
             "tokyu--meguro",
@@ -556,7 +741,10 @@
           "station": "meguro",
           "go": "some",
           "to": [
-            "nishi-takashimadaira"
+            {
+              "station": "nishi-takashimadaira",
+              "line": "toei--mita"
+            }
           ],
           "reach": [
             "toei--mita"
@@ -576,7 +764,10 @@
           "station": "akabane-iwabuchi",
           "go": "some",
           "to": [
-            "urawa-misono"
+            {
+              "station": "urawa-misono",
+              "line": "saitama-railway--saitama"
+            }
           ],
           "reach": [
             "saitama-railway--saitama"
@@ -587,9 +778,18 @@
           "station": "akabane-iwabuchi",
           "go": "all",
           "to": [
-            "shirokane-takanawa",
-            "hiyoshi",
-            "shin-yokohama"
+            {
+              "station": "shirokane-takanawa",
+              "line": "tokyo-metro--namboku"
+            },
+            {
+              "station": "hiyoshi",
+              "line": "tokyu--meguro"
+            },
+            {
+              "station": "shin-yokohama",
+              "line": "tokyu--shin-yokohama"
+            }
           ],
           "reach": [
             "tokyo-metro--namboku",
@@ -612,8 +812,14 @@
           "station": "hiyoshi",
           "go": "some",
           "to": [
-            "ebina",
-            "shonandai"
+            {
+              "station": "ebina",
+              "line": "sotetsu--main"
+            },
+            {
+              "station": "shonandai",
+              "line": "sotetsu--izumino"
+            }
           ],
           "reach": [
             "sotetsu--main",
@@ -625,7 +831,10 @@
           "station": "nishiya",
           "go": "some",
           "to": [
-            "shibuya"
+            {
+              "station": "shibuya",
+              "line": "tokyu--toyoko"
+            }
           ],
           "reach": [
             "tokyu--toyoko"
@@ -650,8 +859,14 @@
           "station": "hiyoshi",
           "go": "some",
           "to": [
-            "ebina",
-            "shonandai"
+            {
+              "station": "ebina",
+              "line": "sotetsu--main"
+            },
+            {
+              "station": "shonandai",
+              "line": "sotetsu--izumino"
+            }
           ],
           "reach": [
             "sotetsu--main",
@@ -663,8 +878,14 @@
           "station": "nishiya",
           "go": "some",
           "to": [
-            "meguro",
-            "akabane-iwabuchi"
+            {
+              "station": "meguro",
+              "line": "tokyu--meguro"
+            },
+            {
+              "station": "akabane-iwabuchi",
+              "line": "tokyo-metro--namboku"
+            }
           ],
           "reach": [
             "tokyu--meguro",
@@ -691,7 +912,10 @@
           "station": "osaki",
           "go": "some",
           "to": [
-            "ebina"
+            {
+              "station": "ebina",
+              "line": "sotetsu--main"
+            }
           ],
           "reach": [
             "sotetsu--main"
@@ -702,8 +926,14 @@
           "station": "nishiya",
           "go": "some",
           "to": [
-            "shinjuku",
-            "kawagoe"
+            {
+              "station": "shinjuku",
+              "line": "jr-east--saikyo"
+            },
+            {
+              "station": "kawagoe",
+              "line": "jr-east--kawagoe"
+            }
           ],
           "reach": [
             "jr-east--saikyo",
@@ -730,7 +960,10 @@
           "station": "osaki",
           "go": "some",
           "to": [
-            "shin-kiba"
+            {
+              "station": "shin-kiba",
+              "line": "twr--rinkai"
+            }
           ],
           "reach": [
             "twr--rinkai"
@@ -741,9 +974,18 @@
           "station": "osaki",
           "go": "some",
           "to": [
-            "shinjuku",
-            "omiya",
-            "kawagoe"
+            {
+              "station": "shinjuku",
+              "line": "jr-east--saikyo"
+            },
+            {
+              "station": "omiya",
+              "line": "jr-east--saikyo"
+            },
+            {
+              "station": "kawagoe",
+              "line": "jr-east--kawagoe"
+            }
           ],
           "reach": [
             "jr-east--saikyo",
@@ -764,8 +1006,14 @@
           "station": "shinjuku",
           "go": "some",
           "to": [
-            "hashimoto",
-            "keio-tama-center"
+            {
+              "station": "hashimoto",
+              "line": "keio--sagamihara"
+            },
+            {
+              "station": "keio-tama-center",
+              "line": "keio--sagamihara"
+            }
           ],
           "reach": [
             "keio--keio",
@@ -777,7 +1025,10 @@
           "station": "sasazuka",
           "go": "some",
           "to": [
-            "motoyawata"
+            {
+              "station": "motoyawata",
+              "line": "toei--shinjuku"
+            }
           ],
           "reach": [
             "toei--shinjuku"
@@ -800,8 +1051,14 @@
           "station": "sengakuji",
           "go": "some",
           "to": [
-            "haneda-airport-terminal-1-2",
-            "misakiguchi"
+            {
+              "station": "haneda-airport-terminal-1-2",
+              "line": "keikyu--airport"
+            },
+            {
+              "station": "misakiguchi",
+              "line": "keikyu--kurihama"
+            }
           ],
           "reach": [
             "keikyu--main",
@@ -814,9 +1071,18 @@
           "station": "sengakuji",
           "go": "some",
           "to": [
-            "oshiage",
-            "narita-kuko",
-            "imba-nihon-idai"
+            {
+              "station": "oshiage",
+              "line": "toei--asakusa"
+            },
+            {
+              "station": "narita-kuko",
+              "line": "keisei--sky-access"
+            },
+            {
+              "station": "imba-nihon-idai",
+              "line": "hokuso--hokuso"
+            }
           ],
           "reach": [
             "toei--asakusa",
@@ -840,10 +1106,22 @@
           "station": "oshiage",
           "go": "all",
           "to": [
-            "aoto",
-            "keisei-takasago",
-            "narita-kuko",
-            "imba-nihon-idai"
+            {
+              "station": "aoto",
+              "line": "keisei--oshiage"
+            },
+            {
+              "station": "keisei-takasago",
+              "line": "keisei--main"
+            },
+            {
+              "station": "narita-kuko",
+              "line": "keisei--sky-access"
+            },
+            {
+              "station": "imba-nihon-idai",
+              "line": "hokuso--hokuso"
+            }
           ],
           "reach": [
             "keisei--oshiage",
@@ -857,9 +1135,18 @@
           "station": "oshiage",
           "go": "all",
           "to": [
-            "nishi-magome",
-            "haneda-airport-terminal-1-2",
-            "misakiguchi"
+            {
+              "station": "nishi-magome",
+              "line": "toei--asakusa"
+            },
+            {
+              "station": "haneda-airport-terminal-1-2",
+              "line": "keikyu--airport"
+            },
+            {
+              "station": "misakiguchi",
+              "line": "keikyu--kurihama"
+            }
           ],
           "reach": [
             "toei--asakusa",
@@ -882,8 +1169,14 @@
           "station": "keisei-takasago",
           "go": "some",
           "to": [
-            "oshiage",
-            "haneda-airport-terminal-1-2"
+            {
+              "station": "oshiage",
+              "line": "keisei--oshiage"
+            },
+            {
+              "station": "haneda-airport-terminal-1-2",
+              "line": "keikyu--airport"
+            }
           ],
           "reach": [
             "keisei--oshiage",
@@ -897,7 +1190,10 @@
           "station": "aoto",
           "go": "some",
           "to": [
-            "imba-nihon-idai"
+            {
+              "station": "imba-nihon-idai",
+              "line": "hokuso--hokuso"
+            }
           ],
           "reach": [
             "hokuso--hokuso"
@@ -920,7 +1216,10 @@
           "station": "higashi-narita",
           "go": "all",
           "to": [
-            "shibayama-chiyoda"
+            {
+              "station": "shibayama-chiyoda",
+              "line": "shibayama--shibayama"
+            }
           ],
           "reach": [
             "shibayama--shibayama"
@@ -931,7 +1230,10 @@
           "station": "higashi-narita",
           "go": "all",
           "to": [
-            "keisei-narita"
+            {
+              "station": "keisei-narita",
+              "line": "keisei--higashi-narita"
+            }
           ],
           "reach": [
             "keisei--higashi-narita",
@@ -957,7 +1259,10 @@
           "station": "kashima-soccer-stadium",
           "go": "all",
           "to": [
-            "kashimajingu"
+            {
+              "station": "kashimajingu",
+              "line": "jr-east--kashima"
+            }
           ],
           "reach": [
             "jr-east--kashima"
@@ -978,8 +1283,14 @@
           "station": "ito",
           "go": "some",
           "to": [
-            "izu-kogen",
-            "izukyu-shimoda"
+            {
+              "station": "izu-kogen",
+              "line": "izukyu--izukyu"
+            },
+            {
+              "station": "izukyu-shimoda",
+              "line": "izukyu--izukyu"
+            }
           ],
           "reach": [
             "izukyu--izukyu"
@@ -990,7 +1301,10 @@
           "station": "ito",
           "go": "some",
           "to": [
-            "atami"
+            {
+              "station": "atami",
+              "line": "jr-east--ito"
+            }
           ],
           "reach": [
             "jr-east--ito"
@@ -1010,7 +1324,10 @@
           "station": "otsuki",
           "go": "some",
           "to": [
-            "kawaguchiko"
+            {
+              "station": "kawaguchiko",
+              "line": "fujikyu--fujikyu"
+            }
           ],
           "reach": [
             "fujikyu--fujikyu"
@@ -1021,7 +1338,10 @@
           "station": "otsuki",
           "go": "some",
           "to": [
-            "takao"
+            {
+              "station": "takao",
+              "line": "jr-east--chuo-main"
+            }
           ],
           "reach": [
             "jr-east--chuo-main",

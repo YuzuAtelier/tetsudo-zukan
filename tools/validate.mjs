@@ -290,15 +290,18 @@ if (existsSync(throughPath)) {
       if (!L) { err(`${tag} 無い路線id: ${s.line}`); return; }
       if (!L.stations.includes(s.station)) err(`${tag} 境目の駅 ${s.station} が ${s.line} に無い`);
       if (!["all", "some", "none"].includes(s.go)) err(`${tag} go は all・some・none: ${s.go}`);
-      (s.to ?? []).forEach((t) => { if (!stationIds.has(t)) err(`${tag} to に無い駅id: ${t}`); });
       if (s.go === "none" && (s.to ?? []).length) err(`${tag} go: none なのに to がある`);
-      // reach は直通の電車が走っていく路線。最初は相手の路線、to の駅はこのどれかにある
+      // reach は直通の電車が走っていく路線。最初は相手の路線
       const reach = s.reach ?? [];
       reach.forEach((r) => { if (!lineInfo.has(r)) err(`${tag} reach に無い路線id: ${r}`); });
       if (s.go !== "none" && !reach.length) err(`${tag} ${s.line} 側に reach が無い`);
+      // to はよく行く先の駅と、その駅がある路線。路線は reach のどれかで、駅は本当にその路線にある
+      // （画面で「そのさき 伊勢崎線の 久喜 まで」と出すため。相手の路線に無い駅を相手の駅のように見せない）
       (s.to ?? []).forEach((t) => {
-        if (reach.length && !reach.some((r) => (lineInfo.get(r)?.stations ?? []).includes(t)))
-          err(`${tag} to の駅 ${t} が reach のどの路線にも無い`);
+        if (!t || typeof t !== "object") { err(`${tag} to は { station, line } の形で書く: ${JSON.stringify(t)}`); return; }
+        if (!stationIds.has(t.station)) err(`${tag} to に無い駅id: ${t.station}`);
+        if (!reach.includes(t.line)) err(`${tag} to の路線 ${t.line} が reach に無い`);
+        else if (!(lineInfo.get(t.line)?.stations ?? []).includes(t.station)) err(`${tag} to の駅 ${t.station} が ${t.line} に無い`);
       });
     });
     if (sides.every((s) => s.go === "none")) err(`${tag} どちらの向きにも直通が無い`);
