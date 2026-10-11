@@ -1,6 +1,103 @@
 {
-  "note": "会社をまたぐ直通運転。sides は境目の2路線で、station はその路線の境目の駅。go は「その路線の電車が、そのまま相手の路線へ入るか」：all=いつも（ほとんど）/ some=ときどき（一部）/ none=入らない。to は、直通の電車がよく行く先の駅と、その駅がある路線。reach は、その直通の電車が走っていく路線（相手の路線から順に）。via は、間をつなぐだけの短い路線（西武有楽町線・京王新線 など）。gap は、とおり道の一部がアプリに無いときの説明で、gapAt はアプリに無い区間がはじまる駅。kind: same は同じ会社の中の直通（データ上は路線を分けているが電車がそのまま続くところ。2026-10-08 追加）。特急だけの直通は入れない。",
-  "checkedOn": "2026-10-08",
+  "note": "会社をまたぐ直通運転。sides は境目の2路線で、station はその路線の境目の駅。go は「その路線の電車が、そのまま相手の路線へ入るか」：all=いつも（ほとんど）/ some=ときどき（一部）/ none=入らない。to は、直通の電車がよく行く先の駅と、その駅がある路線。reach は、その直通の電車が走っていく路線（相手の路線から順に）。via は、間をつなぐだけの短い路線（西武有楽町線・京王新線 など）。gap は、とおり道の一部がアプリに無いときの説明で、gapAt はアプリに無い区間がはじまる駅。branchStart は、路線の途中の駅で直通が駅の並びの始め側（画面の上）へ分かれるところ。ここに無い途中の駅は終わり側（下）。kind: same は同じ会社の中の直通（データ上は路線を分けているが電車がそのまま続くところ。2026-10-08 追加）。特急だけの直通は入れない。",
+  "checkedOn": "2026-10-11",
+  "branchStart": [
+    {
+      "line": "tobu--skytree",
+      "station": "hikifune",
+      "other": "tokyo-metro--hanzomon"
+    },
+    {
+      "line": "tobu--skytree",
+      "station": "kita-senju",
+      "other": "tokyo-metro--hibiya"
+    },
+    {
+      "line": "toei--asakusa",
+      "station": "sengakuji",
+      "other": "keikyu--main"
+    },
+    {
+      "line": "keisei--main",
+      "station": "aoto",
+      "other": "keisei--oshiage"
+    },
+    {
+      "line": "keio--keio",
+      "station": "sasazuka",
+      "other": "toei--shinjuku"
+    },
+    {
+      "line": "tokyo-metro--fukutoshin",
+      "station": "kotake-mukaihara",
+      "other": "seibu--ikebukuro"
+    },
+    {
+      "line": "tokyo-metro--yurakucho",
+      "station": "kotake-mukaihara",
+      "other": "seibu--ikebukuro"
+    },
+    {
+      "line": "tobu--tojo",
+      "station": "wakoshi",
+      "other": "tokyo-metro--fukutoshin"
+    },
+    {
+      "line": "tobu--tojo",
+      "station": "wakoshi",
+      "other": "tokyo-metro--yurakucho"
+    },
+    {
+      "line": "seibu--ikebukuro",
+      "station": "nerima",
+      "other": "tokyo-metro--fukutoshin"
+    },
+    {
+      "line": "seibu--ikebukuro",
+      "station": "nerima",
+      "other": "tokyo-metro--yurakucho"
+    },
+    {
+      "line": "odakyu--odawara",
+      "station": "yoyogi-uehara",
+      "other": "tokyo-metro--chiyoda"
+    },
+    {
+      "line": "sotetsu--main",
+      "station": "nishiya",
+      "other": "tokyu--toyoko"
+    },
+    {
+      "line": "sotetsu--main",
+      "station": "nishiya",
+      "other": "tokyu--meguro"
+    },
+    {
+      "line": "sotetsu--main",
+      "station": "nishiya",
+      "other": "jr-east--saikyo"
+    },
+    {
+      "line": "tokyu--den-en-toshi",
+      "station": "mizonokuchi",
+      "other": "tokyu--oimachi"
+    },
+    {
+      "line": "jr-east--chuo-sobu-local",
+      "station": "nishi-funabashi",
+      "other": "tokyo-metro--tozai"
+    },
+    {
+      "line": "jr-east--sotobo",
+      "station": "soga",
+      "other": "jr-east--keiyo"
+    },
+    {
+      "line": "tokyo-metro--marunouchi",
+      "station": "nakano-sakaue",
+      "other": "tokyo-metro--marunouchi-branch"
+    }
+  ],
   "links": [
     {
       "sides": [

@@ -451,6 +451,11 @@ function meetOn(v, n, s){
   });
 });
 
+// 路線の途中の駅で、直通が駅の並びの始め側（画面の上）へ分かれるところ（東武スカイツリーラインの曳舟から押上 など）。
+// ここに無い途中の駅は、終わり側（下）へ分かれる
+var THR_BRANCH_START = {};
+(DATA.throughBranchStart || []).forEach(function(b){ THR_BRANCH_START[b.line + "|" + b.station + "|" + b.other] = true; });
+
 // 直通の電車が入ってくるのに、直通の相手としてはつながっていない路線（東武伊勢崎線・京急空港線 など）。
 // 路線id -> その路線まで電車が来る、出発側の路線idの並び
 var THR_INCOMING = {};
@@ -1145,8 +1150,13 @@ function viewLine(id, focus){
     var st = STATIONS[e.stationId];
     var here = thr.filter(function(x){ return x.at === st.id; });
     // 起点の駅でつながる直通は、駅の上に出す（線が相手の路線から続いてくるように見せる）
-    var compact = here.length > 1;
-    if (i === 0 && !L.loop) here.forEach(function(x){ thrBlock(L, x, true, true, compact).forEach(function(r){ rail.appendChild(r); }); });
+    // 駅の上に出すもの（起点の駅、または始め側へ分かれるもの）と、下に出すものに分ける
+    var isFirst = i === 0 && !L.loop, isLast = i === lastIdx && !L.loop;
+    var above = here.filter(function(x){ return isFirst || (!isLast && THR_BRANCH_START[L.id + "|" + st.id + "|" + x.other]); });
+    var below = here.filter(function(x){ return above.indexOf(x) < 0; });
+    above.forEach(function(x){
+      thrBlock(L, x, isFirst, true, above.length > 1).forEach(function(r){ rail.appendChild(r); });
+    });
     var b = el("button", "stop" + (focus && st.id === focus ? " focus" : "")); b.type = "button";
     b.style.setProperty("--c", L.color);
     var tr = el("div", "track");
@@ -1178,8 +1188,8 @@ function viewLine(id, focus){
     }
     b.onclick = function(){ go({v:"station", id:st.id}); };
     rail.appendChild(b);
-    if (i !== 0 || L.loop) here.forEach(function(x){
-      thrBlock(L, x, i === lastIdx && !L.loop, false, compact).forEach(function(r){ rail.appendChild(r); });
+    below.forEach(function(x){
+      thrBlock(L, x, isLast, false, below.length > 1).forEach(function(r){ rail.appendChild(r); });
     });
   });
   // 環状線は、最後の駅のあと最初の駅にもどることを線でつないで見せる

@@ -308,9 +308,9 @@ if (existsSync(expressesPath)) {
 
 // 会社をまたぐ直通運転（data/through.json）。アプリで使うのは つながり方だけ。根拠URLや注記は載せない
 const throughPath = join(dataDir, "through.json");
-const throughs = existsSync(throughPath)
-  ? readJson(throughPath).links.map((k) => ({ sides: k.sides, via: k.via, gapAt: k.gapAt }))
-  : [];
+const throughFile = existsSync(throughPath) ? readJson(throughPath) : { links: [], branchStart: [] };
+const throughs = throughFile.links.map((k) => ({ sides: k.sides, via: k.via, gapAt: k.gapAt }));
+const throughBranchStart = (throughFile.branchStart ?? []).map((x) => ({ line: x.line, station: x.station, other: x.other }));
 
 const payload = {
   operators,
@@ -320,6 +320,7 @@ const payload = {
   trains,
   expresses,
   throughs,
+  throughBranchStart,
   lines: lines.map((L) => ({
     id: L.id, operatorId: L.operatorId, name: L.name, formalName: L.formalName,
     kana: L.kana, symbol: L.symbol, color: L.color, colorName: L.colorName,

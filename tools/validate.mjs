@@ -332,6 +332,20 @@ if (existsSync(throughPath)) {
     if (seenPair.has(key)) err(`${tag} 同じつながりが2回ある`);
     seenPair.add(key);
   });
+  // 途中の駅で、直通が駅の並びの始め側（画面の上）へ分かれるところ
+  (td.branchStart ?? []).forEach((x) => {
+    const tag = `[through.json branchStart ${x.line}@${x.station}]`;
+    const L = lineInfo.get(x.line);
+    if (!L) { err(`${tag} 無い路線id`); return; }
+    const i = L.stations.indexOf(x.station);
+    if (i <= 0 || i >= L.stations.length - 1) err(`${tag} 路線の途中の駅でない（端の駅は向きが決まっている）`);
+    if (!lineInfo.has(x.other)) err(`${tag} 無い相手の路線id: ${x.other}`);
+    const used = (td.links ?? []).some((k) => {
+      const lines = [...k.sides.map((s) => s.line), ...(k.via ?? [])];
+      return lines.includes(x.line) && lines.includes(x.other);
+    });
+    if (!used) err(`${tag} ${x.line} と ${x.other} の直通が無い`);
+  });
   throughs = td.links ?? [];
 }
 
