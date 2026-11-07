@@ -335,6 +335,11 @@
   .qzsub{appearance:none;font:inherit;font-size:13px;font-weight:700;padding:10px 14px;min-height:46px;
          border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
   .qzend .kanji{font-size:26px}
+  .qzend .kana{font-size:14px;color:var(--muted);font-weight:700}
+  .qzscore{margin-top:4px}
+  .qzscore b{font-size:40px;color:#2f6df6;margin:0 2px}
+  .qzpraise{margin-top:12px;padding:12px 14px;border-radius:12px;background:#fff3bf;color:#7a5d00;
+            font-size:17px;font-weight:800;line-height:1.5}
 
   .empty{text-align:center;color:var(--muted);padding:40px 16px;font-size:14px}
   .note{font-size:11.5px;color:var(--muted);margin-top:26px;line-height:1.7;text-align:center}
@@ -931,6 +936,37 @@ function qzPrepare(){
     QZ_SET[key] = (QZ_SET[key] || 0) + 1;
   });
 }
+// 出した問題をおぼえておき、全部出し終わるまで同じ問題を出さない。
+// この端末のブラウザの中だけに保存する（駅のidだけで、外には送らない）
+var QZ_SEEN_KEY = "tetsudo-zukan:quiz-seen";
+var QZ_SEEN = null;
+function qzSeen(){
+  if (QZ_SEEN) return QZ_SEEN;
+  try { QZ_SEEN = JSON.parse(localStorage.getItem(QZ_SEEN_KEY) || "[]"); } catch (e) { QZ_SEEN = []; }
+  if (!Array.isArray(QZ_SEEN)) QZ_SEEN = [];
+  return QZ_SEEN;
+}
+function qzRemember(keys){
+  var a = qzSeen();
+  keys.forEach(function(k){
+    var i = a.indexOf(k);
+    if (i >= 0) a.splice(i, 1);
+    a.push(k);                       // 新しいものを後ろに
+  });
+  if (a.length > 3000) a.splice(0, a.length - 3000);
+  try { localStorage.setItem(QZ_SEEN_KEY, JSON.stringify(a)); } catch (e) {}
+}
+// 候補のうち、まだ出していないもの。全部出し終わっていたら、直近に出したものだけをさけて最初から
+function qzFresh(cands, keyOf){
+  var seen = {}, a = qzSeen();
+  a.forEach(function(k){ seen[k] = true; });
+  var fresh = cands.filter(function(c){ return !seen[keyOf(c)]; });
+  if (fresh.length) return fresh;
+  var recent = {}, n = Math.min(30, Math.max(0, cands.length - 1));
+  a.slice(a.length - n).forEach(function(k){ recent[k] = true; });
+  fresh = cands.filter(function(c){ return !recent[keyOf(c)]; });
+  return fresh.length ? fresh : cands;
+}
 function qzShuffle(a){
   for (var i = a.length - 1; i > 0; i--){
     var j = Math.floor(Math.random() * (i + 1)), t = a[i];
@@ -977,7 +1013,15 @@ function qzBetween(lines, done){
     }
   });
   if (!cands.length) return null;
-  var q = cands[Math.floor(Math.random() * cands.length)];
+  cands = qzFresh(cands, function(c){ return "b:" + qzPair(c.a, c.c); });
+  // 駅の多い路線ばかりにならないよう、まず路線を選んでから、その路線の問題を選ぶ
+  var byLine = {}, lineIds = [];
+  cands.forEach(function(c){
+    if (!byLine[c.L.id]){ byLine[c.L.id] = []; lineIds.push(c.L.id); }
+    byLine[c.L.id].push(c);
+  });
+  var pickLine = byLine[lineIds[Math.floor(Math.random() * lineIds.length)]];
+  var q = pickLine[Math.floor(Math.random() * pickLine.length)];
   var used = {};
   [q.a, q.b, q.c].forEach(function(sid){ used[STATIONS[sid].name] = true; });
   // まちがいは、まず同じ路線の近くの駅から。足りなければ範囲の路線、それでも足りなければ全路線から
@@ -993,17 +1037,21 @@ function qzBetween(lines, done){
     lines.concat(LINES.filter(qzMain)).forEach(function(L){ L.stations.forEach(function(e){ wide.push(e.stationId); }); });
     wrong = wrong.concat(qzPick(wide, 3 - wrong.length, used));
   }
-  return { type:"between", line:q.L.id, a:q.a, c:q.c, answer:q.b, choices:qzShuffle([q.b].concat(wrong)) };
+  // 「A と C」の順番も入れかえて、同じ組でも見え方を変える
+  var ac = Math.random() < 0.5 ? [q.a, q.c] : [q.c, q.a];
+  return { type:"between", key:"b:" + qzPair(q.a, q.c), line:q.L.id, a:ac[0], c:ac[1], answer:q.b,
+           choices:qzShuffle([q.b].concat(wrong)) };
 }
 // ② のりかえ：とまる ろせんは ○○線・○○線・○○線。この えきは？
 function qzTransfer(lines, done){
   var inScope = {};
   lines.forEach(function(L){ inScope[L.id] = true; });
   var cands = Object.keys(BY_STATION).filter(function(sid){
-    return qzMainAt(sid).length >= 3 && !done[sid] && QZ_SET[qzLineKey(sid)] === 1
+    return qzMainAt(sid).length >= 2 && !done[sid] && QZ_SET[qzLineKey(sid)] === 1
       && BY_STATION[sid].some(function(e){ return inScope[e.line.id]; });
   });
   if (!cands.length) return null;
+  cands = qzFresh(cands, function(sid){ return "t:" + sid; });
   var ans = cands[Math.floor(Math.random() * cands.length)];
   var mine = {};
   qzMainAt(ans).forEach(function(e){ mine[e.line.id] = true; });
@@ -1019,7 +1067,7 @@ function qzTransfer(lines, done){
     var any = Object.keys(BY_STATION).filter(function(sid){ return qzMainAt(sid).length >= 2; });
     wrong = wrong.concat(qzPick(any, 3 - wrong.length, used));
   }
-  return { type:"transfer", answer:ans, lines:qzMainAt(ans).map(function(e){ return e.line.id; }),
+  return { type:"transfer", key:"t:" + ans, answer:ans, lines:qzMainAt(ans).map(function(e){ return e.line.id; }),
            choices:qzShuffle([ans].concat(wrong)) };
 }
 // 1回分（10問）を作る。同じ駅が答えになる問題は1回の中で2度出さない
@@ -1032,6 +1080,7 @@ function qzMake(scope, type){
     if (!q && type === "mix") q = t === "between" ? qzTransfer(lines, done) : qzBetween(lines, done);
     if (!q) continue;
     done[q.answer] = true;
+    qzRemember([q.key]);             // 同じ回の中でも、次の問題を選ぶときにさけられるよう、すぐおぼえる
     qs.push(q);
   }
   return qs;
@@ -1097,7 +1146,7 @@ function viewQuizStart(s){
   start.onclick = function(){
     var qs = qzMake(s.scope, s.type);
     if (!qs.length){ alert("この はんいでは もんだいが つくれません。ほかを えらんでね"); return; }
-    go({ v:"quiz", scope:s.scope, lineId:s.lineId, type:s.type, qs:qs, i:0, picked:null });
+    go({ v:"quiz", scope:s.scope, lineId:s.lineId, type:s.type, qs:qs, i:0, picked:null, res:[] });
   };
   view.appendChild(start);
   var nt = el("div", "note");
@@ -1144,7 +1193,12 @@ function viewQuiz(s){
     }
     b.appendChild(el("span", "k", mark + st.kana));
     b.appendChild(el("span", "j", st.name));
-    b.onclick = function(){ s.picked = sid; var y = window.scrollY; render(s); window.scrollTo(0, y); };
+    b.onclick = function(){
+      s.picked = sid;
+      if (!s.res) s.res = [];
+      if (s.res[s.i] === undefined) s.res[s.i] = (sid === q.answer);
+      var y = window.scrollY; render(s); window.scrollTo(0, y);
+    };
     grid.appendChild(b);
   });
   card.appendChild(grid);
@@ -1163,15 +1217,44 @@ function viewQuiz(s){
   }
   view.appendChild(card);
 }
+// おわりの画面の、ほめる一言。何問あっていても、かならずほめる。前回と同じものは続けて出さない
+var QZ_PRAISE = [
+  "よく がんばったね！",
+  "さいごまで できて すごい！",
+  "てつどう はかせに また ちかづいたね！",
+  "えきの なまえ、どんどん おぼえてるね！",
+  "チャレンジ できて えらい！",
+  "かんがえる ちから、ばっちり！",
+  "きょうも ひとつ くわしく なったね！",
+  "その ちょうしで いこう！",
+  "つぎは どの ろせんに のってみたい？",
+  "また いっしょに あそぼうね！"
+];
+var qzLastPraise = -1;
+function qzPraise(){
+  var i = Math.floor(Math.random() * QZ_PRAISE.length);
+  if (i === qzLastPraise) i = (i + 1) % QZ_PRAISE.length;
+  qzLastPraise = i;
+  return QZ_PRAISE[i];
+}
 function viewQuizEnd(s){
+  var n = s.qs.length;
+  var ok = (s.res || []).filter(function(x){ return x === true; }).length;
+  // おなじ回のあいだは同じ一言を出す（駅の画面から もどったときに 変わらないように）
+  if (!s.praise) s.praise = qzPraise();
   var h = el("div", "shead qzend");
-  h.appendChild(el("div", "kanji", s.qs.length + "もん おわり！"));
-  h.appendChild(el("div", "cnt", "おつかれさま。また ちょうせん してね"));
+  h.appendChild(el("div", "kana", n + "もん おわり！"));
+  var sc = el("div", "kanji qzscore");
+  sc.appendChild(el("span", null, n + "もん ちゅう "));
+  sc.appendChild(el("b", null, String(ok)));
+  sc.appendChild(el("span", null, "もん せいかい"));
+  h.appendChild(sc);
+  h.appendChild(el("div", "qzpraise", s.praise));
   view.appendChild(h);
   var btns = el("div", "qzbtns col");
   var again = el("button", "qznext", "もう 1かい やる ›"); again.type = "button";
   again.onclick = function(){
-    s.qs = qzMake(s.scope, s.type); s.i = 0; s.picked = null;
+    s.qs = qzMake(s.scope, s.type); s.i = 0; s.picked = null; s.res = []; s.praise = null;
     render(s); window.scrollTo(0, 0);
   };
   var choose = el("button", "qzsub", "しゅるい・はんいを えらびなおす"); choose.type = "button";
